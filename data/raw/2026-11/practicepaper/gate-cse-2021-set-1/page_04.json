@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11211,
+  "quizName": "GATE CSE 2021 SET 1",
+  "pageTitle": "GATE CSE 2021 SET-1",
+  "timeLimit": 0,
+  "pageNo": 4,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2021-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1121116,
+   "number": 16,
+   "type": "NAT",
+   "marks": 1,
+   "text": "In an undirected connected planar graph G, there are eight vertices and five faces. The number of edges in G is _________.",
+   "solution": "Euler's formula for a connected planar graph: V [latex]-[/latex] E + F = 2.<br><br>\n8 [latex]-[/latex] E + 5 = 2 [latex]\\rightarrow[/latex] E = 11<br><br>\n<b>Answer: 11</b><br><br><a href=\"https://gateoverflow.in/357435/gate-cse-2021-set-1-question-16#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Planar Graph",
+   "tag2_url": "https://practicepaper.in/gate-cse/planar-graph",
+   "ansMin": 11,
+   "ansMax": 11
+  },
+  {
+   "id": 1121117,
+   "number": 17,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the following undirected graph with edge weights as shown:<br><img src=\"/wp-content/uploads/GATE/CS/20211/q17.jpg\" /><br>The number of minimum-weight spanning trees of the graph is __________",
+   "solution": "Take all 0.1 edges first (Kruskal). They form no cycle and split the graph into two trees: the top row (3 vertices) and the bottom 6 vertices.<br><br>\nTo join these two parts we need one 0.9 edge; the three vertical edges from the top row down to the middle row all cost 0.9. Any one of them works.<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/357434/gate-cse-2021-set-1-question-17#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Minimum Spanning Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/minimum-spanning-tree",
+   "ansMin": 3,
+   "ansMax": 3
+  },
+  {
+   "id": 1121118,
+   "number": 18,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The lifetime of a component of a certain type is a random variable whose probability density function is exponentially distributed with parameter 2. For a randomly picked component of this type, the probability that its lifetime exceeds the expected lifetime (rounded to 2 decimal places) is _________",
+   "solution": "Exponential with [latex]\\lambda=2[/latex]: mean = [latex]\\frac1\\lambda=\\frac12[/latex], and [latex]P(X \\gt x)=e^{-\\lambda x}[/latex].<br><br>\n[latex]P\\left(X \\gt \\frac12\\right)=e^{-2\\cdot\\frac12}=e^{-1}\\approx0.37[/latex]<br><br>\n<b>Answer: 0.37</b><br><br><a href=\"https://gateoverflow.in/357433/gate-cse-2021-set-1-question-18#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "ansMin": 0.35,
+   "ansMax": 0.39
+  },
+  {
+   "id": 1121119,
+   "number": 19,
+   "type": "NAT",
+   "marks": 1,
+   "text": "There are 6 jobs with distinct difficulty levels, and 3 computers with distinct processing speeds. Each job is assigned to a computer such that:<br><br>\n\nThe fastest computer gets the toughest job and the slowest computer gets the easiest job.<br>\nEvery computer gets at least one job.<br><br>\nThe number of ways in which this can be done is ___________.",
+   "solution": "The toughest job goes to the fastest and the easiest to the slowest. The other 4 jobs can go to any of the 3 computers: [latex]3^4=81[/latex] ways.<br><br>\nThe middle computer must get at least one job; remove the cases where all 4 go to the other two: [latex]2^4=16[/latex].<br><br>\n81 [latex]-[/latex] 16 = 65<br><br>\n<b>Answer: 65</b><br><br><a href=\"https://gateoverflow.in/357432/gate-cse-2021-set-1-question-19#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Combination",
+   "tag2_url": "https://practicepaper.in/gate-cse/combination",
+   "ansMin": 65,
+   "ansMax": 65
+  },
+  {
+   "id": 1121120,
+   "number": 20,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the following expression.<br>[latex]\\lim_{x\\rightarrow-3}\\frac{\\sqrt{2x+22}-4}{x+3}[/latex]\n<br>\nThe value of the above expression (rounded to 2 decimal places) is ___________. ",
+   "solution": "At x = [latex]-[/latex]3 the numerator is [latex]\\sqrt{16}-4=0[/latex] (form 0/0). Use L'Hospital:<br>\n[latex]\\frac{d}{dx}\\sqrt{2x+22}=\\frac{1}{\\sqrt{2x+22}}[/latex] [latex]\\rightarrow[/latex] at x = [latex]-[/latex]3: [latex]\\frac14=0.25[/latex]<br><br>\n<b>Answer: 0.25</b><br><br><a href=\"https://gateoverflow.in/357431/gate-cse-2021-set-1-question-20#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "ansMin": 0.25,
+   "ansMax": 0.25
+  }
+ ]
+}

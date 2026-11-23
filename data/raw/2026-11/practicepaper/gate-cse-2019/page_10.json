@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11191,
+  "quizName": "GATE CS 2019",
+  "pageTitle": "GATE CSE 2019",
+  "timeLimit": 0,
+  "pageNo": 10,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2019",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1119146,
+   "number": 46,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Let T be a full binary tree with 8 leaves. (A full binary tree has every level full.) Suppose two leaves a and b of T are chosen uniformly and independently at random. The expected value of the distance between a and b in T (i.e., the number of edges in the unique path between a and b) is (rounded off to 2 decimal places) ___________ . ",
+   "solution": "8 leaves, height 3. Fix leaf a; b is uniform over the 8 leaves (b can equal a):<br>\n- same leaf: distance 0 (1 leaf)<br>\n- sibling: distance 2 (1 leaf)<br>\n- same subtree of height 2: distance 4 (2 leaves)<br>\n- other half: distance 6 (4 leaves)<br><br>\n[latex]E=\\frac{0+2+2\\times4+4\\times6}{8}=\\frac{34}{8}=4.25[/latex]<br><br>\n<b>Answer: 4.25</b><br><br><a href=\"https://gateoverflow.in/302802/gate2019-cs-46#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-tree",
+   "ansMin": 4.25,
+   "ansMax": 4.25
+  },
+  {
+   "id": 1119147,
+   "number": 47,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Suppose Y is distributed uniformly in the open interval (1,6). The probability that the polynomial [latex]3x^2+6xY+3Y+6[/latex] has only real roots is (rounded off to 1 decimal place) _________. ",
+   "solution": "Real roots need discriminant [latex]\\ge0[/latex]:<br>\n[latex](6Y)^2-4\\cdot3\\cdot(3Y+6)\\ge0\\Rightarrow36Y^2-36Y-72\\ge0\\Rightarrow(Y-2)(Y+1)\\ge0[/latex]<br><br>\nFor Y in (1, 6) this means [latex]Y\\ge2[/latex]. Probability [latex]=\\frac{6-2}{6-1}=\\frac45=0.8[/latex]<br><br>\n<b>Answer: 0.8</b><br><br><a href=\"https://gateoverflow.in/302801/gate2019-cs-47#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "ansMin": 0.8,
+   "ansMax": 0.8
+  },
+  {
+   "id": 1119148,
+   "number": 48,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Let [latex]\\Sigma[/latex] be the set of all bijections from {1,...,5} to {1,...,5}, where [latex]id[/latex] denotes the identity function, i.e. [latex]id(j)=j,\\forall j[/latex]. Let [latex]\\circ[/latex] denote composition on functions. For a string [latex]x = x_1x_2 ... x_n \\in \\Sigma ^n, n \\geq 0[/latex], let [latex]\\pi(x) = x_1\\circ x_2\\circ ... \\circ x_n[/latex]. Consider the language [latex]L = \\{x \\in \\Sigma ^* | \\pi(x) = id\\}[/latex]. The minimum number of states in any DFA accepting L is _________ .",
+   "solution": "The DFA only needs to remember the composition read so far, which is one of the [latex]5!=120[/latex] permutations of {1, [latex]\\ldots[/latex], 5}. The start (and only final) state is id.<br><br>\nAll 120 states are distinguishable: from state [latex]\\sigma[/latex], reading [latex]\\sigma^{-1}[/latex] leads to id, and that symbol leads to id from no other state. So the minimum is 120.<br><br>\n<b>Answer: 120</b><br><br><a href=\"https://gateoverflow.in/302800/gate2019-cs-48#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Finite Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/finite-automata",
+   "ansMin": 120,
+   "ansMax": 120
+  },
+  {
+   "id": 1119149,
+   "number": 49,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider that 15 machines need to be connected in a LAN using 8-port Ethernet switches. Assume that these switches do not have any separate up link ports. The minimum number of switches needed is ___________. ",
+   "solution": "Connecting switches uses ports (one port on each side of each link).<br>\n- 2 switches: 16 ports [latex]-[/latex] 2 for the link = 14 [latex]\\lt[/latex] 15 False<br>\n- 3 switches in a chain: 24 ports [latex]-[/latex] 4 for 2 links = 20 [latex]\\ge[/latex] 15 True<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/302799/gate2019-cs-49#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "ansMin": 3,
+   "ansMax": 3
+  },
+  {
+   "id": 1119150,
+   "number": 50,
+   "type": "NAT",
+   "marks": 2,
+   "text": "What is the minimum number of 2-input NOR gates required to implement 4-variable function expressed in sum-of-minterms from as [latex]f = \\Sigma (0, 2, 5, 7, 8, 10, 13, 15)[/latex]? Assume that all the inputs and their complements are available. Answer ________ . ",
+   "solution": "K-map: minterms 0, 2, 8, 10 = [latex]\\bar B\\bar D[/latex] and 5, 7, 13, 15 = BD. So [latex]f=BD+\\bar B\\bar D[/latex] (XNOR of B and D).<br><br>\nIn product-of-sums form: [latex]f=(B+\\bar D)(\\bar B+D)[/latex]. With NOR gates:<br>\n- [latex]G_1=NOR(B,\\bar D)[/latex], [latex]G_2=NOR(\\bar B,D)[/latex]<br>\n- [latex]f=NOR(G_1,G_2)=(B+\\bar D)(\\bar B+D)[/latex]<br><br>\n3 gates (complements are available).<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/302798/gate2019-cs-50#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "ansMin": 3,
+   "ansMax": 3
+  }
+ ]
+}

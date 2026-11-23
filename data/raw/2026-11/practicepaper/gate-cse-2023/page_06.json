@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11231,
+  "quizName": "GATE CSE 2023",
+  "pageTitle": "GATE CSE 2023",
+  "timeLimit": 0,
+  "pageNo": 6,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2023",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1123126,
+   "number": 26,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following program:<br><pre><code>\nint main()\n{\n  f1();\n  f2(2);\n  f3();\n  return(0);\n}\n\nint f1()\n{\n  return(1);\n}\n\nint f2(int X)\n{\n  f3();\n  if (X==1)\n     return f1();\n  else\n     return (X*f2(X-1));\n}\n\nint f3()\n{\n  return(5);\n}\n\n</code></pre><br>Which one of the following options represents the activation tree corresponding to\nthe main function?<br><img src=\"/wp-content/uploads/GATE/CS/20231/q26.jpg\" /><br>\n",
+   "solution": "Trace the calls:<br>\n- main calls f1(), f2(2), f3() [latex]\\rightarrow[/latex] 3 children.<br>\n- f2(2) calls f3(), then since X [latex]\\ne[/latex] 1, calls f2(1).<br>\n- f2(1) calls f3(), then since X == 1, calls f1().<br><br>\nTree: main [latex]\\rightarrow[/latex] {f1, f2, f3}; f2 [latex]\\rightarrow[/latex] {f3, f2}; inner f2 [latex]\\rightarrow[/latex] {f3, f1}. This matches (A).<br><br>\n<b>Answer: A</b><br><br><a href=\"https://gateoverflow.in/399285/gate-cse-2023-question-26#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1123127,
+   "number": 27,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the control flow graph shown. <br><img src=\"/wp-content/uploads/GATE/CS/20231/q27.jpg\" /><br>\n   Which one of the following choices correctly lists the set of live variables at the exit\npoint of each basic block?",
+   "solution": "Uses / definitions: B1 defines i, j, a; B2 uses and defines i, j; B3 defines a; B4 uses a and defines i. B4 goes to B2 or exit.<br><br>\n- [latex]IN(B2)=\\{i,j\\}\\cup(OUT(B2)-\\{i,j\\})[/latex]<br>\n- [latex]IN(B4)=\\{a\\}\\cup(OUT(B4)-\\{i\\})[/latex], [latex]IN(B3)=OUT(B3)-\\{a\\}[/latex]<br><br>\nIterating to a fixed point:<br>\n- OUT(B4) = IN(B2) = {a, i, j}<br>\n- IN(B4) = {a, j} = OUT(B3); IN(B3) = {j}<br>\n- OUT(B2) = IN(B3) [latex]\\cup[/latex] IN(B4) = {a, j}<br>\n- OUT(B1) = IN(B2) = {a, i, j}<br><br>\n<b>Answer: B1: {a, i, j}, B2: {a, j}, B3: {a, j}, B4: {a, i, j}</b><br><br><a href=\"https://gateoverflow.in/399284/gate-cse-2023-question-27#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Runtime Environment",
+   "tag2_url": "https://practicepaper.in/gate-cse/runtime-environment",
+   "options": [
+    "B1: {}, B2: {a}, B3: {a}, B4: {a}",
+    "B1: {i, j}, B2: {a}, B3: {a}, B4: {i}",
+    "B1: {a, i, j}, B2: {a, i, j}, B3: {a, i}, B4: {a}",
+    "B1: {a, i, j}, B2: {a, j}, B3: {a, j}, B4: {a, i, j}"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1123128,
+   "number": 28,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the two functions incr and decr shown below. \n<pre><code>\nincr(){\n  wait(s);\n  X = X+1;\n  signal(s);\n}\n\ndecr(){\n  wait(s);\n  X = X-1;\n  signal(s);\n}\n\n</pre></code>There are 5 threads each invoking incr once, and 3 threads each invoking decr\nonce, on the same shared variable X. The initial value of X is 10.<br>\nSuppose there are two implementations of the semaphore [latex]s[/latex], as follows:<br><br>\nI-1: s is a binary semaphore initialized to 1.\n<br>I-2: s is a counting semaphore initialized to 2.\n<br><br>Let V1, V2 be the values of X at the end of execution of all the threads with\nimplementations I-1, I-2, respectively.<br>\nWhich one of the following choices corresponds to the minimum possible values of\nV1, V2, respectively?",
+   "solution": "<b>I-1 (binary semaphore = 1):</b> mutual exclusion, so every update is applied: [latex]V_1=10+5-3=12[/latex].<br><br>\n<b>I-2 (counting semaphore = 2):</b> two threads can be inside together and updates can be lost. To get the minimum:<br>\n- a decr thread reads X = 10 and is preempted;<br>\n- all 5 incr threads run one after another (using the second slot): X = 15;<br>\n- the first decr writes 10 [latex]-[/latex] 1 = 9, wiping out all 5 increments;<br>\n- the other 2 decr run normally: X = 7.<br><br>\nSo [latex]V_2=7[/latex].<br><br>\n<b>Answer: 12, 7</b><br><br><a href=\"https://gateoverflow.in/399283/gate-cse-2023-question-28#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Process Synchronization",
+   "tag2_url": "https://practicepaper.in/gate-cse/process-synchronization",
+   "options": [
+    "15, 7",
+    "7, 7",
+    "12, 7",
+    "12, 8"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1123129,
+   "number": 29,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the context-free grammar [latex]G[/latex] below<br>[latex] S\\rightarrow aSb \\;| \\;X[/latex] <br>\n[latex] X\\rightarrow aX \\;| \\;Xb \\;|\\; a\\;|\\; b[/latex]   <br>where [latex]S[/latex] and [latex]X[/latex] are non-terminals, and [latex]a[/latex] and [latex]b[/latex] are terminal symbols. The starting\nnon-terminal is [latex]S[/latex].<br>\nWhich one of the following statements is CORRECT?",
+   "solution": "X: [latex]X\\rightarrow aX[/latex] adds a's on the left, [latex]X\\rightarrow Xb[/latex] adds b's on the right, ending with a or b. So [latex]L(X)=a^*(a+b)b^*[/latex].<br><br>\n[latex]S\\rightarrow aSb[/latex] only adds more a's on the left and more b's on the right of X, so the result stays in [latex]a^*(a+b)b^*[/latex] and covers all of it (use S [latex]\\rightarrow[/latex] X directly).<br><br>\nThis is regular, and it is not [latex](a+b)^*[/latex] (e.g. \"ba\" is missing).<br><br>\n<b>Answer: The language generated by G is [latex]a^*(a+b)b^*[/latex]</b><br><br><a href=\"https://gateoverflow.in/399282/gate-cse-2023-question-29#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Grammar",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-grammar",
+   "options": [
+    "The language generated by [latex] G \\text{ is }(a + b)^*[/latex]",
+    "The language generated by [latex] G \\text{ is } a^*(a + b)b^*[/latex]",
+    "The language generated by [latex] G \\text{ is }a^*b^*(a + b)[/latex]",
+    "The language generated by [latex] G[/latex] is not a regular language"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1123130,
+   "number": 30,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the pushdown automaton (PDA) [latex]P[/latex] below, which runs on the input alphabet [latex]\\{a,b\\}[/latex], has stack alphabet [latex] \\{ \\perp ,A\\}[/latex], and has three states [latex] \\{s,p,q\\}[/latex], with [latex]s[/latex]  being\nthe start state. A transition from state [latex]u[/latex]  to state [latex]v[/latex] , labelled [latex]c/X/\\gamma [/latex] , where [latex]c[/latex] is\nan input symbol or , [latex]X[/latex] is a stack symbol, and [latex]\\gamma [/latex] is a string of stack symbols,\nrepresents the fact that in state  [latex]u[/latex], the PDA can read  [latex]c[/latex] from the input, with  [latex]X[/latex] on\nthe top of its stack, pop  [latex]X[/latex] from the stack, push in the string  [latex]\\gamma [/latex] on the stack, and\ngo to state [latex]v[/latex]. In the initial configuration, the stack has only the symbol  [latex]\\perp [/latex] in it.\nThe PDA accepts by empty stack.<br><img src=\"/wp-content/uploads/GATE/CS/20231/q30.jpg\" /><br>Which one of the following options correctly describes the language accepted by [latex]P[/latex]?",
+   "solution": "Read the PDA transitions:<br>- In s, every a pushes an A (so m a's give m A's).<br>\n- The first b moves to p and pops an A; each further b pops another A.<br>\n- To empty the stack we must go to q, and both moves into q need an <b>A on top</b>. In q, the remaining A's and [latex]\\perp[/latex] are popped.<br><br>\nSo at least one A must be left after reading the b's: [latex]n \\lt m[/latex], and [latex]m\\ge1[/latex] (with no a's there is no A to move to q).<br><br>\n<b>Answer: [latex]\\{a^mb^n\\mid 1\\le m,\\ n \\lt m\\}[/latex]</b><br><br><a href=\"https://gateoverflow.in/399281/gate-cse-2023-question-30#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Push-down Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/push-down-automata",
+   "options": [
+    "[latex] \\{ a^mb^n |1\\leq m\\text{ and }n \\lt m \\}[/latex]",
+    "[latex] \\{ a^mb^n |0 \\leq n \\leq m \\}[/latex]",
+    "[latex] \\{ a^mb^n |0\\leq m\\text{ and } 0 \\lt n \\}[/latex]",
+    "[latex] \\{ a^m |0\\leq m \\} \\cup \\{b^n|0 \\leq n \\}[/latex] "
+   ],
+   "correct": 0
+  }
+ ]
+}

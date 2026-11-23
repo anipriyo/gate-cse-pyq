@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11221,
+  "quizName": "GATE CSE 2022",
+  "pageTitle": "GATE CSE 2022",
+  "timeLimit": 0,
+  "pageNo": 2,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2022",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1122106,
+   "number": 6,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Suppose we are given [latex]n[/latex] keys, [latex]m[/latex] hash table slots, and two simple uniform hash functions [latex]h_1[/latex] and [latex]h_2[/latex]. Further suppose our hashing scheme uses [latex]h_1[/latex] for the odd keys\nand [latex]h_2[/latex] for the even keys. What is the expected number of keys in a slot?\n",
+   "solution": "Both [latex]h_1[/latex] and [latex]h_2[/latex] are simple uniform hash functions, so <b>every key</b> (odd or even) lands in any given slot with probability [latex]\\frac{1}{m}[/latex].<br><br>\nExpected keys in a slot [latex]=n\\times\\frac{1}{m}=\\frac{n}{m}[/latex] (which hash function is used does not matter).<br><br>\n<b>Answer: [latex]\\frac{n}{m}[/latex]</b><br><br><a href=\"https://gateoverflow.in/371930/Gate-cse-2022-question-6#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Hashing",
+   "tag2_url": "https://practicepaper.in/gate-cse/hashing",
+   "options": [
+    "[latex]\\frac{m}{n}[/latex]",
+    "[latex]\\frac{n}{m}[/latex]",
+    "[latex]\\frac{2n}{m}[/latex]",
+    "[latex]\\frac{n}{2m}[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1122107,
+   "number": 7,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following facilitates transfer of bulk data from hard disk to main memory with the highest throughput?",
+   "solution": "In DMA, the DMA controller moves the whole block between disk and memory directly, without the CPU handling every word. Interrupt-driven, polling and programmed I/O all need the CPU for each word, so they are much slower for bulk data.<br><br>\n<b>Answer: DMA based I/O transfer</b><br><br><a href=\"https://gateoverflow.in/371929/Gate-cse-2022-question-7#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "IO Interface",
+   "tag2_url": "https://practicepaper.in/gate-cse/io-interface",
+   "options": [
+    "DMA based I/O transfer",
+    "Interrupt driven I/O transfer",
+    "Polling based I/O transfer",
+    "Programmed I/O transfer"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1122108,
+   "number": 8,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let R1 and R2 be two 4-bit registers that store numbers in 2's complement form. For the operation R1+R2, which one of the following values of R1 and R2 gives an arithmetic overflow?",
+   "solution": "4-bit 2's complement range: [latex]-8[/latex] to [latex]+7[/latex].<br><br>\n- 1011 + 1110 = [latex](-5)+(-2)=-7[/latex] [latex]\\rightarrow[/latex] fits<br>\n- 1100 + 1010 = [latex](-4)+(-6)=-10[/latex] [latex]\\rightarrow[/latex] <b>overflow</b><br>\n- 0011 + 0100 = [latex]3+4=7[/latex] [latex]\\rightarrow[/latex] fits<br>\n- 1001 + 1111 = [latex](-7)+(-1)=-8[/latex] [latex]\\rightarrow[/latex] fits<br><br>\n<b>Answer: R1 = 1100 and R2 = 1010</b><br><br><a href=\"https://gateoverflow.in/371928/Gate-cse-2022-question-8#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "options": [
+    "R1 = 1011 and R2 = 1110",
+    "R1 = 1100 and R2 = 1010",
+    "R1 = 0011 and R2 = 0100",
+    "R1 = 1001 and R2 = 1111"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1122109,
+   "number": 9,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following threads, [latex]T_1, T_2,  \\text{ and }T_3[/latex] executing on a single processor, synchronized using three binary semaphore variables, [latex]S_1, S_2,  \\text{ and }S_3[/latex], operated upon using standard [latex]wait()[/latex] and [latex]signal()[/latex]. The threads can be context switched in any order and at any time.<br><img src=\"/wp-content/uploads/GATE/CS/20221/q9.jpg\" /><br>Which initialization of the semaphores would print the sequence BCABCABCA ...?",
+   "solution": "From the code: T2 prints B (needs [latex]S_1[/latex], then signals [latex]S_3[/latex]), T1 prints C (needs [latex]S_3[/latex], signals [latex]S_2[/latex]), T3 prints A (needs [latex]S_2[/latex], signals [latex]S_1[/latex]).<br><br>\nThe output must start with B, so only T2 may run first: [latex]S_1=1[/latex] and [latex]S_2=S_3=0[/latex]. Then the chain B [latex]\\rightarrow[/latex] C [latex]\\rightarrow[/latex] A [latex]\\rightarrow[/latex] B [latex]\\ldots[/latex] repeats forever.<br><br>\n(If [latex]S_2[/latex] or [latex]S_3[/latex] were 1, A or C could be printed first.)<br><br>\n<b>Answer: [latex]S_1=1;\\ S_2=0;\\ S_3=0[/latex]</b><br><br><a href=\"https://gateoverflow.in/371927/Gate-cse-2022-question-9#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Process Synchronization",
+   "tag2_url": "https://practicepaper.in/gate-cse/process-synchronization",
+   "options": [
+    "[latex]S_1 = 1; S_2 = 1; S_3 = 1[/latex]",
+    "[latex]S_1 = 1; S_2 = 1; S_3 = 0[/latex]",
+    "[latex]S_1 = 1; S_2 = 0; S_3 = 0[/latex]",
+    "[latex]S_1 = 0; S_2 = 1; S_3 = 1[/latex]"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1122110,
+   "number": 10,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following two statements with respect to the matrices [latex]A_{m  \\times n},B_{n  \\times m},C_{n  \\times n}  \\text{ and }D_{n  \\times n},[/latex]<br><br> Statement 1: [latex]tr(AB) = tr(BA)[/latex]  <br> Statement 2: [latex]tr(CD) = tr(DC)[/latex]  <br><br>where[latex]tr()[/latex] represents the trace of a matrix. Which one of the following holds?",
+   "solution": "[latex]tr(AB)=\\sum_i\\sum_k a_{ik}b_{ki}=\\sum_k\\sum_i b_{ki}a_{ik}=tr(BA)[/latex]. This holds for any [latex]A_{m\\times n}[/latex], [latex]B_{n\\times m}[/latex] (AB is [latex]m\\times m[/latex], BA is [latex]n\\times n[/latex]).<br><br>\nStatement 2 is the special case of square matrices, so it is also true.<br><br>\n<b>Answer: Both Statement 1 and Statement 2 are correct</b><br><br><a href=\"https://gateoverflow.in/371926/Gate-cse-2022-question-10#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "Statement 1 is correct and Statement 2 is wrong.",
+    "Statement 1 is wrong and Statement 2 is correct.",
+    "Both Statement 1 and Statement 2 are correct.",
+    "Both Statement 1 and Statement 2 are wrong."
+   ],
+   "correct": 2
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11242,
+  "quizName": "GATE CSE 2024 SET-2",
+  "pageTitle": "GATE CSE 2024 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 13,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124261,
+   "number": 61,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Sequence the following sentences in a coherent passage.<br><br>\nP:    This fortuitous geological event generated a colossal amount of energy and heat that resulted in the rocks rising to an average height of 4 km across the contact zone.\n<br>Q:    Thus, the geophysicists tend to think of the Himalayas as an active geological event rather than as a static geological feature.\n<br>R:    The natural  process  of  the  cooling  of  this massive  edifice  absorbed  large quantities of atmospheric carbon dioxide, altering the earth?s atmosphere and making it better suited for life.\n<br>S:    Many millennia ago, a breakaway chunk of bedrock from the Antarctic Plate collided with the massive Eurasian Plate.",
+   "solution": "Follow the references between sentences:<br>- <b>S</b> starts the story: the plates collided.<br>\n- <b>P</b> \"This fortuitous geological event\" refers to the collision, which raised the rocks.<br>\n- <b>R</b> \"this massive edifice\" refers to the raised rocks and their cooling.<br>\n- <b>Q</b> \"Thus[latex]\\ldots[/latex]\" gives the conclusion.<br><br>\n<b>Answer: SPRQ</b><br><br><a href=\"https://gateoverflow.in/422901/gate-cse-2024-set-2-ga-question-6#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "QPSR",
+    "QSPR",
+    "SPRQ",
+    "SRPQ"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1124262,
+   "number": 62,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A person sold two different items at the same price. He made 10% profit in one\nitem, and 10% loss in the other item. In selling these two items, the person made a\ntotal of",
+   "solution": "Let each selling price be S.<br>\nCost prices: [latex]\\frac{S}{1.1}=\\frac{10S}{11}[/latex] and [latex]\\frac{S}{0.9}=\\frac{10S}{9}[/latex]. Total CP [latex]=\\frac{200S}{99}[/latex], total SP [latex]=2S=\\frac{198S}{99}[/latex].<br><br>\nLoss [latex]=\\frac{2S}{99}[/latex], loss % [latex]=\\frac{2}{200}\\times100=1\\%[/latex]<br><br>\n(Shortcut: same SP with x% profit and x% loss always gives a loss of [latex]\\frac{x^2}{100}\\%[/latex].)<br><br>\n<b>Answer: 1% loss</b><br><br><a href=\"https://gateoverflow.in/422900/gate-cse-2024-set-2-ga-question-7#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "1% profit",
+    "2% profit",
+    "1% loss",
+    "2% loss"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1124263,
+   "number": 63,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The pie charts depict the shares of various power generation technologies in the\ntotal electricity generation of a country for the years 2007 and 2023.<br><img src=\"/wp-content/uploads/GATE/CS/20242/q63.webp\" /><br>\nThe renewable sources of electricity generation consist of Hydro, Solar and Wind.\nAssuming that the total electricity generated remains the same from 2007 to 2023,\nwhat is the percentage increase in the share of the renewable sources of electricity\ngeneration over this period?",
+   "solution": "Renewables = Hydro + Solar + Wind.<br>\n- 2007: [latex]30+5+5=40\\%[/latex]<br>\n- 2023: [latex]35+20+10=65\\%[/latex]<br><br>\nPercentage increase [latex]=\\frac{65-40}{40}\\times100=62.5\\%[/latex]<br><br>\n<b>Answer: 62.5%</b><br><br><a href=\"https://gateoverflow.in/422899/gate-cse-2024-set-2-ga-question-8#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "25%",
+    "50%",
+    "77.50%",
+    "62.50%"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1124264,
+   "number": 64,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A cube is to be cut into 8 pieces of equal size and shape. Here, each cut should be\nstraight and it should not stop till it reaches the other end of the cube.<br>\nThe minimum number of such cuts required is",
+   "solution": "Make three cuts through the centre, one perpendicular to each axis (length, width, height). Each cut doubles the pieces: [latex]2\\times2\\times2=8[/latex] equal cubes.<br><br>\nTwo straight cuts can give at most 4 such equal pieces, so 3 is the minimum.<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/422898/gate-cse-2024-set-2-ga-question-9#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "3",
+    "4",
+    "7",
+    "8"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1124265,
+   "number": 65,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "In the 4 x 4 array shown below, each cell of the first three rows has either a\ncross (X) or a number.<br><img src=\"/wp-content/uploads/GATE/CS/20242/q65.webp\" /><br>\nThe number in a cell represents the count of the immediate neighboring cells\n(left, right, top, bottom, diagonals) NOT having a cross (X). Given that the last row\nhas no crosses (X), the sum of the four numbers to be filled in the last row is",
+   "solution": "Row 3 is: 3, X, 6, X. The last row has no crosses. Count neighbours without X for each cell of row 4:<br>\n- Cell 1: (3,1), (4,2) [(3,2) is X] [latex]\\rightarrow[/latex] 2<br>\n- Cell 2: (3,1), (3,3), (4,1), (4,3) [(3,2) is X] [latex]\\rightarrow[/latex] 4<br>\n- Cell 3: (3,3), (4,2), (4,4) [(3,2), (3,4) are X] [latex]\\rightarrow[/latex] 3<br>\n- Cell 4: (3,3), (4,3) [(3,4) is X] [latex]\\rightarrow[/latex] 2<br><br>\nSum [latex]=2+4+3+2=11[/latex]<br><br>\n<b>Answer: 11</b><br><br><a href=\"https://gateoverflow.in/422897/gate-cse-2024-set-2-ga-question-10#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "11",
+    "10",
+    "12",
+    "9"
+   ],
+   "correct": 0
+  }
+ ]
+}

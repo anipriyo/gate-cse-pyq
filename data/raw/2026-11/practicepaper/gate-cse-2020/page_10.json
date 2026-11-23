@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11201,
+  "quizName": "GATE CS 2020",
+  "pageTitle": "GATE CSE 2020",
+  "timeLimit": 0,
+  "pageNo": 10,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2020",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1120146,
+   "number": 46,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following C functions.  <br><img src=\"/wp-content/uploads/GATE/CS/20201/q46.jpg\" /><br>The return value of fun2(5) is ______",
+   "solution": "Both functions keep a static i that is <b>never reset</b>. fun1(n) adds n to its own i and returns it.<br>\nfun2(5) adds fun1(5), fun1(4), [latex]\\ldots[/latex], fun1(1) to fun2's i:<br>\n- fun1(5) = 5, fun1(4) = 9, fun1(3) = 12, fun1(2) = 14, fun1(1) = 15<br><br>\nfun2's i = 5 + 9 + 12 + 14 + 15 = 55<br><br>\n<b>Answer: 55</b><br><br><a href=\"https://gateoverflow.in/333185/gate2020-cs-46#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "ansMin": 55,
+   "ansMax": 55
+  },
+  {
+   "id": 1120147,
+   "number": 47,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the array representation of a binary min-heap containing 1023 elements. The minimum number of comparisons required to find the maximum in the heap is ___________.",
+   "solution": "In a min-heap the maximum is always at a leaf. With 1023 nodes there are [latex]\\lceil1023/2\\rceil=512[/latex] leaves.<br><br>\nFinding the maximum of 512 elements needs 512 [latex]-[/latex] 1 = 511 comparisons.<br><br>\n<b>Answer: 511</b><br><br><a href=\"https://gateoverflow.in/333184/gate2020-cs-47#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Heap Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/heap-tree",
+   "ansMin": 511,
+   "ansMax": 511
+  },
+  {
+   "id": 1120148,
+   "number": 48,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following C functions.  <br><img src=\"/wp-content/uploads/GATE/CS/20201/q48.jpg\" /><br>The value returned by pp(3,4) is _____",
+   "solution": "tob(b, arr) stores the binary digits of b (LSB first) and returns their count. b = 4 = 100[latex]{}_2[/latex] [latex]\\rightarrow[/latex] arr = [0, 0, 1], len = 3.<br><br>\npp computes [latex]a^b[/latex] by repeated squaring: ex goes 3 [latex]\\rightarrow[/latex] 9 [latex]\\rightarrow[/latex] 81, and tot is multiplied only where the bit is 1 (the third bit) [latex]\\rightarrow[/latex] tot = 81.<br><br>\n[latex]3^4=81[/latex]<br><br>\n<b>Answer: 81</b><br><br><a href=\"https://gateoverflow.in/333183/gate2020-cs-48#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "ansMin": 81,
+   "ansMax": 81
+  },
+  {
+   "id": 1120149,
+   "number": 49,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a graph [latex]G=(V,E)[/latex], where [latex]V=\\{v_1,v_2,...,v_{100}\\}[/latex], [latex]E=\\{(v_i,v_j)|1\\leq i \\lt j\\leq 100\\}[/latex], and weight of the edge [latex](v_i,v_j)\\; is \\; |i-j|[/latex]. The weight of minimum spanning tree of G is _________",
+   "solution": "Edge weight is |i [latex]-[/latex] j| [latex]\\ge1[/latex], and weight 1 is possible only between consecutive vertices. The 99 edges [latex](v_i,v_{i+1})[/latex] form a spanning tree (a path) of weight 1 each.<br><br>\nAny spanning tree has 99 edges of weight at least 1, so this is minimum: 99.<br><br>\n<b>Answer: 99</b><br><br><a href=\"https://gateoverflow.in/333182/gate2020-cs-49#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Minimum Spanning Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/minimum-spanning-tree",
+   "ansMin": 99,
+   "ansMax": 99
+  },
+  {
+   "id": 1120150,
+   "number": 50,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following set of processes, assumed to have arrived at time 0. Consider the CPU scheduling algorithms Shortest Job First (SJF) and Round Robin (RR). For RR, assume that the processes are scheduled in the order [latex]P_1,P_2,P_3,P_4[/latex]. <br><img src=\"/wp-content/uploads/GATE/CS/20201/q50.jpg\" /><br>If the time quantum for RR is 4 ms, then the absolute value of the difference between the average turnaround times (in ms) of SJF and RR  (round off to 2 decimal places is_______",
+   "solution": "<b>SJF</b> (P3 2, P4 4, P2 7, P1 8): completion 2, 6, 13, 21 [latex]\\rightarrow[/latex] average TAT = 42 / 4 = 10.5<br><br>\n<b>RR, q = 4</b>: P1 0-4, P2 4-8, P3 8-10 (done), P4 10-14 (done), P1 14-18 (done), P2 18-21 (done)<br>\nTAT: P1 18, P2 21, P3 10, P4 14 [latex]\\rightarrow[/latex] average = 63 / 4 = 15.75<br><br>\n|15.75 [latex]-[/latex] 10.5| = 5.25<br><br>\n<b>Answer: 5.25</b><br><br><a href=\"https://gateoverflow.in/333181/gate2020-cs-50#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "CPU Scheduling",
+   "tag2_url": "https://practicepaper.in/gate-cse/cpu-scheduling",
+   "ansMin": 5.25,
+   "ansMax": 5.25
+  }
+ ]
+}

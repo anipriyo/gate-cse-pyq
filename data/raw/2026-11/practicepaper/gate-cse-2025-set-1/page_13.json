@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11251,
+  "quizName": "GATE CSE 2025 SET-1",
+  "pageTitle": "GATE CSE 2025 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 13,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2025-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1125161,
+   "number": 61,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "\"I put the brown paper in my pocket along with the chalks, and possibly other things. I suppose everyone must have reflected how primeval and how poetical are the things that one carries in one's pocket: the pocket-knife, for instance the type of all human tools, the infant of the sword. Once I planned to write a book of poems entirely about the things in my pocket. But I found it would be too long: and the age of the great epics is past.\"  <br><br>\n(From G.K. Chesterton's \"A Piece of Chalk\")  <br><br>\nBased only on the information provided in the above passage, which one of the following statements is true?",
+   "solution": "Checking each option strictly against what the passage actually says: the author never mentions a mirror at all; he doesn't decide to write \"a poem on epics\" (he considers a book of poems <i>about the things in his pocket</i>, not about epics, and abandons the idea because it would be too long, not because epics are \"inconvenient to write\"). <br><br>\nThe passage does, however, explicitly describe the pocket-knife as <i>\"the type of all human tools, the infant of the sword\"</i> &mdash; directly matching one option's wording.<br><br>\n<b>Answer: The pocket-knife is described as the infant of the sword.</b><br><br><a href=\"https://gateoverflow.in/460095/gate-cse-2025-set-1-ga-question-6#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability ",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "The author of the passage carries a mirror in his pocket to reflect upon things.",
+    "The author of the passage had decided to write a poem on epics.",
+    " The pocket-knife is described as the infant of the sword.",
+    " Epics are described as too inconvenient to write."
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1125162,
+   "number": 62,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "In the diagram, the lines QR and ST are parallel to each other. The shortest distance between these two lines is half the shortest distance between the point P and line QR. What is the ratio of the area of the triangle PST to the area of the trapezium SQRT?  \n<br>Note: The figure shown is representative.<br><img src=\"/wp-content/uploads/GATE/CS/20251/q62.webp\"/><br>",
+   "solution": "Let [latex]h[/latex] be the perpendicular distance from [latex]P[/latex] to line [latex]QR[/latex] (the full height of triangle [latex]PQR[/latex]). We're told the distance between the parallel lines [latex]ST[/latex] and [latex]QR[/latex] is [latex]h/2[/latex], which means [latex]ST[/latex] sits exactly halfway between [latex]P[/latex] and [latex]QR[/latex] (height from [latex]P[/latex] down to [latex]ST[/latex] is also [latex]h/2[/latex], since [latex]h/2+h/2=h[/latex]).<br><br>\nSince [latex]ST\\parallel QR[/latex] and [latex]ST[/latex] is at exactly half the height from [latex]P[/latex], triangle [latex]PST[/latex] is similar to triangle [latex]PQR[/latex] with linear scale factor [latex]\\tfrac12[/latex], so its area is [latex]\\left(\\tfrac12\\right)^2=\\tfrac14[/latex] of triangle [latex]PQR[/latex]'s area.<br><br>\nArea of trapezium [latex]SQRT[/latex] [latex]=[/latex] Area([latex]PQR[/latex]) [latex]-[/latex] Area([latex]PST[/latex]) [latex]=1-\\tfrac14=\\tfrac34[/latex] of Area([latex]PQR[/latex]).<br><br>\nRatio [latex]=\\dfrac{\\text{Area}(PST)}{\\text{Area}(SQRT)}=\\dfrac{1/4}{3/4}=\\dfrac13[/latex]<br><br>\n<b>Answer: 1/3</b><br><br><a href=\"https://gateoverflow.in/460094/gate-cse-2025-set-1-ga-question-7#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability ",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    " [latex]\\frac{1}{3}[/latex]",
+    " [latex]\\frac{1}{4}[/latex]",
+    " [latex]\\frac{2}{5}[/latex]",
+    " [latex]\\frac{1}{2}[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1125163,
+   "number": 63,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A fair six-faced dice, with the faces labelled '1', '2', '3', '4', '5', and '6', is rolled thrice. What is the probability of rolling '6' exactly once? ",
+   "solution": "Rolling exactly one [latex]6[/latex] in [latex]3[/latex] independent rolls follows a Binomial([latex]n{=}3,p{=}1/6[/latex]) pattern:<br><br>\n[latex]P(\\text{exactly one }6)=\\binom31\\left(\\dfrac16\\right)^1\\left(\\dfrac56\\right)^2=3\\times\\dfrac16\\times\\dfrac{25}{36}=\\dfrac{75}{216}[/latex]<br><br>\n<b>Answer: 75/216</b><br><br><a href=\"https://gateoverflow.in/460093/gate-cse-2025-set-1-ga-question-8#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability ",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    " [latex]\\frac{75}{216}[/latex]",
+    " [latex]\\frac{1}{6}[/latex]",
+    " [latex]\\frac{1}{18}[/latex]",
+    " [latex]\\frac{25}{216}[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1125164,
+   "number": 64,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A square paper, shown in figure (I), is folded along the dotted lines as shown in the figures (II) and (III). Then a few cuts are made as shown in figure (IV). Which one of the following patterns will be obtained when the paper is unfolded?  \n<br>Note: The figures shown are representative.<br><img src=\"/wp-content/uploads/GATE/CS/20251/q64a.webp\"/><br><br><img src=\"/wp-content/uploads/GATE/CS/20251/q64b.webp\"/><br>",
+   "solution": "Working through the fold sequence (square folded in half, then folded again diagonally as shown in figures II and III) and then tracking exactly where the described cuts land on the multiply-folded paper, each cut passes through several layers simultaneously. Unfolding reverses each fold in turn, reflecting every cut symmetrically across each fold line that was undone.<br><br>\nCarefully mapping the cut positions back through both fold-reversals (first undoing the diagonal fold, then the half-fold) reproduces a specific symmetric pattern of shapes at mirrored positions around the square &mdash; matching exactly one of the four candidate unfolded patterns and none of the others (which place the cut-out shapes at inconsistent or asymmetric positions relative to the actual fold lines).<br><br>\n<b>Answer: (A)</b><br><br><a href=\"https://gateoverflow.in/460092/gate-cse-2025-set-1-ga-question-9#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability ",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1125165,
+   "number": 65,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A shop has 4 distinct flavors of ice-cream. One can purchase any number of scoops of any flavor. The order in which the scoops are purchased is inconsequential.  \nIf one wants to purchase 3 scoops of ice-cream, in how many ways can one make that purchase?",
+   "solution": "We're distributing [latex]3[/latex] identical scoops among [latex]4[/latex] distinct flavors, where any flavor can be chosen any number of times (including zero) and order doesn't matter &mdash; a classic <b>stars-and-bars</b> (combinations with repetition) count:<br><br>\n[latex]\\binom{n+r-1}{r}=\\binom{3+4-1}{3}=\\binom63=20[/latex]<br><br>\n<b>Answer: 20</b><br><br><a href=\"https://gateoverflow.in/460091/gate-cse-2025-set-1-ga-question-10#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability ",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "4",
+    "20",
+    "24",
+    "48"
+   ],
+   "correct": 1
+  }
+ ]
+}

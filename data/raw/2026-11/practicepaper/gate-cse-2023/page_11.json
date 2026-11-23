@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11231,
+  "quizName": "GATE CSE 2023",
+  "pageTitle": "GATE CSE 2023",
+  "timeLimit": 0,
+  "pageNo": 11,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2023",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1123151,
+   "number": 51,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following table named Student in a relational database. The primary\nkey of this table is rollNum.<br>[latex]\\begin{array}{|c|c|c|c|}\n\\hline \\\\\nrollNum&name&gender&marks \\\\ \\hline\n1&Naman&M&62\\\\ \\hline\n2&Aliya&F&70 \\\\ \\hline\n3&Aliya &F&80 \\\\ \\hline\n4&James&M&82\\\\ \\hline\n5&Swati&F&65\\\\ \\hline\n\\end{array} [/latex]  <br>The SQL query below is executed on this database.<br>\n<pre><code>\nSELECT *\nFROM Student\nWHERE gender = 'F' AND\n marks > 65;\n</pre></code><br>The number of rows returned by the query is ______",
+   "solution": "Rows with gender = 'F' and marks [latex]\\gt[/latex] 65:<br>\n- Aliya, 70 True<br>\n- Aliya, 80 True<br>\n- Swati, 65 False (65 is not greater than 65)<br><br>\nSELECT * returns full rows, so the duplicate name does not matter.<br><br>\n<b>Answer: 2</b><br><br><a href=\"https://gateoverflow.in/399260/gate-cse-2023-question-51#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "SQL",
+   "tag2_url": "https://practicepaper.in/gate-cse/sql",
+   "ansMin": 2,
+   "ansMax": 2
+  },
+  {
+   "id": 1123152,
+   "number": 52,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a database of fixed-length records, stored as an ordered file. The database\nhas 25,000 records, with each record being 100 bytes, of which the primary key\noccupies 15 bytes. The data file is block-aligned in that each data record is fully\ncontained within a block. The database is indexed by a primary index file, which\nis also stored as a block-aligned ordered file. The figure below depicts this indexing\nscheme.<br><img src=\"/wp-content/uploads/GATE/CS/20231/q52.jpg\" /><br>Suppose the block size of the file system is 1024 bytes, and a pointer to a block\noccupies 5 bytes. The system uses binary search on the index file to search for a\nrecord with a given key. You may assume that a binary search on an index file of\n[latex]b[/latex] blocks takes  [latex]\\left \\lceil \\log_2 b \\right \\rceil [/latex]  block accesses in the worst case.<br>\nGiven a key, the number of block accesses required to identify the block in the data\nfile that may contain a record with the key, in the worst case, is _____",
+   "solution": "Compute the index size step by step:<br>- Records per data block = [latex]\\lfloor1024/100\\rfloor=10[/latex] [latex]\\rightarrow[/latex] data blocks = 25000 / 10 = 2500.<br>\n- Primary (sparse) index has one entry per data block: 2500 entries of [latex]15+5=20[/latex] bytes.<br>\n- Entries per index block = [latex]\\lfloor1024/20\\rfloor=51[/latex] [latex]\\rightarrow[/latex] index blocks = [latex]\\lceil2500/51\\rceil=50[/latex].<br><br>\nBinary search on the index: [latex]\\lceil\\log_2 50\\rceil=6[/latex] block accesses identify the data block.<br><br>\n<b>Answer: 6</b><br><br><a href=\"https://gateoverflow.in/399259/gate-cse-2023-question-52#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "File System",
+   "tag2_url": "https://practicepaper.in/gate-cse/file-system",
+   "ansMin": 6,
+   "ansMax": 6
+  },
+  {
+   "id": 1123153,
+   "number": 53,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the language L over the alphabet {0, 1}, given below:<br><br>[latex]L = \\{w \\in \\{0, 1\\}^* | w \\text{ does not contain three or more consecutive 1's} \\}.[/latex]<br>\nThe minimum number of states in a Deterministic Finite-State Automaton (DFA)\nfor L is _____.",
+   "solution": "The DFA only needs to remember how many 1s have just been seen in a row:<br>\n- q0: last symbol 0 (or start)<br>\n- q1: one 1<br>\n- q2: two 1s<br>\n- q3: three 1s seen [latex]\\rightarrow[/latex] dead (non-final) state<br><br>\nq0, q1, q2 are final. A 0 returns q0/q1/q2 to q0. All 4 states are distinguishable.<br><br>\n<b>Answer: 4</b><br><br><a href=\"https://gateoverflow.in/399258/gate-cse-2023-question-53#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Finite Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/finite-automata",
+   "ansMin": 4,
+   "ansMax": 4
+  },
+  {
+   "id": 1123154,
+   "number": 54,
+   "type": "NAT",
+   "marks": 2,
+   "text": "An 8-way set associative cache of size 64 KB (1 KB = 1024 bytes) is used in a\nsystem with 32-bit address. The address is sub-divided into TAG, INDEX, and\nBLOCK OFFSET.<br>\nThe number of bits in the TAG is ____.\n",
+   "solution": "Size of one way [latex]=\\frac{64\\text{ KB}}{8}=8\\text{ KB}=2^{13}[/latex] bytes.<br><br>\nINDEX + OFFSET bits together address one way, so they total 13 bits (the block size does not matter).<br><br>\nTAG [latex]=32-13=19[/latex] bits<br><br>\n<b>Answer: 19</b><br><br><a href=\"https://gateoverflow.in/399257/gate-cse-2023-question-54#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "ansMin": 19,
+   "ansMax": 19
+  },
+  {
+   "id": 1123155,
+   "number": 55,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The forwarding table of a router is shown below.<br>[latex]\\begin{array}{|c|c|c|c|}\n\\hline \\\\\nSubnet \\; Number&Subnet \\;Mask&Interface ID \\\\ \\hline\n200.150.0.0 &255.255.0.0& 1\\\\ \\hline\n200.150.64.0 &255.255.224.0 &2\\\\ \\hline\n200.150.68.0 &255.255.255.0 &3\\\\ \\hline\n200.150.68.64 &255.255.255.224 &4 \\\\ \\hline\nDefault & &0\\\\ \\hline\n\\end{array} [/latex]  <br>A packet addressed to a destination address 200.150.68.118 arrives at the router.\nIt will be forwarded to the interface with ID _____.",
+   "solution": "Check each entry for 200.150.68.118 (longest prefix wins):<br>\n- 200.150.0.0/16 [latex]\\rightarrow[/latex] matches<br>\n- 200.150.64.0/19 (third octet 64-95) [latex]\\rightarrow[/latex] 68 matches<br>\n- 200.150.68.0/24 [latex]\\rightarrow[/latex] matches<br>\n- 200.150.68.64/27 (last octet 64-95) [latex]\\rightarrow[/latex] 118 does not match<br><br>\nLongest match is /24 [latex]\\rightarrow[/latex] interface 3.<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/399256/gate-cse-2023-question-55#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-layer-protocol",
+   "ansMin": 3,
+   "ansMax": 3
+  }
+ ]
+}

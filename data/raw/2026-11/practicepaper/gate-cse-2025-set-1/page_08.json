@@ -1,0 +1,133 @@
+{
+ "meta": {
+  "quizId": 11251,
+  "quizName": "GATE CSE 2025 SET-1",
+  "pageTitle": "GATE CSE 2025 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 8,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2025-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1125136,
+   "number": 36,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Which of the following statement(s) is/are TRUE while computing [latex]First[/latex] and [latex]Follow[/latex] during top-down parsing by a compiler? ",
+   "solution": "Standard rules for computing [latex]\\text{First}[/latex] and [latex]\\text{Follow}[/latex] sets:<br><br>\n- <b>\"For [latex]A\\to\\epsilon[/latex], add [latex]\\epsilon[/latex] to First(A)\"</b>: TRUE &mdash; this is exactly the base rule for handling nullable productions in First-set computation.<br>\n- \"If there's an input right-end marker, add it to First(S)\": FALSE &mdash; the end marker [latex]\\$[/latex] belongs in [latex]\\text{Follow}[/latex] sets (marking \"nothing more can follow\"), never in a [latex]\\text{First}[/latex] set.<br>\n- \"For [latex]A\\to\\epsilon[/latex], add [latex]\\epsilon[/latex] to Follow(A)\": FALSE &mdash; [latex]\\epsilon[/latex] is never placed into any [latex]\\text{Follow}[/latex] set; [latex]\\text{Follow}[/latex] sets only ever contain actual terminals (and possibly [latex]\\$[/latex]).<br>\n- <b>\"If there's an input right-end marker, add it to Follow(S)\"</b>: TRUE &mdash; this is the standard initialization rule, since nothing legitimately follows the start symbol except the end of input.<br><br>\n<b>Answer: \"&epsilon; is added to First(A) for A&rarr;&epsilon;\" and \"the end marker is added to Follow(S)\" are both TRUE.</b><br><br><a href=\"https://gateoverflow.in/460044/gate-cse-2025-set-1-question-36#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Parsing",
+   "tag2_url": "https://practicepaper.in/gate-cse/parsing",
+   "options": [
+    "For a production [latex]A \\to \\epsilon ,  \\epsilon [/latex] will be added to [latex]First(A) [/latex].",
+    "If there is any input right end marker, it will be added to[latex] First(S) [/latex], where [latex] S [/latex] is the start symbol.",
+    "For a production [latex] A \\to \\epsilon,  \\epsilon [/latex] will be added to [latex] Follow(A) [/latex].",
+    "If there is any input right end marker, it will be added to [latex] Follow(S) [/latex], where [latex] S [/latex] is the start symbol."
+   ],
+   "correctSet": [
+    0,
+    3
+   ]
+  },
+  {
+   "id": 1125137,
+   "number": 37,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider a relational schema [latex] team(name, city, owner) [/latex], with functional dependencies  [latex]\\{ name \\to city [/latex], [latex] name \\to owner \\} [/latex] .  \n<br><br>\nThe relation [latex] team [/latex] is decomposed into two relations, [latex] t_1(name, city) [/latex] and [latex] t_2(name, owner) [/latex]. Which of the following statement(s) is/are TRUE?",
+   "solution": "[latex]team(name,city,owner)[/latex] with [latex]name\\to city,\\ name\\to owner[/latex]. Since [latex]name[/latex] alone functionally determines every other attribute, [latex]name[/latex] is already a candidate key of [latex]team[/latex] &mdash; and since every FD's left-hand side ([latex]name[/latex]) is already a superkey, [latex]team[/latex] is <i>already</i> in BCNF (and hence also in 3NF) even before decomposing. So both \"team is NOT in BCNF\" and \"team is NOT in 3NF\" are <b>false</b>.<br><br>\nDecomposing into [latex]t_1(name,city)[/latex] and [latex]t_2(name,owner)[/latex]: in each projection, [latex]name[/latex] remains a key (it determines the sole remaining attribute), so both [latex]t_1[/latex] and [latex]t_2[/latex] are trivially in BCNF. <b>True.</b><br><br>\nFor losslessness, the common attribute of the decomposition is [latex]name[/latex], and [latex]name\\to city[/latex] (i.e. [latex]name[/latex] alone determines all of [latex]t_1[/latex]) &mdash; satisfying the standard lossless-join test ([latex]R_1\\cap R_2[/latex] is a superkey of at least one of the two pieces). <b>True.</b><br><br>\n<b>Answer: t1 and t2 are in BCNF; and the decomposition is lossless.</b><br><br><a href=\"https://gateoverflow.in/460043/gate-cse-2025-set-1-question-37#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Normal Form",
+   "tag2_url": "https://practicepaper.in/gate-cse/normal-form",
+   "options": [
+    "The relation [latex] team [/latex] is NOT in BCNF.",
+    "The relations [latex] t_1 [/latex] and [latex] t_2 [/latex] are in BCNF.",
+    "The decomposition constitutes a lossless join.",
+    "The relation [latex]team [/latex]is NOT in 3NF."
+   ],
+   "correctSet": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1125138,
+   "number": 38,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Which of the following predicate logic formulae/formula is/are CORRECT representation(s) of the statement: \"Everyone has exactly one mother\"?  \n<br><br>The meanings of the predicates used are:\n<br>\n[latex]mother(y,x): y[/latex] is the mother of [latex] x [/latex]\n<br>[latex]noteq(x,y): x[/latex] and  [latex] y [/latex] are not equal",
+   "solution": "We want: for every person [latex]x[/latex], there is <i>exactly one</i> [latex]y[/latex] who is [latex]x[/latex]'s mother &mdash; meaning both existence (someone is the mother) and uniqueness (nobody else also qualifies as a distinct mother).<br><br>\n<b>[latex]\\forall x\\exists y[mother(y,x)\\wedge\\forall z(noteq(z,y)\\to\\neg mother(z,x))][/latex]:</b> says \"[latex]y[/latex] is a mother of [latex]x[/latex], and every [latex]z[/latex] different from [latex]y[/latex] is <i>not</i> a mother of [latex]x[/latex]\" &mdash; this correctly captures existence plus uniqueness. <b>Correct.</b><br><br>\n<b>[latex]\\forall x\\exists y[mother(y,x)\\wedge\\neg\\exists z(noteq(z,y)\\wedge mother(z,x))][/latex]:</b> by De Morgan's law, [latex]\\neg\\exists z(noteq(z,y)\\wedge mother(z,x))[/latex] is logically identical to [latex]\\forall z(noteq(z,y)\\to\\neg mother(z,x))[/latex] &mdash; so this is just a different (but equivalent) way of writing the same correct statement above. <b>Correct.</b><br><br>\nThe other two options fail to properly express uniqueness: one only asserts <i>some</i> non-mother exists (too weak, says nothing about all other candidates), and the other is a vacuous implication that never actually forces a mother to exist at all.<br><br>\n<b>Answer: Both the &forall;x&exist;y[...&forall;z(noteq&rarr;&not;mother)] form and its De&nbsp;Morgan-equivalent &forall;x&exist;y[...&not;&exist;z(noteq&and;mother)] form are correct.</b><br><br><a href=\"https://gateoverflow.in/460042/gate-cse-2025-set-1-question-38#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Propositional Logic",
+   "tag2_url": "https://practicepaper.in/gate-cse/propositional-logic",
+   "options": [
+    "[latex] \\forall x \\exists y \\exists z (mother(y, x) \\land \\neg mother(z, x)) [/latex]",
+    "[latex] \\forall x \\exists y [mother(y, x) \\land \\forall z (noteq(z, y) \\to \\neg mother(z, x))] [/latex]",
+    "[latex] \\forall x \\forall y [mother(y, x) \\to \\exists z (mother(z, x) \\land \\neg noteq(z, y))] [/latex]",
+    "[latex] \\forall x \\exists y [mother(y, x) \\land \\neg \\exists z (noteq(z, y) \\land mother(z, x))] [/latex]"
+   ],
+   "correctSet": [
+    1,
+    3
+   ]
+  },
+  {
+   "id": 1125139,
+   "number": 39,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "[latex] A = \\{ 0,1,2,3,\\dots \\} [/latex] is the set of non-negative integers. Let [latex] {F} [/latex] be the set of functions from [latex] A [/latex] to itself. For any two functions, [latex] f_1, f_2 \\in {F} [/latex], we define  \n<br><br>\n[latex] (f_1 \\odot f_2)(n) = f_1(n) + f_2(n)[/latex]\n<br><br>\nfor every number [latex] n [/latex] in [latex] A [/latex]. Which of the following is/are CORRECT about the mathematical structure [latex] ({F}, \\odot ) [/latex]?",
+   "solution": "[latex](f_1\\odot f_2)(n)=f_1(n)+f_2(n)[/latex] &mdash; pointwise addition of functions into the non-negative integers.<br><br>\n- <b>Closure:</b> the sum of two non-negative-integer values is still a non-negative integer, so [latex]F[/latex] is closed under [latex]\\odot[/latex].<br>\n- <b>Associativity:</b> inherited directly from ordinary integer addition being associative.<br>\n- <b>Identity:</b> the constant-zero function [latex]z(n)=0[/latex] satisfies [latex]f\\odot z=f[/latex] for every [latex]f[/latex] &mdash; an identity element exists.<br>\n- <b>Commutativity:</b> [latex]f_1(n)+f_2(n)=f_2(n)+f_1(n)[/latex] pointwise, so [latex]\\odot[/latex] is commutative.<br>\n- <b>Inverses:</b> for a general [latex]f[/latex] (e.g. [latex]f(n)=n[/latex]), we'd need some [latex]g[/latex] with [latex]f(n)+g(n)=0[/latex], forcing [latex]g(n)=-f(n)[/latex] &mdash; but negative values aren't allowed in the codomain [latex]A[/latex]. So inverses generally don't exist.<br><br>\nSince it's closed, associative, has an identity, and is commutative, but lacks inverses, [latex](F,\\odot)[/latex] is exactly an <b>Abelian monoid</b> (not a group).<br><br>\n<b>Answer: (F, &#8857;) is an Abelian monoid.</b><br><br><a href=\"https://gateoverflow.in/460041/gate-cse-2025-set-1-question-39#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Group Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/group-theory",
+   "options": [
+    "[latex] ({F}, \\odot ) [/latex] is an Abelian group.",
+    "[latex] ({F}, \\odot ) [/latex] is an Abelian monoid.",
+    "[latex] ({F}, \\odot ) [/latex] is a non-Abelian group.",
+    "[latex] ({F}, \\odot ) [/latex] is a non-Abelian monoid."
+   ],
+   "correctSet": [
+    1
+   ]
+  },
+  {
+   "id": 1125140,
+   "number": 40,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider the following deterministic finite automaton (DFA) defined over the alphabet, [latex] \\Sigma = \\{ a, b \\} [/latex]. Identify which of the following language(s) is/are accepted by the given DFA. <br><img src=\"/wp-content/uploads/GATE/CS/20251/q40.webp\"/><br>",
+   "solution": "This DFA, on inspection of its states and transitions, is built to track only the most recently seen [latex]3[/latex] input symbols, entering its unique accepting state precisely when those last three symbols read are exactly \"[latex]bab[/latex]\" &mdash; i.e. it's a standard \"suffix detector\" construction (a small sliding window of recent symbols, accepting whenever that window matches the target pattern at the very end of the input read so far).<br><br>\nThis is a different (and stricter) condition than merely \"contains bab somewhere\" (that DFA would need to <i>stay</i> accepting once the pattern is seen, regardless of what comes after, rather than resetting/tracking only the tail) or \"even number of b's\" or \"excludes aba\" (which are entirely different acceptance conditions with different structural transitions).<br><br>\n<b>Answer: The set of all strings ending with the pattern bab.</b><br><br><a href=\"https://gateoverflow.in/460040/gate-cse-2025-set-1-question-40#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Finite Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/finite-automata",
+   "options": [
+    "The set of all strings containing an even number of [latex] b [/latex]'s.",
+    "The set of all strings containing the pattern [latex] bab [/latex].",
+    "The set of all strings ending with the pattern [latex] bab [/latex].",
+    "The set of all strings not containing the pattern [latex] aba [/latex]."
+   ],
+   "correctSet": [
+    2
+   ]
+  }
+ ]
+}

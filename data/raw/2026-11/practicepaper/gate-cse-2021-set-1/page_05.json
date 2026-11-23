@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11211,
+  "quizName": "GATE CSE 2021 SET 1",
+  "pageTitle": "GATE CSE 2021 SET-1",
+  "timeLimit": 0,
+  "pageNo": 5,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2021-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1121121,
+   "number": 21,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the following sequence of operations on an empty stack.<br><br>\n\npush(54); push(52); pop(); push(55); push(62); s=pop();<br><br>\nConsider the following sequence of operations on an empty queue.\n<br><br>\nenqueue(21); enqueue(24); dequeue(); enqueue(28); enqueue(32); q=dequeue();<br><br>\nThe value of s+q is ___________.",
+   "solution": "Stack: push 54, push 52, pop (52), push 55, push 62, pop [latex]\\rightarrow[/latex] <b>s = 62</b>.<br>\nQueue: enqueue 21, 24, dequeue (21), enqueue 28, 32, dequeue [latex]\\rightarrow[/latex] <b>q = 24</b>.<br><br>\ns + q = 86<br><br>\n<b>Answer: 86</b><br><br><a href=\"https://gateoverflow.in/357430/gate-cse-2021-set-1-question-21#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Stack",
+   "tag2_url": "https://practicepaper.in/gate-cse/stack",
+   "ansMin": 86,
+   "ansMax": 86
+  },
+  {
+   "id": 1121122,
+   "number": 22,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider a computer system with a byte-addressable primary memory of size [latex]2^{32} \\text{ bytes}[/latex]. Assume the computer system has a direct-mapped cache of size [latex]32 KB (1 KB = 2^{10}  \\text{ bytes})[/latex], and each cache block is of size 64 bytes.<br>\nThe size of the tag field is __________ bits.",
+   "solution": "Lines = 32 KB / 64 B = 512 [latex]\\rightarrow[/latex] 9 index bits. Offset = 6 bits.<br><br>\nTag = 32 [latex]-[/latex] 9 [latex]-[/latex] 6 = 17 bits<br><br>\n<b>Answer: 17</b><br><br><a href=\"https://gateoverflow.in/357429/gate-cse-2021-set-1-question-22#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "ansMin": 17,
+   "ansMax": 17
+  },
+  {
+   "id": 1121123,
+   "number": 23,
+   "type": "NAT",
+   "marks": 1,
+   "text": "A relation [latex]r(A,B)[/latex] in a relational database has 1200 tuples. The attribute [latex]A[/latex] has integer values ranging from 6 to 20, and the attribute [latex]B[/latex] has integer values ranging from 1 to 20. Assume that the attributes [latex]A[/latex] and [latex]B[/latex] are independently distributed.\n<br><br>\nThe estimated number of tuples in the output of [latex]\\sigma _{(A > 10)\\vee(B=18)}(r)[/latex] is ____________",
+   "solution": "A takes 15 values (6-20) and B takes 20 values (1-20). The official key accepts two answers, depending on what is counted.<br><br>\n<b>Method 1: estimated tuples in the output = 820</b><br>\n- A [latex]\\gt[/latex] 10 holds for 11-20, 10 of 15 values [latex]\\rightarrow[/latex] [latex]P=\\frac23[/latex]<br>\n- [latex]P(B=18)=\\frac1{20}[/latex]<br>\n- Independent: [latex]P(A \\gt 10\\vee B=18)=\\frac23+\\frac1{20}-\\frac23\\cdot\\frac1{20}=\\frac{41}{60}[/latex]<br>\n- Estimated tuples [latex]=1200\\times\\frac{41}{60}=820[/latex]<br><br>\n<b>Method 2: distinct (A, B) value pairs that satisfy the condition = 205</b><br>\n- A [latex]\\gt[/latex] 10 with any B: [latex]10\\times20=200[/latex] pairs<br>\n- B = 18 with A [latex]\\le[/latex] 10 (A = 6-10): 5 more pairs<br>\n- Total [latex]=200+5=205[/latex]<br><br>\n<b>Answer: 820 (estimated tuples) or 205 (distinct value pairs); both are accepted</b><br><br><a href=\"https://gateoverflow.in/357428/gate-cse-2021-set-1-question-23#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Tuple Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/tuple-calculus",
+   "ansMin": 205,
+   "ansMax": 205
+  },
+  {
+   "id": 1121124,
+   "number": 24,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the following representation of a number in IEEE 754 single-precision floating point format with a bias of 127.<br><br>\nS:1<br>E:10000001<br>F:11110000000000000000000<br><br>\nHere, S,E and F denote the sign, exponent, and fraction components of the floating point representation.<br><br>\nThe decimal value corresponding to the above representation (rounded to 2 decimal places) is ____________.",
+   "solution": "Exponent = 129 [latex]-[/latex] 127 = 2. Mantissa = 1.1111[latex]{}_2[/latex] = 1 + 0.5 + 0.25 + 0.125 + 0.0625 = 1.9375. Sign 1 [latex]\\rightarrow[/latex] negative.<br><br>\nValue [latex]=-1.9375\\times2^2=-7.75[/latex]<br><br>\n<b>Answer: -7.75</b><br><br><a href=\"https://gateoverflow.in/357427/gate-cse-2021-set-1-question-24#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "ansMin": -7.75,
+   "ansMax": -7.75
+  },
+  {
+   "id": 1121125,
+   "number": 25,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Three processes arrive at time zero with CPU bursts of 16, 20 and 10 milliseconds. If the scheduler has prior knowledge about the length of the CPU bursts, the minimum achievable average waiting time for these three processes in a non-preemptive scheduler (rounded to nearest integer) is _____________ milliseconds.",
+   "solution": "Shortest job first minimizes average waiting time. Order 10, 16, 20:<br>\nwaiting times 0, 10, 26 [latex]\\rightarrow[/latex] average = 36 / 3 = 12 ms.<br><br>\n<b>Answer: 12</b><br><br><a href=\"https://gateoverflow.in/357426/gate-cse-2021-set-1-question-25#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "CPU Scheduling",
+   "tag2_url": "https://practicepaper.in/gate-cse/cpu-scheduling",
+   "ansMin": 12,
+   "ansMax": 12
+  }
+ ]
+}

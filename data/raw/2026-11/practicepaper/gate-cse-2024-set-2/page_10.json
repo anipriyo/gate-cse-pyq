@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11242,
+  "quizName": "GATE CSE 2024 SET-2",
+  "pageTitle": "GATE CSE 2024 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 10,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124246,
+   "number": 46,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A functional dependency [latex]F:X \\rightarrow Y[/latex] is termed as a useful functional dependency if\nand only if it satisfies all the following three conditions:<br><br>\n[latex]X[/latex] is not the empty set.\n[latex]Y[/latex] is not the empty set.\nIntersection of [latex]X[/latex] and [latex]Y[/latex] is the empty set.<br><br>\nFor a relation [latex]R[/latex] with 4 attributes, the total number of possible useful functional\ndependencies is ______\n",
+   "solution": "X and Y must be non-empty and disjoint. Each of the 4 attributes goes to X, to Y, or to neither: [latex]3^4=81[/latex] ways.<br><br>\nRemove cases with X empty ([latex]2^4=16[/latex]) and Y empty ([latex]16[/latex]); add back both empty (1):<br>\n[latex]81-16-16+1=50[/latex]<br><br>\n<b>Answer: 50</b><br><br><a href=\"https://gateoverflow.in/422851/gate-cse-2024-set-2-question-46#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Relational Schema",
+   "tag2_url": "https://practicepaper.in/gate-cse/relational-schema",
+   "ansMin": 50,
+   "ansMax": 50
+  },
+  {
+   "id": 1124247,
+   "number": 47,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A processor with 16 general purpose registers uses a 32-bit instruction format. The\ninstruction format consists of an opcode field, an addressing mode field, two register\noperand fields, and a 16-bit scalar field. If 8 addressing modes are to be supported,\nthe maximum number of unique opcodes possible for every addressing mode\nis _________",
+   "solution": "Divide the 32 bits among the fields:<br>- 16 registers [latex]\\rightarrow[/latex] 4 bits per register field, two fields = 8 bits<br>\n- 8 addressing modes [latex]\\rightarrow[/latex] 3 bits<br>\n- Scalar field = 16 bits<br><br>\nOpcode bits [latex]=32-8-3-16=5[/latex] [latex]\\rightarrow[/latex] [latex]2^5=32[/latex] opcodes.<br><br>\n<b>Answer: 32</b><br><br><a href=\"https://gateoverflow.in/422850/gate-cse-2024-set-2-question-47#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Machine Instruction",
+   "tag2_url": "https://practicepaper.in/gate-cse/machine-instruction",
+   "ansMin": 32,
+   "ansMax": 32
+  },
+  {
+   "id": 1124248,
+   "number": 48,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A non-pipelined instruction execution unit operating at 2 GHz takes an average of\n6 cycles to execute an instruction of a program P. The unit is then redesigned to\noperate on a 5-stage pipeline at 2 GHz. Assume that the ideal throughput of the\npipelined unit is 1 instruction per cycle. In the execution of program P,\n20% instructions incur an average of 2 cycles stall due to data hazards and\n20% instructions incur an average of 3 cycles stall due to control hazards. The\nspeedup (rounded off to one decimal place) obtained by the pipelined design over\nthe non-pipelined design is ________",
+   "solution": "Non-pipelined: 6 cycles per instruction.<br>\nPipelined CPI [latex]=1+0.2\\times2+0.2\\times3=1+0.4+0.6=2[/latex]<br><br>\nSame clock (2 GHz), so speedup [latex]=6/2=3.0[/latex]<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/422849/gate-cse-2024-set-2-question-48#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Pipeline Processor",
+   "tag2_url": "https://practicepaper.in/gate-cse/pipeline-processor",
+   "ansMin": 2.9,
+   "ansMax": 3.1
+  },
+  {
+   "id": 1124249,
+   "number": 49,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The number of distinct minimum-weight spanning trees of the following graph\nis _______<br><img src=\"/wp-content/uploads/GATE/CS/20242/q49.webp\" /><br>",
+   "solution": "Use Kruskal's idea.<br><br>\n- All four weight-1 edges (a-b, a-f, c-d, d-e) form no cycle, so every MST contains them. Components: {a, b, f}, {c, d, e}, {g}.<br>\n- Now g must be joined to both components using weight-2 edges:<br>\n[latex]\\quad[/latex]g to {a, b, f}: g-a, g-b, g-f [latex]\\rightarrow[/latex] 3 choices<br>\n[latex]\\quad[/latex]g to {c, d, e}: g-c, g-d, g-e [latex]\\rightarrow[/latex] 3 choices<br>\n- Weight-3 edges are never needed.<br><br>\nNumber of MSTs [latex]=3\\times3=9[/latex] (each of weight 8).<br><br>\n<b>Answer: 9</b><br><br><a href=\"https://gateoverflow.in/422848/gate-cse-2024-set-2-question-49#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Minimum Spanning Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/minimum-spanning-tree",
+   "ansMin": 9,
+   "ansMax": 9
+  },
+  {
+   "id": 1124250,
+   "number": 50,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The chromatic number of a graph is the minimum number of colours used in a\nproper colouring of the graph. The chromatic number of the following graph\nis _______<br><img src=\"/wp-content/uploads/GATE/CS/20242/q50.webp\" /><br>",
+   "solution": "Number the 8 vertices 1 to 8 around the octagon.<br><br>\n- The 8 outer sides join consecutive vertices (odd-even).<br>\n- Every inner line (the 2 vertical, 2 horizontal and 4 slanted lines) joins two vertices 3 steps apart around the octagon, which is again one odd and one even vertex.<br><br>\nSo colour odd vertices with colour 1 and even vertices with colour 2: no edge has both ends the same colour. The graph is bipartite, and it has edges, so it needs at least 2 colours.<br><br>\n<b>Answer: 2</b><br><br><a href=\"https://gateoverflow.in/422847/gate-cse-2024-set-2-question-50#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "ansMin": 2,
+   "ansMax": 2
+  }
+ ]
+}

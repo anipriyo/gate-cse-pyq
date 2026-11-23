@@ -1,0 +1,127 @@
+{
+ "meta": {
+  "quizId": 11252,
+  "quizName": "GATE CSE 2025 SET-2",
+  "pageTitle": "GATE CSE 2025 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 9,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2025-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1125241,
+   "number": 41,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider two grammars [latex]G1 [/latex] and [latex]G2 [/latex] with the production rules given below:<br><br>\n[latex]\nG1: S \\to \\text{if} E \\text{ then } S \\mid \\text{if} E \\text{ then } S \\text{ else } S \\mid a\n[/latex]<br>\n[latex]\nE \\to b\n[/latex]<br><br>\n[latex]\nG2: S \\to \\text{if} E \\text{ then } S \\mid M\n[/latex]<br>\n[latex]\nM \\to \\text{if} E \\text{ then } M \\text{ else } S \\mid c\n[/latex]<br>\n[latex]\nE \\to b\n[/latex]<br><br>where [latex] if,then,else,a,b,c[/latex] are the terminals. <br><br>\nWhich of the following option(s) is/are CORRECT?",
+   "solution": "<b>LL(1) check:</b> in [latex]G1[/latex], the two alternatives for [latex]S[/latex] ([latex]S\\to\\text{if}\\,E\\,\\text{then}\\,S[/latex] and [latex]S\\to\\text{if}\\,E\\,\\text{then}\\,S\\,\\text{else}\\,S[/latex]) both start with the terminal \"if\" &mdash; a parser with just one token of lookahead cannot tell which alternative to use upon seeing \"if\" (a FIRST/FIRST conflict), so [latex]G1[/latex] is not LL(1). In [latex]G2[/latex], despite the [latex]M[/latex]-split attempting to disambiguate dangling-else, [latex]S[/latex]'s own alternatives ([latex]S\\to\\text{if}\\,E\\,\\text{then}\\,S[/latex] and [latex]S\\to M[/latex], where [latex]M[/latex] can itself start with \"if\") suffer the exact same kind of FIRST/FIRST conflict on seeing \"if\" &mdash; so [latex]G2[/latex] is not LL(1) either. (Being unambiguous doesn't automatically make a grammar LL(1); left-factoring is a separate requirement.)<br><br>\n<b>Ambiguity:</b> [latex]G1[/latex] is the textbook dangling-else grammar, well known to be ambiguous (a nested if-then with one else can be parsed by attaching the else to either the outer or inner if). The official analysis of [latex]G2[/latex] here also finds it to be ambiguous, despite the attempted matched/unmatched split.<br><br>\n<b>Answer: G1 and G2 are both not LL(1); and both are ambiguous.</b><br><br><a href=\"https://gateoverflow.in/460852/gate-cse-2025-set-2-question-41#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Grammar",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-grammar",
+   "options": [
+    "[latex]G1 [/latex] is not LL(1) and [latex]G2 [/latex] is LL(1).",
+    "[latex]G1 [/latex] is LL(1) and [latex]G2 [/latex] is not LL(1).",
+    "[latex]G1 [/latex] and [latex]G2 [/latex] are not LL(1).",
+    "[latex]G1 [/latex] and [latex]G2 [/latex] are ambiguous. "
+   ],
+   "correctSet": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1125242,
+   "number": 42,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Let [latex]\\Sigma = \\{a, b, c\\} [/latex]. For [latex]x \\in \\Sigma^* [/latex], and [latex]\\alpha \\in \\Sigma [/latex], let [latex]\\# _\\alpha (x) [/latex] denote the number of occurrences of [latex]\\alpha [/latex] in [latex]x [/latex].  <br><br>\nWhich one or more of the following option(s) define(s) regular language(s)?",
+   "solution": "<b>[latex]\\{a^mb^n\\mid m,n\\ge0\\}[/latex]:</b> simply any number of [latex]a[/latex]'s followed by any number of [latex]b[/latex]'s, with no relationship required between the two counts &mdash; matched exactly by the regular expression [latex]a^*b^*[/latex]. <b>Regular.</b><br><br>\n<b>[latex]\\{a,b\\}^*\\cap\\{a^mb^nc^{m-n}\\mid m\\ge n\\ge0\\}[/latex]:</b> intersecting with [latex]\\{a,b\\}^*[/latex] (strings with <i>no</i> [latex]c[/latex]'s at all) forces [latex]c^{m-n}[/latex] to be the empty string, i.e. [latex]m=n[/latex] exactly. This leaves exactly [latex]\\{a^nb^n\\mid n\\ge0\\}[/latex] &mdash; the classic non-regular language (requires unbounded exact-count matching). <b>Not regular.</b><br><br>\n<b>[latex]\\{w\\mid\\#_a(w)\\equiv2\\pmod7,\\ \\#_b(w)\\equiv3\\pmod9\\}[/latex]:</b> despite unbounded counts of [latex]a[/latex]'s and [latex]b[/latex]'s, only their values <i>modulo</i> a fixed number matter, which needs only [latex]7\\times9=63[/latex] distinct states to track (a finite automaton cycling through remainders). <b>Regular.</b><br><br>\n<b>[latex]\\{w\\mid\\#_a(w)\\equiv2\\pmod7,\\ \\#_a(w)=\\#_b(w)\\}[/latex]:</b> the modular part alone would be fine, but the additional requirement of <i>exact</i> equality between [latex]\\#_a(w)[/latex] and [latex]\\#_b(w)[/latex] (unbounded, not just modular) needs unbounded memory. <b>Not regular.</b><br><br>\n<b>Answer: {a^m b^n} and the mod-7/mod-9 language are both regular.</b><br><br><a href=\"https://gateoverflow.in/460851/gate-cse-2025-set-2-question-42#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Regular Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/regular-language",
+   "options": [
+    "[latex]\\{ a^m b^n \\mid m, n \\geq 0 \\} [/latex]",
+    "[latex]\\{ a, b \\}^* \\cap \\{ a^m b^n c^{m-n} \\mid m \\geq n \\geq 0 \\} [/latex]",
+    "[latex]\\{ w \\mid w \\in \\{ a, b \\}^*, \\#_a(w) \\equiv 2 \\ (\\text{mod}\\ 7), \\#_b(w) \\equiv 3 \\ (\\text{mod}\\ 9) \\} [/latex]",
+    "[latex]\\{ w \\mid w \\in \\{ a, b \\}^*, \\#_a(w) \\equiv 2 \\ (\\text{mod}\\ 7), \\#_a(w) = \\#_b(w) \\} [/latex]"
+   ],
+   "correctSet": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": 1125243,
+   "number": 43,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider the database transactions [latex]T1 [/latex] and [latex]T2 [/latex], and data items [latex]X [/latex] and [latex]Y [/latex]. Which of the schedule(s) is/are conflict serializable?\n<br><br>\n[latex] \\begin{array}{|l|}\n    \\hline\n    \\textbf{Transaction T1} \\\\ \\hline\n    R1(X) \\\\ \\hline\n    W1(Y) \\\\ \\hline\n    R1(X) \\\\ \\hline\n    W1(X) \\\\ \\hline\n    \\text{COMMIT(T1)} \\\\ \\hline\n\\end{array}\n[/latex]\n<br><br>\n[latex] \\begin{array}{|l|}\n    \\hline\n    \\textbf{Transaction T2} \\\\ \\hline\n    W2(X) \\\\ \\hline\n    W2(Y) \\\\ \\hline\n    \\text{COMMIT(T2)} \\\\ \\hline\n\\end{array}\n[/latex]",
+   "solution": "Build the conflict/precedence graph for each schedule (an edge [latex]T_i\\to T_j[/latex] whenever an operation of [latex]T_i[/latex] on some data item precedes a conflicting operation of [latex]T_j[/latex] on the same item, with at least one being a write); the schedule is conflict serializable iff this graph has no cycle.<br><br>\nChecking [latex]R1(X),W2(X),W1(Y),W2(Y),R1(X),W1(X),\\ldots[/latex]: the first [latex]R1(X)[/latex] before [latex]W2(X)[/latex] gives [latex]T1\\to T2[/latex], but the later [latex]R1(X)[/latex] appearing <i>after</i> [latex]W2(X)[/latex] gives [latex]T2\\to T1[/latex] &mdash; a cycle. <b>Not serializable.</b><br><br>\nChecking [latex]W2(X),R1(X),W2(Y),W1(Y),R1(X),\\ldots,W1(X),\\ldots[/latex]: every conflicting pair consistently gives [latex]T2\\to T1[/latex] (write-then-read on [latex]X[/latex] first, write-then-write on [latex]Y[/latex], and the final [latex]W1(X)[/latex] happens safely after [latex]T2[/latex] has already committed) &mdash; no cycle. <b>Conflict serializable.</b><br><br>\nThe other two schedules can be checked the same way and each produces a cycle (conflicting edges pointing in both directions between T1 and T2).<br><br>\n<b>Answer: Only \"W2(X), R1(X), W2(Y), W1(Y), R1(X), COMMIT(T2), W1(X), COMMIT(T1)\" is conflict serializable.</b><br><br><a href=\"https://gateoverflow.in/460850/gate-cse-2025-set-2-question-43#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Transaction",
+   "tag2_url": "https://practicepaper.in/gate-cse/transaction",
+   "options": [
+    "[latex]R1(X), W2(X), W1(Y), W2(Y), R1(X), W1(X), \\text{COMMIT}(T2), \\text{COMMIT}(T1) [/latex]",
+    "[latex]W2(X), R1(X), W2(Y), W1(Y), R1(X), \\text{COMMIT}(T2), W1(X), \\text{COMMIT}(T1) [/latex]",
+    "[latex]R1(X), W1(Y), W2(X), W2(Y), R1(X), W1(X), \\text{COMMIT}(T1), \\text{COMMIT}(T2) [/latex]",
+    "[latex]W2(X), R1(X), W1(Y), W2(Y), R1(X), \\text{COMMIT}(T2), W1(X), \\text{COMMIT}(T1) [/latex]"
+   ],
+   "correctSet": [
+    1
+   ]
+  },
+  {
+   "id": 1125244,
+   "number": 44,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider the following relational schema:<br><br>\n[latex]\n\\text{Students} (\\text{\\underline{rollno: integer,} name: string, age: integer, cgpa: real})\n[/latex]<br>\n[latex]\n\\text{Courses} (\\text{\\underline{courseno: integer,} cname: string, credits: integer})\n[/latex]<br>\n[latex]\n\\text{Enrolled} (\\text{ \\underline{rollno: integer,} \\underline{courseno: integer,} grade: string})\n[/latex]<br><br>\nWhich of the following options is/are correct SQL query/queries to retrieve the names of the students enrolled in course number (i.e. courseno) 1470?",
+   "solution": "All of the standard relational-algebra-equivalent SQL formulations for \"students who have an Enrolled row with courseno=1470\" are valid: using <b>[latex]\\text{EXISTS}[/latex]</b> with a correlated subquery, using <b>[latex]\\text{COUNT(*)} > 0[/latex]</b> in place of EXISTS (logically identical test), and using a <b>[latex]\\text{NATURAL JOIN}[/latex]</b> between Students and Enrolled (which automatically joins on the shared [latex]rollno[/latex] column) filtered by courseno &mdash; all three correctly retrieve the same set of names.<br><br>\nThe option using <b>[latex]\\text{SIZEOF}[/latex]</b> is not valid: standard SQL has no [latex]\\text{SIZEOF}[/latex] operator/function for comparing subquery result sizes this way (that's not real SQL syntax).<br><br>\n<b>Answer: The EXISTS query, the COUNT(*)&gt;0 query, and the NATURAL JOIN query are all correct.</b><br><br><a href=\"https://gateoverflow.in/460849/gate-cse-2025-set-2-question-44#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "SQL",
+   "tag2_url": "https://practicepaper.in/gate-cse/sql",
+   "options": [
+    "SELECT S.name FROM Students S WHERE EXISTS (SELECT * FROM Enrolled E WHERE E.courseno = 1470 AND E.rollno = S.rollno)",
+    "SELECT S.name FROM Students S WHERE SIZEOF (SELECT * FROM Enrolled E WHERE E.courseno = 1470 AND E.rollno = S.rollno) > 0",
+    "SELECT S.name FROM Students S WHERE 0 < (SELECT COUNT(*) FROM Enrolled E WHERE E.courseno = 1470 AND E.rollno = S.rollno)",
+    "SELECT S.name FROM Students S NATURAL JOIN Enrolled E WHERE E.courseno = 1470"
+   ],
+   "correctSet": [
+    0,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1125245,
+   "number": 45,
+   "type": "NAT",
+   "marks": 2,
+   "text": " Given a computing system with two levels of cache (L1 and L2) and a main memory. The first level (L1) cache access time is 1 nanosecond (ns) and the \"hit rate\" for L1 cache is 90% while the processor is accessing the data from L1 cache. Whereas, for the second level (L2) cache, the \"hit rate\" is 80% and the \"miss penalty\" for transferring data from L2 cache to L1 cache is 10 ns. The \"miss penalty\" for the data to be transferred from main memory to L2 cache is 100 ns. <br><br>Then the average memory access time in this system in nanoseconds is ___________ . (rounded off to one decimal place)",
+   "solution": "Since L1 access time ([latex]T_1=1[/latex] ns) is always paid first regardless of outcome, and L2/main memory are only reached on a miss, the average access time weights all three possible outcomes &mdash; L1 hit, L1-miss-then-L2-hit, and miss-both-then-main-memory:<br><br>\n[latex]\\text{AMAT}=H_1T_1+(1-H_1)\\Big[H_2(T_1+T_2)+(1-H_2)(T_1+T_2+T_3)\\Big][/latex]<br><br>\nwhere [latex]T_2=10[/latex] ns is the extra penalty to fetch from L2 to L1 (on top of the L1 time already spent), and [latex]T_3=100[/latex] ns is the further extra penalty to fetch from main memory (on top of both L1 and L2 time already spent), with [latex]H_1=0.9,\\ H_2=0.8[/latex].<br><br>\n[latex]=0.9(1)+0.1\\Big[0.8(1+10)+0.2(1+10+100)\\Big]=0.9+0.1\\big[0.8(11)+0.2(111)\\big]=0.9+0.1(8.8+22.2)=0.9+0.1(31)=0.9+3.1=4.0[/latex]<br><br>\n<b>Answer: 4.0</b><br><br><a href=\"https://gateoverflow.in/460848/gate-cse-2025-set-2-question-45#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "ansMin": 4,
+   "ansMax": 4
+  }
+ ]
+}

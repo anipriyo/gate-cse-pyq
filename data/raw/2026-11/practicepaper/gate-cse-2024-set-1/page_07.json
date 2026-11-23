@@ -1,0 +1,126 @@
+{
+ "meta": {
+  "quizId": 11241,
+  "quizName": "GATE CSE 2024 SET-1",
+  "pageTitle": "GATE CSE 2024 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 7,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124131,
+   "number": 31,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "An array [latex][82,101,90,11,111,75,33,131,44,93] [/latex] is heapified. Which one of the following options represents the first three elements in the heapified array?",
+   "solution": "Build a max-heap bottom-up (heapify from index [latex]\\lfloor10/2\\rfloor=5[/latex] down to 1):<br>\n[82, 101, 90, 11, 111, 75, 33, 131, 44, 93]<br><br>\n- i=5 (111): child 93 [latex]\\rightarrow[/latex] no change.<br>\n- i=4 (11): children 131, 44 [latex]\\rightarrow[/latex] swap with 131.<br>\n- i=3 (90): children 75, 33 [latex]\\rightarrow[/latex] no change.<br>\n- i=2 (101): children 131, 111 [latex]\\rightarrow[/latex] swap with 131 (101 then fine above 11, 44).<br>\n- i=1 (82): swap with 131, then with 111, then with 93.<br><br>\nHeap: [131, 111, 90, 101, 93, 75, 33, 11, 44, 82]<br><br>\n<b>Answer: 131, 111, 90</b><br><br><a href=\"https://gateoverflow.in/422811/gate-cse-2024-set-1-question-31#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Heap Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/heap-tree",
+   "options": [
+    "[latex]82,90,101 [/latex]",
+    "[latex]82,11,93 [/latex]",
+    "[latex]131,11,93 [/latex]",
+    "[latex]131,111,90 [/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1124132,
+   "number": 32,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following recurrence relation:\n<br> [latex]\nT(n)=\\left\\{\\begin{array}{c}\n\\sqrt{n} T(\\sqrt{n})+n \\text { for } n \\geq 1, \\\\\n1 \\quad \\text { for } n=1 .\n\\end{array}\\right.\n [/latex] <br>\n\nWhich one of the following options is CORRECT?",
+   "solution": "Divide both sides by [latex]n[/latex]: [latex]\\frac{T(n)}{n}=\\frac{T(\\sqrt n)}{\\sqrt n}+1[/latex].<br><br>\nLet [latex]S(n)=\\frac{T(n)}{n}[/latex]. Then [latex]S(n)=S(\\sqrt n)+1[/latex].<br><br>\nTaking square roots repeatedly, [latex]n\\to n^{1/2}\\to n^{1/4}\\to\\cdots[/latex] reaches a constant after [latex]\\log\\log n[/latex] steps, adding 1 each step. So [latex]S(n)=\\Theta(\\log\\log n)[/latex].<br><br>\n[latex]T(n)=n\\,S(n)=\\Theta(n\\log\\log n)[/latex]<br><br>\n<b>Answer: [latex]T(n)=\\Theta(n\\log\\log n)[/latex]</b><br><br><a href=\"https://gateoverflow.in/422810/gate-cse-2024-set-1-question-32#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Recurrence Relation",
+   "tag2_url": "https://practicepaper.in/gate-cse/recurrence-relation",
+   "options": [
+    "[latex]T(n)=\\Theta(n \\log \\log n) [/latex]",
+    "[latex]T(n)=\\Theta(n \\log n) [/latex]",
+    "[latex]T(n)=\\Theta\\left(n^2 \\log n\\right) [/latex]",
+    "[latex]T(n)=\\Theta\\left(n^2 \\log \\log n\\right) [/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1124133,
+   "number": 33,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a binary min-heap containing 105 distinct elements. Let [latex]k[/latex]  be the index (in the underlying array) of the maximum element stored in the heap. The number of possible values of [latex]k[/latex] is",
+   "solution": "In a min-heap every parent is smaller than its children, so the maximum element cannot have a child [latex]\\text{---}[/latex] it must be a <b>leaf</b>. Any leaf can hold it.<br><br>\nIn an array heap of [latex]n[/latex] elements, leaves are at indices [latex]\\lfloor n/2\\rfloor+1[/latex] to [latex]n[/latex].<br><br>\n[latex]n=105[/latex]: leaves are 53 to 105 [latex]\\rightarrow[/latex] [latex]105-52=53[/latex] positions.<br><br>\n<b>Answer: 53</b><br><br><a href=\"https://gateoverflow.in/422809/gate-cse-2024-set-1-question-33#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Heap Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/heap-tree",
+   "options": [
+    "53",
+    "52",
+    "27",
+    "1"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1124134,
+   "number": 34,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "The symbol [latex] \\rightarrow [/latex] indicates functional dependency in the context of a relational database. Which of the following options is/are TRUE?",
+   "solution": "Checking each statement:<br>- [latex](X,Y)\\rightarrow(Z,W)[/latex] does not give [latex]X\\rightarrow(Z,W)[/latex]; Y may be required [latex]\\text{---}[/latex] FALSE.<br>\n- Decomposition rule: [latex]XY\\rightarrow ZW[/latex] [latex]\\Rightarrow[/latex] [latex]XY\\rightarrow Z[/latex] [latex]\\text{---}[/latex] TRUE.<br>\n- Pseudo-transitivity: [latex]W\\rightarrow Y[/latex] [latex]\\Rightarrow[/latex] [latex]XW\\rightarrow XY[/latex] (augment by X), and [latex]XY\\rightarrow Z[/latex], so [latex]XW\\rightarrow Z[/latex] [latex]\\text{---}[/latex] TRUE.<br>\n- Transitivity: [latex]X\\rightarrow Y,\\;Y\\rightarrow Z[/latex] [latex]\\Rightarrow[/latex] [latex]X\\rightarrow Z[/latex] [latex]\\text{---}[/latex] TRUE.<br><br>\n<b>Answer: Options 2, 3 and 4</b><br><br><a href=\"https://gateoverflow.in/422808/gate-cse-2024-set-1-question-34#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Relational Schema",
+   "tag2_url": "https://practicepaper.in/gate-cse/relational-schema",
+   "options": [
+    "[latex] (X, Y) \\rightarrow(Z, W) \\text { implies } X \\rightarrow(Z, W)  [/latex]",
+    "[latex] (X, Y) \\rightarrow(Z, W) \\text { implies }(X, Y) \\rightarrow Z  [/latex]",
+    "[latex] ((X, Y) \\rightarrow Z \\text { and } W \\rightarrow Y) \\text { implies }(X, W) \\rightarrow Z  [/latex]",
+    "[latex] (X \\rightarrow Y \\text { and } Y \\rightarrow Z) \\text { implies } X \\rightarrow Z [/latex]"
+   ],
+   "correctSet": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1124135,
+   "number": 35,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Let [latex] G [/latex] be a directed graph and [latex] T [/latex] a depth first search (DFS) spanning tree in [latex] G [/latex] that is rooted at a vertex [latex] v [/latex]. Suppose [latex] T [/latex] is also a breadth first search (BFS) tree in [latex] G [/latex], rooted at [latex] v [/latex]. Which of the following statements is/are TRUE for every such graph [latex] G [/latex] and tree [latex] T [/latex] ?",
+   "solution": "In a BFS tree, every edge [latex]u\\rightarrow w[/latex] of G satisfies [latex]level(w)\\le level(u)+1[/latex].<br><br>\nA <b>forward edge</b> goes from [latex]u[/latex] to a non-child descendant [latex]w[/latex], so [latex]level(w)\\ge level(u)+2[/latex] [latex]\\text{---}[/latex] this contradicts BFS. Hence there are no forward edges [latex]\\text{---}[/latex] TRUE.<br><br>\nThe others can fail:<br>\n- Back edge: G = {v[latex]\\rightarrow[/latex]a, a[latex]\\rightarrow[/latex]v}. Tree {v[latex]\\rightarrow[/latex]a} is both DFS and BFS tree; a[latex]\\rightarrow[/latex]v is a back edge.<br>\n- Cross edge: G = {v[latex]\\rightarrow[/latex]a, v[latex]\\rightarrow[/latex]b, b[latex]\\rightarrow[/latex]a}. DFS visits a then b; b[latex]\\rightarrow[/latex]a is a cross edge, and the tree is also the BFS tree.<br>\n- So G can also have edges outside T.<br><br>\n<b>Answer: There are no forward-edges in G with respect to T</b><br><br><a href=\"https://gateoverflow.in/422807/gate-cse-2024-set-1-question-35#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "options": [
+    "There are no back-edges in [latex] G [/latex] with respect to the tree [latex] T [/latex]",
+    "There are no cross-edges in [latex] G [/latex] with respect to the tree [latex] T [/latex]",
+    "There are no forward-edges in [latex] G [/latex] with respect to the tree [latex] T [/latex]",
+    "The only edges in [latex] G [/latex] are the edges in [latex] T [/latex]"
+   ],
+   "correctSet": [
+    2
+   ]
+  }
+ ]
+}

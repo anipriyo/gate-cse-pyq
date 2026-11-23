@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11251,
+  "quizName": "GATE CSE 2025 SET-1",
+  "pageTitle": "GATE CSE 2025 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 11,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2025-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1125151,
+   "number": 51,
+   "type": "NAT",
+   "marks": 2,
+   "text": "<pre><code>#include &lt;stdio.h&gt;  \nint foo(int S[],int size){  \n    if(size == 0) return 0;  \n    if(size == 1) return 1;  \n    if(S[0] != S[1]) return 1+foo(S+1,size-1);  \n    return foo(S+1,size-1);  \n}  \nint main(){  \n    int A[]={0,1,2,2,2,0,0,1,1};  \n    printf(\"%d\",foo(A,9));  \n    return 0;  \n}  \n</code></pre>  \n\nThe value printed by the given C program is _________. (Answer in integer).",
+   "solution": "Trace the recursion on [latex]A=[0,1,2,2,2,0,0,1,1][/latex] (comparing each element to its immediate neighbor, adding [latex]1[/latex] whenever they differ):<br><br>\n[latex]\\begin{array}{l}foo([0,1,\\ldots])=1+foo([1,2,\\ldots])\\quad(0\\ne1)\\\\foo([1,2,\\ldots])=1+foo([2,2,\\ldots])\\quad(1\\ne2)\\\\foo([2,2,2,0,\\ldots])=foo([2,2,0,\\ldots])\\quad(2=2)\\\\foo([2,2,0,\\ldots])=foo([2,0,0,\\ldots])\\quad(2=2)\\\\foo([2,0,0,1,1])=1+foo([0,0,1,1])\\quad(2\\ne0)\\\\foo([0,0,1,1])=foo([0,1,1])\\quad(0=0)\\\\foo([0,1,1])=1+foo([1,1])\\quad(0\\ne1)\\\\foo([1,1])=foo([1])\\quad(1=1)\\\\foo([1])=1\\quad(\\text{base case, size}=1)\\end{array}[/latex]<br><br>\nUnwinding: [latex]foo([1,1])=1[/latex], [latex]foo([0,1,1])=1+1=2[/latex], [latex]foo([0,0,1,1])=2[/latex], [latex]foo([2,0,0,1,1])=1+2=3[/latex], [latex]foo([2,2,0,\\ldots])=3[/latex], [latex]foo([2,2,2,\\ldots])=3[/latex], [latex]foo([1,2,\\ldots])=1+3=4[/latex], [latex]foo([0,1,\\ldots])=1+4=5[/latex].<br><br>\n<b>Answer: 5</b><br><br><a href=\"https://gateoverflow.in/460029/gate-cse-2025-set-1-question-51#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "ansMin": 5,
+   "ansMax": 5
+  },
+  {
+   "id": 1125152,
+   "number": 52,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Let LIST be a datatype for an implementation of linked list defined as follows:  \n<pre><code>\ntypedef struct list {  \n    int data;  \n    struct list *next;  \n} LIST;  \n</code></pre>\nSuppose the program has created two linked lists, L1 and L2,  whose contents are given \nin the figure below (code for creating L1 and L2 is not provided here). L1 contains 9 \nnodes, and L2 contains 7 nodes.<br><br>\nConsider the following C program segment that modifies the list L1. The number of nodes in L1 after the execution of the code segment is _________. (Answer in integer) <br><img src=\"/wp-content/uploads/GATE/CS/20251/q52.webp\"/><br>",
+   "solution": "From the given lists, [latex]L1: 1,7,12,3,9,5,11,15,8[/latex] and [latex]L2:1,11,6,9,15,12,4[/latex] (so [latex]L2=\\{1,11,6,9,15,12,4\\}[/latex] as a lookup set).<br><br>\nThe code walks [latex]ptr1[/latex] through [latex]L1[/latex], and for each node, looks at the <i>next</i> node's value: if that value is found anywhere in [latex]L2[/latex], the next node is unlinked (removed) and [latex]ptr1[/latex] stays put (to re-check the new next node); otherwise [latex]ptr1[/latex] simply advances.<br><br>\nTracing through: starting value [latex]7[/latex] (not in L2) &rarr; advance. Next value [latex]12[/latex] (in L2) &rarr; delete [latex]12[/latex]. Next value [latex]3[/latex] (not in L2) &rarr; advance. Next value [latex]9[/latex] (in L2) &rarr; delete [latex]9[/latex]. Next value [latex]5[/latex] (not in L2) &rarr; advance. Next value [latex]11[/latex] (in L2) &rarr; delete [latex]11[/latex]. Next value [latex]15[/latex] (in L2) &rarr; delete [latex]15[/latex]. Next value [latex]8[/latex] (not in L2) &rarr; advance; now at the last node, loop ends.<br><br>\nNodes removed: [latex]12,9,11,15[/latex] ([latex]4[/latex] nodes), leaving [latex]9-4=5[/latex] nodes: [latex]1,7,3,5,8[/latex].<br><br>\n<b>Answer: 5</b><br><br><a href=\"https://gateoverflow.in/460028/gate-cse-2025-set-1-question-52#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Link List",
+   "tag2_url": "https://practicepaper.in/gate-cse/link-list",
+   "ansMin": 5,
+   "ansMax": 5
+  },
+  {
+   "id": 1125153,
+   "number": 53,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following C program:\n<pre><code>\n#include &lt;stdio.h&gt;  \nint gate(int n) {  \n    int d, t, newnum, turn;  \n    newnum = turn = 0; t=1;  \n    while(n >= t) t *= 10;  \n    t /= 10;  \n    while(t > 0) {  \n        d = n / t;  \n        n = n % t;  \n        t /= 10;  \n        if(turn) newnum = 10 * newnum + d;  \n        turn = (turn + 1) % 2;  \n    }  \n    return newnum;  \n}  \nint main () {  \n    printf(\"%d\", gate(14362));  \n    return 0;  \n}\n</code></pre>\nThe value printed by the given C program is _________. (Answer in integer)",
+   "solution": "[latex]\\text{gate(14362)}[/latex] first works out that [latex]14362[/latex] has [latex]5[/latex] digits (via the [latex]t[/latex]-scaling loop), then peels off digits from <b>most significant to least significant</b>, keeping every <i>other</i> digit starting from the <b>2nd</b> digit (since [latex]turn[/latex] starts at [latex]0[/latex] &mdash; skip, then keep, skip, keep, ...).<br><br>\nDigits of [latex]14362[/latex] in order: [latex]1,4,3,6,2[/latex].<br>\n[latex]turn=0[/latex]: digit [latex]1[/latex] &mdash; skipped.<br>\n[latex]turn=1[/latex]: digit [latex]4[/latex] &mdash; kept, [latex]newnum=4[/latex].<br>\n[latex]turn=0[/latex]: digit [latex]3[/latex] &mdash; skipped.<br>\n[latex]turn=1[/latex]: digit [latex]6[/latex] &mdash; kept, [latex]newnum=4\\times10+6=46[/latex].<br>\n[latex]turn=0[/latex]: digit [latex]2[/latex] &mdash; skipped.<br><br>\nFinal [latex]newnum=46[/latex].<br><br>\n<b>Answer: 46</b><br><br><a href=\"https://gateoverflow.in/460027/gate-cse-2025-set-1-question-53#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Loop",
+   "tag2_url": "https://practicepaper.in/gate-cse/loop",
+   "ansMin": 46,
+   "ansMax": 46
+  },
+  {
+   "id": 1125154,
+   "number": 54,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The maximum value of [latex] x [/latex] such that the edge between the nodes B and C is included in every minimum spanning tree of the given graph is _________. (Answer in integer) <br><img src=\"/wp-content/uploads/GATE/CS/20251/q54.webp\"/><br>",
+   "solution": "From the given graph (vertices A, B, C, D with edges [latex]AB{=}7,\\ AD{=}6,\\ CD{=}8,\\ AC{=}1,\\ BD{=}3[/latex], and [latex]BC{=}x[/latex]), we want the largest [latex]x[/latex] for which edge [latex]BC[/latex] is forced into <b>every</b> MST.<br><br>\nChecking systematically for increasing [latex]x[/latex] (e.g. by comparing the total weight of all spanning trees that include [latex]BC[/latex] versus all spanning trees that exclude it): for [latex]x\\le5[/latex], every minimum spanning tree happens to include edge [latex]BC[/latex] (any spanning tree avoiding it ends up strictly heavier, since the cheapest way to connect [latex]B[/latex] and [latex]C[/latex]'s side of the graph without directly using [latex]BC[/latex] costs strictly more than [latex]5[/latex] extra). But once [latex]x=6[/latex], an alternative spanning tree that avoids edge [latex]BC[/latex] entirely becomes just as cheap (tied for minimum), so [latex]BC[/latex] is no longer forced into <i>every</i> MST.<br><br>\nSo the maximum value of [latex]x[/latex] that still guarantees [latex]BC[/latex] is in every MST is the last value before this tie appears.<br><br>\n<b>Answer: 5</b><br><br><a href=\"https://gateoverflow.in/460026/gate-cse-2025-set-1-question-54#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Minimum Spanning Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/minimum-spanning-tree",
+   "ansMin": 5,
+   "ansMax": 5
+  },
+  {
+   "id": 1125155,
+   "number": 55,
+   "type": "NAT",
+   "marks": 2,
+   "text": "In a double hashing scheme, [latex] h_1(k) = k \\mod 11 [/latex] and [latex] h_2(k) = 1 + (k \\mod 7) [/latex] are the auxiliary hash functions. The size [latex] m [/latex] of the hash table is 11. The hash function for the [latex] i [/latex]-th probe in the open address table is  [latex]\n[h_1(k) + i h_2(k)] \\mod m [/latex]\nThe following keys are inserted in the given order: 63, 50, 25, 79, 67, 24.  \n<br><br>\nThe slot at which key 24 gets stored is _________. (Answer in integer)",
+   "solution": "Double hashing: [latex]h_1(k)=k\\bmod11[/latex], [latex]h_2(k)=1+(k\\bmod7)[/latex], probe [latex]i[/latex]: [latex][h_1(k)+ih_2(k)]\\bmod11[/latex], table size [latex]11[/latex].<br><br>\nInsert in order, computing initial slot (and probing forward on collision):<br>\n[latex]63[/latex]: [latex]h_1=8[/latex] &rarr; slot [latex]8[/latex] (empty).<br>\n[latex]50[/latex]: [latex]h_1=6[/latex] &rarr; slot [latex]6[/latex] (empty).<br>\n[latex]25[/latex]: [latex]h_1=3[/latex] &rarr; slot [latex]3[/latex] (empty).<br>\n[latex]79[/latex]: [latex]h_1=2[/latex] &rarr; slot [latex]2[/latex] (empty).<br>\n[latex]67[/latex]: [latex]h_1=1[/latex] &rarr; slot [latex]1[/latex] (empty).<br>\n[latex]24[/latex]: [latex]h_1=2[/latex] (taken by [latex]79[/latex]), [latex]h_2=1+(24\\bmod7)=1+3=4[/latex]. Probe [latex]i=1[/latex]: [latex](2+4)\\bmod11=6[/latex] (taken by [latex]50[/latex]). Probe [latex]i=2[/latex]: [latex](2+8)\\bmod11=10[/latex] (empty) &rarr; placed at slot [latex]10[/latex].<br><br>\n<b>Answer: 10</b><br><br><a href=\"https://gateoverflow.in/460025/gate-cse-2025-set-1-question-55#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Hashing",
+   "tag2_url": "https://practicepaper.in/gate-cse/hashing",
+   "ansMin": 10,
+   "ansMax": 10
+  }
+ ]
+}

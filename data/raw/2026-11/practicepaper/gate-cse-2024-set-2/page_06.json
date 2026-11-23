@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11242,
+  "quizName": "GATE CSE 2024 SET-2",
+  "pageTitle": "GATE CSE 2024 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 6,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124226,
+   "number": 26,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "What is the output of the following C program?<pre><code>\n#include &lt;stdio.h&gt;\nint main() {\ndouble a[2]={20.0, 25.0}, *p, *q;\np = a;\nq = p + 1;\nprintf(\"%d,%d\", (int)(q - p), (int)(*q - *p));\nreturn 0;}</code></pre>",
+   "solution": "Evaluate both printed expressions:<br>- [latex]q=p+1[/latex], and pointer subtraction counts elements, not bytes: [latex]q-p=1[/latex].<br>\n- [latex]*q-*p=25.0-20.0=5.0[/latex], cast to int gives 5.<br><br>\nOutput: 1,5<br><br>\n<b>Answer: 1,5</b><br><br><a href=\"https://gateoverflow.in/422871/gate-cse-2024-set-2-question-26#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Array and Pointer",
+   "tag2_url": "https://practicepaper.in/gate-cse/array-and-pointer",
+   "options": [
+    "4,8",
+    "1,5",
+    "8,5",
+    "1,8"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1124227,
+   "number": 27,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a single processor system with four processes A, B, C, and D, represented\nas given below, where for each process the first value is its arrival time, and the\nsecond value is its CPU burst time.<br><br>\nA (0, 10), B (2, 6), C (4, 3), and D (6, 7).<br><br>\nWhich one of the following options gives the average waiting times when\npreemptive Shortest Remaining Time First (SRTF) and Non-Preemptive Shortest\nJob First (NP-SJF) CPU scheduling algorithms are applied to the processes?",
+   "solution": "<b>SRTF</b> Gantt chart: A(0-2), B(2-4), C(4-7), B(7-11), D(11-18), A(18-26)<br>\nWaiting = completion [latex]-[/latex] arrival [latex]-[/latex] burst:<br>\nA = 26[latex]-[/latex]0[latex]-[/latex]10 = 16, B = 11[latex]-[/latex]2[latex]-[/latex]6 = 3, C = 7[latex]-[/latex]4[latex]-[/latex]3 = 0, D = 18[latex]-[/latex]6[latex]-[/latex]7 = 5<br>\nAverage [latex]=24/4=6[/latex]<br><br>\n<b>NP-SJF</b> Gantt chart: A(0-10), C(10-13), B(13-19), D(19-26)<br>\nWaiting: A = 0, C = 10[latex]-[/latex]4 = 6, B = 13[latex]-[/latex]2 = 11, D = 19[latex]-[/latex]6 = 13<br>\nAverage [latex]=30/4=7.5[/latex]<br><br>\n<b>Answer: SRTF = 6, NP-SJF = 7.5</b><br><br><a href=\"https://gateoverflow.in/422870/gate-cse-2024-set-2-question-27#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "CPU Scheduling",
+   "tag2_url": "https://practicepaper.in/gate-cse/cpu-scheduling",
+   "options": [
+    "SRTF = 6, NP-SJF = 7",
+    "SRTF = 6, NP-SJF = 7.5",
+    "SRTF = 7, NP-SJF = 7.5",
+    "SRTF = 7, NP-SJF = 8.5"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1124228,
+   "number": 28,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Which  one  of  the  following  CIDR  prefixes  exactly  represents  the  range  of IP addresses 10.12.2.0 to 10.12.3.255?",
+   "solution": "10.12.2.0 to 10.12.3.255 has [latex]2\\times256=512=2^9[/latex] addresses, so host bits = 9 and prefix = [latex]32-9=23[/latex].<br><br>\nThird octet: 2 = 0000001<b>0</b>, 3 = 0000001<b>1</b> [latex]\\text{---}[/latex] the first 23 bits are the same, so the block is aligned.<br><br>\n(/24 covers only 10.12.2.x; /22 covers 10.12.0.0-10.12.3.255.)<br><br>\n<b>Answer: 10.12.2.0/23</b><br><br><a href=\"https://gateoverflow.in/422869/gate-cse-2024-set-2-question-28#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-layer-protocol",
+   "options": [
+    "10.12.2.0/23",
+    "10.12.2.0/24",
+    "10.12.0.0/22",
+    "10.12.2.0/22"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1124229,
+   "number": 29,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "You are given a set [latex]V[/latex] of distinct integers. A binary search tree [latex]T[/latex] is created by\ninserting all elements of [latex]V[/latex] one by one, starting with an empty tree. The tree [latex]T[/latex]\nfollows the convention that, at each node, all values stored in the left subtree of the\nnode are smaller than the value stored at the node. You are not aware of the sequence\nin which these values were inserted into [latex]T[/latex], and you do not have access to [latex]T[/latex].<br>\nWhich one of the following statements is TRUE?",
+   "solution": "The inorder traversal of any BST is the keys in <b>sorted order</b>, whatever the insertion order. So it can be found from V just by sorting.<br><br>\nRoot, preorder and postorder depend on the insertion order. Example V = {1, 2}: inserting 1 then 2 gives root 1; inserting 2 then 1 gives root 2.<br><br>\n<b>Answer: Inorder traversal of T can be determined from V</b><br><br><a href=\"https://gateoverflow.in/422868/gate-cse-2024-set-2-question-29#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Search Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-search-tree",
+   "options": [
+    "Inorder traversal of [latex]T[/latex] can be determined from [latex]V[/latex]",
+    "Root node of [latex]T[/latex] can be determined from [latex]V[/latex]",
+    "Preorder traversal of [latex]T[/latex] can be determined from [latex]V[/latex]",
+    "Postorder traversal of [latex]T[/latex] can be determined from [latex]V[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1124230,
+   "number": 30,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following context-free grammar where the start symbol is [latex] S [/latex] and the set of terminals is [latex] \\{a, b, c, d\\} [/latex].\n<br> <br> [latex]\n\\begin{aligned}\n& S \\rightarrow A a A b \\mid B b B a \\\\\n& A \\rightarrow c S \\mid \\epsilon \\\\\n& B \\rightarrow d S \\mid \\epsilon\n\\end{aligned}\n [/latex] <br><br> \nThe following is a partially-filled LL(1) parsing table.<br><br>[latex]\n\\begin{array}{|c|c|c|c|c|c|}\n \\hline  &   a   &   b   &   c   &   d   &   \\$   \\\\\n\\hline  S   &   S \\rightarrow A a A b   &   S \\rightarrow B b B a   &   (1)   &   (2)   & \\\\\n\\hline  A   &   A \\rightarrow \\epsilon   &   (3)   &   A \\rightarrow c S   & & \\\\\n\\hline  B   &   (4)   &   B \\rightarrow \\epsilon   & &   B \\rightarrow d S   & \\\\\n\\hline\n\\end{array}[/latex]\n<br><br>\n\nWhich one of the following options represents the CORRECT combination for the numbered cells in the parsing table?\n<br>\nNote: In the options, \"blank\" denotes that the corresponding cell is empty.",
+   "solution": "Fill the LL(1) table using FIRST and FOLLOW sets:<br>- [latex]FIRST(AaAb)=\\{c,a\\}[/latex] (A is c[latex]\\ldots[/latex] or [latex]\\epsilon[/latex]) [latex]\\rightarrow[/latex] cell (1) [S, c] = [latex]S\\rightarrow AaAb[/latex].<br>\n- [latex]FIRST(BbBa)=\\{d,b\\}[/latex] [latex]\\rightarrow[/latex] cell (2) [S, d] = [latex]S\\rightarrow BbBa[/latex].<br>\n- [latex]A\\rightarrow\\epsilon[/latex] goes under FOLLOW(A). A appears before a and before b, so [latex]FOLLOW(A)\\supseteq\\{a,b\\}[/latex] [latex]\\rightarrow[/latex] cell (3) [A, b] = [latex]A\\rightarrow\\epsilon[/latex].<br>\n- Similarly [latex]FOLLOW(B)\\supseteq\\{b,a\\}[/latex] [latex]\\rightarrow[/latex] cell (4) [B, a] = [latex]B\\rightarrow\\epsilon[/latex].<br><br>\n<b>Answer: (1) [latex]S\\rightarrow AaAb[/latex] (2) [latex]S\\rightarrow BbBa[/latex] (3) [latex]A\\rightarrow\\epsilon[/latex] (4) [latex]B\\rightarrow\\epsilon[/latex]</b><br><br><a href=\"https://gateoverflow.in/422867/gate-cse-2024-set-2-question-30#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Grammar",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-grammar",
+   "options": [
+    "(1) [latex] S \\rightarrow A a A b [/latex] (2) [latex] S \\rightarrow B b B a [/latex] (3) [latex] A \\rightarrow \\epsilon [/latex] (4) [latex] B \\rightarrow \\epsilon [/latex]",
+    "(1) [latex] S \\rightarrow B b B a [/latex] (2) [latex] S \\rightarrow A a A b [/latex] (3) [latex] A \\rightarrow \\epsilon [/latex] (4) [latex] B \\rightarrow \\epsilon [/latex]",
+    "(1) [latex] S \\rightarrow A a A b [/latex] (2) [latex] S \\rightarrow B b B a [/latex] (3) blank (4) blank",
+    "(1) [latex] S \\rightarrow B b B a [/latex] (2) [latex] S \\rightarrow A a A b [/latex] (3) blank (4) blank"
+   ],
+   "correct": 0
+  }
+ ]
+}

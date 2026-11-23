@@ -1,0 +1,112 @@
+{
+ "meta": {
+  "quizId": 11262,
+  "quizName": "GATE CSE 2026 SET-2",
+  "pageTitle": "GATE CSE 2026 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 9,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2026-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1126241,
+   "number": 41,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider three processes [latex]\\text{P1, P2}[/latex], and [latex]\\text{P3}[/latex] running identical code, as shown in the pseudocode below. [latex]\\text{A}[/latex] and [latex]\\text{B}[/latex] are two binary semaphores initialized to [latex]1[/latex] and [latex]0[/latex], respectively. [latex]\\text{X}[/latex] is a shared variable initialized to [latex]0[/latex]. Each line in the pseudocode is executed. atomically<br><br>Pseudocode of P1, P2, and P3<pre><code>\n  Wait(A);\n  Print(*);\n  X = X+1;\n  If (X == 2)\n  \t{\n  \t\tPrint($);\n  \t\tSignal(B);\n  \t}\n  Signal(A);\n  Wait(B);\n  Print(#);\n  Signal(B); </pre></code>Assume that any of the three processes can start to execute first and context switching can happen between these processes at any arbitrary time and in any arbitrary order. <br><br>Which of the following patterns is/are possible to be generated as an outcome of the execution of these three processes?",
+   "solution": "Semaphore [latex]A[/latex] (init [latex]1[/latex]) acts as a mutex guarding the critical section (print \"*\", increment [latex]X[/latex], and the [latex]X{=}{=}2[/latex] check), so all three processes enter this section one at a time, and exactly one of them (whichever happens to be the <i>second</i> to enter) will see [latex]X{=}{=}2[/latex] and print \"[latex]\\$[/latex]\" then signal [latex]B[/latex]. Since the third process cannot even attempt this section until the second has released [latex]A[/latex] (which only happens after printing \"[latex]\\$[/latex]\"), the global order is <b>forced</b> to always be: [latex]{*},{*},\\$,{*}[/latex] &mdash; exactly two stars, then the dollar, then the third star. A pattern like [latex]{*}{*}{*}\\$[/latex] (three stars before the dollar) can <b>never</b> occur.<br><br>\nAfter the dollar, semaphore [latex]B[/latex] gets exactly one initial permit, which starts a chain: each process that consumes the permit via [latex]\\text{Wait}(B)[/latex] prints \"[latex]\\#[/latex]\" and immediately regenerates the next permit via its own [latex]\\text{Signal}(B)[/latex], letting the next process through in turn. The remaining (\"third\") star can interleave with this \"[latex]\\#[/latex]\" chain at any point <i>before</i> that third process itself joins the chain &mdash; i.e. before any [latex]\\#[/latex], after exactly one [latex]\\#[/latex], or after exactly two [latex]\\#[/latex]'s (but never after all three, since the third process must complete its own star/critical-section before it can take part in the [latex]\\#[/latex] chain at all).<br><br>\n<b>Answer: **$*###, **$#*##, and **$##*# are all possible; ***$### is impossible.</b> <br><br> <a href=\"https://gateoverflow.in/523105/gate-cse-2026-set-2-question-41#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Process Synchronization",
+   "tag2_url": "https://practicepaper.in/gate-cse/process-synchronization",
+   "options": [
+    "**$*###",
+    "**$#*##",
+    "**$##*#",
+    "***$###"
+   ],
+   "correctSet": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1126242,
+   "number": 42,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider a system with a processor and a [latex]4[/latex] KB direct mapped cache with block size of [latex]16[/latex] bytes. The system has a [latex]16[/latex] MB physical memory. Four words [latex]{P}, {Q}, {R}[/latex], and S are accessed by the processor in the same order [latex]10[/latex] times. That is, there are a total of [latex]40[/latex] memory references in the sequence [latex]{P}, {Q}, {R}, {S}, {P}, {Q}, {R}, {S}, \\ldots[/latex] <br><br>Assume that the cache memory is initially empty. The physical addresses of the words are given below ([latex]1[/latex] word [latex]=1[/latex] byte). <br><br>[latex]\\text{P: 0x845B32, Q: 0x845B26, R: 0x845B36, S: 0x846B32}[/latex]<br><br> Which of the following statements is/are true? <br>Note: [latex]1 {~K}=2^{10}[/latex] and [latex]1 {M}=2^{20}[/latex]",
+   "solution": "Cache: [latex]4[/latex] KB, block size [latex]16[/latex] bytes [latex]\\Rightarrow[/latex] offset [latex]=4[/latex] bits, number of lines [latex]=4096/16=256=2^8\\Rightarrow[/latex] index [latex]=8[/latex] bits; physical memory [latex]16[/latex] MB [latex]\\Rightarrow[/latex] address width [latex]=24[/latex] bits, so tag [latex]=24-8-4=12[/latex] bits.<br><br>\nComputing (block-address, index, tag) for each word shows that [latex]P=0\\text{x}845B32[/latex] and [latex]R=0\\text{x}845B36[/latex] fall in the <b>same [latex]16[/latex]-byte block</b> (both addresses lie within [latex]0\\text{x}845B30[/latex]-[latex]0\\text{x}845B3F[/latex]), while [latex]Q=0\\text{x}845B26[/latex] maps to a <i>different</i> cache line (a different index) than [latex]P/R[/latex], and [latex]S=0\\text{x}846B32[/latex] maps to the <b>same index</b> as [latex]P/R[/latex] but with a different tag (so [latex]S[/latex] conflicts with [latex]P/R[/latex]'s cache line).<br><br>\nSimulating the repeating access sequence [latex]P,Q,R,S,P,Q,R,S,\\ldots[/latex]: each [latex]S[/latex] access evicts the [latex]P/R[/latex] block (same index, different tag), so the very next [latex]P[/latex] access is always a fresh miss (reloading [latex]P[/latex]'s block, which also brings in [latex]R[/latex] since they share a block); the following [latex]R[/latex] access is then always a hit (block was just loaded by [latex]P[/latex]); and the following [latex]S[/latex] access is always a miss again (conflicts with the just-refreshed [latex]P/R[/latex] tag). Meanwhile [latex]Q[/latex]'s index never conflicts with anything else, so only its very first access misses; all later [latex]Q[/latex] accesses are hits (not \"every access misses\").<br><br>\n<b>Answer: Every access to P is a miss, and every access to R is a hit.</b> <br><br> <a href=\"https://gateoverflow.in/523104/gate-cse-2026-set-2-question-42#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "options": [
+    "Every access to [latex]\\text{P}[/latex] results in a cache miss",
+    "Every access to [latex]\\text{R}[/latex] results in a cache hit",
+    "Every access to [latex]\\text{Q}[/latex] results in a cache miss",
+    "Except the first access to [latex]\\text{S}[/latex], all subsequent accesses to [latex]\\text{S}[/latex] result in cache hits"
+   ],
+   "correctSet": [
+    0,
+    1
+   ]
+  },
+  {
+   "id": 1126243,
+   "number": 43,
+   "type": "NAT",
+   "marks": 2,
+   "text": "To keep track of free blocks in a file system, one of the two approaches is generally used - using bitmaps (bit vectors) or using linked lists. Consider that the linked list approach is used to keep track of free blocks in a file system. Assume that the disk size is [latex]16[/latex] GB , block size is [latex]2[/latex] KB , and block numbers used are [latex]32[/latex]-bit long. A single pointer of size [latex]4[/latex] bytes is used in each block of the list to point to the next block of the list. The number of blocks required to hold the free disk block numbers is ________. (answer in integer)<br> Note: [latex]1 {K}=2^{10}[/latex] and [latex]1 {G}=2^{30}[/latex]",
+   "solution": "Total disk blocks [latex]=\\dfrac{16\\text{ GB}}{2\\text{ KB}}=\\dfrac{16\\times2^{30}}{2\\times2^{10}}=2^{23}=8{,}388{,}608[/latex] blocks, each needing a [latex]32[/latex]-bit ([latex]4[/latex]-byte) block-number entry to be recorded in the free list.<br><br>\nEach list-node (itself one [latex]2\\text{ KB}=2048[/latex]-byte block) uses [latex]4[/latex] bytes for the \"next\" pointer, leaving [latex]2048-4=2044[/latex] bytes for storing free-block-number entries, i.e. [latex]\\dfrac{2044}{4}=511[/latex] free-block numbers per list block.<br><br>\nNumber of list blocks needed [latex]=\\left\\lceil\\dfrac{8{,}388{,}608}{511}\\right\\rceil=\\lceil16416.06\\ldots\\rceil=16417[/latex].<br><br>\n<b>Answer: 16417</b> <br><br> <a href=\"https://gateoverflow.in/523103/gate-cse-2026-set-2-question-43#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Secondary Storage",
+   "tag2_url": "https://practicepaper.in/gate-cse/secondary-storage",
+   "ansMin": 16417,
+   "ansMax": 16417
+  },
+  {
+   "id": 1126244,
+   "number": 44,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A system has a Translation Lookaside Buffer (TLB) that has a reach of [latex]1[/latex] MB. TLB reach is defined as the total amount of physical memory that can be accessed through the TLB entries. The paging system uses pages of size [latex]4[/latex] KB. The virtual address space is [latex]64[/latex] GB and physical address space is [latex]1[/latex] GB. If each TLB entry stores a [latex]4[/latex]-bit process id, page number, frame number, and a [latex]2[/latex]-bit control field, then the size of the TLB (in bytes) is ________. (answer in integer) <br>Note: [latex]1 {K}=2^{10}, 1 {M}=2^{20}, 1 {G}=2^{30}[/latex]",
+   "solution": "TLB reach [latex]=[/latex] page size [latex]\\times[/latex] number of TLB entries, so number of entries [latex]=\\dfrac{1\\text{ MB}}{4\\text{ KB}}=\\dfrac{2^{20}}{2^{12}}=2^8=256[/latex] entries.<br><br>\nVirtual address space [latex]=64\\text{ GB}=2^{36}[/latex] bytes, so virtual page number [latex]=36-12=24[/latex] bits (page size [latex]4\\text{ KB}=2^{12}[/latex]).<br>\nPhysical address space [latex]=1\\text{ GB}=2^{30}[/latex] bytes, so frame number [latex]=30-12=18[/latex] bits.<br><br>\nEach TLB entry stores: [latex]4[/latex]-bit PID [latex]+[/latex] [latex]24[/latex]-bit page number [latex]+[/latex] [latex]18[/latex]-bit frame number [latex]+[/latex] [latex]2[/latex]-bit control [latex]=4+24+18+2=48[/latex] bits [latex]=6[/latex] bytes per entry.<br><br>\nTotal TLB size [latex]=256\\times6=1536[/latex] bytes.<br><br>\n<b>Answer: 1536</b> <br><br> <a href=\"https://gateoverflow.in/523102/gate-cse-2026-set-2-question-44#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "ansMin": 1536,
+   "ansMax": 1536
+  },
+  {
+   "id": 1126245,
+   "number": 45,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider contiguous allocation of physical memory to processes using variable partitioning scheme. Suppose there are [latex]8[/latex] holes in the memory of sizes [latex]20 \\text{KB}, 4 \\text{KB}[/latex], [latex]25 \\text{KB}, 18 \\text{KB}, 7 \\text{KB}, 9 \\text{KB}, 15 \\text{KB}[/latex], and [latex]12\\text{KB}[/latex]. Assume that no two holes are adjacent. Two processes [latex]\\text{P1}[/latex] of size [latex]16KB[/latex]  and [latex]\\text{P2}[/latex] of size [latex]9KB[/latex]  arrive in that order, and they are allocated memory using the best-fit technique. After allocating space to [latex]\\text{P1}[/latex] and [latex]\\text{P2}[/latex], the number of holes of size less than [latex]8KB[/latex]  is ________. (answer in integer) <br>Note: [latex]1 {K}=2^{10}[/latex]",
+   "solution": "<b>Best-fit</b> always picks the smallest hole that is still large enough to satisfy the request.<br><br>\nInitial holes (KB): [latex]20,4,25,18,7,9,15,12[/latex].<br><br>\n<b>P1 (16 KB):</b> smallest hole [latex]\\ge16[/latex] is [latex]18[/latex]. Allocate there, leaving a remainder hole of [latex]18-16=2[/latex] KB. Holes become: [latex]20,4,25,7,9,15,12,2[/latex].<br><br>\n<b>P2 (9 KB):</b> smallest hole [latex]\\ge9[/latex] is the exact-fit [latex]9[/latex] KB hole itself, which is fully consumed (disappears entirely). Holes become: [latex]20,4,25,7,15,12,2[/latex] ([latex]7[/latex] holes remaining).<br><br>\nCounting holes smaller than [latex]8[/latex] KB among [latex]\\{20,4,25,7,15,12,2\\}[/latex]: [latex]4[/latex] KB, [latex]7[/latex] KB, and [latex]2[/latex] KB &mdash; exactly [latex]3[/latex] holes.<br><br>\n<b>Answer: 3</b> <br><br> <a href=\"https://gateoverflow.in/523101/gate-cse-2026-set-2-question-45#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "ansMin": 3,
+   "ansMax": 3
+  }
+ ]
+}

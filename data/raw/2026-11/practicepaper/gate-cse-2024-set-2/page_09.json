@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "quizId": 11242,
+  "quizName": "GATE CSE 2024 SET-2",
+  "pageTitle": "GATE CSE 2024 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 9,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124241,
+   "number": 41,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Let [latex]G[/latex] be an undirected connected graph in which every edge has a positive integer weight.  Suppose  that  every  spanning  tree  in  [latex]G[/latex]  has  even  weight.  Which  of  the following statements is/are TRUE for every such graph [latex]G[/latex] ?",
+   "solution": "Take any cycle C and two edges [latex]e,f[/latex] on it. Extend the path [latex]C-f[/latex] to a spanning tree T (it contains [latex]e[/latex], not [latex]f[/latex]). Then [latex]T'=T-e+f[/latex] is also a spanning tree.<br><br>\n[latex]w(T')-w(T)=w(f)-w(e)[/latex]. Both trees are even, so [latex]w(f)-w(e)[/latex] is even [latex]\\rightarrow[/latex] [latex]e[/latex] and [latex]f[/latex] have the same parity. So in every cycle all edges are even or all are odd [latex]\\text{---}[/latex] TRUE.<br><br>\nCounter-examples for the rest:<br>\n- Triangle with all weights 1: every spanning tree has weight 2 (even), yet edges are odd [latex]\\rightarrow[/latex] options 1 and 3 FALSE.<br>\n- Path with weights 1, 1, 2: only spanning tree has weight 4, but edges are mixed [latex]\\rightarrow[/latex] option 2 FALSE.<br><br>\n<b>Answer: In each cycle, either all edges have even weight OR all edges have odd weight</b><br><br><a href=\"https://gateoverflow.in/422856/gate-cse-2024-set-2-question-41#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Minimum Spanning Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/minimum-spanning-tree",
+   "options": [
+    "All edges in [latex]G[/latex] have even weight",
+    "All edges in [latex]G[/latex] have even weight OR all edges in [latex]G[/latex] have odd weight",
+    "In each cycle [latex]G[/latex] in [latex]G[/latex], all edges in [latex]G[/latex] have even weight",
+    "In each cycle [latex]G[/latex] in [latex]G[/latex], either all edges in [latex]G[/latex] have even weight OR all edges in [latex]G[/latex] have odd weight"
+   ],
+   "correctSet": [
+    3
+   ]
+  },
+  {
+   "id": 1124242,
+   "number": 42,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider a context-free grammar [latex] G [/latex] with the following 3 rules.\n<br> [latex]\nS \\rightarrow a S, S \\rightarrow a S b S, S \\rightarrow c\n [/latex] <br>\nLet [latex] w \\in L(G) [/latex]. Let [latex] n_a(w), n_b(w), n_c(w) [/latex] denote the number of times [latex] a, b, c [/latex] occur in [latex] w [/latex], respectively. Which of the following statements is/are TRUE?",
+   "solution": "Count symbols contributed by each rule:<br>- Every S finally becomes one c. [latex]S\\rightarrow aSbS[/latex] adds one b and one extra S; [latex]S\\rightarrow aS[/latex] adds no S. Starting with one S: [latex]n_c=n_b+1[/latex] [latex]\\text{---}[/latex] TRUE (so [latex]n_c=2n_b[/latex] is FALSE, e.g. w = c).<br>\n- Each b comes with an a, so [latex]n_a\\ge n_b=n_c-1 \\gt n_c-2[/latex] [latex]\\text{---}[/latex] TRUE.<br>\n- [latex]n_a \\gt n_b[/latex] fails for w = acbc ([latex]n_a=n_b=1[/latex]) [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: [latex]n_a(w) \\gt n_c(w)-2[/latex] and [latex]n_c(w)=n_b(w)+1[/latex]</b><br><br><a href=\"https://gateoverflow.in/422855/gate-cse-2024-set-2-question-42#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Grammar",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-grammar",
+   "options": [
+    "[latex]n_a(w)>n_b(w)[/latex] ",
+    "[latex]n_a(w)>n_c(w)-2 [/latex]",
+    "[latex]n_c(w)=n_b(w)+1 [/latex]",
+    "[latex]n_c(w)=n_b(w) * 2[/latex]"
+   ],
+   "correctSet": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1124243,
+   "number": 43,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a disk with the following specifications: rotation speed of 6000 RPM,\naverage seek time of 5 milliseconds, 500 sectors/track, 512-byte sectors.\nA file has content stored in 3000 sectors located randomly on the disk. Assuming\naverage rotational latency, the total time (in seconds, rounded off to 2 decimal\nplaces) to read the entire file from the disk is _______\n",
+   "solution": "6000 RPM = 100 rotations/s [latex]\\rightarrow[/latex] one rotation = 10 ms, average rotational latency = 5 ms.<br>\nTransfer time of one sector [latex]=10/500=0.02[/latex] ms.<br><br>\nSectors are random, so each needs seek + latency + transfer:<br>\n[latex]5+5+0.02=10.02[/latex] ms<br><br>\nTotal [latex]=3000\\times10.02\\text{ ms}=30.06[/latex] s<br><br>\n<b>Answer: 30.06</b><br><br><a href=\"https://gateoverflow.in/422854/gate-cse-2024-set-2-question-43#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Secondary Storage",
+   "tag2_url": "https://practicepaper.in/gate-cse/secondary-storage",
+   "ansMin": 29.5,
+   "ansMax": 30.5
+  },
+  {
+   "id": 1124244,
+   "number": 44,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a TCP connection operating at a point of time with the congestion window\nof size 12 MSS (Maximum Segment Size), when a timeout occurs due to packet\nloss. Assuming that all the segments transmitted in the next two RTTs (Round Trip\nTime) are acknowledged correctly, the congestion window size (in MSS) during the\nthird RTT will be _________",
+   "solution": "On timeout: [latex]ssthresh=12/2=6[/latex] MSS and cwnd resets to 1 MSS, then slow start (doubling each RTT):<br><br>\n- RTT 1: cwnd = 1<br>\n- RTT 2: cwnd = 2<br>\n- RTT 3: cwnd = 4 (still below ssthresh = 6)<br><br>\n<b>Answer: 4</b><br><br><a href=\"https://gateoverflow.in/422853/gate-cse-2024-set-2-question-44#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Transport Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/transport-layer-protocol",
+   "ansMin": 4,
+   "ansMax": 4
+  },
+  {
+   "id": 1124245,
+   "number": 45,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider an Ethernet segment with a transmission speed of [latex]10^8[/latex] bits/sec and a\nmaximum segment length of 500 meters. If the speed of propagation of the signal\nin the medium is [latex]2 \\times 10^8[/latex] meters/sec, then the minimum frame size (in bits) required\nfor collision detection is _________",
+   "solution": "For collision detection, transmission time must be at least the round-trip propagation time: [latex]\\frac{L}{B}\\ge2\\frac{d}{v}[/latex]<br><br>\n[latex]T_p=\\dfrac{500}{2\\times10^8}=2.5\\ \\mu s[/latex]<br><br>\n[latex]L=2\\times2.5\\times10^{-6}\\times10^8=500[/latex] bits<br><br>\n<b>Answer: 500</b><br><br><a href=\"https://gateoverflow.in/422852/gate-cse-2024-set-2-question-45#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "ansMin": 500,
+   "ansMax": 500
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11191,
+  "quizName": "GATE CS 2019",
+  "pageTitle": "GATE CSE 2019",
+  "timeLimit": 0,
+  "pageNo": 13,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2019",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1119161,
+   "number": 61,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The police arrested four criminals - P, Q, R and S. The criminals knew each other. They made the following statements:\n<br>\n<br>\nP says \"Q committed the crime.\"\n<br>\nQ says \"S committed the crime.\"\n<br>\nR says \" I did not do it.\"\n<br>S says \"What Q said about me is false\".\n<br>\n<br>\nAssume only one of the arrested four committed the crime and only one of the statements made above is true. Who committed the crime?",
+   "solution": "Check each suspect (exactly one statement must be true):<br>\n- <b>R did it</b>: P's statement (Q did it) false, Q's (S did it) false, R's \"I did not do it\" false, S's \"Q's statement is false\" <b>true</b> [latex]\\rightarrow[/latex] exactly one true True<br>\n- If P, Q or S did it, two statements become true (e.g. S did it makes Q's and R's statements true).<br><br>\n<b>Answer: R</b><br><br><a href=\"https://gateoverflow.in/302867/gate-cse-2019-question-ga-6#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "P",
+    "R",
+    "S",
+    "Q"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1119162,
+   "number": 62,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "In the given diagram, teachers are represented in the triangle, researchers in the circle and administrators in the rectangle. Out of the total number of the people, the percentage of administrators shall be in the range of _______<br><img src=\"/wp-content/uploads/GATE/CS/20191/q62.jpg\" /><br>\n",
+   "solution": "Total people = 70 + 10 + 20 + 20 + 40 = 160.<br>\nAdministrators (the rectangle) = 10 + 20 + 20 = 50.<br><br>\nPercentage = 50/160 [latex]\\times[/latex] 100 = 31.25% [latex]\\rightarrow[/latex] in the range 31 to 45.<br><br>\n<b>Answer: 31 to 45</b><br><br><a href=\"https://gateoverflow.in/302866/gate-cse-2019-question-ga-7#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "0 to 15",
+    "16 to  30",
+    "31 to 45",
+    "46 to 60"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1119163,
+   "number": 63,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "\"A recent High Court judgement has sought to dispel the idea of begging as a disease - which leads to its stigmatization and criminalization  - and to regard it as a symptom. The underlying disease is the failure of the state to protect citizens who fall through the social security net.\"<br><br>\nWhich one of the following statements can be inferred from the given passage?",
+   "solution": "The passage says begging is a <b>symptom</b> of the state's failure to protect people who fall through the social security net. So beggars arise because of a lack of social welfare.<br><br>\nThe other options blame the beggars or call for punishment, which contradicts the passage.<br><br>\n<b>Answer: Beggars are created because of the lack of social welfare schemes</b><br><br><a href=\"https://gateoverflow.in/302865/gate-cse-2019-question-ga-8#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "Beggars are lazy people who beg because they are unwilling to work",
+    "Beggars are created because of the lack of social welfare schemes",
+    "Begging is an offence that has to be dealt with firmly",
+    "Begging has to be banned because it adversely affects the welfare of the state"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1119164,
+   "number": 64,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "In a college, there are three student clubs, 60 students are only in the Drama club, 80 students are only in the Dance club, 30 students are only in Maths club, 40 students are in both Drama and Dance clubs, 12 students are in both Dance and Maths clubs, 7 students are in both Drama and Maths clubs, and 2 students are in all clubs. If 75% of the students in the college are not in any of these clubs, then the total number of students in the college is _____.",
+   "solution": "The \"both\" counts include the 2 students in all three clubs, so the exactly-two counts are 38, 10 and 5.<br><br>\nStudents in clubs = 60 + 80 + 30 (only one) + 38 + 10 + 5 (exactly two) + 2 (all three) = 225.<br><br>\nThese are 25% of the college, so total = 225 / 0.25 = 900.<br><br>\n<b>Answer: 900</b><br><br><a href=\"https://gateoverflow.in/302864/gate-cse-2019-question-ga-9#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "1000",
+    "975",
+    "900",
+    "225"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1119165,
+   "number": 65,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Three of the five students are allocated to a hostel put in special requests to the warden, Given the floor plan of the vacant rooms, select the allocation plan that will accommodate all their requests.<br><br>\n\nRequest by X: Due to pollen allergy, I want to avoid a wing next to the garden.\n<br>\nRequest by Y: I want to live as far from the washrooms as possible, since I am very mich sensitive to smell.\n<br>\nRequest by Z: I believe in Vaastu and so I want to stay in South-West wing.\n<br><br>\nThe shaded rooms are already occupied. WR is washroom<br><img src=\"/wp-content/uploads/GATE/CS/20191/q65.jpg\" /><br>\n",
+   "solution": "In the plan, N is towards the top-left, so the bottom wing is the <b>South-West</b> wing; the garden is along the right wing; washrooms are at the left corners.<br><br>\n- Z must be in the bottom (SW) wing: in A and B, Z is in the left wing; in C, Z is at the top right False.<br>\n- In D: Z is in the bottom wing True, Y is on the right side far from both washrooms True, X is in the bottom wing, not next to the garden True.<br><br>\n<b>Answer: D</b><br><br><a href=\"https://gateoverflow.in/302863/gate-cse-2019-question-ga-10#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "correct": 3
+  }
+ ]
+}

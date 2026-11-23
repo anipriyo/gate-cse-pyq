@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11251,
+  "quizName": "GATE CSE 2025 SET-1",
+  "pageTitle": "GATE CSE 2025 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 5,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2025-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1125121,
+   "number": 21,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the given function [latex]f(x)[/latex].\n<br><br>\n[latex]f(x) =\n\\begin{cases}\nax + b & \\text{for } x < 1 \\\\\nx^3 + x^2 + 1 & \\text{for } x \\geq 1\n\\end{cases}[/latex]\n<br><br>\nIf the function is differentiable everywhere, the value of [latex]b[/latex] must be ________. (rounded off to one decimal place)",
+   "solution": "For [latex]f[/latex] to be differentiable at [latex]x=1[/latex], it must first be <b>continuous</b> there, and then have matching one-sided derivatives.<br><br>\n<b>Continuity:</b> left-hand value [latex]=a(1)+b=a+b[/latex]; right-hand value [latex]=1^3+1^2+1=3[/latex]. So [latex]a+b=3[/latex].<br><br>\n<b>Matching derivatives:</b> left derivative [latex]=\\dfrac{d}{dx}(ax+b)=a[/latex]. Right derivative [latex]=\\dfrac{d}{dx}(x^3+x^2+1)=3x^2+2x[/latex], evaluated at [latex]x=1[/latex]: [latex]3+2=5[/latex]. So [latex]a=5[/latex].<br><br>\nSubstituting back: [latex]b=3-a=3-5=-2[/latex].<br><br>\n<b>Answer: -2.0</b><br><br><a href=\"https://gateoverflow.in/460059/gate-cse-2025-set-1-question-21#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "ansMin": -2.1,
+   "ansMax": -1.9
+  },
+  {
+   "id": 1125122,
+   "number": 22,
+   "type": "NAT",
+   "marks": 1,
+   "text": "A box contains 5 coins: 4 regular coins and 1 fake coin. When a regular coin is tossed, the probability [latex]P(\\text{head}) = 0.5[/latex] and for a fake coin, [latex]P(\\text{head}) = 1[/latex]. You pick a coin at random and toss it twice, and get two heads. The probability that the coin you have chosen is the fake coin is _______. (rounded off to two decimal places)",
+   "solution": "By Bayes' theorem, [latex]P(\\text{fake}\\mid HH)=\\dfrac{P(HH\\mid\\text{fake})P(\\text{fake})}{P(HH)}[/latex].<br><br>\n[latex]P(HH\\mid\\text{fake})=1\\times1=1[/latex] (fake coin always shows heads). [latex]P(HH\\mid\\text{regular})=0.5\\times0.5=0.25[/latex].<br>\n[latex]P(\\text{fake})=\\dfrac15[/latex], [latex]P(\\text{regular})=\\dfrac45[/latex].<br><br>\n[latex]P(HH)=1\\times\\dfrac15+0.25\\times\\dfrac45=0.2+0.2=0.4[/latex].<br><br>\n[latex]P(\\text{fake}\\mid HH)=\\dfrac{0.2}{0.4}=0.5[/latex].<br><br>\n<b>Answer: 0.50</b><br><br><a href=\"https://gateoverflow.in/460058/gate-cse-2025-set-1-question-22#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "ansMin": 0.49,
+   "ansMax": 0.51
+  },
+  {
+   "id": 1125123,
+   "number": 23,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The pseudocode of a function fun() is given below:\n<pre><code>\nfun(int A[0,...,n-1])\n{\n    for i=0 to n-2\n\tfor j=0 to n-i-2\n\t    if (A[j] > A[j+1])\n\t\tthen swap A[j] and A[j+1]\n}\n</code></pre>\nLet [latex]A[0, \\dots, 29][/latex] be an array storing 30 distinct integers in descending order. The number of swap operations that will be performed, if the function fun() is called with [latex]A[0, \\dots, 29][/latex] as argument, is __________. (Answer in integer)",
+   "solution": "This is exactly the standard bubble-sort pseudocode. On a fully <b>descending</b>-order array, every single adjacent-pair comparison across the entire double loop finds the pair out of order, so a swap happens on <i>every</i> comparison &mdash; there are no comparisons at all that skip the swap.<br><br>\nTotal comparisons (and hence swaps) [latex]=\\displaystyle\\sum_{i=0}^{n-2}(n-1-i)=\\binom{n}{2}[/latex] for an [latex]n[/latex]-element array. With [latex]n=30[/latex]: [latex]\\binom{30}{2}=\\dfrac{30\\times29}{2}=435[/latex].<br><br>\n<b>Answer: 435</b><br><br><a href=\"https://gateoverflow.in/460057/gate-cse-2025-set-1-question-23#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Array and Pointer",
+   "tag2_url": "https://practicepaper.in/gate-cse/array-and-pointer",
+   "ansMin": 435,
+   "ansMax": 435
+  },
+  {
+   "id": 1125124,
+   "number": 24,
+   "type": "NAT",
+   "marks": 1,
+   "text": "<pre><code>\n#include &lt;stdio.h&gt;\nvoid foo(int *p, int x) {\n    *p = x;\n}\n\nint main() {\n    int *z;\n    int a = 20, b = 25;\n    z = &a;\n    foo(z, b);\n    printf(\"%d\", a);\n    return 0;\n}\n</code></pre>\nThe output of the given C program is __________. (Answer in integer)\n",
+   "solution": "[latex]\\text{z}=\\&\\text{a}[/latex] makes [latex]z[/latex] point to [latex]a[/latex] (currently [latex]20[/latex]).<br><br>\n[latex]\\text{foo(z, b)}[/latex] passes [latex]z[/latex] (the address of [latex]a[/latex]) and [latex]b[/latex]'s value ([latex]25[/latex]) into [latex]\\text{foo(int *p, int x)}[/latex], so inside [latex]\\text{foo}[/latex], [latex]p[/latex] points to [latex]a[/latex] and [latex]x=25[/latex].<br><br>\n[latex]{*}\\text{p}=\\text{x}[/latex] writes [latex]25[/latex] into whatever [latex]p[/latex] points to &mdash; i.e. directly into [latex]a[/latex] itself (since pointers give real access to the caller's variable). So [latex]a[/latex] becomes [latex]25[/latex].<br><br>\n[latex]\\text{printf}[/latex] then prints the now-updated [latex]a[/latex].<br><br>\n<b>Answer: 25</b><br><br><a href=\"https://gateoverflow.in/460056/gate-cse-2025-set-1-question-24#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Array and Pointer",
+   "tag2_url": "https://practicepaper.in/gate-cse/array-and-pointer",
+   "ansMin": 25,
+   "ansMax": 25
+  },
+  {
+   "id": 1125125,
+   "number": 25,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The height of any rooted tree is defined as the maximum number of edges in the path from the root node to any leaf node. Suppose a Min-Heap [latex]T[/latex] stores 32 keys. The height of [latex]T[/latex] is _____________. (Answer in integer)",
+   "solution": "A min-heap with [latex]N[/latex] keys is stored as a nearly-complete binary tree, and its height (max edges from root to a leaf) is [latex]\\lfloor\\log_2N\\rfloor[/latex].<br><br>\nLevel [latex]0[/latex] holds [latex]1[/latex] node, level [latex]1[/latex] holds [latex]2[/latex], level [latex]2[/latex] holds [latex]4[/latex], level [latex]3[/latex] holds [latex]8[/latex], level [latex]4[/latex] holds [latex]16[/latex] &mdash; cumulatively [latex]1+2+4+8+16=31[/latex] nodes fill levels [latex]0[/latex] through [latex]4[/latex] completely. The [latex]32[/latex]nd key must then start a new level, <b>level 5</b>.<br><br>\n<b>Answer: 5</b><br><br><a href=\"https://gateoverflow.in/460055/gate-cse-2025-set-1-question-25#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Heap Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/heap-tree",
+   "ansMin": 5,
+   "ansMax": 5
+  }
+ ]
+}

@@ -1,0 +1,140 @@
+{
+ "meta": {
+  "quizId": 11221,
+  "quizName": "GATE CSE 2022",
+  "pageTitle": "GATE CSE 2022",
+  "timeLimit": 0,
+  "pageNo": 8,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2022",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1122136,
+   "number": 36,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Which of the following is/are undecidable?",
+   "solution": "Options 1-3 ask about a non-trivial property of the <b>language</b> of a TM (equality, regularity, accepting everything). By Rice's theorem they are undecidable.<br><br>\nOption 4 is decidable: in 1073 steps a TM can read at most the first 1073 input symbols, so it is enough to simulate M for 1073 steps on the finitely many strings of length up to 1073.<br><br>\n<b>Answer: Options 1, 2 and 3</b><br><br><a href=\"https://gateoverflow.in/371900/Gate-cse-2022-question-36#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Turing Machine",
+   "tag2_url": "https://practicepaper.in/gate-cse/turing-machine",
+   "options": [
+    "Given two Turing machines M1 and M2 , decide if L(M1 ) = L(M2 ).",
+    "Given a Turing machine M , decide if L(M ) is regular.",
+    "Given a Turing machine M , decide if M accepts all strings.",
+    "Given a Turing machine M , decide if M takes more than 1073 steps on every string."
+   ],
+   "correctSet": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1122137,
+   "number": 37,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider the following languages:<br><br>[latex] \\begin{aligned}\nL_1&= \\{a^n wa^n|w  \\in  \\{a,b \\}^* \\}   \\\\ \n L_2&= \\{wxw^R | w,x  \\in   \\{a,b \\}^*, |w|,|x|  \\gt 0  \\} \n \\end{aligned}[/latex]<br><br>Note that [latex]w^R[/latex] is the reversal of the string [latex]w[/latex]. Which of the following is/are TRUE?",
+   "solution": "Look at each language closely:<br>- [latex]L_1[/latex]: n can be 0, so taking n = 0, [latex]L_1=\\{w\\}=(a+b)^*[/latex] [latex]\\text{---}[/latex] regular.<br>\n- [latex]L_2[/latex]: [latex]|w|\\ge1[/latex] and x can be anything, so it is enough that the string starts and ends with the same symbol with something in between: [latex]a(a+b)^+a+b(a+b)^+b[/latex] [latex]\\text{---}[/latex] regular.<br><br>\nBoth are regular, hence also context-free. So options 1, 2 and 3 are true; \"context-free but not regular\" is false.<br><br>\n<b>Answer: Options 1, 2 and 3</b><br><br><a href=\"https://gateoverflow.in/371899/Gate-cse-2022-question-37#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-language",
+   "options": [
+    "[latex]L_1[/latex] and [latex]L_2[/latex] are regular.",
+    "[latex]L_1[/latex] and [latex]L_2[/latex]  are context-free.",
+    "[latex]L_1[/latex] is regular and [latex]L_2[/latex] is context-free.",
+    "[latex]L_1[/latex] and [latex]L_2[/latex]  are context-free but not regular."
+   ],
+   "correctSet": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1122138,
+   "number": 38,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider the following languages:<br><br>[latex] \\begin{aligned}\nL_1&= \\{ ww|w  \\in  \\{a,b \\}^* \\}   \\\\ \n L_2&= \\{a^nb^nc^m | m,n \\geq 0 \\}  \\\\ \nL_3 &= \\{a^mb^nc^n|m,n \\geq 0 \\} \n \\end{aligned}[/latex]<br><br>Which of the following statements is/are FALSE?",
+   "solution": "Facts: [latex]L_1=\\{ww\\}[/latex] is not CFL but its complement <b>is</b> CFL. [latex]L_2=a^nb^nc^m[/latex] and [latex]L_3=a^mb^nc^n[/latex] are DCFLs.<br><br>\n- Option 1: true.<br>\n- Option 2: [latex]L_2[/latex] is context-free [latex]\\rightarrow[/latex] statement <b>FALSE</b>.<br>\n- Option 3: [latex]L_2\\cap L_3=\\{a^nb^nc^n\\}[/latex] is not context-free [latex]\\rightarrow[/latex] <b>FALSE</b>.<br>\n- Option 4: the complement of [latex]L_1[/latex] is context-free [latex]\\rightarrow[/latex] <b>FALSE</b>.<br><br>\n<b>Answer: Options 2, 3 and 4</b><br><br><a href=\"https://gateoverflow.in/371898/Gate-cse-2022-question-38#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-language",
+   "options": [
+    "[latex]L_1[/latex] is not context-free but [latex]L_2[/latex] and [latex]L_3[/latex] are deterministic context-free.",
+    "Neither [latex]L_1[/latex] nor [latex]L_2[/latex] is context-free.",
+    "[latex]L_2,L_3[/latex] and [latex]L_2 \\cap L_3[/latex] all are context-free.",
+    "Neither [latex]L_1[/latex] nor its complement is context-free."
+   ],
+   "correctSet": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1122139,
+   "number": 39,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider a simple undirected weighted graph G, all of whose edge weights are distinct. Which of the following statements about the minimum spanning trees of G is/are TRUE?",
+   "solution": "With distinct weights the MST is <b>unique</b> (so option 4 is false).<br><br>\n- The two smallest edges cannot form a cycle, so Kruskal always takes both [latex]\\text{---}[/latex] TRUE.<br>\n- If the 3rd smallest is rejected, it closes a triangle with the two smallest edges. Then the 4th edge cannot form a cycle with them (the triangle's 3 vertices are already fully joined), so it is taken [latex]\\text{---}[/latex] TRUE.<br>\n- This is the <b>cut property</b>: the lightest edge crossing any cut is in every MST [latex]\\text{---}[/latex] TRUE.<br><br>\n<b>Answer: Options 1, 2 and 3</b><br><br><a href=\"https://gateoverflow.in/371897/Gate-cse-2022-question-39#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Minimum Spanning Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/minimum-spanning-tree",
+   "options": [
+    "The edge with the second smallest weight is always part of any minimum spanning tree of G .",
+    "One or both of the edges with the third smallest and the fourth smallest weights are part of any minimum spanning tree of G .",
+    "Suppose [latex]S\\subseteq V[/latex] be such that [latex]S\\neq  \\phi [/latex] and [latex]S\\neq  V[/latex] . Consider the edge with the minimum weight such that one of its vertices is in S and the other in V \\ S . Such an edge will always be part of any minimum spanning tree of G .",
+    "G can have multiple minimum spanning trees."
+   ],
+   "correctSet": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1122140,
+   "number": 40,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "The following simple undirected graph is referred to as the Peterson graph.<br><img src=\"/wp-content/uploads/GATE/CS/20221/q40.jpg\" /><br>Which of the following statements is/are TRUE?",
+   "solution": "Petersen graph: 10 vertices, 3-regular, no triangles or 4-cycles.<br><br>\n- Odd cycles (5-cycles) need 3 colours, and 3 are enough [latex]\\rightarrow[/latex] chromatic number 3 [latex]\\text{---}[/latex] TRUE.<br>\n- It has no Hamiltonian cycle, but it does have a Hamiltonian path (outer cycle 4 vertices, then into the star) [latex]\\text{---}[/latex] TRUE.<br>\n- The given graph is also 3-regular on 10 vertices with girth 5, and is a known drawing of the Petersen graph [latex]\\text{---}[/latex] TRUE.<br>\n- The largest independent set has size <b>4</b>, not 3 [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: Options 1, 2 and 3</b><br><br><a href=\"https://gateoverflow.in/371896/Gate-cse-2022-question-40#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "options": [
+    "The chromatic number of the graph is 3.",
+    "The graph has a Hamiltonian path.",
+    "The following graph is isomorphic to the Peterson graph.<br><img src=\"/wp-content/uploads/GATE/CS/20221/a40.jpg\" /><br>",
+    "The size of the largest independent set of the given graph is 3. (A subset of vertices of a graph form an independent set if no two vertices of the subset are adjacent.)"
+   ],
+   "correctSet": [
+    0,
+    1,
+    2
+   ]
+  }
+ ]
+}

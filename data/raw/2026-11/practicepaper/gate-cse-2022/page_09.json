@@ -1,0 +1,137 @@
+{
+ "meta": {
+  "quizId": 11221,
+  "quizName": "GATE CSE 2022",
+  "pageTitle": "GATE CSE 2022",
+  "timeLimit": 0,
+  "pageNo": 9,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2022",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1122141,
+   "number": 41,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider the following recurrence:<br>[latex] \\begin{aligned}\nf(1)&=1; \\\\\nf(2n)&=2f(n)-1, & \\text{for }n \\geq 1; \\\\\nf(2n+1)&=2f(n)+1, & \\text{for }n \\geq 1.\n \\end{aligned}[/latex]<br>Then, which of the following statements is/are TRUE?",
+   "solution": "Compute some values: f(1)=1, f(2)=1, f(3)=3, f(4)=1, f(5)=3, f(6)=5, f(7)=7, f(8)=1, f(10)=5, f(20)=9.<br><br>\n- [latex]f(2^n-1)=2^n-1[/latex]: f(1)=1, f(3)=3, f(7)=7 True (by induction [latex]f(2m+1)=2f(m)+1[/latex])<br>\n- [latex]f(2^n)=1[/latex]: [latex]f(2^n)=2f(2^{n-1})-1=2-1=1[/latex] True<br>\n- [latex]f(5\\cdot2^n)=2^{n+1}+1[/latex]: f(5)=3, f(10)=5, f(20)=9 True<br>\n- [latex]f(2^n+1)=2^n+1[/latex]: f(5)=3 [latex]\\ne[/latex] 5 False<br><br>\n<b>Answer: Options 1, 2 and 3</b><br><br><a href=\"https://gateoverflow.in/371895/Gate-cse-2022-question-41#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Recurrence",
+   "tag2_url": "https://practicepaper.in/gate-cse/recurrence",
+   "options": [
+    "[latex]f(2^n-1)=2^n-1[/latex]",
+    "[latex]f(2^n)=1[/latex]",
+    "[latex]f(5 * 2^n)=2^{n+1}+1[/latex]",
+    "[latex]f(2^n+1)=2^n+1[/latex]"
+   ],
+   "correctSet": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1122142,
+   "number": 42,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Which of the properties hold for the adjacency matrix [latex]A[/latex] of a simple undirected unweighted graph having [latex]n[/latex] vertices?",
+   "solution": "Checking each statement:<br>- [latex](A^2)_{ii}=\\sum_k a_{ik}a_{ki}[/latex] = number of neighbours of i = degree [latex]\\text{---}[/latex] TRUE.<br>\n- Path 1-2-3 (n = 3): [latex]A^2+I[/latex] has entry (1, 2) = 0, since there is no walk of length exactly 2 from 1 to 2 [latex]\\text{---}[/latex] FALSE.<br>\n- Sum of entries [latex]\\le2(n-1)[/latex] means at most [latex]n-1[/latex] edges. A triangle plus an isolated vertex (n = 4, 3 edges) still has a cycle [latex]\\text{---}[/latex] FALSE.<br>\n- Two disjoint edges on 4 vertices: every row has a 1, but the graph is disconnected [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: The diagonal entries of [latex]A^2[/latex] are the degrees of the vertices</b><br><br><a href=\"https://gateoverflow.in/371894/Gate-cse-2022-question-42#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "options": [
+    "The diagonal entries of [latex]A^2[/latex] are the degrees of the vertices of the graph.",
+    "If the graph is connected, then none of the entries of [latex]A^{n-1}+I_n[/latex]can be zero.",
+    "If the sum of all the elements of [latex]A[/latex] is at most 2(n-1), then the graph must be acyclic.",
+    "If there is at least a 1 in each of A's rows and columns, then the graph must be connected."
+   ],
+   "correctSet": [
+    0
+   ]
+  },
+  {
+   "id": 1122143,
+   "number": 43,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Which of the following is/are the eigenvector(s) for the matrix given below?<br>[latex] \\begin{pmatrix}\n-9 &-6  &-2  &-4  \\\\ \n -8& -6 & -3 & -1 \\\\ \n20 & 15 & 8 & 5 \\\\ \n 32&  21&  7&12 \n \\end{pmatrix}[/latex]",
+   "solution": "Multiply the matrix by each vector and check if the result is a multiple of it:<br>\n- [latex](-1,1,0,1)\\rightarrow(-1,1,0,1)[/latex] = 1[latex]\\cdot[/latex]v True<br>\n- [latex](1,0,-1,0)\\rightarrow(-7,-5,12,25)[/latex] [latex]\\text{---}[/latex] not a multiple False<br>\n- [latex](-1,0,2,2)\\rightarrow(-3,0,6,6)[/latex] = 3[latex]\\cdot[/latex]v True<br>\n- [latex](0,1,-3,0)\\rightarrow(0,3,-9,0)[/latex] = 3[latex]\\cdot[/latex]v True<br><br>\n<b>Answer: Options 1, 3 and 4</b><br><br><a href=\"https://gateoverflow.in/371893/Gate-cse-2022-question-43#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "[latex]\\begin{pmatrix}\n-1\\\\ \n1\\\\ \n0\\\\\n1\n\\end{pmatrix}[/latex]",
+    "[latex]\\begin{pmatrix}\n1\\\\ \n0\\\\ \n-1\\\\\n0\n\\end{pmatrix}[/latex]",
+    "[latex]\\begin{pmatrix}\r\n-1\\\\ \r\n0\\\\ \r\n2\\\\\r\n2\r\n\\end{pmatrix}[/latex]",
+    "[latex]\\begin{pmatrix}\n0\\\\ \n1\\\\ \n-3\\\\\n0\n\\end{pmatrix}[/latex]"
+   ],
+   "correctSet": [
+    0,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1122144,
+   "number": 44,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider a system with 2 KB direct mapped data cache with a block size of 64 bytes. The system has a physical address space of 64 KB and a word length of 16 bits. During the execution of a program, four data words P, Q, R, and S are accessed in that order 10 times (i.e., PQRSPQRS...). Hence, there are 40 accesses to data cache altogether. Assume that the data cache is initially empty and no other data words are accessed by the program. The addresses of the first bytes of P, Q, R, and S are 0xA248, 0xC28A, 0xCA8A, and 0xA262, respectively. For the execution of the above program, which of the following statements is/are TRUE with respect to the data cache?",
+   "solution": "Lines = 2 KB / 64 B = 32. Address 16 bits = tag 5 | index 5 | offset 6. Block number = address / 64; line = block mod 32.<br>\n- P = 0xA248 [latex]\\rightarrow[/latex] block 649 [latex]\\rightarrow[/latex] line 9<br>\n- Q = 0xC28A [latex]\\rightarrow[/latex] block 778 [latex]\\rightarrow[/latex] line 10<br>\n- R = 0xCA8A [latex]\\rightarrow[/latex] block 810 [latex]\\rightarrow[/latex] line 10<br>\n- S = 0xA262 [latex]\\rightarrow[/latex] block 649 [latex]\\rightarrow[/latex] line 9 (<b>same block as P</b>)<br><br>\n- S is always accessed after P has loaded that block [latex]\\rightarrow[/latex] every S access is a hit True<br>\n- Line 9 is used only by P/S [latex]\\rightarrow[/latex] P is never evicted True<br>\n- Q and R share line 10 [latex]\\rightarrow[/latex] every R access evicts Q True<br>\n- At the end, P's block (with S) and R are in the cache, not \"only R and S\" False<br><br>\n<b>Answer: Options 1, 2 and 4</b><br><br><a href=\"https://gateoverflow.in/371892/Gate-cse-2022-question-44#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "options": [
+    "Every access to S is a hit.",
+    "Once P is brought to the cache it is never evicted.",
+    "At the end of the execution only R and S reside in the cache.",
+    "Every access to R evicts Q from the cache."
+   ],
+   "correctSet": [
+    0,
+    1,
+    3
+   ]
+  },
+  {
+   "id": 1122145,
+   "number": 45,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider routing table of an organization's router shown below:<br>[latex] \n \\begin{array}{|l|l|l|}\nSubnet Number          & Subnet Mask              & Next Hop                 \\\\  \n 12.20.164.0 &  255.255.252.0 &  R1            \\\\  \n 12.20.170.0 &  255.255.254.0 &  R2            \\\\  \n 12.20.168.0 &  255.255.254.0 &  Interface 0   \\\\  \n 12.20.166.0 &  255.255.254.0 &  Interface 1   \\\\  \n default     & ~                        &  R3      \\\\  \\hline     \n \\end{array}\n [/latex]<br>Which of the following prefixes in CIDR notation can be collectively used to correctly aggregate all of the subnets in the routing table?",
+   "solution": "Third-octet ranges of the subnets:<br>\n- 164.0/22 [latex]\\rightarrow[/latex] 164-167<br>\n- 166.0/23 [latex]\\rightarrow[/latex] 166-167 (inside the first)<br>\n- 168.0/23 [latex]\\rightarrow[/latex] 168-169<br>\n- 170.0/23 [latex]\\rightarrow[/latex] 170-171<br><br>\nTogether they cover 164-171. 12.20.164.0/22 covers 164-167 and 12.20.168.0/22 covers 168-171, exactly the needed range.<br><br>\n164.0/21 is really 160-167 (not aligned) and /20 is 160-175, both covering addresses that are not in the table.<br><br>\n<b>Answer: 12.20.164.0/22 and 12.20.168.0/22</b><br><br><a href=\"https://gateoverflow.in/371891/Gate-cse-2022-question-45#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-layer-protocol",
+   "options": [
+    "12.20.164.0/20",
+    "12.20.164.0/22",
+    "12.20.164.0/21",
+    "12.20.168.0/22"
+   ],
+   "correctSet": [
+    1,
+    3
+   ]
+  }
+ ]
+}

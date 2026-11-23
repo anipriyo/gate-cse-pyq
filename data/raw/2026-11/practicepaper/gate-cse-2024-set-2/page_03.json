@@ -1,0 +1,129 @@
+{
+ "meta": {
+  "quizId": 11242,
+  "quizName": "GATE CSE 2024 SET-2",
+  "pageTitle": "GATE CSE 2024 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 3,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124211,
+   "number": 11,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following two sets:<br>\n[latex]\\begin{array}{ll}\n \\textbf{Set X}  &      \\textbf{Set Y} \\\\\n\\text{P. Lexical Analyzer} & \\text{1. Abstract Syntax Tree} \\\\\n\\text{Q. Syntax Analyzer} & \\text{2. Token}\\\\\n\\text{R. Intermediate Code Generator } & \\text{3. Parse Tree} \\\\\n\\text{S. Code Optimizer} & \\text{4. Constant Folding }\n\\end{array}[/latex]\n<br>   Which one of the following options is the CORRECT match from Set X to Set Y ?",
+   "solution": "Output / job of each compiler phase:<br>- P. Lexical Analyzer [latex]\\rightarrow[/latex] produces <b>tokens</b> (2)<br>\n- Q. Syntax Analyzer [latex]\\rightarrow[/latex] produces <b>parse tree</b> (3)<br>\n- R. Intermediate Code Generator [latex]\\rightarrow[/latex] works with <b>abstract syntax tree</b> / IR (1)<br>\n- S. Code Optimizer [latex]\\rightarrow[/latex] <b>constant folding</b> (4)<br><br>\n<b>Answer: P-2; Q-3; R-1; S-4</b><br><br><a href=\"https://gateoverflow.in/422886/gate-cse-2024-set-2-question-11#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Matching",
+   "tag2_url": "https://practicepaper.in/gate-cse/matching",
+   "options": [
+    "P-4; Q-1; R-3; S-2",
+    "P-2; Q-3; R-1; S-4",
+    "P-2; Q-1; R-3; S-4",
+    "P-4; Q-3; R-2; S-1"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1124212,
+   "number": 12,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following regular expressions is equivalent to the language\naccepted by the DFA given below?<br><img src=\"/wp-content/uploads/GATE/CS/20242/q12.webp\" /><br>",
+   "solution": "The start state loops on 0 and goes to the final state on 1; the final state loops on 0 and returns on 1. So the DFA accepts strings with an <b>odd number of 1s</b>.<br><br>\n[latex]0^*1(0+10^*1)^*[/latex]: [latex]0^*[/latex] stays at start, [latex]1[/latex] reaches the final state, then [latex]0[/latex] (self-loop) or [latex]10^*1[/latex] (go back and return) keeps it final. This is exactly \"odd number of 1s\".<br><br>\nOthers fail on \"1\" (odd, accepted): [latex]0^*(10^*11)^*0^*[/latex], [latex]0^*1(010^*1)^*0^*[/latex] cannot give \"111\", and [latex]0(1+0^*10^*1)^*0^*[/latex] must start with 0.<br><br>\n<b>Answer: [latex]0^*1(0+10^*1)^*[/latex]</b><br><br><a href=\"https://gateoverflow.in/422885/gate-cse-2024-set-2-question-12#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Regular Expression",
+   "tag2_url": "https://practicepaper.in/gate-cse/regular-expression",
+   "options": [
+    "[latex]0^*1(0+10^*1)^*[/latex] ",
+    "[latex]0^*(10^*11)^*0^*[/latex] ",
+    "[latex]0^*1(010^*1)^*0^*[/latex] ",
+    "[latex]0(1+0^*10^*1)^*0^*[/latex] "
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1124213,
+   "number": 13,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Node X has a TCP connection open to node Y. The packets from X to Y go through\nan intermediate IP router R. Ethernet switch S is the first switch on the network path\nbetween X and R. Consider a packet sent from X to Y over this connection.<br>\nWhich of the following statements is/are TRUE about the destination IP and MAC\naddresses on this packet at the time it leaves X?",
+   "solution": "Recall how addresses change along the path:<br>- IP addresses are end-to-end: the destination IP stays the IP of <b>Y</b> on the whole path.<br>\n- MAC addresses are hop-by-hop: the destination MAC is that of the next IP hop, which is router <b>R</b>. A switch only forwards frames; it is never the destination MAC.<br><br>\nSo the only true statement is: destination IP = IP of Y.<br><br>\n<b>Answer: The destination IP address is the IP address of Y</b><br><br><a href=\"https://gateoverflow.in/422884/gate-cse-2024-set-2-question-13#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-layer-protocol",
+   "options": [
+    "The destination IP address is the IP address of R",
+    "The destination IP address is the IP address of Y",
+    "The destination MAC address is the MAC address of S",
+    "The destination MAC address is the MAC address of Y"
+   ],
+   "correctSet": [
+    1
+   ]
+  },
+  {
+   "id": 1124214,
+   "number": 14,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following tasks is/are the responsibility/responsibilities of the memory\nmanagement unit (MMU) in a system with paging-based memory management?",
+   "solution": "The MMU is hardware that sits between CPU and memory. Its jobs:<br>\n- Translate virtual address [latex]\\rightarrow[/latex] physical address using the page table True<br>\n- Raise a trap (page fault) when the entry is invalid / not present True<br>\n- Raise a trap when a write is attempted on a read-only page True<br><br>\nAllocating a page table for a new process is done by the <b>OS</b> (software), not the MMU.<br><br>\n<b>Answer: Options 2, 3 and 4</b><br><br><a href=\"https://gateoverflow.in/422883/gate-cse-2024-set-2-question-14#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "options": [
+    "Allocate a new page table for a newly created process",
+    "Translate a virtual address to a physical address using the page table",
+    "Raise a trap when a virtual address is not found in the page table",
+    "Raise a trap when a process tries to write to a page marked with read-only permission in the page table"
+   ],
+   "correctSet": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1124215,
+   "number": 15,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Consider a process P running on a CPU. Which one or more of the following events will always trigger a context switch by the OS that results in process P moving to a non-running state (e.g., ready, blocked)?",
+   "solution": "Checking each statement:<br>- Blocking system call to read disk: P must wait for I/O [latex]\\rightarrow[/latex] moved to blocked state [latex]\\text{---}[/latex] always a context switch.<br>\n- Page fault for a page in swap space: the page must be read from disk [latex]\\rightarrow[/latex] P is blocked [latex]\\text{---}[/latex] always a context switch.<br>\n- Disk interrupt for another process: the OS handles it and makes that process ready, but P can continue running [latex]\\text{---}[/latex] not always.<br>\n- Timer interrupt: P may still have time left in its slice, or the scheduler may pick P again [latex]\\text{---}[/latex] not always.<br><br>\n<b>Answer: Options 1 and 2</b><br><br><a href=\"https://gateoverflow.in/422882/gate-cse-2024-set-2-question-15#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Process",
+   "tag2_url": "https://practicepaper.in/gate-cse/process",
+   "options": [
+    "P makes a blocking system call to read a block of data from the disk",
+    "P tries to access a page that is in the swap space, triggering a page fault",
+    "An interrupt is raised by the disk to deliver data requested by some other process",
+    "A timer interrupt is raised by the hardware"
+   ],
+   "correctSet": [
+    0,
+    1
+   ]
+  }
+ ]
+}

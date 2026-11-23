@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11231,
+  "quizName": "GATE CSE 2023",
+  "pageTitle": "GATE CSE 2023",
+  "timeLimit": 0,
+  "pageNo": 7,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2023",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1123131,
+   "number": 31,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the given C-code and its corresponding assembly code, with a few\noperands U1-U4 being unknown. Some useful information as well as the semantics\nof each unique assembly instruction is annotated as inline comments in the code.\nThe memory is byte-addressable.<br><img src=\"/wp-content/uploads/GATE/CS/20231/q31.jpg\" /><br>Which one of the following options is a CORRECT replacement for operands in\nthe position (U1, U2, U3, U4) in the above assembly code?",
+   "solution": "Match the C code with the assembly code:<br>- [latex]b[i]*8[/latex] = shift left by 3 [latex]\\rightarrow[/latex] <b>U1 = 3</b>.<br>\n- int is 4 bytes and memory is byte addressable, so to move to the next element of a and b, add 4 to the pointers: <b>U2 = 4</b>, <b>U3 = 4</b>.<br>\n- After incrementing i (r1), jump back to the loop check at L01 [latex]\\rightarrow[/latex] <b>U4 = L01</b>.<br><br>\n<b>Answer: (3, 4, 4, L01)</b><br><br><a href=\"https://gateoverflow.in/399280/gate-cse-2023-question-31#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Machine Instruction",
+   "tag2_url": "https://practicepaper.in/gate-cse/machine-instruction",
+   "options": [
+    "(8, 4, 1, Lo2)",
+    "(3, 4, 4, Lo1)",
+    "(8, 1, 1, Lo2)",
+    "(3, 1, 1, Lo1)"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1123132,
+   "number": 32,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A 4 kilobyte (KB) byte-addressable memory is realized using four 1 KB memory\nblocks. Two input address lines (IA4 and IA3) are connected to the chip select\n(CS) port of these memory blocks through a decoder as shown in the figure. The\nremaining ten input address lines from IA11-IA0 are connected to the address\nport of these blocks. The chip select (CS) is active high. <br><img src=\"/wp-content/uploads/GATE/CS/20231/q32.jpg\" /><br>The input memory addresses (IA11-IA0), in decimal, for the starting locations\n(Addr=0) of each block (indicated as X1, X2, X3, X4 in the figure) are among the\noptions given below. Which one of the following options is CORRECT?",
+   "solution": "The decoder inputs are IA4 and IA3, so bits 4 and 3 select the block; the other 10 lines address inside the block.<br><br>\nStarting location of each block (all other bits 0):<br>\n- X1: IA4 IA3 = 00 [latex]\\rightarrow[/latex] 0<br>\n- X2: 01 [latex]\\rightarrow[/latex] [latex]2^3=8[/latex]<br>\n- X3: 10 [latex]\\rightarrow[/latex] [latex]2^4=16[/latex]<br>\n- X4: 11 [latex]\\rightarrow[/latex] 16 + 8 = 24<br><br>\n<b>Answer: (0, 8, 16, 24)</b><br><br><a href=\"https://gateoverflow.in/399279/gate-cse-2023-question-32#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Memory Chip Design",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-chip-design",
+   "options": [
+    "(0, 1, 2, 3)",
+    "(0, 1024, 2048, 3072)",
+    "(0, 8, 16, 24)",
+    "(0, 0, 0, 0)"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1123133,
+   "number": 33,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a sequential digital circuit consisting of T flip-flops and D flip-flops as\nshown in the figure. CLKIN is the clock input to the circuit. At the beginning,\nQ1, Q2 and Q3 have values 0, 1 and 1, respectively.<br><img src=\"/wp-content/uploads/GATE/CS/20231/q33.jpg\" /><br>Which one of the given values of (Q1, Q2, Q3) can NEVER be obtained with this\ndigital circuit?\n",
+   "solution": "From the circuit: [latex]T_1=\\overline{Q_3}[/latex], [latex]D_2=Q_1[/latex], [latex]T_3=Q_2[/latex].<br>\nNext state: [latex]Q_1^+=Q_1\\oplus\\overline{Q_3}[/latex], [latex]Q_2^+=Q_1[/latex], [latex]Q_3^+=Q_3\\oplus Q_2[/latex].<br><br>\nStarting from (0, 1, 1):<br>\n011 [latex]\\rightarrow[/latex] 000 [latex]\\rightarrow[/latex] 100 [latex]\\rightarrow[/latex] 010 [latex]\\rightarrow[/latex] 101 [latex]\\rightarrow[/latex] 111 [latex]\\rightarrow[/latex] 110 [latex]\\rightarrow[/latex] 011 (repeats)<br><br>\n(0, 0, 1) never appears.<br><br>\n<b>Answer: (0, 0, 1)</b><br><br><a href=\"https://gateoverflow.in/399278/gate-cse-2023-question-33#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Sequential Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/sequential-circuit",
+   "options": [
+    "(0, 0, 1)",
+    "(1, 0, 0)",
+    "(1, 0, 1)",
+    "(1, 1, 1)"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1123134,
+   "number": 34,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A Boolean digital circuit is composed using two 4-input multiplexers (M1 and M2)\nand one 2-input multiplexer (M3) as shown in the figure. X0-X7 are the inputs of\nthe multiplexers M1 and M2 and could be connected to either 0 or 1. The select\nlines of the multiplexers are connected to Boolean variables A, B and C as shown.<br><img src=\"/wp-content/uploads/GATE/CS/20231/q34.jpg\" /><br>Which one of the following set of values of (X0, X1, X2, X3, X4, X5, X6, X7) will\nrealise the Boolean function [latex] \\bar{A}+\\bar{A}\\cdot \\bar{C}+A\\cdot \\bar{B}\\cdot C[/latex] ?",
+   "solution": "M1 and M2 use selects (A, C), so input index = 2A + C. M3 picks M1 when B = 0 and M2 when B = 1.<br><br>\nSimplify: [latex]F=\\bar A+\\bar A\\bar C+A\\bar BC=\\bar A+A\\bar BC[/latex]<br><br>\n- <b>B = 0 (M1)</b>: A = 0 [latex]\\rightarrow[/latex] F = 1 (X0 = X1 = 1); A = 1 [latex]\\rightarrow[/latex] F = C (X2 = 0, X3 = 1)<br>\n- <b>B = 1 (M2)</b>: A = 0 [latex]\\rightarrow[/latex] F = 1 (X4 = X5 = 1); A = 1 [latex]\\rightarrow[/latex] F = 0 (X6 = X7 = 0)<br><br>\n<b>Answer: (1, 1, 0, 1, 1, 1, 0, 0)</b><br><br><a href=\"https://gateoverflow.in/399277/gate-cse-2023-question-34#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Combinational Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/combinational-circuit",
+   "options": [
+    "(1, 1, 0, 0, 1, 1, 1, 0)",
+    "(1, 1, 0, 0, 1, 1, 0, 1)",
+    "(1, 1, 0, 1, 1, 1, 0, 0)",
+    "(0, 0, 1, 1, 0, 1, 1, 1)"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1123135,
+   "number": 35,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the IEEE-754 single precision floating point numbers\nP=0xC1800000 and Q=0x3F5C2EF4.<br>\nWhich one of the following corresponds to the product of these numbers\n(i.e., P x Q), represented in the IEEE-754 single precision format?",
+   "solution": "P = 0xC1800000: sign 1, exponent [latex]131\\Rightarrow2^4[/latex], mantissa 0 [latex]\\rightarrow[/latex] [latex]P=-16[/latex].<br><br>\nMultiplying Q by [latex]-16[/latex] keeps Q's mantissa, makes the sign 1, and adds 4 to the exponent.<br>\nQ's exponent = 0x7E = 126 [latex]\\rightarrow[/latex] new exponent 130 = 1000 0010.<br><br>\nBits: 1 | 1000 0010 | (Q's mantissa) [latex]\\rightarrow[/latex] first 12 bits 1100 0001 0101 = C15, then the rest of the mantissa C2EF4.<br><br>\n<b>Answer: 0xC15C2EF4</b><br><br><a href=\"https://gateoverflow.in/399276/gate-cse-2023-question-35#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "options": [
+    "0x404C2EF4",
+    "0x405C2EF4",
+    "0xC15C2EF4",
+    "0xC14C2EF4"
+   ],
+   "correct": 2
+  }
+ ]
+}

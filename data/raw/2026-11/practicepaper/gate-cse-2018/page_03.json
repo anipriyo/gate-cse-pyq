@@ -1,0 +1,115 @@
+{
+ "meta": {
+  "quizId": 11181,
+  "quizName": "GATE CS 2018",
+  "pageTitle": "GATE CSE 2018",
+  "timeLimit": 0,
+  "pageNo": 3,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2018",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1118111,
+   "number": 11,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "In an Entity-Relationship (ER) model, suppose R is a many-to-one relationship from entity set E1 to entity set E2. Assume that E1 and E2 participate totally in R and that the cardinality of E1 is greater than the cardinality of E2. <br> Which one of the following is true about R?",
+   "solution": "Many-to-one from E1 to E2 means each E1 entity relates to <b>at most one</b> E2 entity; total participation of E1 makes it <b>at least one</b>. So every E1 entity is associated with exactly one E2 entity. Since E1 is larger, E2 entities may have several E1 partners.<br><br>\n<b>Answer: Every entity in E1 is associated with exactly one entity in E2</b><br><br><a href=\"https://gateoverflow.in/204085/gate2018-11#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "ER Model",
+   "tag2_url": "https://practicepaper.in/gate-cse/er-model",
+   "options": [
+    "Every entity in E1 is associated with exactly one entity in E2.",
+    "Some entity in E1 is associated with more than one entity in E2.",
+    "Every entity in E2 is associated with exactly one entity in E1.",
+    "Every entity in E2 is associated with at most one entity in E1."
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1118112,
+   "number": 12,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following two tables and four queries in SQL. <br> <img src=\"/wp-content/uploads/GATE/CS/2018/q12.jpg\" />   <br>Which one of the queries above is certain to have an output that is a superset of the outputs of the other three queries?",
+   "solution": "Checking each statement:<br>- Query 1 (inner join): matching rows only.<br>\n- Query 2 (left outer): matching rows + unmatched Book rows.<br>\n- Query 3 (right outer): matching rows + unmatched Stock rows.<br>\n- Query 4 (<b>full outer</b>): matching rows + unmatched rows from both sides, so it always contains the other three.<br><br>\n<b>Answer: Query 4</b><br><br><a href=\"https://gateoverflow.in/204086/gate2018-12#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "SQL",
+   "tag2_url": "https://practicepaper.in/gate-cse/sql",
+   "options": [
+    "Query 1",
+    "Query 2",
+    "Query 3",
+    "Query 4"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1118113,
+   "number": 13,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Match the following: <br> <img src=\"/wp-content/uploads/GATE/CS/2018/q13.jpg\" />  ",
+   "solution": "Checking each statement:<br>- UDP port number: 16 bits (IV)<br>\n- Ethernet MAC address: 48 bits (I)<br>\n- IPv6 Next Header: 8 bits (II)<br>\n- TCP sequence number: 32 bits (III)<br><br>\n<b>Answer: P-IV, Q-I, R-II, S-III</b><br><br><a href=\"https://gateoverflow.in/204087/gate2018-13#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Transport Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/transport-layer-protocol",
+   "options": [
+    "P-III, Q-IV, R-II, S-I",
+    "P-II, Q-I, R-IV, S-III",
+    "P-IV, Q-I, R-II, S-III",
+    "P-IV, Q-I, R-III, S-II"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1118114,
+   "number": 14,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following statements regarding the slow start phase of the TCP congestion control algorithm. Note that [latex]cwnd[/latex] stands for the TCP congestion window and MSS denotes the Maximum Segment Size. <br><br> (i) The cwnd increases by 2 MSS on every successful acknowledgment. <br>\n(ii) The cwnd approximately doubles on every successful acknowledgement.  <br>\n(iii) The cwnd increases by 1 MSS every round trip time. <br>\n(iv) The cwnd approximately doubles every round trip time. <br><br>\nWhich one of the following is correct?",
+   "solution": "In slow start, cwnd grows by 1 MSS for <b>each ACK</b>. In one RTT a full window of segments is acknowledged, so cwnd roughly <b>doubles every RTT</b>. Only (iv) is right.<br><br>\n<b>Answer: Only (iv) is true</b><br><br><a href=\"https://gateoverflow.in/204088/gate2018-14#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Transport Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/transport-layer-protocol",
+   "options": [
+    "Only (ii) and (iii) are true",
+    "Only (i) and (iii) are true",
+    "Only (iv) is true",
+    "Only (i) and (iv) are true"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1118115,
+   "number": 15,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Two people, P and Q, decide to independently roll two identical dice, each with 6 faces, numbered 1 to 6. The person with the lower number wins. In case of a tie, they roll the dice repeatedly until there is no tie. Define a trial as a throw of the dice by P and Q. Assume that all 6 numbers on each dice are equi-probable and that all trials are independent. The probability (rounded to 3 decimal places) that one of them wins on the third trial is ",
+   "solution": "A trial ties with probability [latex]\\frac{6}{36}=\\frac16[/latex]. Someone wins on the 3rd trial if the first two tie and the third does not:<br>\n[latex]\\left(\\frac16\\right)^2\\times\\frac56=\\frac{5}{216}\\approx0.023[/latex]<br><br>\n<b>Answer: 0.023</b><br><br><a href=\"https://gateoverflow.in/204089/gate2018-15#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "ansMin": 0.021,
+   "ansMax": 0.024
+  }
+ ]
+}

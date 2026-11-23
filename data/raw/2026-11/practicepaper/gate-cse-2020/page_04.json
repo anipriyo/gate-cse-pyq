@@ -1,0 +1,100 @@
+{
+ "meta": {
+  "quizId": 11201,
+  "quizName": "GATE CS 2020",
+  "pageTitle": "GATE CSE 2020",
+  "timeLimit": 0,
+  "pageNo": 4,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2020",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1120116,
+   "number": 16,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "What is the worst case time complexity of inserting n elements into an empty linked list, if the linked list needs to be maintained in sorted order?",
+   "solution": "To keep the list sorted, each insertion must first find its position by walking the list: up to k steps when the list has k elements.<br><br>\nTotal in the worst case: [latex]1+2+\\cdots+(n-1)=\\Theta(n^2)[/latex]<br><br>\n<b>Answer: [latex]\\Theta(n^2)[/latex]</b><br><br><a href=\"https://gateoverflow.in/333215/gate2020-cs-16#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Link List",
+   "tag2_url": "https://practicepaper.in/gate-cse/link-list",
+   "options": [
+    "[latex]\\Theta (n)[/latex]",
+    "[latex]\\Theta (n \\log n)[/latex]",
+    "[latex]\\Theta (n^2)[/latex]",
+    "[latex]\\Theta (1)[/latex]"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1120117,
+   "number": 17,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Let [latex]R[/latex] be the set of all binary relations on the set {1,2,3}. Suppose a relation is chosen from [latex]R[/latex] at random. The probability that the chosen relation is reflexive (round off to 3 decimal places) is ______.",
+   "solution": "A relation on a 3-element set is any subset of the [latex]3\\times3=9[/latex] pairs [latex]\\rightarrow[/latex] [latex]2^9[/latex] relations.<br>\nReflexive: the 3 pairs (a, a) must be included; the other 6 are free [latex]\\rightarrow[/latex] [latex]2^6[/latex].<br><br>\n[latex]P=\\frac{2^6}{2^9}=\\frac18=0.125[/latex]<br><br>\n<b>Answer: 0.125</b><br><br><a href=\"https://gateoverflow.in/333214/gate2020-cs-17#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Relation",
+   "tag2_url": "https://practicepaper.in/gate-cse/relation",
+   "ansMin": 0.125,
+   "ansMax": 0.125
+  },
+  {
+   "id": 1120118,
+   "number": 18,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Let G be a group of 35 elements. Then the largest possible size of a subgroup of G other than G itself is _______.",
+   "solution": "By Lagrange's theorem, the order of a subgroup divides the order of the group. Divisors of 35: 1, 5, 7, 35.<br><br>\nExcluding G itself, the largest possible is 7 (a group of order 35 is cyclic and has subgroups of every divisor order).<br><br>\n<b>Answer: 7</b><br><br><a href=\"https://gateoverflow.in/333213/gate2020-cs-18#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Group Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/group-theory",
+   "ansMin": 7,
+   "ansMax": 7
+  },
+  {
+   "id": 1120119,
+   "number": 19,
+   "type": "NAT",
+   "marks": 1,
+   "text": "A multiplexer is placed between a group of 32 registers and an accumulator to regulate data movement such that at any given point in time the content of only one register will move to the accumulator. The number of select lines needed for the multiplexer is ______.",
+   "solution": "To select one of 32 inputs we need [latex]\\log_2 32=5[/latex] select lines.<br><br>\n<b>Answer: 5</b><br><br><a href=\"https://gateoverflow.in/333212/gate2020-cs-19#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Combinational Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/combinational-circuit",
+   "ansMin": 5,
+   "ansMax": 5
+  },
+  {
+   "id": 1120120,
+   "number": 20,
+   "type": "NAT",
+   "marks": 1,
+   "text": "If there are m input lines and n output lines for a decoder that is used to uniquely address a byte addressable 1 KB RAM, then the minimum value of m+n is ________ .",
+   "solution": "1 KB byte-addressable = 1024 locations [latex]\\rightarrow[/latex] the decoder needs [latex]\\log_2 1024=10[/latex] inputs and 1024 outputs.<br><br>\nm + n = 10 + 1024 = 1034<br><br>\n<b>Answer: 1034</b><br><br><a href=\"https://gateoverflow.in/333211/gate2020-cs-20#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Combinational Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/combinational-circuit",
+   "ansMin": 1034,
+   "ansMax": 1034
+  }
+ ]
+}

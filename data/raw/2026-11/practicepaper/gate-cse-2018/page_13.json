@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11181,
+  "quizName": "GATE CS 2018",
+  "pageTitle": "GATE CSE 2018",
+  "timeLimit": 0,
+  "pageNo": 13,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2018",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1118161,
+   "number": 61,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "In appreciation of the social improvements completed in a town, a wealthy philanthropist \ndecided to gift Rs. 750 to each male senior citizen in the town and Rs. 1000 to each\nfemale senior citizen.  Altogether, there were 300 senior citizens eligible for this gift. However,\nonly [latex]{\\frac{8}{9}}^{th}[/latex] of the eligible men and [latex]{\\frac{2}{3}}^{rd}[/latex] of the eligible women claimed the gift. How much\nmoney (in Rupees) did the philanthropist give away in total?",
+   "solution": "With m men and w women (m + w = 300):<br>\n[latex]750\\cdot\\frac89m+1000\\cdot\\frac23w=\\frac{2000}{3}(m+w)=\\frac{2000}{3}\\times300=2{,}00{,}000[/latex]<br><br>\n<b>Answer: 2,00,000</b><br><br><a href=\"https://gateoverflow.in/204067/gate-cse-2018-question-ga-6#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "1,50,000",
+    "2,00,000",
+    "1,75,000",
+    "1,51,000"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1118162,
+   "number": 62,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "If [latex]pqr\\neq 0[/latex] and [latex]p^{-x}=\\dfrac{1}{q},q^{-y}=\\dfrac{1}{r},r^{-z}=\\dfrac{1}{p},[/latex]  what is the value\n of the product [latex]xyz[/latex] ?",
+   "solution": "[latex]p^x=q[/latex], [latex]q^y=r[/latex], [latex]r^z=p[/latex]. Substituting: [latex]p=r^z=(q^y)^z=(p^x)^{yz}=p^{xyz}[/latex], so xyz = 1.<br><br>\n<b>Answer: 1</b><br><br><a href=\"https://gateoverflow.in/204068/gate-cse-2018-question-ga-7#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "-1",
+    "[latex]\\frac{1}{pqr}[/latex]",
+    "1",
+    "[latex]pqr[/latex]"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1118163,
+   "number": 63,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "In a party, 60% of the invited guests are male and 40% are female. If 80% of the invited guests attended the party and if all the invited female guests attended, what would be the ratio of males to females among the attendees in the party?",
+   "solution": "Of 100 invited: 60 men, 40 women. 80 attended, including all 40 women, so 40 men attended.<br><br>\nMen : women = 40 : 40 = 1 : 1<br><br>\n<b>Answer: 1:1</b><br><br><a href=\"https://gateoverflow.in/204069/gate-cse-2018-question-ga-8#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "02:03",
+    "01:01",
+    "03:02",
+    "02:01"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1118164,
+   "number": 64,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "In the figure below,  [latex]\\angle DEC + \\angle BFC[/latex]  is equal to _____<br><img src=\"/wp-content/uploads/GATE/CS/2018/q64.webp\" /> <br>",
+   "solution": "Let [latex]a=\\angle BAD[/latex], [latex]e=\\angle DEC[/latex], [latex]f=\\angle BFC[/latex]. In quadrilateral ABCD:<br>\n- [latex]\\angle ABC=180^\\circ-a-e[/latex] (from triangle AEB)<br>\n- [latex]\\angle ADC=180^\\circ-a-f[/latex] (from triangle ADF)<br>\n- [latex]\\angle BCD=360^\\circ-a-(180^\\circ-a-e)-(180^\\circ-a-f)=a+e+f[/latex]<br><br>\nSo [latex]e+f=\\angle BCD-\\angle BAD[/latex].<br><br>\n<b>Answer: [latex]\\angle BCD-\\angle BAD[/latex]</b><br><br><a href=\"https://gateoverflow.in/204070/gate-cse-2018-question-ga-9#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "[latex]\\angle BCD - \\angle BAD[/latex]",
+    "[latex]\\angle BAD + \\angle BCF[/latex]",
+    "[latex]\\angle BAD + \\angle BCD[/latex]",
+    "[latex]\\angle CBA + \\angle ADC[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1118165,
+   "number": 65,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A six sided unbiased die with four green faces and two red faces is rolled seven times. Which of the following combinations is the most likely outcome of the experiment?",
+   "solution": "The number of green faces in 7 rolls is Binomial(7, 2/3). Its most likely value is [latex]\\lfloor(7+1)\\cdot\\frac23\\rfloor=5[/latex].<br>\n(Check: P(5) = [latex]\\binom75\\frac{2^5}{3^7}=\\frac{672}{2187}[/latex] is larger than P(4) = [latex]\\frac{560}{2187}[/latex] and P(6) = [latex]\\frac{448}{2187}[/latex].)<br><br>\n<b>Answer: Five green faces and two red faces</b><br><br><a href=\"https://gateoverflow.in/204071/gate-cse-2018-question-ga-10#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "Three green faces and four red faces.",
+    "Four green faces and three red faces.",
+    "Five green faces and two red faces.",
+    "Six green faces and one red face"
+   ],
+   "correct": 2
+  }
+ ]
+}

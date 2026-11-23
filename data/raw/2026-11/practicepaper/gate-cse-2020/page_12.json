@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11201,
+  "quizName": "GATE CS 2020",
+  "pageTitle": "GATE CSE 2020",
+  "timeLimit": 0,
+  "pageNo": 12,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2020",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1120156,
+   "number": 56,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Raman is confident of speaking English _______six months as he has been practising regularly_______the last three weeks.",
+   "solution": "\"<b>within</b> six months\" = before six months are over; \"<b>for</b> the last three weeks\" = a period of time continuing up to now.<br><br>\n<b>Answer: within, for</b><br><br><a href=\"https://gateoverflow.in/333240/gate-cse-2020-question-ga-1#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "during, for",
+    "for, since",
+    "for, in",
+    "within, for"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1120157,
+   "number": 57,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "His knowledge of the subject was excellent but his classroom performance was_______.",
+   "solution": "\"But\" signals a contrast with \"excellent\" knowledge, so his classroom performance must be bad: <b>extremely poor</b>.<br><br>\n<b>Answer: extremely poor</b><br><br><a href=\"https://gateoverflow.in/333239/gate-cse-2020-question-ga-2#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "extremely poor",
+    "good",
+    "desirable",
+    "praiseworthy"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1120158,
+   "number": 58,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Select the word that fits the analogy:\n<br><br>\nCook : Cook :: Fly : _______",
+   "solution": "The verb \"cook\" also names the person who cooks (a cook). For \"fly\", the person who flies is a <b>flyer</b>.<br><br>\n<b>Answer: Flyer</b><br><br><a href=\"https://gateoverflow.in/333238/gate-cse-2020-question-ga-3#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "Flyer",
+    "Flying",
+    "Flew",
+    "Flighter"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1120159,
+   "number": 59,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The dawn of the 21st century witnessed the melting glaciers oscillating between giving too much and too little to billions of people who depend on them for fresh water. The UN climate report estimates that without deep cuts to man-made emissions, at least 30% of the northern hemisphere's surface permafrost could melt by the end of the century. Given this situation of imminent global exodus of billions of people displaced by rising seas, nation-states need to rethink their carbon footprint for political concerns, if not for environmental ones.<br><br>\n\nWhich one of the following statements can be inferred from the given passage?",
+   "solution": "The passage says glaciers give too much or too little water to billions who depend on them, and that billions may be displaced by rising seas. So billions of people are affected by melting glaciers. The other options are not stated.<br><br>\n<b>Answer: Billions of people are affected by melting glaciers</b><br><br><a href=\"https://gateoverflow.in/333237/gate-cse-2020-question-ga-4#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "Nation-states do not have environmental concerns.",
+    "Nation-states are responsible for providing fresh water to billions of people.",
+    "Billions of people are responsible foe man-made emissions.",
+    "Billions of people are affected by melting glaciers."
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1120160,
+   "number": 60,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "There are multiple routes to reach from node 1 to node 2, as shown in the network.   <br><img src=\"/wp-content/uploads/GATE/CS/20201/q60.jpg\" /><br>\n  The cost of travel on an edge between two nodes is given in rupees. Nodes 'a', 'b', 'c', 'd', 'e', and 'f' are toll booths. The toll price at toll booths marked 'a' and 'e' is Rs. 200, and is Rs. 100 for the other toll booths. Which is the cheapest route from node 1 to node 2?",
+   "solution": "Total cost = edge costs + tolls (a, e = 200; others = 100):<br>\n- 1-a-c-2: 200 + 100 + 100 + 200 + 100 = 700<br>\n- <b>1-f-b-2</b>: 100 + 0 + 200 + 100 + 100 = <b>500</b><br>\n- 1-b-2: 300 + 200 + 100 = 600<br>\n- 1-f-e-2: 100 + 100 + 200 + 100 + 200 = 700<br><br>\n<b>Answer: 1 - f - b - 2</b><br><br><a href=\"https://gateoverflow.in/333236/gate-cse-2020-question-ga-5#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "1 - a - c - 2",
+    "1 - f - b - 2",
+    "1 - b - 2",
+    "1 - f - e - 2"
+   ],
+   "correct": 1
+  }
+ ]
+}

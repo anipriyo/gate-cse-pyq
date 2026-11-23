@@ -1,0 +1,123 @@
+{
+ "meta": {
+  "quizId": 11262,
+  "quizName": "GATE CSE 2026 SET-2",
+  "pageTitle": "GATE CSE 2026 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 3,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2026-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1126211,
+   "number": 11,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider a file of size [latex]4[/latex] million bytes being transferred between two hosts connected via a path consisting of three consecutive links of bandwidth [latex]2[/latex] Mbps , [latex]500[/latex] kbps , and [latex]1[/latex] Mbps , respectively. All processing delays and propagation delays are negligible. Assume that there is no other background traffic over the path and no other additional overhead to transfer the file. <br><br>Which one of the following is the total time (in seconds) to transfer the file? <br>Note: [latex]1 {M}=10^{6}, 1 {k}=10^{3}[/latex]",
+   "solution": "With processing and propagation delays negligible, the effective throughput of a series of links is limited by the <b>slowest (bottleneck) link</b> in the path &mdash; here, [latex]500[/latex] kbps (since it's the minimum of [latex]2[/latex] Mbps, [latex]500[/latex] kbps, and [latex]1[/latex] Mbps).<br><br>\nFile size [latex]=4\\times10^6[/latex] bytes [latex]=4\\times10^6\\times8=32\\times10^6[/latex] bits.<br><br>\nTotal transfer time [latex]=\\dfrac{32\\times10^6\\text{ bits}}{500\\times10^3\\text{ bps}}=64[/latex] seconds.<br><br>\n<b>Answer: 64</b> <br><br> <a href=\"https://gateoverflow.in/523135/gate-cse-2026-set-2-question-11#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Physical Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/physical-layer",
+   "options": [
+    "731",
+    "64",
+    "8",
+    "16"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1126212,
+   "number": 12,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following protocols may need to broadcast some of its messages?",
+   "solution": "<b>DHCP</b> (Dynamic Host Configuration Protocol) is used by a host to automatically obtain an IP address (and other network configuration) when it first joins a network &mdash; since the host doesn't yet have an IP address (or know the server's address), its initial \"DHCP Discover\" message must be <b>broadcast</b> on the local network so that any DHCP server present can respond.<br><br>\n[latex]\\text{SMTP}[/latex] (mail), [latex]\\text{FTP}[/latex] (file transfer), and [latex]\\text{HTTP}[/latex] (web) are all conventional client-server protocols that communicate with a specific, already-known server address over a normal unicast connection &mdash; they have no inherent need to broadcast.<br><br>\n<b>Answer: DHCP</b> <br><br> <a href=\"https://gateoverflow.in/523134/gate-cse-2026-set-2-question-12#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Application Layer Protocols",
+   "tag2_url": "https://practicepaper.in/gate-cse/application-layer-protocols",
+   "options": [
+    "[latex]\\text{SMTP}[/latex]",
+    "[latex]\\text{FTP}[/latex]",
+    "[latex]\\text{DHCP}[/latex]",
+    "[latex]\\text{HTTP}[/latex]"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1126213,
+   "number": 13,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following CPU scheduling algorithms cannot be preemptive?",
+   "solution": "Checking whether each scheduling algorithm supports preemption:<br><br>\n- <b>SRTF</b> is explicitly the preemptive version of Shortest-Job-First &mdash; it can preempt a running process whenever a newly arrived process has a shorter remaining time.<br>\n- <b>Round Robin</b> is inherently preemptive &mdash; it forcibly preempts a running process once its time quantum expires.<br>\n- <b>Priority Scheduling</b> can be implemented in either a preemptive form (a higher-priority arrival preempts the current process) or non-preemptive form &mdash; so it certainly <i>can</i> be preemptive.<br>\n- <b>FCFS (First Come First Serve)</b> is defined by running processes strictly to completion in arrival order &mdash; there is no mechanism within FCFS for a later-arriving process to interrupt/preempt the one currently executing. It is inherently non-preemptive by definition.<br><br>\n<b>Answer: First Come First Serve (FCFS) Scheduling cannot be preemptive.</b> <br><br> <a href=\"https://gateoverflow.in/523133/gate-cse-2026-set-2-question-13#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "CPU Scheduling",
+   "tag2_url": "https://practicepaper.in/gate-cse/cpu-scheduling",
+   "options": [
+    "Shortest Remaining Time First (SRTF) Scheduling",
+    "First Come First Serve (FCFS) Scheduling",
+    "Round Robin Scheduling",
+    "Priority Scheduling"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1126214,
+   "number": 14,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following functions, where [latex]n[/latex] is a positive integer. <br><br>[latex] n^{1 / 3}, \\log (n), \\log (n!), 2^{\\log (n)} [/latex]<br><br> Which one of the following options lists the functions in increasing order of asymptotic growth rate?<br> Note: Assume the base of log to be [latex]2[/latex].",
+   "solution": "Simplify each function's asymptotic growth (using [latex]\\log[/latex] base [latex]2[/latex]):<br><br>\n- [latex]\\log(n)[/latex]: grows the <b>slowest</b> of all &mdash; sub-polynomial.<br>\n- [latex]n^{1/3}[/latex]: a polynomial with a small (fractional) exponent, grows faster than any power of [latex]\\log n[/latex] but slower than [latex]n[/latex] itself.<br>\n- [latex]2^{\\log(n)}=n[/latex] (since exponentiating base [latex]2[/latex] by [latex]\\log_2 n[/latex] simply recovers [latex]n[/latex]) &mdash; so this grows exactly like [latex]n[/latex], faster than [latex]n^{1/3}[/latex].<br>\n- [latex]\\log(n!)[/latex]: by Stirling's approximation, [latex]\\log(n!)=\\Theta(n\\log n)[/latex], which grows <b>faster</b> than plain [latex]n[/latex] (and hence faster than [latex]2^{\\log n}=n[/latex]).<br><br>\nSo the increasing order is: [latex]\\log(n) \\;<\\; n^{1/3} \\;<\\; 2^{\\log(n)} \\;<\\; \\log(n!)[/latex].<br><br>\n<b>Answer: log(n), n^(1/3), 2^log(n), log(n!)</b> <br><br> <a href=\"https://gateoverflow.in/523132/gate-cse-2026-set-2-question-14#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Asymptotic Notation",
+   "tag2_url": "https://practicepaper.in/gate-cse/asymptotic-notation",
+   "options": [
+    "[latex]\\log (n), n^{1 / 3}, 2^{\\log (n)}, \\log (n!)[/latex]",
+    "[latex]n^{1 / 3}, \\log (n), \\log (n!), 2^{\\log (n)}[/latex]",
+    "[latex]\\log (n), n^{1 / 3}, \\log (n!), 2^{\\log (n)}[/latex]",
+    "[latex]2^{\\log (n)}, n^{1 / 3}, \\log (n), \\log (n!)[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1126215,
+   "number": 15,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following can be recurrence relation(s) corresponding to an algorithm with time complexity [latex]\\Theta(n)[/latex]?",
+   "solution": "Solve each recurrence and compare to [latex]\\Theta(n)[/latex]:<br><br>\n- [latex]T(n)=T(n-1)+1[/latex]: unrolling gives [latex]T(n)=T(1)+(n-1)\\times1=\\Theta(n)[/latex]. <b>Matches.</b><br>\n- [latex]T(n)=2T(n/2)+1[/latex]: by the Master theorem, [latex]a=2,b=2[/latex] so [latex]n^{\\log_2 2}=n^1=n[/latex]; since [latex]f(n)=1[/latex] is polynomially smaller than [latex]n[/latex], Case 1 gives [latex]T(n)=\\Theta(n)[/latex]. <b>Matches.</b><br>\n- [latex]T(n)=2T(n/2)+n[/latex]: this is the classic merge-sort recurrence, [latex]f(n)=n=n^{\\log_2 2}[/latex] exactly (Case 2), giving [latex]T(n)=\\Theta(n\\log n)[/latex] &mdash; <b>not</b> [latex]\\Theta(n)[/latex].<br>\n- [latex]T(n)=T(n-1)+n[/latex]: unrolling gives [latex]T(n)=\\Theta(1+2+\\cdots+n)=\\Theta(n^2)[/latex] &mdash; <b>not</b> [latex]\\Theta(n)[/latex].<br><br>\n<b>Answer: T(n)=T(n-1)+1 and T(n)=2T(n/2)+1 both correspond to &Theta;(n) algorithms.</b> <br><br> <a href=\"https://gateoverflow.in/523131/gate-cse-2026-set-2-question-15#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Recurrence Relation",
+   "tag2_url": "https://practicepaper.in/gate-cse/recurrence-relation",
+   "options": [
+    "[latex]T(n)=T(n-1)+1, \\quad T(1)=1[/latex]",
+    "[latex]T(n)=2 T\\left(\\frac{n}{2}\\right)+1, \\quad T(1)=1[/latex]",
+    "[latex]T(n)=2 T\\left(\\frac{n}{2}\\right)+n, \\quad T(1)=1[/latex]",
+    "[latex]T(n)=T(n-1)+n, \\quad T(1)=1[/latex]"
+   ],
+   "correctSet": [
+    0,
+    1
+   ]
+  }
+ ]
+}

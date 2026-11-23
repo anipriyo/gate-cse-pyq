@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11261,
+  "quizName": "GATE CSE 2026 SET-1",
+  "pageTitle": "GATE CSE 2026 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 1,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2026-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1126101,
+   "number": 1,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "An urn contains one red ball and one blue ball. At each step, a ball is picked uniformly at random from the urn, and this ball together with another ball of the same color is put back in the urn. The probability that there are equal number of red and blue balls after two steps is",
+   "solution": "Let the urn start with [latex]1[/latex] red and [latex]1[/latex] blue ball.<br><br>\r\n<b>Step 1:</b> A ball is picked uniformly (prob [latex]1/2[/latex] each). If red is picked, the urn becomes [latex](2R,1B)[/latex]; if blue is picked, the urn becomes [latex](1R,2B)[/latex]. Each case has probability [latex]1/2[/latex].<br><br>\r\n<b>Step 2:</b> We want the urn to end up with equal red and blue balls, i.e. [latex](2R,2B)[/latex] (since after 2 steps there are always [latex]4[/latex] balls total).<br>\r\n- From [latex](2R,1B)[/latex]: we need to pick the blue ball, probability [latex]=1/3[/latex].<br>\r\n- From [latex](1R,2B)[/latex]: we need to pick the red ball, probability [latex]=1/3[/latex].<br><br>\r\nSo required probability [latex]=\\dfrac{1}{2}\\times\\dfrac{1}{3}+\\dfrac{1}{2}\\times\\dfrac{1}{3}=\\dfrac{1}{3}[/latex].<br><br>\r\n<b>Answer: 1/3</b> <br><br><a href=\"https://gateoverflow.in/523079/gate-cse-2026-set-1-question-1#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "options": [
+    "1/4",
+    "1/3",
+    "1/2",
+    "2/3"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1126102,
+   "number": 2,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider [latex]4 \\times 4[/latex] matrices with their elements from [latex]\\{\\mathbf{0}, \\mathbf{1}\\}[/latex]. The number of such matrices with even number of [latex]\\mathbf{1}[/latex] s in every row and every column is",
+   "solution": "We need [latex]4\\times4[/latex] binary matrices where every row and every column has an even number of [latex]1[/latex]s.<br><br>\r\nFreely choose the top-left [latex]3\\times3[/latex] sub-block: this can be filled in any of [latex]2^{9}=512[/latex] ways.<br><br>\r\nOnce this [latex]3\\times3[/latex] block is fixed, the entries in the [latex]4[/latex]th column (for the first [latex]3[/latex] rows) are forced so that each of those rows has an even number of [latex]1[/latex]s, and similarly the entries in the [latex]4[/latex]th row (for the first [latex]3[/latex] columns) are forced by the column parity condition. The single remaining corner entry (row [latex]4[/latex], column [latex]4[/latex]) is then also forced, and it is easy to check the row-[latex]4[/latex] parity and column-[latex]4[/latex] parity conditions become consistent automatically.<br><br>\r\nSo the count of valid matrices [latex]=2^{(4-1)^2}=2^9=512[/latex].<br><br>\r\n<b>Answer: 512</b><br><br><a href=\"https://gateoverflow.in/523078/gate-cse-2026-set-1-question-2#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "512",
+    "1025",
+    "1023",
+    "255"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1126103,
+   "number": 3,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "For [latex]n>1[/latex], the maximum multiplicity of any eigenvalue of an [latex]n \\times n[/latex] matrix with elements from [latex]\\mathbb{R}[/latex] is",
+   "solution": "For an [latex]n\\times n[/latex] real matrix, the multiplicity of any eigenvalue (as a root of the characteristic polynomial, which has degree [latex]n[/latex]) can be at most [latex]n[/latex].<br><br>\r\nThis bound is achieved: for example, the identity matrix [latex]I_n[/latex] (or any scalar matrix [latex]cI_n[/latex]) has the single eigenvalue [latex]c[/latex] repeated exactly [latex]n[/latex] times.<br><br>\r\nSo the maximum possible multiplicity of any eigenvalue is [latex]n[/latex].<br><br>\r\n<b>Answer: n</b><br><br> <a href=\"https://gateoverflow.in/523077/gate-cse-2026-set-1-question-3#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "[latex]n[/latex]",
+    "[latex]n-1[/latex]",
+    "[latex]1[/latex]",
+    "[latex]n+1[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1126104,
+   "number": 4,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Match each addressing mode in [latex]\\textbf{List I}[/latex] with a data element or an element of a data structure (in a high-level language) in [latex]\\textbf{List II}[/latex]:<br><br>  [latex] \\begin{array}{|l|l|} \\hline {\\textbf{List I}} & {\\textbf{List II}} \\\\ \\hline \\hline P.\\ \\text{Immediate} & 1.\\ \\text{Element of an array} \\\\ \\hline Q.\\ \\text{Indirect} & 2.\\ \\text{Pointer} \\\\ \\hline R.\\ \\text{Base with index} & 3.\\ \\text{Element of a record} \\\\ \\hline S.\\ \\text{Base with offset/displacement} & 4.\\ \\text{Constant} \\\\ \\hline \\end{array} [/latex]",
+   "solution": "Matching addressing modes to the high-level data element they naturally implement:<br><br>\r\n- <b>P. Immediate</b>: the operand value is embedded directly in the instruction &rarr; used for a <b>Constant (4)</b>.<br>\r\n- <b>Q. Indirect</b>: the instruction holds the address of the address of data &rarr; used to implement a <b>Pointer (2)</b>.<br>\r\n- <b>R. Base with index</b>: effective address = base + index, naturally used to access an <b>Element of an array (1)</b> (base = array start, index = subscript).<br>\r\n- <b>S. Base with offset/displacement</b>: effective address = base + fixed offset, naturally used to access an <b>Element of a record/struct (3)</b> (base = record start, offset = field position).<br><br>\r\n<b>Answer: P-4, Q-2, R-1, S-3</b> <br><br> <a href=\"https://gateoverflow.in/523076/gate-cse-2026-set-1-question-4#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Addressing Modes",
+   "tag2_url": "https://practicepaper.in/gate-cse/addressing-modes",
+   "options": [
+    "[latex]{P}-4, {Q}-3, {R}-1, {~S}-2[/latex]",
+    "[latex]{P}-4, {Q}-2, {R}-1, {~S}-3[/latex]",
+    "[latex]{P}-1, {Q}-4, {R}-3, {~S}-2[/latex]",
+    "[latex]{P}-2, {Q}-3, {R}-1, {~S}-4[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1126105,
+   "number": 5,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider a processor [latex]\\text{P}[/latex] whose instruction set architecture is the load-store architecture. The instruction format is such that the first operand of any instruction is the destination operand. <br><br>Which one of the following sequences of instructions corresponds to the high-level language statement [latex]{Z}={X}+{Y}[/latex] ?<br> Note: X, Y, and Z are memory operands. R[latex]0[/latex], R[latex]1[/latex], and R[latex]2[/latex] are registers.",
+   "solution": "In a load-store (register-register) architecture, arithmetic instructions can only operate on registers, never directly on memory. So to compute [latex]Z=X+Y[/latex] where [latex]X,Y,Z[/latex] are memory locations, we must:<br><br>\r\n1. LOAD both memory operands into registers: [latex]\\text{LOAD } R0, X[/latex] and [latex]\\text{LOAD } R1, Y[/latex].<br>\r\n2. Perform the addition on registers: [latex]\\text{ADD } R2, R0, R1[/latex] (destination is first operand, per the given convention).<br>\r\n3. STORE the result back to memory: [latex]\\text{STORE } Z, R2[/latex].<br><br>\r\nAny option that uses a memory operand directly inside an ADD instruction (e.g. [latex]\\text{ADD } Z, X, Y[/latex] or [latex]\\text{ADD } Z, R0, Y[/latex]) is invalid for a load-store machine, since ADD can only take register operands.<br><br>\r\n<b>Answer: LOAD R0,X; LOAD R1,Y; ADD R2,R0,R1; STORE Z,R2</b> <br><br> <a href=\"https://gateoverflow.in/523075/gate-cse-2026-set-1-question-5#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Machine Instruction",
+   "tag2_url": "https://practicepaper.in/gate-cse/machine-instruction",
+   "options": [
+    "ADD Z, X, Y",
+    "LOAD R[latex]0[/latex], X <br>ADD Z, R[latex]0[/latex], Y",
+    "ADD R[latex]0[/latex], X, Y <br>STORE Z, R[latex]0[/latex]",
+    "LOAD R[latex]0[/latex], X <br>LOAD R[latex]1[/latex], Y <br>ADD R[latex]2[/latex], R[latex]0[/latex], R[latex]1[/latex] <br>STORE Z, R[latex]2[/latex]"
+   ],
+   "correct": 3
+  }
+ ]
+}

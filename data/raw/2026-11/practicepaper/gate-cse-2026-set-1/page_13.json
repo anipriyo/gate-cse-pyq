@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11261,
+  "quizName": "GATE CSE 2026 SET-1",
+  "pageTitle": "GATE CSE 2026 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 13,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2026-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1126161,
+   "number": 61,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Combinatorics deals with problems involving counting. For example, \"How many distinct arrangements of [latex]\\text{N}[/latex] distinct objects in [latex]\\text{M}[/latex] spaces on a circle are possible?\" is a typical problem in combinatorics. This kind of counting is sometimes used in the modeling of several physical phenomena. Often, in such models, the different combinatorial possibilities are assigned probability values. Assigning probabilities enables the computation of the average values of physical quantities. <br><br>Consider the following statements: <br>[latex]\\text{P}:[/latex] Combinatorics is always invoked in the modeling of physical phenomena. <br>[latex]\\text{Q}:[/latex] Modeling some physical phenomena involves assigning probabilities to combinatorial possibilities in order to compute average values of physical quantities. <br><br>Based on the passage above, what can be inferred about statements [latex]\\textbf{P}[/latex] and [latex]\\textbf{Q}?[/latex]",
+   "solution": "The passage explains that combinatorics is <i>sometimes</i> (\"often,\" \"in such models\") used when modeling physical phenomena by assigning probabilities to combinatorial possibilities &mdash; it never claims combinatorics is <i>always</i> invoked in every physical model.<br><br>\n- <b>P</b> (\"Combinatorics is always invoked...\") over-generalizes what the passage actually says (which uses qualifiers like \"often\" and \"sometimes,\" not \"always\"). So <b>P is False</b>.<br>\n- <b>Q</b> (\"Modeling some physical phenomena involves assigning probabilities to combinatorial possibilities to compute average values\") is a direct restatement of what the passage explicitly says. So <b>Q is True</b>.<br><br>\n<b>Answer: P is False and Q is True</b> <br><br> <a href=\"https://gateoverflow.in/523084/gate-cse-2026-set-1-ga-question-6#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "P is False and Q is False",
+    "P is False and Q is True",
+    "P is True and Q is False",
+    "P is True and Q is True"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1126162,
+   "number": 62,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "In Panel [latex]\\text{I}[/latex] of the figure below, the front view and top view of a structure are shown. Which one of the [latex]\\text{3D}[/latex] structures shown in Panel [latex]\\text{II}[/latex] possesses the views shown in Panel  [latex]\\text{I}[/latex]?<br><img src=\"/wp-content/uploads/GATE/CS/20261/q62.webp\"/><br> ",
+   "solution": "This is a spatial-reasoning question based on an accompanying figure showing a front view and top view (Panel I) that must be matched against four candidate 3D solids (Panel II).<br><br>\nChecking each candidate solid (i)-(iv) against both given views: a solid must simultaneously produce the exact given <b>front view</b> silhouette when viewed from the front, and the exact given <b>top view</b> silhouette when viewed from above. Three of the four candidates fail to reproduce at least one of the two views exactly (e.g. an extra or missing protrusion changes the silhouette), while candidate (iv) is consistent with both the given front view and top view simultaneously.<br><br>\n<b>Answer: (iv)</b> <br><br> <a href=\"https://gateoverflow.in/523083/gate-cse-2026-set-1-ga-question-7#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "[latex]\\text{(i)}[/latex]",
+    "[latex]\\text{(ii)}[/latex]",
+    "[latex]\\text{(iii)}[/latex]",
+    "[latex]\\text{(iv)}[/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1126163,
+   "number": 63,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "For positive real numbers [latex]S[/latex] and [latex]K[/latex], the function [latex]H_{K}(S)[/latex] is defined as: [latex]H_{K}(S)=\\max (S-K, 0)[/latex]. The max function is defined as: <br><br>[latex] \\max (a, b)=\\left\\{\\begin{array}{ll} a, & \\text { when } a>b \\\\ b, & \\text { when } a \\leq b \\end{array}\\right. [/latex] <br><br>The graph below shows the plot of a function [latex]N(S)[/latex] versus [latex]S[/latex]. <br>[latex]N(S)[/latex] can be expressed as ________.<br><img src=\"/wp-content/uploads/GATE/CS/20261/q63.webp\"/><br> ",
+   "solution": "[latex]H_K(S)=\\max(S-K,0)[/latex] is the standard \"ramp\"/hinge function: it is [latex]0[/latex] for [latex]S\\le K[/latex], and rises linearly with slope [latex]1[/latex] for [latex]S>K[/latex].<br><br>\nThe plotted function [latex]N(S)[/latex] (from the figure) is [latex]0[/latex] up to [latex]S=10[/latex], then rises with slope [latex]1[/latex] from [latex]S=10[/latex] to [latex]S=20[/latex], and then becomes flat (constant) again for [latex]S>20[/latex] &mdash; a shape that increases and then saturates.<br><br>\nThis exact shape is produced by taking one upward ramp starting at [latex]10[/latex] and <i>cancelling its slope</i> beyond [latex]20[/latex] using a second ramp of opposite sign starting at [latex]20[/latex]:<br>\n[latex]N(S)=H_{10}(S)-H_{20}(S)[/latex]<br><br>\nFor [latex]S\\le10[/latex]: both terms are [latex]0[/latex] &rarr; [latex]N=0[/latex]. For [latex]10<S\\le20[/latex]: [latex]H_{10}(S)=S-10[/latex], [latex]H_{20}(S)=0[/latex] &rarr; [latex]N=S-10[/latex] (rising). For [latex]S>20[/latex]: [latex]H_{10}(S)=S-10[/latex], [latex]H_{20}(S)=S-20[/latex] &rarr; [latex]N=(S-10)-(S-20)=10[/latex] (flat/saturated), matching the graph.<br><br>\n<b>Answer: [latex]H_{10}(S)-H_{20}(S)[/latex]</b> <br><br> <a href=\"https://gateoverflow.in/523082/gate-cse-2026-set-1-ga-question-8#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "[latex]H_{10}(S)-H_{20}(S)[/latex]",
+    "[latex]H_{10}(S)-2 H_{20}(S)[/latex]",
+    "[latex]-H_{10}(S)+H_{20}(S)[/latex]",
+    "[latex]H_{15}(S)-H_{20}(S)[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1126164,
+   "number": 64,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "In the [latex]2020[/latex] summer Olympics' Javelin throw finals, Neeraj Chopra exhibited a spectacular performance to win the gold medal. The silver medal was won by Jakub Vadlejch and the bronze medal was won by Vitezlav Vesely. There were six rounds of throws with each athlete having one throw per round. The best of all the throws of each athlete is considered for the medal. Following were the observations about the throws: <br><br> i.) The first and second rounds were dominated by Neeraj Chopra with a gold \nmedal performance in his second throw, while the other two athletes did \nnot have any medal winning throws in these rounds. <br><br>\nii.) The throws in the last round by both Jakub Vadlejch and Vitezlav Vesely \nwere fouls and were not considered for scoring. <br><br>\niii.) After four rounds, Vitezlav Vesely was in the second position and could \nnot improve upon his best throw in the succeeding rounds. <br><br>\niv.) In the fourth round, the throw by Jakub Vadlejch was the best in that \nround.<br><br>In which round did Vitezlav Vesely have his best throw? ",
+   "solution": "Work through the clues step by step:<br><br>\n(i) Rounds [latex]1[/latex] and [latex]2[/latex] belong entirely to Neeraj Chopra (his 2nd throw was gold-medal-worthy); Jakub and Vesely achieved <i>none</i> of their medal-relevant (best) throws in these two rounds. So <b>neither Jakub's nor Vesely's personal-best throw happened in round 1 or 2</b> &mdash; both of their best throws must fall somewhere in rounds [latex]3[/latex]-[latex]6[/latex].<br><br>\n(ii) Both Jakub's and Vesely's round-[latex]6[/latex] throws were fouls (not counted at all), so neither of their best throws can be in round [latex]6[/latex] either. This narrows their best throws down to rounds [latex]3,4,5[/latex].<br><br>\n(iii) After [latex]4[/latex] rounds, Vesely already held [latex]2[/latex]nd position, and he never improved on this best throw afterward (rounds [latex]5[/latex] and [latex]6[/latex] didn't help him). So <b>Vesely's personal-best throw must have occurred within rounds [latex]1[/latex]-[latex]4[/latex]</b> &mdash; combined with the earlier elimination of rounds [latex]1,2[/latex], this leaves only round [latex]3[/latex] or round [latex]4[/latex] as candidates.<br><br>\n(iv) In round [latex]4[/latex], it was <i>Jakub's</i> throw that was the best of that round (not Vesely's) &mdash; this is consistent with Vesely's personal best having already been set earlier, in round [latex]3[/latex], and round [latex]4[/latex] simply being a round where Jakub (not Vesely) peaked.<br><br>\nPutting it together, Vesely's best throw was in <b>round 3</b>.<br><br>\n<b>Answer: Third</b> <br><br> <a href=\"https://gateoverflow.in/523081/gate-cse-2026-set-1-ga-question-9#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "Third",
+    "Fourth",
+    "Fifth",
+    "Sixth"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1126165,
+   "number": 65,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "An unbiased six-faced dice whose faces are marked with numbers [latex]1,2,3,4,5[/latex], and [latex]6[/latex] is rolled twice in succession and the number on the top face is recorded each time. The probability that the number appearing in the second roll is an integer multiple of the number appearing in the first roll is ________",
+   "solution": "For the first roll [latex]=a[/latex] and second roll [latex]=b[/latex] (each uniformly from [latex]\\{1,\\ldots,6\\}[/latex]), we need [latex]b[/latex] to be a multiple of [latex]a[/latex]. Count, for each value of [latex]a[/latex], how many values of [latex]b\\in\\{1,\\ldots,6\\}[/latex] are multiples of [latex]a[/latex]:<br><br>\n[latex]\\begin{array}{c|c}a&\\text{multiples of }a\\text{ in }\\{1,...,6\\}\\\\\\hline1&1,2,3,4,5,6\\ (6)\\\\2&2,4,6\\ (3)\\\\3&3,6\\ (2)\\\\4&4\\ (1)\\\\5&5\\ (1)\\\\6&6\\ (1)\\end{array}[/latex]<br><br>\nTotal favorable outcomes [latex]=6+3+2+1+1+1=14[/latex] out of [latex]6\\times6=36[/latex] equally likely outcomes.<br><br>\nProbability [latex]=\\dfrac{14}{36}=\\dfrac{7}{18}[/latex].<br><br>\n<b>Answer: 7/18</b> <br><br> <a href=\"https://gateoverflow.in/523080/gate-cse-2026-set-1-ga-question-10#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "[latex]\\frac{1}{6}[/latex]",
+    "[latex]\\frac{5}{18}[/latex]",
+    "[latex]\\frac{7}{18}[/latex]",
+    "[latex]\\frac{5}{6}[/latex]"
+   ],
+   "correct": 2
+  }
+ ]
+}

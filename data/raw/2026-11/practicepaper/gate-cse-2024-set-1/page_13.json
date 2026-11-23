@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11241,
+  "quizName": "GATE CSE 2024 SET-1",
+  "pageTitle": "GATE CSE 2024 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 13,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124161,
+   "number": 61,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "In the given text, the blanks are numbered (i)-(iv). Select the best match for all the\nblanks.  <br>\nSteve was advised to keep his head ___(i)___ before heading __(ii)__ to bat;\nfor, while he had a head __(iii)__ batting, he could only do so with a cool head\ns __(iv)__ his shoulders",
+   "solution": "Meaning of each phrase:<br>- keep his head <b>down</b> [latex]\\text{---}[/latex] stay low-profile / focused<br>\n- heading <b>out</b> to bat [latex]\\text{---}[/latex] going out to the pitch<br>\n- a head <b>for</b> batting [latex]\\text{---}[/latex] natural talent for it<br>\n- a cool head <b>on</b> his shoulders [latex]\\text{---}[/latex] sensible and calm<br><br>\n<b>Answer: (i) down (ii) out (iii) for (iv) on</b><br><br><a href=\"https://gateoverflow.in/422781/gate-cse-2024-set-1-ga-6#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "(i) down (ii) down (iii) on (iv) for",
+    "(i) on (ii) down (iii) for (iv) on",
+    "(i) down (ii) out (iii) for (iv) on",
+    "(i) on (ii) out (iii) on (iv) for"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1124162,
+   "number": 62,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A rectangular paper sheet of dimensions 54cm x 4cm is taken. The two longer\nedges of the sheet are joined together to create a cylindrical tube. A cube whose\nsurface area is equal to the area of the sheet is also taken.<br>\nThen, the ratio of the volume of the cylindrical tube to the volume of the cube is",
+   "solution": "Joining the longer (54 cm) edges gives a tube of height 54 and circumference 4.<br>\n[latex]2\\pi r=4\\Rightarrow r=\\dfrac{2}{\\pi}[/latex], [latex]V_{cyl}=\\pi r^2h=\\pi\\cdot\\dfrac{4}{\\pi^2}\\cdot54=\\dfrac{216}{\\pi}[/latex]<br><br>\nCube: [latex]6a^2=54\\times4=216\\Rightarrow a=6[/latex], [latex]V_{cube}=216[/latex]<br><br>\nRatio [latex]=\\dfrac{216/\\pi}{216}=\\dfrac{1}{\\pi}[/latex]<br><br>\n<b>Answer: [latex]1/\\pi[/latex]</b><br><br><a href=\"https://gateoverflow.in/422780/gate-cse-2024-set-1-ga-7#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "[latex]1/\\pi[/latex]",
+    "[latex]2/\\pi[/latex]",
+    "[latex]3/\\pi[/latex]",
+    "[latex]4/\\pi[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1124163,
+   "number": 63,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The pie chart presents the percentage contribution of different macronutrients to a\ntypical 2,000 kcal diet of a person.<br><img src=\"/wp-content/uploads/GATE/CS/20241/q63.webp\" /><br>\nThe typical energy density (kcal/g) of these macronutrients is given in the table.\n<br>[latex]\n\\begin{array}{|l|c|}\n\\hline Macronutrient & Energy density (kcal/g) \\\\\n\\hline Carbohydrates &4\\\\\n\\hline Proteins &4 \\\\\n\\hline Unsaturated fat &9 \\\\\n\\hline Saturated fat &9 \\\\\n\\hline Trans fat &9 \\\\\n\\hline\n\\end{array}[/latex]<br>\n\nThe total fat (all three types), in grams, this person consumes is",
+   "solution": "From the pie chart, fats = unsaturated 20% + saturated 20% + trans 5% = 45%.<br><br>\nEnergy from fat [latex]=0.45\\times2000=900[/latex] kcal.<br>\nAll fats give 9 kcal/g, so fat [latex]=900/9=100[/latex] g.<br><br>\n<b>Answer: 100</b><br><br><a href=\"https://gateoverflow.in/422779/gate-cse-2024-set-1-ga-8#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "44.4",
+    "77.8",
+    "100",
+    "3600"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1124164,
+   "number": 64,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A rectangular paper of 20cm x 8cm is folded 3 times. Each fold is made along the\nline of symmetry, which is perpendicular to its long edge. The perimeter of the final\nfolded sheet (in cm) is",
+   "solution": "Each fold halves the current <b>longer</b> side.<br><br>\n- 20 [latex]\\times[/latex] 8 [latex]\\rightarrow[/latex] fold [latex]\\rightarrow[/latex] 10 [latex]\\times[/latex] 8<br>\n- 10 [latex]\\times[/latex] 8 [latex]\\rightarrow[/latex] fold [latex]\\rightarrow[/latex] 5 [latex]\\times[/latex] 8 (now 8 is the longer side)<br>\n- 5 [latex]\\times[/latex] 8 [latex]\\rightarrow[/latex] fold [latex]\\rightarrow[/latex] 5 [latex]\\times[/latex] 4<br><br>\nPerimeter [latex]=2(5+4)=18[/latex] cm.<br><br>\n<b>Answer: 18</b><br><br><a href=\"https://gateoverflow.in/422778/gate-cse-2024-set-1-ga-9#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "18",
+    "24",
+    "20",
+    "21"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1124165,
+   "number": 65,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The least number of squares to be added in the figure to make AB a line of\nsymmetry is <br><img src=\"/wp-content/uploads/GATE/CS/20241/q65.webp\" /><br>",
+   "solution": "For AB to be a line of symmetry, every square must have its mirror image on the other side of AB.<br><br>\n- Left figure: 1 square above AB and 2 squares below (one just below the line on the left, one two rows down on the right). None of them has its mirror image [latex]\\rightarrow[/latex] add 3.<br>\n- Right figure: 3 squares, all below AB [latex]\\rightarrow[/latex] add their 3 mirror images above.<br><br>\nTotal [latex]=3+3=6[/latex]<br><br>\n<b>Answer: 6</b><br><br><a href=\"https://gateoverflow.in/422777/gate-cse-2024-set-1-ga-10#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "6",
+    "4",
+    "5",
+    "7"
+   ],
+   "correct": 0
+  }
+ ]
+}

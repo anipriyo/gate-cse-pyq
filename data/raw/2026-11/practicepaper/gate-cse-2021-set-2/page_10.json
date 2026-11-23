@@ -1,0 +1,112 @@
+{
+ "meta": {
+  "quizId": 11212,
+  "quizName": "GATE CSE 2021 SET 2",
+  "pageTitle": "GATE CSE 2021 SET-2",
+  "timeLimit": 0,
+  "pageNo": 10,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2021-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1121246,
+   "number": 46,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider the following directed graph:<br><img src=\"/wp-content/uploads/GATE/CS/20212/q46.jpg\" /><br>\nWhich of the following is/are correct about the graph?",
+   "solution": "Following the arrows, the graph has three directed cycles:<br>\n- around the top-middle square (between the top two rows),<br>\n- around the bottom-left square through S,<br>\n- around the bottom-right square.<br><br>\n- A cycle means there is no topological order [latex]\\text{---}[/latex] TRUE.<br>\n- A DFS from S reaches every vertex, and each of these three cycles produces exactly one back edge [latex]\\rightarrow[/latex] 3 back edges [latex]\\text{---}[/latex] TRUE.<br>\n- Every graph has strongly connected components (at least single vertices) [latex]\\text{---}[/latex] FALSE.<br>\n- Not every pair is mutually reachable (e.g. nothing returns from the top-right corner) [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: Options 1 and 2</b><br><br><a href=\"https://gateoverflow.in/357494/gate-cse-2021-set-2-question-46#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "options": [
+    "The graph does not have a topological order",
+    "A depth-first traversal starting at vertex S classifies three directed edges as back edges",
+    "The graph does not have a strongly connected component",
+    "For each pair of vertices u and v, there is a directed path from u to v"
+   ],
+   "correctSet": [
+    0,
+    1
+   ]
+  },
+  {
+   "id": 1121247,
+   "number": 47,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Which of the following regular expressions represent(s) the set of all binary numbers that are divisible by three? Assume that the string [latex]\\epsilon[/latex] is divisible by three.",
+   "solution": "The DFA for \"value mod 3\" has states 0, 1, 2 (start and final 0); reading bit b moves r to [latex](2r+b)\\bmod3[/latex].<br>\n- Option 1: from state 0, \"0\" stays; \"1\" goes to 1, [latex](01^*0)^*[/latex] loops 1 [latex]\\rightarrow[/latex] 2 [latex]\\rightarrow[/latex] 1, and the final \"1\" returns to 0 True<br>\n- Option 2: same paths written differently (11, or 10 to state 2, loop, 01 back) True<br>\n- Option 3: [latex](0^*X^*)^*=(0+X)^*[/latex] where X is the loop in option 1 True<br>\n- Option 4: cannot produce 1001 (= 9, divisible by 3) False<br><br>\n<b>Answer: Options 1, 2 and 3</b><br><br><a href=\"https://gateoverflow.in/357493/gate-cse-2021-set-2-question-47#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Regular Expression",
+   "tag2_url": "https://practicepaper.in/gate-cse/regular-expression",
+   "options": [
+    "[latex](0+1(01^*0)^*1)^*[/latex]",
+    "[latex](0+11+10(1+00)^*01)^*[/latex]",
+    "[latex](0^*(1(01^*0)^*1)^*)^*[/latex]",
+    "[latex](0+11+11(1+00)^*00)^*[/latex]"
+   ],
+   "correctSet": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1121248,
+   "number": 48,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a three-level page table to translate a 39-bit virtual address to a physical address as shown below:<br><img src=\"/wp-content/uploads/GATE/CS/20212/q48.jpg\" /><br>\nThe page size is 4 KB = (1KB =[latex]2^{10}[/latex] bytes) and page table entry size at every level is 8 bytes. A process P is currently using 2 GB (1 GB =[latex]2^{30}[/latex] bytes) virtual memory which os mapped to 2 GB of physical memory. The minimum amount of memory required for the page table of P across all levels is _________ KB",
+   "solution": "2 GB / 4 KB = [latex]2^{19}[/latex] pages. Each page-table page holds 4096 / 8 = 512 = [latex]2^9[/latex] entries.<br><br>\nFor the minimum, the pages are contiguous:<br>\n- Level 3: [latex]2^{19}/2^9=1024[/latex] pages<br>\n- Level 2: 1024 entries [latex]\\rightarrow[/latex] 2 pages<br>\n- Level 1: 1 page<br><br>\nTotal = 1027 pages [latex]\\times[/latex] 4 KB = 4108 KB<br><br>\n<b>Answer: 4108</b><br><br><a href=\"https://gateoverflow.in/357489/gate-cse-2021-set-2-question-48#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "ansMin": 4108,
+   "ansMax": 4108
+  },
+  {
+   "id": 1121249,
+   "number": 49,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following ANSI C program<pre><code> #include &lt;stdio.h&gt;\nint foo(int x, int y, int q) \n    {\n        if ((x &lt;= 0) && (y &lt;= 0))\n        return q;\n        if (x &lt;= 0)\n        return foo(x, y-q, q);\n        if (y &lt;= 0)\n        return foo(x-q, y, q);\n        return foo(x, y-q, q) + foo(x-q, y, q);\n    }\nint main( )\n{\n    int r = foo(15, 15, 10);\n    printf(\"%d\", r);\n    return 0;\n}</code></pre>  The output of the program upon execution is ____",
+   "solution": "Let F(x, y) = foo(x, y, 10). Both values go 15 [latex]\\rightarrow[/latex] 5 [latex]\\rightarrow[/latex] [latex]-[/latex]5.<br>\n- F([latex]-[/latex]5, [latex]-[/latex]5) = 10<br>\n- F(5, [latex]-[/latex]5) = F([latex]-[/latex]5, [latex]-[/latex]5) = 10, and similarly F([latex]-[/latex]5, 5) = 10<br>\n- F(5, 5) = F(5, [latex]-[/latex]5) + F([latex]-[/latex]5, 5) = 20<br>\n- F(15, [latex]-[/latex]5) = F(5, [latex]-[/latex]5) = 10, so F(15, 5) = F(15, [latex]-[/latex]5) + F(5, 5) = 30<br>\n- By symmetry F(5, 15) = 30<br><br>\nF(15, 15) = F(15, 5) + F(5, 15) = 60<br><br>\n<b>Answer: 60</b><br><br><a href=\"https://gateoverflow.in/357488/gate-cse-2021-set-2-question-49#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "ansMin": 60,
+   "ansMax": 60
+  },
+  {
+   "id": 1121250,
+   "number": 50,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Let S be a set of consisting of 10 elements. The number of tuples of the form (A,B) such that A and B are subsets of S, and [latex]A\\subseteq B[/latex] is _______",
+   "solution": "For [latex]A\\subseteq B\\subseteq S[/latex], each element of S is in one of 3 states: not in B, in B but not A, or in A.<br><br>\n[latex]3^{10}=59049[/latex]<br><br>\n<b>Answer: 59049</b><br><br><a href=\"https://gateoverflow.in/357487/gate-cse-2021-set-2-question-50#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Set Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/set-theory",
+   "ansMin": 59049,
+   "ansMax": 59049
+  }
+ ]
+}

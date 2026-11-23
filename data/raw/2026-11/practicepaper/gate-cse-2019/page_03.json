@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11191,
+  "quizName": "GATE CS 2019",
+  "pageTitle": "GATE CSE 2019",
+  "timeLimit": 0,
+  "pageNo": 3,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2019",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1119111,
+   "number": 11,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following two statements about database transaction schedules:<br><br>\nI. Strict two-phase locking protocol generates conflict serializable schedules that are also recoverable.<br>\nII. Timestamp-ordering concurrency control protocol with Thomas' Write Rule can generate view serializable schedules that are not conflict serializable.<br><br>\nWhich of the above statements is/are TRUE?",
+   "solution": "Checking each statement:<br>- Strict 2PL holds all exclusive locks until commit, so schedules are conflict serializable and no transaction reads uncommitted data [latex]\\rightarrow[/latex] recoverable [latex]\\text{---}[/latex] TRUE.<br>\n- Thomas' write rule ignores obsolete writes, which allows some view serializable schedules that are not conflict serializable (blind writes) [latex]\\text{---}[/latex] TRUE.<br><br>\n<b>Answer: Both I and II</b><br><br><a href=\"https://gateoverflow.in/302837/gate2019-cs-11#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Transaction",
+   "tag2_url": "https://practicepaper.in/gate-cse/transaction",
+   "options": [
+    "I only",
+    "II only",
+    "Both I and II",
+    "Neither I nor II"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1119112,
+   "number": 12,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let G be an undirected complete graph on n vertices, where n[latex]\\gt[/latex]2. Then, the number of different Hamiltonian cycles in G is equal to",
+   "solution": "Fix one vertex as the start. The remaining n [latex]-[/latex] 1 vertices can be arranged in (n [latex]-[/latex] 1)! orders, and each cycle is counted twice (two directions).<br><br>\nNumber of Hamiltonian cycles [latex]=\\frac{(n-1)!}{2}[/latex]<br><br>\n<b>Answer: [latex]\\frac{(n-1)!}{2}[/latex]</b><br><br><a href=\"https://gateoverflow.in/302836/gate2019-cs-12#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "options": [
+    "n!",
+    "(n-1)!",
+    "1",
+    "[latex]\\frac{(n-1)!}{2}[/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1119113,
+   "number": 13,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Compute [latex]\\lim_{x \\to 3}\\frac{x^4-81}{2x^2-5x-3}[/latex]",
+   "solution": "Factor both and cancel (x [latex]-[/latex] 3):<br>\n[latex]\\frac{(x-3)(x+3)(x^2+9)}{(x-3)(2x+1)}=\\frac{(x+3)(x^2+9)}{2x+1}[/latex]<br><br>\nAt x = 3: [latex]\\frac{6\\times18}{7}=\\frac{108}{7}[/latex]<br><br>\n<b>Answer: 108/7</b><br><br><a href=\"https://gateoverflow.in/302835/gate2019-cs-13#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "options": [
+    "1",
+    "53/12",
+    "108/7",
+    "Limit does not exist"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1119114,
+   "number": 14,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following statements is NOT correct about the [latex]B^+[/latex] tree data structure used for creating an index of a relational database table?",
+   "solution": "In a [latex]B^+[/latex] tree only the <b>leaf nodes</b> hold pointers to data records. Non-leaf nodes contain only keys and pointers to child nodes.<br><br>\nThe other statements are true (height balanced, sorted keys, leaves linked).<br><br>\n<b>Answer: Non-leaf nodes have pointers to data records</b><br><br><a href=\"https://gateoverflow.in/302834/gate2019-cs-14#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "File System",
+   "tag2_url": "https://practicepaper.in/gate-cse/file-system",
+   "options": [
+    "[latex]B^+[/latex] Tree is a height-balanced tree",
+    "Non-leaf nodes have pointers to data records",
+    "Key values in each node are kept in sorted order",
+    "Each leaf node has a pointer to the next leaf node"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1119115,
+   "number": 15,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "For [latex]\\Sigma =\\{a,b\\}[/latex], let us consider the regular language <br>[latex]L=\\{x|x=a^{2+3k} \\; or \\; x=b^{10+12k}, k\\geq 0\\}[/latex].<br>\nWhich one of the following can be a pumping length (the constant guaranteed by the pumping lemma) for L?",
+   "solution": "p must be larger than any string that cannot be pumped.<br>\n- [latex]b^{10}[/latex] cannot be pumped: removing any part gives fewer than 10 b's, which is not in L. So p must be at least 11 [latex]\\rightarrow[/latex] 3, 5, 9 fail.<br>\n- With p = 24: every b-string of length [latex]\\ge24[/latex] (34, 46, [latex]\\ldots[/latex]) can pump [latex]y=b^{12}[/latex] inside the first 24 symbols, and every a-string can pump [latex]y=aaa[/latex].<br><br>\n<b>Answer: 24</b><br><br><a href=\"https://gateoverflow.in/302833/gate2019-cs-15#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Regular Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/regular-language",
+   "options": [
+    "3",
+    "5",
+    "9",
+    "24"
+   ],
+   "correct": 3
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11201,
+  "quizName": "GATE CS 2020",
+  "pageTitle": "GATE CSE 2020",
+  "timeLimit": 0,
+  "pageNo": 3,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2020",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1120111,
+   "number": 11,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider allocation of memory to a new process. Assume that none of the existing holes in the memory will exactly fit the process's memory requirement. Hence, a new hole of smaller size will be created if allocation is made in any of the existing holes. Which one of the following statement is TRUE?",
+   "solution": "Best fit picks the smallest hole that fits, so the hole it leaves is the smallest possible. First fit picks some fitting hole, so its leftover is never smaller than best fit's.<br><br>\nThe other comparisons depend on where the holes are and are not \"always\" true.<br><br>\n<b>Answer: The hole created by best fit is never larger than the hole created by first fit</b><br><br><a href=\"https://gateoverflow.in/333220/gate2020-cs-11#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "options": [
+    "The hole created by first fit is always larger than the hole created by next fit.",
+    "The hole created by worst fit is always larger than the hole created by first fit.",
+    "The hole created by best fit is never larger than the hole created by first fit.",
+    "The hole created by next fit is never larger than the hole created by best fit."
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1120112,
+   "number": 12,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following statements about process state transitions for a system using preemptive scheduling. <br><br>\nI. A running process can move to ready state.<br>\nII. A ready process can move to running state.<br>\nIII. A blocked process can move to running state.<br>\nIV. A blocked process can move to ready state.<br><br>\nWhich of the above statements are TRUE?",
+   "solution": "Checking each statement:<br>- Running [latex]\\rightarrow[/latex] Ready (preemption) [latex]\\text{---}[/latex] possible.<br>\n- Ready [latex]\\rightarrow[/latex] Running (dispatch) [latex]\\text{---}[/latex] possible.<br>\n- Blocked [latex]\\rightarrow[/latex] Running [latex]\\text{---}[/latex] <b>not possible</b>; a blocked process goes to Ready first.<br>\n- Blocked [latex]\\rightarrow[/latex] Ready (I/O done) [latex]\\text{---}[/latex] possible.<br><br>\n<b>Answer: I, II and IV only</b><br><br><a href=\"https://gateoverflow.in/333219/gate2020-cs-12#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Process",
+   "tag2_url": "https://practicepaper.in/gate-cse/process",
+   "options": [
+    "I, II and III only",
+    "II and III only",
+    "I, II and IV only",
+    "I, II, III and IV only"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1120113,
+   "number": 13,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider a relational database containing the following schemas. <br><img src=\"/wp-content/uploads/GATE/CS/20201/q13.jpg\" /><br>The primary key of each table is indicated by underlining the constituent fields.    <pre><code> SELECT s.sno, s.sname\n    FROM Suppliers s, Catalogue c\n    WHERE s.sno=c.sno AND\n        cost > (SELECT AVG (cost)\n                FROM Catalogue\n                WHERE pno = 'P4'\n                GROUP BY pno) ;</pre></code><br>The number of rows returned by the above SQL query is",
+   "solution": "Subquery: average cost of P4 = (200 + 250) / 2 = 225.<br><br>\nCatalogue rows with cost [latex]\\gt[/latex] 225: (S2, P5, 250), (S3, P1, 250), (S3, P5, 300), (S3, P4, 250) [latex]\\rightarrow[/latex] 4 rows.<br><br>\nEach joins with exactly one supplier, and there is no DISTINCT, so 4 rows are returned.<br><br>\n<b>Answer: 4</b><br><br><a href=\"https://gateoverflow.in/333218/gate2020-cs-13#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "SQL",
+   "tag2_url": "https://practicepaper.in/gate-cse/sql",
+   "options": [
+    "4",
+    "5",
+    "0",
+    "2"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1120114,
+   "number": 14,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following is used to represent the supporting many-one relationships of a weak entity set in an entity-relationship diagram?",
+   "solution": "The relationship that links a weak entity to its owner (the <b>identifying relationship</b>) is drawn as a diamond with a double border. The weak entity itself is a double rectangle.<br><br>\n<b>Answer: Diamonds with double/bold border</b><br><br><a href=\"https://gateoverflow.in/333217/gate2020-cs-14#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "ER Model",
+   "tag2_url": "https://practicepaper.in/gate-cse/er-model",
+   "options": [
+    "Diamonds with double/bold border ",
+    "Rectangles with double/bold border",
+    "Ovals with double/bold border",
+    "Ovals that contain underlined identifiers"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1120115,
+   "number": 15,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following statements about the functionality of an IP based router.<br><br>\nI.    A router does not modify the IP packets during forwarding.<br>\nII.   It is not necessary for a router to implement any routing protocol.<br>\nIII.  A router should reassemble IP fragments if the MTU of the outgoing link is larger than the size of the incoming IP packet.<br><br>\n  Which of the above statements is/are TRUE?",
+   "solution": "Checking each statement:<br>- I: a router changes the packet (TTL decrement, checksum, possibly fragmentation) [latex]\\text{---}[/latex] FALSE.<br>\n- II: a router can work with static routes only, without any routing protocol [latex]\\text{---}[/latex] TRUE.<br>\n- III: routers never reassemble fragments; only the destination does [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: II only</b><br><br><a href=\"https://gateoverflow.in/333216/gate2020-cs-15#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-layer-protocol",
+   "options": [
+    "I and II only",
+    "I only",
+    "II and III only",
+    "II only"
+   ],
+   "correct": 3
+  }
+ ]
+}

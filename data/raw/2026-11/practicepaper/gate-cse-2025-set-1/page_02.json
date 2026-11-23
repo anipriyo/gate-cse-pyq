@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11251,
+  "quizName": "GATE CSE 2025 SET-1",
+  "pageTitle": "GATE CSE 2025 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 2,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2025-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1125106,
+   "number": 6,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Identify the ONE CORRECT matching between the OSI layers and their corresponding functionalities as shown.\n<br>\n[latex]\\begin{array}{|l|l|}\n    \\hline\n    \\textbf{OSI Layers} & \\textbf{Functionalities} \\\\ \n    \\hline\n    \\text{(a) Network layer} & \\text{(I) Packet routing} \\\\ \n    \\hline\n    \\text{(b) Transport layer} & \\text{(II) Framing and error handling} \\\\ \n    \\hline\n    \\text{(c) Datalink layer} & \\text{(III) Host to host communication} \\\\ \n    \\hline\n\\end{array}[/latex]\n",
+   "solution": "Matching OSI layers to their core job:<br><br>\n- <b>Network layer</b> handles <b>(I) packet routing</b> across the network (host-to-host addressing and forwarding decisions).<br>\n- <b>Transport layer</b> provides <b>(III) host-to-host communication</b> (end-to-end delivery between the actual communicating processes/hosts).<br>\n- <b>Data link layer</b> handles <b>(II) framing and error handling</b> (organizing bits into frames and detecting/correcting transmission errors on a single link).<br><br>\n<b>Answer: (a)-(I), (b)-(III), (c)-(II)</b><br><br><a href=\"https://gateoverflow.in/460074/gate-cse-2025-set-1-question-6#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "OSI Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/osi-layer",
+   "options": [
+    "(a)-(I), (b)-(II), (c)-(III)",
+    "(a)-(I), (b)-(III), (c)-(II)",
+    "(a)-(II), (b)-(I), (c)-(III)",
+    "(a)-(III), (b)-(II), (c)-(I)"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1125107,
+   "number": 7,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "[latex]g(. )[/latex] is a function from [latex]A[/latex] to [latex]B[/latex], [latex]f(. )[/latex] is a function from [latex]B[/latex] to [latex]C[/latex], and their composition defined as [latex]f(g(. ))[/latex] is a mapping from [latex]A[/latex] to [latex]C[/latex]. <br>If [latex]f(. )[/latex] and [latex]f(g(. ))[/latex] are onto (surjective) functions, which ONE of the following is TRUE about the function [latex]g(. )[/latex]?",
+   "solution": "We're told [latex]f[/latex] is onto (B&rarr;C) and the composite [latex]f\\circ g[/latex] is onto (A&rarr;C), and asked what this forces about [latex]g[/latex] (A&rarr;B).<br><br>\nIntuitively: since [latex]f[/latex] alone is <i>already</i> onto [latex]C[/latex], every element of [latex]C[/latex] has <i>some</i> preimage in [latex]B[/latex] regardless of [latex]g[/latex]. The fact that [latex]f\\circ g[/latex] is <i>also</i> onto just says [latex]g[/latex]'s image happens to hit enough of [latex]B[/latex] to cover all of [latex]f[/latex]'s \"useful\" preimages &mdash; but [latex]g[/latex] itself doesn't need to be onto all of [latex]B[/latex] (there could be elements of [latex]B[/latex] entirely outside [latex]g[/latex]'s range, as long as [latex]f[/latex] still reaches every element of [latex]C[/latex] through the range [latex]g[/latex] does cover), nor does [latex]g[/latex] need to be one-to-one (multiple elements of [latex]A[/latex] could map to the same element of [latex]B[/latex]).<br><br>\nA simple counterexample confirms it: let [latex]B=\\{1,2\\}[/latex], [latex]C=\\{1\\}[/latex], [latex]f[/latex] onto, and [latex]g[/latex] mapping every element of [latex]A[/latex] to just [latex]1\\in B[/latex] &mdash; [latex]g[/latex] is neither onto nor one-to-one, yet [latex]f\\circ g[/latex] is trivially onto.<br><br>\n<b>Answer: g(.) is not required to be a one-to-one or onto function.</b><br><br><a href=\"https://gateoverflow.in/460073/gate-cse-2025-set-1-question-7#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Functions",
+   "tag2_url": "https://practicepaper.in/gate-cse/functions",
+   "options": [
+    "[latex]g(. )[/latex] must be an onto (surjective) function.",
+    "[latex]g(. )[/latex] must be a one-to-one (injective) function.",
+    "[latex]g(. )[/latex] must be a bijective function, that is, both one-to-one and onto.",
+    "[latex]g(. )[/latex] is not required to be a one-to-one or onto function."
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1125108,
+   "number": 8,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let [latex]G[/latex] be any undirected graph with positive edge weights, and [latex]T[/latex] be a minimum spanning tree of [latex]G[/latex]. For any two vertices, [latex]u[/latex] and [latex]v[/latex], let [latex]d_1(u, v)[/latex] and [latex]d_2(u, v)[/latex] be the shortest distances between [latex]u[/latex] and [latex]v[/latex] in [latex]G[/latex] and [latex]T[/latex], respectively. Which ONE of the options is CORRECT for all possible [latex]G[/latex], [latex]T[/latex], [latex]u[/latex], and [latex]v[/latex]?",
+   "solution": "[latex]T[/latex] is a subgraph of [latex]G[/latex] using only a subset of [latex]G[/latex]'s edges, so any path that exists inside [latex]T[/latex] between [latex]u[/latex] and [latex]v[/latex] is <i>also</i> a valid path in [latex]G[/latex] (with the exact same total weight). This means the shortest path in [latex]G[/latex] can never be longer than the shortest path in [latex]T[/latex] &mdash; [latex]G[/latex] has strictly more routing options available (all of [latex]T[/latex]'s edges, plus possibly more), so it can only match or beat [latex]T[/latex]'s best distance.<br><br>\nSo [latex]d_1(u,v)\\le d_2(u,v)[/latex] always holds (equality is common but not guaranteed &mdash; a shortcut through a non-tree edge in [latex]G[/latex] can make [latex]d_1[/latex] strictly smaller).<br><br>\n<b>Answer: [latex]d_1(u,v)\\le d_2(u,v)[/latex]</b><br><br><a href=\"https://gateoverflow.in/460072/gate-cse-2025-set-1-question-8#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Minimum Spanning Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/minimum-spanning-tree",
+   "options": [
+    "[latex]d_1(u, v) = d_2(u, v)[/latex]",
+    "[latex]d_1(u, v) \\leq d_2(u, v)[/latex]",
+    "[latex]d_1(u, v) \\geq d_2(u, v)[/latex]",
+    "[latex]d_1(u, v) \\neq d_2(u, v)[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1125109,
+   "number": 9,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following context-free grammar [latex]G[/latex], where [latex]S[/latex], [latex]A[/latex], and [latex]B[/latex] are the variables (non-terminals), [latex]a[/latex] and [latex]b[/latex] are the terminal symbols, [latex]S[/latex] is the start variable, and the rules of [latex]G[/latex] are described as:\n<br><br>\n[latex]S \\to aaB \\mid Abb[/latex]<br>\n[latex]A \\to a \\mid aA[/latex]<br>\n[latex]B \\to b \\mid bB[/latex]\n<br><br>\nWhich ONE of the languages [latex]L(G)[/latex] is accepted by [latex]G[/latex]?",
+   "solution": "[latex]A\\to a\\mid aA[/latex] generates exactly the strings [latex]a^n[/latex] for [latex]n\\ge1[/latex] (one or more [latex]a[/latex]'s), and similarly [latex]B\\to b\\mid bB[/latex] generates [latex]b^n[/latex] for [latex]n\\ge1[/latex].<br><br>\nSo:<br>\n- [latex]S\\to aaB[/latex] generates [latex]aa[/latex] followed by [latex]b^n[/latex] ([latex]n\\ge1[/latex]), i.e. the set [latex]\\{a^2b^n\\mid n\\ge1\\}[/latex].<br>\n- [latex]S\\to Abb[/latex] generates [latex]a^n[/latex] ([latex]n\\ge1[/latex]) followed by [latex]bb[/latex], i.e. the set [latex]\\{a^nb^2\\mid n\\ge1\\}[/latex].<br><br>\n[latex]L(G)[/latex] is the union of these two alternatives.<br><br>\n<b>Answer: [latex]L(G)=\\{a^2b^n\\mid n\\ge1\\}\\cup\\{a^nb^2\\mid n\\ge1\\}[/latex]</b><br><br><a href=\"https://gateoverflow.in/460071/gate-cse-2025-set-1-question-9#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-language",
+   "options": [
+    "[latex]L(G) = \\{ a^2b^n \\mid n \\geq 1 \\} \\cup \\{ a^n b^2 \\mid n \\geq 1 \\}[/latex]",
+    "[latex]L(G) = \\{ a^n b^{2n} \\mid n \\geq 1 \\} \\cup \\{ a^{2n} b^n \\mid n \\geq 1 \\}[/latex]",
+    "[latex]L(G) = \\{ a^n b^n \\mid n \\geq 1 \\}[/latex]",
+    "[latex]L(G) = \\{ a^{2n} b^{2n} \\mid n \\geq 1 \\}[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1125110,
+   "number": 10,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following recurrence relation:\n<br><br>\n[latex]T(n) = 2T(n-1) + n2^n \\quad \\text{for} \\quad n > 0, \\quad T(0) = 1[/latex]\n<br><br>\nWhich ONE of the following options is CORRECT?",
+   "solution": "[latex]T(n)=2T(n-1)+n2^n[/latex]. Substitute [latex]T(n)=2^nS(n)[/latex]:<br>\n[latex]2^nS(n)=2\\cdot2^{n-1}S(n-1)+n2^n=2^nS(n-1)+n2^n[/latex]<br>\nDividing through by [latex]2^n[/latex]: [latex]S(n)=S(n-1)+n[/latex].<br><br>\nUnrolling this simple recurrence: [latex]S(n)=S(0)+\\displaystyle\\sum_{k=1}^{n}k=1+\\dfrac{n(n+1)}{2}=\\Theta(n^2)[/latex].<br><br>\nSo [latex]T(n)=2^n\\cdot\\Theta(n^2)=\\Theta(n^22^n)[/latex].<br><br>\n<b>Answer: [latex]T(n)=\\Theta(n^22^n)[/latex]</b><br><br><a href=\"https://gateoverflow.in/460070/gate-cse-2025-set-1-question-10#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Recurrence Relation",
+   "tag2_url": "https://practicepaper.in/gate-cse/recurrence-relation",
+   "options": [
+    "[latex]T(n) = \\Theta(n^2 2^n)[/latex]",
+    "[latex]T(n) = \\Theta(n 2^n)[/latex]",
+    "[latex]T(n) = \\Theta((\\log n)^2 2^n)[/latex]",
+    "[latex]T(n) = \\Theta(4^n)[/latex]"
+   ],
+   "correct": 0
+  }
+ ]
+}

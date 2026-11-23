@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11181,
+  "quizName": "GATE CS 2018",
+  "pageTitle": "GATE CSE 2018",
+  "timeLimit": 0,
+  "pageNo": 10,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2018",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1118146,
+   "number": 46,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The number of possible min-heaps containing each value from {1, 2, 3, 4, 5, 6, 7} exactly once is _____.",
+   "solution": "The root must be 1. The 6 remaining numbers split into the left and right subtrees (3 each): [latex]\\binom63=20[/latex] ways. In each 3-node subtree the smallest is its root and the other two can be swapped: 2 ways each.<br><br>\nTotal = 20 [latex]\\times[/latex] 2 [latex]\\times[/latex] 2 = 80<br><br>\n<b>Answer: 80</b><br><br><a href=\"https://gateoverflow.in/204121/gate2018-46#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Heap Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/heap-tree",
+   "ansMin": 80,
+   "ansMax": 80
+  },
+  {
+   "id": 1118147,
+   "number": 47,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following undirected graph G:<br> <img src=\"/wp-content/uploads/GATE/CS/2018/q47.jpg\" /> <br>  Choose a value for x that will maximize the number of minimum weight spanning trees (MWSTs) of G. The number of MWSTs of G for this value of x is ______.",
+   "solution": "Edges 1 and 3 (from the top vertex) are always in the MST. The left vertex can be joined by either of its two weight-4 edges: 2 choices. The right vertex is joined by x or 5; with x = 5 both are equally cheap: 2 choices.<br><br>\nNumber of MSTs = 2 [latex]\\times[/latex] 2 = 4<br><br>\n<b>Answer: 4</b><br><br><a href=\"https://gateoverflow.in/204122/gate2018-47#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Minimum Spanning Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/minimum-spanning-tree",
+   "ansMin": 4,
+   "ansMax": 4
+  },
+  {
+   "id": 1118148,
+   "number": 48,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the weights and values of items listed below. Note that there is only one unit of each item. <br><img src=\"/wp-content/uploads/GATE/CS/2018/q48.jpg\" /> <br>  The task is to pick a subset of these items such that their total weight is no more than 11 Kgs\nand their total value is maximized. Moreover, no item may be split. The total value of items picked by an optimal algorithm is denoted by  [latex]V_{opt}[/latex]. A greedy algorithm sorts the items by their value-to-weight ratios in descending order and packs them greedily, starting from the first item in the ordered list. The total value of items picked by the greedy algorithm is denoted by [latex]V_{greedy}[/latex].<br>\nThe value of [latex]V_{opt}[/latex]-[latex]V_{greedy}[/latex] is ____________.",
+   "solution": "Value/weight: item 4 = 12, item 1 = 6, item 3 = 5, item 2 = 4.<br>\n- Greedy: take item 4 (2 kg, 24); item 1 (10 kg) no longer fits; take item 3 (4 kg, 20); item 2 does not fit [latex]\\rightarrow[/latex] [latex]V_{greedy}=44[/latex].<br>\n- Optimal: item 1 alone gives 60 (better than 2 + 4 = 52 or 2 + 3 = 48) [latex]\\rightarrow[/latex] [latex]V_{opt}=60[/latex].<br><br>\nDifference = 60 [latex]-[/latex] 44 = 16<br><br>\n<b>Answer: 16</b><br><br><a href=\"https://gateoverflow.in/204123/gate2018-48#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Greedy Technique",
+   "tag2_url": "https://practicepaper.in/gate-cse/greedy-technique",
+   "ansMin": 16,
+   "ansMax": 16
+  },
+  {
+   "id": 1118149,
+   "number": 49,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the minterm list form of a Boolean function F given below. <br>[latex]F(P,Q,R,S)=\\sum m(0,2,5,7,9,11)+d(3,8,10,12,14)[/latex] <br> Here, m denotes a minterm and d denotes a don't care term. The number of essential prime\nimplicants of the function F  is ______.",
+   "solution": "Prime implicants that are forced:<br>\n- 0 can only be covered by [latex]\\bar Q\\bar S[/latex] (0, 2, 8, 10) [latex]\\rightarrow[/latex] essential<br>\n- 5 can only be covered by [latex]\\bar PQS[/latex] (5, 7) [latex]\\rightarrow[/latex] essential<br>\n- 9 can only be covered by [latex]P\\bar Q[/latex] (8, 9, 10, 11) [latex]\\rightarrow[/latex] essential<br><br>\nThese three already cover all minterms.<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/204124/gate2018-49#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "ansMin": 3,
+   "ansMax": 3
+  },
+  {
+   "id": 1118150,
+   "number": 50,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The instruction pipeline of a RISC processor has the following stages: Instruction Fetch (IF), Instruction Decode (ID), Operand Fetch (OF), Perform Operation (PO) and Writeback (WB). The IF, ID, OF and WB stages take 1 clock cycle each for every instruction. Consider a sequence of 100 instructions. In the PO stage, 40 instructions take 3 clock cycles each, 35 instructions take 2 clock cycles each, and the remaining 25 instructions take 1 clock cycle each. Assume that there are no data hazards and no control hazards. <br>The number of clock cycles required for completion of execution of the sequence of instructions is ______.",
+   "solution": "The PO stage is the bottleneck, so the instructions flow through it back to back.<br>\nTotal PO time = 40 [latex]\\times[/latex] 3 + 35 [latex]\\times[/latex] 2 + 25 [latex]\\times[/latex] 1 = 215 cycles.<br><br>\nAdd 3 cycles before the first PO (IF, ID, OF) and 1 after the last (WB): 3 + 215 + 1 = 219<br><br>\n<b>Answer: 219</b><br><br><a href=\"https://gateoverflow.in/204125/gate2018-50#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Pipeline Processor",
+   "tag2_url": "https://practicepaper.in/gate-cse/pipeline-processor",
+   "ansMin": 219,
+   "ansMax": 219
+  }
+ ]
+}

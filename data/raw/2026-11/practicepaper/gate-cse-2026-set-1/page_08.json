@@ -1,0 +1,135 @@
+{
+ "meta": {
+  "quizId": 11261,
+  "quizName": "GATE CSE 2026 SET-1",
+  "pageTitle": "GATE CSE 2026 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 8,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2026-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1126136,
+   "number": 36,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Let [latex]f: \\mathbb{R} \\rightarrow \\mathbb{R}[/latex] be defined as follows: <br><br>[latex] f(x)=\\left(\\frac{|x|}{2}-x\\right)\\left(x-\\frac{|x|}{2}\\right) [/latex] <br><br>Which of the following statements is/are true?",
+   "solution": "Simplify [latex]f(x)=\\left(\\dfrac{|x|}{2}-x\\right)\\left(x-\\dfrac{|x|}{2}\\right)=-\\left(x-\\dfrac{|x|}{2}\\right)^2[/latex], which is always [latex]\\le0[/latex].<br><br>\n- For [latex]x\\ge0[/latex]: [latex]|x|=x[/latex], so [latex]f(x)=-\\left(\\dfrac{x}{2}\\right)^2=-\\dfrac{x^2}{4}[/latex].<br>\n- For [latex]x<0[/latex]: [latex]|x|=-x[/latex], so [latex]f(x)=-\\left(\\dfrac{3x}{2}\\right)^2=-\\dfrac{9x^2}{4}[/latex].<br><br>\nBoth pieces equal [latex]0[/latex] at [latex]x=0[/latex] and are negative (and decreasing towards [latex]-\\infty[/latex]) moving away from [latex]0[/latex] in either direction. So [latex]f[/latex] has a clear <b>local (in fact global) maximum</b> at [latex]x=0[/latex], and since [latex]f\\to-\\infty[/latex] on both sides with no interior dip, [latex]f[/latex] has <b>no local minimum</b>.<br><br>\n[latex]f'(x)=-x/2[/latex] for [latex]x\\ge0[/latex] and [latex]f'(x)=-9x/2[/latex] for [latex]x<0[/latex]. Both pieces approach [latex]0[/latex] as [latex]x\\to0[/latex], so [latex]f'[/latex] is <b>continuous</b> everywhere including at [latex]0[/latex]. But the slope of [latex]f'[/latex] jumps from [latex]-1/2[/latex] (just right of [latex]0[/latex]) to [latex]-9/2[/latex] (just left of [latex]0[/latex]), so [latex]f'[/latex] has a corner at [latex]x=0[/latex] and is <b>not differentiable</b> there (hence not differentiable \"over [latex]\\mathbb R[/latex]\").<br><br>\n<b>Answer: f has a local maximum; f' is continuous over R; f' is not differentiable over R.</b> <br><br> <a href=\"https://gateoverflow.in/523044/gate-cse-2026-set-1-question-36#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "options": [
+    "[latex]f[/latex] has a local maximum",
+    "[latex]f[/latex] has a local minimum",
+    "[latex]f^{\\prime}[/latex] is continuous over [latex]\\mathbb{R}[/latex]",
+    "[latex]f^{\\prime}[/latex] is not differentiable over [latex]\\mathbb{R}[/latex]"
+   ],
+   "correctSet": [
+    0,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1126137,
+   "number": 37,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Let [latex]G(V, E)[/latex] be a simple, undirected graph. A vertex cover of [latex]G[/latex] is a subset [latex]V^{\\prime} \\subseteq V[/latex] such that for every [latex](u, v) \\in E, u \\in V^{\\prime}[/latex] or [latex]v \\in V^{\\prime}[/latex]. Let the size of the smallest vertex cover in [latex]G[/latex] be [latex]k[/latex]. Let [latex]S[/latex] be any vertex cover of size [latex]k[/latex]. <br><br>For a vertex [latex]v \\in V[/latex], which of the following constraints will always ensure that [latex]v \\in S[/latex] ?",
+   "solution": "Suppose, for contradiction, [latex]v[/latex] has degree [latex]\\ge k+1[/latex] but [latex]v\\notin S[/latex] for some minimum vertex cover [latex]S[/latex] of size [latex]k[/latex]. Since [latex]v\\notin S[/latex], every edge incident on [latex]v[/latex] must be covered by its <i>other</i> endpoint (because [latex]S[/latex] is a vertex cover), so all [latex]\\ge k+1[/latex] distinct neighbors of [latex]v[/latex] must belong to [latex]S[/latex]. But then [latex]|S|\\ge k+1>k[/latex], contradicting that [latex]S[/latex] has size exactly [latex]k[/latex]. So [latex]v[/latex] must be in every minimum vertex cover.<br><br>\nThe other conditions don't force inclusion: a vertex on a long path or cycle can often be excluded by choosing the cover among its neighbors instead; and being part of a size-[latex]k[/latex] clique only forces [latex]k-1[/latex] of the clique's vertices into the cover (any one clique vertex, including [latex]v[/latex], can be the one left out).<br><br>\n<b>Answer: \"The degree of v is at least k+1\" always forces v &isin; S.</b> <br><br> <a href=\"https://gateoverflow.in/523043/gate-cse-2026-set-1-question-37#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "options": [
+    "The degree of [latex]v[/latex] is at least [latex]k+1[/latex]",
+    "The vertex [latex]v[/latex] is on a path of length [latex]k+1[/latex]",
+    "The vertex [latex]v[/latex] is on a cycle of length [latex]k+1[/latex]",
+    "The vertex [latex]v[/latex] is a part of a clique of size [latex]k[/latex]"
+   ],
+   "correctSet": [
+    0
+   ]
+  },
+  {
+   "id": 1126138,
+   "number": 38,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider a Boolean function [latex]F[/latex] with the following minterm expression:<br><br> [latex] F(P, Q, R, S)=\\sum m(1,2,3,4,5,7,10,12,13,14) [/latex] <br><br>Which of the following options is/are the minimal sum-of-products expression(s) of [latex]F[/latex] ?",
+   "solution": "Plotting [latex]F(P,Q,R,S)=\\sum m(1,2,3,4,5,7,10,12,13,14)[/latex] on a [latex]4[/latex]-variable K-map, the essential prime implicants are [latex]\\bar P S[/latex] (covering minterms [latex]1,3,5,7[/latex]) and [latex]Q\\bar R[/latex] (covering [latex]4,5,12,13[/latex]).<br><br>\nAfter these two terms, the still-uncovered minterms are [latex]2,10,14[/latex] (minterm [latex]3,4,5,12,13[/latex] already covered). These three remaining minterms can be covered in <b>two equally minimal ways</b>, giving two different valid minimal SOP expressions:<br><br>\n- Using [latex]\\bar P\\bar Q R[/latex] (covers [latex]2,3[/latex]) and [latex]P R\\bar S[/latex] (covers [latex]10,14[/latex]): [latex]F=\\bar P S+Q\\bar R+\\bar P\\bar Q R+PR\\bar S[/latex].<br>\n- Using [latex]PQ\\bar S[/latex] (covers [latex]12,14[/latex]) and [latex]\\bar Q R\\bar S[/latex] (covers [latex]2,10[/latex]): [latex]F=\\bar P S+Q\\bar R+PQ\\bar S+\\bar Q R\\bar S[/latex].<br><br>\nBoth use exactly [latex]4[/latex] terms and correctly cover all [latex]10[/latex] minterms with none extra, so both are valid minimal-cost solutions (this function has two equally-good minimal SOP forms because the remaining minterms admit two different but equally cheap coverings).<br><br>\n<b>Answer: [latex]\\bar P S+Q\\bar R+\\bar P\\bar Q R+PR\\bar S[/latex] and [latex]\\bar P S+Q\\bar R+PQ\\bar S+\\bar Q R\\bar S[/latex]</b> <br><br> <a href=\"https://gateoverflow.in/523042/gate-cse-2026-set-1-question-38#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "options": [
+    "[latex]\\bar{P} S+Q \\bar{R}+\\bar{P} \\bar{Q} R+\\bar{Q} R \\bar{S}[/latex]",
+    "[latex]\\bar{P} S+Q \\bar{R}+\\bar{P} \\bar{Q} R+P R \\bar{S}[/latex]",
+    "[latex]\\bar{P} S+Q \\bar{R}+P Q \\bar{S}+P R \\bar{S}[/latex]",
+    "[latex]\\bar{P} S+Q \\bar{R}+P Q \\bar{S}+\\bar{Q} R \\bar{S}[/latex]"
+   ],
+   "correctSet": [
+    1,
+    3
+   ]
+  },
+  {
+   "id": 1126139,
+   "number": 39,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Let [latex]G(V, E)[/latex] be a simple, undirected, edge-weighted graph with unique edge weights. Which of the following statements about the minimum spanning trees (MST) of [latex]G[/latex] is/are true?",
+   "solution": "When all edge weights are distinct, the MST is <b>unique</b>, and two classical facts (cycle property and cut property) apply:<br><br>\n- <b>Cycle property:</b> In any cycle [latex]C[/latex], the edge with the strictly largest weight can never appear in any MST (if it did, removing it and adding any other edge of the cycle would still keep the graph connected but reduce total weight). <b>True.</b><br>\n- The claim about the <i>smallest</i>-weight edge of every cycle being in every MST is <b>false</b> in general &mdash; a small edge can still be excluded if a smaller alternative path already connects its endpoints via other, even-cheaper edges from elsewhere in the graph (cycle property only rules out the *maximum*, it doesn't force in the minimum in the multi-cycle case with unrelated cycles overlapping).<br>\n- The claim that the <i>largest</i>-weight edge touching any given vertex [latex]v[/latex] is never in any MST is <b>false</b> &mdash; that edge might still be the cheapest way to connect an isolated/far-off part of the graph.<br>\n- <b>Cut property:</b> For any vertex [latex]v[/latex], consider the cut separating [latex]\\{v\\}[/latex] from the rest of the graph; the minimum-weight edge crossing this cut (i.e. the cheapest edge incident to [latex]v[/latex]) must belong to every MST, since choosing any costlier edge to connect [latex]v[/latex] instead would strictly increase total weight. <b>True.</b><br><br>\n<b>Answer: The largest-weight edge in every cycle is excluded from every MST; and the smallest-weight edge incident to every vertex is included in every MST.</b> <br><br> <a href=\"https://gateoverflow.in/523041/gate-cse-2026-set-1-question-39#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Minimum Spanning Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/minimum-spanning-tree",
+   "options": [
+    "In every cycle [latex]C[/latex] of [latex]G[/latex], the edge with the largest weight in [latex]C[/latex] is not in any MST",
+    "In every cycle [latex]C[/latex] of [latex]G[/latex], the edge with the smallest weight in [latex]C[/latex] is in every MST",
+    "For every vertex [latex]v \\in V[/latex], the edge with the largest weight incident on [latex]v[/latex] is not in any MST",
+    "For every vertex [latex]v \\in V[/latex], the edge with the smallest weight incident on [latex]v[/latex] is in every MST"
+   ],
+   "correctSet": [
+    0,
+    3
+   ]
+  },
+  {
+   "id": 1126140,
+   "number": 40,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider the following pseudocode for depth-first search (DFS) algorithm which takes a directed graph [latex]G(V, E)[/latex] as input, where [latex]d[v][/latex] and [latex]f[v][/latex] are the discovery time and finishing time, respectively, of the vertex [latex]v \\in V[/latex]. [latex] \\begin{array}{|l|l|} \\hline  \\begin{array}{l} \\textbf{DFS}(G): \\\\ \\text{unmark all } v \\in V \\\\ t \\leftarrow 0 \\\\ \\text{for each } v \\in V \\\\ \\quad \\text{if } v \\text{ is unmarked} \\\\ \\qquad t \\leftarrow \\text{Explore}(G,v,t) \\\\ \\quad \\text{end if} \\\\ \\text{end for} \\end{array} &  \\begin{array}{l} \\textbf{Explore}(G,v,t): \\\\ \\text{mark } v \\\\ t \\leftarrow t+1 \\\\ d[v] \\leftarrow t \\\\ \\text{for each } (v,w) \\in E \\\\ \\quad \\text{if } w \\text{ is unmarked} \\\\ \\qquad t \\leftarrow \\text{Explore}(G,w,t) \\\\ \\quad \\text{end if} \\\\ \\text{end for} \\\\ t \\leftarrow t+1 \\\\ f[v] \\leftarrow t \\\\ \\text{return } t \\end{array} \\\\ \\hline \\end{array} [/latex] <br><br>Suppose that the input directed graph [latex]G(V, E)[/latex] is a directed acyclic graph (DAG). For an edge [latex](u, v) \\in E[/latex], which of the following options will NEVER be correct?",
+   "solution": "For a DAG, discovery/finish-time intervals [latex][d[v],f[v]][/latex] obtained from DFS obey the standard <b>parenthesis theorem</b>: for any two vertices, their intervals are either completely nested (one inside the other) or completely disjoint &mdash; they can never partially overlap.<br><br>\nFor an edge [latex](u,v)[/latex] in a DAG, DFS classifies it as either a <b>tree/forward edge</b> (if [latex]v[/latex] is discovered while exploring from [latex]u[/latex], nesting [latex][d[v],f[v]][/latex] inside [latex][d[u],f[u]][/latex], giving [latex]d[u]<d[v]<f[v]<f[u][/latex]) or a <b>cross edge</b> (if [latex]v[/latex] was already fully explored before [latex]u[/latex] started, giving disjoint, non-overlapping intervals [latex]d[v]<f[v]<d[u]<f[u][/latex]). Since the input is a DAG, there are no back edges, so a scenario where the intervals partially overlap (interleave) is impossible.<br><br>\n- [latex]d[u]<d[v]<f[v]<f[u][/latex]: valid nesting &mdash; can happen (tree/forward edge).<br>\n- [latex]d[v]<f[v]<d[u]<f[u][/latex]: valid disjoint intervals &mdash; can happen (cross edge).<br>\n- [latex]d[v]<d[u]<f[u]<f[v][/latex]: this would mean [latex]v[/latex] started before [latex]u[/latex] but [latex]u[/latex]'s whole subtree nests inside [latex]v[/latex]'s &mdash; but then the edge [latex](u,v)[/latex] would point from a \"later/nested\" vertex [latex]u[/latex] back into an \"earlier/ancestor\" vertex [latex]v[/latex] that is still open, which is exactly the signature of a <b>back edge</b> &mdash; impossible in a DAG.<br>\n- [latex]d[u]<d[v]<f[u]<f[v][/latex]: this is a partially-overlapping (interleaved) interval, which the parenthesis theorem says can <i>never</i> happen for any DFS on any graph, regardless of edge type.<br><br>\n<b>Answer: [latex]d[v]<d[u]<f[u]<f[v][/latex] and [latex]d[u]<d[v]<f[u]<f[v][/latex] can NEVER happen.</b> <br><br> <a href=\"https://gateoverflow.in/523040/gate-cse-2026-set-1-question-40#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Graph Traversal",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-traversal",
+   "options": [
+    "[latex]d[u] < d[v] < f[v] < f[u][/latex]",
+    "[latex]d[v] < d[u] < f[u]< f[v][/latex]",
+    "[latex]d[v] < f[v] < d[u] < f[u][/latex]",
+    "[latex]d[u] < d[v] < f[u] < f[v][/latex]"
+   ],
+   "correctSet": [
+    1,
+    3
+   ]
+  }
+ ]
+}

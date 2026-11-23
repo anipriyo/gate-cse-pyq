@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11262,
+  "quizName": "GATE CSE 2026 SET-2",
+  "pageTitle": "GATE CSE 2026 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 11,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2026-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1126251,
+   "number": 51,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following ANSI-C function.<pre><code> int func(int start, int end){\n  \tint length=end+1-start;\n  \tif((length<1)||(start<0)||(end<0)){ return(0); }\n  \tif(length%3==0){\n  \t\treturn(func(start+1, end));\n  \t}else if(length%3==1){\n  \t\treturn(1+func(start, end-1));\n  \t}else {\n  \t\treturn(func(start+2, end));\n  \t}\n } </code></pre>The maximum possible value that can be returned from this function is ________. (answer in integer) <br>Note: Ignore syntax errors (if any) in the function.",
+   "solution": "Track how [latex]\\text{length}\\bmod3[/latex] evolves across recursive calls, since only the [latex]\\text{length}\\%3==1[/latex] branch ever adds [latex]1[/latex] to the final result (the other two branches just recurse without contributing anything):<br><br>\n- If current length [latex]\\equiv0\\ (\\text{mod }3)[/latex]: recurse with length reduced by [latex]1[/latex] (no addition) &rarr; new length [latex]\\equiv2\\ (\\text{mod }3)[/latex].<br>\n- If current length [latex]\\equiv1\\ (\\text{mod }3)[/latex]: add [latex]1[/latex], recurse with length reduced by [latex]1[/latex] &rarr; new length [latex]\\equiv0\\ (\\text{mod }3)[/latex].<br>\n- If current length [latex]\\equiv2\\ (\\text{mod }3)[/latex]: recurse with length reduced by [latex]2[/latex] (no addition) &rarr; new length [latex]\\equiv0\\ (\\text{mod }3)[/latex].<br><br>\nOnce the length's residue enters the cycle [latex]0\\to2\\to0\\to2\\to\\cdots[/latex], it can <b>never</b> return to residue [latex]1[/latex] again (the only transitions available from [latex]0[/latex] and [latex]2[/latex] both lead back into this same two-value cycle). So the \"[latex]+1[/latex]\" branch can only ever be triggered <b>once</b> in any call chain &mdash; specifically only if the very first (initial) call's length happens to be [latex]\\equiv1\\ (\\text{mod }3)[/latex]. After that single possible addition, the recursion is permanently locked into the non-adding [latex]0/2[/latex] cycle until it terminates at the base case.<br><br>\nSo the maximum possible total returned value, over all valid inputs, is just [latex]1[/latex].<br><br>\n<b>Answer: 1</b> <br><br> <a href=\"https://gateoverflow.in/523095/gate-cse-2026-set-2-question-51#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "C Programming ",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "ansMin": 1,
+   "ansMax": 1
+  },
+  {
+   "id": 1126252,
+   "number": 52,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The determinant of a [latex]4 \\times 4[/latex] matrix [latex]A[/latex] is [latex]3[/latex]. The value of the determinant of [latex]2 A[/latex] is ________. (answer in integer)",
+   "solution": "For an [latex]n\\times n[/latex] matrix [latex]A[/latex] and scalar [latex]c[/latex], scaling every entry by [latex]c[/latex] scales the determinant by [latex]c^n[/latex] (since determinant is a degree-[latex]n[/latex] multilinear function of the rows/columns): [latex]\\det(cA)=c^n\\det(A)[/latex].<br><br>\nHere [latex]n=4[/latex], [latex]c=2[/latex], [latex]\\det(A)=3[/latex]:<br>\n[latex]\\det(2A)=2^4\\times3=16\\times3=48[/latex].<br><br>\n<b>Answer: 48</b> <br><br> <a href=\"https://gateoverflow.in/523094/gate-cse-2026-set-2-question-52#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "ansMin": 48,
+   "ansMax": 48
+  },
+  {
+   "id": 1126253,
+   "number": 53,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Suppose an unbiased coin is tossed [latex]6[/latex] times. Each coin toss is independent of all previous coin tosses. Let [latex]E_{1}[/latex] be the event that among the second, fourth, and sixth coin tosses, there are at least two heads. Let [latex]E_{2}[/latex] be the event that among the first, second, third, and fifth coin tosses, there are equal number of heads and tails. <br>The conditional probability [latex]{P}\\left(E_{1} \\mid E_{2}\\right)[/latex] is equal to ________ (rounded off to one decimal place)",
+   "solution": "Toss [latex]4[/latex] and toss [latex]6[/latex] don't appear at all in [latex]E_2[/latex]'s set [latex]\\{1,2,3,5\\}[/latex], so they remain completely independent, fair (unconditioned) coin flips regardless of [latex]E_2[/latex].<br><br>\nToss [latex]2[/latex], however, <i>is</i> part of both [latex]E_1[/latex]'s set [latex]\\{2,4,6\\}[/latex] and [latex]E_2[/latex]'s set [latex]\\{1,2,3,5\\}[/latex]. Given [latex]E_2[/latex] (exactly [latex]2[/latex] heads among tosses [latex]1,2,3,5[/latex]), by symmetry among these [latex]4[/latex] fair, exchangeable coins, the conditional probability that any <i>particular</i> one of them (in particular, toss [latex]2[/latex]) is heads equals [latex]\\dfrac{\\binom{3}{1}}{\\binom{4}{2}}=\\dfrac{3}{6}=\\dfrac12[/latex] &mdash; exactly the same as its unconditional probability. So conditioning on [latex]E_2[/latex] doesn't actually bias toss [latex]2[/latex]'s marginal chance of being heads at all.<br><br>\nSo, given [latex]E_2[/latex], tosses [latex]2,4,[/latex] and [latex]6[/latex] behave exactly like [latex]3[/latex] independent fair coins. We need [latex]P(\\text{at least }2\\text{ heads out of }3\\text{ fair coin flips})[/latex]:<br>\n[latex]P(X\\ge2)=\\binom{3}{2}(0.5)^3+\\binom{3}{3}(0.5)^3=\\dfrac{3}{8}+\\dfrac{1}{8}=\\dfrac{4}{8}=0.5[/latex].<br><br>\n<b>Answer: 0.5</b> <br><br> <a href=\"https://gateoverflow.in/523093/gate-cse-2026-set-2-question-53#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "ansMin": 0.5,
+   "ansMax": 0.5
+  },
+  {
+   "id": 1126254,
+   "number": 54,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a function [latex]f : (0,1) \\rightarrow \\{0,1\\}[/latex] defined as follows.<br><br>\nFor a real number [latex]r \\in (0,1)[/latex], [latex]f(r) = 1[/latex] if the second digit after the decimal point in [latex]r[/latex] is one of the four digits [latex]2, 3, 6,[/latex] and [latex]7[/latex]. Otherwise, [latex]f(r)[/latex] is equal to [latex]0[/latex].<br><br>\nThe number of points in [latex](0,1)[/latex] at which [latex]f[/latex] is discontinuous is ______. (Answer in integer)",
+   "solution": "[latex]f(r)[/latex] depends <i>only</i> on the second digit after the decimal point of [latex]r[/latex]. So [latex](0,1)[/latex] is effectively divided into [latex]100[/latex] equal sub-intervals of length [latex]0.01[/latex] (one for each combination of the first two decimal digits), and [latex]f[/latex] is <b>constant</b> throughout each sub-interval, jumping only at the [latex]99[/latex] internal boundary points [latex]r=0.01,0.02,\\ldots,0.99[/latex] (a discontinuity occurs at a boundary only if [latex]f[/latex]'s value actually changes across it, i.e. the second digit switches between the \"special\" set [latex]\\{2,3,6,7\\}[/latex] and the rest).<br><br>\nWithin any fixed first digit, as the second digit cycles [latex]0,1,2,\\ldots,9[/latex], the pattern of \"special vs. non-special\" is: N,N,S,S,N,N,S,S,N,N. Checking each of the [latex]9[/latex] consecutive transitions within this block ([latex]0|1,1|2,\\ldots,8|9[/latex]): the value actually <i>changes</i> at [latex]1|2,\\ 3|4,\\ 5|6,[/latex] and [latex]7|8[/latex] (four changes), while it stays the same at the other five transitions (including the wrap from [latex]9[/latex] to the next first-digit's [latex]0[/latex], since both are non-special).<br><br>\nSo each of the [latex]10[/latex] first-digit blocks contributes exactly [latex]4[/latex] genuine discontinuities, and the wrap-around boundaries between blocks never add any more (non-special to non-special). Total discontinuities [latex]=10\\times4=40[/latex].<br><br>\n<b>Answer: 40</b> <br><br> <a href=\"https://gateoverflow.in/523092/gate-cse-2026-set-2-question-54#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "ansMin": 40,
+   "ansMax": 40
+  },
+  {
+   "id": 1126255,
+   "number": 55,
+   "type": "NAT",
+   "marks": 2,
+   "text": "It is necessary to design a link-layer protocol between two hosts that are directly connected over a lossless link of length [latex]3000[/latex] kilometers. Assume that the link bandwidth is [latex]10^8[/latex] bits per second and that the propagation delay in the link is [latex]5[/latex] nanoseconds per meter. Every transmitted data byte is assigned a unique sequence number.<br><br>\nLet [latex]N[/latex] be the minimum number of bits needed for the sequence number field in the protocol header such that:<br><br>\n\n(i) the sequence numbers do not wrap around before [latex]60[/latex] seconds, and<br>\n(ii) the maximum utilization of the link is achieved.<br><br>\n\nThe value of [latex]N[/latex] is ______. (answer in integer)",
+   "solution": "<b>Propagation delay</b> (one-way) [latex]=3000\\text{ km}\\times5\\text{ ns/m}=3{,}000{,}000\\text{ m}\\times5\\text{ ns}=15{,}000{,}000\\text{ ns}=15[/latex] ms, so round-trip time [latex]\\text{RTT}=30[/latex] ms [latex]=0.03[/latex] s.<br><br>\n<b>Condition (ii) &mdash; max utilization:</b> the window (in bits) must at least equal the bandwidth-delay product: [latex]10^8\\times0.03=3\\times10^6[/latex] bits [latex]=375{,}000[/latex] bytes, requiring at least [latex]\\lceil\\log_2(375000)\\rceil\\approx19[/latex] sequence-number bits.<br><br>\n<b>Condition (i) &mdash; no wraparound within 60 s:</b> total bytes sent in [latex]60[/latex] s at full bandwidth [latex]=\\dfrac{10^8\\times60}{8}=750{,}000{,}000[/latex] bytes, requiring [latex]2^N\\ge750{,}000{,}000[/latex], i.e. [latex]N\\ge\\lceil\\log_2(750{,}000{,}000)\\rceil=30[/latex] (since [latex]2^{29}\\approx5.37\\times10^8<7.5\\times10^8\\le2^{30}\\approx1.07\\times10^9[/latex]).<br><br>\nSince [latex]N[/latex] must satisfy both requirements simultaneously, the more restrictive one (condition (i), needing [latex]30[/latex] bits) determines the answer.<br><br>\n<b>Answer: 30</b> <br><br> <a href=\"https://gateoverflow.in/523091/gate-cse-2026-set-2-question-55#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "ansMin": 30,
+   "ansMax": 30
+  }
+ ]
+}

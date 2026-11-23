@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11201,
+  "quizName": "GATE CS 2020",
+  "pageTitle": "GATE CSE 2020",
+  "timeLimit": 0,
+  "pageNo": 6,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2020",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1120126,
+   "number": 26,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Which of the following languages are undecidable? Note that [latex]\\left \\langle M \\right \\rangle[/latex] indicates encoding of the Turing machine [latex]M[/latex]. <br><br> [latex]L_1=\\{\\left \\langle M \\right \\rangle|L(M)=\\varnothing \\}[/latex]<br> [latex]L_2=[/latex]{[latex]\\left \\langle M,w,q \\right \\rangle|M[/latex] on input w reaches state q in exactly 100 steps} <br>[latex]L_3=\\{\\left \\langle M \\right \\rangle|L(M) \\;is \\; not \\; recursive\\}[/latex] <br> [latex]L_4=\\{\\left \\langle M \\right \\rangle|L(M) \\;contains \\; at \\; least\\; 21 \\; members\\}[/latex] ",
+   "solution": "Checking each statement:<br>- [latex]L_1[/latex] (language is empty): non-trivial property of L(M) [latex]\\rightarrow[/latex] undecidable (Rice).<br>\n- [latex]L_2[/latex]: just simulate M on w for 100 steps [latex]\\rightarrow[/latex] <b>decidable</b>.<br>\n- [latex]L_3[/latex] (L(M) not recursive): non-trivial property [latex]\\rightarrow[/latex] undecidable.<br>\n- [latex]L_4[/latex] (at least 21 strings): non-trivial property [latex]\\rightarrow[/latex] undecidable.<br><br>\n<b>Answer: [latex]L_1,L_3[/latex] and [latex]L_4[/latex] only</b><br><br><a href=\"https://gateoverflow.in/333205/gate2020-cs-26#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Turing Machine",
+   "tag2_url": "https://practicepaper.in/gate-cse/turing-machine",
+   "options": [
+    "[latex]L_1,L_3 \\; and \\; L_4 \\; only[/latex]",
+    "[latex]L_1 \\; and \\; L_3 \\; only[/latex]",
+    "[latex]L_2 \\; and \\; L_3 \\; only[/latex]",
+    "[latex]L_2,L_3 \\; and \\; L_4 \\; only[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1120127,
+   "number": 27,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let A and B be two nxn matrices over real numbers. Let rank(M) and det(M) denote the rank and determinant of a matrix M, respectively. Consider the following statements. <br><br>\nI.    rank(AB)=rank (A)rank (B)<br>\nII.  det(AB)=det(A)det(B)<br>\nIII. rank(A+B) [latex]\\leq[/latex] rank (A) + rank (B)<br>\nIV. det(A+B) [latex]\\leq[/latex] det(A) + det(B)<br><br>\nWhich of the above statements are TRUE?",
+   "solution": "Use A = B = I (n = 2):<br>\n- I: rank(AB) = 2 but rank(A)rank(B) = 4 [latex]\\text{---}[/latex] FALSE.<br>\n- II: det(AB) = det(A)det(B) is always true [latex]\\text{---}[/latex] TRUE.<br>\n- III: rank is subadditive: [latex]rank(A+B)\\le rank(A)+rank(B)[/latex] [latex]\\text{---}[/latex] TRUE.<br>\n- IV: det(2I) = 4 [latex]\\gt[/latex] det(I) + det(I) = 2 [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: II and III only</b><br><br><a href=\"https://gateoverflow.in/333204/gate2020-cs-27#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "I and II only",
+    "I and IV only",
+    "II and III only",
+    "III and IV only"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1120128,
+   "number": 28,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the Boolean function [latex]z(a,b,c)[/latex]. <br><img src=\"/wp-content/uploads/GATE/CS/20201/q28.jpg\" /><br>Which one of the following minterm lists represents the circuit given above?",
+   "solution": "From the circuit: [latex]z=a+\\bar b c[/latex].<br><br>\n- a = 1: minterms 4, 5, 6, 7<br>\n- a = 0, b = 0, c = 1: minterm 1<br><br>\n[latex]z=\\Sigma(1,4,5,6,7)[/latex]<br><br>\n<b>Answer: [latex]\\Sigma(1,4,5,6,7)[/latex]</b><br><br><a href=\"https://gateoverflow.in/333203/gate2020-cs-28#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "options": [
+    "[latex]z=\\Sigma (0,1,3,7)[/latex]",
+    "[latex]z=\\Sigma (1,4,5,6,7)[/latex]",
+    "[latex]z=\\Sigma (2,4,5,6,7)[/latex]",
+    "[latex]z=\\Sigma (2,3,5)[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1120129,
+   "number": 29,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider three registers R1, R2, and R3 that store numbers in IEEE-754 single precision floating point format. Assume that R1 and R2 contain the values (in hexadecimal notation) 0x42200000 and 0xC1200000, respectively. <br><br>\nIf [latex]R3=\\frac{R1}{R2}[/latex], what is the value stored in R3?",
+   "solution": "Checking each statement:<br>- R1 = 0x42200000: sign 0, exponent 132 [latex]\\rightarrow[/latex] [latex]2^5[/latex], mantissa 1.01[latex]{}_2[/latex] = 1.25 [latex]\\rightarrow[/latex] 40<br>\n- R2 = 0xC1200000: sign 1, exponent 130 [latex]\\rightarrow[/latex] [latex]2^3[/latex], mantissa 1.25 [latex]\\rightarrow[/latex] [latex]-[/latex]10<br><br>\nR3 = 40 / ([latex]-[/latex]10) = [latex]-[/latex]4 = [latex]-1.0\\times2^2[/latex]: sign 1, exponent 129 = 1000 0001, mantissa 0<br>\nBits: 1100 0000 1000 0000 [latex]\\ldots[/latex] = 0xC0800000<br><br>\n<b>Answer: 0xC0800000</b><br><br><a href=\"https://gateoverflow.in/333202/gate2020-cs-29#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "options": [
+    "0x40800000",
+    "0xC0800000",
+    "0x83400000",
+    "0xC8500000"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1120130,
+   "number": 30,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A computer system with a word length of 32 bits has a 16 MB byte- addressable main memory and a 64 KB, 4-way set associative cache memory with a block size of 256 bytes. Consider the following four physical addresses represented in hexadecimal notation.<br><br>\nA1=0x42C8A4,<br>\nA2=0x546888,<br>\nA3=0x6A289C,<br> A4=0x5E4880<br><br>\nWhich one of the following is TRUE?",
+   "solution": "Lines = 64 KB / 256 B = 256; sets = 256 / 4 = 64 [latex]\\rightarrow[/latex] 6 set bits after the 8 offset bits.<br>\nSet = (address / 256) mod 64, i.e. the low 6 bits of the address without its last two hex digits:<br>\n- A1 = 0x42C8A4 [latex]\\rightarrow[/latex] 0x42C8 [latex]\\rightarrow[/latex] set 8<br>\n- A2 = 0x546888 [latex]\\rightarrow[/latex] 0x5468 [latex]\\rightarrow[/latex] set 40<br>\n- A3 = 0x6A289C [latex]\\rightarrow[/latex] 0x6A28 [latex]\\rightarrow[/latex] set 40<br>\n- A4 = 0x5E4880 [latex]\\rightarrow[/latex] 0x5E48 [latex]\\rightarrow[/latex] set 8<br><br>\nA2 and A3 share set 40 (A1 and A4 share set 8).<br><br>\n<b>Answer: A2 and A3 are mapped to the same cache set</b><br><br><a href=\"https://gateoverflow.in/333201/gate2020-cs-30#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "options": [
+    "A1 and A4 are mapped to different cache sets.",
+    "A2 and A3 are mapped to the same cache set.",
+    "A3 and A4 are mapped to the same cache set.",
+    "A1 and A3 are mapped to the same cache set."
+   ],
+   "correct": 1
+  }
+ ]
+}

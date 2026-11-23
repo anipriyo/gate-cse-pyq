@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11212,
+  "quizName": "GATE CSE 2021 SET 2",
+  "pageTitle": "GATE CSE 2021 SET-2",
+  "timeLimit": 0,
+  "pageNo": 7,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2021-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1121231,
+   "number": 31,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The relation scheme given below is used to store information about the employees of a company, where empId is the key and deptId indicates the department to which the employee is assigned. Each employee is assigned to exactly one department.<br><br>\n[latex]\\textsf{emp($\\underline{\\textsf{empId}}$, name, gender, salary, deptId)}[/latex]<br><br>\nConsider the following SQL query:<pre><code> select deptId, count(*)\nfrom emp\nwhere gender = \"female\" and salary > (select avg(salary)from emp)\ngroup by deptId;</pre></code>The above query gives, for each department in the company, the number of female employees whose salary is greater than the average salary of",
+   "solution": "The subquery (select avg(salary) from emp) has no condition and is not correlated, so it is the average salary of <b>all employees in the company</b>.<br><br>\n<b>Answer: employees in the company</b><br><br><a href=\"https://gateoverflow.in/357509/gate-cse-2021-set-2-question-31#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "SQL",
+   "tag2_url": "https://practicepaper.in/gate-cse/sql",
+   "options": [
+    "employees in the department",
+    "employees in the company",
+    "female employees in the department",
+    "female employees in the company"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1121232,
+   "number": 32,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let S be the following schedule of operations of three transactions [latex]T_1, T_2 \\text{ and }T_3[/latex] in a relational database system:<br><br>\n[latex]R_2(Y), R_1(X), R_3(Z), R_1(Y)W_1(X), R_2(Z), W_2(Y), R_3(X), W_3(Z)[/latex]<br><br>\nConsider the statements P and Q below:<br><br>\nP: S is conflict-serializable.<br>\nQ: If [latex]T_3[/latex] commits before [latex]T_1[/latex] finishes, then S is recoverable.<br><br>\nWhich one of the following choices is correct?",
+   "solution": "Conflicts:<br>\n- [latex]R_1(Y)[/latex] before [latex]W_2(Y)[/latex]: T1 [latex]\\rightarrow[/latex] T2<br>\n- [latex]W_1(X)[/latex] before [latex]R_3(X)[/latex]: T1 [latex]\\rightarrow[/latex] T3<br>\n- [latex]R_2(Z)[/latex] before [latex]W_3(Z)[/latex]: T2 [latex]\\rightarrow[/latex] T3<br>\nNo cycle [latex]\\rightarrow[/latex] conflict serializable (T1, T2, T3). P is true.<br><br>\nT3 reads X written by T1. If T3 commits before T1, and T1 later aborts, T3 cannot be undone [latex]\\rightarrow[/latex] not recoverable. Q is false.<br><br>\n<b>Answer: P is true and Q is false</b><br><br><a href=\"https://gateoverflow.in/357508/gate-cse-2021-set-2-question-32#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Transaction",
+   "tag2_url": "https://practicepaper.in/gate-cse/transaction",
+   "options": [
+    "Both P and Q are true",
+    "P is true and Q is false",
+    "P is false and Q is true",
+    "Both P and Q are false"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1121233,
+   "number": 33,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A bag has [latex]r[/latex] red balls and [latex]b[/latex] black balls. All balls are identical except for their colours. In a trial, a ball is randomly drawn from the bag, its colour is noted and the ball is placed back into the bag along with another ball of the same colour. Note that the number of balls in the bag will increase by one, after the trial. A sequence of four such trials is conducted. Which one of the following choices gives the probability of drawing a red ball in the fourth trial?",
+   "solution": "This is Polya's urn. By symmetry, every draw has the same chance of being red as the first draw.<br><br>\nCheck for the 2nd draw: [latex]\\frac{r}{r+b}\\cdot\\frac{r+1}{r+b+1}+\\frac{b}{r+b}\\cdot\\frac{r}{r+b+1}=\\frac{r(r+b+1)}{(r+b)(r+b+1)}=\\frac{r}{r+b}[/latex]. The same holds for the 4th.<br><br>\n<b>Answer: [latex]\\frac{r}{r+b}[/latex]</b><br><br><a href=\"https://gateoverflow.in/357507/gate-cse-2021-set-2-question-33#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "options": [
+    "[latex]\\dfrac{r}{r+b}[/latex]",
+    "[latex]\\dfrac{r}{r+b+3}[/latex]",
+    "[latex]\\dfrac{r+3}{r+b+3}[/latex]",
+    "[latex]\\left( \\dfrac{r}{r+b} \\right) \\left ( \\dfrac{r+1}{r+b+1} \\right) \\left( \\dfrac{r+2}{r+b+2} \\right) \\left( \\dfrac{r+3}{r+b+3} \\right)[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1121234,
+   "number": 34,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the cyclic redundancy check (CRC) based error detecting scheme having the generator polynomial [latex]X^3+X+1[/latex]. Suppose the message [latex]m_4m_3m_2m_1m_0=11000[/latex] is to be transmitted. Check bits [latex]c_2c_1c_0[/latex] are appended at the end of the message by the transmitter using the above CRC scheme. The transmitted bit string is denoted by [latex]m_4m_3m_2m_1m_0c_2c_1c_0[/latex]. The value of the checkbit sequence [latex]c_2c_1c_0[/latex] is",
+   "solution": "Generator [latex]x^3+x+1[/latex] = 1011. Append 3 zeros: 11000<b>000</b>, then divide (XOR):<br>\n- 1100 [latex]\\oplus[/latex] 1011 = 0111 [latex]\\rightarrow[/latex] bring 0 [latex]\\rightarrow[/latex] 1110<br>\n- 1110 [latex]\\oplus[/latex] 1011 = 0101 [latex]\\rightarrow[/latex] bring 0 [latex]\\rightarrow[/latex] 1010<br>\n- 1010 [latex]\\oplus[/latex] 1011 = 0001 [latex]\\rightarrow[/latex] bring 0 [latex]\\rightarrow[/latex] 0010 [latex]\\rightarrow[/latex] bring 0 [latex]\\rightarrow[/latex] 0100<br><br>\nRemainder = 100<br><br>\n<b>Answer: 100</b><br><br><a href=\"https://gateoverflow.in/357506/gate-cse-2021-set-2-question-34#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "options": [
+    "101",
+    "110",
+    "100",
+    "111"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1121235,
+   "number": 35,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following ANSI C program:<pre><code>#include &lt stdio.h &gt\n\n#include &lt stdlib.h &gt\n\nstruct Node{\n        int value;\n        struct Node *next;};\nint main( ) {\n    struct Node *boxE, *head, *boxN; int index=0;\n    boxE=head= (struct Node *) malloc(sizeof(struct Node));\n    head -> value = index;\n    for (index =1; index < = 3; index++){\n        boxN = (struct Node *) malloc (sizeof(struct Node));\n        boxE -> next = boxN;\n        boxN -> value = index;\n        boxE = boxN; }\nfor (index=0; index < = 3; index++) {\n    printf(\"Value at index %d is %d\\n\", index, head -> value);\n    head = head -> next;\n    printf(\"Value at index %d is %d\\n\", index+1, head -> value); } } </code></pre>Which one of the following statements below is correct about the program?",
+   "solution": "The list has 4 nodes (values 0, 1, 2, 3). The last node's next is <b>never set</b>; malloc does not initialize it.<br><br>\nIn the last loop pass (index = 3), head moves to the 4th node and then to its next (garbage), and the second printf dereferences that pointer [latex]\\rightarrow[/latex] undefined behaviour / possible crash.<br><br>\n(A missing return in main is allowed in C.)<br><br>\n<b>Answer: It dereferences an uninitialized pointer that may result in a run-time error</b><br><br><a href=\"https://gateoverflow.in/357505/gate-cse-2021-set-2-question-35#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Link List",
+   "tag2_url": "https://practicepaper.in/gate-cse/link-list",
+   "options": [
+    "Upon execution, the program creates a linked-list of five nodes",
+    "Upon execution, the program goes into an infinite loop",
+    "It has a missing returnreturn which will be reported as an error by the compiler",
+    "It dereferences an uninitialized pointer that may result in a run-time error"
+   ],
+   "correct": 3
+  }
+ ]
+}

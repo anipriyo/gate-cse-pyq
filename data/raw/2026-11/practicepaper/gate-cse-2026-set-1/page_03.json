@@ -1,0 +1,135 @@
+{
+ "meta": {
+  "quizId": 11261,
+  "quizName": "GATE CSE 2026 SET-1",
+  "pageTitle": "GATE CSE 2026 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 3,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2026-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1126111,
+   "number": 11,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Consider the following Boolean expression of a function [latex]F[/latex] :<br><br> [latex] F(P, Q)=(\\bar{P}+Q) \\oplus(\\bar{P} Q) [/latex] <br><br>Which of the following expressions is/are equivalent to [latex]F[/latex] ?",
+   "solution": "Let's build the truth table for [latex]F(P,Q)=(\\bar{P}+Q)\\oplus(\\bar{P}Q)[/latex]:<br><br>\n[latex]\\begin{array}{cc|ccc}P & Q & \\bar P+Q & \\bar P Q & F\\\\\\hline 0&0&1&0&1\\\\0&1&1&1&0\\\\1&0&0&0&0\\\\1&1&1&0&1\\end{array}[/latex]<br><br>\nSo [latex]F=1[/latex] exactly when [latex]P=Q[/latex], i.e. [latex]F[/latex] is the XNOR of [latex]P[/latex] and [latex]Q[/latex].<br>\n- [latex]\\overline{P\\oplus Q}[/latex] (XNOR written as complement of XOR) matches this truth table exactly.<br>\n- [latex]\\bar P\\oplus Q[/latex]: complementing one input of XOR flips its output, which converts XOR into XNOR &mdash; so this is also equal to [latex]F[/latex].<br>\n- [latex]P\\oplus Q[/latex] and [latex]\\bar P\\oplus\\bar Q[/latex] both equal ordinary XOR (complementing <i>both</i> inputs leaves XOR unchanged), which is the complement of [latex]F[/latex], not [latex]F[/latex] itself.<br><br>\n<b>Answer: [latex]\\overline{P\\oplus Q}[/latex] and [latex]\\bar P\\oplus Q[/latex]</b> <br><br> <a href=\"https://gateoverflow.in/523069/gate-cse-2026-set-1-question-11#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "options": [
+    "[latex]\\overline{P \\oplus Q}[/latex]",
+    "[latex]P \\oplus Q[/latex]",
+    "[latex]\\bar{P} \\oplus Q[/latex]",
+    "[latex]\\bar{P} \\oplus \\bar{Q}[/latex]"
+   ],
+   "correctSet": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": 1126112,
+   "number": 12,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Consider the [latex]8[/latex] -bit signed integers [latex]X, Y[/latex] and [latex]Z[/latex] represented using the sign-magnitude form. The binary representations of [latex]X[/latex] and [latex]Y[/latex] are as follows: <br><br>[latex] X: 10110100 \\quad Y: 01001100 [/latex] <br><br>Which of the following operations to compute [latex]Z[/latex] result(s) in an arithmetic overflow?",
+   "solution": "In 8-bit sign-magnitude form, bit 7 is the sign and bits 6-0 give the magnitude (max magnitude [latex]=127[/latex]).<br><br>\n[latex]X=10110100[/latex]: sign [latex]=1[/latex] (negative), magnitude [latex]=0110100_2=52[/latex], so [latex]X=-52[/latex].<br>\n[latex]Y=01001100[/latex]: sign [latex]=0[/latex] (positive), magnitude [latex]=1001100_2=76[/latex], so [latex]Y=+76[/latex].<br><br>\nOverflow happens whenever the true arithmetic result's magnitude exceeds [latex]127[/latex] (i.e. falls outside [latex][-127,127][/latex]):<br>\n- [latex]X+Y=-52+76=24[/latex] &rarr; within range, <b>no overflow</b>.<br>\n- [latex]X-Y=-52-76=-128[/latex] &rarr; magnitude [latex]128>127[/latex], <b>overflow</b>.<br>\n- [latex]-X+Y=52+76=128[/latex] &rarr; magnitude [latex]128>127[/latex], <b>overflow</b>.<br>\n- [latex]-X-Y=52-76=-24[/latex] &rarr; within range, <b>no overflow</b>.<br><br>\n<b>Answer: Z = X - Y, and Z = -X + Y</b> <br><br> <a href=\"https://gateoverflow.in/523068/gate-cse-2026-set-1-question-12#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "options": [
+    "[latex]Z=X+Y[/latex]",
+    "[latex]Z=X-Y[/latex]",
+    "[latex]Z=-X+Y[/latex]",
+    "[latex]Z=-X-Y[/latex]"
+   ],
+   "correctSet": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1126113,
+   "number": 13,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Let [latex]n[/latex] be an odd number greater than [latex]100[/latex]. Consider a binary minheap with [latex]n[/latex] elements stored in an array [latex]P[/latex] whose index starts from [latex]1[/latex].<br> Which of the following indices of [latex]P[/latex] do/does NOT correspond to any leaf node of the minheap?",
+   "solution": "In a 1-indexed array representation of a binary heap with [latex]n[/latex] elements, the leaf nodes are exactly the indices [latex]\\left\\lfloor \\dfrac{n}{2}\\right\\rfloor+1[/latex] through [latex]n[/latex] (nodes with no children).<br><br>\nFor odd [latex]n[/latex], [latex]\\left\\lfloor n/2\\right\\rfloor=\\dfrac{n-1}{2}[/latex], so:<br>\n- Leaf indices: [latex]\\dfrac{n-1}{2}+1=\\dfrac{n+1}{2}[/latex] up to [latex]n[/latex].<br>\n- Internal (non-leaf) indices: [latex]1[/latex] up to [latex]\\dfrac{n-1}{2}[/latex].<br><br>\nChecking the given indices:<br>\n- [latex]\\dfrac{n+1}{2}[/latex]: this <i>is</i> the first leaf index &mdash; corresponds to a leaf.<br>\n- [latex]n[/latex]: this is the last leaf &mdash; corresponds to a leaf.<br>\n- [latex]\\dfrac{n-1}{2}[/latex]: this is the <i>last internal</i> node index &mdash; it does NOT correspond to a leaf.<br>\n- [latex]\\dfrac{n-3}{2}[/latex]: this is less than [latex]\\dfrac{n-1}{2}[/latex], so also an internal node &mdash; does NOT correspond to a leaf.<br><br>\n<b>Answer: indices (n-1)/2 and (n-3)/2 do NOT correspond to leaf nodes.</b> <br><br> <a href=\"https://gateoverflow.in/523067/gate-cse-2026-set-1-question-13#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Heap Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/heap-tree",
+   "options": [
+    "[latex]\\frac{n+1}{2}[/latex]",
+    "[latex]\\frac{n-1}{2}[/latex]",
+    "[latex]\\frac{n-3}{2}[/latex]",
+    "[latex]n[/latex]"
+   ],
+   "correctSet": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1126114,
+   "number": 14,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Consider a hash table [latex]P[0,1, \\ldots, 10][/latex] that is initially empty. The hash table is maintained using open addressing with linear probing. The hash function used is [latex]h(x)=(x+7) \\bmod 11[/latex].<br><br> Consider the following sequence of insertions performed on [latex]P[/latex] :<br><br> [latex] \\text { 1,13, 22, 15, 11, } 24 [/latex] <br><br>Which of the following positions in the hash table is/are empty after these insertions are performed?",
+   "solution": "Hash function: [latex]h(x)=(x+7)\\bmod 11[/latex], table size [latex]11[/latex] (indices [latex]0[/latex] to [latex]10[/latex]), linear probing.<br><br>\nCompute initial hash and, on collision, probe the next slot(s) circularly:<br>\n[latex]\\begin{array}{c|c|c}\\text{Key}&h(x)&\\text{Placed at}\\\\\\hline 1&8&8\\ (\\text{empty})\\\\13&9&9\\ (\\text{empty})\\\\22&7&7\\ (\\text{empty})\\\\15&0&0\\ (\\text{empty})\\\\11&7&7\\text{ taken}\\to8\\text{ taken}\\to9\\text{ taken}\\to10\\ (\\text{empty})\\\\24&9&9\\text{ taken}\\to10\\text{ taken}\\to0\\text{ taken}\\to1\\ (\\text{empty})\\end{array}[/latex]<br><br>\nFinal table: [latex]0{:}15,\\ 1{:}24,\\ 7{:}22,\\ 8{:}1,\\ 9{:}13,\\ 10{:}11[/latex]. Positions [latex]2,3,4,5,6[/latex] remain empty.<br><br>\nOf the choices given (0, 10, 2, 1), only position <b>2</b> is empty &mdash; the others (0, 1, 10) are all occupied.<br><br>\n<b>Answer: Position 2</b> <br><br> <a href=\"https://gateoverflow.in/523066/gate-cse-2026-set-1-question-14#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Hashing",
+   "tag2_url": "https://practicepaper.in/gate-cse/hashing",
+   "options": [
+    "0",
+    "10",
+    "2",
+    "1"
+   ],
+   "correctSet": [
+    2
+   ]
+  },
+  {
+   "id": 1126115,
+   "number": 15,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Consider the following grammar where [latex]S[/latex] is the start symbol, and [latex]a[/latex] and [latex]b[/latex] are terminal symbols.<br><br> [latex] S \\rightarrow a S b S \\text { | } b S \\text { | } \\epsilon [/latex] <br><br>Which of the following statements is/are true?",
+   "solution": "Grammar: [latex]S\\rightarrow aSbS\\mid bS\\mid \\epsilon[/latex].<br><br>\n<b>Ambiguity:</b> The string [latex]abb[/latex] can be generated by two different parse trees (e.g. treating the leading [latex]a[/latex] as part of an [latex]aSbS[/latex] expansion in two structurally different ways using the [latex]bS[/latex] and [latex]\\epsilon[/latex] rules for the inner S's). Since one string has two distinct derivations/parse trees, the grammar is <b>ambiguous</b>, and specifically <b>[latex]abb[/latex] has two distinct derivations</b>.<br><br>\n<b>Rightmost derivation of [latex]abab[/latex]:</b> although the grammar is ambiguous in general, tracing through this specific string shows that its rightmost derivation sequence is forced to be unique.<br><br>\n<b>On decidability:</b> The language generated is context-free, and membership in any context-free language is always decidable &mdash; so \"the language is undecidable\" is false.<br><br>\n<b>Answer: The grammar is ambiguous; \"abb\" has two distinct derivations; \"abab\" has only one rightmost derivation.</b> <br><br> <a href=\"https://gateoverflow.in/523065/gate-cse-2026-set-1-question-15#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Grammar",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-grammar",
+   "options": [
+    "The grammar is ambiguous",
+    "The string [latex]a b b[/latex] has two distinct derivations in this grammar",
+    "The string [latex]a b a b[/latex] has only one rightmost derivation",
+    "The language generated by the grammar is undecidable"
+   ],
+   "correctSet": [
+    0,
+    1,
+    2
+   ]
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11211,
+  "quizName": "GATE CSE 2021 SET 1",
+  "pageTitle": "GATE CSE 2021 SET-1",
+  "timeLimit": 0,
+  "pageNo": 6,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2021-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1121126,
+   "number": 26,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following grammar (that admits a series of declarations, followed by expressions) and the associated syntax directed translation (SDT) actions, given as pseudo-code<br><br>[latex]\\begin{array}{lll} P & \\rightarrow & D^* E^* \\\\ D & \\rightarrow & \\textsf{int ID} \\{ \\text{record that } \\textsf{ID.} \\text{lexeme is of type} \\textsf{ int\\}} \\\\ D & \\rightarrow & \\textsf{bool ID} \\{ \\text{record that } \\textsf{ID.} \\text{lexeme is of type} \\textsf{ bool\\}} \\\\ E& \\rightarrow & E_1 +E_2 \\{ \\text{check that } E_1. \\text{type}=E_2. \\text{type} = \\textsf{int}; \\text{set } E.\\text{type }:= \\textsf{int} \\} \\\\ E & \\rightarrow & !E_1 \\{ \\text{check that } E_1. \\text{type} = \\textsf{bool}; \\text{ set } E.\\text{type} := \\textsf{bool} \\} \\\\ E & \\rightarrow & \\textsf{ID} \\{ \\text{set } E. \\text{type } := \\textsf{int} \\} \\end{array}[/latex]\n <br><br>\nWith respect to the above grammar, which one of the following choices is correct?",
+   "solution": "The rule [latex]E\\rightarrow ID[/latex] <b>always</b> sets E.type = int, even when ID was declared bool. So:<br>\n- Integer declarations and expressions (+) type-check correctly.<br>\n- Boolean expressions fail: !ID would see an int and report an error.<br>\n- Nothing loops forever.<br><br>\n<b>Answer: type-check integer variable declarations and integer expressions</b><br><br><a href=\"https://gateoverflow.in/357425/gate-cse-2021-set-1-question-26#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Syntax-directed Translation",
+   "tag2_url": "https://practicepaper.in/gate-cse/syntax-directed-translation",
+   "options": [
+    "The actions can be used to correctly type-check any syntactically correct program",
+    "The actions can be used to type-check syntactically correct integer variable declarations and integer expressions",
+    "The actions can be used to type-check syntactically correct boolean variable declarations and boolean expressions.",
+    "The actions will lead to an infinite loop"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1121127,
+   "number": 27,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The following relation records the age of 500 employees of a company, where empNo ( indicating the employee number) is the key:\n<br><br>\n[latex]empAge(\\underline{empNo},age)[/latex]<br><br>\nConsider the following relational algebra expression:\n<br><br>\n[latex]\\Pi_{empNo}(empAge \\Join_{(age > age1)} \\rho_{empNo1,age1}(empAge))[/latex]<br><br>\nWhat does the above expression generate?",
+   "solution": "The join pairs each employee with every employee who is <b>younger</b> (age [latex]\\gt[/latex] age1). An employee appears in the result if at least one other employee is younger, i.e. if their age is not the minimum.<br><br>\n<b>Answer: Employee numbers of all employees whose age is not the minimum</b><br><br><a href=\"https://gateoverflow.in/357424/gate-cse-2021-set-1-question-27#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Relational Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/relational-algebra",
+   "options": [
+    "Employee numbers of only those employees whose age is the maximum",
+    "Employee numbers of only those employees whose age is more than the age of exactly one other employee",
+    "Employee numbers of all employees whose age is not the minimum",
+    "Employee numbers of all employees whose age is the minimum"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1121128,
+   "number": 28,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a 3-bit counter, designed using T flip-flops, as shown below:<br><img src=\"/wp-content/uploads/GATE/CS/20211/q28.jpg\" /><br>\nAssuming the initial state of the counter given by PQR as 000, what are the next three states?",
+   "solution": "From the circuit: [latex]T_P=R[/latex], [latex]T_Q=\\overline P[/latex], [latex]T_R=\\overline Q[/latex] (a T flip-flop toggles when T = 1).<br>\n- 000: T = (0, 1, 1) [latex]\\rightarrow[/latex] <b>011</b><br>\n- 011: T = (1, 1, 0) [latex]\\rightarrow[/latex] <b>101</b><br>\n- 101: T = (1, 0, 1) [latex]\\rightarrow[/latex] <b>000</b><br><br>\n<b>Answer: 011, 101, 000</b><br><br><a href=\"https://gateoverflow.in/357423/gate-cse-2021-set-1-question-28#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Sequential Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/sequential-circuit",
+   "options": [
+    "011, 101, 000",
+    "001, 010, 111",
+    "011, 101, 111",
+    "001, 010, 000"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1121129,
+   "number": 29,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Assume that a 12-bit Hamming codeword consisting of 8-bit data and 4 check bits is [latex]d_8d_7d_6d_5c_8d_4d_4d_3d_2c_4d_1c_2c_1[/latex], where the data bits and the check bits are given in the following tables:\n<br><img src=\"/wp-content/uploads/GATE/CS/20211/q29.jpg\" /><br>\nWhich one of the following choices gives the correct values of x and y?",
+   "solution": "Positions: 1 c1, 2 c2, 3 d1, 4 c4, 5 d2, 6 d3, 7 d4, 8 c8, 9 d5, 10 d6, 11 d7, 12 d8 (even parity).<br>\n- c1 checks d1, d2, d4, d5, d7 = 1 + 0 + 0 + x + 1 = x. Given c1 = 0 [latex]\\rightarrow[/latex] <b>x = 0</b>.<br>\n- c8 checks d5, d6, d7, d8 = 0 + 0 + 1 + 1 = 0 [latex]\\rightarrow[/latex] <b>y = 0</b>.<br>\n(c2 and c4 also match: 1 and 0.)<br><br>\n<b>Answer: x is 0 and y is 0</b><br><br><a href=\"https://gateoverflow.in/357422/gate-cse-2021-set-1-question-29#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "options": [
+    "x is 0 and y is 0",
+    "x is 0 and y is 1",
+    "x is 1 and y is 0",
+    "x is 1 and y is 1"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1121130,
+   "number": 30,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following recurrence relation.<br>\n[latex]T\\left ( n \\right )=\\left\\{\\begin{array} {lcl} T(n/2)+T(2n/5)+7n & \\text{if} \\; n > 0\\\\1 & \\text{if}\\; n=0 \\end{array}\\right.[/latex]<br>\nWhich one of the following options is correct?",
+   "solution": "The two subproblems have total size [latex]\\frac n2+\\frac{2n}{5}=0.9n \\lt n[/latex]. The work per level shrinks geometrically: [latex]7n,\\ 0.9\\cdot7n,\\ 0.81\\cdot7n,\\ldots[/latex]<br><br>\nTotal [latex]=7n(1+0.9+0.81+\\cdots)=7n\\cdot10=\\Theta(n)[/latex]<br><br>\n<b>Answer: [latex]T(n)=\\Theta(n)[/latex]</b><br><br><a href=\"https://gateoverflow.in/357421/gate-cse-2021-set-1-question-30#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Recurrence Relation",
+   "tag2_url": "https://practicepaper.in/gate-cse/recurrence-relation",
+   "options": [
+    "[latex]T(n)=\\Theta (n^{5/2})[/latex]",
+    "[latex]T(n)=\\Theta (n \\log n)[/latex]",
+    "[latex]T(n)=\\Theta (n)[/latex]",
+    "[latex]T(n)=\\Theta ((\\log n)^{5/2})[/latex]"
+   ],
+   "correct": 2
+  }
+ ]
+}

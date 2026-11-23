@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11262,
+  "quizName": "GATE CSE 2026 SET-2",
+  "pageTitle": "GATE CSE 2026 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 5,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2026-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1126221,
+   "number": 21,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the system of linear equations given below.<br><br> [latex] \\begin{array}{c} a x+y=b \\\\ 16 x+a y=24 \\end{array} [/latex] <br><br>Suppose the values of [latex]a[/latex] and [latex]b[/latex] are chosen such that the system of linear equations produce multiple solutions. Then the product of [latex]a[/latex] and [latex]b[/latex] is ________. (answer in integer)",
+   "solution": "The system [latex]ax+y=b,\\ 16x+ay=24[/latex] has infinitely many (multiple) solutions exactly when the two equations describe the <i>same line</i>, i.e. all three coefficient ratios are equal:<br>\n[latex]\\dfrac{a}{16}=\\dfrac{1}{a}=\\dfrac{b}{24}[/latex]<br><br>\nFrom [latex]\\dfrac{a}{16}=\\dfrac{1}{a}[/latex]: [latex]a^2=16\\Rightarrow a=\\pm4[/latex].<br>\nFrom [latex]\\dfrac{1}{a}=\\dfrac{b}{24}[/latex]: [latex]b=\\dfrac{24}{a}[/latex].<br><br>\nIf [latex]a=4[/latex]: [latex]b=24/4=6[/latex], so [latex]ab=4\\times6=24[/latex].<br>\nIf [latex]a=-4[/latex]: [latex]b=24/(-4)=-6[/latex], so [latex]ab=(-4)\\times(-6)=24[/latex].<br><br>\nEither valid choice of [latex]a[/latex] gives the same product.<br><br>\n<b>Answer: 24</b> <br><br> <a href=\"https://gateoverflow.in/523125/gate-cse-2026-set-2-question-21#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "ansMin": 24,
+   "ansMax": 24
+  },
+  {
+   "id": 1126222,
+   "number": 22,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider an array [latex]A=[10,7,8,19,41,35,25,31][/latex]. Suppose the merge sort algorithm is executed on array [latex]A[/latex] to sort it in increasing order. The merge sort algorithm will carry out a total of [latex]7[/latex] merge operations. <br><br>A merge operation on sorted left array [latex]L[/latex] and sorted right array [latex]R[/latex] is said to be void if the output of the merge operation is the elements of array [latex]L[/latex] followed by the elements of array [latex]R[/latex]. <br><br>The number of void merge operations among these [latex]7[/latex] merge operations is ________. (answer in integer)",
+   "solution": "A merge is <b>void</b> when every element of the left sub-array is already [latex]\\le[/latex] every element of the right sub-array, so the merge simply concatenates them with no interleaving.<br><br>\nTrace merge sort on [latex]A=[10,7,8,19,41,35,25,31][/latex]:<br><br>\n<b>Bottom level (pairs):</b><br>\n[latex][10],[7]\\to[7,10][/latex] (result is [latex]R[/latex] then [latex]L[/latex], not \"[latex]L[/latex] then [latex]R[/latex]\") &mdash; <b>not void</b>.<br>\n[latex][8],[19]\\to[8,19][/latex] (already [latex]L[/latex] then [latex]R[/latex] as-is) &mdash; <b>void</b>.<br>\n[latex][41],[35]\\to[35,41][/latex] &mdash; <b>not void</b>.<br>\n[latex][25],[31]\\to[25,31][/latex] (already in order) &mdash; <b>void</b>.<br><br>\n<b>Next level (quads):</b><br>\n[latex][7,10]+[8,19]\\to[7,8,10,19][/latex] (interleaved, not simply [latex]L[/latex] then [latex]R[/latex]) &mdash; <b>not void</b>.<br>\n[latex][35,41]+[25,31]\\to[25,31,35,41][/latex] (interleaved) &mdash; <b>not void</b>.<br><br>\n<b>Final merge:</b><br>\n[latex][7,8,10,19]+[25,31,35,41][/latex]: every element of the left ([latex]\\le19[/latex]) is already smaller than every element of the right ([latex]\\ge25[/latex]), so the merge is simply [latex]L[/latex] followed by [latex]R[/latex] &mdash; <b>void</b>.<br><br>\nTotal merges [latex]=4+2+1=7[/latex] (matches the given count), with exactly [latex]3[/latex] of them void.<br><br>\n<b>Answer: 3</b> <br><br> <a href=\"https://gateoverflow.in/523124/gate-cse-2026-set-2-question-22#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Sorting",
+   "tag2_url": "https://practicepaper.in/gate-cse/sorting",
+   "ansMin": 3,
+   "ansMax": 3
+  },
+  {
+   "id": 1126223,
+   "number": 23,
+   "type": "NAT",
+   "marks": 1,
+   "text": "If an IP network uses a subnet mask of [latex]255.255.240.0[/latex], the maximum number of IP addresses that can be assigned to network interfaces is ________. (answer in integer)",
+   "solution": "Subnet mask [latex]255.255.240.0[/latex] in binary: [latex]11111111.11111111.11110000.00000000[/latex] &mdash; this has [latex]20[/latex] network bits (a [latex]/20[/latex]).<br><br>\nHost bits [latex]=32-20=12[/latex], giving [latex]2^{12}=4096[/latex] total addresses in the subnet. Of these, [latex]2[/latex] are reserved (the all-zeros network address and the all-ones broadcast address) and cannot be assigned to interfaces.<br><br>\nUsable addresses [latex]=4096-2=4094[/latex].<br><br>\n<b>Answer: 4094</b> <br><br> <a href=\"https://gateoverflow.in/523123/gate-cse-2026-set-2-question-23#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-layer-protocol",
+   "ansMin": 4094,
+   "ansMax": 4094
+  },
+  {
+   "id": 1126224,
+   "number": 24,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The [latex]32[/latex]-bit [latex]\\text{IEEE}[/latex] [latex]754[/latex] single precision representation of a number is [latex]0\\text{xC}2710000[/latex]. The number in decimal representation is ________. (rounded off to two decimal places)",
+   "solution": "Decode [latex]0\\text{xC2710000}[/latex] as IEEE-754 single precision:<br><br>\nBinary: sign bit [latex]=1[/latex] (negative); exponent bits [latex]=10000100_2=132[/latex], unbiased exponent [latex]=132-127=5[/latex]; mantissa bits [latex]=11100010000000000000000[/latex].<br><br>\nMantissa value [latex]=1+2^{-1}+2^{-2}+2^{-3}+2^{-7}=1+0.5+0.25+0.125+0.0078125=1.8828125[/latex].<br><br>\nValue [latex]=-1.8828125\\times2^{5}=-1.8828125\\times32=-60.25[/latex].<br><br>\n<b>Answer: -60.25</b> <br><br> <a href=\"https://gateoverflow.in/523122/gate-cse-2024-set-2-question-24#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "ansMin": -60.25,
+   "ansMax": -60.25
+  },
+  {
+   "id": 1126225,
+   "number": 25,
+   "type": "NAT",
+   "marks": 1,
+   "text": "A lexical analyzer uses the following token definitions <br><br>[latex]{letter → [A-Za-z]}[/latex] <br>[latex]{digit → [0-9]}[/latex] <br>[latex]{id → letter (letter | digit)^*}[/latex] <br>[latex]{number → digit}[/latex] [latex]{ }^{+}[/latex] <br>[latex]{ws → (blank | tab| newline)}[/latex] [latex]{ }^{+}[/latex]<br><br> For the string given below, <br><br>[latex] x1 \\quad 23 {~mm} \\quad 78 \\quad \\text{ y } \\quad 7 z \\quad \\text { zz5 } \\quad 14 A \\quad 8 H \\quad \\text { AaYcD } [/latex] <br><br>the number of tokens (excluding ws) that will be produced by the lexical analyzer is ________. (answer in integer)",
+   "solution": "Tokenize using <b>maximal munch</b> (the longest possible match at each point), skipping whitespace-separated groups: [latex]\\text{x1}\\ \\ \\text{23mm}\\ \\ \\text{78}\\ \\ \\text{y}\\ \\ \\text{7z}\\ \\ \\text{zz5}\\ \\ \\text{14A}\\ \\ \\text{8H}\\ \\ \\text{AaYcD}[/latex]<br><br>\n[latex]\\begin{array}{l|l}\\text{Group}&\\text{Tokens produced}\\\\\\hline\\text{x1}&\\text{id(\"x1\")}\\ (1)\\\\\\text{23mm}&\\text{number(\"23\"), id(\"mm\")}\\ (2)\\\\\\text{78}&\\text{number(\"78\")}\\ (1)\\\\\\text{y}&\\text{id(\"y\")}\\ (1)\\\\\\text{7z}&\\text{number(\"7\"), id(\"z\")}\\ (2)\\\\\\text{zz5}&\\text{id(\"zz5\")}\\ (1)\\ [\\text{letter then letter/digit}^*\\text{ swallows the trailing digit}]\\\\\\text{14A}&\\text{number(\"14\"), id(\"A\")}\\ (2)\\\\\\text{8H}&\\text{number(\"8\"), id(\"H\")}\\ (2)\\\\\\text{AaYcD}&\\text{id(\"AaYcD\")}\\ (1)\\end{array}[/latex]<br><br>\nTotal tokens [latex]=1+2+1+1+2+1+2+2+1=13[/latex].<br><br>\n<b>Answer: 13</b> <br><br> <a href=\"https://gateoverflow.in/523121/gate-cse-2026-set-2-question-25#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Lexical Analysis",
+   "tag2_url": "https://practicepaper.in/gate-cse/lexical-analysis",
+   "ansMin": 13,
+   "ansMax": 13
+  }
+ ]
+}

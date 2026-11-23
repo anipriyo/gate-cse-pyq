@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11191,
+  "quizName": "GATE CS 2019",
+  "pageTitle": "GATE CSE 2019",
+  "timeLimit": 0,
+  "pageNo": 2,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2019",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1119106,
+   "number": 6,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following is NOT a valid identity? ",
+   "solution": "Checking each statement:<br>- XOR is associative [latex]\\text{---}[/latex] valid.<br>\n- Take x = 1, y = 1, z = 0: [latex](x+y)\\oplus z=1\\oplus0=1[/latex] but [latex]x\\oplus(y+z)=1\\oplus1=0[/latex] [latex]\\text{---}[/latex] <b>not valid</b>.<br>\n- If xy = 0, x and y are never both 1, so XOR equals OR [latex]\\text{---}[/latex] valid.<br>\n- [latex]xy+x'y'[/latex] is XNOR; its complement is XOR [latex]\\text{---}[/latex] valid.<br><br>\n<b>Answer: [latex](x+y)\\oplus z=x\\oplus(y+z)[/latex]</b><br><br><a href=\"https://gateoverflow.in/302842/gate2019-cs-6#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "options": [
+    "[latex](x\\oplus y)\\oplus z=x\\oplus (y\\oplus z)[/latex]",
+    "[latex](x+ y)\\oplus z=x\\oplus (y+z)[/latex]",
+    "[latex]x\\oplus y=x+y, \\; if \\; xy=0[/latex]",
+    "[latex]x\\oplus y=(xy+x'y')'[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1119107,
+   "number": 7,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "If L is a regular language over [latex]\\Sigma =\\{a,b\\}[/latex], which one of the following languages is NOT regular ?",
+   "solution": "Checking each statement:<br>- [latex]L\\cdot L^R[/latex]: regular languages are closed under reversal and concatenation [latex]\\text{---}[/latex] regular.<br>\n- Prefix(L), Suffix(L): closed operations on regular languages [latex]\\text{---}[/latex] regular.<br>\n- [latex]\\{ww^R\\mid w\\in L\\}[/latex]: take [latex]L=\\Sigma^*[/latex]; this gives even-length palindromes, which are <b>not regular</b>.<br><br>\n<b>Answer: [latex]\\{ww^R\\mid w\\in L\\}[/latex]</b><br><br><a href=\"https://gateoverflow.in/302841/gate2019-cs-7#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Regular Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/regular-language",
+   "options": [
+    "[latex]L\\cdot L^R=\\{xy|x \\in L,y^R \\in L\\}[/latex]",
+    "[latex]\\{ww^R|w \\in L\\}[/latex]",
+    "Prifix(L)={[latex]x \\in \\Sigma ^*|\\exists y \\in \\Sigma ^*[/latex] such that [latex]xy \\in L[/latex]}",
+    "Suffix(L)={[latex]y \\in \\Sigma ^*|\\exists x \\in \\Sigma ^*[/latex] such that [latex]xy \\in L[/latex]}"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1119108,
+   "number": 8,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider Z = X - Y where X, Y and Z are all in sign-magnitude form. X and Y are each represented in n bits. To avoid overflow, the representation of Z would require a minimum of:",
+   "solution": "In sign-magnitude, n bits give 1 sign bit and n [latex]-[/latex] 1 magnitude bits. X [latex]-[/latex] Y can be as large as (max magnitude) + (max magnitude), e.g. (+max) [latex]-[/latex] ([latex]-[/latex]max), which needs <b>one more magnitude bit</b>.<br><br>\nSo Z needs n + 1 bits.<br><br>\n<b>Answer: n+1 bits</b><br><br><a href=\"https://gateoverflow.in/302840/gate2019-cs-8#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "options": [
+    "n bits",
+    "n-1 bits",
+    "n+1 bits",
+    "n+2 bits"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1119109,
+   "number": 9,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let X be a square matrix. Consider the following two statements on X.<br><br>\nI. X is invertible<br>\nII. Determinant of X is non-zero <br><br>\nWhich one of the following is TRUE?",
+   "solution": "A square matrix is invertible <b>if and only if</b> its determinant is non-zero ([latex]X^{-1}=\\frac{adj(X)}{\\det X}[/latex]). So I and II imply each other.<br><br>\n<b>Answer: I and II are equivalent statements</b><br><br><a href=\"https://gateoverflow.in/302839/gate2019-cs-9#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "I implies II; II does not imply I",
+    "II implies I; I does not imply II",
+    "I does not imply II; II does not imply I",
+    "I and II are equivalent statements"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1119110,
+   "number": 10,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let G be an arbitrary group. Consider the following relations on G:<br><br>\nR1: [latex]\\forall a,b \\in G, aR_1b[/latex] if and only if [latex]\\exists g \\in G[/latex] such that [latex]a=g^{-1}bg[/latex]<br>\n R2: [latex]\\forall a,b \\in G, aR_2b[/latex] if and only if  [latex]a=b^{-1}[/latex]<br><br>\nWhich of the above is/are equivalence relation/relations?",
+   "solution": "<b>R1</b> (conjugacy):<br>\n- Reflexive: [latex]a=e^{-1}ae[/latex]<br>\n- Symmetric: if [latex]a=g^{-1}bg[/latex] then [latex]b=gag^{-1}[/latex]<br>\n- Transitive: [latex]a=g^{-1}bg,\\ b=h^{-1}ch\\Rightarrow a=(hg)^{-1}c(hg)[/latex]<br>\nSo R1 is an equivalence relation.<br><br>\n<b>R2</b>: aR2a would need [latex]a=a^{-1}[/latex], which fails in general (e.g. 1 in [latex]\\mathbb{Z}_3[/latex]). Not reflexive.<br><br>\n<b>Answer: R1 only</b><br><br><a href=\"https://gateoverflow.in/302838/gate2019-cs-10#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Relation",
+   "tag2_url": "https://practicepaper.in/gate-cse/relation",
+   "options": [
+    "R1 and R2",
+    "R1 only",
+    "R2 only",
+    "Neither R1 nor R2"
+   ],
+   "correct": 1
+  }
+ ]
+}

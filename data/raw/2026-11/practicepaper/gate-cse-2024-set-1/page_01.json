@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11241,
+  "quizName": "GATE CSE 2024 SET-1",
+  "pageTitle": "GATE CSE 2024 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 1,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124101,
+   "number": 1,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let [latex]f: \\mathbb{R} \\rightarrow \\mathbb{R} [/latex] be a function such that [latex]f(x)=\\max \\left\\{x, x^3\\right\\}, x \\in \\mathbb{R} [/latex], where [latex]\\mathbb{R} [/latex] is the set of all real numbers. The set of all points where [latex]f(x) [/latex] is NOT differentiable is",
+   "solution": "Compare [latex]x[/latex] and [latex]x^3[/latex]: they are equal at [latex]x=-1,0,1[/latex]. So\n[latex]f(x)=x[/latex] for [latex]x\\le -1[/latex], [latex]x^3[/latex] on [latex][-1,0][/latex], [latex]x[/latex] on [latex][0,1][/latex], [latex]x^3[/latex] for [latex]x\\ge1[/latex].<br><br>\nAt every switching point the two pieces have different slopes ([latex]\\frac{d}{dx}x=1[/latex], [latex]\\frac{d}{dx}x^3=3x^2[/latex]):<br>\n- [latex]x=-1[/latex]: slopes [latex]1[/latex] and [latex]3[/latex] [latex]\\rightarrow[/latex] corner<br>\n- [latex]x=0[/latex]: slopes [latex]0[/latex] and [latex]1[/latex] [latex]\\rightarrow[/latex] corner<br>\n- [latex]x=1[/latex]: slopes [latex]1[/latex] and [latex]3[/latex] [latex]\\rightarrow[/latex] corner<br><br>\nEverywhere else [latex]f[/latex] is a polynomial, hence differentiable.<br><br>\n<b>Answer: [latex]\\{-1,0,1\\}[/latex]</b><br><br><a href=\"https://gateoverflow.in/422841/gate-cse-2024-set-1-question-1#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Functions",
+   "tag2_url": "https://practicepaper.in/gate-cse/functions",
+   "options": [
+    "[latex]-1,1,2 [/latex]",
+    "[latex]-2,-1,1 [/latex]",
+    "[latex]0,1 [/latex]",
+    "[latex]-1,0,1[/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1124102,
+   "number": 2,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The product of all eigenvalues of the matrix [latex]\\begin{bmatrix}\n1 & 2 & 3\\\\ \n4 & 5 &6 \\\\ \n7 &8  & 9\n\\end{bmatrix}[/latex] is ",
+   "solution": "Product of all eigenvalues [latex]=\\det(A)[/latex].<br><br>\n[latex]\\det(A)=1(45-48)-2(36-42)+3(32-35)=-3+12-9=0[/latex]<br><br>\n(Quick check: [latex]R_1+R_3=2R_2[/latex], so the rows are dependent and the matrix is singular.)<br><br>\n<b>Answer: 0</b><br><br><a href=\"https://gateoverflow.in/422840/gate-cse-2024-set-1-question-2#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "[latex]-1[/latex]",
+    "[latex]0[/latex]",
+    "[latex]1[/latex]",
+    "[latex]2[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1124103,
+   "number": 3,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider a system that uses 5 bits for representing signed integers in 2's complement format. In this system, two integers [latex]A [/latex] and [latex]B [/latex] are represented as [latex]A=01010 [/latex] and [latex]B=11010 [/latex]. Which one of the following operations will result in either an arithmetic overflow or an arithmetic underflow?",
+   "solution": "With 5-bit 2's complement the range is [latex]-16[/latex] to [latex]+15[/latex].<br><br>\n[latex]A=01010=+10[/latex], [latex]B=11010=-6[/latex].<br><br>\n- [latex]A+B=4[/latex] [latex]\\rightarrow[/latex] fits<br>\n- [latex]A-B=10+6=16[/latex] [latex]\\rightarrow[/latex] <b>exceeds +15, overflow</b><br>\n- [latex]B-A=-16[/latex] [latex]\\rightarrow[/latex] fits (lowest value)<br>\n- [latex]2B=-12[/latex] [latex]\\rightarrow[/latex] fits<br><br>\n<b>Answer: A [latex]-[/latex] B</b><br><br><a href=\"https://gateoverflow.in/422839/gate-cse-2024-set-1-question-3#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "options": [
+    "[latex]A+B [/latex]",
+    "[latex]A-B [/latex]",
+    "[latex]B-A [/latex]",
+    "[latex]2 * B [/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1124104,
+   "number": 4,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider a permutation sampled uniformly at random from the set of all permutations of [latex]\\{1,2,3, \\cdots, n\\} [/latex] for some [latex]n \\geq 4 [/latex]. Let [latex]X [/latex] be the event that 1 occurs before 2 in the permutation, and [latex]Y [/latex] the event that 3 occurs before 4 . Which one of the following statements is TRUE?",
+   "solution": "By symmetry, 1 is before 2 in half of all permutations, so [latex]P(X)=\\frac12[/latex]; similarly [latex]P(Y)=\\frac12[/latex].<br><br>\nThe relative order of {1,2} and the relative order of {3,4} involve different elements, and all 4 combinations (12/21 with 34/43) are equally likely, so [latex]P(X\\cap Y)=\\frac14=P(X)P(Y)[/latex] [latex]\\rightarrow[/latex] <b>independent</b>.<br><br>\n- Not mutually exclusive: 1 2 3 4 [latex]\\ldots[/latex] satisfies both.<br>\n- Neither must occur: 2 1 4 3 [latex]\\ldots[/latex] satisfies none.<br>\n- Equally likely, so X is not more likely than Y.<br><br>\n<b>Answer: X and Y are independent</b><br><br><a href=\"https://gateoverflow.in/422838/gate-cse-2024-set-1-question-4#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "options": [
+    "The events [latex]X [/latex] and [latex]Y [/latex] are mutually exclusive",
+    "The events [latex]X [/latex] and [latex]Y [/latex] are independent",
+    "Either event [latex]X [/latex] or [latex]Y [/latex] must occur",
+    "Event [latex]X [/latex] is more likely than event [latex]Y [/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1124105,
+   "number": 5,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following statements is FALSE?",
+   "solution": "Checking each statement:<br>- Cycle stealing: DMA takes one bus cycle and moves one word [latex]\\text{---}[/latex] TRUE.<br>\n- Burst mode keeps the bus for the whole block (no repeated bus requests), so it has higher throughput for bulk transfer [latex]\\text{---}[/latex] TRUE.<br>\n- <b>Programmed I/O has better CPU utilization than interrupt-driven I/O [latex]\\text{---}[/latex] FALSE.</b> In programmed I/O the CPU keeps polling the device status and wastes cycles; interrupt-driven I/O lets the CPU do other work until the device interrupts.<br>\n- Vectored interrupts give the ISR address directly (no polling to find the device), so ISR starts faster [latex]\\text{---}[/latex] TRUE.<br><br>\n<b>Answer: Programmed I/O has better CPU utilization than interrupt driven I/O (FALSE)</b><br><br><a href=\"https://gateoverflow.in/422837/gate-cse-2024-set-1-question-5#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "IO Interface",
+   "tag2_url": "https://practicepaper.in/gate-cse/io-interface",
+   "options": [
+    "In the cycle stealing mode of DMA, one word of data is transferred between an I/O\ndevice and main memory in a stolen cycle",
+    "For bulk data transfer, the burst mode of DMA has a higher throughput than the\ncycle stealing mode",
+    "Programmed I/O mechanism has a better CPU utilization than the interrupt driven\nI/O mechanism",
+    "The CPU can start executing an interrupt service routine faster with vectored\ninterrupts than with non-vectored interrupts"
+   ],
+   "correct": 2
+  }
+ ]
+}

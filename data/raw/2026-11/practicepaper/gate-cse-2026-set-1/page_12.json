@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11261,
+  "quizName": "GATE CSE 2026 SET-1",
+  "pageTitle": "GATE CSE 2026 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 12,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2026-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1126156,
+   "number": 56,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The antonym of the word protagonist is ________.",
+   "solution": "A <b>protagonist</b> is the central, leading character of a story (the \"hero\"). Its direct opposite is the <b>antagonist</b> &mdash; the character who opposes or works against the protagonist.<br><br>\nThe other options (agnostic, arsonist, anarchist) are unrelated words that merely share a similar sound/suffix but have no antonym relationship with \"protagonist.\"<br><br>\n<b>Answer: antagonist</b> <br><br> <a href=\"https://gateoverflow.in/523089/gate-cse-2026-set-1-ga-question-1#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "agnostic",
+    "antagonist",
+    "arsonist",
+    "anarchist"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1126157,
+   "number": 57,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The figure shows two [latex]4[/latex]-tile patterns. <br><img src=\"/wp-content/uploads/GATE/CS/20261/q57a.webp\"/><br> Either one or both of the patterns can be used any number of times and in any orientation to construct a new pattern. Which one of the options below cannot be constructed by using only these two [latex]4[/latex]-tile patterns assuming there are no overlaps among them?<br><img src=\"/wp-content/uploads/GATE/CS/20261/q57b.webp\"/><br>",
+   "solution": "This is a visual tiling/pattern-matching question based on an accompanying figure: two given [latex]4[/latex]-tile shapes (usable any number of times, in any rotation/reflection, without overlapping) must be combined to try to reconstruct each of the candidate patterns (A, B, C, D).<br><br>\nChecking each candidate pattern by attempting to tile it using only copies of the two given [latex]4[/latex]-tile shapes (in any orientation): patterns A, B, and D can each be fully covered by some combination of the two tile shapes with no gaps or overlaps, but pattern C's shape cannot be decomposed into a combination of the two given tiles no matter how they are rotated or arranged &mdash; some region of C is always left over or mismatched.<br><br>\n<b>Answer: Pattern C cannot be constructed.</b> <br><br> <a href=\"https://gateoverflow.in/523088/gate-cse-2026-set-1-ga-question-2#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1126158,
+   "number": 58,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider a knock-out women's badminton singles tournament where there are no ties. The loser in each game is eliminated from the tournament. Every player plays until she is defeated or remains the last undefeated player. The last undefeated player is declared the winner of the tournament. If there are [latex]64[/latex] players in the beginning of the tournament, how many games should be played in total to declare the winner of the tournament?",
+   "solution": "This is a single-elimination (knock-out) tournament: every game has exactly one loser, and every loser is eliminated permanently. To determine a single overall winner among [latex]64[/latex] players, all [latex]63[/latex] of the other players must each lose exactly one game (and no player needs to lose more than once, since losing eliminates them).<br><br>\nSo the number of games played [latex]=[/latex] number of players eliminated [latex]=64-1=63[/latex] (each game produces exactly one elimination).<br><br>\n<b>Answer: 63</b> <br><br> <a href=\"https://gateoverflow.in/523087/gate-cse-2026-set-1-ga-question-3#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "127",
+    "64",
+    "63",
+    "32"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1126159,
+   "number": 59,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "A student needs to enroll for a minimum of [latex]60[/latex] credits. A student cannot enroll for more than [latex]70[/latex] credits. The credits are divided amongst project and three distinct sets of courses namely, core courses, specialization courses, and elective courses. It is compulsory for a student to enroll for exactly [latex]15[/latex] credits of core courses and exactly [latex]20[/latex] credits of project. In addition, a student has to enroll for a minimum of [latex]10[/latex] credits of specialization courses. The maximum credits of elective courses that a student can enroll for is ________",
+   "solution": "Fixed compulsory credits: core [latex]=15[/latex], project [latex]=20[/latex]; together [latex]=35[/latex] credits, regardless of anything else.<br><br>\nRemaining credits (specialization + elective) must fit so that the <b>total</b> is between [latex]60[/latex] and [latex]70[/latex]. To <b>maximize</b> elective credits, we want the overall total to be as large as possible (i.e. [latex]70[/latex]) while specialization is kept at its <b>minimum</b> allowed value ([latex]10[/latex] credits), leaving as much of the credit budget as possible for electives.<br><br>\nMaximum elective [latex]=70-15-20-10=25[/latex].<br><br>\n<b>Answer: 25</b> <br><br> <a href=\"https://gateoverflow.in/523086/gate-cse-2026-set-1-ga-question-4#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "10",
+    "15",
+    "20",
+    "25"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1126160,
+   "number": 60,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "When the teacher is in the room, all students stand silently.' <br><br> If the above statement is true, which one of the following statements is not necessarily true?",
+   "solution": "The given statement is: [latex]\\text{Teacher in room}\\Rightarrow(\\text{Standing}\\wedge\\text{Silent})[/latex] &mdash; i.e., being in the room implies students are <i>both</i> standing <i>and</i> silent.<br><br>\n- <b>\"If any student is not standing silently, then the teacher is not in the room\"</b> is exactly the logical <b>contrapositive</b> of the original statement, so it is guaranteed true.<br>\n- <b>\"When the teacher is in the room, all students are silent\"</b> follows directly, since \"standing [latex]\\wedge[/latex] silent\" implies \"silent\" alone. Guaranteed true.<br>\n- <b>\"When the teacher is in the room, all students are standing\"</b> similarly follows, since the conjunction implies \"standing\" alone. Guaranteed true.<br>\n- <b>\"If all students are standing, then the teacher is in the room\"</b> is the <b>converse</b> of part of the original implication &mdash; the original statement never claims anything about what causes students to stand; they could be standing for a completely different reason (a fire alarm, another activity, etc.) while the teacher is absent. This is <b>not necessarily true</b>.<br><br>\n<b>Answer: \"If all students are standing, then the teacher is in the room\" is NOT necessarily true.</b> <br><br> <a href=\"https://gateoverflow.in/523085/gate-cse-2026-set-1-ga-question-5#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "If any student is not standing silently, then the teacher is not in the room.",
+    "When the teacher is in the room, all students are silent.",
+    "If all students are standing, then the teacher is in the room.",
+    "When the teacher is in the room, all students are standing."
+   ],
+   "correct": 2
+  }
+ ]
+}

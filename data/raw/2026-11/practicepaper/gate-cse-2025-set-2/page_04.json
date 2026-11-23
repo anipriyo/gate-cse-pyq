@@ -1,0 +1,132 @@
+{
+ "meta": {
+  "quizId": 11252,
+  "quizName": "GATE CSE 2025 SET-2",
+  "pageTitle": "GATE CSE 2025 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 4,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2025-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1125216,
+   "number": 16,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Processes [latex]P_1, P_2, P_3, P_4 [/latex] arrive in that order at times 0, 1, 2, and 8 milliseconds respectively, and have execution times of 10, 13, 6, and 9 milliseconds respectively. Shortest Remaining Time First (SRTF) algorithm is used as the CPU scheduling policy. Ignore context switching times.\n<br>\nWhich ONE of the following correctly gives the average turnaround time of the four processes in milliseconds?",
+   "solution": "Simulate SRTF (always run whichever available process has the least remaining time):<br><br>\n[latex]t{=}0[/latex]: only [latex]P_1[/latex] present (remaining [latex]10[/latex]) &rarr; runs.<br>\n[latex]t{=}1[/latex]: [latex]P_2[/latex] arrives (remaining [latex]13[/latex]); [latex]P_1[/latex]'s remaining ([latex]9[/latex]) is still shortest &rarr; [latex]P_1[/latex] continues.<br>\n[latex]t{=}2[/latex]: [latex]P_3[/latex] arrives (remaining [latex]6[/latex]); now shortest among [latex]P_1[/latex]([latex]8[/latex]), [latex]P_2[/latex]([latex]13[/latex]), [latex]P_3[/latex]([latex]6[/latex]) is [latex]P_3[/latex] &rarr; switch to [latex]P_3[/latex].<br>\n[latex]P_3[/latex] runs uninterrupted [latex]t{=}2[/latex] to [latex]t{=}8[/latex] (no shorter arrivals in between), finishing exactly as [latex]P_4[/latex] arrives. [latex]P_3[/latex] turnaround [latex]=8-2=6[/latex].<br>\n[latex]t{=}8[/latex]: [latex]P_4[/latex] arrives (remaining [latex]9[/latex]); comparing [latex]P_1[/latex]([latex]8[/latex]), [latex]P_2[/latex]([latex]13[/latex]), [latex]P_4[/latex]([latex]9[/latex]) &rarr; [latex]P_1[/latex] shortest, runs to completion at [latex]t{=}16[/latex]. [latex]P_1[/latex] turnaround [latex]=16-0=16[/latex].<br>\n[latex]t{=}16[/latex]: [latex]P_2[/latex]([latex]13[/latex]) vs [latex]P_4[/latex]([latex]9[/latex]) &rarr; [latex]P_4[/latex] runs to completion at [latex]t{=}25[/latex]. Turnaround [latex]=25-8=17[/latex].<br>\n[latex]t{=}25[/latex]: only [latex]P_2[/latex] left, runs to completion at [latex]t{=}38[/latex]. Turnaround [latex]=38-1=37[/latex].<br><br>\nAverage turnaround [latex]=\\dfrac{6+16+17+37}4=\\dfrac{76}4=19[/latex]<br><br>\n<b>Answer: 19</b><br><br><a href=\"https://gateoverflow.in/460819/gate-cse-2025-set-2-question-16#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "CPU Scheduling",
+   "tag2_url": "https://practicepaper.in/gate-cse/cpu-scheduling",
+   "options": [
+    "22",
+    "15",
+    "37",
+    "19"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1125217,
+   "number": 17,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "An audit of a banking transactions system has found that on an earlier occasion, two joint holders of account [latex]A [/latex] attempted simultaneous transfers of Rs. 10000 each from account [latex]A [/latex] to account [latex]B [/latex]. Both transactions read the same value, Rs. 11000, as the initial balance in [latex]A [/latex] and were allowed to go through. [latex]B [/latex] was credited Rs. 10000 twice. [latex]A [/latex] was debited only once and ended up with a balance of Rs. 1000.\n<br>\nWhich of the following properties is/are certain to have been violated by the system?",
+   "solution": "This is a classic <b>lost-update</b> anomaly caused by two transactions reading the same stale value and overwriting each other's effects.<br><br>\n- <b>Consistency</b> is violated: the database ends up in a state that breaks the intended invariant (money should be conserved / correctly transferred), since [latex]A[/latex] should have ended up [latex]11000-20000[/latex] worth adjusted correctly but instead only one debit actually applied while both credits landed &mdash; the books don't balance as intended.<br>\n- <b>Isolation</b> is violated: the two concurrent transactions were not properly isolated from each other &mdash; both read [latex]A[/latex]'s balance before either had committed its update, letting their effects clash (textbook lost-update problem).<br>\n- <b>Atomicity</b> is not necessarily violated: each individual transaction ran to completion in full (no partial execution of a single transaction occurred).<br>\n- <b>Durability</b> is unrelated here: there's no indication of any committed-then-lost data due to a crash.<br><br>\n<b>Answer: Consistency and Isolation</b><br><br><a href=\"https://gateoverflow.in/460818/gate-cse-2025-set-2-question-17#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Transaction",
+   "tag2_url": "https://practicepaper.in/gate-cse/transaction",
+   "options": [
+    "Atomicity",
+    "Consistency",
+    "Isolation",
+    "Durability"
+   ],
+   "correctSet": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1125218,
+   "number": 18,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following is/are part of an Instruction Set Architecture of a processor?",
+   "solution": "The <b>Instruction Set Architecture (ISA)</b> is the software-visible contract between hardware and software &mdash; things like available instructions, addressing modes, and the visible register set. <b>The total number of (architecturally visible) registers</b> is part of this contract, since programs/compilers must know how many registers they can target.<br><br>\nCache size, clock frequency, and number of cache levels are all <b>microarchitecture</b> (implementation) details &mdash; two processors implementing the very same ISA can freely differ in these without breaking software compatibility.<br><br>\n<b>Answer: The total number of registers</b><br><br><a href=\"https://gateoverflow.in/460817/gate-cse-2025-set-2-question-18#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Machine Instruction",
+   "tag2_url": "https://practicepaper.in/gate-cse/machine-instruction",
+   "options": [
+    "The size of the cache memory",
+    "The clock frequency of the processor",
+    "The number of cache memory levels",
+    "The total number of registers"
+   ],
+   "correctSet": [
+    3
+   ]
+  },
+  {
+   "id": 1125219,
+   "number": 19,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following statements regarding Breadth First Search (BFS) and Depth First Search (DFS) on an undirected simple graph [latex]G [/latex] is/are TRUE?",
+   "solution": "Checking each BFS/DFS claim on an undirected simple graph:<br><br>\n- \"A DFS tree is a shortest path tree\": <b>false</b> &mdash; DFS explores as deep as possible along one branch first and gives no shortest-path guarantee at all; only BFS guarantees that.<br>\n- <b>\"Every non-tree edge w.r.t. a DFS tree is a forward/back edge\"</b>: <b>true</b> &mdash; in an <i>undirected</i> graph, DFS can never produce a cross edge; every non-tree edge necessarily connects an ancestor-descendant pair (classified as a back edge, viewable from either endpoint as forward/back).<br>\n- <b>\"Non-tree BFS edge (u,v): distances differ by at most 1\"</b>: <b>true</b> &mdash; this is a standard BFS property, since BFS explores level-by-level and any edge can only connect vertices in the same level or adjacent levels.<br>\n- <b>\"Both BFS and DFS can find connected components\"</b>: <b>true</b> &mdash; running either traversal repeatedly from every yet-unvisited vertex correctly partitions the graph into its connected components.<br><br>\n<b>Answer: The 2nd, 3rd, and 4th statements are all true.</b><br><br><a href=\"https://gateoverflow.in/460816/gate-cse-2025-set-2-question-19#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Graph Traversal",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-traversal",
+   "options": [
+    "A DFS tree of [latex]G [/latex] is a Shortest Path tree of [latex]G [/latex].",
+    "Every non-tree edge of [latex]G [/latex] with respect to a DFS tree is a forward/back edge.",
+    "If [latex](u, v) [/latex] is a non-tree edge of [latex]G [/latex] with respect to a BFS tree, then the distances from the source vertex [latex]s [/latex] to [latex]u [/latex] and [latex]v [/latex] in the BFS tree are within [latex]\\pm 1 [/latex] of each other.",
+    "Both BFS and DFS can be used to find the connected components of [latex]G [/latex]."
+   ],
+   "correctSet": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1125220,
+   "number": 20,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Consider the two lists List I and List II given below:<br>[latex]\n\\begin{array}{|c l|c l|}\n    \\hline\n    \\textbf{List I} & & \\textbf{List II} & \\\\ \n    \\hline\n    \\text{(i)} & \\text{Context free languages} & \\text{(a)} & \\text{Closed under union} \\\\ \n    \\hline\n    \\text{(ii)} & \\text{Recursive languages} & \\text{(b)} & \\text{Not closed under complementation} \\\\ \n    \\hline\n    \\text{(iii)} & \\text{Regular languages} & \\text{(c)} & \\text{Closed under intersection} \\\\ \n    \\hline\n\\end{array}[/latex]<br>\nFor matching of items in List I with those in List II, which of the following option(s) is/are CORRECT?",
+   "solution": "Recall the closure properties: <b>Context-free languages</b> are closed under union, but famously <b>not closed under complementation</b> (matching (i)-(b)) and also not closed under intersection in general. <b>Recursive languages</b> and <b>regular languages</b> are each closed under <i>both</i> union <i>and</i> intersection (both (a) and (c) hold true for each of them) &mdash; so either valid assignment of (a)/(c) across (ii) and (iii) gives a fully correct matching, as long as (i) is paired with (b) (the one property that specifically distinguishes CFLs from the other two classes).<br><br>\nThis is exactly why <b>two different complete matchings</b> both check out as correct: (i)-(b), (ii)-(a), (iii)-(c) <i>and</i> (i)-(b), (ii)-(c), (iii)-(a) &mdash; since recursive and regular languages don't care which of (a)/(c) is assigned to which, both being true of both.<br><br>\n<b>Answer: (i)-(b),(ii)-(a),(iii)-(c) AND (i)-(b),(ii)-(c),(iii)-(a)</b><br><br><a href=\"https://gateoverflow.in/460815/gate-cse-2025-set-2-question-20#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Recursive Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/recursive-language",
+   "options": [
+    "(i) - (a), (ii) - (b), and (iii) - (c)",
+    "(i) - (b), (ii) - (a), and (iii) - (c)",
+    "(i) - (b), (ii) - (c), and (iii) - (a)",
+    "(i) - (a), (ii) - (c), and (iii) - (b)"
+   ],
+   "correctSet": [
+    1,
+    2
+   ]
+  }
+ ]
+}

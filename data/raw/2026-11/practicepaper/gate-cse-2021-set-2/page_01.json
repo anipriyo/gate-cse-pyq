@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11212,
+  "quizName": "GATE CSE 2021 SET 2",
+  "pageTitle": "GATE CSE 2021 SET-2",
+  "timeLimit": 0,
+  "pageNo": 1,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2021-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1121201,
+   "number": 1,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let G be a connected undirected weighted graph. Consider the following two statements.<br><br>\nS1: There exists a minimum weight edge in G which is present in every minimum spanning tree of G.<br>\nS2: If every edge in G has distinct weight, then G has a unique minimum spanning tree.<br><br>\nWhich one of the following options is correct?",
+   "solution": "Checking each statement:<br>- S1: if several edges share the minimum weight (e.g. a triangle with all weights 1), each MST leaves out one of them, so no single minimum edge is in <b>every</b> MST [latex]\\text{---}[/latex] FALSE.<br>\n- S2: distinct weights [latex]\\Rightarrow[/latex] unique MST [latex]\\text{---}[/latex] TRUE.<br><br>\n<b>Answer: S1 is false and S2 is true</b><br><br><a href=\"https://gateoverflow.in/357539/gate-cse-2021-set-2-question-1#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Minimum Spanning Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/minimum-spanning-tree",
+   "options": [
+    "Both S1 and S2 are true",
+    "S1 is true and S2 is false",
+    "S1 is false and S2 is true",
+    "Both S1 and S2 are false"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1121202,
+   "number": 2,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let H be a binary min-heap consisting of n elements implemented as an array. What is the worst case time complexity of an optimal algorithm to find the maximum element in H?",
+   "solution": "In a min-heap the maximum is in one of the [latex]\\lceil n/2\\rceil[/latex] leaves, and the leaves are not ordered among themselves, so all of them must be checked: [latex]\\Theta(n)[/latex].<br><br>\n<b>Answer: [latex]\\Theta(n)[/latex]</b><br><br><a href=\"https://gateoverflow.in/357538/gate-cse-2021-set-2-question-2#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Heap Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/heap-tree",
+   "options": [
+    "[latex]\\Theta (1)[/latex]",
+    "[latex]\\Theta (\\log n)[/latex]",
+    "[latex]\\Theta ( n)[/latex]",
+    "[latex]\\Theta (n \\log n)[/latex]"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1121203,
+   "number": 3,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following ANSI C program:<pre><code>int main () {\n    Integer x;\n    return 0;\n} </pre></code>  Which one of the following phases in a seven-phase C compiler will throw an error?",
+   "solution": "\"Integer x;\" is lexically fine (Integer is an identifier) and syntactically looks like a declaration \"type-name identifier\". But Integer is not a declared type, and that is found only by the <b>semantic analyzer</b> (symbol table / type checking).<br><br>\n<b>Answer: Semantic analyzer</b><br><br><a href=\"https://gateoverflow.in/357537/gate-cse-2021-set-2-question-3#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Syntax-directed Translation",
+   "tag2_url": "https://practicepaper.in/gate-cse/syntax-directed-translation",
+   "options": [
+    "Lexical analyzer",
+    "Syntax analyzer",
+    "Semantic analyzer",
+    "Machine dependent optimizer"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1121204,
+   "number": 4,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The format of the single-precision floating point representation of a real number as per the IEEE 754 standard is as follows:<br><br>\n[latex]\\begin{array}{|c|c|c|} \\hline \\text{sign} & \\text{exponent} & \\text{mantissa} \\\\ \\hline \\end{array}[/latex]<br><br>\nWhich one of the following choices is correct with respect to the smallest normalized positive number represented using the standard?",
+   "solution": "Normalized numbers need exponent field from 1 to 254 (0 is for zero/denormals). The smallest normalized positive number has exponent 00000001 and mantissa all 0: [latex]1.0\\times2^{1-127}=2^{-126}[/latex].<br><br>\n<b>Answer: exponent = 00000001 and mantissa = 0[latex]\\ldots[/latex]0</b><br><br><a href=\"https://gateoverflow.in/357536/gate-cse-2021-set-2-question-4#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "options": [
+    "exponent = 00000000 and mantissa = 0000000000000000000000000",
+    "exponent = 00000000 and mantissa = 0000000000000000000000001",
+    "exponent = 00000001 and mantissa = 0000000000000000000000000",
+    "exponent = 00000001 and mantissa = 0000000000000000000000001"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1121205,
+   "number": 5,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following circuits implements the Boolean function given below?<br><br>[latex]f(x,y,z) = m_0+m_1+m_3+m_4+m_5+m_6[/latex]<br><br>where [latex]m_i[/latex] is the [latex]i^{th}[/latex] minterm.<br><img src=\"/wp-content/uploads/GATE/CS/20212/q5.jpg\" /><br>",
+   "solution": "Select lines are y (s1) and z (s0), so input [latex]I_{2y+z}[/latex] must equal f with x free:<br>\n- yz = 00: m0 (x = 0), m4 (x = 1) both 1 [latex]\\rightarrow[/latex] [latex]I_0=1[/latex]<br>\n- yz = 01: m1, m5 both 1 [latex]\\rightarrow[/latex] [latex]I_1=1[/latex]<br>\n- yz = 10: m2 = 0, m6 = 1 [latex]\\rightarrow[/latex] [latex]I_2=x[/latex]<br>\n- yz = 11: m3 = 1, m7 = 0 [latex]\\rightarrow[/latex] [latex]I_3=\\bar x[/latex]<br><br>\nInputs (1, 1, x, x') = circuit A.<br><br>\n<b>Answer: A</b><br><br><a href=\"https://gateoverflow.in/357535/gate-cse-2021-set-2-question-5#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Combinational Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/combinational-circuit",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "correct": 0
+  }
+ ]
+}

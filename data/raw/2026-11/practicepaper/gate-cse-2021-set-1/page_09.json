@@ -1,0 +1,135 @@
+{
+ "meta": {
+  "quizId": 11211,
+  "quizName": "GATE CSE 2021 SET 1",
+  "pageTitle": "GATE CSE 2021 SET-1",
+  "timeLimit": 0,
+  "pageNo": 9,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2021-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1121141,
+   "number": 41,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "An articulation point in a connected graph is a vertex such that removing the vertex and its incident edges disconnects the graph into two or more connected components.\n<br>\nLet T be a DFS tree obtained by doing DFS in a connected undirected graph G.\n<br>\nWhich of the following options is/are correct?",
+   "solution": "Checking each statement:<br>- The root is an articulation point exactly when it has <b>two or more</b> DFS children: there are no cross edges in an undirected DFS, so its subtrees connect only through the root [latex]\\text{---}[/latex] TRUE (option 1 is FALSE).<br>\n- A leaf of T: removing it leaves the rest of T connected [latex]\\rightarrow[/latex] never an articulation point [latex]\\text{---}[/latex] FALSE.<br>\n- Option 4: y's subtree may have a back edge to an ancestor above u (u is an articulation point because of another subtree), giving a path from x to y that avoids u [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: Root of T is an articulation point iff it has 2 or more children</b><br><br><a href=\"https://gateoverflow.in/357410/gate-cse-2021-set-1-question-41#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Graph Traversal",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-traversal",
+   "options": [
+    "Root of T can never be an articulation point in G.",
+    "Root of T is an articulation point in G if and only if it has 2 or more children.",
+    "A leaf of T can be an articulation point in G.",
+    "If u is an articulation point in G such that x is an ancestor of u in T and y is a descendent of u in T, then all paths from x to y in G must pass through u."
+   ],
+   "correctSet": [
+    1
+   ]
+  },
+  {
+   "id": 1121142,
+   "number": 42,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider the following Boolean expression.\n<br><br>\n[latex]F=(X+Y+Z)(\\overline X +Y)(\\overline Y +Z)[/latex]<br><br>\nWhich of the following Boolean expressions is/are equivalent to [latex]\\overline F[/latex] (complement of [latex]F[/latex])?",
+   "solution": "Find where F = 1 (XYZ): X = 1 forces Y = 1 (second factor), Y = 1 forces Z = 1 (third), and 000 fails the first. So [latex]F=\\Sigma(1,3,7)[/latex] and [latex]\\overline F=\\Sigma(0,2,4,5,6)[/latex].<br><br>\n- [latex]X\\bar Y+\\bar Z[/latex] = {4, 5} [latex]\\cup[/latex] {0, 2, 4, 6} = {0, 2, 4, 5, 6} True<br>\n- [latex](X+\\bar Z)(\\bar Y+\\bar Z)[/latex] = {0, 2, 4, 5, 6} True<br>\n- [latex]X\\bar Y+Y\\bar Z+\\bar X\\bar Y\\bar Z[/latex] = {4, 5} [latex]\\cup[/latex] {2, 6} [latex]\\cup[/latex] {0} True<br>\n- Option 1 is the dual, not the complement (it contains 1, not 0) False<br><br>\n<b>Answer: Options 2, 3 and 4</b><br><br><a href=\"https://gateoverflow.in/357409/gate-cse-2021-set-1-question-42#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "options": [
+    "[latex](\\overline X +\\overline Y +\\overline Z)(X+\\overline Y)(Y+\\overline Z)[/latex]",
+    "[latex]X\\overline Y + \\overline Z[/latex]",
+    "[latex](X+\\overline Z)(\\overline Y +\\overline Z)[/latex]",
+    "[latex]X\\overline Y +Y\\overline Z + \\bar  X \\bar Y \\bar Z[/latex]"
+   ],
+   "correctSet": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1121143,
+   "number": 43,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "A relation [latex]R[/latex] is said to be circular if [latex]aRb[/latex] and [latex]bRc[/latex] together imply [latex]cRa[/latex].\n<br>\nWhich of the following options is/are correct?",
+   "solution": "<b>Reflexive + circular</b> gives an equivalence relation:<br>\n- Symmetric: aRb and bRb (reflexive) [latex]\\Rightarrow[/latex] bRa (circular).<br>\n- Transitive: aRb and bRc [latex]\\Rightarrow[/latex] cRa (circular) [latex]\\Rightarrow[/latex] aRc (symmetric).<br><br>\nThe others fail: reflexive + symmetric need not be transitive; circular + symmetric need not be reflexive (e.g. the empty relation); transitive + circular need not be reflexive either.<br><br>\n<b>Answer: Reflexive and circular [latex]\\Rightarrow[/latex] equivalence relation</b><br><br><a href=\"https://gateoverflow.in/357408/gate-cse-2021-set-1-question-43#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Relation",
+   "tag2_url": "https://practicepaper.in/gate-cse/relation",
+   "options": [
+    "If a relation S is reflexive and symmetric, then S is an equivalence relation.",
+    "If a relation S is circular and symmetric, then S is an equivalence relation.",
+    "If a relation S is reflexive and circular, then S is an equivalence relation.",
+    "If a relation S is transitive and circular, then S is an equivalence relation."
+   ],
+   "correctSet": [
+    2
+   ]
+  },
+  {
+   "id": 1121144,
+   "number": 44,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "A TCP server application is programmed to listen on port number P on host S. A TCP client is connected to the TCP server over the network.\n<br>\nConsider that while the TCP connection was active, the server machine S crashed and rebooted. Assume that the client does not use the TCP keepalive timer. Which of the following behaviors is/are possible?",
+   "solution": "Checking each statement:<br>- The client gets no notice of the crash; without keepalive, a client waiting to receive may wait forever [latex]\\text{---}[/latex] possible.<br>\n- After reboot the application can bind and listen on port P again [latex]\\text{---}[/latex] possible.<br>\n- The rebooted server has no record of the old connection, so a segment from the client gets a <b>RST</b> [latex]\\text{---}[/latex] possible.<br>\n- FIN is sent only on a normal close of a known connection [latex]\\text{---}[/latex] not possible.<br><br>\n<b>Answer: Options 1, 2 and 3</b><br><br><a href=\"https://gateoverflow.in/357407/gate-cse-2021-set-1-question-44#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Transport Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/transport-layer-protocol",
+   "options": [
+    "If the client was waiting to receive a packet, it may wait indefinitely.",
+    "The TCP server application on S can listen on P after reboot.",
+    "If the client sends a packet after the server reboot, it will receive a RST segment.",
+    "If the client sends a packet after the server reboot, it will receive a FIN segment."
+   ],
+   "correctSet": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1121145,
+   "number": 45,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider two hosts P and Q connected through a router R. The maximum transfer unit (MTU) value of the link between P and R is 1500 bytes, and between R and Q is 820 bytes.\n<br>\nA TCP segment of size 1400 bytes was transferred from P to Q through R, with IP identification value as 0x1234. Assume that the IP header size is 20 bytes. Further, the packet is allowed to be fragmented, i.e., Don't Fragment (DF) flag in the IP header is not set by P.\n<br>\nWhich of the following statements is/are correct?",
+   "solution": "P [latex]\\rightarrow[/latex] R: 1400 + 20 = 1420 [latex]\\le[/latex] 1500, no fragmentation. R [latex]\\rightarrow[/latex] Q (MTU 820): max data 800 (a multiple of 8).<br>\n- Fragments: 800 and 600 bytes of data [latex]\\rightarrow[/latex] datagrams of 820 and <b>620</b> bytes [latex]\\text{---}[/latex] TRUE.<br>\n- Routers do not keep or resend fragments [latex]\\text{---}[/latex] FALSE.<br>\n- IP cannot rebuild the datagram without the lost piece; TCP at P must resend the whole segment [latex]\\text{---}[/latex] TRUE.<br>\n- The TCP header (with ports) is only in the first fragment [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: Options 1 and 3</b><br><br><a href=\"https://gateoverflow.in/357406/gate-cse-2021-set-1-question-45#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Transport Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/transport-layer-protocol",
+   "options": [
+    "Two fragments are created at R and the IP datagram size carrying the second fragment is 620 bytes.",
+    "If the second fragment is lost, R will resend the fragment with the IP identification value 0x1234.",
+    "If the second fragment is lost, P is required to resend the whole TCP segment.",
+    "TCP destination port can be determined by analysing only the second fragment."
+   ],
+   "correctSet": [
+    0,
+    2
+   ]
+  }
+ ]
+}

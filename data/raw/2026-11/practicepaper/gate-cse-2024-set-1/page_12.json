@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11241,
+  "quizName": "GATE CSE 2024 SET-1",
+  "pageTitle": "GATE CSE 2024 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 12,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124156,
+   "number": 56,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "If '[latex] \\rightarrow [/latex]' denotes increasing order of intensity, then the meaning of the words\n[dry [latex] \\rightarrow [/latex] arid [latex] \\rightarrow [/latex] parched] is analogous to [diet [latex] \\rightarrow [/latex] fast [latex] \\rightarrow [/latex] _____].\n<br>\nWhich one of the given options is appropriate to fill the blank?",
+   "solution": "dry [latex]\\rightarrow[/latex] arid [latex]\\rightarrow[/latex] parched: increasing degree of lack of water.<br>\ndiet [latex]\\rightarrow[/latex] fast [latex]\\rightarrow[/latex] ___ : increasing degree of not eating. Next stronger level is <b>starve</b>.<br><br>\n(reject, feast, deny do not fit the scale.)<br><br>\n<b>Answer: starve</b><br><br><a href=\"https://gateoverflow.in/422786/gate-cse-2024-set-1-ga-1#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "starve",
+    "reject",
+    "feast",
+    "deny"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1124157,
+   "number": 57,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "If two distinct non-zero real variables [latex] x [/latex] and [latex] y [/latex] are such that [latex] (x+y) [/latex] is proportional to [latex] (x-y) [/latex] then the value of [latex] \\frac{x}{y} [/latex]",
+   "solution": "[latex]x+y=k(x-y)[/latex] for a constant [latex]k[/latex].<br><br>\n[latex]x+y=kx-ky\\Rightarrow y(1+k)=x(k-1)\\Rightarrow\\dfrac{x}{y}=\\dfrac{k+1}{k-1}[/latex]<br><br>\nThis depends only on [latex]k[/latex], so it is a constant.<br><br>\n<b>Answer: is a constant</b><br><br><a href=\"https://gateoverflow.in/422785/gate-cse-2024-set-1-ga-2#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "depends on [latex] x y [/latex]",
+    "depends only on [latex] x [/latex] and not on [latex] y [/latex]",
+    "depends only on [latex] y [/latex] and not on [latex] x [/latex]",
+    "is a constant"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1124158,
+   "number": 58,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following sample of numbers:<br><br>\n9, 18, 11, 14, 15, 17, 10, 69, 11, 13<br><br>\nThe median of the sample is",
+   "solution": "Sorted: 9, 10, 11, 11, 13, 14, 15, 17, 18, 69 (10 numbers).<br><br>\nMedian = average of the 5th and 6th values [latex]=\\dfrac{13+14}{2}=13.5[/latex]<br><br>\n<b>Answer: 13.5</b><br><br><a href=\"https://gateoverflow.in/422784/gate-cse-2024-set-1-ga-3#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "13.5",
+    "14",
+    "11",
+    "18.7"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1124159,
+   "number": 59,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The number of coins of Rs. 1, Rs. 5, and Rs. 10 denominations that a person has are in the\nratio 5:3:13. Of the total amount, the percentage of money in Rs. 5 coins is",
+   "solution": "Let coins be [latex]5k,3k,13k[/latex].<br>\nMoney: Rs.1 [latex]\\rightarrow[/latex] [latex]5k[/latex], Rs.5 [latex]\\rightarrow[/latex] [latex]15k[/latex], Rs.10 [latex]\\rightarrow[/latex] [latex]130k[/latex]. Total [latex]=150k[/latex].<br><br>\nShare of Rs.5 coins [latex]=\\dfrac{15k}{150k}\\times100=10\\%[/latex]<br><br>\n<b>Answer: 10%</b><br><br><a href=\"https://gateoverflow.in/422783/gate-cse-2024-set-1-ga-4#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "[latex] 21\\%[/latex]",
+    "[latex]14 \\frac{2}{7} \\% [/latex]",
+    "[latex] 10\\%[/latex]",
+    "[latex] 30\\%[/latex]"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1124160,
+   "number": 60,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "For positive non-zero real variables [latex] p [/latex] and [latex] q [/latex], if\n<br> [latex]\n\\log \\left(p^2+q^2\\right)=\\log p+\\log q+2 \\log 3 \\text {, }\n [/latex] <br>\nthen, the value of [latex] \\frac{p^4+q^4}{p^2 q^2} [/latex] is",
+   "solution": "[latex]\\log(p^2+q^2)=\\log(9pq)\\Rightarrow p^2+q^2=9pq[/latex]<br><br>\nSquaring: [latex]p^4+q^4+2p^2q^2=81p^2q^2\\Rightarrow p^4+q^4=79p^2q^2[/latex]<br><br>\n[latex]\\dfrac{p^4+q^4}{p^2q^2}=79[/latex]<br><br>\n<b>Answer: 79</b><br><br><a href=\"https://gateoverflow.in/422782/gate-cse-2024-set-1-ga-5#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "79",
+    "81",
+    "9",
+    "83"
+   ],
+   "correct": 0
+  }
+ ]
+}

@@ -1,0 +1,134 @@
+{
+ "meta": {
+  "quizId": 11231,
+  "quizName": "GATE CSE 2023",
+  "pageTitle": "GATE CSE 2023",
+  "timeLimit": 0,
+  "pageNo": 3,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2023",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1123111,
+   "number": 11,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The output of a 2-input multiplexer is connected back to one of its inputs as shown\nin the figure.<br><img src=\"/wp-content/uploads/GATE/CS/20231/q11.jpg\" /><br>Match the functional equivalence of this circuit to one of the following options.",
+   "solution": "The output Q is fed back to input 0.<br>\n- S = 1: Q follows input 1 (the data input D).<br>\n- S = 0: Q = Q, so it <b>holds</b> its old value.<br><br>\nIt is transparent while S = 1 and holds while S = 0, which is a level-triggered <b>D latch</b> (S acts as enable). There is no clock edge, so it is not a flip-flop.<br><br>\n<b>Answer: D Latch</b><br><br><a href=\"https://gateoverflow.in/399301/gate-cse-2023-question-11#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Combinational Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/combinational-circuit",
+   "options": [
+    "D Flip-flop",
+    "D Latch",
+    "Half-adder",
+    "Demultiplexer"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1123112,
+   "number": 12,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which one or more of the following need to be saved on a context switch from one\nthread (T1) of a process to another thread (T2) of the same process?",
+   "solution": "Threads of the same process share the address space, so the <b>page table base register</b> does not change and need not be saved.<br><br>\nEach thread has its own execution context: <b>stack pointer</b>, <b>program counter</b> and <b>general purpose registers</b> [latex]\\text{---}[/latex] these must be saved.<br><br>\n<b>Answer: Stack pointer, Program counter, General purpose registers</b><br><br><a href=\"https://gateoverflow.in/399300/gate-cse-2023-question-12#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Thread",
+   "tag2_url": "https://practicepaper.in/gate-cse/thread",
+   "options": [
+    "Page table base register",
+    "Stack pointer",
+    "Program counter",
+    "General purpose registers"
+   ],
+   "correctSet": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1123113,
+   "number": 13,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which one or more of the following options guarantee that a computer system will\ntransition from user mode to kernel mode?\n",
+   "solution": "Check which events always enter the kernel:<br>- Function call: runs entirely in user mode [latex]\\text{---}[/latex] no switch.<br>\n- malloc: a library function; it usually takes memory from the existing heap and makes a system call only sometimes [latex]\\text{---}[/latex] not guaranteed.<br>\n- <b>Page fault</b>: an exception handled by the OS [latex]\\rightarrow[/latex] always kernel mode.<br>\n- <b>System call</b>: a trap into the kernel [latex]\\rightarrow[/latex] always kernel mode.<br><br>\n<b>Answer: Page Fault, System Call</b><br><br><a href=\"https://gateoverflow.in/399299/gate-cse-2023-question-13#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "System Call",
+   "tag2_url": "https://practicepaper.in/gate-cse/system-call",
+   "options": [
+    "Function Call",
+    "malloc Call",
+    "Page Fault",
+    "System Call"
+   ],
+   "correctSet": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1123114,
+   "number": 14,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following statements is/are CORRECT?",
+   "solution": "Checking each statement:<br>- Regular languages are closed under intersection [latex]\\text{---}[/latex] TRUE.<br>\n- CFLs are <b>not</b> closed under intersection: [latex]a^nb^nc^m\\cap a^mb^nc^n=a^nb^nc^n[/latex] [latex]\\text{---}[/latex] FALSE.<br>\n- Recursive: run both deciders, accept if both accept [latex]\\text{---}[/latex] TRUE.<br>\n- RE: run both recognizers, accept when both accept [latex]\\text{---}[/latex] TRUE.<br><br>\n<b>Answer: Options 1, 3 and 4</b><br><br><a href=\"https://gateoverflow.in/399298/gate-cse-2023-question-14#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-language",
+   "options": [
+    "The intersection of two regular languages is regular.",
+    "The intersection of two context-free languages is context-free.",
+    "The intersection of two recursive languages is recursive.",
+    "The intersection of two recursively enumerable languages is recursively enumerable."
+   ],
+   "correctSet": [
+    0,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1123115,
+   "number": 15,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following statements is/are INCORRECT about\nthe OSPF (Open Shortest Path First) routing protocol used in the Internet?",
+   "solution": "OSPF is a <b>link-state</b> protocol.<br>\n- \"Implements Bellman-Ford\": it uses <b>Dijkstra</b> (Bellman-Ford is for distance vector, like RIP) [latex]\\text{---}[/latex] INCORRECT.<br>\n- \"Uses Dijkstra\" [latex]\\text{---}[/latex] correct.<br>\n- \"Inter-domain protocol\": OSPF is <b>intra</b>-domain (inside one AS); BGP is inter-domain [latex]\\text{---}[/latex] INCORRECT.<br>\n- \"Hierarchical routing\" with areas and a backbone [latex]\\text{---}[/latex] correct.<br><br>\n<b>Answer: Options 1 and 3</b><br><br><a href=\"https://gateoverflow.in/399297/gate-cse-2023-question-15#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-layer-protocol",
+   "options": [
+    "OSPF implements Bellman-Ford algorithm to find shortest paths.",
+    "OSPF uses Dijkstra's shortest path algorithm to implement least-cost path routing",
+    "OSPF is used as an inter-domain routing protocol",
+    "OSPF implements hierarchical routing."
+   ],
+   "correctSet": [
+    0,
+    2
+   ]
+  }
+ ]
+}

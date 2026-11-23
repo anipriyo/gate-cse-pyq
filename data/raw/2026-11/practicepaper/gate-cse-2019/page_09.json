@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11191,
+  "quizName": "GATE CS 2019",
+  "pageTitle": "GATE CSE 2019",
+  "timeLimit": 0,
+  "pageNo": 9,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2019",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1119141,
+   "number": 41,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following four processes with arrival times (in milliseconds) and their length of CPU burst (in milliseconds) as shown below:\n<br><img src=\"/wp-content/uploads/GATE/CS/20191/q41.jpg\" />\nThese processes are run on a single processor using preemptive Shortest Remaining Time First scheduling algorithm. If the average waiting time of the processes is 1 millisecond, then the value of Z is __________.",
+   "solution": "Average waiting time 1 ms [latex]\\Rightarrow[/latex] total waiting time = 4 ms.<br><br>\nSRTF up to t = 4: P1 runs 0-1; P2 (burst 1) preempts and runs 1-2; P1 runs 2-4 and finishes. P1 waited 1, P2 waited 0.<br><br>\nAt t = 4, P3 (3 ms, arrived at 3) and P4 (Z) are left. For the total to be 4, they must wait 3 in total.<br>\nWith Z = 2: P4 runs 4-6 (wait 0), P3 runs 6-9 (wait 9 [latex]-[/latex] 3 [latex]-[/latex] 3 = 3). Total = 1 + 0 + 3 + 0 = 4 True<br><br>\n<b>Answer: 2</b><br><br><a href=\"https://gateoverflow.in/302807/gate2019-cs-41#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "CPU Scheduling",
+   "tag2_url": "https://practicepaper.in/gate-cse/cpu-scheduling",
+   "ansMin": 2,
+   "ansMax": 2
+  },
+  {
+   "id": 1119142,
+   "number": 42,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The index node (inode) of a Unix-like file system has 12 direct, one single-indirect and one double-indirect pointer The disk block size is 4 kB and the disk block addresses 32-bits long. The maximum possible file size is (rounded off to 1 decimal place) __________ GB.",
+   "solution": "Pointers per block = 4 KB / 4 B = 1024.<br>\n- Direct: 12 [latex]\\times[/latex] 4 KB = 48 KB<br>\n- Single indirect: 1024 [latex]\\times[/latex] 4 KB = 4 MB<br>\n- Double indirect: [latex]1024^2[/latex] [latex]\\times[/latex] 4 KB = 4 GB<br><br>\nTotal [latex]\\approx[/latex] 4 GB + 4 MB + 48 KB [latex]\\approx[/latex] 4.0 GB<br><br>\n<b>Answer: 4.0</b><br><br><a href=\"https://gateoverflow.in/302806/gate2019-cs-42#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "File Systems",
+   "tag2_url": "https://practicepaper.in/gate-cse/file-systems",
+   "ansMin": 4,
+   "ansMax": 4.1
+  },
+  {
+   "id": 1119143,
+   "number": 43,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the augmented grammar given below: <br>[latex]S'\\rightarrow S[/latex] <br>[latex]S \\rightarrow \\lt L \\gt |id[/latex] <br>[latex]L \\rightarrow L,S|S[/latex] <br><br>Let [latex]I_0=CLOSURE(\\{[S'\\rightarrow \\cdot S]\\}) [/latex]. The number of items in the set [latex]GOTO(I_0,\\lt)[/latex] is __________. ",
+   "solution": "In [latex]I_0[/latex], the item [latex]S\\rightarrow\\cdot\\lt L\\gt[/latex] moves on [latex]\\lt[/latex] to [latex]S\\rightarrow\\lt\\cdot L\\gt[/latex]. Closure (dot before L, then before S):<br>\n1. [latex]S\\rightarrow\\lt\\cdot L\\gt[/latex]<br>\n2. [latex]L\\rightarrow\\cdot L,S[/latex]<br>\n3. [latex]L\\rightarrow\\cdot S[/latex]<br>\n4. [latex]S\\rightarrow\\cdot\\lt L\\gt[/latex]<br>\n5. [latex]S\\rightarrow\\cdot id[/latex]<br><br>\n<b>Answer: 5</b><br><br><a href=\"https://gateoverflow.in/302805/gate2019-cs-43#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Parsing",
+   "tag2_url": "https://practicepaper.in/gate-cse/parsing",
+   "ansMin": 5,
+   "ansMax": 5
+  },
+  {
+   "id": 1119144,
+   "number": 44,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following matrix:  <br>[latex]\\begin{bmatrix} 1 & 2 & 4 & 8\\\\ 1& 3 & 9 &27 \\\\ 1 & 4 & 16 &64 \\\\ 1 & 5 & 25 &125 \\end{bmatrix}[/latex]<br> The absolute value of the product of Eigenvalues of R is _________ . ",
+   "solution": "Product of eigenvalues = determinant. The matrix is a <b>Vandermonde</b> matrix with values 2, 3, 4, 5:<br>\n[latex]\\det=\\prod_{i \\lt j}(x_j-x_i)=(3-2)(4-2)(5-2)(4-3)(5-3)(5-4)=1\\cdot2\\cdot3\\cdot1\\cdot2\\cdot1=12[/latex]<br><br>\n<b>Answer: 12</b><br><br><a href=\"https://gateoverflow.in/302804/gate2019-cs-44#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "ansMin": 12,
+   "ansMax": 12
+  },
+  {
+   "id": 1119145,
+   "number": 45,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A certain processor deploys a single-level cache. The cache block size is 8 words and the word size is 4 bytes. The memory system uses a 60-MHz clock. To service a cache-miss, the memory controller first takes 1 cycle to accept the starting address of the block, it then takes 3 cycles to fetch all the eight words of the block, and finally transmits the words of the requested block at the rate of 1 word per cycle. The maximum bandwidth for the memory system when the program running on the processor issues a series of read operations is _________[latex]\\times 10^6[/latex] bytes/sec. ",
+   "solution": "One cache miss brings one block of 8 words [latex]\\times[/latex] 4 bytes = 32 bytes.<br>\nCycles per block = 1 (address) + 3 (fetch) + 8 (transfer, 1 word per cycle) = 12 cycles.<br><br>\nTime per block = 12 / 60 MHz = 0.2 [latex]\\mu[/latex]s.<br>\nBandwidth = 32 bytes / 0.2 [latex]\\mu[/latex]s = [latex]160\\times10^6[/latex] bytes/s<br><br>\n<b>Answer: 160</b><br><br><a href=\"https://gateoverflow.in/302803/gate2019-cs-45#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "ansMin": 160,
+   "ansMax": 160
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11221,
+  "quizName": "GATE CSE 2022",
+  "pageTitle": "GATE CSE 2022",
+  "timeLimit": 0,
+  "pageNo": 1,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2022",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1122101,
+   "number": 1,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following statements is TRUE for all positive functions [latex]f(n)[/latex]?",
+   "solution": "Checking each option:<br>\n- <b>Polynomial</b> [latex]f(n)=n^k[/latex]: [latex]f(n^2)=n^{2k}[/latex] and [latex]f(n)^2=n^{2k}[/latex], so [latex]f(n^2)=\\Theta(f(n)^2)[/latex] [latex]\\text{---}[/latex] TRUE.<br>\n- [latex]f(n^2)=o(f(n)^2)[/latex] fails for polynomials (they are equal, not strictly smaller).<br>\n- For [latex]f(n)=2^n[/latex]: [latex]f(n^2)=2^{n^2}[/latex] but [latex]f(n)^2=2^{2n}[/latex]; [latex]2^{n^2}[/latex] grows much faster, so [latex]O[/latex] fails.<br>\n- For [latex]f(n)=2^{-n}[/latex]: [latex]f(n^2)=2^{-n^2}[/latex] is much smaller than [latex]f(n)^2=2^{-2n}[/latex], so [latex]\\Omega[/latex] fails.<br><br>\n<b>Answer: [latex]f(n^2)=\\Theta(f(n)^2)[/latex], where f(n) is a polynomial</b><br><br><a href=\"https://gateoverflow.in/371935/Gate-cse-2022-question-1#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Asymptotic Notation",
+   "tag2_url": "https://practicepaper.in/gate-cse/asymptotic-notation",
+   "options": [
+    "[latex]f(n^2)=\\theta (f(n)^2)[/latex], where [latex]f(n)[/latex] is a polynomial",
+    "[latex]f(n^2)=o (f(n)^2)[/latex]",
+    "[latex]f(n^2)=O (f(n)^2)[/latex], where [latex]f(n)[/latex] is an exponential function",
+    "[latex]f(n^2)=\\Omega  (f(n)^2)[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1122102,
+   "number": 2,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following regular expressions correctly represents the language of the finite automaton given below? <br><img src=\"/wp-content/uploads/GATE/CS/20221/q2.jpg\" /><br>",
+   "solution": "The start state is not final. From start:<br>\n- on <b>a</b> go to the upper final state (loops on b, returns to start on b) [latex]\\rightarrow[/latex] one round trip is [latex]ab^*b[/latex];<br>\n- on <b>b</b> go to the lower final state (loops on a, returns to start on a) [latex]\\rightarrow[/latex] one round trip is [latex]ba^*a[/latex].<br><br>\nSo: any number of round trips [latex](ab^*b+ba^*a)^*[/latex], and then finish in one of the final states: [latex]ab^*[/latex] or [latex]ba^*[/latex].<br><br>\n<b>Answer: [latex](ba^*a+ab^*b)^*(ab^*+ba^*)[/latex]</b><br><br><a href=\"https://gateoverflow.in/371934/Gate-cse-2022-question-2#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Finite Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/finite-automata",
+   "options": [
+    "ab*bab* + ba*aba*",
+    "(ab*b)*ab* + (ba*a)*ba*",
+    "(ab*b + ba*a)*(a* + b*)",
+    "(ba*a + ab*b)*(ab* + ba*)"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1122103,
+   "number": 3,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following statements is TRUE?",
+   "solution": "Checking each statement:<br>- LALR(1) merges LR(1) states with the same core; this merging can create a <b>new reduce-reduce conflict</b> [latex]\\text{---}[/latex] FALSE.<br>\n- The symbol table is used in almost every phase (semantic analysis, code generation, [latex]\\ldots[/latex]) [latex]\\text{---}[/latex] FALSE.<br>\n- Data flow analysis is used for code optimization, not run-time memory management [latex]\\text{---}[/latex] FALSE.<br>\n- Every deterministic CFL has an LR(1) grammar, so LR(1) parsing is sufficient for DCFLs [latex]\\text{---}[/latex] TRUE.<br><br>\n<b>Answer: LR(1) parsing is sufficient for deterministic context-free languages</b><br><br><a href=\"https://gateoverflow.in/371933/Gate-cse-2022-question-3#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Parsing",
+   "tag2_url": "https://practicepaper.in/gate-cse/parsing",
+   "options": [
+    "The LALR(1) parser for a grammar G cannot have reduce-reduce conflict if the\nLR(1) parser for G does not have reduce-reduce conflict.\n",
+    "Symbol table is accessed only during the lexical analysis phase.",
+    "Data flow analysis is necessary for run-time memory management.",
+    "LR(1) parsing is sufficient for deterministic context-free languages."
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1122104,
+   "number": 4,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "In a relational data model, which one of the following statements is TRUE?",
+   "solution": "Checking each statement:<br>- Relation R(A, B): the only possible non-trivial FDs are [latex]A\\rightarrow B[/latex] or [latex]B\\rightarrow A[/latex]. In each case the left side is a key, so R is always in BCNF [latex]\\text{---}[/latex] TRUE.<br>\n- All attributes prime guarantees 3NF, not BCNF (e.g. [latex]AB\\rightarrow C,\\ C\\rightarrow B[/latex]) [latex]\\text{---}[/latex] FALSE.<br>\n- A relation can have no non-prime attribute (e.g. all attributes form the key) [latex]\\text{---}[/latex] FALSE.<br>\n- BCNF decomposition does not always preserve FDs [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: A relation with only two attributes is always in BCNF</b><br><br><a href=\"https://gateoverflow.in/371932/Gate-cse-2022-question-4#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Normal Form",
+   "tag2_url": "https://practicepaper.in/gate-cse/normal-form",
+   "options": [
+    "A relation with only two attributes is always in BCNF.",
+    "If all attributes of a relation are prime attributes, then the relation is in BCNF.",
+    "Every relation has at least one non-prime attribute.",
+    "BCNF decompositions preserve functional dependencies."
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1122105,
+   "number": 5,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the problem of reversing a singly linked list. To take an example, given the linked list below,<br><img src=\"/wp-content/uploads/GATE/CS/20221/q5a.jpg\" /><br>the reversed linked list should look like   <br><img src=\"/wp-content/uploads/GATE/CS/20221/q5b.jpg\" /><br>   Which one of the following statements is TRUE about the time complexity of algorithms that solve the above problem in O(1) space?",
+   "solution": "Walk the list once with three pointers (prev, curr, next), reversing each link as you go:<br>\nnext = curr[latex]\\rightarrow[/latex]next; curr[latex]\\rightarrow[/latex]next = prev; prev = curr; curr = next.<br><br>\nEach node is visited once and only 3 extra pointers are used, so it takes [latex]\\Theta(n)[/latex] time in [latex]O(1)[/latex] space. It cannot be faster, because every link must be changed.<br><br>\n<b>Answer: The best algorithm takes [latex]\\theta(n)[/latex] time in the worst case</b><br><br><a href=\"https://gateoverflow.in/371931/Gate-cse-2022-question-5#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Link List",
+   "tag2_url": "https://practicepaper.in/gate-cse/link-list",
+   "options": [
+    "The best algorithm for the problem takes [latex]\\theta(n)[/latex] time in the worst case.",
+    "The best algorithm for the problem takes [latex]\\theta(n \\log n)[/latex] time in the worst case.",
+    "The best algorithm for the problem takes [latex]\\theta(n^2)[/latex] time in the worst case.",
+    "It is not possible to reverse a singly linked list in O(1) space."
+   ],
+   "correct": 0
+  }
+ ]
+}

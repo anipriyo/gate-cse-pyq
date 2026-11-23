@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11252,
+  "quizName": "GATE CSE 2025 SET-2",
+  "pageTitle": "GATE CSE 2025 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 10,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2025-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1125246,
+   "number": 46,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A 5-stage instruction pipeline has stage delays of 180, 250, 150, 170, and 250, respectively, in nanoseconds. The delay of an inter-stage latch is 10 nanoseconds. Assume that there are no pipeline stalls due to branches and other hazards. The time taken to process 1000 instructions in microseconds is __________ . (rounded off to two decimal places)",
+   "solution": "In a [latex]5[/latex]-stage pipeline, the clock cycle time must accommodate the <i>slowest</i> stage plus the inter-stage latch delay: [latex]\\max(180,250,150,170,250)+10=250+10=260[/latex] ns per cycle.<br><br>\nTotal time for [latex]n[/latex] instructions in a pipeline [latex]=(n+k-1)[/latex] cycles, where [latex]k=5[/latex] is the number of pipeline stages (accounting for the initial fill of the pipeline): [latex](1000+5-1)\\times260=1004\\times260=261{,}040[/latex] ns [latex]=261.04\\ \\mu[/latex]s.<br><br>\n<b>Answer: 261.04</b><br><br><a href=\"https://gateoverflow.in/460847/gate-cse-2025-set-2-question-46#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Pipeline Processor",
+   "tag2_url": "https://practicepaper.in/gate-cse/pipeline-processor",
+   "ansMin": 260.2,
+   "ansMax": 261.2
+  },
+  {
+   "id": 1125247,
+   "number": 47,
+   "type": "NAT",
+   "marks": 2,
+   "text": "In a [latex]B^+[/latex] -tree where each node can hold at most four key values, a root to leaf path consists of the following nodes: <br><br>\n[latex] A = (49, 77, 83, -), \\, B = (7, 19, 33, 44), \\, C = (20*, 22*, 25*, 26*) [/latex]<br><br>\nThe *-marked keys signify that these are data entries in a leaf. <br><br>Assume that a pointer between keys [latex]k_1[/latex] and [latex]k_2[/latex] points to a subtree containing keys in [latex][k_1, k_2)[/latex], and that when a leaf is created, the smallest key in it is copied up into its parent. <br><br>A record with key value 23 is inserted into the [latex]B^+[/latex] -tree. <br><br>The smallest key value in the parent of the leaf that contains 25* is __________. (Answer in integer)",
+   "solution": "Leaf [latex]C=(20^*,22^*,25^*,26^*)[/latex] currently covers the key range [latex][19,33)[/latex] (between [latex]B[/latex]'s separators [latex]19[/latex] and [latex]33[/latex]), and is already full (max [latex]4[/latex] keys per node).<br><br>\n<b>Step 1 &mdash; leaf split:</b> inserting [latex]23[/latex] gives [latex]5[/latex] keys ([latex]20,22,23,25,26[/latex]), so [latex]C[/latex] splits into [latex]C_1=(20,22,23)[/latex] and [latex]C_2=(25,26)[/latex]. Per the given rule, the new leaf's smallest key, [latex]25[/latex], is copied up into parent [latex]B[/latex].<br><br>\n<b>Step 2 &mdash; B overflows too:</b> [latex]B=(7,19,33,44)[/latex] gains the new separator [latex]25[/latex], becoming [latex](7,19,25,33,44)[/latex] &mdash; [latex]5[/latex] keys, over the [latex]4[/latex]-key limit. Since [latex]B[/latex] is an <i>internal</i> node, it splits by <b>pushing up</b> (not copying) its middle key, [latex]25[/latex] (the [latex]3[/latex]rd of [latex]5[/latex]), into the grandparent [latex]A[/latex]. This leaves [latex]B[/latex] split into [latex]B_{\\text{left}}=(7,19)[/latex] and [latex]B_{\\text{right}}=(33,44)[/latex], with child pointers correctly redistributed: [latex]B_{\\text{right}}[/latex]'s <i>first</i> child now covers [latex][25,33)[/latex] &mdash; exactly leaf [latex]C_2[/latex], the one holding [latex]25^*[/latex].<br><br>\n<b>Step 3 &mdash; A absorbs the pushed-up key:</b> [latex]A=(49,77,83,-)[/latex] only had [latex]3[/latex] keys (one empty slot), so it simply accepts [latex]25[/latex] without overflowing: [latex]A=(25,49,77,83)[/latex], no further split needed.<br><br>\nSo the leaf containing [latex]25^*[/latex] is [latex]C_2=(25,26)[/latex], whose parent is now [latex]B_{\\text{right}}=(33,44)[/latex]. The smallest key in this parent is [latex]33[/latex].<br><br>\n<b>Answer: 33</b><br><br><a href=\"https://gateoverflow.in/460846/gate-cse-2025-set-2-question-47#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "B plus Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/b-plus-tree",
+   "ansMin": 33,
+   "ansMax": 33
+  },
+  {
+   "id": 1125248,
+   "number": 48,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A computer system supports a logical address space of [latex]2^{32}[/latex] bytes. It uses two-level hierarchical paging with a page size of 4096 bytes. A logical address is divided into a [latex]b[/latex]-bit index to the outer page table, an offset within the page of the inner page table, and an offset within the desired page. Each entry of the inner page table uses eight bytes. All the pages in the system have the same size. <br><br>The value of [latex]b[/latex] is ___________ . (Answer in integer)",
+   "solution": "Page size [latex]=4096=2^{12}[/latex] bytes, so the page offset needs [latex]12[/latex] bits. Logical address space [latex]=2^{32}[/latex] bytes, so the remaining [latex]32-12=20[/latex] bits form the combined page-number field, split between the outer index ([latex]b[/latex] bits) and the inner-page-table offset.<br><br>\nSince each inner page table must itself fit exactly within one page (standard assumption for multi-level paging), and each entry is [latex]8[/latex] bytes, the inner page table holds [latex]\\dfrac{4096}{8}=512=2^9[/latex] entries &mdash; so the inner-table offset field needs [latex]9[/latex] bits.<br><br>\n[latex]b=20-9=11[/latex]<br><br>\n<b>Answer: 11</b><br><br><a href=\"https://gateoverflow.in/460845/gate-cse-2025-set-2-question-48#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "ansMin": 11,
+   "ansMax": 11
+  },
+  {
+   "id": 1125249,
+   "number": 49,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following algorithm someAlgo that takes an undirected graph [latex]G[/latex] as input.\n<br><br>\n\n[latex]\\texttt{someAlgo(G)}:[/latex]<br>\n1. Let [latex]v[/latex] be any vertex in [latex]G[/latex]. Run BFS on [latex]G[/latex] starting at [latex]v[/latex]. Let [latex]u[/latex] be a vertex in [latex]G[/latex] at maximum distance from [latex]v[/latex] as given by the BFS.<br>\n2. Run BFS on [latex]G[/latex] again with [latex]u[/latex] as the starting vertex. Let [latex]z[/latex] be the vertex at maximum distance from [latex]u[/latex] as given by the BFS.<br>\n3. Output the distance between [latex]u[/latex] and [latex]z[/latex] in [latex]G[/latex].\n<br><br>The output of [latex]\\texttt{someAlgo(T)}[/latex] for the tree shown in the given figure is __________. (Answer in integer) <br><img src=\"/wp-content/uploads/GATE/CS/20252/q49.webp\"/><br>",
+   "solution": "This is the standard <b>double-BFS algorithm for computing a tree's diameter</b> (the longest path between any two nodes): BFS from an arbitrary vertex [latex]v[/latex] to find the farthest vertex [latex]u[/latex], then BFS again from [latex]u[/latex] to find the farthest vertex [latex]z[/latex] &mdash; the distance from [latex]u[/latex] to [latex]z[/latex] is <i>guaranteed</i> to equal the tree's true diameter (a classical, provable property specific to trees: whichever vertex is farthest from an arbitrary start must be one endpoint of some longest path).<br><br>\nLooking at the given tree: it has a central hub vertex from which several branches radiate outward &mdash; one branch (upper-left) extends out through a couple of intermediate vertices before forking further, another shorter branch goes off to the lower-left, and a branch on the right extends out and forks again near its far end. The two \"longest reaching\" branches from the hub are the upper-left branch and the right-hand branch.<br><br>\nRunning BFS from any starting vertex [latex]v[/latex] will find <i>some</i> farthest vertex [latex]u[/latex] (this will land at the tip of one of the long branches, e.g. the far end of the upper-left branch). Running BFS again from [latex]u[/latex] then reaches all the way across the hub to the tip of the opposite long branch (the far end of the right-hand branch) as the new farthest vertex [latex]z[/latex]. Counting edges along this path &mdash; from the upper-left branch tip, back through its intermediate vertices, through the hub, and back out through the right-hand branch to its tip &mdash; gives a total of [latex]6[/latex] edges, matching the tree's actual diameter.<br><br>\n<b>Answer: 6</b><br><br><a href=\"https://gateoverflow.in/460844/gate-cse-2025-set-2-question-49#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Graph Traversal",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-traversal",
+   "ansMin": 6,
+   "ansMax": 6
+  },
+  {
+   "id": 1125250,
+   "number": 50,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Let [latex]\\Sigma = \\{1, 2, 3, 4\\}[/latex]. For [latex]x \\in \\Sigma^*[/latex], let [latex]\\text{prod}(x)[/latex] be the product of symbols in [latex]x[/latex] modulo 7. We take [latex]\\text{prod}(\\epsilon) = 1[/latex], where [latex]\\epsilon[/latex] is the null string. <br><br>For example, [latex]\\text{prod}(124) = (1 \\times 2 \\times 4) \\mod 7 = 1[/latex]. <br><br>Define \n[latex] L = \\{x \\in \\Sigma^* \\mid \\text{prod}(x) = 2\\}. [/latex]<br><br>\nThe number of states in a minimum state DFA for [latex]L[/latex] is ___________. (Answer in integer)",
+   "solution": "Since the alphabet [latex]\\{1,2,3,4\\}[/latex] contains no multiple of [latex]7[/latex] and no [latex]0[/latex], the running product modulo [latex]7[/latex] can <b>never become [latex]0[/latex]</b> &mdash; it always stays within the [latex]6[/latex] nonzero residues [latex]\\{1,2,3,4,5,6\\}[/latex].<br><br>\nA minimal DFA for this language just needs one state per possible running-product value (tracking \"current product mod 7 so far,\" starting at the state for [latex]1[/latex], since [latex]\\text{prod}(\\epsilon)=1[/latex]), with the state representing residue [latex]2[/latex] being the unique accepting state. Since multiplying by [latex]1,2,3,4[/latex] can move between any pair of these [latex]6[/latex] nonzero residues in different ways, all [latex]6[/latex] states are reachable and pairwise distinguishable (no two can be merged without changing the language).<br><br>\n<b>Answer: 6</b><br><br><a href=\"https://gateoverflow.in/460843/gate-cse-2025-set-2-question-50#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Finite Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/finite-automata",
+   "ansMin": 6,
+   "ansMax": 6
+  }
+ ]
+}

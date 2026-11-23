@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11211,
+  "quizName": "GATE CSE 2021 SET 1",
+  "pageTitle": "GATE CSE 2021 SET-1",
+  "timeLimit": 0,
+  "pageNo": 11,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2021-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1121151,
+   "number": 51,
+   "type": "NAT",
+   "marks": 2,
+   "text": "In a  pushdown automaton [latex]P=(Q, \\Sigma, \\Gamma, \\delta, q_0, F)[/latex], a transition of the form,\n<br><img src=\"/wp-content/uploads/GATE/CS/20211/q51a.jpg\" /><br>where [latex]p,q \\in Q \\; a \\in \\sigma \\cup \\{ \\epsilon \\} ,\\;X,Y, \\in \\Gamma \\cup \\{ \\epsilon \\}[/latex], represents<br><br>[latex](q,Y) \\in \\delta(p,a,X)[/latex]\n<br><br>\nConsider the following pushdown automaton over the input alphabet [latex]\\Sigma = \\{a,b\\}[/latex] and stack alphabet [latex]\\Gamma = \\{ \\#, A\\}[/latex]. <br><img src=\"/wp-content/uploads/GATE/CS/20211/q51b.jpg\" /><br>\nThe number of strings of length 100 accepted by the above pushdown automaton is ___________",
+   "solution": "The PDA pushes # and then an A for every a; in q2 every b pops an A. It can reach the final state q3 only if an <b>A is still on top</b>.<br><br>\nSo it accepts [latex]a^mb^n[/latex] with [latex]n \\lt m[/latex]. For length 100: m + n = 100 with n [latex]\\lt[/latex] m [latex]\\rightarrow[/latex] n = 0, 1, [latex]\\ldots[/latex], 49 [latex]\\rightarrow[/latex] 50 strings.<br><br>\n<b>Answer: 50</b><br><br><a href=\"https://gateoverflow.in/357400/gate-cse-2021-set-1-question-51#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Push-down Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/push-down-automata",
+   "ansMin": 50,
+   "ansMax": 50
+  },
+  {
+   "id": 1121152,
+   "number": 52,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following matrix.<br>[latex]\\begin{pmatrix} 0 & 1 & 1 & 1\\\\ 1& 0& 1 & 1\\\\ 1& 1 & 0 & 1 \\\\1 & 1 & 1 & 0 \\end{pmatrix}[/latex]<br>The largest eigenvalue of the above matrix is __________.",
+   "solution": "The matrix is [latex]J-I[/latex], where J is the 4 [latex]\\times[/latex] 4 all-ones matrix.<br>\nEigenvalues of J: 4, 0, 0, 0. Subtracting 1: 3, [latex]-[/latex]1, [latex]-[/latex]1, [latex]-[/latex]1.<br><br>\nLargest = 3<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/357399/gate-cse-2021-set-1-question-52#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "ansMin": 3,
+   "ansMax": 3
+  },
+  {
+   "id": 1121153,
+   "number": 53,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A five-stage pipeline has stage delays of 150, 120, 150, 160 and 140 nanoseconds. The registers that are used between the pipeline stages have a delay of 5 nanoseconds each.<br>The total time to execute 100 independent instructions on this pipeline, assuming there are no pipeline stalls, is _______ nanoseconds.",
+   "solution": "Clock cycle = slowest stage + register delay = 160 + 5 = 165 ns.<br>\nCycles for 100 instructions on 5 stages = 5 + 100 [latex]-[/latex] 1 = 104.<br><br>\nTime = 104 [latex]\\times[/latex] 165 = 17160 ns<br><br>\n<b>Answer: 17160</b><br><br><a href=\"https://gateoverflow.in/357398/gate-cse-2021-set-1-question-53#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Pipeline Processor",
+   "tag2_url": "https://practicepaper.in/gate-cse/pipeline-processor",
+   "ansMin": 17160,
+   "ansMax": 17160
+  },
+  {
+   "id": 1121154,
+   "number": 54,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A sender (S) transmits a signal, which can be one of the two kinds: H and L with probabilities 0.1 and 0.9 respectively, to a receiver (R)<br>\nIn the graph below, the weight of edge [latex](u,v)[/latex] is the probability of receiving [latex]v[/latex] when [latex]u[/latex] is transmitted, where [latex]u,v\\in\\{H,L\\}[/latex]. For example, the probability that the received signal is [latex]L[/latex] given the transmitted signal was [latex]H[/latex], is 0.7.\n<br><img src=\"/wp-content/uploads/GATE/CS/20211/q54.jpg\" /><br>\nIf the received signal is [latex]H[/latex], the probability that the transmitted signal was [latex]H[/latex] (rounded to 2 decimal places) is __________.",
+   "solution": "From the graph: P(recv H | sent H) = 0.3 and P(recv H | sent L) = 0.8.<br><br>\nP(recv H) = 0.1 [latex]\\times[/latex] 0.3 + 0.9 [latex]\\times[/latex] 0.8 = 0.03 + 0.72 = 0.75<br><br>\nBayes: [latex]P(\\text{sent H}\\mid\\text{recv H})=\\frac{0.03}{0.75}=0.04[/latex]<br><br>\n<b>Answer: 0.04</b><br><br><a href=\"https://gateoverflow.in/357396/gate-cse-2021-set-1-question-54#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "ansMin": 0.04,
+   "ansMax": 0.04
+  },
+  {
+   "id": 1121155,
+   "number": 55,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following instruction sequence where registers [latex]R_1,R_2 \\text{ and }R_3[/latex] are general purpose and [latex]MEMORY[X][/latex] denotes the content at the memory location [latex]X[/latex].<br><br>[latex]\\begin{array}{llc} \\textbf{Instruction} & \\textbf{Semantics} & \\textbf{Instruction Size} \\text{ (bytes)} \\\\ \\hline \\text{MOV } R1, (5000) & R1 \\leftarrow \\text{MEMORY}[5000] & 4 \\\\ \\hline \\text{MOV } R2, (R3) & R2 \\leftarrow \\text{MEMORY}[R3] & 4 \\\\ \\hline \\text{ADD} R2, R1 & R2 \\leftarrow R1 + R2 & 2 \\\\ \\hline \\text{MOV } (R3), R2 & \\text{MEMORY}[R3] \\leftarrow R2 & 4 \\\\ \\hline \\text{INC } R3 & R3 \\leftarrow R3+1 & 2 \\\\ \\hline \\text{DEC } R1 & R1 \\leftarrow R1-1 & 2 \\\\ \\hline \\text{BNZ } 1004 & \\text{Branch if not zero to the} & 2 \\\\ & \\text{given absolute address} \\\\ \\hline \\text{HALT} & \\text{Stop} & 1 \\\\ \\hline \\end{array}[/latex]<br><br>\nAssume that the content of the memory location 5000 is 10, and the content of the register [latex]R_3[/latex] is 3000. The content of each of the memory locations from 3000 to 3020 is 50. The instruction sequence starts from the memory location 1000. All the numbers are in decimal format. Assume that the memory is byte addressable.\n<br>\nAfter the execution of the program, the content of memory location 3010 is ____________",
+   "solution": "R1 = MEMORY[5000] = 10, so the loop (BNZ back to 1004) runs 10 times. Each pass adds R1 to MEMORY[R3] and moves R3 one byte ahead.<br><br>\nR3 goes 3000, 3001, [latex]\\ldots[/latex], 3009. Location 3010 is never written, so it keeps its value 50.<br><br>\n<b>Answer: 50</b><br><br><a href=\"https://gateoverflow.in/357397/gate-cse-2021-set-1-question-55#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Machine Instruction",
+   "tag2_url": "https://practicepaper.in/gate-cse/machine-instruction",
+   "ansMin": 50,
+   "ansMax": 50
+  }
+ ]
+}

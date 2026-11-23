@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11191,
+  "quizName": "GATE CS 2019",
+  "pageTitle": "GATE CSE 2019",
+  "timeLimit": 0,
+  "pageNo": 8,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2019",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1119136,
+   "number": 36,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following grammar and the semantic actions to support the inherited type declaration attributes. Let [latex]X_1,X_2,X_3,X_4,X_5 \\; and \\; X_6[/latex] be the placeholders for the non-terminals D, T, L or [latex]L_1[/latex] in the following table: <br><img src=\"/wp-content/uploads/GATE/CS/20191/q36.jpg\" /><br> Which one of the following are the appropriate choices for [latex]X_1,X_2,X_3 \\; and \\; X_4[/latex]?",
+   "solution": "The type flows from T to the list L (inherited attribute):<br>\n- D [latex]\\rightarrow[/latex] T L: the list gets T's type [latex]\\rightarrow[/latex] [latex]L.type=T.type[/latex], so [latex]X_1=L,\\ X_2=T[/latex].<br>\n- L [latex]\\rightarrow[/latex] [latex]L_1[/latex], id: pass the type down to [latex]L_1[/latex] [latex]\\rightarrow[/latex] [latex]L_1.type=L.type[/latex], so [latex]X_3=L_1,\\ X_4=L[/latex] (and id gets L.type).<br><br>\n<b>Answer: [latex]X_1=L,X_2=T,X_3=L_1,X_4=L[/latex]</b><br><br><a href=\"https://gateoverflow.in/302812/gate2019-cs-36#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Syntax-directed Translation",
+   "tag2_url": "https://practicepaper.in/gate-cse/syntax-directed-translation",
+   "options": [
+    "[latex]X_1=L,X_2=T,X_3=L_1,X_4=L[/latex]",
+    "[latex]X_1=T,X_2=L,X_3=L_1,X_4=T[/latex]",
+    "[latex]X_1=L,X_2=L,X_3=L_1,X_4=T[/latex]",
+    "[latex]X_1=T,X_2=L,X_3=T,X_4=L_1[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1119137,
+   "number": 37,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "There are n unsorted arrays: [latex]A_1,A_2,...,A_n[/latex]. Assume that n is odd. Each of [latex]A_1,A_2,...,A_n[/latex] contains n distinct elements. There are no common elements between any two arrays. The worst-case Asymptotic Notation of computing the median of the medians of [latex]A_1,A_2,...,A_n[/latex] is ________ .",
+   "solution": "Checking each statement:<br>- Median of each unsorted array of n elements (linear-time selection): [latex]O(n)[/latex] each, n arrays [latex]\\rightarrow[/latex] [latex]O(n^2)[/latex].<br>\n- Median of those n medians: [latex]O(n)[/latex].<br><br>\nTotal [latex]O(n^2)[/latex]. It cannot be less, because all [latex]n^2[/latex] elements must be looked at.<br><br>\n<b>Answer: [latex]O(n^2)[/latex]</b><br><br><a href=\"https://gateoverflow.in/302811/gate2019-cs-37#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Asymptotic Notation",
+   "tag2_url": "https://practicepaper.in/gate-cse/asymptotic-notation",
+   "options": [
+    "[latex]O(n)[/latex]",
+    "[latex]O(n \\log n)[/latex]",
+    "[latex]O(n^2)[/latex]",
+    "[latex]\\Omega(n^2 \\log n)[/latex]"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1119138,
+   "number": 38,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let G be any connection, weighted, undirected graph:<br><br>\nI. G has a unique minimum spanning tree if no two edges of G have the same weight.<br>\nII. G has a unique minimum spanning tree if, for every cut of G, there is a unique minimum weight edge crossing the cut. <br><br>\nWhich of the above two statements is/are TRUE?",
+   "solution": "Checking each statement:<br>- I: with distinct weights, Kruskal never faces a tie, so the MST is unique [latex]\\text{---}[/latex] TRUE.<br>\n- II: if every cut has a unique lightest crossing edge, the cut property forces that edge into every MST; this fixes the whole MST [latex]\\text{---}[/latex] TRUE.<br><br>\n<b>Answer: Both I and II</b><br><br><a href=\"https://gateoverflow.in/302810/gate2019-cs-38#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Minimum Spanning Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/minimum-spanning-tree",
+   "options": [
+    "I only",
+    "II only",
+    "Both I and II",
+    "Neither I nor II"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1119139,
+   "number": 39,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following snapshot of a system running n concurrent processes. Process [latex]i[/latex] is holding [latex]X_i[/latex] instances of a resource R, [latex] 1\\leq i\\leq n[/latex]. Assume that all instances of R are currently in use. Further, for all [latex]i[/latex], process [latex]i[/latex] can place a request for at most [latex]Y_i[/latex] additional instances of R while holding the [latex]X_i[/latex] instances it already has. Of the n processes, there are exactly two processes p and q such that [latex]Y_p=Y_q=0[/latex]. Which one of the following conditions guarantees that no other process apart from p and q can complete execution? ",
+   "solution": "p and q need nothing more, so they finish and release [latex]X_p+X_q[/latex] instances (all others are in use).<br><br>\nAny other process k can finish only if it gets [latex]Y_k[/latex] instances. If [latex]X_p+X_q \\lt \\min_k Y_k[/latex], the freed instances are not enough for <b>any</b> other process, so none of them can complete.<br><br>\n<b>Answer: [latex]X_p+X_q \\lt Min\\{Y_k\\}[/latex]</b><br><br><a href=\"https://gateoverflow.in/302809/gate2019-cs-39#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Deadlock",
+   "tag2_url": "https://practicepaper.in/gate-cse/deadlock",
+   "options": [
+    "[latex]X_p+X_q \\lt Min \\{Y_k|1\\leq k\\leq n,k\\neq p,k\\neq q\\}[/latex]",
+    "[latex]X_p+X_q \\lt Max \\{Y_k|1\\leq k\\leq n,k\\neq p,k\\neq q\\}[/latex]",
+    "[latex]Min(X_p,X_q)\\geq Min \\{Y_k|1\\leq k\\leq n,k\\neq p,k\\neq q\\}[/latex]",
+    "[latex]Min(X_p,X_q)\\leq Max \\{Y_k|1\\leq k\\leq n,k\\neq p,k\\neq q\\}[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1119140,
+   "number": 40,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following statements:<br><br>\n    I. The smallest element in a max-heap is always at a leaf node.<br>\n    II. The second largest element in a max-heap is always a child of the root node.<br>\n    III. A max-heap can be constructed from a binary search tree in [latex]\\Theta (n)[/latex] time.<br>\n    IV. A binary search tree can be constructed from a max-heap in [latex]\\Theta (n)[/latex] time.<br><br>\nWhich of the above statements is/are TRUE?",
+   "solution": "Checking each statement:<br>- I: a node with a child is larger than that child, so the minimum has no child [latex]\\rightarrow[/latex] it is a leaf [latex]\\text{---}[/latex] TRUE.<br>\n- II: the 2nd largest can only be smaller than the root, so its parent must be the root [latex]\\text{---}[/latex] TRUE.<br>\n- III: build-heap on any array (e.g. the BST's elements) takes [latex]\\Theta(n)[/latex] [latex]\\text{---}[/latex] TRUE.<br>\n- IV: a BST from a heap in [latex]\\Theta(n)[/latex] would give an [latex]O(n)[/latex] comparison sort (inorder traversal) [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: I, II and III</b><br><br><a href=\"https://gateoverflow.in/302808/gate2019-cs-40#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Heap Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/heap-tree",
+   "options": [
+    "I, II and III",
+    "I, II and IV",
+    "I, III and IV",
+    "II, III and IV"
+   ],
+   "correct": 0
+  }
+ ]
+}

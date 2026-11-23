@@ -1,0 +1,104 @@
+{
+ "meta": {
+  "quizId": 11252,
+  "quizName": "GATE CSE 2025 SET-2",
+  "pageTitle": "GATE CSE 2025 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 5,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2025-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1125221,
+   "number": 21,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Consider the following logic circuit diagram.\n<br><img src=\"/wp-content/uploads/GATE/CS/20252/q21.webp\"/><br>\nWhich is/are the CORRECT option(s) for the output function [latex]F [/latex]?",
+   "solution": "From the given circuit: a NAND gate takes inputs [latex]X,Y[/latex] directly, giving [latex]\\overline{XY}[/latex]; a separate inverter taps the [latex]X[/latex] line alone, giving [latex]\\bar X[/latex]; and a third branch inverts [latex]Y[/latex] then ANDs it with [latex]X[/latex], giving [latex]X\\bar Y[/latex]. All three signals feed into a final OR gate:<br><br>\n[latex]F=\\overline{XY}+\\bar X+X\\bar Y[/latex]<br><br>\nBy De Morgan's law, [latex]\\overline{XY}=\\bar X+\\bar Y[/latex], so this simplifies to [latex]F=\\bar X+\\bar Y+X\\bar Y[/latex]. But the term [latex]X\\bar Y[/latex] is already fully covered/absorbed by [latex]\\bar Y[/latex] alone (whenever [latex]X\\bar Y[/latex] is true, [latex]\\bar Y[/latex] is automatically true too) &mdash; so by the <b>absorption law</b>, [latex]F=\\bar X+\\bar Y[/latex] exactly, which is the <i>same</i> function as [latex]\\overline{XY}[/latex] itself.<br><br>\nSo [latex]\\overline{XY}[/latex], [latex]\\bar X+\\bar Y+X\\bar Y[/latex], and [latex]\\overline{XY}+\\bar X+X\\bar Y[/latex] are all just different (redundant) ways of writing the exact same underlying function; only [latex]X+\\bar Y[/latex] is a genuinely different function.<br><br>\n<b>Answer: [latex]\\overline{XY}[/latex]; [latex]\\bar X+\\bar Y+X\\bar Y[/latex]; and [latex]\\overline{XY}+\\bar X+X\\bar Y[/latex] (all equivalent, all correct).</b><br><br><a href=\"https://gateoverflow.in/460814/gate-cse-2025-set-2-question-21#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Combinational Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/combinational-circuit",
+   "options": [
+    "[latex]\\overline{XY} [/latex]",
+    "[latex]\\overline{X} + \\overline{Y} + X \\overline{Y} [/latex]",
+    "[latex]\\overline{XY} + \\overline{X} + X \\overline{Y} [/latex]",
+    "[latex]X + \\overline{Y} [/latex]"
+   ],
+   "correctSet": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1125222,
+   "number": 22,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The following two signed 2's complement numbers (multiplicand [latex]M [/latex] and multiplier [latex]Q [/latex]) are being multiplied using Booth's algorithm: \n<br><br>[latex]\nM: 1100 \\, 1101 \\, 1110 \\, 1101 \\quad \\text{and} \\quad Q: 1010 \\, 0100 \\, 1010 \\, 1010\n[/latex]<br><br>\nThe total number of addition and subtraction operations to be performed is ________. (Answer in integer)",
+   "solution": "In Booth's algorithm, an addition or subtraction is performed at every bit-position where the pair (current [latex]Q_0[/latex] bit, previous bit [latex]Q_{-1}[/latex], initialized to [latex]0[/latex]) shows a <b>transition</b> (\"01\" &rarr; add [latex]M[/latex], \"10\" &rarr; subtract [latex]M[/latex]); a run of identical bits (\"00\" or \"11\") triggers no arithmetic operation, just a shift.<br><br>\nScanning [latex]Q=1010\\,0100\\,1010\\,1010[/latex] (appended with the initial [latex]Q_{-1}=0[/latex]) for every \"01\" or \"10\" transition between consecutive bit pairs gives <b>[latex]13[/latex]</b> such transition points out of the [latex]16[/latex] total bit-positions.<br><br>\n<b>Answer: 13</b><br><br><a href=\"https://gateoverflow.in/460813/gate-cse-2025-set-2-question-22#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "ansMin": 13,
+   "ansMax": 13
+  },
+  {
+   "id": 1125223,
+   "number": 23,
+   "type": "NAT",
+   "marks": 1,
+   "text": "<pre><code>\nint x=126,y=105;\n do {\n\t if(x>y) x=x-y; \n\telse y=y-x; \n      } while(x!=y); \n\nprintf(\"%d\",x); </code></pre>\nThe output of the given C code segment is ________. (Answer in integer)",
+   "solution": "This loop is exactly the <b>subtraction-based Euclidean algorithm</b> for computing [latex]\\gcd(x,y)[/latex], repeatedly subtracting the smaller from the larger until they're equal (which happens exactly at their GCD).<br><br>\n[latex]\\gcd(126,105)[/latex]: [latex]126-105=21[/latex]; then [latex]105-21=84[/latex]; [latex]84-21=63[/latex]; [latex]63-21=42[/latex]; [latex]42-21=21[/latex] &mdash; now [latex]x=y=21[/latex], loop ends.<br><br>\n<b>Answer: 21</b><br><br><a href=\"https://gateoverflow.in/460812/gate-cse-2025-set-2-question-23#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Loop",
+   "tag2_url": "https://practicepaper.in/gate-cse/loop",
+   "ansMin": 21,
+   "ansMax": 21
+  },
+  {
+   "id": 1125224,
+   "number": 24,
+   "type": "NAT",
+   "marks": 1,
+   "text": "In a 4-bit ripple counter, if the period of the waveform at the last flip-flop is 64 microseconds, then the frequency of the ripple counter in kHz is ________. (Answer in integer)",
+   "solution": "In an [latex]n[/latex]-bit ripple counter, each successive flip-flop's output has exactly <b>half</b> the frequency (double the period) of the one before it, since each stage divides the input clock frequency by [latex]2[/latex]. The last (4th) flip-flop's period is therefore [latex]2^4=16[/latex] times the input clock's period.<br><br>\nInput clock period [latex]=\\dfrac{64\\ \\mu s}{16}=4\\ \\mu s[/latex], so input clock frequency [latex]=\\dfrac1{4\\ \\mu s}=250{,}000[/latex] Hz [latex]=250[/latex] kHz.<br><br>\n<b>Answer: 250</b><br><br><a href=\"https://gateoverflow.in/460811/gate-cse-2025-set-2-question-24#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Sequential Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/sequential-circuit",
+   "ansMin": 250,
+   "ansMax": 250
+  },
+  {
+   "id": 1125225,
+   "number": 25,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Suppose the values 10, -4, 15, 30, 20, 5, 60, 19 are inserted in that order into an initially empty binary search tree. Let [latex]T [/latex] be the resulting binary search tree.  \nThe number of edges in the path from the node containing 19 to the root node of [latex]T [/latex] is ___________. (Answer in integer)",
+   "solution": "Insert each value into the BST, always going left for smaller and right for larger than the current node:<br><br>\n[latex]10[/latex] (root) &rarr; [latex]-4[/latex] (left of [latex]10[/latex]) &rarr; [latex]15[/latex] (right of [latex]10[/latex]) &rarr; [latex]30[/latex] (right of [latex]15[/latex]) &rarr; [latex]20[/latex] (left of [latex]30[/latex]) &rarr; [latex]5[/latex] (right of [latex]-4[/latex]) &rarr; [latex]60[/latex] (right of [latex]30[/latex]) &rarr; [latex]19[/latex] (left of [latex]20[/latex]).<br><br>\nPath from [latex]19[/latex] up to the root: [latex]19\\to20\\to30\\to15\\to10[/latex], which is <b>[latex]4[/latex]</b> edges.<br><br>\n<b>Answer: 4</b><br><br><a href=\"https://gateoverflow.in/460810/gate-cse-2025-set-2-question-25#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Search Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-search-tree",
+   "ansMin": 4,
+   "ansMax": 4
+  }
+ ]
+}

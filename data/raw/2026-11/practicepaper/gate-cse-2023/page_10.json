@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11231,
+  "quizName": "GATE CSE 2023",
+  "pageTitle": "GATE CSE 2023",
+  "timeLimit": 0,
+  "pageNo": 10,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2023",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1123146,
+   "number": 46,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Let [latex]U = \\{1, 2, 3\\}[/latex]. Let [latex]2^U[/latex] denote the powerset of  [latex]U[/latex]. Consider an undirected graph\n [latex]G[/latex] whose vertex set is  [latex]2^U[/latex]. For any  [latex]A,B \\in 2^U, (A,B)[/latex] is an edge in  [latex]G[/latex] if and only\nif (i)  [latex]A \\neq B[/latex], and (ii) either [latex]A \\subseteq B[/latex]   or [latex]B \\subseteq A[/latex]. For any vertex [latex]A[/latex] in [latex]G[/latex], the set of\nall possible orderings in which the vertices of [latex]G[/latex] can be visited in a Breadth First\nSearch (BFS) starting from [latex]A[/latex] is denoted by [latex]B(A)[/latex].<br>\nIf [latex]\\phi [/latex]  denotes the empty set, then the cardinality of [latex]B(\\phi ) [/latex]  is ____.\n",
+   "solution": "[latex]\\phi[/latex] is a subset of every set, so [latex]\\phi[/latex] is adjacent to all the other [latex]2^3-1=7[/latex] vertices.<br><br>\nBFS from [latex]\\phi[/latex] visits all 7 neighbours at level 1, and these 7 can be visited in any order: [latex]7!=5040[/latex].<br><br>\n<b>Answer: 5040</b><br><br><a href=\"https://gateoverflow.in/399265/gate-cse-2023-question-46#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Graph Traversal",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-traversal",
+   "ansMin": 5040,
+   "ansMax": 5040
+  },
+  {
+   "id": 1123147,
+   "number": 47,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following two-dimensional array D in the C programming language,\nwhich is stored in row-major order:<br><br>\nint D[128][128];<br><br>\nDemand paging is used for allocating memory and each physical page frame holds\n512 elements of the array D. The Least Recently Used (LRU) page-replacement\npolicy is used by the operating system. A total of 30 physical page frames are\nallocated to a process which executes the following code snippet:<br>\n<pre><code>\nfor (int i = 0; i < 128; i++)\n       for (int j = 0; j < 128; j++) \n                   D[j][i] *= 10;\n</pre></code><br>\nThe number of page faults generated during the execution of this code snippet is _____.",
+   "solution": "One page = 512 ints = 4 rows of D (each row has 128 ints). D has 128 rows [latex]\\rightarrow[/latex] 32 pages.<br><br>\nThe loop accesses D[j][i] column-wise: for each i, j goes 0 [latex]\\rightarrow[/latex] 127, touching all 32 pages in order (one page per 4 rows).<br><br>\nWith 30 frames and LRU, cycling through 32 pages means each page is evicted before it is needed again. So every new page in each pass faults: 32 faults per value of i.<br><br>\nTotal [latex]=128\\times32=4096[/latex]<br><br>\n<b>Answer: 4096</b><br><br><a href=\"https://gateoverflow.in/399264/gate-cse-2023-question-47#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "ansMin": 4096,
+   "ansMax": 4096
+  },
+  {
+   "id": 1123148,
+   "number": 48,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a computer system with 57-bit virtual addressing using multi-level\ntree-structured page tables with L levels for virtual to physical address translation.\nThe page size is 4 KB (1 KB = 1024 B) and a page table entry at any of the levels\noccupies 8 bytes.<br>\nThe value of L is ______.",
+   "solution": "Page size 4 KB [latex]=2^{12}[/latex] [latex]\\rightarrow[/latex] 12 offset bits. VPN bits [latex]=57-12=45[/latex].<br><br>\nOne page-table page holds [latex]\\frac{4096}{8}=512=2^9[/latex] entries [latex]\\rightarrow[/latex] each level resolves 9 bits.<br><br>\nLevels [latex]L=\\frac{45}{9}=5[/latex]<br><br>\n<b>Answer: 5</b><br><br><a href=\"https://gateoverflow.in/399263/gate-cse-2023-question-48#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "ansMin": 5,
+   "ansMax": 5
+  },
+  {
+   "id": 1123149,
+   "number": 49,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a sequence [latex]a[/latex] of elements [latex]a_0 = 1, a_1 = 5, a_2 = 7, a_3 = 8, a_4 = 9, \\; and \\; \na_5 = 2[/latex]. The following operations are performed on a stack [latex]S[/latex] and a queue [latex]Q[/latex], both\nof which are initially empty.<br><br>\nI: push the elements of a from [latex]a_0[/latex] to [latex]a_5[/latex] in that order into [latex]S[/latex].<br>\nII: enqueue the elements of a from [latex]a_0[/latex] to [latex]a_5[/latex] in that order into [latex]Q[/latex].\n<br>III: pop an element from [latex]S[/latex].\n<br>IV: dequeue an element from [latex]Q[/latex].\n<br>V: pop an element from [latex]S[/latex].\n<br>VI: dequeue an element from [latex]Q[/latex].\n<br>VII: dequeue an element from [latex]Q[/latex] and push the same element into [latex]S[/latex].\n<br>VIII: Repeat operation VII three times.\n<br>IX: pop an element from [latex]S[/latex].\n<br>X: pop an element from [latex]S[/latex].\n<br><br>The top element of [latex]S[/latex] after executing the above operations is ___.",
+   "solution": "After I and II: S = [1, 5, 7, 8, 9, 2] (top = 2), Q = [1, 5, 7, 8, 9, 2] (front = 1).<br>\n- III: pop S [latex]\\rightarrow[/latex] removes 2<br>\n- IV: dequeue Q [latex]\\rightarrow[/latex] removes 1<br>\n- V: pop S [latex]\\rightarrow[/latex] removes 9 [latex]\\rightarrow[/latex] S = [1, 5, 7, 8]<br>\n- VI: dequeue Q [latex]\\rightarrow[/latex] removes 5 [latex]\\rightarrow[/latex] Q = [7, 8, 9, 2]<br>\n- VII + VIII (4 times): move 7, 8, 9, 2 from Q to S [latex]\\rightarrow[/latex] S = [1, 5, 7, 8, 7, 8, 9, 2]<br>\n- IX, X: pop 2 and 9 [latex]\\rightarrow[/latex] top = <b>8</b><br><br>\n<b>Answer: 8</b><br><br><a href=\"https://gateoverflow.in/399262/gate-cse-2023-question-49#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Queue",
+   "tag2_url": "https://practicepaper.in/gate-cse/queue",
+   "ansMin": 8,
+   "ansMax": 8
+  },
+  {
+   "id": 1123150,
+   "number": 50,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the syntax directed translation given by the following grammar and semantic rules. Here [latex]N, I, F \\; and \\; B[/latex] are non-terminals. [latex]N[/latex] is the starting non-terminal,\nand [latex]\\#,0 \\; and \\; 1[/latex] are lexical tokens corresponding to input letters [latex]\"\\#\",\"0\" \\; and \\; \"1\"[/latex],\nrespectively. [latex]X.val[/latex] denotes the synthesized attribute (a numeric value) associated\nwith a non-terminal [latex]X[/latex]. [latex]I_1[/latex] and [latex]F_1[/latex] denote occurrences of [latex]I[/latex] and [latex]F[/latex] on the right hand\nside of a production, respectively. For the tokens [latex]0[/latex] and [latex]1[/latex], [latex]0.val=0[/latex] and [latex]1.val=1[/latex].<br><br>The value computed by the translation scheme for the input string<br>[latex]\\begin{aligned}\nN & \\rightarrow I \\# F & N.val=I.val+F.val \\\\ \nI &\\rightarrow I_1B & I.val = (2 I1.val) + B.val\\\\ \nI &\\rightarrow B&I.val = B.val\\\\ \nF &\\rightarrow BF_1& F.val = \\frac{1}{2}(B.val + F1.val)\\\\ \nF &\\rightarrow B&  F.val = \\frac{1}{2} B.val\\\\ \n B&\\rightarrow 0& B.val = 0.val\\\\ \nB &\\rightarrow 1&B.val = 1.val\n\\end{aligned} [/latex]  <br>[latex]10\\# 011[/latex]<br><br>is ____ (Rounded off to three decimal places)",
+   "solution": "Integer part \"10\" (binary):<br>\nI for \"1\" = 1; I for \"10\" = [latex]2\\times1+0=2[/latex].<br><br>\nFraction part \"011\" (evaluated right to left):<br>\n- F(\"1\") = [latex]\\frac12\\times1=0.5[/latex]<br>\n- F(\"11\") = [latex]\\frac12(1+0.5)=0.75[/latex]<br>\n- F(\"011\") = [latex]\\frac12(0+0.75)=0.375[/latex]<br><br>\nN.val = 2 + 0.375 = 2.375 (i.e. binary 10.011).<br><br>\n<b>Answer: 2.375</b><br><br><a href=\"https://gateoverflow.in/399261/gate-cse-2023-question-50#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Syntax-directed Translation",
+   "tag2_url": "https://practicepaper.in/gate-cse/syntax-directed-translation",
+   "ansMin": 2.374,
+   "ansMax": 2.376
+  }
+ ]
+}

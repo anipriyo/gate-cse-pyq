@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11181,
+  "quizName": "GATE CS 2018",
+  "pageTitle": "GATE CSE 2018",
+  "timeLimit": 0,
+  "pageNo": 7,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2018",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1118131,
+   "number": 31,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Assume that multiplying a matrix G1 of dimension pxq with another matrix G2 of\ndimension pxq requires pqr scalar multiplications. Computing the product of n  matrices G1G2G3...Gn can be done by parenthesizing in different ways. Define Gi Gi+1 as an explicitly computed pair for a given paranthesization if they are directly multiplied. For example, in the matrix multiplication chain G1G2G3G4G5G6 using parenthesization (G1(G2G3))(G4(G5G6)), G2G3 and G5G6 are the only explicitly computed pairs. Consider a matrix multiplication chain F1F2F3F4F5, where matrices F1, F2, F3, F4 and F5 are of dimensions 2x25, 25x3, 3x16, 16x1 and 1x1000, respectively. In the parenthesization of F1F2F3F4F5 that minimizes the total number of scalar multiplications, the explicitly computed pairs is/are",
+   "solution": "Dimensions 2, 25, 3, 16, 1, 1000. Because [latex]F_4[/latex] has 1 column, it pays to collapse [latex]F_1..F_4[/latex] into a 2 [latex]\\times[/latex] 1 matrix first, then multiply by [latex]F_5[/latex]:<br>\n[latex]F_3F_4[/latex]: 48 [latex]\\rightarrow[/latex] [latex]F_2(F_3F_4)[/latex]: 75 [latex]\\rightarrow[/latex] [latex]F_1(\\ldots)[/latex]: 50 [latex]\\rightarrow[/latex] [latex](\\ldots)F_5[/latex]: 2000. Total 2173, the minimum.<br><br>\nThe only pair of original matrices multiplied directly is [latex]F_3F_4[/latex].<br><br>\n<b>Answer: F3F4 only</b><br><br><a href=\"https://gateoverflow.in/204105/gate2018-31#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Dynamic Programming",
+   "tag2_url": "https://practicepaper.in/gate-cse/dynamic-programming",
+   "options": [
+    "F1F2 and F3F4 only",
+    "F2F3 only",
+    "F3F4 only",
+    "F1F2 and F4F5 only"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1118132,
+   "number": 32,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following C code. Assume that unsigned long int type length is 64\nbits.<pre><code>\nunsigned long int fun(unsigned long int n){\nunsigned long int i, j = 0, sum = 0;\nfor (i = n; i > 1; i = i/2) j++;\nfor ( ; j > 1; j = j/2) sum++;\nreturn(sum);\n}  </code></pre>\nThe value returned when we call fun with the input [latex]2^{40}[/latex] is",
+   "solution": "First loop halves [latex]2^{40}[/latex] until 1 [latex]\\rightarrow[/latex] j = 40.<br>\nSecond loop: j = 40 [latex]\\rightarrow[/latex] 20 [latex]\\rightarrow[/latex] 10 [latex]\\rightarrow[/latex] 5 [latex]\\rightarrow[/latex] 2 [latex]\\rightarrow[/latex] 1, adding 1 each time j [latex]\\gt[/latex] 1: 5 times.<br><br>\n<b>Answer: 5</b><br><br><a href=\"https://gateoverflow.in/204106/gate2018-32#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Loop",
+   "tag2_url": "https://practicepaper.in/gate-cse/loop",
+   "options": [
+    "4",
+    "5",
+    "6",
+    "40"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1118133,
+   "number": 33,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the unsigned 8-bit fixed point binary Number System below, <br><br>\n[latex]b_7  b_6  b_5  b_4  b_3 .  b_2  b_1  b_0[/latex] <br><br>\nwhere the position of the binary point is between [latex]b_3 \\; and \\; b_2[/latex]. Assume [latex]b_7[/latex] is the most significant bit. Some of the decimal numbers listed below cannot be represented exactly in the above representation: <br><br>\n(i) 31.500 (ii) 0.875 (iii) 12.100 (iv) 3.001 <br><br>\nWhich one of the following statements is true?",
+   "solution": "5 integer bits and 3 fraction bits: representable values are multiples of 1/8 = 0.125 from 0 to 31.875.<br>\n- 31.5 True, 0.875 = 7/8 True<br>\n- 12.1 and 3.001 are not multiples of 1/8 False<br><br>\n<b>Answer: Only (iii) and (iv) cannot be exactly represented</b><br><br><a href=\"https://gateoverflow.in/204107/gate2018-33#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "options": [
+    "None of (i), (ii), (iii), (iv) can be exactly represented",
+    "Only (ii) cannot be exactly represented",
+    "Only (iii) and (iv) cannot be exactly represented",
+    "Only (i) and (ii) cannot be exactly represented"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1118134,
+   "number": 34,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The size of the physical address space of a processor is [latex]2^{P}[/latex] bytes. The word length is [latex]2^{W}[/latex] bytes. The capacity of cache memory is [latex]2^{N}[/latex] Bytes. The size of each cache block is [latex]2^{M}[/latex] words. For a K-way set-associative cache memory, the length (in number of bits) of the\ntag field is",
+   "solution": "Address = P bits. A K-way cache of [latex]2^N[/latex] bytes has [latex]2^N/K[/latex] bytes per way, so set index + block offset = [latex]N-\\log_2K[/latex] bits.<br><br>\nTag = [latex]P-(N-\\log_2K)=P-N+\\log_2K[/latex]<br><br>\n<b>Answer: [latex]P-N+\\log_2K[/latex]</b><br><br><a href=\"https://gateoverflow.in/204108/gate2018-34#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "options": [
+    "[latex]P-N-log_{2}K[/latex]",
+    "[latex]P-N+log_{2}K[/latex]",
+    "[latex]P-N-M-W-log_{2}K[/latex]",
+    "[latex]P-N-M-W+log_{2}K[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1118135,
+   "number": 35,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following languages: <br><br>I. [latex] \\{a^{m}b^{n}c^{p}d^{q}|m+p=n+q, \\; where \\;  m,n,p,q \\geq 0 \\}[/latex]    <br>  II. [latex]\\{a^{m}b^{n}c^{p}d^{q}|m=n \\; and \\; p=q, \\; where \\;  m,n,p,q\\geq 0 \\}  [/latex] <br> III. [latex] \\{a^{m}b^{n}c^{p}d^{q}|m=n=p \\; and \\; p\\neq q, \\; where \\; m,n,p,q\\geq 0 \\} [/latex] <br>  IV. [latex]\\{a^{m}b^{n}c^{p}d^{q}|mn=p+q, \\; where\\;  m,n,p,q\\geq 0\\}[/latex] <br><br>Which of the languages above are context-free?",
+   "solution": "Checking each statement:<br>- I: m + p = n + q needs only one counter (a's and c's add, b's and d's subtract) [latex]\\rightarrow[/latex] CFL True<br>\n- II: [latex]a^mb^mc^pd^p[/latex]: two independent matches in sequence [latex]\\rightarrow[/latex] CFL True<br>\n- III: m = n = p needs three equal counts [latex]\\rightarrow[/latex] not CFL<br>\n- IV: mn = p + q needs multiplication [latex]\\rightarrow[/latex] not CFL<br><br>\n<b>Answer: I and II only</b><br><br><a href=\"https://gateoverflow.in/204109/gate2018-35#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-language",
+   "options": [
+    "I and IV only",
+    "I and II only",
+    "II and III only",
+    "II and IV only"
+   ],
+   "correct": 1
+  }
+ ]
+}

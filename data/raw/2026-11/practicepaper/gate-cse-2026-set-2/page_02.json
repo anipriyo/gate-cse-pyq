@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11262,
+  "quizName": "GATE CSE 2026 SET-2",
+  "pageTitle": "GATE CSE 2026 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 2,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2026-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1126206,
+   "number": 6,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following options is not a property of Boolean Algebra? <br><br>Note: [latex]{+}[/latex] is OR operation, [latex]\\cdot[/latex] is AND operation, and [latex]{\\prime}[/latex] is NOT operation",
+   "solution": "Checking each candidate law of Boolean algebra:<br><br>\n- [latex]a+b=b+a[/latex]: this is the <b>commutative law</b> for OR &mdash; a valid Boolean algebra property.<br>\n- [latex]a\\cdot b=b\\cdot a[/latex]: the <b>commutative law</b> for AND &mdash; also valid.<br>\n- [latex]a+a'=1[/latex]: the <b>complement law</b> for OR (a variable OR-ed with its complement always covers both cases, giving [latex]1[/latex]) &mdash; valid.<br>\n- [latex]a\\cdot a'=1[/latex]: this is <b>incorrect</b>. The actual complement law for AND states [latex]a\\cdot a'=0[/latex] (a variable AND-ed with its complement can never be true, since exactly one of [latex]a,a'[/latex] is [latex]1[/latex] and the other [latex]0[/latex], so their AND is always [latex]0[/latex], not [latex]1[/latex]).<br><br>\n<b>Answer: a &middot; a&prime; = 1 is NOT a valid Boolean algebra property (the correct law is a &middot; a&prime; = 0).</b> <br><br> <a href=\"https://gateoverflow.in/523140/gate-cse-2026-set-2-question-6#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "options": [
+    "[latex]a+b=b+a[/latex]",
+    "[latex]a \\cdot a^{\\prime}=1[/latex]",
+    "[latex]a+a^{\\prime}=1[/latex]",
+    "[latex]a \\cdot b=b \\cdot a[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1126207,
+   "number": 7,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "In C runtime environment, which one of the following is stored in heap?",
+   "solution": "In the C runtime memory model:<br><br>\n- A <b>static</b> variable declared inside a function is stored in the <b>data/BSS segment</b> (its lifetime spans the whole program), not the heap.<br>\n- A plain (non-static, non-dynamically-allocated) <b>array declared inside a function</b> is a local/automatic variable, stored on the <b>stack</b>.<br>\n- The <b>return address</b> of a function call is pushed onto the <b>stack</b> as part of the function's activation record/call frame.<br>\n- Only memory obtained via <b>[latex]\\text{malloc()}[/latex]</b> (or similar dynamic allocation calls) comes from the <b>heap</b>, and its lifetime is managed explicitly by the programmer (until [latex]\\text{free()}[/latex] is called).<br><br>\n<b>Answer: A dynamically allocated array of integers created using malloc()</b> <br><br> <a href=\"https://gateoverflow.in/523139/gate-cse-2026-set-2-question-7#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Runtime Environment",
+   "tag2_url": "https://practicepaper.in/gate-cse/runtime-environment",
+   "options": [
+    "A static variable declared inside a function",
+    "An array of integers declared inside a function",
+    "A dynamically allocated array of integers created using malloc() function call",
+    "Return address of a function"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1126208,
+   "number": 8,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following two statements about interrupt handling mechanisms in a CPU.<br><br> [latex]\\text{S1}[/latex]: In non-vectored interrupt mechanism, it usually takes more time to start the Interrupt Service Routine (ISR) when compared to that in a vectored interrupt mechanism. <br><br>[latex]\\text{S2}[/latex]: In daisy-chain interrupt mechanism, the CPU polls all the input devices individually to determine the source of the interrupt. <br><br>Which one of the following options is correct with respect to [latex]\\text{S1}[/latex] and [latex]\\text{S2}?[/latex]",
+   "solution": "<b>S1:</b> In a <b>non-vectored</b> interrupt scheme, the CPU typically must poll each device (or run a fixed interrupt-service routine that then figures out which device raised the interrupt) to determine the interrupt source and its ISR address, which takes extra time compared to a <b>vectored</b> scheme where the interrupting device directly supplies (or a lookup table directly provides) the address of its specific ISR. So non-vectored interrupt handling does usually take <i>more</i> time to start the ISR. <b>S1 is true.</b><br><br>\n<b>S2:</b> In a <b>daisy-chain</b> arrangement, devices are connected in series/priority order, and the interrupt-acknowledge signal (or the responsibility of asserting \"who interrupted\") propagates <i>along the chain itself from device to device</i> &mdash; it is <b>not</b> the CPU individually polling every device one by one (that description matches a different scheme, \"software polling,\" not daisy-chaining). So <b>S2 is false.</b><br><br>\n<b>Answer: S1 is true and S2 is false.</b> <br><br> <a href=\"https://gateoverflow.in/523138/gate-cse-2026-set-2-question-8#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Interrupt",
+   "tag2_url": "https://practicepaper.in/gate-cse/interrupt",
+   "options": [
+    "Both [latex]\\text{S1}[/latex] and [latex]\\text{S2}[/latex] are true",
+    "Both [latex]\\text{S1}[/latex] and [latex]\\text{S2}[/latex] are false",
+    "[latex]\\text{S1}[/latex] is true and [latex]\\text{S2}[/latex] is false",
+    "[latex]\\text{S1}[/latex] is false and [latex]\\text{S2}[/latex] is true"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1126209,
+   "number": 9,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following three ANSI-C programs, [latex]\\text{P1, P2,}[/latex] and [latex]\\text{P3}[/latex].<br><br> [latex] \\begin{array}{|l|l|l|} \\hline \\quad\\quad\\quad \\textbf{P1} & \\quad\\quad\\quad \\textbf{P2} & \\quad\\quad\\quad \\textbf{P3} \\\\ \\hline \\text{\\#include < stdio.h >} & \\text{\\#include < stdio.h >} & \\text{\\#include < stdio.h >} \\\\ \\begin{array}{l} \\text{int a=5;} \\\\ \\text{int main()\\{} \\\\ \\quad \\text{int a=7;} \\\\ \\quad \\text{return(0);} \\end{array} & \\begin{array}{l} \\text{int main()\\{} \\\\ \\quad \\text{int a=5;} \\\\ \\quad \\text{int a=7;} \\\\ \\quad \\text{return(0);} \\end{array} & \\begin{array}{l} \\text{int main()\\{} \\\\ \\quad \\text{int a=5;} \\\\ \\quad \\text{float a=7;} \\\\ \\quad \\text{return(0);} \\end{array} \\\\ {\\text{\\}}} & {\\text{\\}}} & {\\text{\\}}} \\\\ \\hline \\end{array} [/latex] <br><br>Which one of the following statements is true?",
+   "solution": "<b>P1:</b> Global [latex]\\text{int a=5;}[/latex] and, inside [latex]\\text{main()}[/latex], a separate local [latex]\\text{int a=7;}[/latex]. This is perfectly legal C &mdash; the local declaration simply <b>shadows</b> the global one within [latex]\\text{main}[/latex]'s scope. <b>Compiles fine.</b><br><br>\n<b>P2:</b> [latex]\\text{int a=5;}[/latex] followed immediately by [latex]\\text{int a=7;}[/latex] in the <i>same</i> block/scope &mdash; this is an illegal <b>redeclaration</b> of the same identifier [latex]a[/latex] within one scope, which is a compile-time error.<br><br>\n<b>P3:</b> [latex]\\text{int a=5;}[/latex] followed by [latex]\\text{float a=7;}[/latex] &mdash; again redeclaring [latex]a[/latex] in the same scope, this time with a conflicting type, which is also a compile-time error.<br><br>\n<b>Answer: Only P1 will compile without any error.</b> <br><br> <a href=\"https://gateoverflow.in/523137/gate-cse-2026-set-2-question-9#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Syntax-directed Translation",
+   "tag2_url": "https://practicepaper.in/gate-cse/syntax-directed-translation",
+   "options": [
+    "Only [latex]\\text{P1}[/latex] will compile without any error",
+    "Only [latex]\\text{P2}[/latex] will compile without any error",
+    "Only [latex]\\text{P3}[/latex] will compile without any error",
+    "All three programs [latex]\\text{P1, P2,}[/latex] and [latex]\\text{P3}[/latex] will compile without any error"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1126210,
+   "number": 10,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider concurrent execution of two transactions [latex]T 1[/latex] and [latex]T 2[/latex] in a DBMS, both of which access a data object [latex]A[/latex]. For these two transactions to not conflict on [latex]A[/latex], which one of the following statements must be true?",
+   "solution": "Two operations by different transactions on the same data object [latex]A[/latex] \"conflict\" (in the standard DBMS concurrency-control sense) precisely when at least one of them is a <b>write</b> &mdash; i.e. any of read-write, write-read, or write-write pairs are conflicting, because the order in which they execute can change the outcome.<br><br>\nThe <i>only</i> combination that never conflicts is when <b>both</b> transactions merely <b>read</b> [latex]A[/latex] &mdash; reads never interfere with each other regardless of execution order, since neither changes the value of [latex]A[/latex].<br><br>\n<b>Answer: Both T1 and T2 only read A.</b> <br><br> <a href=\"https://gateoverflow.in/523136/gate-cse-2026-set-2-question-10#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Transactions",
+   "tag2_url": "https://practicepaper.in/gate-cse/transactions",
+   "options": [
+    "Both [latex]T 1[/latex] and [latex]T 2[/latex] only read [latex]A[/latex]",
+    "[latex]T 1[/latex] reads [latex]A[/latex] and [latex]T 2[/latex] writes [latex]A[/latex]",
+    "[latex]T 1[/latex] writes [latex]A[/latex] and [latex]T 2[/latex] reads [latex]A[/latex]",
+    "Both [latex]T 1[/latex] and [latex]T 2[/latex] write [latex]A[/latex]"
+   ],
+   "correct": 0
+  }
+ ]
+}

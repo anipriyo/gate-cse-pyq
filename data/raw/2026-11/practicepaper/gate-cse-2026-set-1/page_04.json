@@ -1,0 +1,133 @@
+{
+ "meta": {
+  "quizId": 11261,
+  "quizName": "GATE CSE 2026 SET-1",
+  "pageTitle": "GATE CSE 2026 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 4,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2026-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1126116,
+   "number": 16,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Let [latex]M[/latex] be a nondeterministic finite automaton (NFA) with [latex]6[/latex] states over a finite alphabet. <br>Which of the following options CANNOT be the number of states in the minimal deterministic finite automaton (DFA) that is equivalent to [latex]M[/latex] ?",
+   "solution": "By the subset construction, any [latex]n[/latex]-state NFA has an equivalent DFA with at most [latex]2^n[/latex] states (one state for every subset of NFA states), and the <b>minimal</b> DFA has at most that many states as well (minimization can only reduce, never increase, the state count).<br><br>\nFor [latex]n=6[/latex], the maximum possible number of states in the equivalent minimal DFA is [latex]2^6=64[/latex].<br><br>\n- [latex]32\\le64[/latex]: achievable.<br>\n- [latex]1\\le64[/latex]: achievable (e.g. an NFA accepting all strings can minimize to a single-state DFA).<br>\n- [latex]65[/latex] and [latex]128[/latex]: both exceed the hard upper bound of [latex]64[/latex], so neither can ever be the size of the minimal DFA.<br><br>\n<b>Answer: 65 and 128 CANNOT be the number of states.</b> <br><br> <a href=\"https://gateoverflow.in/523064/gate-cse-2026-set-1-question-16#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Finite Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/finite-automata",
+   "options": [
+    "32",
+    "65",
+    "1",
+    "128"
+   ],
+   "correctSet": [
+    1,
+    3
+   ]
+  },
+  {
+   "id": 1126117,
+   "number": 17,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Consider the following C statements: <br><br>char *str1 = \"Hello; /* Statement S1 */<br>\n char *str2 = \"Hello;\"; /* Statement S2 */<br>\n int *str3 = \"Hello\"; /* Statement S3 */ <br><br>Which of the following options is/are correct?",
+   "solution": "[latex]\\text{S1: char *str1 = \"Hello;}[/latex] &mdash; the string literal is missing its closing double-quote. An unterminated string literal is a <b>lexical error</b> (the lexer/scanner cannot even form a valid string token).<br><br>\n[latex]\\text{S2: char *str2 = \"Hello;\";}[/latex] &mdash; this is a perfectly valid string literal (containing a semicolon character) assigned to a [latex]\\text{char *}[/latex]; no error at all.<br><br>\n[latex]\\text{S3: int *str3 = \"Hello\";}[/latex] &mdash; this is lexically and syntactically fine (a valid string literal, valid statement syntax), but it assigns a [latex]\\text{char *}[/latex] value to an incompatible [latex]\\text{int *}[/latex] pointer type. This is a type-mismatch, which is a <b>semantic error</b> (caught during semantic/type analysis, not parsing).<br><br>\n<b>Answer: S1 has a lexical error, and S3 has a semantic error.</b> <br><br> <a href=\"https://gateoverflow.in/523063/gate-cse-2026-set-1-question-17#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Parsing",
+   "tag2_url": "https://practicepaper.in/gate-cse/parsing",
+   "options": [
+    "[latex]\\text{S1}[/latex] and [latex]\\text{S2}[/latex] have syntactic errors",
+    "[latex]\\text{S2}[/latex] has a lexical error and [latex]\\text{S3}[/latex] has a syntactic error",
+    "[latex]\\text{S1}[/latex] has a lexical error and [latex]\\text{S3}[/latex] has a semantic error",
+    "[latex]\\text{S1}[/latex] has a syntactic error and [latex]\\text{S3}[/latex] has a semantic error"
+   ],
+   "correctSet": [
+    2
+   ]
+  },
+  {
+   "id": 1126118,
+   "number": 18,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following statements is/are true?",
+   "solution": "Checking each claim about LL(1) parsing:<br><br>\n- \"LL(1) parser uses backtracking\" &mdash; <b>false</b>. LL(1) is a predictive, backtrack-free top-down parser: it decides the production to use by looking at only one lookahead symbol.<br>\n- \"For LL(1), the grammar must be left-recursive\" &mdash; <b>false</b>, in fact the opposite: a left-recursive grammar can never be LL(1) (it would cause infinite recursion in the predictive parser), so left recursion must first be eliminated.<br>\n- \"For LL(1), the grammar must be left-factored\" &mdash; <b>true</b>. If two productions of a non-terminal share a common prefix, the parser cannot decide which one to use from one lookahead symbol; left-factoring removes this ambiguity, which is a necessary step towards making a grammar LL(1).<br>\n- \"LL(1) parsers are more powerful than SLR parsers\" &mdash; <b>false</b>. LL(1) and SLR(1) are different (incomparable) classes of grammars; SLR(1), being bottom-up, actually accepts a strictly larger class of grammars than LL(1) in general, so LL(1) is not \"more powerful.\"<br><br>\n<b>Answer: For a grammar to be LL(1), it must be left-factored.</b> <br><br> <a href=\"https://gateoverflow.in/523062/gate-cse-2026-set-1-question-18#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Parsing",
+   "tag2_url": "https://practicepaper.in/gate-cse/parsing",
+   "options": [
+    "[latex]\\text{LL(1)}[/latex] parser uses backtracking",
+    "For a grammar to be [latex]\\text{LL(1)}[/latex], it must be left-recursive",
+    "For a grammar to be [latex]\\text{LL(1)}[/latex], it must be left-factored",
+    "The [latex]\\text{LL(1)}[/latex] parsers are more powerful than the SLR parsers"
+   ],
+   "correctSet": [
+    2
+   ]
+  },
+  {
+   "id": 1126119,
+   "number": 19,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "With respect to deadlocks in an operating system, which of the following statements is/are FALSE?",
+   "solution": "Evaluating each deadlock-related statement:<br><br>\n- <b>\"Banker's algorithm is used to prevent deadlocks\"</b> &mdash; <b>FALSE</b>. Banker's algorithm is a <i>deadlock-avoidance</i> algorithm (it checks resource requests dynamically to keep the system in a safe state); deadlock <i>prevention</i> refers to a different set of techniques that structurally rule out one of the four necessary conditions (mutual exclusion, hold-and-wait, no pre-emption, circular wait).<br>\n- \"Deadlock formation can be prevented by disallowing hold-and-wait\" &mdash; <b>true</b>: this is a standard, valid deadlock-prevention technique (one of the four necessary conditions is removed).<br>\n- <b>\"An assignment edge in a resource-allocation graph is marked from a process to a resource\"</b> &mdash; <b>FALSE</b>. It's the reverse: an <i>assignment</i> edge goes from a resource to a process (resource is allocated to the process); a <i>request</i> edge goes from a process to a resource.<br>\n- \"A safe state guarantees all processes can finish without deadlock\" &mdash; <b>true</b>: this is precisely the definition of a safe state.<br><br>\n<b>Answer (the FALSE statements): \"Banker's algorithm prevents deadlocks\", and \"an assignment edge goes from process to resource.\"</b> <br><br> <a href=\"https://gateoverflow.in/523061/gate-cse-2026-set-1-question-19#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Deadlock",
+   "tag2_url": "https://practicepaper.in/gate-cse/deadlock",
+   "options": [
+    "Banker's algorithm is used to prevent deadlocks",
+    "Deadlock formation can be prevented by ensuring that the hold and wait condition is not allowed",
+    "An assignment edge in a resource allocation graph is marked from a process to a resource",
+    "A safe state guarantees that all processes can finish without formation of a deadlock"
+   ],
+   "correctSet": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": 1126120,
+   "number": 20,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Let [latex]P, Q, R[/latex] and [latex]S[/latex] be the attributes of a relation in a relational schema. Let [latex]X \\rightarrow Y[/latex] indicate functional dependency in the context of a relational database, where [latex]X, Y \\subseteq\\{P, Q, R, S\\}[/latex]. <br><br>Which of the following options is/are always true?",
+   "solution": "Using Armstrong's axioms (reflexivity, augmentation, transitivity) to test each claim:<br><br>\n- <b>{P,Q}&rarr;{R} and {P}&rarr;{R}, does {Q}&rarr;{R} follow?</b> No &mdash; {P}&rarr;{R} already implies {P,Q}&rarr;{R} by augmentation, so the premises give no information forcing {Q}&rarr;{R} to hold. <b>Not always true.</b><br>\n- <b>{P,Q}&rarr;{R}, does {P}&rarr;{R} or {Q}&rarr;{R} follow?</b> No &mdash; {R} may genuinely require both P and Q together (e.g. R functionally depends on the pair but on neither attribute alone). <b>Not always true.</b><br>\n- <b>{P}&rarr;{R} and {Q}&rarr;{S}, does {P,Q}&rarr;{R,S} follow?</b> Yes: augment {P}&rarr;{R} with Q to get {P,Q}&rarr;{R,Q}; augment {Q}&rarr;{S} with P to get {P,Q}&rarr;{P,S}; using reflexivity ({R,Q}&rarr;{R} and {P,S}&rarr;{S}) and transitivity gives {P,Q}&rarr;{R} and {P,Q}&rarr;{S}; the union rule then gives {P,Q}&rarr;{R,S}. <b>Always true.</b><br>\n- <b>{P}&rarr;{R}, does {P,Q}&rarr;{R} follow?</b> Yes, directly by the augmentation axiom (adding Q to the left-hand side of a valid FD keeps it valid). <b>Always true.</b><br><br>\n<b>Answer: {P}&rarr;{R},{Q}&rarr;{S} &there4 {P,Q}&rarr;{R,S}; and {P}&rarr;{R} &there4 {P,Q}&rarr;{R}.</b> <br><br> <a href=\"https://gateoverflow.in/523060/gate-cse-2026-set-1-question-20#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Relational Schema",
+   "tag2_url": "https://practicepaper.in/gate-cse/relational-schema",
+   "options": [
+    "If [latex](\\{P, Q\\} \\rightarrow\\{R\\}[/latex] and [latex]\\{P\\} \\rightarrow\\{R\\})[/latex], then [latex]\\{Q\\} \\rightarrow\\{R\\}[/latex]",
+    "If [latex]\\{P, Q\\} \\rightarrow\\{R\\}[/latex], then [latex](\\{P\\} \\rightarrow\\{R\\}[/latex] or [latex]\\{Q\\} \\rightarrow\\{R\\})[/latex]",
+    "If [latex](\\{P\\} \\rightarrow\\{R\\}[/latex] and [latex]\\{Q\\} \\rightarrow\\{S\\})[/latex], then [latex]\\{P, Q\\} \\rightarrow\\{R, S\\}[/latex]",
+    "If [latex]\\{P\\} \\rightarrow\\{R\\}[/latex], then [latex]\\{P, Q\\} \\rightarrow\\{R\\}[/latex]"
+   ],
+   "correctSet": [
+    2,
+    3
+   ]
+  }
+ ]
+}

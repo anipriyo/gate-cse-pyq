@@ -1,0 +1,127 @@
+{
+ "meta": {
+  "quizId": 11261,
+  "quizName": "GATE CSE 2026 SET-1",
+  "pageTitle": "GATE CSE 2026 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 2,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2026-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1126106,
+   "number": 6,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following dependencies among the register operands of different instructions can cause a data hazard in a pipelined processor?",
+   "solution": "A data hazard occurs when an instruction depends on the result of a nearby instruction that has not yet completed in the pipeline.<br><br>\r\n- <b>Read-after-Write (RAW)</b>: a later instruction tries to read a register before an earlier instruction has written its new value &mdash; this is a true/flow dependency, and causes a genuine data hazard in a pipeline.<br>\r\n- <b>Write-after-Read (WAR)</b> and <b>Write-after-Write (WAW)</b> are anti-/output-dependencies; they cause hazards only in pipelines that allow out-of-order completion, not in a simple in-order pipeline.<br>\r\n- <b>Read-after-Read</b> is not a dependency at all &mdash; reads never conflict with each other.<br><br>\r\n<b>Answer: Read-after-write</b><br><br> <a href=\"https://gateoverflow.in/523074/gate-cse-2026-set-1-question-6#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Pipeline Processor",
+   "tag2_url": "https://practicepaper.in/gate-cse/pipeline-processor",
+   "options": [
+    "Read-after-read",
+    "Read-after-write",
+    "Write-after-read",
+    "Write-after-write"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1126107,
+   "number": 7,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following recurrence relations: <br>For all [latex]n>1[/latex], <br><br>[latex] \\begin{array}{l} T_{1}(n)=4 T_{1}\\left(\\frac{n}{2}\\right)+T_{2}(n) \\\\ T_{2}(n)=5 T_{2}\\left(\\frac{n}{4}\\right)+\\Theta\\left(\\log _{2} n\\right) \\end{array} [/latex] <br><br>Assume that for all [latex]n \\leq 1, T_{1}(n)=1[/latex] and [latex]T_{2}(n)=1[/latex]. <br>Which one of the following options is correct?",
+   "solution": "First solve [latex]T_2(n)=5T_2(n/4)+\\Theta(\\log_2 n)[/latex].<br>\r\nHere [latex]a=5,\\,b=4[/latex], so [latex]n^{\\log_b a}=n^{\\log_4 5}[/latex]. Since [latex]\\log_2 n[/latex] is polynomially smaller than [latex]n^{\\log_4 5}[/latex] (as [latex]\\log_4 5\\approx1.16>0[/latex]), by the Master theorem (Case 1):<br>\r\n[latex]T_2(n)=\\Theta\\left(n^{\\log_4 5}\\right)[/latex].<br><br>\r\nNow solve [latex]T_1(n)=4T_1(n/2)+T_2(n)[/latex].<br>\r\nHere [latex]a=4,\\,b=2[/latex], so [latex]n^{\\log_b a}=n^{\\log_2 4}=n^2[/latex]. The extra term [latex]f(n)=T_2(n)=\\Theta(n^{\\log_4 5})=\\Theta(n^{1.16\\ldots})[/latex], which is polynomially smaller than [latex]n^2[/latex] (since [latex]n^2/n^{1.16}=n^{0.84}\\to\\infty[/latex]).<br>\r\nBy Master theorem Case 1: [latex]T_1(n)=\\Theta(n^2)[/latex].<br><br>\r\n<b>Answer: [latex]T_1(n)=\\Theta(n^2)[/latex]</b><br><br> <a href=\"https://gateoverflow.in/523073/gate-cse-2026-set-1-question-7#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Recurrence Relation",
+   "tag2_url": "https://practicepaper.in/gate-cse/recurrence-relation",
+   "options": [
+    "[latex]T_{1}(n)=\\Theta\\left(n^{2}\\right)[/latex]",
+    "[latex]T_{1}(n)=\\Theta\\left(n^{2} \\log _{2} n\\right)[/latex]",
+    "[latex]T_{1}(n)=\\Theta\\left(n^{\\log _{4} 5}\\right)[/latex]",
+    "[latex]T_{1}(n)=\\Theta\\left(n^{\\log _{4} 5} \\log _{2} n\\right)[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1126108,
+   "number": 8,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "With respect to a TCP connection between a client and a server, which one of the following statements is true?",
+   "solution": "Checking each statement about a TCP connection:<br><br>\r\n- TCP uses a <b>three-way</b> handshake (SYN, SYN-ACK, ACK), not a two-way handshake &mdash; false.<br>\r\n- Either side (client or server) is free to initiate connection termination first; the server is not required to wait for the client &mdash; false.<br>\r\n- TCP is a <b>full-duplex</b> protocol &mdash; data can flow in both directions simultaneously &mdash; so \"half-duplex\" is false.<br>\r\n- TCP supports <b>simultaneous close</b>: both client and server can send a FIN at (roughly) the same time, and each independently acknowledges the other's FIN. This is a valid connection-termination scenario in TCP's state machine.<br><br>\r\n<b>Answer: The client and server can initiate closing of the connection at the same time</b><br><br><a href=\"https://gateoverflow.in/523072/gate-cse-2026-set-1-question-8#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Transport Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/transport-layer-protocol",
+   "options": [
+    "The client and server use a two-way handshake mechanism before the start of data transmission",
+    "The server cannot initiate closing of the connection before the client initiates closing of the connection",
+    "The TCP connection is half-duplex",
+    "The client and server can initiate closing of the connection at the same time"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1126109,
+   "number": 9,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following statements is/are true with respect to the interaction of a web browser with a web server using HTTP [latex]1.1[/latex]?",
+   "solution": "HTTP/1.1 introduced <b>persistent connections</b> and <b>pipelining</b> over a single TCP connection:<br><br>\r\n- <b>True:</b> Multiple objects of the same webpage, if hosted on the same server, can be fetched over one persistent TCP connection &mdash; this is exactly the point of persistent connections.<br>\r\n- <b>False:</b> A single TCP connection is between one client and one specific server; objects stored on a <i>different</i> server require a separate TCP connection to that server. So this statement is false.<br>\r\n- <b>True:</b> HTTP/1.1 supports <b>pipelining</b> &mdash; a client can send a new request before the response to a previous request has been fully received, over the same connection.<br>\r\n- <b>True:</b> Since the TCP connection persists (is not closed after one request/response), multiple different webpages/resources from the same server can be downloaded over that same single connection, one after another.<br><br>\r\n<b>Answer: Statements 1, 3, and 4 are true (same-server multi-object download, pipelining, multiple pages over one connection); statement about different servers over the same connection is false.</b> <br><br> <a href=\"https://gateoverflow.in/523071/gate-cse-2026-set-1-question-9#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Application Layer Protocols",
+   "tag2_url": "https://practicepaper.in/gate-cse/application-layer-protocols",
+   "options": [
+    "HTTP [latex]1.1[/latex] facilitates downloading multiple objects of the same webpage over the same TCP connection, if the objects are stored in the same server",
+    "HTTP [latex]1.1[/latex] facilitates downloading multiple objects of the same webpage over the same TCP connection, even if they are stored in different servers",
+    "HTTP [latex]1.1[/latex] facilitates sending a request for downloading one object without waiting for a previously requested object to be downloaded completely",
+    "HTTP [latex]1.1[/latex] facilitates downloading multiple webpages on the same server to be downloaded over a single TCP connection"
+   ],
+   "correctSet": [
+    0,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1126110,
+   "number": 10,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Let [latex]n>1[/latex]. Consider an [latex]n \\times n[/latex] matrix [latex]M[/latex] with its elements from [latex]\\mathbb{R}[/latex]. Let the vector [latex](0,1,0,0, \\ldots, 0) \\in \\mathbb{R}^{n}[/latex] be in the null space of [latex]M[/latex]. <br>Which of the following options is/are always correct?",
+   "solution": "Since [latex](0,1,0,\\ldots,0)[/latex] is in the null space of [latex]M[/latex], we have [latex]M\\cdot(0,1,0,\\ldots,0)^T=\\mathbf{0}[/latex]. But [latex]M[/latex] times this unit vector simply extracts the <b>2nd column of [latex]M[/latex]</b>. So the 2nd column of [latex]M[/latex] is entirely zero.<br><br>\r\n- <b>Determinant:</b> A matrix with an all-zero column always has determinant [latex]0[/latex]. So \"[latex]\\det(M)=0[/latex]\" is always true. (\"[latex]\\det(M)=1[/latex]\" is always false.)<br>\r\n- <b>Rank:</b> The rank could be anywhere from [latex]0[/latex] to [latex]n-1[/latex] depending on the other columns, so \"rank [latex]=1[/latex]\" is not always true.<br>\r\n- <b>Null space size:</b> Since the null space contains the nonzero vector [latex](0,1,0,\\ldots,0)[/latex], it also contains every scalar multiple of it (e.g. [latex](0,2,0,\\ldots,0)[/latex], [latex](0,-1,0,\\ldots,0)[/latex], etc.), giving infinitely many, hence at least two, distinct non-zero vectors in the null space. This is always true.<br><br>\r\n<b>Answer: Determinant of M is 0; and there are at least two non-zero vectors in the null space of M.</b> <br><br> <a href=\"https://gateoverflow.in/523070/gate-cse-2026-set-1-question-10#a_list\" target=\"_blank\">Click here for detail solution</a><a href=\"https://gateoverflow.in/523070/gate-cse-2026-set-1-question-10#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "Determinant of [latex]M[/latex] is [latex]1[/latex]",
+    "Determinant of [latex]M[/latex] is [latex]0[/latex]",
+    "Rank of [latex]M[/latex] is [latex]1[/latex]",
+    "There are at least two non-zero vectors in the null space of [latex]M[/latex]"
+   ],
+   "correctSet": [
+    1,
+    3
+   ]
+  }
+ ]
+}

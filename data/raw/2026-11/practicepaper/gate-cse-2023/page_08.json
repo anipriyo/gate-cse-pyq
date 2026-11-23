@@ -1,0 +1,128 @@
+{
+ "meta": {
+  "quizId": 11231,
+  "quizName": "GATE CSE 2023",
+  "pageTitle": "GATE CSE 2023",
+  "timeLimit": 0,
+  "pageNo": 8,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2023",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1123136,
+   "number": 36,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let A be a priority queue for maintaining a set of elements. Suppose A is\nimplemented using a max-heap data structure. The operation Extract-Max(A)\nextracts and deletes the maximum element from A. The operation Insert(A,key)\ninserts a new element key in A. The properties of a max-heap are preserved at the\nend of each of these operations.<br>\nWhen A contains n elements, which one of the following statements about the worst\ncase running time of these two operations is TRUE?",
+   "solution": "A heap of n elements has height about log n:<br>- Extract-Max: remove the root, move the last element to the root, and heapify down the height of the tree [latex]\\rightarrow[/latex] [latex]O(\\log n)[/latex].<br>\n- Insert: add at the end and bubble up to the root [latex]\\rightarrow[/latex] [latex]O(\\log n)[/latex].<br><br>\n<b>Answer: Both run in O(log(n))</b><br><br><a href=\"https://gateoverflow.in/399275/gate-cse-2023-question-36#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Heap Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/heap-tree",
+   "options": [
+    "Both Extract-Max(A) and Insert(A,key) run in O(1).",
+    "Both Extract-Max(A) and Insert(A,key) run in O(log(n)).",
+    "Extract-Max(A) runs in O(1) whereas Insert(A,key) runs in O(n).",
+    "Extract-Max(A) runs in O(1) whereas Insert(A,key) runs in O(log(n))."
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1123137,
+   "number": 37,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the C function foo and the binary tree shown.<br><pre><code>\ntypedef struct node {\n   int val;\n   struct node *left, *right;\n} node;\n\nint foo(node *p) {\n   int retval;\n   if (p == NULL)\n       return 0;\nelse {\n     retval = p->val + foo(p->left) + foo(p->right);\n     printf(\"%d \", retval);\n     return retval;\n     }\n}\n</code></pre><br><br><img src=\"/wp-content/uploads/GATE/CS/20231/q37.jpg\" /><br>When foo is called with a pointer to the root node of the given binary tree, what\nwill it print?",
+   "solution": "foo returns the sum of a subtree and prints it <b>after</b> both children (post-order):<br>\n- node 3 [latex]\\rightarrow[/latex] prints 3<br>\n- node 8 [latex]\\rightarrow[/latex] prints 8<br>\n- node 5 [latex]\\rightarrow[/latex] 5 + 3 + 8 = 16<br>\n- node 13 [latex]\\rightarrow[/latex] 13<br>\n- node 11 [latex]\\rightarrow[/latex] 11 + 0 + 13 = 24<br>\n- root 10 [latex]\\rightarrow[/latex] 10 + 16 + 24 = 50<br><br>\n<b>Answer: 3 8 16 13 24 50</b><br><br><a href=\"https://gateoverflow.in/399274/gate-cse-2023-question-37#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-tree",
+   "options": [
+    "3 8 5 13 11 10",
+    "3 5 8 10 11 13",
+    "3 8 16 13 24 50",
+    "3 16 8 50 24 13"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1123138,
+   "number": 38,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let U = {1, 2,...,n}, where n is a large positive integer greater than 1000. Let\nk be a positive integer less than n. Let A, B be subsets of U with |A| = |B| = k\nand [latex] A\\cap B=\\phi [/latex]. We say that a permutation of U separates A from B if one of the\nfollowing is true. <br><br>\n- All members of A appear in the permutation before any of the members of B.<br>\n- All members of B appear in the permutation before any of the members of A.<br><br>\nHow many permutations of U separate A from B?",
+   "solution": "Count the permutations step by step:<br>- Choose the 2k positions that A [latex]\\cup[/latex] B will occupy: [latex]\\binom{n}{2k}[/latex]<br>\n- Arrange the other [latex]n-2k[/latex] elements in the rest: [latex](n-2k)![/latex]<br>\n- In the chosen positions, put all of A first and then B, or B first and then A: 2 ways<br>\n- Arrange A among its k places and B among its k places: [latex](k!)^2[/latex]<br><br>\nTotal [latex]=2\\binom{n}{2k}(n-2k)!(k!)^2[/latex]<br><br>\n<b>Answer: [latex]2\\binom{n}{2k}(n-2k)!(k!)^2[/latex]</b><br><br><a href=\"https://gateoverflow.in/399273/gate-cse-2023-question-38#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Combination",
+   "tag2_url": "https://practicepaper.in/gate-cse/combination",
+   "options": [
+    "[latex] n![/latex] ",
+    "[latex]\\binom{n}{2k} (n-2k)![/latex] ",
+    "[latex]\\binom{n}{2k} (n-2k)!  (k!)^2[/latex] ",
+    "[latex]2 \\binom{n}{2k} (n-2k)!  (k!)^2[/latex] "
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1123139,
+   "number": 39,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Let [latex] f:A\\rightarrow B[/latex] be an onto (or surjective) function, where [latex]A[/latex]  and [latex]B[/latex] are nonempty\nsets. Define an equivalence relation [latex] \\sim [/latex]  on the set [latex]A[/latex] as<br> [latex] a_1\\sim a_2 \\text{ if } f(a_1)=f(a_2),[/latex]  <br> where [latex] a_1, a_2  \\in A[/latex] . Let [latex] \\varepsilon =\\{[x]:x \\in A\\}[/latex]  be the set of all the equivalence classes\nunder [latex] \\sim [/latex]. Define a new mapping [latex] F: \\varepsilon \\rightarrow B[/latex]  as  <br>[latex]F([x]) = f(x),[/latex] for all the equivalence classes [latex][x][/latex] in [latex]  \\varepsilon[/latex]<br>Which of the following statements is/are TRUE?",
+   "solution": "Check each property of F:<br>- <b>Well-defined</b>: if [x] = [y], then f(x) = f(y), so F gives the same value for every representative (option 1 FALSE).<br>\n- <b>Onto</b>: for any b in B, f is onto, so f(a) = b for some a, and F([a]) = b.<br>\n- <b>One-to-one</b>: F([x]) = F([y]) means f(x) = f(y), so [latex]x\\sim y[/latex] and [x] = [y].<br>\n- Onto and one-to-one [latex]\\rightarrow[/latex] <b>bijective</b>.<br><br>\n<b>Answer: Options 2, 3 and 4</b><br><br><a href=\"https://gateoverflow.in/399272/gate-cse-2023-question-39#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Functions",
+   "tag2_url": "https://practicepaper.in/gate-cse/functions",
+   "options": [
+    "F is NOT well-defined.",
+    "F is an onto (or surjective) function.",
+    "F is a one-to-one (or injective) function.",
+    "F is a bijective function."
+   ],
+   "correctSet": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1123140,
+   "number": 40,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Suppose you are asked to design a new reliable byte-stream transport protocol\nlike TCP. This protocol, named myTCP, runs over a 100 Mbps network with Round\nTrip Time of 150 milliseconds and the maximum segment lifetime of 2 minutes.<br>\nWhich of the following is/are valid lengths of the Sequence Number field in the\nmyTCP header?",
+   "solution": "The sequence numbers must not wrap around within one MSL. Bytes sent in 2 minutes:<br>\n[latex]\\frac{100\\times10^6}{8}\\times120=1.5\\times10^9[/latex] bytes<br><br>\n[latex]2^{30}\\approx1.07\\times10^9[/latex] (too small), [latex]2^{31}\\approx2.15\\times10^9[/latex] (enough). So the field needs at least 31 bits.<br><br>\n32, 34 and 36 bits are valid; 30 bits is not.<br><br>\n<b>Answer: 32 bits, 34 bits, 36 bits</b><br><br><a href=\"https://gateoverflow.in/399271/gate-cse-2023-question-40#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Transport Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/transport-layer-protocol",
+   "options": [
+    "30 bits",
+    "32 bits",
+    "34 bits",
+    "36 bits"
+   ],
+   "correctSet": [
+    1,
+    2,
+    3
+   ]
+  }
+ ]
+}

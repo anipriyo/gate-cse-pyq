@@ -1,0 +1,136 @@
+{
+ "meta": {
+  "quizId": 11212,
+  "quizName": "GATE CSE 2021 SET 2",
+  "pageTitle": "GATE CSE 2021 SET-2",
+  "timeLimit": 0,
+  "pageNo": 3,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2021-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1121211,
+   "number": 11,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Consider the following sets, where [latex]n\\geq 2[/latex]:<br><br>\n\nS1: Set of all nxn matrices with entries from the set [latex]\\{a, b, c\\}[/latex]<br>\nS2: Set of all functions from the set[latex]\\{0,1,2,...,n^2-1\\}[/latex] to the set [latex]\\{0, 1, 2 \\}[/latex]<br><br>\nWhich of the following choice(s) is/are correct?",
+   "solution": "Checking each statement:<br>- [latex]|S_1|=3^{n^2}[/latex] (each of the [latex]n^2[/latex] entries has 3 choices).<br>\n- [latex]|S_2|=3^{n^2}[/latex] (each of the [latex]n^2[/latex] inputs has 3 choices).<br><br>\nEqual finite sizes [latex]\\rightarrow[/latex] a bijection exists (read the matrix entries in order as the function values). A bijection is also a surjection and an injection.<br><br>\n<b>Answer: A surjection exists; a bijection exists</b><br><br><a href=\"https://gateoverflow.in/357529/gate-cse-2021-set-2-question-11#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Functions",
+   "tag2_url": "https://practicepaper.in/gate-cse/functions",
+   "options": [
+    "There does not exist a bijection from S1 to S2",
+    "There exists a surjection from S1 to S2",
+    "There exists a bijection from S1 to S2",
+    "There does not exist an injection from S1 to S2"
+   ],
+   "correctSet": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1121212,
+   "number": 12,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Let [latex]L_1[/latex] be a regular language and [latex]L_2[/latex] be a context-free language. Which of the following languages is/are context-free?",
+   "solution": "Checking each statement:<br>- [latex]L_1\\cap\\overline{L_2}[/latex]: [latex]\\overline{L_2}[/latex] need not be CFL [latex]\\rightarrow[/latex] not always CFL.<br>\n- [latex]\\overline{\\overline{L_1}\\cup\\overline{L_2}}=L_1\\cap L_2[/latex] (De Morgan) [latex]\\rightarrow[/latex] CFL True<br>\n- [latex]L_2\\cup\\overline{L_2}=\\Sigma^*[/latex], so the whole thing is [latex]\\Sigma^*[/latex] [latex]\\rightarrow[/latex] CFL True<br>\n- [latex](L_1\\cap L_2)\\cup(\\overline{L_1}\\cap L_2)=L_2[/latex] [latex]\\rightarrow[/latex] CFL True<br><br>\n<b>Answer: Options 2, 3 and 4</b><br><br><a href=\"https://gateoverflow.in/357528/gate-cse-2021-set-2-question-12#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-language",
+   "options": [
+    "[latex]L_1 \\cap \\overline{L_2}[/latex]",
+    "[latex]\\overline{\\overline{L_1} \\cup \\overline{L_2}}[/latex]",
+    "[latex]L_1 \\cup (L_2 \\cup \\overline{L_2})[/latex]",
+    "[latex](L_1 \\cap L_2) \\cup (\\overline{L_1} \\cap L_2)[/latex]"
+   ],
+   "correctSet": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1121213,
+   "number": 13,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "In the context of compilers, which of the following is/are NOT an intermediate representation of the source program?",
+   "solution": "Three address code, AST and CFG are all forms of the program used between front end and back end. The <b>symbol table</b> only stores information about names; it is not a representation of the program.<br><br>\n<b>Answer: Symbol table</b><br><br><a href=\"https://gateoverflow.in/357527/gate-cse-2021-set-2-question-13#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Intermediate Code Generation",
+   "tag2_url": "https://practicepaper.in/gate-cse/intermediate-code-generation",
+   "options": [
+    "Three address code",
+    "Abstract Syntax Tree (AST)",
+    "Control Flow Graph (CFG)",
+    "Symbol table"
+   ],
+   "correctSet": [
+    3
+   ]
+  },
+  {
+   "id": 1121214,
+   "number": 14,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following statement(s) is/are correct in the context of CPU scheduling?",
+   "solution": "Checking each statement:<br>- Turnaround = completion [latex]-[/latex] arrival, which includes waiting time [latex]\\text{---}[/latex] TRUE.<br>\n- The goal is to <b>maximize</b> throughput (and utilization), not minimize it [latex]\\text{---}[/latex] FALSE.<br>\n- Round-robin only needs a time quantum, not burst lengths [latex]\\text{---}[/latex] TRUE.<br>\n- Preemption needs a hardware timer interrupt [latex]\\text{---}[/latex] TRUE.<br><br>\n<b>Answer: Options 1, 3 and 4</b><br><br><a href=\"https://gateoverflow.in/357526/gate-cse-2021-set-2-question-14#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "CPU Scheduling",
+   "tag2_url": "https://practicepaper.in/gate-cse/cpu-scheduling",
+   "options": [
+    "Turnaround time includes waiting time",
+    "The goal is to only maximize CPU utilization and minimize throughput",
+    "Round-robin policy can be used even when the CPU time required by each of the processes is not known apriori",
+    "Implementing preemptive scheduling needs hardware support"
+   ],
+   "correctSet": [
+    0,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1121215,
+   "number": 15,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Choose the correct choice(s) regarding the following proportional logic assertion S:<br><br>[latex]S: (( P \\wedge Q) \\rightarrow R) \\rightarrow (( P \\wedge Q) \\rightarrow (Q \\rightarrow R))[/latex]",
+   "solution": "Simplify the consequent: [latex](P\\wedge Q)\\rightarrow(Q\\rightarrow R)\\equiv(P\\wedge Q\\wedge Q)\\rightarrow R\\equiv(P\\wedge Q)\\rightarrow R[/latex], which is exactly the antecedent.<br><br>\nSo S has the form [latex]A\\rightarrow A[/latex], which is always true.<br><br>\n<b>Answer: S is a tautology; its antecedent is equivalent to its consequent</b><br><br><a href=\"https://gateoverflow.in/357525/gate-cse-2021-set-2-question-15#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Propositional Logic",
+   "tag2_url": "https://practicepaper.in/gate-cse/propositional-logic",
+   "options": [
+    "S  is neither a tautology nor a contradiction",
+    "S  is a tautology",
+    "S  is a contradiction",
+    "The antecedent of S is logically equivalent to the consequent of S"
+   ],
+   "correctSet": [
+    1,
+    3
+   ]
+  }
+ ]
+}

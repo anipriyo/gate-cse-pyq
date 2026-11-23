@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11201,
+  "quizName": "GATE CS 2020",
+  "pageTitle": "GATE CSE 2020",
+  "timeLimit": 0,
+  "pageNo": 8,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2020",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1120136,
+   "number": 36,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a relational table R that is in 3NF, but not in BCNF. Which one of the following statements is TRUE?",
+   "solution": "3NF allows [latex]X\\rightarrow A[/latex] with X not a superkey only when A is a <b>prime attribute</b>. BCNF forbids it.<br><br>\nSo a relation in 3NF but not in BCNF must have such an FD with prime A. The other options describe 3NF/2NF violations or a 1NF violation.<br><br>\n<b>Answer: X [latex]\\rightarrow[/latex] A where X is not a superkey and A is a prime attribute</b><br><br><a href=\"https://gateoverflow.in/333195/gate2020-cs-36#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Normal Form",
+   "tag2_url": "https://practicepaper.in/gate-cse/normal-form",
+   "options": [
+    "R has a nontrivial functional dependency [latex]X\\rightarrow A[/latex], where X is not a superkey and A is a prime attribute.",
+    "R has a nontrivial functional dependency [latex]X\\rightarrow A[/latex], where X is not a superkey and A is a non-prime attribute and X is not a proper subset of any key.",
+    "R has a nontrivial functional dependency [latex]X\\rightarrow A[/latex], where X is not a superkey and A is a non-prime attribute and X is a proper subset of some key.",
+    "A cell in R holds a set instead of an atomic value."
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1120137,
+   "number": 37,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a schedule of transactions T1 and T2: <br><img src=\"/wp-content/uploads/GATE/CS/20201/q37.jpg\" /><br>Here, RX stands for \"Read(X)\" and WX stands for \"Write(X)\". Which one of the following schedules is conflict equivalent to the above schedule?<br><img src=\"/wp-content/uploads/GATE/CS/20201/q37a.jpg\" />",
+   "solution": "Conflicting pairs in the given schedule (their order must be kept):<br>\n- B: [latex]T_2[/latex]'s RB, WB come before [latex]T_1[/latex]'s WB<br>\n- C: [latex]T_1[/latex]'s RC comes before [latex]T_2[/latex]'s WC<br>\n- D: [latex]T_2[/latex]'s RD comes before [latex]T_1[/latex]'s WD<br><br>\nSchedule (A): [latex]T_2[/latex]: RB WB RD, then [latex]T_1[/latex]: RA RC WD WB, then [latex]T_2[/latex]: WC. All three orders are kept True. The other schedules reverse at least one pair.<br><br>\n<b>Answer: A</b><br><br><a href=\"https://gateoverflow.in/333194/gate2020-cs-37#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Transaction",
+   "tag2_url": "https://practicepaper.in/gate-cse/transaction",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1120138,
+   "number": 38,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "An organization requires a range of IP address to assign one to each of its 1500 computers. The organization has approached an Internet Service Provider (ISP) for this task. The ISP uses CIDR and serves the requests from the available IP address space 202.61.0.0/17. The ISP wants to assign an address space to the organization which will minimize the number of routing entries in the ISP?s router using route aggregation. Which of the following address spaces are potential candidates from which the ISP can allot any one of the organization? <br><br>I.  202.61.84.0/21<br>II.  202.61.104.0/21<br>III. 202.61.64.0/21<br>IV.  202.61.144.0/21",
+   "solution": "1500 hosts need [latex]2^{11}=2048[/latex] addresses [latex]\\rightarrow[/latex] a /21 block. A /21 must start at a third octet that is a multiple of 8, and lie inside 202.61.0.0/17 (third octet 0-127).<br><br>\n- I: 84 is not a multiple of 8 False<br>\n- II: 104 = 13 [latex]\\times[/latex] 8 True<br>\n- III: 64 = 8 [latex]\\times[/latex] 8 True<br>\n- IV: 144 is outside the /17 range False<br><br>\n<b>Answer: II and III only</b><br><br><a href=\"https://gateoverflow.in/333193/gate2020-cs-38#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-layer-protocol",
+   "options": [
+    "I and II only",
+    "II and III only",
+    "III and IV only",
+    "I and IV only"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1120139,
+   "number": 39,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Which one of the following predicate formulae is NOT logically valid?\n<br>\nNote that W is a predicate formula without any free occurrence of x.",
+   "solution": "Since x is not free in W:<br>\n- [latex]\\forall x(p(x)\\vee W)\\equiv\\forall x\\,p(x)\\vee W[/latex] [latex]\\text{---}[/latex] valid.<br>\n- [latex]\\exists x(p(x)\\wedge W)\\equiv\\exists x\\,p(x)\\wedge W[/latex] [latex]\\text{---}[/latex] valid.<br>\n- [latex]\\forall x(p(x)\\rightarrow W)\\equiv\\forall x(\\neg p(x)\\vee W)\\equiv\\neg\\exists x\\,p(x)\\vee W\\equiv\\exists x\\,p(x)\\rightarrow W[/latex], <b>not</b> [latex]\\forall x\\,p(x)\\rightarrow W[/latex] [latex]\\text{---}[/latex] not valid.<br>\n- [latex]\\exists x(p(x)\\rightarrow W)\\equiv\\neg\\forall x\\,p(x)\\vee W\\equiv\\forall x\\,p(x)\\rightarrow W[/latex] [latex]\\text{---}[/latex] valid.<br><br>\n<b>Answer: Option 3</b><br><br><a href=\"https://gateoverflow.in/333192/gate2020-cs-39#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Propositional Logic",
+   "tag2_url": "https://practicepaper.in/gate-cse/propositional-logic",
+   "options": [
+    "[latex]\\forall x(p(x)\\vee W)\\equiv \\forall xp(x)\\vee W[/latex]",
+    "[latex]\\exists x(p(x)\\wedge W)\\equiv \\exists xp(x)\\wedge W[/latex]",
+    "[latex]\\forall x(p(x)\\rightarrow W)\\equiv \\forall xp(x)\\rightarrow W[/latex]",
+    "[latex]\\exists x(p(x)\\rightarrow W)\\equiv \\forall xp(x)\\rightarrow W[/latex]"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1120140,
+   "number": 40,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let [latex]G=(V,E)[/latex] be a directed, weighed graph with weight function [latex]w:E\\rightarrow \\mathbb{R}[/latex]. For some function [latex]f:V\\rightarrow \\mathbb{R}[/latex], for each edge [latex](u,v) \\in E[/latex], define [latex]w'(u,v)[/latex] as [latex]w(u,v)+f(u)-f(v)[/latex]. <br><br>\nWhich one of the options completes the following sentence so that it is TRUE?<br><br>\n\"The shortest paths in G under [latex]w[/latex] are shortest paths under [latex]w'[/latex] too,_________\".",
+   "solution": "For any path [latex]s=v_0\\rightarrow v_1\\rightarrow\\cdots\\rightarrow v_k=t[/latex], the f-terms cancel in pairs:<br>\n[latex]w'(\\text{path})=w(\\text{path})+f(s)-f(t)[/latex]<br><br>\nEvery s-to-t path changes by the same constant [latex]f(s)-f(t)[/latex], so the shortest one stays shortest, for <b>any</b> f. (This is the reweighting trick in Johnson's algorithm.)<br><br>\n<b>Answer: for every [latex]f:V\\rightarrow\\mathbb{R}[/latex]</b><br><br><a href=\"https://gateoverflow.in/333191/gate2020-cs-40#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Shortest Path",
+   "tag2_url": "https://practicepaper.in/gate-cse/shortest-path",
+   "options": [
+    "for every [latex]f:V\\rightarrow \\mathbb{R}[/latex]",
+    "if and only if [latex]\\forall u \\in V,f(u)[/latex] is positive",
+    "if and only if [latex]\\forall u \\in V,f(u)[/latex] is negative",
+    "if and only if f(u) is the distance from s to u in the graph obtained by adding a new vertex s to G and edges of zero weight from s to every verex of G"
+   ],
+   "correct": 0
+  }
+ ]
+}

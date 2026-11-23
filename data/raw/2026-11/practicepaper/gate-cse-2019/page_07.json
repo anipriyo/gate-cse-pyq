@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11191,
+  "quizName": "GATE CS 2019",
+  "pageTitle": "GATE CSE 2019",
+  "timeLimit": 0,
+  "pageNo": 7,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2019",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1119131,
+   "number": 31,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Which one of the following languages over [latex]\\Sigma =\\{a,b\\}[/latex] is NOT context-free?",
+   "solution": "Checking each statement:<br>- [latex]ww^R[/latex]: even palindromes [latex]\\text{---}[/latex] CFL.<br>\n- [latex]wa^nb^nw^R[/latex]: nested matching (w with [latex]w^R[/latex] outside, a's with b's inside) [latex]\\text{---}[/latex] CFL.<br>\n- [latex]\\{a^nb^i\\mid i\\in\\{n,3n,5n\\}\\}[/latex]: union of three CFLs [latex]\\text{---}[/latex] CFL.<br>\n- [latex]wa^nw^Rb^n[/latex]: the w-[latex]w^R[/latex] match and the a-b match <b>cross</b> each other, which one stack cannot handle [latex]\\text{---}[/latex] <b>not CFL</b>.<br><br>\n<b>Answer: [latex]\\{wa^nw^Rb^n\\}[/latex]</b><br><br><a href=\"https://gateoverflow.in/302817/gate2019-cs-31#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-language",
+   "options": [
+    "[latex]\\{ww^R|w \\in \\{a,b\\}^*\\}[/latex]",
+    "[latex]\\{wa^nb^nw^R|w \\in \\{a,b\\}^*,n\\geq 0\\}[/latex]",
+    "[latex]\\{wa^nw^Rb^n|w \\in \\{a,b\\}^*,n\\geq 0\\}[/latex]",
+    "[latex]\\{a^nb^i|i \\in \\{n,3n,5n\\},n\\geq 0\\}[/latex]"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1119132,
+   "number": 32,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let the set of functional dependencies [latex]F=\\{QR\\rightarrow S,R\\rightarrow P,S\\rightarrow Q\\}[/latex] hold on a relation schema X = (PQRS). X is not in BCNF. Suppose X is decomposed into two schemas Y and Z where Y = (PR) and Z = (QRS). <br>Consider the two statements given below:<br><br>\n    I. Both Y and Z are in BCNF<br>\n    II. Decomposition of X into Y and Z is dependency preserving and lossless.<br><br>\nWhich of the above statements is/are correct?",
+   "solution": "Checking each statement:<br>- Y(P, R): R [latex]\\rightarrow[/latex] P with R as key [latex]\\rightarrow[/latex] BCNF.<br>\n- Z(Q, R, S): QR [latex]\\rightarrow[/latex] S and S [latex]\\rightarrow[/latex] Q. Keys are QR and RS. In S [latex]\\rightarrow[/latex] Q, S is not a superkey [latex]\\rightarrow[/latex] Z is <b>not BCNF</b>. So I is false.<br>\n- Dependencies: R [latex]\\rightarrow[/latex] P is in Y; QR [latex]\\rightarrow[/latex] S and S [latex]\\rightarrow[/latex] Q are in Z [latex]\\rightarrow[/latex] preserved.<br>\n- Lossless: common attribute R, and R [latex]\\rightarrow[/latex] P makes R a key of Y [latex]\\rightarrow[/latex] lossless. So II is true.<br><br>\n<b>Answer: II only</b><br><br><a href=\"https://gateoverflow.in/302816/gate2019-cs-32#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Normal Form",
+   "tag2_url": "https://practicepaper.in/gate-cse/normal-form",
+   "options": [
+    "Both I and II",
+    "I only",
+    "II only",
+    "Neither I nor II"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1119133,
+   "number": 33,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Assume that in a certain computer, the virtual addresses are 64 bits long and the physical addresses are 48 bits long. The memory is word addressable. The page size is 8kB and the word size is 4 bytes. The Translation Look-aside Buffer (TLB) in the address translation path has 128 valid entries. At most how many distinct virtual addresses can be translated without any TLB miss?",
+   "solution": "Word addressable, word = 4 bytes, so one page = 8 KB / 4 B = [latex]2^{11}[/latex] words = 2048 addresses.<br><br>\n128 TLB entries cover 128 pages: [latex]128\\times2^{11}=2^{18}=256\\times2^{10}[/latex] addresses without a TLB miss.<br><br>\n<b>Answer: [latex]256\\times2^{10}[/latex]</b><br><br><a href=\"https://gateoverflow.in/302815/gate2019-cs-33#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "options": [
+    "[latex]16 \\times 2^{10}[/latex]",
+    "[latex]256 \\times 2^{10}[/latex]",
+    "[latex]4 \\times 2^{20}[/latex]",
+    "[latex]8 \\times 2^{20}[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1119134,
+   "number": 34,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following sets:<br><br>\n S1: Set of all recursively enumerable languages over the alphabet {0, 1}.<br>\n S2: Set of all syntactically valid C programs.<br>\n S3: Set of all languages over the alphabet {0, 1}.<br>\n S4: Set of all non-regular languages over the alphabet {0, 1}.\n<br><br>\nWhich of the above sets are uncountable?",
+   "solution": "Checking each statement:<br>- S1: every RE language has a TM, and TMs can be listed [latex]\\rightarrow[/latex] countable.<br>\n- S2: C programs are finite strings [latex]\\rightarrow[/latex] countable.<br>\n- S3: all languages = the power set of [latex]\\{0,1\\}^*[/latex] [latex]\\rightarrow[/latex] <b>uncountable</b>.<br>\n- S4: S3 minus the countably many regular languages is still <b>uncountable</b>.<br><br>\n<b>Answer: S3 and S4</b><br><br><a href=\"https://gateoverflow.in/302814/gate2019-cs-34#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Undecidability",
+   "tag2_url": "https://practicepaper.in/gate-cse/undecidability",
+   "options": [
+    "S1 and S2",
+    "S3 and S4",
+    "S2 and S3",
+    "S1 and S4"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1119135,
+   "number": 35,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the first order predicate formula:<br> [latex]\\forall x[\\forall z\\; z|x\\Rightarrow ((z=x)\\vee (z=1))\\Rightarrow[/latex]  [latex]\\exists w(w> x)\\wedge (\\forall z \\; z|w\\Rightarrow ((w=z)\\vee (z=1)))][/latex]<br> Here 'a|b' denotes that 'a divides b', where a and b are integers. Consider the following sets:<br><br>\n    S1: {1, 2, 3, ..., 100}<br>\n    S2: Set of all positive integers<br>\n    S3: Set of all integers<br>\nWhich of the above sets satisfy [latex]\\varphi[/latex] ?",
+   "solution": "The formula says: for every x that is <b>prime</b> (only divisors are 1 and x), there is a <b>larger prime</b> w. In other words, there is no largest prime.<br><br>\n- S1 = {1, [latex]\\ldots[/latex], 100}: 97 is prime, but no prime larger than 97 is in S1 [latex]\\rightarrow[/latex] fails.<br>\n- S2, S3: there are infinitely many primes [latex]\\rightarrow[/latex] satisfied.<br><br>\n<b>Answer: S2 and S3</b><br><br><a href=\"https://gateoverflow.in/302813/gate2019-cs-35#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Set Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/set-theory",
+   "options": [
+    "S1 and S2",
+    "S1 and S3",
+    "S2 and S3",
+    "S1,S2 and S3"
+   ],
+   "correct": 2
+  }
+ ]
+}

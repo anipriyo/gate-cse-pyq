@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11252,
+  "quizName": "GATE CSE 2025 SET-2",
+  "pageTitle": "GATE CSE 2025 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 6,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2025-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1125226,
+   "number": 26,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Suppose we are transmitting frames between two nodes using the Stop-and-Wait protocol. The frame size is 3000 bits. The transmission rate of the channel is 2000 bps (bits/second) and the propagation delay between the two nodes is 100 milliseconds. Assume that the processing times at the source and destination are negligible. Also, assume that the size of the acknowledgment packet is negligible.  \nWhich ONE of the following most accurately gives the channel utilization for the above scenario in percentage?",
+   "solution": "Transmission time [latex]T_t=\\dfrac{3000\\text{ bits}}{2000\\text{ bps}}=1.5[/latex] s. Propagation delay [latex]T_p=0.1[/latex] s (one-way).<br><br>\nIn Stop-and-Wait, the sender must wait a full round trip (plus negligible ack transmission/processing time) after sending each frame before sending the next:<br>\nUtilization [latex]=\\dfrac{T_t}{T_t+2T_p}=\\dfrac{1.5}{1.5+0.2}=\\dfrac{1.5}{1.7}\\approx0.8823=88.23\\%[/latex]<br><br>\n<b>Answer: 88.23</b><br><br><a href=\"https://gateoverflow.in/460809/gate-cse-2025-set-2-question-26#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "options": [
+    "88.23",
+    "93.75",
+    "85.44",
+    "66.67"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1125227,
+   "number": 27,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let [latex]G [/latex] be an edge-weighted undirected graph with positive edge weights. Suppose a positive constant [latex]\\alpha [/latex] is added to the weight of every edge.  <br>\nWhich ONE of the following statements is TRUE about the minimum spanning trees (MSTs) and shortest paths (SPs) in [latex]G [/latex] before and after the edge weight update?",
+   "solution": "Adding the same positive constant [latex]\\alpha[/latex] to <b>every</b> edge shifts the total weight of <i>any</i> spanning tree by exactly [latex]\\alpha\\times(n-1)[/latex] (since every spanning tree has exactly [latex]n-1[/latex] edges, the same count) &mdash; a uniform shift that doesn't change which spanning tree has the minimum total weight. So <b>every MST remains an MST</b>.<br><br>\nShortest <i>paths</i>, however, can use a <i>different number of edges</i> depending on the route &mdash; a path with fewer edges gets a smaller total addition of [latex]\\alpha[/latex] than a path with more edges, which can flip which path is actually shortest after the update. So <b>SPs need not remain SPs</b>.<br><br>\n<b>Answer: Every MST remains an MST, and SPs need not remain SPs.</b><br><br><a href=\"https://gateoverflow.in/460808/gate-cse-2025-set-2-question-27#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Shortest Path",
+   "tag2_url": "https://practicepaper.in/gate-cse/shortest-path",
+   "options": [
+    "Every MST remains an MST, and every SP remains an SP.",
+    "MSTs need not remain MSTs, and every SP remains an SP.",
+    "Every MST remains an MST, and SPs need not remain SPs.",
+    "MSTs need not remain MSTs, and SPs need not remain SPs."
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1125228,
+   "number": 28,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A meld operation on two instances of a data structure combines them into one single instance of the same data structure. Consider the following data structures:  <br><br>\nP: Unsorted doubly linked list with pointers to the head node and tail node of the list.<br>\nQ: Min-heap implemented using an array.<br>\nR: Binary Search Tree.<br><br>\nWhich ONE of the following options gives the worst-case time complexities for meld operation on instances of size [latex]n [/latex] of these data structures?",
+   "solution": "<b>P (unsorted doubly linked list with head/tail pointers):</b> meld by simply linking the tail of the first list to the head of the second, and updating the tail pointer &mdash; a constant number of pointer updates. <b>[latex]\\Theta(1)[/latex]</b>.<br><br>\n<b>Q (min-heap, array-based):</b> meld two size-[latex]n[/latex] heaps by concatenating their underlying arrays and running the standard bottom-up heap-build procedure, which is known to run in linear time. <b>[latex]\\Theta(n)[/latex]</b> (not [latex]\\Theta(n\\log n)[/latex], since build-heap itself is linear).<br><br>\n<b>R (Binary Search Tree):</b> convert each BST to a sorted list via an inorder traversal (linear time), merge the two sorted lists (linear time), then rebuild a balanced BST from the merged sorted list (linear time) &mdash; the whole meld is achievable in <b>[latex]\\Theta(n)[/latex]</b> overall.<br><br>\n<b>Answer: P: &Theta;(1), Q: &Theta;(n), R: &Theta;(n)</b><br><br><a href=\"https://gateoverflow.in/460807/gate-cse-2025-set-2-question-28#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Heap Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/heap-tree",
+   "options": [
+    "P: [latex]\\Theta(1) [/latex],  Q: [latex]\\Theta(n) [/latex],  R: [latex]\\Theta(n) [/latex]",
+    "P: [latex]\\Theta(1) [/latex],  Q: [latex]\\Theta(n \\log n) [/latex],  R: [latex]\\Theta(n) [/latex]",
+    "P: [latex]\\Theta(n) [/latex],  Q: [latex]\\Theta(n \\log n) [/latex],  R: [latex]\\Theta(n^2) [/latex]",
+    "P: [latex]\\Theta(1) [/latex],  Q: [latex]\\Theta(n) [/latex],  R: [latex]\\Theta(n \\log n) [/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1125229,
+   "number": 29,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "For a direct-mapped cache, 4 bits are used for the tag field and 12 bits are used to index into a cache block. The size of each cache block is one byte. Assume that there is no other information stored for each cache block.  <br>\nWhich ONE of the following is the CORRECT option for the sizes of the main memory and the cache memory in this system (byte addressable), respectively?",
+   "solution": "Block size [latex]=1[/latex] byte [latex]=2^0[/latex], so the offset field needs [latex]0[/latex] bits. With [latex]12[/latex]-bit index and [latex]4[/latex]-bit tag, the total address width [latex]=4+12+0=16[/latex] bits.<br><br>\nMain memory size [latex]=2^{16}=65536[/latex] bytes [latex]=64[/latex] KB.<br><br>\nCache size [latex]=[/latex] (number of lines) [latex]\\times[/latex] (block size) [latex]=2^{12}\\times1=4096[/latex] bytes [latex]=4[/latex] KB.<br><br>\n<b>Answer: 64 KB and 4 KB</b><br><br><a href=\"https://gateoverflow.in/460806/gate-cse-2025-set-2-question-29#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "options": [
+    "64 KB and 4 KB",
+    "128 KB and 16 KB",
+    "64 KB and 8 KB",
+    "128 KB and 6 KB"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1125230,
+   "number": 30,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Given a Context-Free Grammar [latex]G [/latex] as follows:<br><br>\n[latex]\nS \\to A a \\mid b A c \\mid d c \\mid b d a\n[/latex]<br>\n[latex]\nA \\to d\n[/latex]<br><br>\nWhich ONE of the following statements is TRUE?",
+   "solution": "This grammar is a classic example used to illustrate the gap between <b>SLR(1)</b> and <b>LALR(1)</b> parsing power. Building the LR(0)/canonical item sets for this grammar reveals a state where two different reduce actions ([latex]A\\to d[/latex] competing against other productions) become ambiguous <i>only</i> when using the coarser, context-blind <b>FOLLOW-set-based lookahead</b> that SLR(1) relies on &mdash; because SLR(1) uses the same global [latex]\\text{FOLLOW}(A)[/latex] set everywhere [latex]A[/latex] could be reduced, regardless of the surrounding context in each specific state, and this particular grammar has states where that global FOLLOW set is too imprecise, causing a genuine reduce-reduce conflict under SLR(1).<br><br>\nLALR(1), by contrast, computes lookahead sets <i>per LR(0) state</i> (context-specific, based on merging LR(1) item sets with identical cores), which is precise enough to correctly disambiguate this same situation without any conflict.<br><br>\n<b>Answer: G is LALR(1), but not SLR(1).</b><br><br><a href=\"https://gateoverflow.in/460805/gate-cse-2025-set-2-question-30#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Grammar",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-grammar",
+   "options": [
+    "[latex]G [/latex] is neither LALR(1) nor SLR(1)",
+    "[latex]G [/latex] is CLR(1), not LALR(1)",
+    "[latex]G [/latex] is LALR(1), not SLR(1)",
+    "[latex]G [/latex] is LALR(1), also SLR(1)"
+   ],
+   "correct": 2
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11252,
+  "quizName": "GATE CSE 2025 SET-2",
+  "pageTitle": "GATE CSE 2025 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 2,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2025-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1125206,
+   "number": 6,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following statements: \n<br><br>\n(i) Address Resolution Protocol (ARP) provides a mapping from an IP address to the corresponding hardware (link-layer) address. \n<br>\n(ii) A single TCP segment from a sender S to a receiver R cannot carry both data from S to R and acknowledgement for a segment from R to S. \n<br><br>\nWhich ONE of the following is CORRECT? ",
+   "solution": "<b>(i) ARP maps IP addresses to hardware (MAC) addresses:</b> this is exactly ARP's definition &mdash; <b>TRUE</b>.<br><br>\n<b>(ii) \"A single TCP segment cannot carry both data and an acknowledgement\":</b> this is <b>FALSE</b>. TCP is full-duplex, and a very common optimization called <b>piggybacking</b> lets a single outgoing segment simultaneously carry new data (from S to R) <i>and</i> an acknowledgement field (ACKing previously received data from R) &mdash; the TCP header always has an ACK field available regardless of whether the segment also carries data.<br><br>\n<b>Answer: (i) is TRUE and (ii) is FALSE</b><br><br><a href=\"https://gateoverflow.in/460829/gate-cse-2025-set-2-question-6#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Transport Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/transport-layer-protocol",
+   "options": [
+    "Both (i) and (ii) are TRUE",
+    "(i) is TRUE and (ii) is FALSE",
+    "(i) is FALSE and (ii) is TRUE",
+    "Both (i) and (ii) are FALSE"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1125207,
+   "number": 7,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the routing protocols given in List I and the names given in List II:\n<br><br>\n[latex]\\begin{array}{|c l|c l|}\n    \\hline\n    \\textbf{List I} & & \\textbf{List II} & \\\\ \n    \\hline\n    \\text{(i)} & \\text{Distance vector routing} & \\text{(a)} & \\text{Bellman-Ford} \\\\ \n    \\hline\n    \\text{(ii)} & \\text{Link state routing} & \\text{(b)} & \\text{Dijkstra} \\\\ \n    \\hline\n\\end{array}\n[/latex]<br><br>\nFor matching of items in List I with those in List II, which ONE of the following options is CORRECT? ",
+   "solution": "<b>Distance vector routing</b> is the practical, distributed implementation of the <b>Bellman-Ford</b> shortest-path algorithm (each router only knows next-hop distances from its neighbors, iteratively). <b>Link state routing</b> requires full topology knowledge at each router and computes shortest paths using <b>Dijkstra's</b> algorithm.<br><br>\n<b>Answer: (i)-(a) and (ii)-(b)</b><br><br><a href=\"https://gateoverflow.in/460828/gate-cse-2025-set-2-question-7#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-layer-protocol",
+   "options": [
+    "(i) - (a) and (ii) - (b)",
+    "(i) - (a) and (ii) - (a)",
+    "(i) - (b) and (ii) - (a)",
+    "(i) - (b) and (ii) - (b)"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1125208,
+   "number": 8,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "A machine receives an IPv4 datagram. The protocol field of the IPv4 header has the protocol number of a protocol X.  <br>\nWhich ONE of the following is NOT a possible candidate for X?",
+   "solution": "The IPv4 protocol field identifies which higher-layer protocol's data the datagram carries, using standard registered numbers: ICMP [latex]=1[/latex], IGMP [latex]=2[/latex], OSPF [latex]=89[/latex] &mdash; all of these run <i>directly</i> over IP and have their own dedicated protocol number.<br><br>\nRIP, however, is not carried directly over IP; it runs as an <i>application-layer</i> protocol on top of <b>UDP</b> (using UDP port [latex]520[/latex]). So an IP datagram carrying RIP traffic would have its protocol field set to UDP's number ([latex]17[/latex]), never a dedicated \"RIP\" protocol number.<br><br>\n<b>Answer: Routing Information Protocol (RIP)</b><br><br><a href=\"https://gateoverflow.in/460827/gate-cse-2025-set-2-question-8#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-layer-protocol",
+   "options": [
+    "Internet Control Message Protocol (ICMP)",
+    "Internet Group Management Protocol (IGMP)",
+    "Open Shortest Path First (OSPF)",
+    "Routing Information Protocol (RIP)"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1125209,
+   "number": 9,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following C program:\n<pre><code>\n#include &lt;stdio.h&gt;\n\nvoid stringcopy(char *, char *);\n\nint main(){\n    char a[30] = \"@#Hello World!\";\n    stringcopy(a, a + 2);\n    printf(\"%s\\n\", a);\n    return 0;\n}\n\nvoid stringcopy(char *s, char *t) {\n    while(*t)\n        *s++ = *t++;\n}\n</code></pre>\n\nWhich ONE of the following will be the output of the program?",
+   "solution": "[latex]a=\"@\\#Hello\\ World!\"[/latex] occupies indices [latex]0[/latex]-[latex]14[/latex] (`@`,`#`,`H`,`e`,`l`,`l`,`o`,` `,`W`,`o`,`r`,`l`,`d`,`!`,`\\0`). [latex]\\text{stringcopy(a, a+2)}[/latex] sets [latex]s=a[/latex] (index [latex]0[/latex]) and [latex]t=a+2[/latex] (index [latex]2[/latex]), copying forward while [latex]{*}t[/latex] is non-null (checked <i>before</i> each copy).<br><br>\nSince the loop condition is checked <i>before</i> copying, it copies indices [latex]2[/latex] through [latex]13[/latex] (`H` through `!`, [latex]12[/latex] characters) into destination indices [latex]0[/latex] through [latex]11[/latex], then stops as soon as [latex]{*}t[/latex] hits the original null at index [latex]14[/latex] &mdash; <b>without ever writing a new null terminator</b> into the destination.<br><br>\nSo after the copy: indices [latex]0[/latex]-[latex]11[/latex] hold the shifted text `Hello World!`, but indices [latex]12,13,14[/latex] still hold their <i>original, untouched</i> values: `d`, `!`, and the original `\\0`.<br><br>\n[latex]\\text{printf(\"\\%s\")}[/latex] prints from index [latex]0[/latex] until it hits the first null &mdash; which is still the original one at index [latex]14[/latex]. So it prints: `Hello World!` (indices 0-11) followed by the leftover `d` (index 12) and `!` (index 13) before finally stopping at the null.<br><br>\n<b>Answer: Hello World!d!</b><br><br><a href=\"https://gateoverflow.in/460826/gate-cse-2025-set-2-question-9#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Array and Pointer",
+   "tag2_url": "https://practicepaper.in/gate-cse/array-and-pointer",
+   "options": [
+    "@#Hello World!",
+    "Hello World!",
+    "ello World!",
+    "Hello World!d!"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1125210,
+   "number": 10,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider an unordered list of [latex]N [/latex] distinct integers.<br>\nWhat is the minimum number of element comparisons required to find an integer in the list that is NOT the largest in the list?",
+   "solution": "We just need to find <i>some</i> element guaranteed not to be the overall largest &mdash; not identify the largest itself, and not verify anything about the rest of the list.<br><br>\nCompare <i>any</i> two elements of the list against each other: whichever of the two is smaller is guaranteed to <b>not</b> be the maximum of the whole list (since the larger of this pair beats it, so it can't possibly be the overall largest). This requires only <b>one</b> comparison, and works for any list of [latex]N\\ge2[/latex] distinct integers.<br><br>\n<b>Answer: 1</b><br><br><a href=\"https://gateoverflow.in/460825/gate-cse-2025-set-2-question-10#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Link List",
+   "tag2_url": "https://practicepaper.in/gate-cse/link-list",
+   "options": [
+    "1",
+    "[latex]N - 1 [/latex]",
+    "[latex]N [/latex]",
+    "[latex]2N - 1 [/latex]"
+   ],
+   "correct": 0
+  }
+ ]
+}

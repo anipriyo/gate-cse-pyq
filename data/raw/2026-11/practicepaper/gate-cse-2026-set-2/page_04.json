@@ -1,0 +1,128 @@
+{
+ "meta": {
+  "quizId": 11262,
+  "quizName": "GATE CSE 2026 SET-2",
+  "pageTitle": "GATE CSE 2026 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 4,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2026-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1126216,
+   "number": 16,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Let [latex]R[/latex] be a binary relation on the set [latex]\\{1,2, \\ldots, 10\\}[/latex], where [latex](x, y) \\in R[/latex] if the product of [latex]x[/latex] and [latex]y[/latex] is square of an integer. Which of the following properties is/are satisfied by [latex]R[/latex]?",
+   "solution": "[latex](x,y)\\in R[/latex] iff [latex]xy[/latex] is a perfect square.<br><br>\n- <b>Reflexive:</b> [latex]x\\cdot x=x^2[/latex] is always a perfect square, so [latex](x,x)\\in R[/latex] for every [latex]x[/latex]. <b>Holds.</b><br>\n- <b>Symmetric:</b> [latex]xy=yx[/latex], so if [latex]xy[/latex] is a perfect square then so is [latex]yx[/latex] (the same number). <b>Holds.</b><br>\n- <b>Transitive:</b> Write each number as [latex]n=k^2\\cdot s[/latex] where [latex]s[/latex] is its square-free part. Then [latex]xy[/latex] is a perfect square exactly when [latex]x[/latex] and [latex]y[/latex] have the <i>same</i> square-free part. This \"same square-free part\" relation is a genuine equivalence relation, so it is transitive: if [latex]x,y[/latex] share a square-free part and [latex]y,z[/latex] share the same square-free part, then [latex]x,z[/latex] do too, making [latex]xz[/latex] a perfect square. <b>Holds.</b><br>\n- <b>Antisymmetric:</b> a counterexample: [latex]x=2,y=8[/latex] gives [latex]xy=16=4^2[/latex], so [latex](2,8)\\in R[/latex] and (by symmetry) [latex](8,2)\\in R[/latex] too, even though [latex]2\\ne8[/latex]. <b>Fails.</b><br><br>\n<b>Answer: Reflexive, Symmetric, and Transitive all hold (R is an equivalence relation); Antisymmetric does not hold.</b> <br><br> <a href=\"https://gateoverflow.in/523130/gate-cse-2026-set-2-question-16#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Relation",
+   "tag2_url": "https://practicepaper.in/gate-cse/relation",
+   "options": [
+    "Reflexive",
+    "Symmetric",
+    "Transitive",
+    "Antisymmetric"
+   ],
+   "correctSet": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1126217,
+   "number": 17,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "For a real number [latex]a[/latex], let [latex]I(a)=\\int_{-1}^{1}\\left(3 x^{2}-a x+1\\right) d x[/latex]. Which of the following statements is/are true?",
+   "solution": "[latex]I(a)=\\displaystyle\\int_{-1}^{1}(3x^2-ax+1)\\,dx[/latex]<br><br>\nThe middle term [latex]-ax[/latex] is an <b>odd</b> function of [latex]x[/latex], so its integral over the symmetric interval [latex][-1,1][/latex] is exactly [latex]0[/latex], regardless of the value of [latex]a[/latex]. Only the even part survives:<br>\n[latex]I(a)=\\displaystyle\\int_{-1}^1(3x^2+1)\\,dx=\\Big[x^3+x\\Big]_{-1}^{1}=(1+1)-(-1-1)=2-(-2)=4[/latex]<br><br>\nSo [latex]I(a)=4[/latex] for <b>every</b> real [latex]a[/latex] &mdash; the value is completely independent of [latex]a[/latex]. Since it's always [latex]4>0[/latex], there certainly exists (in fact, every) [latex]a[/latex] for which [latex]I(a)[/latex] is a positive real number; but there is no [latex]a[/latex] making it negative, and the value does not \"vary.\"<br><br>\n<b>Answer: I(a) is independent of a; and there exists a for which I(a) is positive (true for every a, since I(a)=4 always).</b> <br><br> <a href=\"https://gateoverflow.in/523129/gate-cse-2026-set-2-question-17#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "options": [
+    "The value of [latex]I(a)[/latex] is independent of the value of [latex]a[/latex]",
+    "The value of [latex]I(a)[/latex] can vary with the value of [latex]a[/latex]",
+    "There exists [latex]a \\in(-\\infty,+\\infty)[/latex] such that [latex]I(a)[/latex] is a positive real number",
+    "There exists [latex]a \\in(-\\infty,+\\infty)[/latex] such that [latex]I(a)[/latex] is a negative real number"
+   ],
+   "correctSet": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": 1126218,
+   "number": 18,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "In a system, numbers are represented using [latex]4[/latex]-bit two's complement form. Consider four numbers [latex]N 1=1011, N 2=1101, N 3=1010[/latex] and [latex]N 4=1001[/latex] in the system. Which of the following operations will result in arithmetic overflow?",
+   "solution": "Convert each 4-bit two's-complement number to its signed decimal value (invert bits and add [latex]1[/latex] if the leading bit is [latex]1[/latex]): [latex]N1{=}1011\\to-5,\\ N2{=}1101\\to-3,\\ N3{=}1010\\to-6,\\ N4{=}1001\\to-7[/latex]. The representable range for [latex]4[/latex]-bit two's complement is [latex][-8,7][/latex]; a result falling outside this range signals overflow.<br><br>\n- [latex]N1+N2=-5+(-3)=-8[/latex] &rarr; within range. <b>No overflow.</b><br>\n- [latex]N2+N3=-3+(-6)=-9[/latex] &rarr; below [latex]-8[/latex]. <b>Overflow.</b><br>\n- [latex]N3-N4=-6-(-7)=1[/latex] &rarr; within range. <b>No overflow.</b><br>\n- [latex]N1+N4=-5+(-7)=-12[/latex] &rarr; below [latex]-8[/latex]. <b>Overflow.</b><br><br>\n<b>Answer: N2+N3 and N1+N4 cause arithmetic overflow.</b> <br><br> <a href=\"https://gateoverflow.in/523128/gate-cse-1826-set-2-question-18#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "options": [
+    "[latex]N 1+N 2[/latex]",
+    "[latex]N 2+N 3[/latex]",
+    "[latex]N 3-N 4[/latex]",
+    "[latex]N 1+N 4[/latex]"
+   ],
+   "correctSet": [
+    1,
+    3
+   ]
+  },
+  {
+   "id": 1126219,
+   "number": 19,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following grammars is/are ambiguous?",
+   "solution": "Checking each grammar for ambiguity (does some string have two distinct parse trees?):<br><br>\n- [latex]S\\rightarrow aSb\\mid\\epsilon[/latex]: generates only [latex]a^nb^n[/latex], with a unique nested derivation for every string &mdash; <b>unambiguous</b>.<br>\n- [latex]E\\rightarrow E+E\\mid E*E\\mid id[/latex]: the classic textbook example of an <b>ambiguous</b> grammar &mdash; e.g. [latex]id+id*id[/latex] can be parsed with two different groupings (no precedence/associativity is encoded), giving two distinct parse trees.<br>\n- [latex]S\\rightarrow aS\\mid Sa\\mid\\epsilon[/latex]: generates strings of [latex]a[/latex]'s only, but because both left-recursion ([latex]Sa[/latex]) and right-recursion ([latex]aS[/latex]) are available, a string like \"[latex]aa[/latex]\" can be built in more than one structurally distinct way &mdash; <b>ambiguous</b>.<br>\n- [latex]S\\rightarrow aS\\mid\\epsilon[/latex]: purely right-recursive, unique derivation for every string &mdash; <b>unambiguous</b>.<br><br>\n<b>Answer: [latex]E\\rightarrow E+E|E*E|id[/latex] and [latex]S\\rightarrow aS|Sa|\\epsilon[/latex] are ambiguous.</b> <br><br> <a href=\"https://gateoverflow.in/523127/gate-cse-2026-set-2-question-19#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Parsing",
+   "tag2_url": "https://practicepaper.in/gate-cse/parsing",
+   "options": [
+    "[latex]S \\rightarrow a S b \\mid \\epsilon[/latex]",
+    "[latex]E \\rightarrow E+E|E * E| i d[/latex]",
+    "[latex]S \\rightarrow a S|S a| \\epsilon[/latex]",
+    "[latex]S \\rightarrow a S \\mid \\epsilon[/latex]"
+   ],
+   "correctSet": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1126220,
+   "number": 20,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The keys [latex]5,28,19,15,26,33,12,17,10[/latex] are inserted into a hash table using the hash function [latex]h(k)=k \\bmod 9[/latex]. The collisions are resolved by chaining. After all the keys are inserted, the length of the longest chain is ________. (answer in integer)",
+   "solution": "Compute [latex]h(k)=k\\bmod9[/latex] for each key, then group into chains:<br><br>\n[latex]\\begin{array}{c|c}k&h(k)\\\\\\hline5&5\\\\28&1\\\\19&1\\\\15&6\\\\26&8\\\\33&6\\\\12&3\\\\17&8\\\\10&1\\end{array}[/latex]<br><br>\nChains: bucket [latex]1[/latex]: [latex]28,19,10[/latex] (length [latex]3[/latex]); bucket [latex]6[/latex]: [latex]15,33[/latex] (length [latex]2[/latex]); bucket [latex]8[/latex]: [latex]26,17[/latex] (length [latex]2[/latex]); bucket [latex]3[/latex]: [latex]12[/latex] (length [latex]1[/latex]); bucket [latex]5[/latex]: [latex]5[/latex] (length [latex]1[/latex]).<br><br>\nThe longest chain has length [latex]3[/latex] (bucket [latex]1[/latex], holding [latex]28,19,10[/latex]).<br><br>\n<b>Answer: 3</b> <br><br> <a href=\"https://gateoverflow.in/523126/gate-cse-2026-set-2-question-20#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Hashing",
+   "tag2_url": "https://practicepaper.in/gate-cse/hashing",
+   "ansMin": 3,
+   "ansMax": 3
+  }
+ ]
+}

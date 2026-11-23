@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11212,
+  "quizName": "GATE CSE 2021 SET 2",
+  "pageTitle": "GATE CSE 2021 SET-2",
+  "timeLimit": 0,
+  "pageNo": 4,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2021-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1121216,
+   "number": 16,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider a complete binary tree with 7 nodes. Let A denote the set of first 3 elements obtained by performing Breadth-First Search (BFS) starting from the root. Let B denote the set of first 3 elements obtained by performing Depth-First Search (DFS) starting from the root.<br><br>\nThe value of |A-B| is _____________",
+   "solution": "Complete binary tree with 7 nodes: root, its two children L and R, and four grandchildren.<br>\n- BFS first 3: root, L, R [latex]\\rightarrow[/latex] A = {root, L, R}<br>\n- DFS first 3: root, L, L's left child [latex]\\rightarrow[/latex] B = {root, L, LL}<br><br>\nA [latex]-[/latex] B = {R} [latex]\\rightarrow[/latex] |A [latex]-[/latex] B| = 1<br><br>\n<b>Answer: 1</b><br><br><a href=\"https://gateoverflow.in/357524/gate-cse-2021-set-2-question-16#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-tree",
+   "ansMin": 1,
+   "ansMax": 1
+  },
+  {
+   "id": 1121217,
+   "number": 17,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the following deterministic finite automaton (DFA)<br><img src=\"/wp-content/uploads/GATE/CS/20212/q17.jpg\" /><br>The number of strings of length 8 accepted by the above automaton is  _________",
+   "solution": "Every path from the start reaches the final state after exactly 3 symbols (start [latex]\\rightarrow[/latex] level 1 [latex]\\rightarrow[/latex] level 2 [latex]\\rightarrow[/latex] final, on either symbol at every step), and the final state loops on 0 and 1.<br><br>\nSo every string of length [latex]\\ge3[/latex] is accepted. Strings of length 8: [latex]2^8=256[/latex].<br><br>\n<b>Answer: 256</b><br><br><a href=\"https://gateoverflow.in/357523/gate-cse-2021-set-2-question-17#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Finite Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/finite-automata",
+   "ansMin": 256,
+   "ansMax": 256
+  },
+  {
+   "id": 1121218,
+   "number": 18,
+   "type": "NAT",
+   "marks": 1,
+   "text": "If [latex]x[/latex] and [latex]y[/latex] are two decimal digits and [latex](0.1101)_2 = (0.8xy5)_{10}[/latex], the decimal value of [latex]x+y[/latex] is ___________",
+   "solution": "[latex](0.1101)_2=\\frac12+\\frac14+\\frac1{16}=0.8125[/latex]<br><br>\n0.8xy5 = 0.8125 [latex]\\rightarrow[/latex] x = 1, y = 2 [latex]\\rightarrow[/latex] x + y = 3<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/357522/gate-cse-2021-set-2-question-18#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "ansMin": 3,
+   "ansMax": 3
+  },
+  {
+   "id": 1121219,
+   "number": 19,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider a set-associative cache of size 2KB ([latex]1KB=2^{10}[/latex] bytes) with cache block size of 64 bytes. Assume that the cache is byte-addressable and a 32 -bit address is used for accessing the cache. If the width of the tag field is 22 bits, the associativity of the cache is ______",
+   "solution": "Offset = [latex]\\log_2 64=6[/latex] bits. Tag = 22 [latex]\\rightarrow[/latex] set index = 32 [latex]-[/latex] 22 [latex]-[/latex] 6 = 4 bits [latex]\\rightarrow[/latex] 16 sets.<br><br>\nLines = 2 KB / 64 B = 32. Associativity = 32 / 16 = 2.<br><br>\n<b>Answer: 2</b><br><br><a href=\"https://gateoverflow.in/357521/gate-cse-2021-set-2-question-19#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "ansMin": 2,
+   "ansMax": 2
+  },
+  {
+   "id": 1121220,
+   "number": 20,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider a computer system with DMA support. The DMA module is transferring one 8-bit character in one CPU cycle from a device to memory through cycle stealing at regular intervals. Consider a 2 MHz processor. If 0.5% processor cycles are used for DMA, the data transfer rate of the device is __________ bits per second.",
+   "solution": "Cycles used for DMA per second = 0.5% of [latex]2\\times10^6[/latex] = [latex]10^4[/latex].<br>\nEach cycle moves 8 bits [latex]\\rightarrow[/latex] [latex]10^4\\times8=80000[/latex] bits/s.<br><br>\n<b>Answer: 80000</b><br><br><a href=\"https://gateoverflow.in/357520/gate-cse-2021-set-2-question-20#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "IO Interface",
+   "tag2_url": "https://practicepaper.in/gate-cse/io-interface",
+   "ansMin": 80000,
+   "ansMax": 80000
+  }
+ ]
+}

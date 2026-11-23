@@ -1,0 +1,119 @@
+{
+ "meta": {
+  "quizId": 11241,
+  "quizName": "GATE CSE 2024 SET-1",
+  "pageTitle": "GATE CSE 2024 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 9,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124141,
+   "number": 41,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "The chromatic number of a graph is the minimum number of colours used in a proper colouring of the graph. Let [latex] G [/latex] be any graph with [latex] n [/latex] vertices and chromatic number [latex] k [/latex]. Which of the following statements is/are always TRUE?",
+   "solution": "Checking each statement:<br>- Complete subgraph of size k: FALSE. The 5-cycle [latex]C_5[/latex] has [latex]\\chi=3[/latex] but no triangle.<br>\n- Independent set of size [latex]\\ge n/k[/latex]: TRUE. The k colour classes are independent sets covering n vertices, so the largest has at least [latex]n/k[/latex] vertices.<br>\n- At least [latex]k(k-1)/2[/latex] edges: TRUE. In a minimum colouring, every pair of colour classes must have an edge between them (otherwise merge the two classes and use [latex]k-1[/latex] colours). That gives [latex]\\binom{k}{2}[/latex] edges.<br>\n- Vertex of degree [latex]\\ge k[/latex]: FALSE. [latex]K_k[/latex] has [latex]\\chi=k[/latex] but every degree is [latex]k-1[/latex].<br><br>\n<b>Answer: Options 2 and 3</b><br><br><a href=\"https://gateoverflow.in/422801/gate-cse-2024-set-1-question-41#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "options": [
+    "[latex]G[/latex] contains a complete subgraph with [latex]k[/latex] vertices",
+    "[latex]G[/latex] contains an independent set of size at least [latex]n/k[/latex]",
+    "[latex]G[/latex] contains at least [latex]k(k - 1)/2[/latex] edges",
+    "[latex]G[/latex] contains a vertex of degree at least [latex]k[/latex]"
+   ],
+   "correctSet": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1124142,
+   "number": 42,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider the operators [latex] \\diamond [/latex] and [latex] \\square [/latex] defined by [latex] a \\diamond b=a+2 b, a \\square b=a b [/latex], for positive integers. Which of the following statements is/are TRUE?",
+   "solution": "Checking each statement:<br>- [latex]\\diamond[/latex] associative? [latex](a\\diamond b)\\diamond c=a+2b+2c[/latex], [latex]a\\diamond(b\\diamond c)=a+2b+4c[/latex] [latex]\\rightarrow[/latex] NO.<br>\n- [latex]\\square[/latex] is ordinary multiplication [latex]\\rightarrow[/latex] associative, YES.<br>\n- [latex]\\diamond[/latex] over [latex]\\square[/latex]: [latex]a\\diamond(b\\square c)=a+2bc[/latex], but [latex](a\\diamond b)\\square(a\\diamond c)=(a+2b)(a+2c)[/latex]. For [latex]a=b=c=1[/latex]: 3 vs 9 [latex]\\rightarrow[/latex] NO.<br>\n- [latex]\\square[/latex] over [latex]\\diamond[/latex]: [latex]a\\square(b\\diamond c)=a(b+2c)=ab+2ac=(a\\square b)\\diamond(a\\square c)[/latex] [latex]\\rightarrow[/latex] YES.<br><br>\n<b>Answer: [latex]\\square[/latex] is associative; [latex]\\square[/latex] distributes over [latex]\\diamond[/latex]</b><br><br><a href=\"https://gateoverflow.in/422800/gate-cse-2024-set-1-question-42#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Group Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/group-theory",
+   "options": [
+    "Operator [latex] \\diamond [/latex] obeys the associative law",
+    "Operator [latex] \\square [/latex] obeys the associative law",
+    "Operator [latex] \\diamond [/latex] over the operator [latex] \\square [/latex] obeys the distributive law",
+    "Operator [latex] \\square [/latex] over the operator [latex] \\diamond [/latex] obeys the distributive law"
+   ],
+   "correctSet": [
+    1,
+    3
+   ]
+  },
+  {
+   "id": 1124143,
+   "number": 43,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider two set-associative cache memory architectures: WBC, which uses the\nwrite back policy, and WTC, which uses the write through policy. Both of them use\nthe LRU (Least Recently Used) block replacement policy. The cache memory is\nconnected to the main memory. Which of the following statements is/are TRUE?",
+   "solution": "Checking each statement:<br>- WBC read miss: the LRU victim may be dirty and then it must be written back [latex]\\text{---}[/latex] FALSE (\"never\" is wrong).<br>\n- WTC read miss: with write-through, memory is always up to date, so a victim never needs to be written back [latex]\\text{---}[/latex] TRUE.<br>\n- WBC write hit: the block becomes dirty, so the dirty bit can change from 0 to 1 [latex]\\text{---}[/latex] TRUE.<br>\n- WTC write miss: the victim block is never dirty, so it is never written back [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: Options 2 and 3</b><br><br><a href=\"https://gateoverflow.in/422799/gate-cse-2024-set-1-question-43#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "options": [
+    "A read miss in WBC never evicts a dirty block",
+    "A read miss in WTC never triggers a write back operation of a cache block to\nmain memory",
+    "A write hit in WBC can modify the value of the dirty bit of a cache block",
+    "A write miss in WTC always writes the victim cache block to main memory\nbefore loading the missed block to the cache"
+   ],
+   "correctSet": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1124144,
+   "number": 44,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a 512 GB hard disk with 32 storage surfaces. There are 4096 sectors per\ntrack and each sector holds 1024 bytes of data. The number of cylinders in the hard\ndisk is ____",
+   "solution": "Capacity = cylinders [latex]\\times[/latex] surfaces [latex]\\times[/latex] sectors per track [latex]\\times[/latex] bytes per sector.<br><br>\n[latex]512\\text{ GB}=2^{39}[/latex], 32 surfaces [latex]=2^5[/latex], 4096 sectors [latex]=2^{12}[/latex], 1024 bytes [latex]=2^{10}[/latex].<br><br>\nCylinders [latex]=\\dfrac{2^{39}}{2^5\\times2^{12}\\times2^{10}}=2^{12}=4096[/latex]<br><br>\n<b>Answer: 4096</b><br><br><a href=\"https://gateoverflow.in/422798/gate-cse-2024-set-1-question-44#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Secondary Storage",
+   "tag2_url": "https://practicepaper.in/gate-cse/secondary-storage",
+   "ansMin": 4096,
+   "ansMax": 4096
+  },
+  {
+   "id": 1124145,
+   "number": 45,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The baseline execution time of a program on a 2 GHz single core machine is\n100 nanoseconds (ns). The code corresponding to 90% of the execution time can be\nfully parallelized. The overhead for using an additional core is 10 ns when running\non a multicore system. Assume that all cores in the multicore system run their share\nof the parallelized code for an equal amount of time.<br>\nThe number of cores that minimize the execution time of the program is _______",
+   "solution": "Serial part [latex]=10\\%[/latex] of 100 ns = 10 ns, parallel part = 90 ns.<br>\nWith [latex]p[/latex] cores: [latex]T(p)=10+\\dfrac{90}{p}+10(p-1)[/latex]<br><br>\n- [latex]p=1[/latex]: 100 ns<br>\n- [latex]p=2[/latex]: [latex]10+45+10=65[/latex] ns<br>\n- [latex]p=3[/latex]: [latex]10+30+20=60[/latex] ns<br>\n- [latex]p=4[/latex]: [latex]10+22.5+30=62.5[/latex] ns<br><br>\nMinimum at [latex]p=3[/latex] (also from [latex]\\frac{90}{p}=10p[/latex] [latex]\\Rightarrow[/latex] [latex]p=3[/latex]).<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/422797/gate-cse-2024-set-1-question-45#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Pipeline Processor",
+   "tag2_url": "https://practicepaper.in/gate-cse/pipeline-processor",
+   "ansMin": 3,
+   "ansMax": 3
+  }
+ ]
+}

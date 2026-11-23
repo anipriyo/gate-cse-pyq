@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11231,
+  "quizName": "GATE CSE 2023",
+  "pageTitle": "GATE CSE 2023",
+  "timeLimit": 0,
+  "pageNo": 5,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2023",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1123121,
+   "number": 21,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The value of the definite integral [latex] \\int_{-3}^{3}  \\int_{-2}^{2}  \\int_{-1}^{1} (4x^2y-z^3)dzdydx[/latex] is _____. (Rounded off to the nearest integer)",
+   "solution": "Split the integrand:<br>\n- [latex]4x^2y[/latex]: odd in y, integrated over the symmetric range [latex][-2,2][/latex] [latex]\\rightarrow[/latex] 0<br>\n- [latex]z^3[/latex]: odd in z, integrated over [latex][-1,1][/latex] [latex]\\rightarrow[/latex] 0<br><br>\nTotal = 0<br><br>\n<b>Answer: 0</b><br><br><a href=\"https://gateoverflow.in/399290/gate-cse-2023-question-21#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "ansMin": 0,
+   "ansMax": 0
+  },
+  {
+   "id": 1123122,
+   "number": 22,
+   "type": "NAT",
+   "marks": 1,
+   "text": "A particular number is written as 132 in radix-4 representation. The same number\nin radix-5 representation is _____.",
+   "solution": "[latex](132)_4=1\\times16+3\\times4+2=30[/latex]<br><br>\nConvert 30 to base 5: [latex]30=1\\times25+1\\times5+0[/latex] [latex]\\rightarrow[/latex] [latex](110)_5[/latex]<br><br>\n<b>Answer: 110</b><br><br><a href=\"https://gateoverflow.in/399289/gate-cse-2023-question-22#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "ansMin": 110,
+   "ansMax": 110
+  },
+  {
+   "id": 1123123,
+   "number": 23,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider a 3-stage pipelined processor having a delay of 10 ns (nanoseconds),\n20 ns, and 14 ns, for the first, second, and the third stages, respectively. Assume\nthat there is no other delay and the processor does not suffer from any pipeline\nhazards. Also assume that one instruction is fetched every cycle.<br>\nThe total execution time for executing 100 instructions on this processor is _______\nns",
+   "solution": "Cycle time = slowest stage = 20 ns.<br>\nTotal cycles for n instructions on k stages = [latex]k+n-1=3+100-1=102[/latex].<br><br>\nTime [latex]=102\\times20=2040[/latex] ns<br><br>\n<b>Answer: 2040</b><br><br><a href=\"https://gateoverflow.in/399288/gate-cse-2023-question-23#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Pipeline Processor",
+   "tag2_url": "https://practicepaper.in/gate-cse/pipeline-processor",
+   "ansMin": 2040,
+   "ansMax": 2040
+  },
+  {
+   "id": 1123124,
+   "number": 24,
+   "type": "NAT",
+   "marks": 1,
+   "text": "A keyboard connected to a computer is used at a rate of 1 keystroke per second.\nThe computer system polls the keyboard every 10 ms (milli seconds) to check for\na keystroke and consumes 100 [latex] \\mu s[/latex] (micro seconds) for each poll. If it is determined\nafter polling that a key has been pressed, the system consumes an additional 200\n[latex] \\mu s[/latex] to process the keystroke. Let [latex] T_1[/latex] denote the fraction of a second spent in polling\nand processing a keystroke.<br>\nIn an alternative implementation, the system uses interrupts instead of polling.\nAn interrupt is raised for every keystroke. It takes a total of 1 ms for servicing an\ninterrupt and processing a keystroke. Let  [latex] T_2[/latex] denote the fraction of a second spent\nin servicing the interrupt and processing a keystroke.\nThe ratio [latex] \\frac{T_1}{T_2}[/latex]\nis ______ . (Rounded off to one decimal place)",
+   "solution": "<b>Polling:</b> 100 polls per second (every 10 ms) [latex]\\times[/latex] 100 [latex]\\mu[/latex]s = 10 ms, plus 200 [latex]\\mu[/latex]s for the one keystroke [latex]\\rightarrow[/latex] [latex]T_1=10.2[/latex] ms per second.<br><br>\n<b>Interrupts:</b> one keystroke per second [latex]\\times[/latex] 1 ms [latex]\\rightarrow[/latex] [latex]T_2=1[/latex] ms per second.<br><br>\n[latex]\\frac{T_1}{T_2}=\\frac{10.2}{1}=10.2[/latex]<br><br>\n<b>Answer: 10.2</b><br><br><a href=\"https://gateoverflow.in/399287/gate-cse-2023-question-24#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Interrupt",
+   "tag2_url": "https://practicepaper.in/gate-cse/interrupt",
+   "ansMin": 10.2,
+   "ansMax": 10.2
+  },
+  {
+   "id": 1123125,
+   "number": 25,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The integer value printed by the ANSI-C program given below is ______.<br><pre><code>#include &lt;stdio.h&gt;\nint funcp(){\n   static int x = 1;\n   x++;\n   return x;\n}\nint main(){\n   int x,y;\n   x = funcp();\n   y = funcp()+x;\n   printf(\"%d\\n\", (x+y));\n   return 0;\n}\n</code></pre>",
+   "solution": "static x in funcp keeps its value between calls (starts at 1).<br>\n- x = funcp() [latex]\\rightarrow[/latex] static x becomes 2 [latex]\\rightarrow[/latex] <b>x = 2</b><br>\n- y = funcp() + x [latex]\\rightarrow[/latex] static x becomes 3 [latex]\\rightarrow[/latex] <b>y = 3 + 2 = 5</b><br><br>\nx + y = 7<br><br>\n<b>Answer: 7</b><br><br><a href=\"https://gateoverflow.in/399286/gate-cse-2023-question-25#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "ansMin": 7,
+   "ansMax": 7
+  }
+ ]
+}

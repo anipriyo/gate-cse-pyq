@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11262,
+  "quizName": "GATE CSE 2026 SET-2",
+  "pageTitle": "GATE CSE 2026 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 7,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2026-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1126231,
+   "number": 31,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the canonical [latex]L R(0)[/latex] parsing of the grammar below using terminals [latex]\\{a, b, c\\}[/latex] and non-terminals [latex]\\{A, B, C, S\\}[/latex] with [latex]S[/latex] as the start symbol. <br><br>[latex] \\begin{array}{l} S \\rightarrow A C B \\\\ A \\rightarrow a A \\mid \\epsilon \\\\ C \\rightarrow c C \\mid \\epsilon \\\\ B \\rightarrow b B \\mid b \\end{array} [/latex] <br><br>Which one of the following options gives the number of shift-reduce conflicts that will occur in the [latex]L R(0)[/latex] ACTION table?",
+   "solution": "Building the LR(0) canonical collection for [latex]S\\to ACB,\\ A\\to aA|\\epsilon,\\ C\\to cC|\\epsilon,\\ B\\to bB|b[/latex], a state has a <b>shift-reduce conflict</b> whenever it contains both a complete (reduce) item and a shift item on some terminal.<br><br>\nTracing through the automaton, the following states each mix a reduce item with a shift item:<br>\n- The initial state [latex]\\{S'\\to\\cdot S,\\ S\\to\\cdot ACB,\\ A\\to\\cdot aA,\\ A\\to\\cdot\\}[/latex]: reduce [latex]A\\to\\epsilon[/latex] vs. shift on [latex]a[/latex].<br>\n- The state reached after [latex]A[/latex], [latex]\\{S\\to A\\cdot CB,\\ C\\to\\cdot cC,\\ C\\to\\cdot\\}[/latex]: reduce [latex]C\\to\\epsilon[/latex] vs. shift on [latex]c[/latex].<br>\n- The self-looping state on [latex]a[/latex], [latex]\\{A\\to a\\cdot A,\\ A\\to\\cdot aA,\\ A\\to\\cdot\\}[/latex]: reduce [latex]A\\to\\epsilon[/latex] vs. shift on [latex]a[/latex].<br>\n- The self-looping state on [latex]c[/latex], [latex]\\{C\\to c\\cdot C,\\ C\\to\\cdot cC,\\ C\\to\\cdot\\}[/latex]: reduce [latex]C\\to\\epsilon[/latex] vs. shift on [latex]c[/latex].<br>\n- The self-looping state on [latex]b[/latex] (from [latex]B\\to bB|b[/latex]), [latex]\\{B\\to b\\cdot B,\\ B\\to b\\cdot,\\ B\\to\\cdot bB,\\ B\\to\\cdot b\\}[/latex]: reduce [latex]B\\to b[/latex] vs. shift on [latex]b[/latex].<br><br>\nThat gives exactly [latex]5[/latex] conflicting states (all other states, such as the ones after fully reducing [latex]A,C,B,[/latex] or [latex]S[/latex], contain only a single complete item and no competing shift).<br><br>\n<b>Answer: 5</b> <br><br> <a href=\"https://gateoverflow.in/523115/gate-cse-2026-set-2-question-31#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Parsing",
+   "tag2_url": "https://practicepaper.in/gate-cse/parsing",
+   "options": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1126232,
+   "number": 32,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "In the context of schema normalization in relational DBMS, consider a set [latex]\\text{F}[/latex] of functional dependencies. The set of all functional dependencies implied by [latex]\\text{F}[/latex] is called the closure of [latex]\\text{F}[/latex]. To compute the closure of [latex]\\text{F}[/latex], Armstrong's Axioms can be applied. Consider [latex]X, Y[/latex], and [latex]Z[/latex] as sets of attributes over a relational schema. The three rules of Armstrong's Axioms are described as follows. <br><br>Reflexivity: If [latex]Y \\subseteq X[/latex], then [latex]X \\rightarrow Y[/latex] <br>Augmentation: If [latex]X \\rightarrow Y[/latex], then [latex]X Z \\rightarrow Y Z[/latex] for any Z <br>Transitivity: If [latex]X \\rightarrow Y[/latex] and [latex]Y \\rightarrow Z[/latex], then [latex]X \\rightarrow Z[/latex] <br><br>The additional rule of Union is defined as follows. <br><br>Union: If [latex]X \\rightarrow Y[/latex] and [latex]X \\rightarrow Z[/latex], then [latex]X \\rightarrow Y Z[/latex] <br><br>It can be proved that the additional rule of Union is also implied by the three rules of Armstrong's Axioms. Listed below are four combinations of these three rules. Which one of these combinations is both necessary and sufficient for the proof?",
+   "solution": "The standard proof of the Union rule ([latex]X\\to Y,\\,X\\to Z\\;\\Rightarrow\\;X\\to YZ[/latex]) proceeds as follows:<br><br>\n1. [latex]X\\to Y[/latex] (given). By <b>Augmentation</b> (adding [latex]X[/latex] to both sides): [latex]X\\to XY[/latex] (using [latex]XX=X[/latex]).<br>\n2. [latex]X\\to Z[/latex] (given). By <b>Augmentation</b> (adding [latex]Y[/latex] to both sides): [latex]XY\\to YZ[/latex].<br>\n3. Combining steps 1 and 2 via <b>Transitivity</b>: [latex]X\\to XY[/latex] and [latex]XY\\to YZ[/latex] gives [latex]X\\to YZ[/latex].<br><br>\nThis derivation only ever invokes <b>Augmentation</b> and <b>Transitivity</b> &mdash; Reflexivity is never needed anywhere in the chain. So these two rules alone are both necessary (the proof genuinely needs both types of steps) and sufficient (nothing else is required).<br><br>\n<b>Answer: Augmentation and Transitivity</b> <br><br> <a href=\"https://gateoverflow.in/523114/gate-cse-2026-set-2-question-32#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Normal Form",
+   "tag2_url": "https://practicepaper.in/gate-cse/normal-form",
+   "options": [
+    "Reflexivity, Augmentation, and Transitivity",
+    "Reflexivity and Augmentation",
+    "Transitivity",
+    "Augmentation and Transitivity"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1126233,
+   "number": 33,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the transmission of data bits [latex]110001011[/latex] over a link that uses Cyclic Redundancy Check (CRC) code for error detection. If the generator bit pattern is given to be [latex]1001[/latex], which one of the following options shows the remainder bit pattern appended to the data bits before transmission?",
+   "solution": "Perform binary (modulo-2) division of the data (with [latex]3[/latex] zero bits appended, since the generator [latex]1001[/latex] has degree [latex]3[/latex]) by the generator [latex]1001[/latex], where each subtraction step is simply an XOR:<br><br>\nDividend: [latex]110001011000[/latex] (original data [latex]110001011[/latex] followed by [latex]000[/latex]).<br>\nRepeatedly XOR-ing the generator [latex]1001[/latex] into the leading bits wherever the current leading bit is [latex]1[/latex], and shifting along, the division terminates with remainder [latex]100[/latex].<br><br>\nThis remainder [latex]100[/latex] is what gets appended to the original data bits to form the transmitted CRC codeword.<br><br>\n<b>Answer: 100</b> <br><br> <a href=\"https://gateoverflow.in/523113/gate-cse-2026-set-2-question-33#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "options": [
+    "011",
+    "101",
+    "000",
+    "100"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1126234,
+   "number": 34,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a processor that has [latex]16[/latex] general purpose registers and it uses [latex]2[/latex]-byte instruction format for all its instructions. Variable-sized opcodes are permitted. There are three different types of instructions; M-type, R-type, and C-type. Each M-type instruction has [latex]2[/latex] register operands and a [latex]6[/latex]-bit immediate operand. Each Rtype instruction has [latex]3[/latex] register operands. Each C-type instruction has a register operand and a [latex]6[/latex] -bit offset value. If there are [latex]2[/latex] unique M-type opcodes and [latex]7[/latex] unique R-type opcodes, which one of the following options gives the maximum number of unique opcodes possible for C-type instructions?",
+   "solution": "With [latex]16[/latex] general-purpose registers, each register operand needs [latex]\\log_2 16=4[/latex] bits. The full instruction is [latex]2[/latex] bytes [latex]=16[/latex] bits.<br><br>\n- <b>M-type:</b> [latex]2[/latex] register operands ([latex]8[/latex] bits) [latex]+[/latex] [latex]6[/latex]-bit immediate [latex]=14[/latex] bits of operand, leaving [latex]16-14=2[/latex] bits for the opcode &rarr; up to [latex]2^2=4[/latex] possible M-type codes, but only [latex]2[/latex] are actually used, leaving [latex]4-2=2[/latex] unused [latex]2[/latex]-bit prefixes free for other instruction types.<br>\n- <b>R-type:</b> [latex]3[/latex] register operands ([latex]12[/latex] bits), leaving [latex]16-12=4[/latex] bits for the opcode. Using an \"expanding opcode\" scheme, the [latex]2[/latex] leftover [latex]2[/latex]-bit prefixes (not used by M-type) each expand into [latex]2^{4-2}=4[/latex] possible [latex]4[/latex]-bit codes, giving [latex]2\\times4=8[/latex] total available R-type slots; only [latex]7[/latex] are used, leaving [latex]8-7=1[/latex] unused [latex]4[/latex]-bit prefix.<br>\n- <b>C-type:</b> [latex]1[/latex] register operand ([latex]4[/latex] bits) [latex]+[/latex] [latex]6[/latex]-bit offset [latex]=10[/latex] bits, leaving [latex]16-10=6[/latex] bits for the opcode. That single unused [latex]4[/latex]-bit prefix expands into [latex]2^{6-4}=4[/latex] possible [latex]6[/latex]-bit C-type codes.<br><br>\n<b>Answer: 4</b> <br><br> <a href=\"https://gateoverflow.in/523112/gate-cse-2026-set-2-question-34#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Machine Instruction",
+   "tag2_url": "https://practicepaper.in/gate-cse/machine-instruction",
+   "options": [
+    "8",
+    "4",
+    "64",
+    "16"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1126235,
+   "number": 35,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the control flow graph given below.  <br><img src=\"/wp-content/uploads/GATE/CS/20262/q35.webp\"/><br>Which one of the following options is the set of live variables at the exit point of each basic block?",
+   "solution": "This is a standard backward liveness-analysis question based on the accompanying control-flow graph. Liveness is computed backward through the CFG using [latex]\\text{live-in}(B)=\\text{use}(B)\\cup\\big(\\text{live-out}(B)-\\text{def}(B)\\big)[/latex] and [latex]\\text{live-out}(B)=\\bigcup_{\\text{succ }S}\\text{live-in}(S)[/latex], iterating until the sets stabilize.<br><br>\nWorking from the exit block backward (where no variables are live at the very end), and propagating each block's used-but-not-yet-redefined variables up to its predecessors, the live-out sets that satisfy this fixpoint for the given graph are: [latex]B1:\\{a,b,c,e,f\\}[/latex], [latex]B2:\\{d,e\\}[/latex], [latex]B3:\\{b,c,e,f\\}[/latex], and [latex]B4:\\phi[/latex] (empty, since it's the exit).<br><br>\n<b>Answer: B1:{a,b,c,e,f}, B2:{d,e}, B3:{b,c,e,f}, B4:&phi;</b> <br><br> <a href=\"https://gateoverflow.in/523111/gate-cse-2026-set-2-question-35#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Runtime Environment",
+   "tag2_url": "https://practicepaper.in/gate-cse/runtime-environment",
+   "options": [
+    "[latex]{B} 1:\\{{a}, {b}, {c}, {e}, {f}\\}, {B} 2:\\{{d}, {e}\\}, {B} 3:\\{{b}, {c}, {e}, {f}\\}, {B} 4: \\phi[/latex]",
+    "[latex]{B} 1[/latex]: [latex]\\phi[/latex], [latex]{B} 2[/latex]: [latex]\\{[/latex] d, e [latex]\\}[/latex], [latex]{B} 3[/latex]: [latex]\\{[/latex] a, c, f [latex]\\}[/latex], [latex]{B} 4[/latex]: [latex]\\phi[/latex]",
+    "[latex]{B} 1:\\{{a}, {b}, {c}, {e}, {f}\\}, {B} 2:\\{{d}, {e}\\}, {B} 3:\\{{c}, {e}, {f}\\}, {B} 4: \\phi[/latex]",
+    "[latex]{B} 1: \\varnothing, {B} 2:\\{{d}, {e}, {f}\\}, {B} 3:\\{{a}, {b}, {c}, {e}, {f}\\}, {B} 4: \\phi[/latex]"
+   ],
+   "correct": 0
+  }
+ ]
+}

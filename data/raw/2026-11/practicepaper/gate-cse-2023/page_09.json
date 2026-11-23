@@ -1,0 +1,135 @@
+{
+ "meta": {
+  "quizId": 11231,
+  "quizName": "GATE CSE 2023",
+  "pageTitle": "GATE CSE 2023",
+  "timeLimit": 0,
+  "pageNo": 9,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2023",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1123141,
+   "number": 41,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Let [latex]X[/latex] be a set and [latex]2^X[/latex] denote the powerset of [latex]X[/latex].<br>\nDefine a binary operation [latex] \\Delta [/latex] on [latex]2^X[/latex] as follows:<br>[latex]A  \\Delta B=(A-B) \\cup (B-A)[/latex] <br>Let [latex] H=(2^X,\\Delta ) [/latex]. Which of the following statements about [latex]H[/latex] is/are correct?",
+   "solution": "Check the group properties of symmetric difference on [latex]2^X[/latex]:<br>\n- Closed: [latex]A\\Delta B\\subseteq X[/latex]<br>\n- Associative: yes (it behaves like XOR on membership)<br>\n- Identity: [latex]\\phi[/latex], since [latex]A\\Delta\\phi=A[/latex]<br>\n- Inverse: [latex]A\\Delta A=\\phi[/latex], so every A is <b>its own inverse</b> (not its complement: [latex]A\\Delta A^c=X[/latex])<br><br>\n<b>Answer: H is a group; the inverse of A is A</b><br><br><a href=\"https://gateoverflow.in/399270/gate-cse-2023-question-41#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Set Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/set-theory",
+   "options": [
+    "[latex]H[/latex] is a group.",
+    "Every element in [latex]H[/latex] has an inverse, but [latex]H[/latex] is NOT a group.",
+    "For every [latex]A \\in 2^X[/latex], the inverse of [latex]A[/latex] is the complement of [latex]A[/latex].",
+    "For every [latex]A \\in 2^X[/latex], the inverse of [latex]A[/latex] is [latex]A[/latex]."
+   ],
+   "correctSet": [
+    0,
+    3
+   ]
+  },
+  {
+   "id": 1123142,
+   "number": 42,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Suppose in a web browser, you click on the www.gate-2023.in URL. The browser\ncache is empty. The IP address for this URL is not cached in your local host, so\na DNS lookup is triggered (by the local DNS server deployed on your local host)\nover the 3-tier DNS hierarchy in an iterative mode. No resource records are cached\nanywhere across all DNS servers.<br>\nLet RTT denote the round trip time between your local host and DNS servers\nin the DNS hierarchy. The round trip time between the local host and the web\nserver hosting www.gate-2023.in is also equal to RTT. The HTML file associated\nwith the URL is small enough to have negligible transmission time and negligible\nrendering time by your web browser, which references 10 equally small objects on\nthe same web server.<br>\nWhich of the following statements is/are CORRECT about the minimum elapsed\ntime between clicking on the URL and your browser fully rendering it?",
+   "solution": "DNS (iterative, 3 tiers: root, TLD, authoritative) = <b>3 RTT</b>.<br><br>\n<b>Non-persistent, 5 parallel connections:</b> base HTML = TCP setup + request = 2 RTT. The 10 objects go in 2 batches of 5, each batch 2 RTT (new connection each) = 4 RTT.<br>\nTotal = 3 + 2 + 4 = <b>9 RTT</b>.<br><br>\n<b>Persistent with pipelining:</b> TCP setup 1 RTT + HTML 1 RTT + all 10 objects pipelined in 1 RTT.<br>\nTotal = 3 + 1 + 1 + 1 = <b>6 RTT</b>.<br><br>\n<b>Answer: 9 RTTs (non-persistent, 5 parallel) and 6 RTTs (persistent with pipelining)</b><br><br><a href=\"https://gateoverflow.in/399269/gate-cse-2023-question-42#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Application Layer Protocols",
+   "tag2_url": "https://practicepaper.in/gate-cse/application-layer-protocols",
+   "options": [
+    "7 RTTs, in case of non-persistent HTTP with 5 parallel TCP connections.",
+    "5 RTTs, in case of persistent HTTP with pipelining.",
+    "9 RTTs, in case of non-persistent HTTP with 5 parallel TCP connections.",
+    "6 RTTs, in case of persistent HTTP with pipelining."
+   ],
+   "correctSet": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1123143,
+   "number": 43,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider a random experiment where two fair coins are tossed. Let A be the event\nthat denotes HEAD on both the throws, B be the event that denotes HEAD on\nthe first throw, and C be the event that denotes HEAD on the second throw.\nWhich of the following statements is/are TRUE?",
+   "solution": "[latex]P(A)=\\frac14,\\ P(B)=P(C)=\\frac12[/latex].<br><br>\n- A and B: [latex]P(A\\cap B)=P(A)=\\frac14\\ne P(A)P(B)=\\frac18[/latex] [latex]\\rightarrow[/latex] not independent (same for A and C).<br>\n- B and C: [latex]P(B\\cap C)=\\frac14=\\frac12\\cdot\\frac12[/latex] [latex]\\rightarrow[/latex] independent.<br>\n- So [latex]P(B|C)=P(B)[/latex] [latex]\\text{---}[/latex] TRUE.<br><br>\n<b>Answer: B and C are independent; Prob(B|C) = Prob(B)</b><br><br><a href=\"https://gateoverflow.in/399268/gate-cse-2023-question-43#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "options": [
+    "A and B are independent.",
+    "A and C are independent.",
+    "B and C are independent.",
+    "Prob(B|C) = Prob(B)"
+   ],
+   "correctSet": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1123144,
+   "number": 44,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider functions Function 1 and Function 2 expressed in pseudocode as\nfollows:<br><img src=\"/wp-content/uploads/GATE/CS/20231/q44.jpg\" /><br>Let [latex]f_1(n)[/latex] and [latex]f_2(n)[/latex] denote the number of times the statement [latex]\"x = x + 1\"[/latex] is\nexecuted in Function 1 and Function 2, respectively.<br>\nWhich of the following statements is/are TRUE?",
+   "solution": "Count how many times x = x + 1 runs in each function:<br>- Function 1: the inner loop runs n, then n/2, n/4, [latex]\\ldots[/latex] times: [latex]f_1(n)\\approx n+\\frac n2+\\frac n4+\\cdots\\lt2n[/latex] [latex]\\rightarrow[/latex] [latex]\\Theta(n)[/latex].<br>\n- Function 2: [latex]f_2(n)=100n[/latex] [latex]\\rightarrow[/latex] [latex]\\Theta(n)[/latex].<br><br>\nBoth are linear: [latex]f_1\\in\\Theta(f_2)[/latex] and [latex]f_1\\in O(n)[/latex]. They are not strictly smaller or larger than each other, so o and [latex]\\omega[/latex] fail.<br><br>\n<b>Answer: [latex]f_1(n)\\in\\Theta(f_2(n))[/latex] and [latex]f_1(n)\\in O(n)[/latex]</b><br><br><a href=\"https://gateoverflow.in/399267/gate-cse-2023-question-44#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Asymptotic Notation",
+   "tag2_url": "https://practicepaper.in/gate-cse/asymptotic-notation",
+   "options": [
+    "[latex] f_1(n)\\in \\Theta (f_2(n)) [/latex]",
+    "[latex] f_1(n)\\in o (f_2(n)) [/latex]",
+    "[latex] f_1(n)\\in \\omega  (f_2(n)) [/latex]",
+    "[latex] f_1(n)\\in O  (n) [/latex]"
+   ],
+   "correctSet": [
+    0,
+    3
+   ]
+  },
+  {
+   "id": 1123145,
+   "number": 45,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Let [latex]G[/latex] be a simple, finite, undirected graph with vertex set [latex] \\{v_1,...,v_n\\}[/latex]. Let [latex] \\Delta (G)[/latex]  \ndenote the maximum degree of  [latex]G[/latex] and let [latex] N=\\{1,2,...\\} [/latex]  denote the set of all possible\ncolors. Color the vertices of  [latex]G[/latex] using the following greedy strategy:\nfor [latex]i = 1,...,n[/latex]<br> [latex]color(v_i)\\leftarrow min\\{ j \\in N: \\text{  no neighbour of } v_i \\text{ is colored } j\\}[/latex]    <br>Which of the following statements is/are TRUE?",
+   "solution": "Checking each statement:<br>- Each vertex gets the smallest colour not used by any neighbour, so no edge joins equal colours [latex]\\rightarrow[/latex] proper colouring [latex]\\text{---}[/latex] TRUE.<br>\n- A vertex has at most [latex]\\Delta(G)[/latex] neighbours, so among colours [latex]1\\ldots\\Delta+1[/latex] one is always free [latex]\\rightarrow[/latex] at most [latex]\\Delta(G)+1[/latex] colours [latex]\\text{---}[/latex] TRUE.<br>\n- [latex]K_n[/latex] needs n = [latex]\\Delta+1[/latex] colours, so \"at most [latex]\\Delta(G)[/latex]\" is FALSE.<br>\n- A bad vertex order can use more colours than the chromatic number (e.g. on some bipartite graphs) [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: Options 1 and 2</b><br><br><a href=\"https://gateoverflow.in/399266/gate-cse-2023-question-45#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "options": [
+    "This procedure results in a proper vertex coloring of [latex]G[/latex].",
+    "The number of colors used is at most [latex] \\Delta (G)+1[/latex].",
+    "The number of colors used is at most[latex] \\Delta (G)[/latex].",
+    "The number of colors used is equal to the chromatic number of [latex]G[/latex]."
+   ],
+   "correctSet": [
+    0,
+    1
+   ]
+  }
+ ]
+}

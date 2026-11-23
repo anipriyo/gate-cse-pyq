@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11252,
+  "quizName": "GATE CSE 2025 SET-2",
+  "pageTitle": "GATE CSE 2025 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 3,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2025-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1125211,
+   "number": 11,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following statements about the use of backpatching in a compiler for intermediate code generation:\n<br><br>\n(I) Backpatching can be used to generate code for Boolean expression in one pass. \n<br>\n(II) Backpatching can be used to generate code for flow-of-control statements in one pass.\n<br><br>\nWhich ONE of the following options is CORRECT?",
+   "solution": "<b>(I) Backpatching for Boolean expressions in one pass:</b> TRUE &mdash; this is exactly backpatching's classic use case: jump targets for [latex]\\text{true}[/latex]/[latex]\\text{false}[/latex] lists are left unfilled initially and \"patched in\" once the actual target address becomes known later, avoiding the need for a second pass.<br><br>\n<b>(II) Backpatching for flow-of-control statements (if/while) in one pass:</b> also TRUE &mdash; the same technique is used to generate code for conditional and looping constructs single-pass, patching jump instructions once the relevant labels are determined.<br><br>\n<b>Answer: Both (I) and (II) are correct.</b><br><br><a href=\"https://gateoverflow.in/460824/gate-cse-2025-set-2-question-11#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Intermediate Code Generation",
+   "tag2_url": "https://practicepaper.in/gate-cse/intermediate-code-generation",
+   "options": [
+    "Only (I) is correct.",
+    "Only (II) is correct.",
+    "Both (I) and (II) are correct.",
+    "Neither (I) nor (II) is correct."
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1125212,
+   "number": 12,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Given the following syntax-directed translation rules:\n<br><br>\n[latex] \\text{Rule 1: } R \\rightarrow AB \\{ B.i = R.i - 1; A.i = B.i; R.i = A.i + 1; \\} [/latex]<br>\n[latex] \\text{Rule 2: } P \\rightarrow CD \\{ P.i = C.i + D.i; D.i = C.i + 2; \\} [/latex]<br>\n[latex] \\text{Rule 3: } Q \\rightarrow EF \\{ Q.i = E.i + F.i; \\} [/latex]\n<br><br>\nWhich ONE is the CORRECT option among the following?",
+   "solution": "Classify each rule by whether it uses only <b>synthesized</b> attributes (S-attributed: every attribute is computed purely from children) versus whether it's <b>L-attributed</b> (inherited attributes may only depend on the parent or strictly-left siblings, evaluated left to right):<br><br>\n<b>Rule 1</b> ([latex]R\\to AB\\{B.i=R.i-1;\\ A.i=B.i;\\ R.i=A.i+1;\\}[/latex]): [latex]A.i[/latex] is defined using [latex]B.i[/latex] &mdash; but [latex]B[/latex] is to the <i>right</i> of [latex]A[/latex] in the production, so this inherited-attribute dependency flows backward (right-to-left), violating L-attributed rules. It's also not S-attributed, since [latex]B.i[/latex] is set from [latex]R.i[/latex] (an inherited attribute from the parent). <b>Neither S-attributed nor L-attributed.</b><br><br>\n<b>Rule 2</b> ([latex]P\\to CD\\{P.i=C.i+D.i;\\ D.i=C.i+2;\\}[/latex]): [latex]D.i[/latex] (inherited) is set using only [latex]C.i[/latex], a <i>left</i> sibling &mdash; perfectly valid for L-attributed. But since [latex]D[/latex] does have an inherited attribute at all, the SDT is not purely synthesized. <b>Not S-attributed, but is L-attributed.</b><br><br>\n<b>Rule 3</b> ([latex]Q\\to EF\\{Q.i=E.i+F.i;\\}[/latex]): the only attribute defined is [latex]Q.i[/latex], computed purely from its children [latex]E,F[/latex] &mdash; purely synthesized. <b>S-attributed (and therefore also L-attributed, since S-attributed is a special case of L-attributed).</b><br><br>\n<b>Answer: Rule 1 is neither; Rule 2 is not S-attributed but is L-attributed; Rule 3 is both S-attributed and L-attributed.</b><br><br><a href=\"https://gateoverflow.in/460823/gate-cse-2025-set-2-question-12#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Syntax-directed Translation",
+   "tag2_url": "https://practicepaper.in/gate-cse/syntax-directed-translation",
+   "options": [
+    "Rule 1 is S-attributed and L-attributed;  Rule 2 is S-attributed and not L-attributed;  Rule 3 is neither S-attributed nor L-attributed.",
+    "Rule 1 is neither S-attributed nor L-attributed;  Rule 2 is S-attributed and L-attributed;  Rule 3 is S-attributed and L-attributed.",
+    "Rule 1 is neither S-attributed nor L-attributed;  Rule 2 is not S-attributed and is L-attributed;  Rule 3 is S-attributed and L-attributed.",
+    "Rule 1 is S-attributed and not L-attributed;  Rule 2 is not S-attributed and is L-attributed;  Rule 3 is S-attributed and L-attributed."
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1125213,
+   "number": 13,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider a network that uses Ethernet and IPv4. Assume that IPv4 headers do not use any options field. Each Ethernet frame can carry a maximum of 1500 bytes in its data field. A UDP segment is transmitted. The payload (data) in the UDP segment is 7488 bytes. \n<br>\nWhich ONE of the following choices has the CORRECT total number of fragments transmitted and the size of the last fragment including IPv4 header?",
+   "solution": "Ethernet frame data field max [latex]=1500[/latex] bytes; IPv4 header [latex]=20[/latex] bytes (no options), so max IP data per fragment [latex]=1500-20=1480[/latex] bytes &mdash; conveniently already a multiple of [latex]8[/latex], so no further rounding needed.<br><br>\nThe UDP segment (header [latex]8[/latex] bytes [latex]+[/latex] payload [latex]7488[/latex] bytes [latex]=7496[/latex] bytes) becomes the IP datagram's data, which must be fragmented:<br>\n[latex]7496\\div1480=5.06\\ldots[/latex], so [latex]5[/latex] full fragments of [latex]1480[/latex] bytes ([latex]7400[/latex] bytes) plus a final fragment of [latex]7496-7400=96[/latex] bytes of data.<br><br>\nTotal fragments [latex]=5+1=6[/latex]. Last fragment's total size (including its own [latex]20[/latex]-byte IP header) [latex]=96+20=116[/latex] bytes.<br><br>\n<b>Answer: 6 fragments, 116 bytes</b><br><br><a href=\"https://gateoverflow.in/460822/gate-cse-2025-set-2-question-13#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-layer-protocol",
+   "options": [
+    "5 fragments, 1488 bytes",
+    "6 fragments, 88 bytes",
+    "6 fragments, 108 bytes",
+    "6 fragments, 116 bytes"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1125214,
+   "number": 14,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which ONE of the following languages is accepted by a deterministic pushdown automaton?",
+   "solution": "A <b>deterministic</b> pushdown automaton (DPDA) accepts exactly the class of <b>deterministic context-free languages (DCFLs)</b>, which is a proper subset of all context-free languages &mdash; some CFLs (like certain languages requiring \"guessing\" where a string's midpoint is) are inherently non-deterministic and can never be accepted by any DPDA, only by a general (non-deterministic) PDA.<br><br>\nSince every <b>regular</b> language can always be recognized by a DFA (which is trivially also a valid DPDA that simply never uses its stack), every regular language is guaranteed accepted by some DPDA.<br><br>\n\"Any context-free language,\" \"any NPDA-accepted language\" (these are the same, broader class, and DPDA is a strictly weaker/smaller class), and \"any decidable language\" (a vastly larger class, including languages that aren't even context-free) are all too broad to be guaranteed DPDA-acceptable.<br><br>\n<b>Answer: Any regular language.</b><br><br><a href=\"https://gateoverflow.in/460821/gate-cse-2025-set-2-question-14#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Push-down Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/push-down-automata",
+   "options": [
+    "Any regular language.",
+    "Any context-free language.",
+    "Any language accepted by a non-deterministic pushdown automaton.",
+    "Any decidable language."
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1125215,
+   "number": 15,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let [latex]G_1, G_2 [/latex] be Context-Free Grammars (CFGs) and [latex]R [/latex] be a regular expression. For a grammar [latex]G [/latex], let [latex]L(G) [/latex] denote the language generated by [latex]G [/latex].\n<br>\nWhich ONE among the following questions is decidable?",
+   "solution": "Checking the decidability of each question about context-free grammars:<br><br>\n- <b>Is [latex]L(G_1)=L(G_2)[/latex]?</b> <b>Undecidable</b> &mdash; equivalence of two context-free grammars is a classic undecidable problem.<br>\n- <b>Is [latex]L(G_1)\\cap L(G_2)=\\emptyset[/latex]?</b> <b>Undecidable</b> &mdash; intersection-emptiness of two CFLs is undecidable (context-free languages aren't even closed under intersection in general, and this question is known to be undecidable, related to the Post Correspondence Problem).<br>\n- <b>Is [latex]L(G_1)=L(R)[/latex]?</b> (comparing a CFG's language to a regular language) <b>Undecidable</b> in general &mdash; this is essentially as hard as general CFG equivalence, since a regular language is just a special case of a context-free one.<br>\n- <b>Is [latex]L(G_1)=\\emptyset[/latex]?</b> <b>Decidable!</b> Emptiness of a single CFG's language can be checked with a simple, standard algorithm: iteratively mark which non-terminals can derive some terminal string, starting from productions with only terminals, and propagating upward &mdash; the language is empty iff the start symbol never gets marked.<br><br>\n<b>Answer: Is L(G1) = &empty;? (this is the only decidable one)</b><br><br><a href=\"https://gateoverflow.in/460820/gate-cse-2025-set-2-question-15#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-language",
+   "options": [
+    "Is [latex]L(G_1) = L(G_2) [/latex]?",
+    "Is [latex]L(G_1) \\cap L(G_2) = \\emptyset [/latex]?",
+    "Is [latex]L(G_1) = L(R) [/latex]?",
+    "Is [latex]L(G_1) = \\emptyset [/latex]?"
+   ],
+   "correct": 3
+  }
+ ]
+}

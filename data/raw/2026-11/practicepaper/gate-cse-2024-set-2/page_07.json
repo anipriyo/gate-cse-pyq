@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11242,
+  "quizName": "GATE CSE 2024 SET-2",
+  "pageTitle": "GATE CSE 2024 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 7,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124231,
+   "number": 31,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let M be the 5-state NFA with [latex]\\epsilon[/latex]-transitions shown in the diagram below:\n<br><img src=\"/wp-content/uploads/GATE/CS/20242/q31.webp\" /><br>\nWhich one of the following regular expressions represents the language accepted\nby M ?",
+   "solution": "From state 1 we move by [latex]\\epsilon[/latex] to 2 (final) or 4.<br><br>\n- Via 2: 2 and 3 swap on 0. Ending at 2 gives [latex](00)^*[/latex]. From 3 (after [latex]0(00)^*[/latex]), [latex]\\epsilon[/latex] to 5, then [latex](11)^*[/latex] [latex]\\rightarrow[/latex] [latex]0(00)^*(11)^*[/latex].<br>\n- Via 4: 1 to reach 5, then [latex](11)^*[/latex] [latex]\\rightarrow[/latex] [latex]1(11)^*[/latex].<br><br>\n[latex]L=(00)^*+0(00)^*(11)^*+1(11)^*[/latex]. Since [latex](00)^*+0(00)^*=0^*[/latex]:<br>\n[latex]L=0^*+(1+0(00)^*)(11)^*[/latex]<br><br>\n(The other options miss \"0\" or [latex]\\epsilon[/latex], or wrongly accept \"11\".)<br><br>\n<b>Answer: [latex]0^*+(1+0(00)^*)(11)^*[/latex]</b><br><br><a href=\"https://gateoverflow.in/422866/gate-cse-2024-set-2-question-31#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Regular Expression",
+   "tag2_url": "https://practicepaper.in/gate-cse/regular-expression",
+   "options": [
+    "[latex](00)^*  +  1(11)^*[/latex]",
+    "[latex]0^* + (1 + 0(00)^*)(11)^*[/latex]",
+    "[latex](00)^* + (1 + (00)^*)(11)^*[/latex]",
+    "[latex]0^+ + 1(11)^* + 0(11)^*[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1124232,
+   "number": 32,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider an array X that contains n positive integers. A subarray of X is defined to\nbe a sequence of array locations with consecutive indices.<br>\nThe C code snippet given below has been written to compute the length of the\nlongest subarray of X that contains at most two distinct integers. The code has two\nmissing expressions labelled (P) and (Q).<br><pre><code>\nint first=0, second=0, len1=0, len2=0, maxlen=0;\nfor (int i=0; i < n; i++) {\n\t if (X[i] == first) {\n\t\tlen2++; len1++;\n\t } else if (X[i] == second) {\n\t\tlen2++;\n\t\tlen1 = (P) ;\n\t\tsecond = first;\n\t } else {\n\t\tlen2 = (Q) ;\n\t\tlen1 = 1; second = first;\n\t }\n\t if (len2 > maxlen) {\n\t\tmaxlen = len2;\n\t}\n\t  first = X[i];\n}</code></pre>\nWhich one of the following options gives the CORRECT missing expressions?<br><br>\n(Hint: At the end of the i-th iteration, the value of len1 is the length of the longest\nsubarray ending with X[i] that contains all equal values, and len2 is the length\nof the longest subarray ending with X[i] that contains at most two distinct values.)",
+   "solution": "Here first = X[i[latex]-[/latex]1] (previous element) and second = the other value in the current window.<br><br>\n- <b>X[i] == second</b> (but not first): the window still has only these two values, so len2++. The run of equal values breaks and a new run starts with X[i], so len1 = <b>1</b> [latex]\\rightarrow[/latex] (P) = 1.<br>\n- <b>X[i] is a new value</b>: the new window can only keep the last run of equal values (the run of first, length len1) plus X[i], so len2 = <b>len1 + 1</b> [latex]\\rightarrow[/latex] (Q) = len1+1.<br><br>\n<b>Answer: (P) 1, (Q) len1+1</b><br><br><a href=\"https://gateoverflow.in/422865/gate-cse-2024-set-2-question-32#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Array and Pointer",
+   "tag2_url": "https://practicepaper.in/gate-cse/array-and-pointer",
+   "options": [
+    "(P)   len1+1    (Q)     len2+1",
+    "(P)   1         (Q)     len1+1",
+    "(P)   1         (Q)     len2+1",
+    "(P)   len2+1    (Q)     len1+1"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1124233,
+   "number": 33,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following expression: [latex] x[i]=(p+r) *-s[i]+u / w [/latex]. The following sequence shows the list of triples representing the given expression, with entries missing for triples (1), (3), and (6).<br>[latex]\n\\begin{array}{|c|c|c|c|}\n\\hline  (0)   & + &   p   &   r   \\\\\n\\hline  (1)   & & & \\\\\n\\hline  (2)   & uminus &   (1)   & \\\\\n\\hline  (3)   & & & \\\\\n\\hline  (4)   &   /   &   u   &   w   \\\\\n\\hline  (5)   & + &   (3)   &   (4)   \\\\\n\\hline  (6)   & & & \\\\\n\\hline  (7)   &   =   &   (6)   &   (5)   \\\\\n\\hline\n\\end{array}[/latex]\n<br>\nWhich one of the following options fills in the missing entries CORRECTLY?",
+   "solution": "[latex]x[i]=(p+r)*(-s[i])+u/w[/latex], in evaluation order:<br>\n- (0) + p r<br>\n- (1) <b>=[] s i</b> [latex]\\text{---}[/latex] fetch s[i]<br>\n- (2) uminus (1)<br>\n- (3) <b>* (0) (2)</b> [latex]\\text{---}[/latex] (p+r) * ([latex]-[/latex]s[i])<br>\n- (4) / u w<br>\n- (5) + (3) (4)<br>\n- (6) <b>[]= x i</b> [latex]\\text{---}[/latex] location x[i] for storing<br>\n- (7) = (6) (5)<br><br>\n<b>Answer: (1) =[] s i, (3) * (0) (2), (6) []= x i</b><br><br><a href=\"https://gateoverflow.in/422864/gate-cse-2024-set-2-question-33#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Intermediate Code Generation",
+   "tag2_url": "https://practicepaper.in/gate-cse/intermediate-code-generation",
+   "options": [
+    "(1) [latex]=[]  s  i [/latex] ,        (3) * (0) (2) ,        (6) [latex][] =x i [/latex]",
+    "(1) [latex][] =s i [/latex] ,        (3) - (0) (2) ,        (6) [latex] =[] x (5) [/latex]",
+    "(1) [latex] =[] s i [/latex] ,        (3) * (0) (2) ,        (6) [latex][] =x (5) [/latex]",
+    "(1) [latex] []=s i [/latex] ,        (3)-(0)(2) ,        (6) [latex] =[] x i [/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1124234,
+   "number": 34,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let [latex] x [/latex] and [latex] y [/latex] be random variables, not necessarily independent, that take real values in the interval [latex] [0,1] [/latex]. Let [latex] z=x y [/latex] and let the mean values of [latex] x, y, z [/latex] be [latex] \\bar{x}, \\bar{y}, \\bar{z} [/latex], respectively. Which one of the following statements is TRUE?",
+   "solution": "Since [latex]0\\le y\\le1[/latex], we always have [latex]z=xy\\le x[/latex]. Taking means: [latex]\\bar z\\le\\bar x[/latex] [latex]\\text{---}[/latex] always TRUE.<br><br>\nOthers depend on how x and y are related:<br>\n- [latex]y=x[/latex] uniform on [0, 1]: [latex]\\bar z=E[x^2]=\\frac13 \\gt \\frac14=\\bar x\\bar y[/latex] (so = and [latex]\\le[/latex] fail).<br>\n- [latex]y=1-x[/latex]: [latex]\\bar z=\\frac12-\\frac13=\\frac16 \\lt \\frac14[/latex] (so [latex]\\ge[/latex] fails).<br><br>\n<b>Answer: [latex]\\bar z\\le\\bar x[/latex]</b><br><br><a href=\"https://gateoverflow.in/422863/gate-cse-2024-set-2-question-34#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "[latex] \\bar{z}=\\bar{x} \\bar{y} [/latex]",
+    "[latex]  \\bar{z} \\leq \\bar{x} \\bar{y} [/latex]",
+    "[latex] \\bar{z} \\geq \\bar{x} \\bar{y} [/latex]",
+    "[latex] \\bar{z} \\leq \\bar{x} [/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1124235,
+   "number": 35,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The relation schema, Person(pid,city), describes the city of residence for\nevery person uniquely identified by pid. The following relational algebra operators\nare available: selection, projection, cross product, and rename.<br><br>\nTo find the list of cities where at least 3 persons reside, using the above operators,\nthe minimum number of cross product operations that must be used is\n",
+   "solution": "Without aggregation, \"at least 3 persons in a city\" means finding 3 <b>different</b> pids with the same city. That needs 3 copies of Person in one tuple:<br><br>\n[latex]\\pi_{P1.city}\\big(\\sigma_{cond}(P1\\times P2\\times P3)\\big)[/latex]<br>\ncond: P1.city = P2.city = P3.city and P1.pid, P2.pid, P3.pid all different.<br><br>\nJoining 3 copies needs <b>2</b> cross products; with only one cross product we can compare just 2 tuples.<br><br>\n<b>Answer: 2</b><br><br><a href=\"https://gateoverflow.in/422862/gate-cse-2024-set-2-question-35#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Relational Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/relational-algebra",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "correct": 1
+  }
+ ]
+}

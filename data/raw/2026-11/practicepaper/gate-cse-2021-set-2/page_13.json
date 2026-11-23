@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11212,
+  "quizName": "GATE CSE 2021 SET 2",
+  "pageTitle": "GATE CSE 2021 SET-2",
+  "timeLimit": 0,
+  "pageNo": 13,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2021-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1121261,
+   "number": 61,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Listening to music during exercise improves performance and reduces discomfort. Scientists researched whether listening to music while studying can help students learn better and the results were inconclusive. Students who needed external stimulation for studying fared worse while students who did not need any external stimulation benefited from music.<br><br>\nWhich one of the following statements is the CORRECT inference of the above passage?",
+   "solution": "The passage says music clearly helps physical exercise, but for studying the results were mixed: it helped some students and hurt others.<br><br>\n<b>Answer: Clear positive effect on exercise; positive effect on learning only in some students</b><br><br><a href=\"https://gateoverflow.in/357544/gate-cse-2021-set-2-ga-question-6#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "Listening to music has no effect on learning and a positive effect on physical exercise",
+    "Listening to music has a clear positive effect both in physical exercise and on learning",
+    "Listening to music has a clear positive effect on physical exercise. Music has a positive effect on learning only in some students",
+    "Listening to music has a clear positive effect on learning in all students. Music has a positive effect only in some students who exercise"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1121262,
+   "number": 62,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "<br><img src=\"/wp-content/uploads/GATE/CS/20212/q62a.jpg\" /><br>A jigsaw puzzle has 2 pieces. One of the pieces is shown above. Which one of the given options for the missing piece when assembled will form a rectangle? The piece can be moved, rotated or flipped to assemble with the above piece.<br><img src=\"/wp-content/uploads/GATE/CS/20212/q62b.jpg\" /><br>",
+   "solution": "The given piece has a straight right edge and a jagged left edge with teeth of different lengths. The missing piece, rotated to sit next to it, must have teeth that exactly fill those gaps.<br><br>\nOnly option A has the matching pattern of widths and depths, so together they form a rectangle.<br><br>\n<b>Answer: A</b><br><br><a href=\"https://gateoverflow.in/357543/gate-cse-2021-set-2-ga-question-7#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1121263,
+   "number": 63,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The number of students in three classes is in the ratio 3:13:6. If 18 students are added to each class, the ratio changes to 15:35:21.\n<br><br>\nThe total number of students in all the three classes in the beginning was:",
+   "solution": "Let the classes be 3k, 13k, 6k. After adding 18 to each:<br>\n[latex]\\frac{3k+18}{13k+18}=\\frac{15}{35}=\\frac37\\Rightarrow21k+126=39k+54\\Rightarrow k=4[/latex]<br><br>\nInitial total = 22k = 88. (Check: 30 : 70 : 42 = 15 : 35 : 21 True)<br><br>\n<b>Answer: 88</b><br><br><a href=\"https://gateoverflow.in/357542/gate-cse-2021-set-2-ga-question-8#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "22",
+    "66",
+    "88",
+    "110"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1121264,
+   "number": 64,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "<br><img src=\"/wp-content/uploads/GATE/CS/20212/q64.jpg\" /><br>The number of units of a product sold in three different years and the respective net profits are presented in the figure above. The cost/unit in Year 3 was Re. 1, which was half the cost/unit in Year 2. The cost/unit in Year 3 was one-third of the cost/unit in Year 1. Taxes were paid on the selling price at 10%, 13%, and 15% respectively for the three years. Net profit is calculated as the difference between the selling price and teh sum of cost and taxes paid in that year.<br><br>\nThe ratio of the selling price in Year 2 to the selling price in Year 3 is _________.",
+   "solution": "Cost/unit: Year 3 = 1, Year 2 = 2.<br>\nNet profit = SP [latex]-[/latex] cost [latex]-[/latex] tax on SP = SP(1 [latex]-[/latex] t) [latex]-[/latex] cost.<br>\n- Year 2: 200 units, cost 400, profit 296, tax 13%: [latex]0.87\\,SP=696\\Rightarrow SP=800[/latex]<br>\n- Year 3: 300 units, cost 300, profit 210, tax 15%: [latex]0.85\\,SP=510\\Rightarrow SP=600[/latex]<br><br>\nRatio = 800 : 600 = 4 : 3<br><br>\n<b>Answer: 4 : 3</b><br><br><a href=\"https://gateoverflow.in/357541/gate-cse-2021-set-2-ga-question-9#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "04:03",
+    "01:01",
+    "03:04",
+    "01:02"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1121265,
+   "number": 65,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Six students P, Q, R, S, T and U, with distinct heights, compare their heights and make the following observations.<br><br>\nObservation I: S is taller than R.<br>\nObservation II: Q is the shortest of all.<br>\nObservation III: U is taller than only one student.<br>\nObservation IV: T is taller than S but is not the tallest<br><br>\nThe number of students that are taller than R is the same as the number of students shorter than ____________.",
+   "solution": "From the observations: Q is shortest, U is second shortest, and T is taller than S but not tallest, so P is the tallest. R is shorter than S and above U.<br><br>\nOrder (short [latex]\\rightarrow[/latex] tall): Q, U, R, S, T, P.<br><br>\nTaller than R: S, T, P = 3. Shorter than S: R, U, Q = 3.<br><br>\n<b>Answer: S</b><br><br><a href=\"https://gateoverflow.in/357540/gate-cse-2021-set-2-ga-question-10#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "T",
+    "R",
+    "S",
+    "P"
+   ],
+   "correct": 2
+  }
+ ]
+}

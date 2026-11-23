@@ -1,0 +1,100 @@
+{
+ "meta": {
+  "quizId": 11191,
+  "quizName": "GATE CS 2019",
+  "pageTitle": "GATE CSE 2019",
+  "timeLimit": 0,
+  "pageNo": 4,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2019",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1119116,
+   "number": 16,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which of the following protocol pairs can be used to send and retrieve e-mails (in that order)?",
+   "solution": "<b>SMTP</b> is used to send (push) mail. <b>POP3</b> (or IMAP) is used to retrieve mail from the mailbox. MIME is only a format for attachments.<br><br>\n<b>Answer: SMTP, POP3</b><br><br><a href=\"https://gateoverflow.in/302832/gate2019-cs-16#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Application Layer Protocols",
+   "tag2_url": "https://practicepaper.in/gate-cse/application-layer-protocols",
+   "options": [
+    "IMAP POP3",
+    "SMTP, POP3",
+    "SMTP, MIME",
+    "IMAP, SMTP"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1119117,
+   "number": 17,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The following C program is executed on a Unix / Linux system:\n<pre><code>#include &lt unistd.h &gt\n  int main() {\n    int i;\n    for (i = 0; i < 10; i++)\n      if (i % 2 == 0) fork();\n    return 0;\n  }</pre></code>\nThe total number of child process created is __________ .",
+   "solution": "fork() is called when i is even: i = 0, 2, 4, 6, 8 [latex]\\rightarrow[/latex] 5 times, and every existing process forks each time.<br><br>\nTotal processes [latex]=2^5=32[/latex]; one is the original, so children [latex]=32-1=31[/latex].<br><br>\n<b>Answer: 31</b><br><br><a href=\"https://gateoverflow.in/302831/gate2019-cs-17#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "System Call",
+   "tag2_url": "https://practicepaper.in/gate-cse/system-call",
+   "ansMin": 31,
+   "ansMax": 31
+  },
+  {
+   "id": 1119118,
+   "number": 18,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the following C program:<pre><code> \n#include &lt;stdio.h&gt;\n  int jumble(int x, int y) {\n    x = 2 * x + y;\n    return x;\n  }\nint main() {\n  int x = 2, y = 5;\n  y = jumble(y, x);\n  x = jumble(y, x);\n  printf(\"%d\\n\", x);\n  return 0;\n}</code></pre> \nThe value printed by program is __________ .",
+   "solution": "jumble(x, y) returns 2x + y.<br>\n- y = jumble(5, 2) = 2[latex]\\times[/latex]5 + 2 = 12<br>\n- x = jumble(12, 2) = 2[latex]\\times[/latex]12 + 2 = 26<br><br>\n<b>Answer: 26</b><br><br><a href=\"https://gateoverflow.in/302830/gate2019-cs-18#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "ansMin": 26,
+   "ansMax": 26
+  },
+  {
+   "id": 1119119,
+   "number": 19,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the following given grammar:\n<pre><code> \nS -> Aa\nA -> BD\nB -> b| &epsilon;\nD -> d| &epsilon; </pre></code> Let a, b, d and $ be indexed as follows:   <br><img src=\"/wp-content/uploads/GATE/CS/20191/q19.jpg\" /><br>Compute the FOLLOW set of the non-terminal B and write the index values for the symbols in the FOLLOW set in the descending order. (For example, if the FOLLOW set is {a, b, d, $}, then the answer should be 3210). <br> Answer:_____",
+   "solution": "A [latex]\\rightarrow[/latex] BD, so B is followed by D: FOLLOW(B) gets FIRST(D) [latex]-[/latex] {[latex]\\epsilon[/latex]} = {d}.<br>\nD can be [latex]\\epsilon[/latex], so FOLLOW(B) also gets FOLLOW(A) = {a} (from S [latex]\\rightarrow[/latex] Aa).<br><br>\nFOLLOW(B) = {a, d}. Indices: a = 3, d = 1 [latex]\\rightarrow[/latex] in descending order: 31.<br><br>\n<b>Answer: 31</b><br><br><a href=\"https://gateoverflow.in/302829/gate2019-cs-19#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Parsing",
+   "tag2_url": "https://practicepaper.in/gate-cse/parsing",
+   "ansMin": 31,
+   "ansMax": 31
+  },
+  {
+   "id": 1119120,
+   "number": 20,
+   "type": "NAT",
+   "marks": 1,
+   "text": "An array of 25 distinct elements is to be sorted using quicksort. Assume that the pivot element is chosen uniformly at random. The probability that the pivot element gets placed in the worst possible location in the first round of partitioning (rounded off to 2 decimal places) is _________. ",
+   "solution": "The worst position for the pivot is either end of the array, which happens when the pivot is the smallest or the largest element: 2 out of 25 choices.<br><br>\n[latex]P=\\frac{2}{25}=0.08[/latex]<br><br>\n<b>Answer: 0.08</b><br><br><a href=\"https://gateoverflow.in/302828/gate2019-cs-20#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Sorting",
+   "tag2_url": "https://practicepaper.in/gate-cse/sorting",
+   "ansMin": 0.08,
+   "ansMax": 0.08
+  }
+ ]
+}

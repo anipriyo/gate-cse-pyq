@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11262,
+  "quizName": "GATE CSE 2026 SET-2",
+  "pageTitle": "GATE CSE 2026 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 1,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2026-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1126201,
+   "number": 1,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "For two different persons [latex]x[/latex] and [latex]y[/latex], the predicate [latex]M(x, y)[/latex] denotes that [latex]x[/latex] knows [latex]y[/latex]. <br>Consider the following statement.<br><br><i>There is a person who does not know anyone else, but that person is known by everyone else.</i> <br><br>Which one of the following expressions represents the above statement?",
+   "solution": "We need to translate: \"There is a person [latex]y[/latex] such that [latex]y[/latex] doesn't know anyone else, but everyone else knows [latex]y[/latex].\"<br><br>\n- \"There is a person [latex]y[/latex]\" &rarr; [latex](\\exists y)[/latex].<br>\n- \"for every other person [latex]x[/latex] ([latex]x\\ne y[/latex])\" &rarr; [latex](\\forall x)(x\\ne y\\rightarrow\\ldots)[/latex].<br>\n- \"[latex]x[/latex] knows [latex]y[/latex]\" (everyone else knows this person) &rarr; [latex]M(x,y)[/latex].<br>\n- \"[latex]y[/latex] does not know [latex]x[/latex]\" (this person doesn't know anyone else) &rarr; [latex]\\neg M(y,x)[/latex].<br><br>\nCombining: [latex](\\exists y)(\\forall x)\\big((x\\ne y)\\rightarrow(M(x,y)\\wedge\\neg M(y,x))\\big)[/latex] &mdash; there exists such a special person [latex]y[/latex], and for every other person [latex]x[/latex], [latex]x[/latex] knows [latex]y[/latex] but [latex]y[/latex] does not know [latex]x[/latex].<br><br>\nThe other options either use [latex]\\forall y[/latex] (wrongly requiring <i>every</i> person to have this property, instead of just one special person), or use [latex]\\exists x[/latex] (existentially quantifying [latex]x[/latex] instead of requiring it for <i>every</i> other person), which don't match the intended meaning.<br><br>\n<b>Answer: [latex](\\exists y)(\\forall x)\\left((x\\neq y)\\rightarrow(M(x,y)\\wedge\\neg M(y,x))\\right)[/latex]</b> <br><br> <a href=\"https://gateoverflow.in/523146/gate-cse-2026-set-2-question-1#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Propositional Logic",
+   "tag2_url": "https://practicepaper.in/gate-cse/propositional-logic",
+   "options": [
+    "[latex](\\exists y)(\\forall x)((x \\neq y) \\rightarrow(M(x, y) \\wedge \\neg M(y, x)))[/latex]",
+    "[latex](\\forall y)(\\exists x)((x \\neq y) \\rightarrow(M(x, y) \\wedge \\neg M(y, x)))[/latex]",
+    "[latex](\\exists y)(\\exists x)((x \\neq y) \\rightarrow(M(x, y) \\wedge \\neg M(y, x)))[/latex]",
+    "[latex](\\forall y)(\\forall x)((x \\neq y) \\rightarrow(M(x, y) \\wedge \\neg M(y, x)))[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1126202,
+   "number": 2,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The set [latex]\\mathbf{T}[/latex] represents various traversals over binary tree. The set [latex]\\mathbf{S}[/latex] represents the order of visiting nodes during a traversal. <br><br>[latex] \\begin{array}{|l|l|} \\hline \\quad\\quad\\textbf{T} & \\quad\\quad\\quad\\textbf{S} \\\\ \\hline \\text{I: Inorder} & \\text{L: left subtree, node, right subtree} \\\\ \\text{II: Preorder} & \\text{M: node, left subtree, right subtree} \\\\ \\text{III: Postorder} & \\text{N: left subtree, right subtree, node} \\\\ \\hline \\end{array} [/latex] <br><br>Which one of the following is the correct match from [latex]\\mathbf{T}[/latex] to [latex]\\mathbf{S}[/latex] ?",
+   "solution": "Recall the definitions of each traversal (in terms of the order root/current node is visited relative to its subtrees):<br><br>\n- <b>Inorder (I):</b> visit left subtree, then the node itself, then right subtree &mdash; this matches <b>L</b> (left subtree, node, right subtree).<br>\n- <b>Preorder (II):</b> visit the node itself first, then left subtree, then right subtree &mdash; this matches <b>M</b> (node, left subtree, right subtree).<br>\n- <b>Postorder (III):</b> visit left subtree, then right subtree, and the node itself last &mdash; this matches <b>N</b> (left subtree, right subtree, node).<br><br>\n<b>Answer: I-L, II-M, III-N</b> <br><br> <a href=\"https://gateoverflow.in/523145/gate-cse-2026-set-2-question-2#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-tree",
+   "options": [
+    "[latex]{I}-{L}, {II}-{M}, {III}-{N}[/latex]",
+    "[latex]{I}-{M}, {II}-{L}, {III}-{N}[/latex]",
+    "[latex]{I}-{N}, {II}-{M}, {III}-{L}[/latex]",
+    "[latex]{I}-{L}, {II}-{N}, {III}-{M}[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1126203,
+   "number": 3,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following statements is equivalent to the following assertion?<br><br>Turing machine [latex]M[/latex] decides the language [latex]L \\subseteq \\{0,1\\}^*[/latex]",
+   "solution": "A Turing machine [latex]M[/latex] \"decides\" a language [latex]L[/latex] means [latex]M[/latex] is a <b>total</b> decider for [latex]L[/latex]: it must halt on every input, and its halting outcome must correctly classify membership &mdash; accepting every string that <i>is</i> in [latex]L[/latex], and rejecting every string that is <i>not</i> in [latex]L[/latex] (i.e. every string in [latex]\\{0,1\\}^*-L[/latex]).<br><br>\nSimply halting on all inputs (without specifying correct accept/reject behavior) isn't enough by itself, and neither \"accepts all of [latex]L[/latex]\" nor \"rejects all of the complement\" alone captures the full requirement (each addresses only one direction). Only the combination of both conditions together is equivalent to \"decides [latex]L[/latex].\"<br><br>\n<b>Answer: M accepts all strings in L and rejects all strings in {0,1}*-L</b> <br><br> <a href=\"https://gateoverflow.in/523143/gate-cse-2026-set-2-question-3#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Turing Machine",
+   "tag2_url": "https://practicepaper.in/gate-cse/turing-machine",
+   "options": [
+    "Turing machine [latex]M[/latex] halts on all input strings in [latex]\\{0,1\\}^{*}[/latex]",
+    "Turing machine [latex]M[/latex] accepts all input strings in [latex]L[/latex]",
+    "Turing machine [latex]M[/latex] rejects all input strings in [latex]\\{0,1\\}^{*}-L[/latex]",
+    "Turing machine [latex]M[/latex] accepts all input strings in [latex]L[/latex] and rejects all input strings in [latex]\\{0,1\\}^{*}-L[/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1126204,
+   "number": 4,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The probability density function [latex]f(x)[/latex] of a random variable [latex]X[/latex] which takes real values is <br><br>[latex] f(x)=\\frac{1}{3 \\sqrt{2 \\pi}} \\exp \\left(-\\frac{x^{2}}{18}\\right), \\quad x \\in(-\\infty,+\\infty) [/latex]<br><br> Which one of the following statements is correct about the random variable [latex]X[/latex] ?",
+   "solution": "The given density [latex]f(x)=\\dfrac{1}{3\\sqrt{2\\pi}}\\exp\\left(-\\dfrac{x^2}{18}\\right)[/latex] has exactly the form of the Gaussian/normal density [latex]f(x)=\\dfrac{1}{\\sigma\\sqrt{2\\pi}}\\exp\\left(-\\dfrac{(x-\\mu)^2}{2\\sigma^2}\\right)[/latex] with mean [latex]\\mu=0[/latex] and, matching [latex]2\\sigma^2=18\\Rightarrow\\sigma^2=9\\Rightarrow\\sigma=3[/latex] (consistent with the [latex]\\dfrac{1}{3\\sqrt{2\\pi}}[/latex] normalizing constant).<br><br>\nThis is the defining bell-curve density of a <b>normal (Gaussian) random variable</b> with mean [latex]0[/latex] and standard deviation [latex]3[/latex] &mdash; it doesn't match the forms of an exponential, Poisson (which is discrete, not even a continuous density), or uniform distribution.<br><br>\n<b>Answer: X is a normal random variable</b> <br><br> <a href=\"https://gateoverflow.in/523142/gate-cse-2026-set-2-question-4#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "options": [
+    "[latex]X[/latex] is an exponential random variable",
+    "[latex]X[/latex] is a normal random variable",
+    "[latex]X[/latex] is a Poisson random variable",
+    "[latex]X[/latex] is a uniform random variable"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1126205,
+   "number": 5,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "In the context of DBMS, consider the two sets [latex]\\mathbf{T}[/latex] and [latex]\\mathbf{S}[/latex] given below. <br><br>[latex] \\begin{array}{|l|l|} \\hline \\quad\\quad\\quad\\textbf{T} & \\quad\\quad\\quad\\textbf{S} \\\\ \\hline \\text{I: Logical schema} & \\text{L: Views} \\\\ \\text{II: Physical schema} & \\text{M: File organization and indexes} \\\\ \\text{III: External schema} & \\text{N: Relations} \\\\ \\hline \\end{array} [/latex] <br><br>Which one of the following is the correct match from [latex]\\mathbf{T}[/latex] to [latex]\\mathbf{S}[/latex] ?",
+   "solution": "Matching each schema level in the three-tier DBMS architecture to what it describes:<br><br>\n- <b>Logical schema (I):</b> describes the overall logical structure of the database for the whole community of users &mdash; this is exactly what <b>relations (N)</b> capture.<br>\n- <b>Physical schema (II):</b> describes how data is actually stored at the lowest level &mdash; <b>file organization and indexes (M)</b>.<br>\n- <b>External schema (III):</b> describes a customized, user-specific way of seeing part of the data &mdash; exactly what <b>views (L)</b> provide.<br><br>\n<b>Answer: I-N, II-M, III-L</b> <br><br> <a href=\"https://gateoverflow.in/523141/gate-cse-2026-set-2-question-5#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "File System",
+   "tag2_url": "https://practicepaper.in/gate-cse/file-system",
+   "options": [
+    "[latex]{I}-{L}, {II}-{M}, {III}-{N}[/latex]",
+    "[latex]{I}-{M}, {II}-{L}, {III}-{N}[/latex]",
+    "[latex]{I}-{N}, {II}-{M}, {III}-{L}[/latex]",
+    "[latex]{I}-{N}, {II}-{L}, {III}-{M}[/latex]"
+   ],
+   "correct": 2
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11221,
+  "quizName": "GATE CSE 2022",
+  "pageTitle": "GATE CSE 2022",
+  "timeLimit": 0,
+  "pageNo": 10,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2022",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1122146,
+   "number": 46,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the relational database with the following four schemas and their respective instances.<br><br><img src=\"/wp-content/uploads/GATE/CS/20221/q46.jpg\" /><br>The number of rows returned by the above SQL query is ___",
+   "solution": "The query returns students for whom (D01 courses) EXCEPT (courses they registered) is empty, i.e. students registered for <b>all</b> D01 courses.<br><br>\nD01 courses = {C11, C12}.<br>\n- S01: C11, C12 True<br>\n- S02: C11 only False<br>\n- S03: C21, C22, C23 False<br>\n- S04: C11, C12 True<br>\n- S05: C11, C21 False<br><br>\n<b>Answer: 2</b><br><br><a href=\"https://gateoverflow.in/371890/Gate-cse-2022-question-46#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "SQL",
+   "tag2_url": "https://practicepaper.in/gate-cse/sql",
+   "ansMin": 2,
+   "ansMax": 2
+  },
+  {
+   "id": 1122147,
+   "number": 47,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a network with three routers P, Q, R shown in the figure below. All the links have cost of unity.<br><img src=\"/wp-content/uploads/GATE/CS/20221/q47.jpg\" /><br>The routers exchange distance vector routing information and have converged on the routing tables, after which the link Q-R fails. Assume that P and Q send out routing updates at random times, each at the same average rate. The probability of a routing loop formation (rounded off to one decimal place) between P and Q, leading to count-to-infinity problem, is ____",
+   "solution": "Before failure: Q reaches R at cost 1, P reaches R at cost 2 (via Q). After Q-R fails:<br>\n- If <b>Q sends its update first</b> (R unreachable), P learns R is unreachable [latex]\\rightarrow[/latex] no loop.<br>\n- If <b>P sends first</b>, it still advertises \"R at cost 2\". Q then sets its route to R via P (cost 3), and P routes through Q [latex]\\rightarrow[/latex] <b>routing loop</b> and count-to-infinity.<br><br>\nBoth are equally likely, so probability [latex]=0.5[/latex].<br><br>\n<b>Answer: 0.5</b><br><br><a href=\"https://gateoverflow.in/371889/Gate-cse-2022-question-47#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-layer-protocol",
+   "ansMin": 0.5,
+   "ansMax": 0.5
+  },
+  {
+   "id": 1122148,
+   "number": 48,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Let [latex]G(V, E)[/latex] be a directed graph, where [latex]V =  \\{1, 2, 3, 4, 5 \\}[/latex] is the set of vertices and\n[latex]E[/latex] is the set of directed edges, as defined by the following adjacency matrix [latex]A[/latex].<br>[latex]A[i][j]= \\left \\{ \\begin{matrix}\n1 &1 \\leq j \\leq i \\leq 5  \\\\ \n 0& otherwise\n \\end{matrix} \\right.[/latex]<br> [latex]A[i][j]=1 [/latex]indicates a directed edge from node [latex]i [/latex] to node [latex]j [/latex]. A directed spanning tree of [latex]G [/latex], rooted at [latex] r  \\in V[/latex] , is defined as a subgraph [latex]T [/latex] of [latex]G [/latex] such that the undirected\nversion of [latex]T [/latex] is a tree, and [latex]T [/latex] contains a directed path from [latex]r [/latex] to every other vertex in [latex]V [/latex]. The   number   of   such   directed   spanning   trees   rooted   at   vertex  5 is ____\n",
+   "solution": "Edge [latex]i\\rightarrow j[/latex] exists only when [latex]j\\le i[/latex], so edges go from larger to smaller vertices (self-loops are useless in a tree).<br><br>\nIn a tree rooted at 5, each other vertex k needs exactly one parent, which must be a vertex larger than k:<br>\n- vertex 4: parent 5 [latex]\\rightarrow[/latex] 1 choice<br>\n- vertex 3: 4 or 5 [latex]\\rightarrow[/latex] 2 choices<br>\n- vertex 2: 3 choices<br>\n- vertex 1: 4 choices<br><br>\nParents are always larger, so no cycle can form. Total [latex]=1\\times2\\times3\\times4=24[/latex]<br><br>\n<b>Answer: 24</b><br><br><a href=\"https://gateoverflow.in/371888/Gate-cse-2022-question-48#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Minimum Spanning Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/minimum-spanning-tree",
+   "ansMin": 24,
+   "ansMax": 24
+  },
+  {
+   "id": 1122149,
+   "number": 49,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a 100 Mbps link between an earth station (sender) and a satellite (receiver) at an altitude of 2100 km. The signal propagates at a speed of [latex]3  \\times 10^8[/latex] m/s. The time taken (in milliseconds, rounded off to two decimal places) for the receiver to completely receive a packet of 1000 bytes transmitted by the sender is",
+   "solution": "Total time = transmission time + propagation time.<br>- Transmission time [latex]=\\frac{1000\\times8}{100\\times10^6}=0.08[/latex] ms<br>\n- Propagation time [latex]=\\frac{2100\\times10^3}{3\\times10^8}=7[/latex] ms<br><br>\nTotal [latex]=0.08+7=7.08[/latex] ms<br><br>\n<b>Answer: 7.08</b><br><br><a href=\"https://gateoverflow.in/371887/Gate-cse-2022-question-49#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "ansMin": 7.07,
+   "ansMax": 7.09
+  },
+  {
+   "id": 1122150,
+   "number": 50,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the data transfer using TCP over a 1 Gbps link. Assuming that the maximum segment lifetime (MSL) is set to 60 seconds, the minimum number of bits required for the sequence number field of the TCP header, to prevent the sequence number space from wrapping around during the MSL is",
+   "solution": "TCP numbers <b>bytes</b>. Bytes sent in one MSL:<br>\n[latex]\\frac{10^9\\times60}{8}=7.5\\times10^9[/latex] bytes<br><br>\nWe need [latex]2^k\\ge7.5\\times10^9[/latex]. [latex]2^{32}\\approx4.29\\times10^9[/latex] (too small), [latex]2^{33}\\approx8.59\\times10^9[/latex] (enough).<br><br>\n<b>Answer: 33</b><br><br><a href=\"https://gateoverflow.in/371886/Gate-cse-2022-question-50#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Transport Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/transport-layer-protocol",
+   "ansMin": 33,
+   "ansMax": 33
+  }
+ ]
+}

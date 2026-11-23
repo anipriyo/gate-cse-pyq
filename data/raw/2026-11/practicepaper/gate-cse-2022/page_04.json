@@ -1,0 +1,112 @@
+{
+ "meta": {
+  "quizId": 11221,
+  "quizName": "GATE CSE 2022",
+  "pageTitle": "GATE CSE 2022",
+  "timeLimit": 0,
+  "pageNo": 4,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2022",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1122116,
+   "number": 16,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following statements is/are TRUE with respect to deadlocks?",
+   "solution": "Checking each statement:<br>- Circular wait is one of the four necessary conditions (with mutual exclusion, hold [latex]\\&[/latex] wait, no preemption) [latex]\\text{---}[/latex] TRUE.<br>\n- With multiple instances per resource, a cycle is necessary but not sufficient for deadlock [latex]\\text{---}[/latex] FALSE.<br>\n- An unsafe state only <i>may</i> lead to deadlock; processes might release resources early [latex]\\text{---}[/latex] FALSE.<br>\n- If every edge is an assignment edge, no process is waiting for anything, so there is no deadlock [latex]\\text{---}[/latex] TRUE.<br><br>\n<b>Answer: Options 1 and 4</b><br><br><a href=\"https://gateoverflow.in/371920/Gate-cse-2022-question-16#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Deadlock",
+   "tag2_url": "https://practicepaper.in/gate-cse/deadlock",
+   "options": [
+    "Circular wait is a necessary condition for the formation of deadlock.",
+    "In a system where each resource has more than one instance, a cycle in its wait-for graph indicates the presence of a deadlock.",
+    "If the current allocation of resources to processes leads the system to unsafe state, then deadlock will necessarily occur.",
+    "In the resource-allocation graph of a system, if every edge is an assignment edge, then the system is not in deadlock state."
+   ],
+   "correctSet": [
+    0,
+    3
+   ]
+  },
+  {
+   "id": 1122117,
+   "number": 17,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following statements is/are TRUE for a group [latex]G[/latex]?",
+   "solution": "Checking each statement:<br>- [latex](xy)^2=x^2y^2[/latex] means [latex]xyxy=xxyy[/latex]. Cancel x on the left and y on the right: [latex]yx=xy[/latex] [latex]\\text{---}[/latex] TRUE.<br>\n- [latex]x^2=1[/latex] means every element is its own inverse. Then [latex]xy=(xy)^{-1}=y^{-1}x^{-1}=yx[/latex] [latex]\\text{---}[/latex] TRUE.<br>\n- A group of order 2 is [latex]\\{1,a\\}[/latex], which is cyclic, hence commutative [latex]\\text{---}[/latex] TRUE.<br>\n- Every subgroup of a commutative group is commutative (same operation) [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: Options 1, 2 and 3</b><br><br><a href=\"https://gateoverflow.in/371919/Gate-cse-2022-question-17#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Group Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/group-theory",
+   "options": [
+    "If for all [latex]x,y \\in G, (xy)^2=x^2y^2[/latex], then [latex]G[/latex] is commutative.",
+    "If for all [latex]x \\in G, x^2=1[/latex], then [latex]G[/latex] is commutative. Here, 1 is the identity element of [latex]G[/latex].",
+    "If the order of [latex]G[/latex] is 2 , then [latex]G[/latex] is commutative.",
+    "If [latex]G[/latex] is commutative, then a subgroup of [latex]G[/latex] need not be commutative."
+   ],
+   "correctSet": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1122118,
+   "number": 18,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Suppose a binary search tree with 1000 distinct elements is also a complete binary tree. The tree is stored using the array representation of binary heap trees. Assuming that the array indices start with 0, the 3rd largest element of the tree is stored at index _______.",
+   "solution": "Complete tree with 1000 nodes (indices 0-999). Children of i: [latex]2i+1[/latex], [latex]2i+2[/latex].<br><br>\n- <b>Largest</b> = go right as far as possible: 0 [latex]\\rightarrow[/latex] 2 [latex]\\rightarrow[/latex] 6 [latex]\\rightarrow[/latex] 14 [latex]\\rightarrow[/latex] 30 [latex]\\rightarrow[/latex] 62 [latex]\\rightarrow[/latex] 126 [latex]\\rightarrow[/latex] 254 [latex]\\rightarrow[/latex] 510. Its children 1021, 1022 do not exist, so index 510 is the largest.<br>\n- <b>2nd largest</b> = predecessor of 510. It has no left child, so it is its parent: index 254.<br>\n- <b>3rd largest</b> = maximum of the left subtree of 254. Left child = 509; its children 1019, 1020 do not exist, so it is 509.<br><br>\n<b>Answer: 509</b><br><br><a href=\"https://gateoverflow.in/371918/Gate-cse-2022-question-18#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Search Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-search-tree",
+   "ansMin": 509,
+   "ansMax": 509
+  },
+  {
+   "id": 1122119,
+   "number": 19,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the augmented grammar with [latex] \\{+, *, (, ), id  \\}[/latex] as the set of terminals.\n<br>\n[latex] \\begin{aligned}&S' \\rightarrow S  \\\\ &S \\rightarrow S+R|R  \\\\ &R \\rightarrow R*P|P \\\\ &P \\rightarrow (S)|id \\end{aligned}[/latex]<br>If [latex]I_0[/latex] is the set of two [latex]LR(0)[/latex] items [latex] \\{ [S' \\rightarrow S.], [S \\rightarrow S.+R]  \\}[/latex], then [latex]goto(closure(I_0 ),+)[/latex] contains exactly ______ items.",
+   "solution": "Closure of [latex]I_0[/latex] adds nothing (the dot is before + and at the end, not before a non-terminal).<br><br>\ngoto on +: [latex]S\\rightarrow S+.R[/latex]. Closure (dot before R, then before P):<br>\n1. [latex]S\\rightarrow S+.R[/latex]<br>\n2. [latex]R\\rightarrow .R*P[/latex]<br>\n3. [latex]R\\rightarrow .P[/latex]<br>\n4. [latex]P\\rightarrow .(S)[/latex]<br>\n5. [latex]P\\rightarrow .id[/latex]<br><br>\n<b>Answer: 5</b><br><br><a href=\"https://gateoverflow.in/371917/Gate-cse-2022-question-19#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Parsing",
+   "tag2_url": "https://practicepaper.in/gate-cse/parsing",
+   "ansMin": 5,
+   "ansMax": 5
+  },
+  {
+   "id": 1122120,
+   "number": 20,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider a simple undirected graph of 10 vertices. If the graph is disconnected, then the maximum number of edges it can have is .",
+   "solution": "A disconnected graph has at least two components. To keep as many edges as possible, make one component [latex]K_9[/latex] and leave 1 vertex isolated.<br><br>\nEdges [latex]=\\binom{9}{2}=36[/latex] (in general [latex]\\binom{n-1}{2}[/latex]).<br><br>\n<b>Answer: 36</b><br><br><a href=\"https://gateoverflow.in/371916/Gate-cse-2022-question-20#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "ansMin": 36,
+   "ansMax": 36
+  }
+ ]
+}

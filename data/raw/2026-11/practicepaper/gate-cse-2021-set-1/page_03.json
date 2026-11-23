@@ -1,0 +1,133 @@
+{
+ "meta": {
+  "quizId": 11211,
+  "quizName": "GATE CSE 2021 SET 1",
+  "pageTitle": "GATE CSE 2021 SET-1",
+  "timeLimit": 0,
+  "pageNo": 3,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2021-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1121111,
+   "number": 11,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "In the context of operating systems, which of the following statements is/are correct with respect to paging?",
+   "solution": "Checking each statement:<br>- Any free frame can hold any page, so there is no external fragmentation [latex]\\text{---}[/latex] TRUE.<br>\n- Larger pages waste more space in the last page (internal fragmentation) [latex]\\text{---}[/latex] FALSE.<br>\n- Page tables take memory (and TLB, extra accesses) [latex]\\text{---}[/latex] TRUE.<br>\n- Multi-level paging is used to shrink page tables, not to support different page sizes [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: Options 1 and 3</b><br><br><a href=\"https://gateoverflow.in/357441/gate-cse-2021-set-1-question-11#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "options": [
+    "Paging helps solve the issue of external fragmentation",
+    "Page size has no impact on internal fragmentation",
+    "Paging incurs memory overheads",
+    "Multi-level paging is necessary to support pages of different sizes"
+   ],
+   "correctSet": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": 1121112,
+   "number": 12,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Let < M > denote an encoding of an automaton M. Suppose that [latex]\\Sigma =\\{0,1\\}[/latex]. Which of the following languages is/are NOT recursive?",
+   "solution": "Checking each statement:<br>- DFA emptiness: check whether a final state is reachable [latex]\\rightarrow[/latex] decidable.<br>\n- DFA universality: complement the DFA and check emptiness [latex]\\rightarrow[/latex] decidable.<br>\n- PDA emptiness: convert to a CFG and check whether S generates any string [latex]\\rightarrow[/latex] decidable.<br>\n- PDA universality ([latex]L=\\Sigma^*[/latex]): <b>undecidable</b> [latex]\\rightarrow[/latex] not recursive.<br><br>\n<b>Answer: PDA with [latex]L(M)=\\Sigma^*[/latex]</b><br><br><a href=\"https://gateoverflow.in/357440/gate-cse-2021-set-1-question-12#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Recursive Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/recursive-language",
+   "options": [
+    "[latex]L= \\{ \\langle M \\rangle \\mid M \\text{ is a DFA such that } L(M)=\\emptyset \\}[/latex]",
+    "[latex]L= \\{ \\langle M \\rangle \\mid M \\text{ is a DFA such that } L(M)=\\Sigma ^ * \\}[/latex]",
+    "[latex]L= \\{ \\langle M \\rangle \\mid M \\text{ is a PDA such that } L(M)=\\emptyset \\}[/latex]",
+    "[latex]L= \\{ \\langle M \\rangle \\mid M \\text{ is a PDA such that } L(M)=\\Sigma ^ * \\}[/latex]"
+   ],
+   "correctSet": [
+    3
+   ]
+  },
+  {
+   "id": 1121113,
+   "number": 13,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Suppose a database system crashes again while recovering from a previous crash. Assume checkpointing is not done by the database either during the transactions or during recovery.<br><br>\n\nWhich of the following statements is/are correct?",
+   "solution": "Without checkpoints, recovery always starts from the log. Undo and redo are <b>idempotent</b> (doing them again gives the same result), so after a second crash the same undo and redo lists are built from the log and applied again.<br><br>\nThe database can still recover and stays consistent.<br><br>\n<b>Answer: The same undo and redo list will be used while recovering again</b><br><br><a href=\"https://gateoverflow.in/357439/gate-cse-2021-set-1-question-13#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Transaction",
+   "tag2_url": "https://practicepaper.in/gate-cse/transaction",
+   "options": [
+    "The same undo and redo list will be used while recovering again ",
+    "The system cannot recover any further",
+    "All the transactions that are already undone and redone will not be recovered again ",
+    "The database will become inconsistent"
+   ],
+   "correctSet": [
+    0
+   ]
+  },
+  {
+   "id": 1121114,
+   "number": 14,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following standard C library functions will always invoke a system call when executed from a single-threaded process in a UNIX/Linux operating system?",
+   "solution": "Checking each statement:<br>- <b>exit</b>: must ask the kernel to end the process [latex]\\rightarrow[/latex] always a system call.<br>\n- <b>sleep</b>: must ask the kernel to suspend the process [latex]\\rightarrow[/latex] always a system call.<br>\n- malloc: often served from already allocated heap memory; calls brk/mmap only sometimes.<br>\n- strlen: pure user-space computation.<br><br>\n<b>Answer: exit, sleep</b><br><br><a href=\"https://gateoverflow.in/357438/gate-cse-2021-set-1-question-14#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "System Call",
+   "tag2_url": "https://practicepaper.in/gate-cse/system-call",
+   "options": [
+    "exit",
+    "malloc",
+    "sleep",
+    "strlen"
+   ],
+   "correctSet": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": 1121115,
+   "number": 15,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Consider a linear list based directory implementation in a file system. Each directory is a list of nodes, where each node contains the file name along with the file metadata, such as the list of pointers to the data blocks. Consider a given directory foo.<br><br>Which of the following operations will necessarily require a full scan of foo for successful completion?",
+   "solution": "Checking each statement:<br>- <b>Create</b>: must check that no file with that name already exists [latex]\\rightarrow[/latex] scan the whole list.<br>\n- <b>Rename</b>: must check that the new name is not already used [latex]\\rightarrow[/latex] scan the whole list.<br>\n- Delete / open an existing file: stop as soon as the file is found [latex]\\rightarrow[/latex] not necessarily a full scan.<br><br>\n<b>Answer: Creation of a new file, Renaming of an existing file</b><br><br><a href=\"https://gateoverflow.in/357437/gate-cse-2021-set-1-question-15#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "File System",
+   "tag2_url": "https://practicepaper.in/gate-cse/file-system",
+   "options": [
+    "Creation of a new file in foo",
+    "Deletion of an existing file from foo",
+    "Renaming of an existing file in foo",
+    "Opening of an existing file in foo"
+   ],
+   "correctSet": [
+    0,
+    2
+   ]
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11211,
+  "quizName": "GATE CSE 2021 SET 1",
+  "pageTitle": "GATE CSE 2021 SET-1",
+  "timeLimit": 0,
+  "pageNo": 1,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2021-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1121101,
+   "number": 1,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Suppose that [latex]L_1[/latex] is a regular language and [latex]L_2[/latex] is a context-free language. Which one of the following languages is NOT necessarily context-free?",
+   "solution": "With [latex]L_1[/latex] regular and [latex]L_2[/latex] CFL:<br>\n- [latex]L_1\\cap L_2[/latex], [latex]L_1\\cdot L_2[/latex], [latex]L_1\\cup L_2[/latex] are always CFL (closure properties).<br>\n- [latex]L_1-L_2=L_1\\cap\\overline{L_2}[/latex] needs the complement of a CFL, which need not be CFL. E.g. [latex]L_1=\\Sigma^*[/latex] gives just [latex]\\overline{L_2}[/latex].<br><br>\n<b>Answer: [latex]L_1-L_2[/latex]</b><br><br><a href=\"https://gateoverflow.in/357451/gate-cse-2021-set-1-question-1#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-language",
+   "options": [
+    "[latex]L_1\\cap L_2[/latex]",
+    "[latex]L_1\\cdot L_2[/latex]",
+    "[latex]L_1 - L_2[/latex]",
+    "[latex]L_1\\cup L_2[/latex]"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1121102,
+   "number": 2,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let P be an array containing n integers. Let t be the lowest upper bound on the number of comparisons of the array elements, required to find the minimum and maximum values in an arbitrary array of n elements. Which one of the following choices is correct?",
+   "solution": "Process elements in pairs: compare the two, then compare the smaller with the current min and the larger with the current max. That is 3 comparisons per 2 elements: about [latex]\\lceil3n/2\\rceil-2[/latex] comparisons, and this is optimal.<br><br>\nSo [latex]t \\gt n[/latex] and [latex]t\\le3\\lceil n/2\\rceil[/latex].<br><br>\n<b>Answer: [latex]t \\gt n[/latex] and [latex]t\\le3\\lceil\\frac n2\\rceil[/latex]</b><br><br><a href=\"https://gateoverflow.in/357450/gate-cse-2021-set-1-question-2#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Array",
+   "tag2_url": "https://practicepaper.in/gate-cse/array",
+   "options": [
+    "[latex]t \\gt 2n-2[/latex]\n",
+    "[latex]t \\gt 3\\lceil \\frac{n}{2}\\rceil \\text{ and } t\\leq 2n-2[/latex]",
+    "[latex]t \\gt n \\text{ and } t\\leq 3\\lceil \\frac{n}{2}\\rceil[/latex]",
+    "[latex]t \\gt \\lceil \\log_2(n)\\rceil \\text{ and } t\\leq n[/latex]"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1121103,
+   "number": 3,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following three functions.\n<br><br>\n[latex]f_1=10^n\\; f_2=n^{\\log n}\\;f_3=n^{\\sqrt {n}}[/latex]<br>\n<br>Which one of the following options arranges the functions in the increasing order of asymptotic growth rate?",
+   "solution": "Write each as a power of 2:<br>\n- [latex]f_2=n^{\\log n}=2^{(\\log n)^2}[/latex]<br>\n- [latex]f_3=n^{\\sqrt n}=2^{\\sqrt n\\log n}[/latex]<br>\n- [latex]f_1=10^n=2^{n\\log10}[/latex]<br><br>\nCompare exponents: [latex](\\log n)^2 \\lt \\sqrt n\\log n \\lt n\\log 10[/latex] for large n.<br><br>\n<b>Answer: [latex]f_2,f_3,f_1[/latex]</b><br><br><a href=\"https://gateoverflow.in/357449/gate-cse-2021-set-1-question-3#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Asymptotic Notation",
+   "tag2_url": "https://practicepaper.in/gate-cse/asymptotic-notation",
+   "options": [
+    "[latex]f_3, f_2, f_1[/latex]",
+    "[latex]f_2, f_1, f_3[/latex]",
+    "[latex]f_1, f_2, f_3[/latex]",
+    "[latex]f_2, f_3, f_1[/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1121104,
+   "number": 4,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following statements.<br>\n<br>\nS1: The sequence of procedure calls corresponds to a preorder traversal of the activation tree.\n<br>S2: The sequence of procedure returns corresponds to a postorder traversal of the activation tree.<br><br>Which one of the following options is correct?",
+   "solution": "In an activation tree a procedure is called (visited) before its children [latex]\\rightarrow[/latex] calls follow <b>preorder</b>. A procedure returns only after all its children return [latex]\\rightarrow[/latex] returns follow <b>postorder</b>.<br><br>\n<b>Answer: S1 is true and S2 is true</b><br><br><a href=\"https://gateoverflow.in/357448/gate-cse-2021-set-1-question-4#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Runtime Environment",
+   "tag2_url": "https://practicepaper.in/gate-cse/runtime-environment",
+   "options": [
+    "S1 is true and S2 is false",
+    "S1 is false and S2 is true",
+    "S1 is true and S2 is true",
+    "S1 is false and S2 is false"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1121105,
+   "number": 5,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following statements.<br><br>\n\nS1: Every SLR(1) grammar is unambiguous but there are certain unambiguous grammars that are not SLR(1).<br>\nS2: For any context-free grammar, there is a parser that takes at most [latex]O(n^3)[/latex] time to parse a string of length n.<br><br>\nWhich one of the following options is correct?",
+   "solution": "Checking each statement:<br>- S1: an SLR(1) table has no conflicts, so every SLR(1) grammar is unambiguous. Some unambiguous grammars (e.g. many LALR/LR(1) grammars) are not SLR(1) [latex]\\text{---}[/latex] TRUE.<br>\n- S2: the CYK algorithm parses any CFG (in CNF) in [latex]O(n^3)[/latex] [latex]\\text{---}[/latex] TRUE.<br><br>\n<b>Answer: S1 is true and S2 is true</b><br><br><a href=\"https://gateoverflow.in/357447/gate-cse-2021-set-1-question-5#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Parsing",
+   "tag2_url": "https://practicepaper.in/gate-cse/parsing",
+   "options": [
+    "S1 is true and S2 is false",
+    "S1 is false and S2 is true",
+    "S1 is true and S2 is true",
+    "S1 is false and S2 is false"
+   ],
+   "correct": 2
+  }
+ ]
+}

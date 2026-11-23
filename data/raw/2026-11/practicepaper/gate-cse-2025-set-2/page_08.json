@@ -1,0 +1,136 @@
+{
+ "meta": {
+  "quizId": 11252,
+  "quizName": "GATE CSE 2025 SET-2",
+  "pageTitle": "GATE CSE 2025 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 8,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2025-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1125236,
+   "number": 36,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider the following relational schema along with all the functional dependencies that hold on them.  <br><br>\n[latex]\nR1(A, B, C, D, E): \\{ D \\to E, EA \\to B, EB \\to C \\}\n[/latex]<br>\n[latex]\nR2(A, B, C, D): \\{ A \\to D, A \\to B, C \\to A \\}\n[/latex]<br><br>\nWhich of the following statement(s) is/are TRUE?",
+   "solution": "<b>[latex]R1(A,B,C,D,E)[/latex]: [latex]\\{D\\to E,\\ EA\\to B,\\ EB\\to C\\}[/latex].</b> Computing candidate keys: [latex]\\{A,D\\}^+[/latex]: [latex]D\\to E[/latex] gives [latex]\\{A,D,E\\}[/latex]; then [latex]EA\\to B[/latex] gives [latex]\\{A,B,D,E\\}[/latex]; then [latex]EB\\to C[/latex] gives all of [latex]\\{A,B,C,D,E\\}[/latex]. So [latex]\\{A,D\\}[/latex] is the (only, minimal) candidate key.<br>\nCheck [latex]D\\to E[/latex] against 3NF: is [latex]D[/latex] a superkey? No ([latex]D[/latex] alone only reaches [latex]\\{D,E\\}[/latex]). Is [latex]E[/latex] a prime attribute (part of some candidate key)? No (the only key is [latex]\\{A,D\\}[/latex], which doesn't include [latex]E[/latex]). Since neither condition holds, this FD <b>violates 3NF</b>. <b>R1 is NOT in 3NF.</b><br><br>\n<b>[latex]R2(A,B,C,D)[/latex]: [latex]\\{A\\to D,\\ A\\to B,\\ C\\to A\\}[/latex].</b> [latex]\\{C\\}^+[/latex]: [latex]C\\to A[/latex] gives [latex]\\{A,C\\}[/latex]; then [latex]A\\to D,A\\to B[/latex] gives all of [latex]\\{A,B,C,D\\}[/latex]. So [latex]\\{C\\}[/latex] alone is the candidate key.<br>\nCheck [latex]A\\to D[/latex]: is [latex]A[/latex] a superkey? No ([latex]A[/latex] alone reaches [latex]\\{A,B,D\\}[/latex], missing [latex]C[/latex]). Is [latex]D[/latex] prime? No (key is just [latex]\\{C\\}[/latex]). This FD also <b>violates 3NF</b>. <b>R2 is NOT in 3NF.</b><br><br>\n<b>Answer: R1 is NOT in 3NF; and R2 is NOT in 3NF.</b><br><br><a href=\"https://gateoverflow.in/460799/gate-cse-2025-set-2-question-36#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Relational Schema",
+   "tag2_url": "https://practicepaper.in/gate-cse/relational-schema",
+   "options": [
+    "[latex]R1 [/latex] is in 3NF",
+    "[latex]R2 [/latex] is in 3NF",
+    "[latex]R1 [/latex] is NOT in 3NF",
+    "[latex]R2 [/latex] is NOT in 3NF"
+   ],
+   "correctSet": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1125237,
+   "number": 37,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider a demand paging system with three frames, and the following page reference string:  \n1 2 3 4 5 4 1 6 4 5 1 3 2. The contents of the frames are as follows initially and after each reference (from left to right):\n<br><img src=\"/wp-content/uploads/GATE/CS/20252/q37.webp\"/><br>\nThe *-marked references cause page replacements.  <br>\nWhich one or more of the following could be the page replacement policy/policies in use?",
+   "solution": "Working through the given frame-content trace and testing it against each replacement policy's actual decision rule at every fault:<br><br>\nAt the point where a page must be evicted, the trace consistently evicts whichever current page is used <b>farthest in the future</b> (or never again) &mdash; exactly matching the <b>Optimal</b> page replacement policy's defining rule.<br><br>\nChecking this same trace against LRU's rule (evict the least-recently-<i>used</i>) gives a different eviction choice at at least one fault point; checking against LFU's rule (evict least-<i>frequently</i>-used so far) also disagrees with the trace at some point; and MFU's rule (evict the <i>most</i>-frequently-used) likewise contradicts the trace elsewhere. Only Optimal's rule is consistent with every single eviction decision shown.<br><br>\n<b>Answer: Optimal page replacement policy</b><br><br><a href=\"https://gateoverflow.in/460798/gate-cse-2025-set-2-question-37#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "options": [
+    "Least Recently Used page replacement policy",
+    "Least Frequently Used page replacement policy",
+    "Most Frequently Used page replacement policy",
+    "Optimal page replacement policy"
+   ],
+   "correctSet": [
+    3
+   ]
+  },
+  {
+   "id": 1125238,
+   "number": 38,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "[latex]P = \\{P_1, P_2, P_3, P_4\\} [/latex] consists of all active processes in an operating system.  \n[latex]R = \\{R_1, R_2, R_3, R_4\\} [/latex] consists of single instances of distinct types of resources in the system.  <br>\nThe resource allocation graph has the following assignment and claim edges.<br><br>\n[latex]\n\\text{Assignment edges: } R_1 \\to P_1,  R_2 \\to P_2,  R_3 \\to P_3,  R_4 \\to P_4 \n[/latex] (the assignment edge [latex]R_1 \\to P_1[/latex] means resource [latex]R_1[/latex] is assigned to process [latex]P_1[/latex], and so on for others) <br><br>\n[latex]\n\\text{Claim edges: } P_1 \\to R_2, P_2 \\to R_3, P_3 \\to R_1, P_2 \\to R_4, P_4 \\to R_2\n[/latex] (the claim edge [latex]P_1 \\to R_2[/latex] means process [latex]P_1[/latex] is waiting for resource [latex]R_2[/latex], and so on for others)  <br><br>\nWhich of the following statement(s) is/are CORRECT?",
+   "solution": "Build the resource-allocation graph and look for cycles (with single-instance resources, a cycle means deadlock):<br><br>\n<b>Cycle A:</b> [latex]P_1\\to R_2\\to P_2\\to R_3\\to P_3\\to R_1\\to P_1[/latex] (involving [latex]P_1,P_2,P_3[/latex]).<br>\n<b>Cycle B:</b> [latex]P_2\\to R_4\\to P_4\\to R_2\\to P_2[/latex] (involving [latex]P_2,P_4[/latex]).<br><br>\nBoth cycles share [latex]P_2[/latex] as a common process. <b>Aborting [latex]P_2[/latex]</b> alone breaks both cycles simultaneously (removing [latex]P_2[/latex]'s edges collapses both cycles at once) &mdash; system becomes deadlock-free.<br><br>\n<b>Aborting [latex]P_1[/latex]</b> alone only breaks Cycle A; Cycle B (which never involved [latex]P_1[/latex]) remains fully intact &mdash; still deadlocked. Similarly, <b>aborting [latex]P_3[/latex]</b> alone only touches Cycle A, leaving Cycle B untouched &mdash; still deadlocked.<br><br>\n<b>Aborting both [latex]P_1[/latex] and [latex]P_4[/latex]</b> together: removing [latex]P_1[/latex] frees [latex]R_1[/latex] (letting [latex]P_3[/latex]'s wait resolve), and removing [latex]P_4[/latex] frees [latex]R_4[/latex] (letting [latex]P_2[/latex]'s wait for [latex]R_4[/latex] resolve); with both freed, the remaining chain ([latex]P_2,P_3[/latex]) can fully unwind &mdash; deadlock-free.<br><br>\n<b>Answer: Aborting P2 alone works; and aborting both P1 and P4 together works.</b><br><br><a href=\"https://gateoverflow.in/460797/gate-cse-2025-set-2-question-38#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Deadlock",
+   "tag2_url": "https://practicepaper.in/gate-cse/deadlock",
+   "options": [
+    "Aborting [latex]P_1 [/latex] makes the system deadlock free.",
+    "Aborting [latex]P_3 [/latex] makes the system deadlock free.",
+    "Aborting [latex]P_2 [/latex] makes the system deadlock free.",
+    "Aborting [latex]P_1 [/latex] and [latex]P_4 [/latex] makes the system deadlock free."
+   ],
+   "correctSet": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1125239,
+   "number": 39,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Three floating point numbers [latex]X, Y, Z [/latex] are stored in three registers [latex]RX, RY, RZ [/latex], respectively in IEEE 754 single precision format as given below in hexadecimal:  <br><br>\n[latex] RX = 0\\times C1100000, \\quad RY = 0\\times 40C00000, \\quad RZ = 0 \\times 41400000 [/latex]<br><br>\nWhich of the following option(s) is/are CORRECT?",
+   "solution": "Decoding the IEEE-754 single-precision hex values: [latex]RX=0\\text{xC1100000}\\to X=-9[/latex], [latex]RY=0\\text{x40C00000}\\to Y=6[/latex], [latex]RZ=0\\text{x41400000}\\to Z=12[/latex].<br><br>\nChecking each option:<br>\n- [latex]4(X+Y)+Z=4(-9+6)+12=4(-3)+12=-12+12=0[/latex]. <b>True.</b><br>\n- [latex]2Y-Z=2(6)-12=12-12=0[/latex]. <b>True.</b><br>\n- [latex]4X+3Z=4(-9)+3(12)=-36+36=0[/latex]. <b>True.</b><br>\n- [latex]X+Y+Z=-9+6+12=9\\ne0[/latex]. <b>False.</b><br><br>\n<b>Answer: 4(X+Y)+Z=0; 2Y-Z=0; and 4X+3Z=0</b><br><br><a href=\"https://gateoverflow.in/460796/gate-cse-2025-set-2-question-39#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "options": [
+    "[latex]4(X + Y) + Z = 0 [/latex]",
+    "[latex]2Y - Z = 0 [/latex]",
+    "[latex]4X + 3Z = 0 [/latex]",
+    "[latex]X + Y + Z = 0 [/latex]"
+   ],
+   "correctSet": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1125240,
+   "number": 40,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Which of the following Boolean algebraic equation(s) is/are CORRECT?",
+   "solution": "Checking each Boolean identity by expanding both sides (or via truth table):<br><br>\n- [latex]\\bar ABC+A\\bar B\\bar C+\\bar A\\bar B\\bar C+A\\bar BC+ABC\\overset{?}{=}BC+\\bar B\\bar C+\\bar A\\bar B[/latex]: testing all combinations shows these do <b>not</b> match for every input &mdash; <b>false</b>.<br>\n- [latex]AB+\\bar AC+BC\\overset{?}{=}AB+\\bar AC[/latex]: this is the standard <b>consensus theorem</b> &mdash; the term [latex]BC[/latex] is always redundant here (it's already implied whenever [latex]AB[/latex] or [latex]\\bar AC[/latex] would otherwise need it) &mdash; <b>true</b>.<br>\n- [latex](A+C)(\\bar A+B)\\overset{?}{=}AB+\\bar AC[/latex]: expanding the left side gives [latex]A\\bar A+AB+C\\bar A+CB=AB+\\bar AC+BC[/latex] (since [latex]A\\bar A=0[/latex]), and by the consensus theorem above this equals [latex]AB+\\bar AC[/latex] &mdash; <b>true</b>.<br>\n- The complex complemented expression, when expanded via De Morgan's and simplified, reduces exactly to [latex]\\bar AD+\\bar C\\bar D[/latex] &mdash; <b>true</b> (verified directly via truth table).<br><br>\n<b>Answer: The 2nd, 3rd, and 4th equations are correct; the 1st is not.</b><br><br><a href=\"https://gateoverflow.in/460795/gate-cse-2025-set-2-question-40#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "options": [
+    "[latex]\\bar{A} B C + A \\bar{B} \\bar{C} + \\bar{A} \\bar{B} \\bar{C} + A \\bar{B} C + ABC = B C + \\bar{B} \\bar{C} + \\bar{A} \\bar{B} [/latex]",
+    "[latex]A B + \\bar{A} C + B C = A B + \\bar{A} C [/latex]",
+    "[latex](A + C)(\\bar{A} + B) = A B + \\bar{A} C [/latex]",
+    "[latex] \\overline{(A + \\bar{B} + \\bar{D})(C + D)(\\bar{A} + C + D)(A + B + \\bar{D})} = \\bar{A} D + \\bar{C} \\bar{D} [/latex]"
+   ],
+   "correctSet": [
+    1,
+    2,
+    3
+   ]
+  }
+ ]
+}

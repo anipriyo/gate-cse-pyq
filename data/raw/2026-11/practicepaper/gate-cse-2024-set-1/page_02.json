@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11241,
+  "quizName": "GATE CSE 2024 SET-1",
+  "pageTitle": "GATE CSE 2024 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 2,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124106,
+   "number": 6,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "A user starts browsing a webpage hosted at a remote server. The browser opens a\nsingle TCP connection to fetch the entire webpage from the server. The webpage\nconsists of a top-level index page with multiple embedded image objects. Assume\nthat all caches (e.g., DNS cache, browser cache) are all initially empty. The\nfollowing packets leave the user's computer in some order.<br><br>\n(i) HTTP GET request for the index page<br>\n(ii) DNS request to resolve the web server's name to its IP address<br>\n(iii) HTTP GET request for an image object<br>\n(iv) TCP SYN to open a connection to the web server<br><br>\nWhich one of the following is the CORRECT chronological order (earliest in time\nto latest) of the packets leaving the computer ?",
+   "solution": "Order in which the packets leave the computer:<br>1. <b>(ii) DNS request</b> [latex]\\text{---}[/latex] the IP address of the server is needed before anything else (caches are empty).<br>\n2. <b>(iv) TCP SYN</b> [latex]\\text{---}[/latex] open the TCP connection with the server.<br>\n3. <b>(i) GET index page</b> [latex]\\text{---}[/latex] first request on the connection.<br>\n4. <b>(iii) GET image</b> [latex]\\text{---}[/latex] the browser knows about the image only after it receives and parses the index page.<br><br>\n<b>Answer: (ii), (iv), (i), (iii)</b><br><br><a href=\"https://gateoverflow.in/422836/gate-cse-2024-set-1-question-6#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Application Layer Protocols",
+   "tag2_url": "https://practicepaper.in/gate-cse/application-layer-protocols",
+   "options": [
+    "(iv), (ii), (iii), (i)",
+    "(ii), (iv), (iii), (i)",
+    "(ii), (iv), (i), (iii)",
+    "(iv), (ii), (i), (iii)"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1124107,
+   "number": 7,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Given an integer array of size [latex]N[/latex], we want to check if the array is sorted (in either\nascending or descending order). An algorithm solves this problem by making a\nsingle pass through the array and comparing each element of the array only with its\nadjacent elements. The worst-case time complexity of this algorithm is",
+   "solution": "The algorithm compares each pair of adjacent elements once: [latex]N-1[/latex] comparisons in the worst case (when the array is actually sorted, it must check every pair before saying YES).<br><br>\nIt cannot do less: any element not examined could break the order. So the worst case is [latex]\\Theta(N)[/latex], i.e. both [latex]O(N)[/latex] and [latex]\\Omega(N)[/latex].<br><br>\n<b>Answer: both [latex]O(N)[/latex] and [latex]\\Omega(N)[/latex]</b><br><br><a href=\"https://gateoverflow.in/422835/gate-cse-2024-set-1-question-7#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Asymptotic Notation",
+   "tag2_url": "https://practicepaper.in/gate-cse/asymptotic-notation",
+   "options": [
+    "both [latex]\\mathrm{O}(N) [/latex] and [latex]\\Omega(N) [/latex]",
+    "[latex]\\mathrm{O}(N) [/latex] but not [latex]\\Omega(N) [/latex]",
+    "[latex]\\Omega(N) [/latex] but not [latex]\\mathrm{O}(N) [/latex]",
+    "neither [latex]\\mathrm{O}(N) [/latex] nor [latex]\\Omega(N) [/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1124108,
+   "number": 8,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following C program:<pre><code>\n#include &lt;stdio.h&gt;\nint main(){\nint a = 6;\nint b = 0;\nwhile(a < 10) {\na = a / 12 + 1;\na += b;}\nprintf(\"%d\", a);\nreturn 0;}\n</code></pre>Which one of the following statements is CORRECT?",
+   "solution": "Integer division is used.<br><br>\nIteration 1: [latex]a=6/12+1=0+1=1[/latex], then [latex]a=a+b=1+0=1[/latex].<br>\nIteration 2: [latex]a=1/12+1=0+1=1[/latex] again, and so on.<br><br>\n[latex]a[/latex] is stuck at 1, so the condition [latex]a \\lt 10[/latex] is always true and printf is never reached.<br><br>\n<b>Answer: The program gets stuck in an infinite loop</b><br><br><a href=\"https://gateoverflow.in/422834/gate-cse-2024-set-1-question-8#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Arithmetic Operation",
+   "tag2_url": "https://practicepaper.in/gate-cse/arithmetic-operation",
+   "options": [
+    "The program prints 9 as output",
+    "The program prints 10 as output",
+    "The program gets stuck in an infinite loop",
+    "The program prints 6 as output"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1124109,
+   "number": 9,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following C program:<pre><code>\n#include &lt;stdio.h&gt;\nvoid fX();\nint main(){\nfX();\nreturn 0;}\n\nvoid fX(){\nchar a;\nif((a=getchar()) != '\\n')\nfX();\nif(a != '\\n')\nputchar(a);}</code></pre>\nAssume that the input to the program from the command line is 1234 followed by\na newline character. Which one of the following statements is CORRECT?",
+   "solution": "Each call of fX() reads one character and, if it is not newline, calls fX() again <i>before</i> printing. Each call has its own local [latex]a[/latex].<br><br>\nCalls read: '1' [latex]\\rightarrow[/latex] '2' [latex]\\rightarrow[/latex] '3' [latex]\\rightarrow[/latex] '4' [latex]\\rightarrow[/latex] '\\n'. The last call reads newline, makes no further call and prints nothing.<br><br>\nWhile returning, the calls print their characters in reverse order: 4, 3, 2, 1. Then main returns normally.<br><br>\n<b>Answer: The program will terminate with 4321 as output</b><br><br><a href=\"https://gateoverflow.in/422833/gate-cse-2024-set-1-question-9#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "options": [
+    "The program will not terminate",
+    "The program will terminate with no outpu",
+    "The program will terminate with 4321 as output",
+    "The program will terminate with 1234 as output"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1124110,
+   "number": 10,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let S be the specification: \"Instructors teach courses. Students register for courses.\nCourses are allocated classrooms. Instructors guide students.\" Which one of the\nfollowing ER diagrams CORRECTLY represents S? <br><img src=\"/wp-content/uploads/GATE/CS/20241/q10.webp\" /><br>",
+   "solution": "From the specification we need 4 entity sets [latex]\\text{---}[/latex] Instructor, Course, Student, Classroom [latex]\\text{---}[/latex] and 4 relationships:<br>\nInstructor-<b>Teaches</b>-Course, Student-<b>Registers</b>-Course, Course-<b>Allocated</b>-Classroom, Instructor-<b>Guides</b>-Student.<br><br>\n- (i): Registration is drawn as an entity and Student as a relationship [latex]\\text{---}[/latex] wrong.<br>\n- (ii): no Student entity; an extra Projects entity is used [latex]\\text{---}[/latex] wrong.<br>\n- (iii): Classroom is attached directly to Course and the Allocation relationship does not connect Classroom [latex]\\text{---}[/latex] wrong.<br>\n- (iv): all four entities and all four relationships are connected correctly.<br><br>\n<b>Answer: (iv)</b><br><br><a href=\"https://gateoverflow.in/422832/gate-cse-2024-set-1-question-10#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "ER Model",
+   "tag2_url": "https://practicepaper.in/gate-cse/er-model",
+   "options": [
+    "(i)",
+    "(ii)",
+    "(iii)",
+    "(iv)"
+   ],
+   "correct": 3
+  }
+ ]
+}

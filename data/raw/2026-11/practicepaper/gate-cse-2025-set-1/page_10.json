@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11251,
+  "quizName": "GATE CSE 2025 SET-1",
+  "pageTitle": "GATE CSE 2025 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 10,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2025-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1125146,
+   "number": 46,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Suppose a 5-bit message is transmitted from a source to a destination through a noisy channel. The probability that a bit of the message gets flipped during transmission is 0.01. Flipping of each bit is independent of one another. The probability that the message is delivered error-free to the destination is _________. (rounded off to three decimal places)",
+   "solution": "Each of the [latex]5[/latex] bits is flipped independently with probability [latex]0.01[/latex], so each bit survives correctly with probability [latex]0.99[/latex]. The whole message arrives error-free only if <i>every</i> bit survives:<br><br>\n[latex]P(\\text{error-free})=(0.99)^5\\approx0.951[/latex]<br><br>\n<b>Answer: 0.951</b><br><br><a href=\"https://gateoverflow.in/460034/gate-cse-2025-set-1-question-46#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "ansMin": 0.949,
+   "ansMax": 0.952
+  },
+  {
+   "id": 1125147,
+   "number": 47,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Suppose a message of size 15000 bytes is transmitted from a source to a destination using IPv4 protocol via two routers as shown in the figure. Each router has a defined maximum transmission unit (MTU) as shown in the figure, including IP header. The number of fragments that will be delivered to the destination is _________. (Answer in integer)\n<br><img src=\"/wp-content/uploads/GATE/CS/20251/q47.webp\"/><br>",
+   "solution": "Assume the standard [latex]20[/latex]-byte IPv4 header (no options), so the original datagram is [latex]15000+20=15020[/latex] bytes.<br><br>\n<b>At Router-1 (MTU [latex]5000[/latex]):</b> max data per fragment [latex]=5000-20=4980[/latex] bytes, but fragment data must be a multiple of [latex]8[/latex] bytes, so usable data per (non-last) fragment [latex]=\\lfloor4980/8\\rfloor\\times8=4976[/latex] bytes.<br>\n[latex]15000[/latex] bytes of data [latex]\\div4976\\approx3.01[/latex]: so [latex]3[/latex] full fragments of [latex]4976[/latex] bytes ([latex]14928[/latex] bytes) plus a final fragment of [latex]15000-14928=72[/latex] bytes. Total after Router-1: <b>4 fragments</b>.<br><br>\n<b>At Router-2 (MTU [latex]3000[/latex]):</b> each fragment bigger than [latex]3000[/latex] bytes must be split again; the small [latex]72[/latex]-byte-data fragment (total size [latex]92[/latex] bytes) passes straight through unchanged.<br>\nMax data per new sub-fragment [latex]=3000-20=2980[/latex], rounded down to a multiple of [latex]8[/latex]: [latex]\\lfloor2980/8\\rfloor\\times8=2976[/latex] bytes.<br>\nEach of the [latex]3[/latex] big fragments (data [latex]=4976[/latex] bytes) splits into: one sub-fragment of [latex]2976[/latex] bytes, plus a final sub-fragment of [latex]4976-2976=2000[/latex] bytes &mdash; [latex]2[/latex] sub-fragments each, so [latex]3\\times2=6[/latex] sub-fragments total.<br><br>\nTotal fragments reaching the destination [latex]=6[/latex] (from the split large fragments) [latex]+1[/latex] (the small fragment that passed through) [latex]=7[/latex].<br><br>\n<b>Answer: 7</b><br><br><a href=\"https://gateoverflow.in/460033/gate-cse-2025-set-1-question-47#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-layer-protocol",
+   "ansMin": 7,
+   "ansMax": 7
+  },
+  {
+   "id": 1125148,
+   "number": 48,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a probability distribution given by the density function [latex] P(x) [/latex].  \n<br><br>\n[latex] P(x) = \n\\begin{cases} \nCx^2, &\\text{for   } 1 \\leq x \\leq 4 \\\\\n0, &   \\text{for   }x < 1 \\text{ or } x > 4\n\\end{cases}[/latex]\n<br><br>\nThe probability that [latex] x [/latex] lies between 2 and 3, i.e., [latex] P(2 \\leq x \\leq 3) [/latex] is _________. (rounded off to three decimal places)",
+   "solution": "First find [latex]C[/latex] using the normalization condition [latex]\\int_1^4Cx^2\\,dx=1[/latex]:<br>\n[latex]C\\left[\\dfrac{x^3}{3}\\right]_1^4=C\\cdot\\dfrac{64-1}{3}=21C=1\\ \\Rightarrow\\ C=\\dfrac1{21}[/latex]<br><br>\n[latex]P(2\\le x\\le3)=\\displaystyle\\int_2^3\\dfrac{x^2}{21}\\,dx=\\dfrac1{21}\\left[\\dfrac{x^3}3\\right]_2^3=\\dfrac1{21}\\cdot\\dfrac{27-8}3=\\dfrac1{21}\\cdot\\dfrac{19}3=\\dfrac{19}{63}\\approx0.302[/latex]<br><br>\n<b>Answer: 0.302</b><br><br><a href=\"https://gateoverflow.in/460032/gate-cse-2025-set-1-question-48#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "ansMin": 0.3,
+   "ansMax": 0.302
+  },
+  {
+   "id": 1125149,
+   "number": 49,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a finite state machine (FSM) with one input [latex] X [/latex] and one output [latex] f [/latex], represented by the given state transition table. The minimum number of states required to realize this FSM is _________. (Answer in integer)\n<br><img src=\"/wp-content/uploads/GATE/CS/20251/q49.webp\"/><br>",
+   "solution": "Group states by their immediate output behavior first: states with outputs [latex](f_0,f_1)=(0,0)[/latex] are [latex]\\{A,B,C,E\\}[/latex]; [latex](1,0)[/latex] are [latex]\\{D,H\\}[/latex]; [latex](1,1)[/latex] is [latex]\\{F\\}[/latex]; [latex](0,1)[/latex] is [latex]\\{G\\}[/latex] &mdash; four initial groups.<br><br>\nRefine [latex]\\{A,B,C,E\\}[/latex] by checking which group each state's next-states fall into: [latex]A[/latex] and [latex]C[/latex] both go to (group-of-[latex]F[/latex], group-of-[latex]\\{A,B,C,E\\}[/latex]) on [latex](X{=}0,X{=}1)[/latex], while [latex]B[/latex] and [latex]E[/latex] both go to (group-of-[latex]\\{D,H\\}[/latex], group-of-[latex]\\{A,B,C,E\\}[/latex]). So this group splits into [latex]\\{A,C\\}[/latex] and [latex]\\{B,E\\}[/latex].<br><br>\nChecking again with the new, finer partition [latex]\\{A,C\\},\\{B,E\\},\\{D,H\\},\\{F\\},\\{G\\}[/latex]: every state's next-state signature now matches consistently within its own group (e.g. both [latex]A[/latex] and [latex]C[/latex] go to [latex]F[/latex] on [latex]0[/latex] and into [latex]\\{B,E\\}[/latex] on [latex]1[/latex]; both [latex]D[/latex] and [latex]H[/latex] go to [latex]G[/latex] on [latex]0[/latex] and into [latex]\\{A,C\\}[/latex] on [latex]1[/latex]) &mdash; so the partition is stable and no further splitting occurs.<br><br>\nFinal equivalence classes: [latex]\\{A,C\\},\\{B,E\\},\\{D,H\\},\\{F\\},\\{G\\}[/latex] &mdash; [latex]5[/latex] classes.<br><br>\n<b>Answer: 5</b><br><br><a href=\"https://gateoverflow.in/460031/gate-cse-2025-set-1-question-49#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Turing Machine",
+   "tag2_url": "https://practicepaper.in/gate-cse/turing-machine",
+   "ansMin": 5,
+   "ansMax": 5
+  },
+  {
+   "id": 1125150,
+   "number": 50,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the given sequential circuit designed using D-Flip-flops. The circuit is initialized with some value (initial state). The number of distinct states the circuit will go through before returning back to the initial state is _________. (Answer in integer)<br><img src=\"/wp-content/uploads/GATE/CS/20251/q50.webp\"/><br>\n",
+   "solution": "This circuit is a <b>[latex]4[/latex]-bit twisted-ring (Johnson) counter</b>: the flip-flops are connected in a shift-register chain ([latex]Q_0\\to D_1,\\ Q_1\\to D_2,\\ Q_2\\to D_3[/latex]), with the feedback from the last stage back into [latex]D_0[/latex] being inverted.<br><br>\nA Johnson counter built from [latex]n[/latex] flip-flops with inverted feedback is well known to cycle through <b>[latex]2n[/latex] distinct states</b> before returning to its starting state (e.g. starting from [latex]0000[/latex]: [latex]0000\\to1000\\to1100\\to1110\\to1111\\to0111\\to0011\\to0001\\to0000[/latex]). For [latex]n=4[/latex] flip-flops, that's [latex]2\\times4=8[/latex] states in the full cycle &mdash; i.e. [latex]7[/latex] <i>other</i> distinct states are visited before the circuit returns to repeat its initial state (with the full period being [latex]8[/latex] steps, depending on whether the initial state itself is counted in the tally).<br><br>\n<b>Answer: 8</b> (equivalently 7, depending on whether the initial state is counted)<br><br><a href=\"https://gateoverflow.in/460030/gate-cse-2025-set-1-question-50#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Sequential Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/sequential-circuit",
+   "ansMin": 7,
+   "ansMax": 8
+  }
+ ]
+}

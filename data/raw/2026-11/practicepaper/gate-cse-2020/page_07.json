@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11201,
+  "quizName": "GATE CS 2020",
+  "pageTitle": "GATE CSE 2020",
+  "timeLimit": 0,
+  "pageNo": 7,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2020",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1120131,
+   "number": 31,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let  [latex]G=(V,E)[/latex] be a weighted undirected graph and let T be a Minimum Spanning Tree (MST) of G maintained using adjacency lists. Suppose a new weighed edge [latex](u,v)\\in V \\times V[/latex] is added to G. The worst case time complexity of determining if T is still an MST of the resultant graph is",
+   "solution": "Adding edge (u, v) creates exactly one cycle with T: the tree path from u to v plus the new edge.<br><br>\nT stays an MST unless the new edge is lighter than the heaviest edge on that path. Finding the path in a tree (DFS/BFS on T) and its heaviest edge takes [latex]\\Theta(|V|)[/latex].<br><br>\n<b>Answer: [latex]\\Theta(|V|)[/latex]</b><br><br><a href=\"https://gateoverflow.in/333200/gate2020-cs-31#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Minimum Spanning Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/minimum-spanning-tree",
+   "options": [
+    "[latex]\\Theta (|E|+|V|)[/latex]",
+    "[latex]\\Theta (|E||V|)[/latex]",
+    "[latex]\\Theta (|E|\\log |V|)[/latex]",
+    "[latex]\\Theta (|V|)[/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1120132,
+   "number": 32,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following languages. <br>[latex]L_1=\\{wxyx|w,x,y \\in (0+1)^+\\}[/latex] <br>[latex]L_2=\\{xy|x,y \\in (a+b)^*,|x|=|y|,x\\neq y\\}[/latex] <br> <br>Which one of the following is TRUE? ",
+   "solution": "Checking each statement:<br>- [latex]L_1[/latex]: x can be a single symbol, and any longer x can be cut down to its last symbol. So [latex]L_1[/latex] = strings of the form w c y c with c a single bit and w, y non-empty: [latex](0+1)^+0(0+1)^+0+(0+1)^+1(0+1)^+1[/latex] [latex]\\rightarrow[/latex] <b>regular</b>.<br>\n- [latex]L_2[/latex]: even-length strings whose two halves differ. A PDA can guess a position where the halves differ and check the distance [latex]\\rightarrow[/latex] <b>context-free</b>.<br><br>\n<b>Answer: [latex]L_1[/latex] is regular and [latex]L_2[/latex] is context-free</b><br><br><a href=\"https://gateoverflow.in/333199/gate2020-cs-32#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-language",
+   "options": [
+    "[latex]L_1[/latex] is regular and [latex]L_2[/latex] is context- free.",
+    "[latex]L_1[/latex] context- free but not regular and [latex]L_2[/latex] is context-free.",
+    "Neither [latex]L_1[/latex] nor [latex]L_2[/latex] is context- free.",
+    "[latex]L_1[/latex] context- free but  [latex]L_2[/latex] is not context-free."
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1120133,
+   "number": 33,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the productions [latex]A\\rightarrow PQ[/latex] and [latex]A\\rightarrow XY[/latex]. Each of the five non-terminals A,P,Q,X, and Y has two attributes: s is a synthesized attribute, and i is an inherited attribute. Consider the following rules.<br><br>Rule 1: P.i=A.i+2, Q.i=P.i+A.i, and A.s=P.s+Q.s<br>Rule 2: X.i=A.i+Y.s and Y.i=X.s+A.i<br><br>Which one of the following is TRUE?",
+   "solution": "L-attributed: an inherited attribute may depend only on the parent's inherited attributes and on attributes of siblings to its <b>left</b>.<br><br>\n- Rule 1: P.i uses A.i; Q.i uses P.i (left sibling) and A.i [latex]\\rightarrow[/latex] L-attributed.<br>\n- Rule 2: X.i uses Y.s, and Y is to the <b>right</b> of X [latex]\\rightarrow[/latex] not L-attributed.<br><br>\n<b>Answer: Only Rule 1 is L-attributed</b><br><br><a href=\"https://gateoverflow.in/333198/gate2020-cs-33#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Intermediate Code Generation",
+   "tag2_url": "https://practicepaper.in/gate-cse/intermediate-code-generation",
+   "options": [
+    "Both Rule 1 and Rule 2 are L-attributed.",
+    "Only Rule 1 is L-attributed.",
+    "Only Rule 2 is L-attributed.",
+    "Neither Rule 1 nor Rule 2 is L-attributed."
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1120134,
+   "number": 34,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Each of a set of n processes executes the following code using two semaphores a and b initialized to 1 and 0, respectively. Assume that count is a shared variable initialized to 0 and not used in CODE SECTION P.<br><img src=\"/wp-content/uploads/GATE/CS/20201/q34.jpg\" /><br> What does the code achieve?",
+   "solution": "Semaphore a protects count; b starts at 0.<br>\n- Each process increments count after CODE SECTION P, then waits on b.<br>\n- Only the <b>n-th</b> (last) process signals b; then each process that passes wait(b) signals b again for the next one.<br><br>\nSo nobody enters CODE SECTION Q until all n processes have finished P. This is a <b>barrier</b>.<br><br>\n<b>Answer: No process executes CODE SECTION Q before every process has finished CODE SECTION P</b><br><br><a href=\"https://gateoverflow.in/333197/gate2020-cs-34#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Process Synchronization",
+   "tag2_url": "https://practicepaper.in/gate-cse/process-synchronization",
+   "options": [
+    "It ensures that no process executes CODE SECTION Q before every process has finished CODE SECTION P.",
+    "It ensures that two processes are in CODE SECTION Q at any time.",
+    "It ensures that all processes execute CODE SECTION P mutually exclusively.",
+    "It ensures that at most n-1 processes are in CODE SECTION P at any time."
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1120135,
+   "number": 35,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following five disk five disk access requests of the form (request id, cylinder number) that are present in the disk scheduler queue at a given time.<br><br>\n(P,155),(Q,85),(R,110),(S,30),(T,115)<br><br>\nAssume the head is positioned at cylinder 100. The scheduler follows Shortest Seek Time First scheduling to service the requests.\n<br><br>\nWhich one of the following statements is FALSE?",
+   "solution": "SSTF from 100:<br>\nR (110, distance 10) [latex]\\rightarrow[/latex] T (115, 5) [latex]\\rightarrow[/latex] Q (85, 30) [latex]\\rightarrow[/latex] S (30, 55) [latex]\\rightarrow[/latex] P (155, 125)<br><br>\n- T before P True<br>\n- \"Q after S but before T\": Q is served <b>before</b> S and <b>after</b> T [latex]\\rightarrow[/latex] <b>FALSE</b><br>\n- Direction reverses between Q and P (down to S, then up to P) True<br>\n- R before P True<br><br>\n<b>Answer: Q is serviced after S, but before T</b><br><br><a href=\"https://gateoverflow.in/333196/gate2020-cs-35#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Disk Scheduling",
+   "tag2_url": "https://practicepaper.in/gate-cse/disk-scheduling",
+   "options": [
+    "T is serviced before P.",
+    "Q is serviced after S, but before T.",
+    "The head reverses its direction of movement between servicing of Q and P.",
+    "R is serviced before P."
+   ],
+   "correct": 1
+  }
+ ]
+}

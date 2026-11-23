@@ -1,0 +1,132 @@
+{
+ "meta": {
+  "quizId": 11252,
+  "quizName": "GATE CSE 2025 SET-2",
+  "pageTitle": "GATE CSE 2025 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 7,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2025-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1125231,
+   "number": 31,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "An array [latex]A [/latex] of length [latex]n [/latex] with distinct elements is said to be bitonic if there is an index [latex]1 \\leq i \\leq n [/latex] such that [latex]A[1..i] [/latex] is sorted in the non-decreasing order and [latex]A[i+1..n] [/latex] is sorted in the non-increasing order.  <br>\nWhich ONE of the following represents the best possible asymptotic bound for the worst-case number of comparisons by an algorithm that searches for an element in a bitonic array [latex]A [/latex]?",
+   "solution": "A bitonic array first increases then decreases (or vice versa). At any index, comparing the current element to its neighbors tells you which \"half\" (increasing or decreasing) you're in, and binary search can be adapted to search each half:<br><br>\nFirst locate the peak (maximum) element using a binary-search-style approach in [latex]\\Theta(\\log n)[/latex] (comparing an element to its neighbors to decide which direction has the larger values). Once the peak is found, the array splits into two ordinary sorted sequences (one increasing, one decreasing), and each can be searched with ordinary binary search, also [latex]\\Theta(\\log n)[/latex].<br><br>\nCombining these steps keeps the total worst-case comparisons at [latex]\\Theta(\\log n)[/latex], matching what you'd get for a single sorted array &mdash; no better bound like [latex]\\Theta(1)[/latex] is achievable (you must still narrow down the location), and no worse bound like [latex]\\Theta(n)[/latex] or [latex]\\Theta(\\log^2n)[/latex] is necessary.<br><br>\n<b>Answer: &Theta;(log n)</b><br><br><a href=\"https://gateoverflow.in/460804/gate-cse-2025-set-2-question-31#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Array",
+   "tag2_url": "https://practicepaper.in/gate-cse/array",
+   "options": [
+    "[latex]\\Theta(n) [/latex]",
+    "[latex]\\Theta(1) [/latex]",
+    "[latex]\\Theta(\\log ^2 n) [/latex]",
+    "[latex]\\Theta(\\log n) [/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1125232,
+   "number": 32,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Let [latex]\\mathcal{F} [/latex] be the set of all functions from [latex]\\{1, \\dots, n\\} [/latex] to [latex]\\{0,1\\} [/latex]. Define the binary relation [latex]\\preceq [/latex] on [latex]\\mathcal{F} [/latex] as follows:<br>\n[latex]\n\\forall f, g \\in \\mathcal{F}, \\, f \\preceq g \\quad \\text{if and only if} \\quad \\forall x \\in \\{1, \\dots, n\\}, f(x) \\leq g(x), \\text{ where } 0 \\leq 1.\n[/latex]<br>\nWhich of the following statement(s) is/are TRUE?",
+   "solution": "[latex]f\\preceq g[/latex] iff [latex]f(x)\\le g(x)[/latex] for every [latex]x[/latex] &mdash; this is the standard pointwise \"less than or equal to\" ordering on binary functions.<br><br>\n- <b>Reflexive:</b> [latex]f(x)\\le f(x)[/latex] always. <b>Antisymmetric:</b> if [latex]f\\preceq g[/latex] and [latex]g\\preceq f[/latex], then [latex]f(x)=g(x)[/latex] for all [latex]x[/latex], so [latex]f=g[/latex]. <b>Transitive:</b> chains through in the obvious way. So [latex]\\preceq[/latex] is a genuine <b>partial order</b> (not symmetric, and not an equivalence relation, since e.g. [latex]f\\preceq g[/latex] doesn't imply [latex]g\\preceq f[/latex] unless [latex]f=g[/latex]).<br><br>\n- <b>Lattice:</b> for any two functions [latex]f,g[/latex], their pointwise <b>max</b> (taking [latex]\\max(f(x),g(x))[/latex] at every [latex]x[/latex]) is their least upper bound, and their pointwise <b>min</b> is their greatest lower bound &mdash; both always exist within [latex]\\mathcal F[/latex]. So [latex](\\mathcal F,\\preceq)[/latex] is indeed a <b>lattice</b>.<br><br>\n<b>Answer: (F,&preceq;) is a partial order; and (F,&preceq;) is a lattice.</b><br><br><a href=\"https://gateoverflow.in/460803/gate-cse-2025-set-2-question-32#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Relation",
+   "tag2_url": "https://practicepaper.in/gate-cse/relation",
+   "options": [
+    "[latex]\\preceq [/latex] is a symmetric relation",
+    "[latex](\\mathcal{F}, \\preceq) [/latex] is a partial order",
+    "[latex](\\mathcal{F}, \\preceq) [/latex] is a lattice",
+    "[latex]\\preceq [/latex] is an equivalence relation"
+   ],
+   "correctSet": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1125233,
+   "number": 33,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Given the following Karnaugh Map for a Boolean function [latex]F(w, x, y, z) [/latex]:   <br><img src=\"/wp-content/uploads/GATE/CS/20252/q33.webp\"/><br>\nWhich one or more of the following Boolean expression(s) represent(s) [latex]F [/latex]?",
+   "solution": "Reading off the given K-map (rows [latex]wx[/latex] in Gray-code order [latex]00,01,11,10[/latex]; columns [latex]yz[/latex] similarly), the [latex]1[/latex]s appear in a clean pattern: whenever [latex]x=0[/latex], [latex]F=1[/latex] exactly when [latex]z=0[/latex]; whenever [latex]x=1[/latex], [latex]F=1[/latex] exactly when [latex]z=1[/latex] &mdash; regardless of [latex]w[/latex] or [latex]y[/latex] in either case. This is exactly the <b>XNOR of [latex]x[/latex] and [latex]z[/latex]</b>:<br>\n[latex]F=\\bar x\\bar z+xz[/latex]<br><br>\nChecking each candidate expression against the full set of covered minterms [latex]\\{0,2,5,7,8,10,13,15\\}[/latex]: the compact form [latex]\\bar x\\bar z+xz[/latex] matches exactly. The first option, [latex]\\bar w\\bar x\\bar y\\bar z+w\\bar x\\bar y\\bar z+\\bar w\\bar xy\\bar z+w\\bar xy\\bar z+xz[/latex], is just the same function with the [latex]\\bar x\\bar z[/latex] term expanded out into its four individual constituent minterms (varying [latex]w,y[/latex]) &mdash; algebraically identical. The other two options each swap in a term that either omits some required minterms or adds an extra minterm that shouldn't be there, so they don't match [latex]F[/latex].<br><br>\n<b>Answer: [latex]\\bar w\\bar x\\bar y\\bar z+w\\bar x\\bar y\\bar z+\\bar w\\bar xy\\bar z+w\\bar xy\\bar z+xz[/latex] and [latex]\\bar x\\bar z+xz[/latex]</b><br><br><a href=\"https://gateoverflow.in/460802/gate-cse-2025-set-2-question-33#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "options": [
+    "[latex]\\bar{w} \\bar{x} \\bar{y} \\bar{z} + w \\bar{x} \\bar{y} \\bar{z} + \\bar{w} \\bar{x} y\\bar{z} + w \\bar{x} y \\bar{z}  + xz [/latex]",
+    "[latex]\\bar{w} \\bar{x} \\bar{y} \\bar{z} + \\bar{w} \\bar{x} y \\bar{z} + w \\bar{x} yz + xz [/latex]",
+    "[latex]\\bar{w} \\bar{x} \\bar{y} \\bar{z} + w \\bar{x}\\bar{y} \\bar{z} + w \\bar{x} \\bar{y}z +xz [/latex]",
+    "[latex]\\bar{x}\\bar{z} + xz [/latex]"
+   ],
+   "correctSet": [
+    0,
+    3
+   ]
+  },
+  {
+   "id": 1125234,
+   "number": 34,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider a system of linear equations [latex]P X = Q [/latex] where [latex]P \\in \\mathbb{R}^{3 \\times 3} [/latex] and [latex]Q \\in \\mathbb{R}^{3 \\times 1} [/latex].  \nSuppose [latex]P [/latex] has an [latex]LU [/latex] decomposition, [latex]P = LU [/latex], where<br><br>\n[latex] L = \\begin{bmatrix} 1 & 0 & 0 \\\\ l_{21} & 1 & 0 \\\\ l_{31} & l_{32} & 1 \\end{bmatrix} \\quad \\text{and} \\quad U = \\begin{bmatrix} u_{11} & u_{12} & u_{13} \\\\ 0 & u_{22} & u_{23} \\\\ 0 & 0 & u_{33} \\end{bmatrix} [/latex]<br><br>\nWhich of the following statement(s) is/are TRUE?",
+   "solution": "<b>Solving via [latex]LY=Q[/latex] then [latex]UX=Y[/latex]:</b> substituting [latex]P=LU[/latex] into [latex]PX=Q[/latex] gives [latex]L(UX)=Q[/latex]; setting [latex]Y=UX[/latex], we solve [latex]LY=Q[/latex] first (easy, forward substitution since [latex]L[/latex] is lower triangular), then [latex]UX=Y[/latex] (easy, back substitution). <b>True</b> &mdash; this is exactly the standard LU-solve method.<br><br>\n<b>If [latex]P[/latex] is invertible, both [latex]L,U[/latex] invertible:</b> [latex]L[/latex] is unit lower-triangular (diagonal all [latex]1[/latex]s), so [latex]\\det(L)=1[/latex] always, regardless of [latex]P[/latex] &mdash; [latex]L[/latex] is always invertible. Since [latex]\\det(P)=\\det(L)\\det(U)=\\det(U)[/latex], if [latex]P[/latex] is invertible ([latex]\\det(P)\\ne0[/latex]) then [latex]\\det(U)\\ne0[/latex] too. <b>True.</b><br><br>\n<b>If [latex]P[/latex] singular, some diagonal element of [latex]U[/latex] is zero:</b> since [latex]\\det(P)=\\det(U)[/latex] (product of [latex]U[/latex]'s diagonal, as [latex]U[/latex] is upper triangular), if [latex]P[/latex] is singular ([latex]\\det(P)=0[/latex]) then [latex]\\det(U)=0[/latex], which for a triangular matrix forces at least one diagonal entry to be [latex]0[/latex]. <b>True.</b><br><br>\n<b>If [latex]P[/latex] symmetric, both [latex]L,U[/latex] symmetric:</b> plain LU decomposition does not generally preserve/reveal symmetry in [latex]L[/latex] and [latex]U[/latex] individually (that requires a specialized decomposition like [latex]LDL^T[/latex] or Cholesky). <b>False</b> in general.<br><br>\n<b>Answer: The first three statements are TRUE; the last (about symmetric P forcing symmetric L,U) is FALSE.</b><br><br><a href=\"https://gateoverflow.in/460801/gate-cse-2025-set-2-question-34#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "The system [latex]P X = Q [/latex] can be solved by first solving [latex]L Y = Q [/latex] and then [latex]U X = Y [/latex].",
+    "If [latex]P [/latex] is invertible, then both [latex]L [/latex] and [latex]U [/latex] are invertible.",
+    "If [latex]P [/latex] is singular, then at least one of the diagonal elements of [latex]U [/latex] is zero.",
+    "If [latex]P [/latex] is symmetric, then both [latex]L [/latex] and [latex]U [/latex] are symmetric."
+   ],
+   "correctSet": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1125235,
+   "number": 35,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider a stack data structure into which we can PUSH and POP records. Assume that each record pushed in the stack has a positive integer key and that all keys are distinct.  <br>\nWe wish to augment the stack data structure with an [latex]O(1) [/latex] time MIN operation that returns a pointer to the record with the smallest key present in the stack  <br><br>\n1) without deleting the corresponding record, and  <br>\n2) without increasing the complexities of the standard stack operations.  <br><br>\nWhich one or more of the following approach(es) can achieve it?",
+   "solution": "We need [latex]O(1)[/latex] MIN, without slowing down PUSH/POP.<br><br>\n<b>Approach: store, alongside every pushed record, a pointer to whichever record currently holds the smallest key <i>at or below</i> it in the stack (computed once, at push time, by comparing the new key to the previous top's \"min so far\" pointer).</b> Pushing just does one comparison and one pointer copy ([latex]O(1)[/latex]); popping just removes the top record (its stored min-pointer disappears with it, automatically restoring the correct min for what's now on top) ([latex]O(1)[/latex]); MIN just reads the top record's stored pointer ([latex]O(1)[/latex]). This works and keeps everything [latex]O(1)[/latex].<br><br>\nA single global pointer to the current minimum fails on POP: if you pop exactly the minimum record, you have no way to find the next-smallest without scanning the rest of the stack. A sorted auxiliary array would need [latex]O(n)[/latex] shifting on push to keep it sorted. A min-heap would make push/pop cost [latex]O(\\log n)[/latex] instead of [latex]O(1)[/latex], violating the \"don't slow down the standard operations\" requirement.<br><br>\n<b>Answer: Keep, with every record, a pointer to the record with the smallest key below it.</b><br><br><a href=\"https://gateoverflow.in/460800/gate-cse-2025-set-2-question-35#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Stack",
+   "tag2_url": "https://practicepaper.in/gate-cse/stack",
+   "options": [
+    "Keep with every record in the stack, a pointer to the record with the smallest key below it.",
+    "Keep a pointer to the record with the smallest key in the stack.",
+    "Keep an auxiliary array in which the key values of the records in the stack are maintained in sorted order.",
+    "Keep a Min-Heap in which the key values of the records in the stack are maintained."
+   ],
+   "correctSet": [
+    0
+   ]
+  }
+ ]
+}

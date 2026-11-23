@@ -1,0 +1,104 @@
+{
+ "meta": {
+  "quizId": 11261,
+  "quizName": "GATE CSE 2026 SET-1",
+  "pageTitle": "GATE CSE 2026 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 10,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2026-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1126146,
+   "number": 46,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "An ISP having an address block [latex]202.16.0.0/15[/latex] assigns a block of [latex]6000[/latex] IP addresses to a client, using the classless internet domain routing (CIDR) super-netting approach. Which of the following address blocks can be assigned by the ISP?",
+   "solution": "The ISP's block [latex]202.16.0.0/15[/latex] spans two full class-B-sized blocks: all addresses from [latex]202.16.0.0[/latex] to [latex]202.17.255.255[/latex].<br><br>\nFor [latex]6000[/latex] addresses via CIDR super-netting, we need a block with at least [latex]6000[/latex] addresses; a [latex]/19[/latex] prefix gives [latex]2^{32-19}=2^{13}=8192[/latex] addresses, which suffices (a [latex]/20[/latex] would only give [latex]4096<6000[/latex]).<br><br>\nA valid [latex]/19[/latex] sub-block must (a) lie entirely within [latex]202.16.0.0[/latex]-[latex]202.17.255.255[/latex], and (b) have its network address aligned to a multiple of [latex]32[/latex] in the relevant octet (since [latex]/19[/latex] leaves [latex]13[/latex] host bits, and [latex]2^{13}=8192=32\\times256[/latex] addresses per block, so the 3rd octet must be a multiple of [latex]32[/latex]: [latex]0,32,64,\\ldots[/latex]).<br><br>\n- [latex]202.16.0.0/19[/latex]: [latex]0[/latex] is a valid multiple of [latex]32[/latex], and within range. <b>Valid.</b><br>\n- [latex]202.17.64.0/19[/latex]: [latex]64[/latex] is a valid multiple of [latex]32[/latex], [latex]202.17.x[/latex] is within the /15 range. <b>Valid.</b><br>\n- [latex]202.16.32.0/19[/latex]: [latex]32[/latex] is a valid multiple of [latex]32[/latex]. <b>Valid.</b><br>\n- [latex]202.17.24.0/19[/latex]: [latex]24[/latex] is <b>not</b> a multiple of [latex]32[/latex] (valid boundaries are [latex]0,32,64,\\ldots[/latex]), so this is not a properly aligned [latex]/19[/latex] block. <b>Invalid.</b><br><br>\n<b>Answer: 202.16.0.0/19, 202.17.64.0/19, and 202.16.32.0/19 can be assigned.</b> <br><br> <a href=\"https://gateoverflow.in/523034/gate-cse-2026-set-1-question-46#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-layer-protocol",
+   "options": [
+    "[latex]202.16.0.0/19[/latex]",
+    "[latex]202.17.64.0/19[/latex]",
+    "[latex]202.16.32.0/19[/latex]",
+    "[latex]202.17.24.0/19[/latex]"
+   ],
+   "correctSet": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1126147,
+   "number": 47,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Let [latex]G[/latex] be an undirected graph, which is a path on [latex]8[/latex] vertices. The number of matchings in [latex]G[/latex] is ________. (answer in integer)",
+   "solution": "Let [latex]f(k)[/latex] denote the number of matchings (including the empty matching) in a path graph with [latex]k[/latex] edges. Considering the last edge of the path: either it is <b>not</b> used in the matching (leaving [latex]f(k-1)[/latex] choices for the rest), or it <b>is</b> used (which forbids the adjacent edge, leaving [latex]f(k-2)[/latex] choices for the rest). This gives the Fibonacci-like recurrence:<br>\n[latex]f(k)=f(k-1)+f(k-2)[/latex], with [latex]f(0)=1[/latex] (no edges: only the empty matching) and [latex]f(1)=2[/latex] (one edge: either included or not).<br><br>\n[latex]f(2)=3,\\ f(3)=5,\\ f(4)=8,\\ f(5)=13,\\ f(6)=21,\\ f(7)=34[/latex].<br><br>\nA path on [latex]8[/latex] vertices has [latex]7[/latex] edges, so the number of matchings is [latex]f(7)=34[/latex].<br><br>\n<b>Answer: 34</b> <br><br> <a href=\"https://gateoverflow.in/523033/gate-cse-2026-set-1-question-47#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "ansMin": 34,
+   "ansMax": 34
+  },
+  {
+   "id": 1126148,
+   "number": 48,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Let [latex]X[/latex] be a random variable which takes values in the set [latex]\\{1,2,3,4,5,6,7,8\\}[/latex]. Further, [latex]\\operatorname{Pr}(X=1)=\\operatorname{Pr}(X=2)=\\operatorname{Pr}(X=5)=\\operatorname{Pr}(X=7)=\\frac{1}{6}[/latex] and [latex]\\operatorname{Pr}(X=3)=\\operatorname{Pr}(X=4)=\\operatorname{Pr}(X=6)=\\operatorname{Pr}(X=8)=\\frac{1}{12}[/latex]. <br><br>The expected value of [latex]X[/latex], denoted by [latex]E[X][/latex], is equal to ________. (rounded off to two decimal places)",
+   "solution": "[latex]E[X]=\\sum x\\cdot\\Pr(X=x)[/latex]<br><br>\n[latex]=\\left(1+2+5+7\\right)\\times\\dfrac{1}{6}+\\left(3+4+6+8\\right)\\times\\dfrac{1}{12}[/latex]<br>\n[latex]=15\\times\\dfrac{1}{6}+21\\times\\dfrac{1}{12}[/latex]<br>\n[latex]=2.5+1.75=4.25[/latex]<br><br>\n<b>Answer: 4.25</b> <br><br> <a href=\"https://gateoverflow.in/523032/gate-cse-2026-set-1-question-48#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "ansMin": 4.24,
+   "ansMax": 4.26
+  },
+  {
+   "id": 1126149,
+   "number": 49,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a hard disk with a rotational speed of [latex]15000[/latex] rpm. The time to move the read/write head from a track to its adjacent track is [latex]1[/latex] millisecond. Initially, the head is on track [latex]0[/latex]. The number of sectors per track is [latex]400[/latex]. The sector size is [latex]1024[/latex] bytes. It is necessary to transfer data from [latex]10[/latex] randomly located sectors in each of the following tracks in the order: [latex]5, 12[/latex] and [latex]7[/latex].<br><br> The total time for the data transfer (in milliseconds) from the hard disk is ________. (rounded off to one decimal place)",
+   "solution": "<b>Rotation time</b> per revolution [latex]=\\dfrac{60000\\text{ ms}}{15000}=4[/latex] ms, so average rotational latency (half a revolution) [latex]=2[/latex] ms, and time per sector [latex]=\\dfrac{4\\text{ ms}}{400\\text{ sectors}}=0.01[/latex] ms.<br><br>\n<b>Seek time</b> (head moves [latex]1[/latex] ms per adjacent track, following the path [latex]0\\to5\\to12\\to7[/latex]):<br>\n[latex]0\\to5[/latex]: [latex]5[/latex] tracks [latex]=5[/latex] ms; [latex]5\\to12[/latex]: [latex]7[/latex] tracks [latex]=7[/latex] ms; [latex]12\\to7[/latex]: [latex]5[/latex] tracks [latex]=5[/latex] ms. Total seek [latex]=5+7+5=17[/latex] ms.<br><br>\n<b>Data transfer per track:</b> since the [latex]10[/latex] sectors needed are randomly located, each individual sector access requires (on average) a fresh rotational latency of [latex]2[/latex] ms before the required sector arrives under the head, plus the [latex]0.01[/latex] ms to actually read it:<br>\nPer track [latex]=10\\times(2+0.01)=20.1[/latex] ms. Over [latex]3[/latex] tracks: [latex]3\\times20.1=60.3[/latex] ms.<br><br>\n<b>Total time [latex]=[/latex] seek [latex]+[/latex] transfer [latex]=17+60.3=77.3[/latex] ms.</b><br><br>\n<b>Answer: 77.3</b> <br><br> <a href=\"https://gateoverflow.in/523031/gate-cse-2026-set-1-question-49#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Secondary Storage",
+   "tag2_url": "https://practicepaper.in/gate-cse/secondary-storage",
+   "ansMin": 77.3,
+   "ansMax": 77.3
+  },
+  {
+   "id": 1126150,
+   "number": 50,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The EX stage of a pipelined processor performs the memory read operations for LOAD instructions, and the operations for the arithmetic and logic instructions. Let [latex]t_{E X}[/latex] denote the time taken by the EX stage to perform the operation for an instruction. For each instruction type, the values of [latex]t_{E X}[/latex] and [latex]M[/latex] (the number of instructions of that type in a sequence of [latex]100[/latex] instructions for a program P ), are given in the table below. <br><br>The duration of the pipeline clock cycle is [latex]1[/latex] nanosecond. Assume that the latch time for the interstage buffers in the pipeline is negligible. <br><br>[latex] \\begin{array}{|l|c|c|} \\hline \\text{Instruction} & \\begin{array}{c} t_{EX}\\ \\text{in} \\\\ \\text{nanoseconds} \\end{array} & M \\\\ \\hline \\text{LOAD} & 1.8 & 15 \\\\ \\hline \\text{IMUL} & 1.5 & 10 \\\\ \\hline \\text{IDIV} & 2.5 & 5 \\\\ \\hline \\text{FADD} & 1.7 & 10 \\\\ \\hline \\text{FSUB} & 1.7 & 5 \\\\ \\hline \\text{FMUL} & 2.8 & 15 \\\\ \\hline \\text{FDIV} & 3.2 & 5 \\\\ \\hline \\begin{array}{l} \\text{All other} \\\\ \\text{instructions} \\end{array} & \\begin{array}{c} \\text{Less than} \\\\ 1.0 \\end{array} & 35 \\\\ \\hline \\end{array} [/latex] <br><br>When program [latex]\\text{P}[/latex] is executed, the number of clock cycles for which the pipeline is stalled due to structural hazards in the EX stage is ________. (answer in integer)",
+   "solution": "There is a single, shared EX-stage functional unit; only one instruction can occupy the EX stage per clock cycle (of duration [latex]1[/latex] ns). If an instruction's actual execution time [latex]t_{EX}[/latex] exceeds [latex]1[/latex] ns, it must occupy the EX stage for [latex]\\lceil t_{EX}\\rceil[/latex] clock cycles, causing [latex]\\left(\\lceil t_{EX}\\rceil-1\\right)[/latex] structural-hazard stall cycles for every instance of that instruction type.<br><br>\n[latex]\\begin{array}{l|c|c|c}\\text{Type}&t_{EX}&\\text{cycles needed}&\\text{stalls}\\times M\\\\\\hline\\text{LOAD}&1.8&2&1\\times15=15\\\\\\text{IMUL}&1.5&2&1\\times10=10\\\\\\text{IDIV}&2.5&3&2\\times5=10\\\\\\text{FADD}&1.7&2&1\\times10=10\\\\\\text{FSUB}&1.7&2&1\\times5=5\\\\\\text{FMUL}&2.8&3&2\\times15=30\\\\\\text{FDIV}&3.2&4&3\\times5=15\\\\\\text{Others}&{<}1.0&1&0\\times35=0\\end{array}[/latex]<br><br>\nTotal stall cycles [latex]=15+10+10+10+5+30+15+0=95[/latex].<br><br>\n<b>Answer: 95</b> <br><br> <a href=\"https://gateoverflow.in/523030/gate-cse-2026-set-1-question-50#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Pipeline Processor",
+   "tag2_url": "https://practicepaper.in/gate-cse/pipeline-processor",
+   "ansMin": 95,
+   "ansMax": 95
+  }
+ ]
+}

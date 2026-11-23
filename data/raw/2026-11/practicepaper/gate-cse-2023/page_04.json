@@ -1,0 +1,127 @@
+{
+ "meta": {
+  "quizId": 11231,
+  "quizName": "GATE CSE 2023",
+  "pageTitle": "GATE CSE 2023",
+  "timeLimit": 0,
+  "pageNo": 4,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2023",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1123116,
+   "number": 16,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Geetha has a conjecture about integers, which is of the form<br>[latex]\\forall x\\left [P(x)\\Rightarrow \\exists yQ(x,y)  \\right ]  [/latex]<br>where [latex]P[/latex] is a statement about integers, and [latex]Q[/latex] is a statement about pairs of integers.\nWhich of the following (one or more) option(s) would imply Geetha's conjecture?",
+   "solution": "Conjecture: for every x with P(x), some y makes Q(x, y) true.<br><br>\n- Option 1 talks about only one x [latex]\\text{---}[/latex] does not imply it.<br>\n- Option 2: Q holds for all x and y, so for any x any y works [latex]\\text{---}[/latex] implies it.<br>\n- Option 3: one fixed y works for every x with P(x), so such a y exists for each x [latex]\\text{---}[/latex] implies it.<br>\n- Option 4 again talks about only one x [latex]\\text{---}[/latex] does not imply it.<br><br>\n<b>Answer: Options 2 and 3</b><br><br><a href=\"https://gateoverflow.in/399295/gate-cse-2023-question-16#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Propositional Logic",
+   "tag2_url": "https://practicepaper.in/gate-cse/propositional-logic",
+   "options": [
+    "[latex]\\exists  x\\left [P(x)\\wedge  \\forall yQ(x,y)  \\right ]  [/latex]",
+    "[latex]\\forall x  \\forall y  Q(x,y)    [/latex]",
+    "[latex]\\exists  y \\forall x \\left [P(x) \\Rightarrow   Q(x,y)  \\right ]  [/latex]",
+    "[latex]\\exists   x \\left [P(x) \\wedge  \\exists y  Q(x,y)  \\right ]  [/latex]"
+   ],
+   "correctSet": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1123117,
+   "number": 17,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which one or more of the following CPU scheduling algorithms can potentially\ncause starvation?",
+   "solution": "Check whether a process can wait forever:<br>- FIFO: every process eventually reaches the front [latex]\\text{---}[/latex] no starvation.<br>\n- Round Robin: each process gets a time slice every round [latex]\\text{---}[/latex] no starvation.<br>\n- <b>Priority scheduling</b>: a low-priority process may wait forever if high-priority processes keep arriving.<br>\n- <b>SJF</b>: a long job may wait forever if short jobs keep arriving.<br><br>\n<b>Answer: Priority Scheduling, Shortest Job First</b><br><br><a href=\"https://gateoverflow.in/399294/gate-cse-2023-question-17#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "CPU Scheduling",
+   "tag2_url": "https://practicepaper.in/gate-cse/cpu-scheduling",
+   "options": [
+    "First-in First-Out",
+    "Round Robin",
+    "Priority Scheduling",
+    "Shortest Job First"
+   ],
+   "correctSet": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1123118,
+   "number": 18,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Let [latex]f(x)=x^3+15x^2-33x-36 [/latex] be a real-valued function.<br>\nWhich of the following statements is/are TRUE?\n",
+   "solution": "[latex]f'(x)=3x^2+30x-33=3(x^2+10x-11)=3(x+11)(x-1)[/latex] [latex]\\rightarrow[/latex] critical points [latex]x=-11[/latex] and [latex]x=1[/latex].<br><br>\n[latex]f''(x)=6x+30[/latex]:<br>\n- [latex]f''(-11)=-36 \\lt 0[/latex] [latex]\\rightarrow[/latex] local <b>maximum</b><br>\n- [latex]f''(1)=36 \\gt 0[/latex] [latex]\\rightarrow[/latex] local <b>minimum</b><br><br>\n<b>Answer: f(x) has a local maximum and has a local minimum</b><br><br><a href=\"https://gateoverflow.in/399293/gate-cse-2023-question-18#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "options": [
+    "[latex]f(x)[/latex] does not have a local maximum.\n",
+    "[latex]f(x)[/latex]  has a local maximum.",
+    "[latex]f(x)[/latex] does not have a local minimum.",
+    "[latex]f(x)[/latex]  has a local minimum."
+   ],
+   "correctSet": [
+    1,
+    3
+   ]
+  },
+  {
+   "id": 1123119,
+   "number": 19,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Let [latex]f[/latex] and [latex]g[/latex] be functions of natural numbers given by [latex]f(n)=n[/latex] and [latex]g(n)=n^2[/latex].<br>\nWhich of the following statements is/are TRUE?",
+   "solution": "[latex]\\lim_{n\\to\\infty}\\frac{f(n)}{g(n)}=\\lim\\frac{n}{n^2}=0[/latex], so f grows strictly slower than g.<br><br>\n- [latex]f\\in O(g)[/latex] [latex]\\text{---}[/latex] TRUE<br>\n- [latex]f\\in o(g)[/latex] (strictly smaller) [latex]\\text{---}[/latex] TRUE<br>\n- [latex]f\\in\\Omega(g)[/latex] and [latex]f\\in\\Theta(g)[/latex] [latex]\\text{---}[/latex] FALSE<br><br>\n<b>Answer: [latex]f\\in O(g)[/latex] and [latex]f\\in o(g)[/latex]</b><br><br><a href=\"https://gateoverflow.in/399292/gate-cse-2023-question-19#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Asymptotic Notation",
+   "tag2_url": "https://practicepaper.in/gate-cse/asymptotic-notation",
+   "options": [
+    "[latex]f \\in O(g)[/latex]",
+    "[latex]f \\in \\Omega (g)[/latex]",
+    "[latex]f \\in o(g)[/latex]",
+    "[latex]f \\in \\Theta  (g)[/latex]"
+   ],
+   "correctSet": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": 1123120,
+   "number": 20,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Let A be the adjacency matrix of the graph with vertices {1, 2, 3, 4, 5}.<br><img src=\"/wp-content/uploads/GATE/CS/20231/q20.jpg\" /><br>Let [latex]\\lambda _1,\\lambda _2,\\lambda _3,\\lambda _4,\\; and \\; \\lambda _5[/latex] be the five eigenvalues of A. Note that these eigenvalues\nneed not be distinct.<br>The value of [latex]\\lambda _1+\\lambda _2+\\lambda _3+ \\lambda _4+  \\lambda _5 \n =[/latex] _____",
+   "solution": "Sum of eigenvalues = trace of A = sum of the diagonal entries.<br><br>\nA diagonal entry [latex]a_{ii}[/latex] is 1 only if vertex i has a <b>self-loop</b>. In the graph, vertices 3 and 4 have self-loops, so trace [latex]=1+1=2[/latex].<br><br>\n<b>Answer: 2</b><br><br><a href=\"https://gateoverflow.in/399291/gate-cse-2023-question-20#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "ansMin": 2,
+   "ansMax": 2
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11181,
+  "quizName": "GATE CS 2018",
+  "pageTitle": "GATE CSE 2018",
+  "timeLimit": 0,
+  "pageNo": 1,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2018",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1118101,
+   "number": 1,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following is a closed form expression for the generating function of the sequence [latex]\\left \\{ a_{n} \\right \\}[/latex], where [latex]a_{n}=2n+3[/latex] for all n = 0, 1, 2,...?",
+   "solution": "[latex]\\sum(2n+3)x^n=2\\sum nx^n+3\\sum x^n=\\frac{2x}{(1-x)^2}+\\frac{3}{1-x}=\\frac{2x+3(1-x)}{(1-x)^2}=\\frac{3-x}{(1-x)^2}[/latex]<br><br>\n<b>Answer: [latex]\\frac{3-x}{(1-x)^2}[/latex]</b><br><br><a href=\"https://gateoverflow.in/204075/gate2018-1#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "options": [
+    "[latex]\\frac{3}{(1-x)^{2}}[/latex] ",
+    "[latex]\\frac{3x}{(1-x)^{2}}[/latex] ",
+    "[latex]\\frac{2-x}{(1-x)^{2}}[/latex] ",
+    "[latex]\\frac{3-x}{(1-x)^{2}}[/latex] "
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1118102,
+   "number": 2,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following C program. <pre><code>#include &lt;stdio.h&gt;\nstruct Ournode{\nchar x,y,z;\n};\nint main(){\nstruct Ournode p = {'1', '0','a'+2};  \nstruct Ournode *q = &p;\nprintf(\"%c,%c\",*((char*)q+1),*((char*)q+2));\nreturn 0;\n}  </code></pre> The output of this program is:",
+   "solution": "The struct holds the characters '1', '0' and 'a' + 2 = 'c' in consecutive bytes. (char*)q + 1 is the 2nd byte ('0') and (char*)q + 2 is the 3rd ('c'). %c prints the characters without quotes.<br><br>\n<b>Answer: 0, c</b><br><br><a href=\"https://gateoverflow.in/204076/gate2018-2#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Array and Pointer",
+   "tag2_url": "https://practicepaper.in/gate-cse/array-and-pointer",
+   "options": [
+    "0, c",
+    "0, a+2",
+    "'0', 'a+2'",
+    "'0', 'c'"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1118103,
+   "number": 3,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "A queue is implemented using a non-circular singly linked list. The queue has a head pointer and a tail pointer, as shown in the figure. Let n denote the number of nodes in the queue. Let enqueue be implemented by inserting a new node at the head, and dequeue be implemented by deletion of a node from the tail.    <br><img src=\"/wp-content/uploads/GATE/CS/2018/q3.jpg\" /><br>  Which one of the following is the time complexity of the most time-efficient implementation of enqueue and dequeue, respectively, for this data structure?",
+   "solution": "Checking each statement:<br>- Enqueue at the head: create a node and point it to the old head [latex]\\rightarrow[/latex] [latex]\\Theta(1)[/latex].<br>\n- Dequeue at the tail: removing the tail needs the node <b>before</b> it, and in a singly linked list that means walking from the head [latex]\\rightarrow[/latex] [latex]\\Theta(n)[/latex].<br><br>\n<b>Answer: [latex]\\Theta(1),\\Theta(n)[/latex]</b><br><br><a href=\"https://gateoverflow.in/204077/gate2018-3#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Queue",
+   "tag2_url": "https://practicepaper.in/gate-cse/queue",
+   "options": [
+    "[latex]\\Theta (1), \\Theta (1)[/latex] ",
+    "[latex]\\Theta (1), \\Theta (n)[/latex] ",
+    "[latex]\\Theta (n), \\Theta (1)[/latex] ",
+    "[latex]\\Theta (n), \\Theta (n)[/latex] "
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1118104,
+   "number": 4,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let [latex]\\bigoplus[/latex] and [latex]\\bigodot[/latex] denote the Exclusive OR and Exclusive NOR operations, respectively. Which one of the following is NOT CORRECT?",
+   "solution": "Check option 4: [latex]P\\oplus\\bar P=1[/latex], so the left side is [latex]1\\oplus Q=\\bar Q[/latex]. [latex]P\\odot\\bar P=0[/latex], so the right side is [latex]0\\odot\\bar Q=\\overline{0\\oplus\\bar Q}=Q[/latex]. [latex]\\bar Q\\ne Q[/latex] [latex]\\rightarrow[/latex] not correct.<br><br>\nOptions 1-3 are standard identities.<br><br>\n<b>Answer: Option 4</b><br><br><a href=\"https://gateoverflow.in/204078/gate2018-4#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "options": [
+    "[latex]\\overline{P \\bigoplus Q}=P\\bigodot Q[/latex] ",
+    "[latex]\\overline{P} \\bigoplus Q=P\\bigodot Q[/latex] ",
+    "[latex]\\overline{P} \\bigoplus \\overline{Q}=P\\bigoplus Q[/latex] ",
+    "[latex](P \\bigoplus \\overline{P})\\bigoplus  Q=(P\\bigodot\\overline{P})\\bigodot  \\overline{Q}[/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1118105,
+   "number": 5,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following processor design characteristics.<br> I. Register-to-register arithmetic operations only<br>\nII. Fixed-length instruction format <br>\nIII. Hardwired control unit <br>Which of the characteristics above are used in the design of a RISC processor?\n",
+   "solution": "RISC processors use load/store architecture (arithmetic only between registers), fixed-length instructions for easy decoding, and a fast hardwired control unit. All three apply.<br><br>\n<b>Answer: I, II and III</b><br><br><a href=\"https://gateoverflow.in/204079/gate2018-5#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Machine Instruction",
+   "tag2_url": "https://practicepaper.in/gate-cse/machine-instruction",
+   "options": [
+    "I and II only",
+    "II and III only",
+    "I and III only",
+    " I, II and III"
+   ],
+   "correct": 3
+  }
+ ]
+}

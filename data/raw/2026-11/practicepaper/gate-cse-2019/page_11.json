@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11191,
+  "quizName": "GATE CS 2019",
+  "pageTitle": "GATE CSE 2019",
+  "timeLimit": 0,
+  "pageNo": 11,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2019",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1119151,
+   "number": 51,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A relational database contains two tables Student and Performance as shown below: <br><img src=\"/wp-content/uploads/GATE/CS/20191/q51.jpg\" /><br>The primary key of the Student table is Roll_no. For the Performance table, the columns Roll_no. and Subject_code together from the primary key. Consider the SQL query given below: <pre><code>SELECT S.Student_name, sum(P.Marks)\nFROM Student S, Performance P\nWHERE  P.Marks  >  84\nGROUP BY S.Student_name;</pre></code>The number of rows returned by the above SQL query is _________ . ",
+   "solution": "There is <b>no join condition</b>, so FROM makes a cross product: every student is paired with every Performance row.<br><br>\nWHERE Marks [latex]\\gt[/latex] 84 keeps the 5 performance rows with marks 86, 95, 90, 89, 92, and each is paired with all 5 students.<br><br>\nGROUP BY Student_name gives one row per student name [latex]\\rightarrow[/latex] 5 rows.<br><br>\n<b>Answer: 5</b><br><br><a href=\"https://gateoverflow.in/302797/gate2019-cs-51#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "SQL",
+   "tag2_url": "https://practicepaper.in/gate-cse/sql",
+   "ansMin": 5,
+   "ansMax": 5
+  },
+  {
+   "id": 1119152,
+   "number": 52,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following C program:<pre><code>\n#include &lt;stdio.h&gt;\nint main() {\n float sum = 0.0, j = 1.0, i = 2.0;\n while (i / j > 0.0625) {\n    j = j + j; \n    sum = sum + i/j;\n    printf(\"%f \\n\", sum);\n }\n return 0;\n}</code></pre>\nThe number of times variable sum will be printed When the above program is executed is _________ .",
+   "solution": "i = 2 stays fixed; j doubles each time.<br>\n- i/j = 2 [latex]\\rightarrow[/latex] j = 2, print (1)<br>\n- i/j = 1 [latex]\\rightarrow[/latex] j = 4, print (2)<br>\n- i/j = 0.5 [latex]\\rightarrow[/latex] j = 8, print (3)<br>\n- i/j = 0.25 [latex]\\rightarrow[/latex] j = 16, print (4)<br>\n- i/j = 0.125 [latex]\\rightarrow[/latex] j = 32, print (5)<br>\n- i/j = 0.0625: not [latex]\\gt[/latex] 0.0625 [latex]\\rightarrow[/latex] stop<br><br>\n<b>Answer: 5</b><br><br><a href=\"https://gateoverflow.in/302796/gate2019-cs-52#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Arithmetic Operation",
+   "tag2_url": "https://practicepaper.in/gate-cse/arithmetic-operation",
+   "ansMin": 5,
+   "ansMax": 5
+  },
+  {
+   "id": 1119153,
+   "number": 53,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following C program:<pre><code>\n#include &lt;stdio.h&gt;\nint main() { \n  int a[] = {2, 4, 6, 8, 10}; \n  int i, sum = 0, *b = a + 4; \n  for (i = 0; i < 5; i++ ) \n  sum = sum + (*b - i) - *(b - i); \n  printf(\"%d\\n\", sum); \n  return 0; \n} </code></pre>\nThe output of above C program is __________ . Note: This was Numerical Type question.",
+   "solution": "b points to a[4] = 10. Each step adds [latex](*b-i)-*(b-i)=(10-i)-a[4-i][/latex]:<br>\n- i = 0: 10 [latex]-[/latex] 10 = 0<br>\n- i = 1: 9 [latex]-[/latex] 8 = 1<br>\n- i = 2: 8 [latex]-[/latex] 6 = 2<br>\n- i = 3: 7 [latex]-[/latex] 4 = 3<br>\n- i = 4: 6 [latex]-[/latex] 2 = 4<br><br>\nsum = 0 + 1 + 2 + 3 + 4 = 10<br><br>\n<b>Answer: 10</b><br><br><a href=\"https://gateoverflow.in/302795/gate2019-cs-53#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Array and Pointer",
+   "tag2_url": "https://practicepaper.in/gate-cse/array-and-pointer",
+   "ansMin": 10,
+   "ansMax": 10
+  },
+  {
+   "id": 1119154,
+   "number": 54,
+   "type": "NAT",
+   "marks": 2,
+   "text": "In an RSA cryptosystem, the value of the public modulus parameter n is 3007. If it is also is known that [latex]\\phi(n)=2880[/latex], where [latex]\\phi()[/latex] denotes Euler's Totient Function, then the prime factors of n which is greater than 50 is _________ . ",
+   "solution": "n = pq and [latex]\\phi(n)=(p-1)(q-1)=n-(p+q)+1[/latex].<br>\nSo [latex]p+q=3007-2880+1=128[/latex] and [latex]pq=3007[/latex].<br><br>\np, q are roots of [latex]t^2-128t+3007=0[/latex]: [latex]t=\\frac{128\\pm\\sqrt{16384-12028}}{2}=\\frac{128\\pm66}{2}[/latex] [latex]\\rightarrow[/latex] 97 and 31.<br><br>\n<b>Answer: 97</b><br><br><a href=\"https://gateoverflow.in/302794/gate2019-cs-54#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Security",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-security",
+   "ansMin": 97,
+   "ansMax": 97
+  },
+  {
+   "id": 1119155,
+   "number": 55,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following relation P(X, Y, Z), Q(X, Y, T) and R(Y, V):\n<br><img src=\"/wp-content/uploads/GATE/CS/20191/q55.jpg\" /><br>How many tuples will be returned by the following relational algebra query?  <br><img src=\"/wp-content/uploads/GATE/CS/20191/q55a.jpg\" /><br>Answer:______",
+   "solution": "<b>Left part:</b> R tuples with V = V2 are (Y3, V2) and (Y2, V2). P has Y = Y2 only in (X2, Y2, Z2) [latex]\\rightarrow[/latex] {X2}.<br>\n<b>Right part:</b> Q tuples with T [latex]\\gt[/latex] 2 are (X1, Y2, 5) and (X1, Y1, 6); both Y2 and Y1 exist in R [latex]\\rightarrow[/latex] {X1}.<br><br>\n{X2} [latex]-[/latex] {X1} = {X2} [latex]\\rightarrow[/latex] 1 tuple.<br><br>\n<b>Answer: 1</b><br><br><a href=\"https://gateoverflow.in/302793/gate2019-cs-55#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Relational Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/relational-algebra",
+   "ansMin": 1,
+   "ansMax": 1
+  }
+ ]
+}

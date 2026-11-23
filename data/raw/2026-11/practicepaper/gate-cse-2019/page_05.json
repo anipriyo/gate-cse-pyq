@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11191,
+  "quizName": "GATE CS 2019",
+  "pageTitle": "GATE CSE 2019",
+  "timeLimit": 0,
+  "pageNo": 5,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2019",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1119121,
+   "number": 21,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The value of [latex]3^{51} \\;mod \\;5[/latex] is _____",
+   "solution": "[latex]3^4=81\\equiv1\\pmod5[/latex]. Since [latex]51=4\\times12+3[/latex]:<br>\n[latex]3^{51}=(3^4)^{12}\\cdot3^3\\equiv1\\cdot27\\equiv2\\pmod5[/latex]<br><br>\n<b>Answer: 2</b><br><br><a href=\"https://gateoverflow.in/302827/gate2019-cs-21#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "",
+   "tag2_url": "https://practicepaper.in/gate-cse/",
+   "ansMin": 2,
+   "ansMax": 2
+  },
+  {
+   "id": 1119122,
+   "number": 22,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Two numbers are chosen independently and uniformly at random from the set {1, 2, ..., 13}. The probability (rounded off to 3 decimal places) that their 4-bit (unsigned) binary representations have the same most significant bit is ___________",
+   "solution": "In 4 bits, the MSB is 1 for 8-13 (6 numbers) and 0 for 1-7 (7 numbers).<br><br>\n[latex]P=\\left(\\frac{7}{13}\\right)^2+\\left(\\frac{6}{13}\\right)^2=\\frac{49+36}{169}=\\frac{85}{169}\\approx0.503[/latex]<br><br>\n<b>Answer: 0.503</b><br><br><a href=\"https://gateoverflow.in/302826/gate2019-cs-22#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "ansMin": 0.502,
+   "ansMax": 0.504
+  },
+  {
+   "id": 1119123,
+   "number": 23,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider three concurrent processes P1, P2 and P3 as shown below, which access a shared variable D that has been initialized to 100. <br><img src=\"/wp-content/uploads/GATE/CS/20191/q23.jpg\" /><br>\nThe process are executed on a uniprocessor system running a time-shared operating system. If the minimum and maximum possible values of D after the three processes have completed execution are X and Y respectively, then the value of Y-X is __________. ",
+   "solution": "Each update is really load D, change, store D, so a process can overwrite the others' results.<br><br>\n- <b>Maximum</b>: lose P2's update. P1 reads 100; P2 runs fully (D = 50); P1 writes 120; then P3 makes it 130. So [latex]Y=130[/latex].<br>\n- <b>Minimum</b>: lose both additions. P2 reads 100; P1 and P3 run fully (D = 130); P2 writes 100 [latex]-[/latex] 50 = 50. So [latex]X=50[/latex].<br><br>\n[latex]Y-X=130-50=80[/latex]<br><br>\n<b>Answer: 80</b><br><br><a href=\"https://gateoverflow.in/302825/gate2019-cs-23#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Process Synchronization",
+   "tag2_url": "https://practicepaper.in/gate-cse/process-synchronization",
+   "ansMin": 80,
+   "ansMax": 80
+  },
+  {
+   "id": 1119124,
+   "number": 24,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the following C program:<pre><code>\n#include &lt;stdio.h&gt;\n int main(){\n  int arr[] = {1,2,3,4,5,6,7,8,9,0,1,2,5}, *ip = arr + 4;\n  printf(\"%d\\n\", ip[1]);\n  return 0;\n}</code></pre>\nThe number that will be displayed on execution of the program is _________ .",
+   "solution": "ip = arr + 4 points to arr[4]. ip[1] = *(ip + 1) = arr[5] = <b>6</b>.<br><br>\n<b>Answer: 6</b><br><br><a href=\"https://gateoverflow.in/302824/gate2019-cs-24#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Array and Pointer",
+   "tag2_url": "https://practicepaper.in/gate-cse/array-and-pointer",
+   "ansMin": 6,
+   "ansMax": 6
+  },
+  {
+   "id": 1119125,
+   "number": 25,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider a sequence of 14 elements: A = [-5, -10, 6, 3, -1, -2, 13, 4, -9, -1, 4, 12, -3, 0]. The sequence sum [latex]S(i,j)=\\sum_{k=i}^{j}A[k][/latex]. Determine the maximum of S(i,j), where [latex]0 \\leq i \\leq j \\lt 14[/latex]. (Divide and conquer approach may be used). Answer:______",
+   "solution": "Use Kadane's idea (running sum, restart when it goes negative):<br>\n[latex]-[/latex]5, [latex]-[/latex]10 are dropped. From 6: running sums 6, 9, 8, 6, 19, 23, 14, 13, 17, <b>29</b>, 26, 26.<br><br>\nMaximum subarray = 6 + 3 [latex]-[/latex] 1 [latex]-[/latex] 2 + 13 + 4 [latex]-[/latex] 9 [latex]-[/latex] 1 + 4 + 12 = 29.<br><br>\n<b>Answer: 29</b><br><br><a href=\"https://gateoverflow.in/302823/gate2019-cs-25#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Divide and Conquer",
+   "tag2_url": "https://practicepaper.in/gate-cse/divide-and-conquer",
+   "ansMin": 29,
+   "ansMax": 29
+  }
+ ]
+}

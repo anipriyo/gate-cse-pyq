@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11221,
+  "quizName": "GATE CSE 2022",
+  "pageTitle": "GATE CSE 2022",
+  "timeLimit": 0,
+  "pageNo": 11,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2022",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1122151,
+   "number": 51,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A processor [latex]X_1[/latex] operating at 2 GHz has a standard 5-stage RISC instruction pipeline having a base CPI (cycles per instruction) of one without any pipeline hazards. For a given program P that has 30% branch instructions, control hazards incur 2 cycles stall for every branch. A new version of the processor [latex]X_2[/latex] operating at same clock frequency has an additional branch predictor unit (BPU) that completely eliminates stalls for correctly predicted branches. There is neither any savings nor any additional stalls for wrong predictions. There are no structural hazards and data hazards for [latex]X_1[/latex] and [latex]X_2[/latex]. If the BPU has a prediction accuracy of 80%, the speed up (rounded   off to   two decimal places)   obtained   by [latex]X_2[/latex]    over   [latex]X_1[/latex]   in executing P is",
+   "solution": "Compare the CPI of both processors:<br>- [latex]X_1[/latex]: CPI [latex]=1+0.3\\times2=1.6[/latex]<br>\n- [latex]X_2[/latex]: only the 20% wrongly predicted branches stall: CPI [latex]=1+0.3\\times0.2\\times2=1.12[/latex]<br><br>\nSame clock, so speedup [latex]=\\frac{1.6}{1.12}\\approx1.43[/latex]<br><br>\n<b>Answer: 1.43</b><br><br><a href=\"https://gateoverflow.in/371885/Gate-cse-2022-question-51#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Pipeline Processor",
+   "tag2_url": "https://practicepaper.in/gate-cse/pipeline-processor",
+   "ansMin": 1.42,
+   "ansMax": 1.45
+  },
+  {
+   "id": 1122152,
+   "number": 52,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the queues Q1 containing four elements and Q2 containing none (shown\nas the Initial State in the figure). The only operations allowed on these two queues are  [latex]Enqueue(Q,element)[/latex]   and  [latex]Dequeue(Q)[/latex].   The  minimum  number  of [latex]Enqueue [/latex] operations on Q1 required to place the elements of Q1 in Q2 in reverse\norder (shown as the Final State in the figure) without using any additional storage is<br><img src=\"/wp-content/uploads/GATE/CS/20221/q52.jpg\" /><br>\n",
+   "solution": "Use only Q2 for the reversal: after enqueueing each new element into Q2, rotate the older elements behind it (dequeue from Q2 and enqueue into Q2).<br>\n- Move 1 [latex]\\rightarrow[/latex] Q2: [1]<br>\n- Move 2 [latex]\\rightarrow[/latex] Q2: [1, 2], rotate once [latex]\\rightarrow[/latex] [2, 1]<br>\n- Move 3 [latex]\\rightarrow[/latex] Q2, rotate twice [latex]\\rightarrow[/latex] [3, 2, 1]<br>\n- Move 4 [latex]\\rightarrow[/latex] Q2, rotate 3 times [latex]\\rightarrow[/latex] [4, 3, 2, 1]<br><br>\nQ1 is only dequeued, never enqueued.<br><br>\n<b>Answer: 0</b><br><br><a href=\"https://gateoverflow.in/371884/Gate-cse-2022-question-52#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Queue",
+   "tag2_url": "https://practicepaper.in/gate-cse/queue",
+   "ansMin": 0,
+   "ansMax": 0
+  },
+  {
+   "id": 1122153,
+   "number": 53,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider two files systems A and B , that use contiguous allocation and linked allocation, respectively. A file of size 100 blocks is already stored in A and also in\nB. Now, consider inserting a new block in the middle of the file (between [latex]50^{th}  \\text{ and }51^{st}[/latex] block), whose data is already available in the memory. Assume that there are enough free blocks at the end of the file and that the file control blocks are already in memory. Let the number of disk accesses required to insert a block in the middle of the file in   A   and     B   are [latex]n_A[/latex] and [latex]n_B[/latex],   respectively, then the value of  [latex]n_A+n_B[/latex]  is ",
+   "solution": "<b>Contiguous (A):</b> blocks 51-100 must each move one place: read + write for 50 blocks = 100 accesses, plus writing the new block = 1. [latex]n_A=101[/latex].<br><br>\n<b>Linked (B):</b> follow pointers to reach block 50 = 50 reads; write the new block (pointing to block 51) = 1; rewrite block 50's pointer = 1. [latex]n_B=52[/latex].<br><br>\n[latex]n_A+n_B=101+52=153[/latex]<br><br>\n<b>Answer: 153</b><br><br><a href=\"https://gateoverflow.in/371883/Gate-cse-2022-question-53#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "File Systems",
+   "tag2_url": "https://practicepaper.in/gate-cse/file-systems",
+   "ansMin": 153,
+   "ansMax": 153
+  },
+  {
+   "id": 1122154,
+   "number": 54,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a demand paging system with four page frames (initially empty) and LRU page replacement policy. For the following page reference string\n<br><br>\n7, 2, 7, 3, 2, 5, 3, 4, 6, 7, 7,1, 5, 6,1\n<br><br>\nthe page fault rate, defined as the ratio of number of page faults to the number of memory accesses (rounded off to one decimal place) is\n",
+   "solution": "LRU with 4 frames (F = fault):<br>\n7 F, 2 F, 7 hit, 3 F, 2 hit, 5 F [7, 2, 3, 5], 3 hit,<br>\n4 F (evict 7), 6 F (evict 2), 7 F (evict 5), 7 hit, 1 F (evict 3), 5 F (evict 4), 6 hit, 1 hit.<br><br>\nFaults = 9 out of 15 references. Rate [latex]=\\frac{9}{15}=0.6[/latex]<br><br>\n<b>Answer: 0.6</b><br><br><a href=\"https://gateoverflow.in/371882/Gate-cse-2022-question-54#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "ansMin": 0.6,
+   "ansMax": 0.6
+  },
+  {
+   "id": 1122155,
+   "number": 55,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following grammar along with translation rules.<br>[latex] \\begin{aligned}\n &S \\rightarrow S_1  \\# T & & \\{S._{val}=S_{1.val}*T._{val} \\} \\\\ \n &S \\rightarrow T & & \\{S._{val}=T._{val} \\} \\\\ \n&T \\rightarrow T_1  \\% R & & \\{T._{val}=T_{1.val}  \\div R._{val} \\} \\\\ \n&T \\rightarrow R & & \\{T._{val}=R._{val} \\} \\\\ \n&R \\rightarrow id & & \\{R._{val}=id._{val} \\} \\\\ \n \\end{aligned}[/latex]<br>Here [latex] \\#[/latex] and [latex] \\%[/latex] are operators and [latex]id[/latex] is a token that represents an integer and [latex]id_{.val}[/latex] represents the corresponding integer value. The set of non-terminals is [latex] \\{S,T,R,P \\}[/latex] and a subscripted non-terminal indicates an instance of the non-terminal.\n<br>Using this translation scheme, the computed value of [latex]S_{.val}[/latex] for root of the parse tree for the expression [latex]20  \\# 10  \\% 5  \\# 8 \\% 2  \\% 2[/latex] is\n",
+   "solution": "From the grammar, # (multiply) is at the S level, so it has <b>lower precedence</b>; % (divide) is at the T level, so it binds tighter. Both are left recursive, i.e. left associative.<br><br>\n[latex]20\\,\\#\\,(10\\%5)\\,\\#\\,((8\\%2)\\%2)=20\\times2\\times2=80[/latex]<br><br>\n<b>Answer: 80</b><br><br><a href=\"https://gateoverflow.in/371881/Gate-cse-2022-question-55#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Parsing",
+   "tag2_url": "https://practicepaper.in/gate-cse/parsing",
+   "ansMin": 80,
+   "ansMax": 80
+  }
+ ]
+}

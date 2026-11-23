@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11221,
+  "quizName": "GATE CSE 2022",
+  "pageTitle": "GATE CSE 2022",
+  "timeLimit": 0,
+  "pageNo": 6,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2022",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1122126,
+   "number": 26,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Which one of the following is the closed form for the generating function of the sequence [latex] \\{a_n \\}_{n \\geq 0}[/latex] defined below?<br>[latex]a_n= \\left \\{ \\begin{matrix}\nn+1, &n  \\text{ is odd}  \\\\ \n 1,&  \\text{otherwise}\n \\end{matrix} \\right.[/latex]",
+   "solution": "Write [latex]a_n=1+b_n[/latex], where [latex]b_n=n[/latex] for odd n and 0 otherwise.<br><br>\n- [latex]\\sum x^n=\\frac{1}{1-x}[/latex]<br>\n- [latex]\\sum_{n\\text{ odd}}x^n=\\frac{x}{1-x^2}[/latex], so [latex]\\sum_{n\\text{ odd}}nx^n=x\\frac{d}{dx}\\left(\\frac{x}{1-x^2}\\right)=x\\cdot\\frac{1+x^2}{(1-x^2)^2}[/latex]<br><br>\n[latex]G(x)=\\frac{x(1+x^2)}{(1-x^2)^2}+\\frac{1}{1-x}[/latex]<br><br>\n<b>Answer: Option 1</b><br><br><a href=\"https://gateoverflow.in/371910/Gate-cse-2022-question-26#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Functions",
+   "tag2_url": "https://practicepaper.in/gate-cse/functions",
+   "options": [
+    "[latex]\\frac{x(1+x^2)}{(1-x^2)^2}+\\frac{1}{1-x}[/latex]",
+    "[latex]\\frac{x(3-x^2)}{(1-x^2)^2}+\\frac{1}{1-x}[/latex]",
+    "[latex]\\frac{2x}{(1-x^2)^2}+\\frac{1}{1-x}[/latex]",
+    "[latex]\\frac{x}{(1-x^2)^2}+\\frac{1}{1-x}[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1122127,
+   "number": 27,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a simple undirected unweighted graph with at least three vertices. If [latex]A[/latex] is the adjacency matrix of the graph, then the number of 3-cycles in the graph is given by the trace of",
+   "solution": "[latex](A^3)_{ii}[/latex] = number of closed walks of length 3 starting at vertex i, i.e. triangles through i, each counted twice (two directions).<br><br>\nIn the trace, every triangle appears at each of its 3 vertices [latex]\\times[/latex] 2 directions = 6 times.<br><br>\nNumber of triangles [latex]=\\frac{tr(A^3)}{6}[/latex]<br><br>\n<b>Answer: [latex]A^3[/latex] divided by 6</b><br><br><a href=\"https://gateoverflow.in/371909/Gate-cse-2022-question-27#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "options": [
+    "[latex]A^3[/latex]",
+    "[latex]A^3[/latex] divided by 2",
+    "[latex]A^3[/latex] divided by 3",
+    "[latex]A^3[/latex] divided by 6"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1122128,
+   "number": 28,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Which one of the following statements is FALSE?",
+   "solution": "Check each statement (we need the FALSE one):<br>- The TLB is associative memory and compares all entries in parallel [latex]\\text{---}[/latex] TRUE.<br>\n- A TLB hit means the page is in main memory, so on a cache miss the word is surely in main memory [latex]\\text{---}[/latex] TRUE.<br>\n- <b>Inverted page table</b>: the frame is found by searching (or hashing and following a chain), so the time depends on the address [latex]\\text{---}[/latex] <b>FALSE</b>.<br>\n- In a hashed page table, colliding addresses sit on the same chain at different positions, so their access times differ [latex]\\text{---}[/latex] TRUE.<br><br>\n<b>Answer: Option 3 is FALSE</b><br><br><a href=\"https://gateoverflow.in/371908/Gate-cse-2022-question-28#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "options": [
+    "The TLB performs an associative search in parallel on all its valid entries using page number of incoming virtual address.",
+    "If the virtual address of a word given by CPU has a TLB hit, but the subsequent search for the word results in a cache miss, then the word will always be present in the main memory.",
+    "The memory access time using a given inverted page table is always same for all incoming virtual addresses.",
+    "In a system that uses hashed page tables, if two distinct virtual addresses V1 and V2 map to the same value while hashing, then the memory access time of these addresses will not be the same."
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1122129,
+   "number": 29,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let [latex]R_i(z)[/latex] and [latex]W_i(z)[/latex] denote read and write operations on a data element [latex]z[/latex] by a transaction [latex]T_i[/latex], respectively. Consider the schedule [latex]S[/latex] with four transactions.<br><br>S: [latex]R_4(x)R_2(x)R_3(x)R_1(y)W_1(y)W_2 (x)W_3 (y)R_4(y)[/latex] <br><br>Which one of the following serial schedules is conflict equivalent to [latex]S[/latex]?",
+   "solution": "Conflicting pairs in S:<br>\n- [latex]R_4(x)[/latex] before [latex]W_2(x)[/latex]: T4 [latex]\\rightarrow[/latex] T2<br>\n- [latex]R_3(x)[/latex] before [latex]W_2(x)[/latex]: T3 [latex]\\rightarrow[/latex] T2<br>\n- [latex]R_1(y)/W_1(y)[/latex] before [latex]W_3(y)[/latex]: T1 [latex]\\rightarrow[/latex] T3<br>\n- [latex]W_1(y)[/latex] before [latex]R_4(y)[/latex]: T1 [latex]\\rightarrow[/latex] T4<br>\n- [latex]W_3(y)[/latex] before [latex]R_4(y)[/latex]: T3 [latex]\\rightarrow[/latex] T4<br><br>\nTopological order: T1 [latex]\\rightarrow[/latex] T3 [latex]\\rightarrow[/latex] T4 [latex]\\rightarrow[/latex] T2.<br><br>\n<b>Answer: [latex]T_1\\rightarrow T_3\\rightarrow T_4\\rightarrow T_2[/latex]</b><br><br><a href=\"https://gateoverflow.in/371907/Gate-cse-2022-question-29#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Transaction",
+   "tag2_url": "https://practicepaper.in/gate-cse/transaction",
+   "options": [
+    "[latex]T_1\\rightarrow T_3\\rightarrow T_4\\rightarrow T_2[/latex]",
+    "[latex]T_1\\rightarrow T_4\\rightarrow T_3\\rightarrow T_2[/latex]",
+    "[latex]T_4\\rightarrow T_1\\rightarrow T_3\\rightarrow T_2[/latex]",
+    "[latex]T_3\\rightarrow T_1\\rightarrow T_4\\rightarrow T_2[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1122130,
+   "number": 30,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a digital display system (DDS) shown in the figure that displays the contents of register X. A 16-bit code word is used to load a word in X, either from S or from R. S is a 1024-word memory segment and R is a 32-word register file. Based on the value of mode bit M, T selects an input word to load in X. P and Q interface with the corresponding bits in the code word to choose the addressed word. Which one of the following represents the functionality of P, Q, and T?<br><img src=\"/wp-content/uploads/GATE/CS/20221/q30.jpg\" /><br>",
+   "solution": "Match each block with its job:<br>- S has 1024 words, so the S-address is 10 bits. P must activate exactly one of 1024 words [latex]\\rightarrow[/latex] <b>10 : [latex]2^{10}[/latex] decoder</b>.<br>\n- R has 32 words, so the R-address is 5 bits [latex]\\rightarrow[/latex] Q is a <b>5 : [latex]2^5[/latex] decoder</b>.<br>\n- T chooses one of two inputs (from S or R) using mode bit M [latex]\\rightarrow[/latex] <b>2 : 1 multiplexer</b>.<br><br>\n<b>Answer: P is 10:2^10 decoder; Q is 5:2^5 decoder; T is 2:1 multiplexer</b><br><br><a href=\"https://gateoverflow.in/371906/Gate-cse-2022-question-30#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "ALU Data Path and Control Unit",
+   "tag2_url": "https://practicepaper.in/gate-cse/alu-data-path-and-control-unit",
+   "options": [
+    "P is 10:1 multiplexer; <br>Q is 5:1 multiplexer; <br>T is 2:1 multiplexer",
+    "P is [latex]10:2^{10}[/latex] decoder; <br>Q is [latex]5:2^{5}[/latex] decoder; <br>T is 2:1 encoder",
+    "P is [latex]10:2^{10}[/latex] decoder; <br>Q is [latex]5:2^{5}[/latex] decoder; <br>T is 2:1 multiplexer",
+    "P is 1:10 de-multiplexer;<br>Q is 1:5 de-multiplexer; <br>T is 2:1 multiplexer"
+   ],
+   "correct": 2
+  }
+ ]
+}

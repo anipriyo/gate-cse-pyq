@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11251,
+  "quizName": "GATE CSE 2025 SET-1",
+  "pageTitle": "GATE CSE 2025 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 9,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2025-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1125141,
+   "number": 41,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A disk of size [latex] 512M [/latex] bytes is divided into blocks of [latex] 64K [/latex] bytes. A file is stored in the disk using linked allocation. Each data block reserves 4 bytes to store the pointer to the next data block. The link part of the last data block contains a NULL pointer (also of 4 bytes). Suppose a file of [latex] 1M [/latex] bytes needs to be stored in the disk. Assume, [latex] 1K=2^{10}, 1M=2^{20} [/latex]. The amount of space in bytes that will be wasted due to internal fragmentation is _________. (Answer in integer)",
+   "solution": "Disk block size [latex]=64K=2^{16}[/latex] bytes. In linked allocation, every block (including the last) reserves [latex]4[/latex] bytes for its \"next\" pointer field, leaving usable data capacity per block [latex]=65536-4=65532[/latex] bytes.<br><br>\nFile size [latex]=1M=2^{20}=1{,}048{,}576[/latex] bytes. Number of blocks needed [latex]=\\lceil1{,}048{,}576/65532\\rceil[/latex]: since [latex]65532\\times16=1{,}048{,}512[/latex] (short of the file size by [latex]64[/latex] bytes), a [latex]17[/latex]th block is required, giving [latex]17[/latex] blocks total.<br><br>\nTotal disk space allocated [latex]=17\\times65536=1{,}114{,}112[/latex] bytes. Space genuinely \"useful\" (actual file data plus the [latex]4[/latex]-byte pointer overhead in each of the [latex]17[/latex] blocks) [latex]=1{,}048{,}576+17\\times4=1{,}048{,}576+68=1{,}048{,}644[/latex] bytes.<br><br>\nInternal fragmentation (wasted space) [latex]=1{,}114{,}112-1{,}048{,}644=65{,}468[/latex] bytes.<br><br>\n<b>Answer: 65468</b><br><br><a href=\"https://gateoverflow.in/460039/gate-cse-2025-set-1-question-41#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "File Systems",
+   "tag2_url": "https://practicepaper.in/gate-cse/file-systems",
+   "ansMin": 65468,
+   "ansMax": 65468
+  },
+  {
+   "id": 1125142,
+   "number": 42,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Refer to the given 3-address code sequence. This code sequence is split into basic blocks. The number of basic blocks is _________. (Answer in integer)  \n<br><br>\n1001: i = 1<br>\n1002: j = 1<br>\n1003: t1 = 10*i<br>\n1004: t2 = t1+j<br>\n1005: t3 = 8*t2<br>\n1006: t4 = t3-88<br>\n1007: a[t4] = 0.0<br>\n1008: j = j+1<br>\n1009: if j <= 10 goto 1003<br>\n1010: i = i+1<br>\n1011: if i <= 10 goto 1002<br>\n1012: i = 1<br>\n1013: t5 = i-1<br>\n1014: t6 = 88*t5<br>\n1015: a[t6] = 1.0<br>\n1016: i = i+1<br>\n1017: if i <= 10 goto 1013<br>",
+   "solution": "A new basic block begins at every <b>leader</b> statement: the very first statement, any statement that is the <i>target</i> of a jump/goto, and any statement immediately following a conditional or unconditional jump.<br><br>\nScanning the code for leaders: [latex]1001[/latex] (first statement); [latex]1003[/latex] (target of the [latex]\\text{goto }1003[/latex] at [latex]1009[/latex]); [latex]1010[/latex] (follows the conditional jump at [latex]1009[/latex]); [latex]1002[/latex] (target of [latex]\\text{goto }1002[/latex] at [latex]1011[/latex]); [latex]1012[/latex] (follows the conditional jump at [latex]1011[/latex]); [latex]1013[/latex] (target of [latex]\\text{goto }1013[/latex] at [latex]1017[/latex]).<br><br>\nThat's [latex]6[/latex] leaders, giving [latex]6[/latex] basic blocks: [latex]\\{1001\\},\\{1002\\},\\{1003\\text{-}1009\\},\\{1010\\text{-}1011\\},\\{1012\\},\\{1013\\text{-}1017\\}[/latex].<br><br>\n<b>Answer: 6</b><br><br><a href=\"https://gateoverflow.in/460038/gate-cse-2025-set-1-question-42#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Intermediate Code Generation",
+   "tag2_url": "https://practicepaper.in/gate-cse/intermediate-code-generation",
+   "ansMin": 6,
+   "ansMax": 6
+  },
+  {
+   "id": 1125143,
+   "number": 43,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A computer has a memory hierarchy consisting of two-level cache (L1 and L2) and a main memory. If the processor needs to access data from memory, it first looks into L1 cache. If the data is not found in L1 cache, it goes to L2 cache. If it fails to get the data from L2 cache, it goes to main memory, where the data is definitely available. Hit rates and access times of various memory units are shown in the figure. The average memory access time in nanoseconds (ns) is _________. (rounded off to two decimal places) <br><img src=\"/wp-content/uploads/GATE/CS/20251/q43.webp\"/><br>",
+   "solution": "This system uses <b>hierarchical (serial) cache access</b>: to reach L2, the processor must have already tried and missed in L1; to reach main memory, it must have already tried and missed in both L1 and L2. This means the given access-time figures for L2 and main memory already <i>include</i> the time already spent checking the earlier levels: L1 access time [latex]T_1=10[/latex] ns, L2 access time (which already includes the L1 miss penalty) [latex]T_2=20[/latex] ns, and main memory access time (already including both L1 and L2 miss penalties) [latex]T_3=200[/latex] ns. Hit rates: [latex]H_1=0.95[/latex] (L1), [latex]H_2=0.85[/latex] (L2).<br><br>\nThe average memory access time is a weighted sum over the three possible outcomes &mdash; hit in L1, miss-L1-then-hit-L2, or miss-both-then-go-to-memory:<br>\n[latex]\\text{AMAT}=H_1T_1+(1-H_1)H_2T_2+(1-H_1)(1-H_2)T_3[/latex]<br>\n[latex]=0.95(10)+0.05(0.85)(20)+0.05(0.15)(200)[/latex]<br>\n[latex]=9.5+0.85+1.5=11.85[/latex] ns.<br><br>\n<b>Answer: 11.85</b><br><br><a href=\"https://gateoverflow.in/460037/gate-cse-2025-set-1-question-43#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "ansMin": 11.83,
+   "ansMax": 11.87
+  },
+  {
+   "id": 1125144,
+   "number": 44,
+   "type": "NAT",
+   "marks": 2,
+   "text": "In optimal page replacement algorithm, information about all future page references is available to the operating system (OS). A modification of the optimal page replacement algorithm is as follows:  \n<br>\nThe OS correctly predicts only up to next 4 page references (including the current page) at the time of allocating a frame to a page.  \n<br>\nA process accesses the pages in the following order of page numbers: \n<br><br>\n1, 3, 2, 4, 2, 3, 1, 2, 4, 3, 1, 4.  \n<br><br>\nIf the system has three memory frames that are initially empty, the number of page faults that will occur during execution of the process is _________. (Answer in integer)",
+   "solution": "With the OS able to correctly predict only the next [latex]4[/latex] references (including the current one) at the moment a frame is allocated, simulate the reference string [latex]1,3,2,4,2,3,1,2,4,3,1,4[/latex] with [latex]3[/latex] initially-empty frames:<br><br>\n[latex]\\begin{array}{c|c|c}\\text{Ref}&\\text{Frames after}&\\text{Fault?}\\\\\\hline1&\\{1\\}&\\text{Fault}\\\\3&\\{1,3\\}&\\text{Fault}\\\\2&\\{1,3,2\\}&\\text{Fault}\\\\4&\\{4,3,2\\}\\ (\\text{evict }1\\text{, unused within next window }2,3,1)&\\text{Fault}\\\\2&\\{4,3,2\\}&\\text{Hit}\\\\3&\\{4,3,2\\}&\\text{Hit}\\\\1&\\{4,2,1\\}\\ (\\text{evict }3\\text{, farthest-future within window }2,4,3)&\\text{Fault}\\\\2&\\{4,2,1\\}&\\text{Hit}\\\\4&\\{4,2,1\\}&\\text{Hit}\\\\3&\\{4,1,3\\}\\ (\\text{evict }2\\text{, no longer used in remaining string})&\\text{Fault}\\\\1&\\{4,1,3\\}&\\text{Hit}\\\\4&\\{4,1,3\\}&\\text{Hit}\\end{array}[/latex]<br><br>\nTotal page faults [latex]=6[/latex] (at references [latex]1,3,2,4,1,3[/latex] in the sequence, marked \"Fault\" above).<br><br>\n<b>Answer: 6</b><br><br><a href=\"https://gateoverflow.in/460036/gate-cse-2025-set-1-question-44#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "ansMin": 6,
+   "ansMax": 6
+  },
+  {
+   "id": 1125145,
+   "number": 45,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following database tables of a sports league.  \n<br><br>\nplayer(pid,pname,age) \n<br>coach(cid,cname) \n<br>team(tid,tname,city,cid) \n<br>members(pid,tid)\n<br><br>\nAn instance of the table and an SQL query are given.  \n<br><img src=\"/wp-content/uploads/GATE/CS/20251/q45.webp\"/><br>\nThe value returned by the given SQL query is _________. (Answer in integer)",
+   "solution": "From the given table instances:<br>\n[latex]player[/latex]: (1,Jasprit,31), (2,Atharva,24), (3,Ishan,26), (4,Axar,30)<br>\n[latex]coach[/latex]: (101,Ricky), (102,Mark), (103,Trevor)<br>\n[latex]team[/latex]: (10,MI,Mumbai,102), (20,DC,Delhi,101), (30,PK,Mohali,103)<br>\n[latex]members[/latex]: (1,10), (2,30), (3,10), (4,20)<br><br>\nEvaluate the inner subquery first: [latex]C.cname=\\text{'Mark'}[/latex] picks out coach [latex](102,\\text{Mark})[/latex]. Then [latex]T.cid=C.cid=102[/latex] picks out team [latex](10,\\text{MI},\\text{Mumbai},102)[/latex]. Then [latex]M.tid=T.tid=10[/latex] picks out members with [latex]tid=10[/latex]: [latex]pid=1[/latex] and [latex]pid=3[/latex].<br><br>\nSo the subquery returns [latex]\\{1,3\\}[/latex]. The outer query then computes [latex]\\text{MIN(age)}[/latex] over players with [latex]pid\\in\\{1,3\\}[/latex], i.e. Jasprit (age [latex]31[/latex]) and Ishan (age [latex]26[/latex]).<br><br>\n[latex]\\text{MIN}(31,26)=26[/latex].<br><br>\n<b>Answer: 26</b><br><br><a href=\"https://gateoverflow.in/460035/gate-cse-2025-set-1-question-45#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "SQL",
+   "tag2_url": "https://practicepaper.in/gate-cse/sql",
+   "ansMin": 26,
+   "ansMax": 26
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "meta": {
+  "quizId": 11251,
+  "quizName": "GATE CSE 2025 SET-1",
+  "pageTitle": "GATE CSE 2025 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 4,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2025-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1125116,
+   "number": 16,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following statement(s) is/are TRUE for any binary search tree (BST) having [latex]n[/latex] distinct integers?",
+   "solution": "Checking each BST claim for [latex]n[/latex] distinct integers:<br><br>\n- <b>Maximum path length from root to any node is [latex]n-1[/latex]:</b> true &mdash; in the worst case (a completely skewed/degenerate BST, essentially a linked list), all [latex]n[/latex] nodes form a single chain, giving a root-to-deepest-node path of [latex]n-1[/latex] edges, which is also the largest this can ever be since there are only [latex]n[/latex] nodes total.<br>\n- <b>Inorder traversal always produces sorted order:</b> true &mdash; this is the defining property of a BST (left subtree [latex]<[/latex] node [latex]<[/latex] right subtree, recursively), and it holds regardless of the tree's shape.<br>\n- <b>Finding an element takes [latex]O(\\log_2n)[/latex] time in the worst case:</b> false &mdash; that bound only holds for a <i>balanced</i> BST. A skewed/degenerate BST (as noted above) can force search time all the way up to [latex]O(n)[/latex].<br>\n- <b>Every BST is also a Min-Heap:</b> false &mdash; a min-heap requires every parent to be smaller than <i>both</i> children, but a BST only orders left [latex]<[/latex] parent [latex]<[/latex] right; nothing stops a BST's left child from being smaller than its grandparent in ways that violate heap order.<br><br>\n<b>Answer: Max path length is n-1; and inorder traversal always gives sorted order.</b><br><br><a href=\"https://gateoverflow.in/460064/gate-cse-2025-set-1-question-16#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Search Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-search-tree",
+   "options": [
+    "The maximum length of a path from the root node to any other node is [latex](n - 1)[/latex].",
+    "An inorder traversal will always produce a sorted sequence of elements.",
+    "Finding an element takes [latex]O(\\log_2 n)[/latex] time in the worst case.",
+    "Every BST is also a Min-Heap."
+   ],
+   "correctSet": [
+    0,
+    1
+   ]
+  },
+  {
+   "id": 1125117,
+   "number": 17,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "A partial data path of a processor is given in the figure, where [latex]RA[/latex], [latex]RB[/latex], and [latex]RZ[/latex] are 32-bit registers. Which option(s) is/are CORRECT related to arithmetic operations using the data path as shown? <br><img src=\"/wp-content/uploads/GATE/CS/20251/q17.webp\"/><br>\n",
+   "solution": "The given data path consists of:<br><br>\n\n- Two 32-bit registers: <b>RA</b> and <b>RB</b>.<br>\n- Two multiplexers (<b>Mux_A</b> and <b>Mux_B</b>).<br>\n- Each multiplexer can select either:\n  - the corresponding register value, or\n  - a 32-bit immediate value.<br>\n- The selected inputs are fed to the ALU, whose output is stored in register <b>RZ</b>.<br><br>\n\nThus, the ALU can receive the following combinations of operands:<br><br>\n\n<table border=\"1\" cellpadding=\"5\">\n<tr>\n<th>Mux_A</th>\n<th>Mux_B</th>\n<th>Operands</th>\n</tr>\n<tr>\n<td>RA</td>\n<td>RB</td>\n<td>Two registers</td>\n</tr>\n<tr>\n<td>RA</td>\n<td>Immediate</td>\n<td>One register + one immediate</td>\n</tr>\n<tr>\n<td>Immediate</td>\n<td>RB</td>\n<td>One immediate + one register</td>\n</tr>\n<tr>\n<td>Immediate</td>\n<td>Immediate</td>\n<td>Two immediate values</td>\n</tr>\n</table><br>\n\nNow, evaluate each statement.<br><br>\n\n<b>Option A:</b> \n\nThe data path can implement arithmetic operations involving two registers.<br><br>\n\nSince Mux_A can select <b>RA</b> and Mux_B can select <b>RB</b>, the ALU can perform operations such as \n\n[latex]\nRZ \\leftarrow RA + RB\n[/latex]<br><br>\n\nHence, <b>Option A is Correct.</b><br><br>\n\n<b>Option B:</b> \n\nThe data path can implement arithmetic operations involving one register and one immediate value.<br> \n\nExamples:<br> \n\n[latex]\nRZ \\leftarrow RA + 10\n[/latex] \n\nor \n\n[latex]\nRZ \\leftarrow 20 + RB\n[/latex]<br> \n\nTherefore, <b>Option B is Correct.</b><br><br>\n\n\n<b>Option C:</b> \n\nThe data path can implement arithmetic operations involving two immediate values. \n\nBoth multiplexers can independently select their immediate inputs. Therefore, the ALU can perform operations like \n\n[latex]\nRZ \\leftarrow 15 + 25\n[/latex]<br> \n\nHence, <b>Option C is Correct.</b><br><br>\n\n<b>Option D:</b> \n\nThe data path can only implement arithmetic operations involving one register and one immediate value. \n\nThis is false because the data path also supports:<br> \n\n- Register + Register<br>\n- Immediate + Immediate<br>\n- Register + Immediate<br><br>\n\nTherefore, <b>Option D is Incorrect.</b><br><br><a href=\"https://gateoverflow.in/460063/gate-cse-2025-set-1-question-17#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "ALU Data Path and Control Unit",
+   "tag2_url": "https://practicepaper.in/gate-cse/alu-data-path-and-control-unit",
+   "options": [
+    "The data path can implement arithmetic operations involving two registers.",
+    "The data path can implement arithmetic operations involving one register and one immediate value.",
+    "The data path can implement arithmetic operations involving two immediate values.",
+    "The data path can only implement arithmetic operations involving one register and one immediate value."
+   ],
+   "correctSet": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1125118,
+   "number": 18,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "A regular language [latex]L[/latex] is accepted by a non-deterministic finite automaton (NFA) with [latex]n[/latex] states. Which of the following statement(s) is/are FALSE?",
+   "solution": "For a regular language [latex]L[/latex] accepted by some [latex]n[/latex]-state NFA, recall two standard facts: (1) subset construction always produces an equivalent DFA with at most [latex]2^n[/latex] states, and (2) NFA/DFA state counts for a given language are not unique &mdash; smaller equivalent automata can certainly exist.<br><br>\n- \"[latex]L[/latex] may have an accepting NFA with [latex]< n[/latex] states\": could well be true (this [latex]n[/latex]-state NFA might not be minimal), so calling it FALSE is incorrect &mdash; it's a true possibility, not a false statement.<br>\n- \"[latex]L[/latex] may have an accepting DFA with [latex]< n[/latex] states\": also entirely possible depending on the language, so this is also true (not false).<br>\n- \"There exists a DFA with [latex]\\le 2^n[/latex] states accepting [latex]L[/latex]\": guaranteed true by subset construction &mdash; so this is also true, not false.<br>\n- <b>\"Every DFA that accepts L has [latex]> 2^n[/latex] states\"</b>: this directly <b>contradicts</b> the subset-construction guarantee (a DFA with at most [latex]2^n[/latex] states always exists) &mdash; so this statement is definitely <b>FALSE</b>.<br><br>\n<b>Answer: \"Every DFA that accepts L has more than [latex]2^n[/latex] states\" is the FALSE statement.</b><br><br><a href=\"https://gateoverflow.in/460062/gate-cse-2025-set-1-question-18#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Finite Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/finite-automata",
+   "options": [
+    "[latex]L[/latex] may have an accepting NFA with < [latex]n[/latex] states.",
+    "[latex]L[/latex] may have an accepting DFA with < [latex]n[/latex] states.",
+    "There exists a DFA with [latex]\\leq 2^n[/latex] states that accepts [latex]L[/latex].",
+    "Every DFA that accepts [latex]L[/latex] has [latex]> 2^n[/latex] states."
+   ],
+   "correctSet": [
+    3
+   ]
+  },
+  {
+   "id": 1125119,
+   "number": 19,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Suppose in a multiprogramming environment, the following C program segment is executed. A process goes into I/O queue whenever an I/O related operation is performed. Assume that there will always be a context switch whenever a process requests for an I/O, and also whenever the process returns from an I/O. The number of times the process will enter the ready queue during its lifetime (not counting the time the process enters the ready queue when it is run initially) is _______. (Answer in integer)\n<pre><code>\nint main()\n{\n\tint x=0,i=0;\n\tscanf(\"%d\",&x);\n\tfor(i=0; i<20; i++)\n\t{\n\t\t x = x + 20;\n\t\t printf(\"%d\\n\",x);\n\t}\n\treturn 0;\n}\n</pre></code>",
+   "solution": "Every time the process performs an I/O operation, it leaves the CPU (context switch out to the I/O queue) and, once the I/O completes, must re-enter the <b>ready queue</b> to wait for the CPU again (context switch back).<br><br>\nCounting the I/O operations in this program: one [latex]\\text{scanf}[/latex] at the start, plus one [latex]\\text{printf}[/latex] inside each of the [latex]20[/latex] loop iterations &mdash; that's [latex]1+20=21[/latex] I/O operations in total.<br><br>\nEach of these [latex]21[/latex] I/O completions causes exactly one re-entry into the ready queue (and we're told not to count the very first, initial dispatch into the ready queue separately, which is consistent with this count already excluding it).<br><br>\n<b>Answer: 21</b><br><br><a href=\"https://gateoverflow.in/460061/gate-cse-2025-set-1-question-19#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Process",
+   "tag2_url": "https://practicepaper.in/gate-cse/process",
+   "ansMin": 21,
+   "ansMax": 21
+  },
+  {
+   "id": 1125120,
+   "number": 20,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Let [latex]S[/latex] be the set of all ternary strings defined over the alphabet [latex]\\{a, b, c\\}[/latex]. Consider all strings in [latex]S[/latex] that contain at least one occurrence of two consecutive symbols, that is, \"aa\", \"bb\" or \"cc\". The number of such strings of length 5 that are possible is _______. (Answer in integer)",
+   "solution": "Total ternary strings of length [latex]5[/latex] over [latex]\\{a,b,c\\}[/latex]: [latex]3^5=243[/latex].<br><br>\nIt's easier to count the <b>complement</b>: strings with <i>no</i> two consecutive equal symbols anywhere. The first symbol has [latex]3[/latex] choices; each subsequent symbol just needs to differ from its immediate predecessor, giving [latex]2[/latex] choices each time: [latex]3\\times2^4=3\\times16=48[/latex] such \"no-repeat\" strings.<br><br>\nSo strings containing at least one consecutive repeat [latex]=243-48=195[/latex].<br><br>\n<b>Answer: 195</b><br><br><a href=\"https://gateoverflow.in/460060/gate-cse-2025-set-1-question-20#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Combination",
+   "tag2_url": "https://practicepaper.in/gate-cse/combination",
+   "ansMin": 195,
+   "ansMax": 195
+  }
+ ]
+}

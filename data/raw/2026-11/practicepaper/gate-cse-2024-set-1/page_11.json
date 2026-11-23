@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11241,
+  "quizName": "GATE CSE 2024 SET-1",
+  "pageTitle": "GATE CSE 2024 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 11,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124151,
+   "number": 51,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following two regular expressions over the alphabet [latex] \\{0,1\\} [/latex] :<br><br>\n[latex]\n\\begin{aligned}\n& r=0^*+1^* \\\\\n& s=01^*+10^*\n\\end{aligned}\n[/latex]\n<br><br>\nThe total number of strings of length less than or equal to 5 , which are neither in [latex] r [/latex] nor in [latex] s [/latex], is ____",
+   "solution": "Total strings of length 0 to 5: [latex]1+2+4+8+16+32=63[/latex].<br><br>\n- [latex]r=0^*+1^*[/latex]: [latex]\\epsilon[/latex], plus all-0 and all-1 strings of each length 1-5: [latex]1+2\\times5=11[/latex].<br>\n- [latex]s=01^*+10^*[/latex]: for each length 1-5, the strings [latex]01\\ldots1[/latex] and [latex]10\\ldots0[/latex]. Length 1 (\"0\", \"1\") is already in r, so new ones = [latex]2\\times4=8[/latex].<br><br>\nIn r or s: [latex]11+8=19[/latex]. Neither: [latex]63-19=44[/latex].<br><br>\n<b>Answer: 44</b><br><br><a href=\"https://gateoverflow.in/422791/gate-cse-2024-set-1-question-51#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Regular Expression",
+   "tag2_url": "https://practicepaper.in/gate-cse/regular-expression",
+   "ansMin": 44,
+   "ansMax": 44
+  },
+  {
+   "id": 1124152,
+   "number": 52,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a memory management system that uses a page size of [latex] 2 \\mathrm{~KB} [/latex]. Assume that both the physical and virtual addresses start from 0. Assume that the pages [latex] 0,1,2 [/latex], and [latex]3[/latex] are stored in the page frames [latex] 1,3,2 [/latex], and [latex]0[/latex], respectively. The physical address (in decimal format) corresponding to the virtual address [latex]2500[/latex] (in decimal format) is ____",
+   "solution": "Page size [latex]=2\\text{ KB}=2048[/latex].<br><br>\n[latex]2500=1\\times2048+452[/latex] [latex]\\rightarrow[/latex] page 1, offset 452.<br>\nPage 1 is in frame 3.<br><br>\nPhysical address [latex]=3\\times2048+452=6144+452=6596[/latex]<br><br>\n<b>Answer: 6596</b><br><br><a href=\"https://gateoverflow.in/422790/gate-cse-2024-set-1-question-52#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "ansMin": 6596,
+   "ansMax": 6596
+  },
+  {
+   "id": 1124153,
+   "number": 53,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A bag contains 10 red balls and 15 blue balls. Two balls are drawn randomly without replacement. Given that the first ball drawn is red, the probability (rounded off to 3 decimal places) that both balls drawn are red is ____",
+   "solution": "Given the first ball is red, 9 red and 15 blue (24 balls) remain. Both are red iff the second is red:<br><br>\n[latex]P=\\dfrac{P(\\text{both red})}{P(\\text{first red})}=\\dfrac{\\frac{10}{25}\\cdot\\frac{9}{24}}{\\frac{10}{25}}=\\dfrac{9}{24}=0.375[/latex]<br><br>\n<b>Answer: 0.375</b><br><br><a href=\"https://gateoverflow.in/422789/gate-cse-2024-set-1-question-53#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "ansMin": 0.37,
+   "ansMax": 0.38
+  },
+  {
+   "id": 1124154,
+   "number": 54,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a digital logic circuit consisting of three 2-to-1 multiplexers M1, M2, and M3 as shown below. [latex] X 1 [/latex] and [latex] X 2 [/latex] are inputs of [latex] M 1 [/latex]. [latex] X 3 [/latex] and [latex] X 4 [/latex] are inputs of [latex] M 2 [/latex]. [latex] A, B [/latex], and [latex] C [/latex] are select lines of [latex] M 1, M 2 [/latex], and [latex] M 3 [/latex], respectively.<br><img src=\"/wp-content/uploads/GATE/CS/20241/q54.webp\" /><br>\n\nFor an instance of inputs [latex] X \\mathbf{X l}=\\mathbf{X} \\mathbf{2}=\\mathbf{1}, \\mathrm{X} 3=\\mathbf{0} [/latex], and [latex] \\mathrm{X} 4=\\mathbf{0} [/latex], the number of combinations of [latex] A, B, C [/latex] that give the output [latex] Y=1 [/latex] is _____",
+   "solution": "Look at each multiplexer separately:<br>- M1: both inputs [latex]X1=X2=1[/latex], so [latex]Q1=1[/latex] whatever A is.<br>\n- M2: both inputs [latex]X3=X4=0[/latex], so [latex]Q2=0[/latex] whatever B is.<br>\n- M3: [latex]Y=Q1=1[/latex] when [latex]C=0[/latex], and [latex]Y=Q2=0[/latex] when [latex]C=1[/latex].<br><br>\nSo [latex]Y=1[/latex] exactly when [latex]C=0[/latex]; A and B are free: [latex]2\\times2=4[/latex] combinations.<br><br>\n<b>Answer: 4</b><br><br><a href=\"https://gateoverflow.in/422788/gate-cse-2024-set-1-question-54#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Combinational Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/combinational-circuit",
+   "ansMin": 4,
+   "ansMax": 4
+  },
+  {
+   "id": 1124155,
+   "number": 55,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider sending an IP datagram of size 1420 bytes (including 20 bytes of IP header) from a sender to a receiver over a path of two links with a router between them. The first link (sender to router) has an MTU (Maximum Transmission Unit) size of 542 bytes, while the second link (router to receiver) has an MTU size of 360 bytes. The number of fragments that would be delivered at the receiver is _____",
+   "solution": "Data in datagram [latex]=1420-20=1400[/latex] bytes. Fragment data (except the last) must be a multiple of 8.<br><br>\n<b>Link 1 (MTU 542):</b> max data [latex]=522[/latex] [latex]\\rightarrow[/latex] use 520. Fragments: 520, 520, 360.<br>\n<b>Link 2 (MTU 360):</b> max data [latex]=340[/latex] [latex]\\rightarrow[/latex] use 336.<br>\n- 520 [latex]\\rightarrow[/latex] 336 + 184<br>\n- 520 [latex]\\rightarrow[/latex] 336 + 184<br>\n- 360 [latex]\\rightarrow[/latex] 336 + 24<br><br>\nFragments are reassembled only at the receiver, so it receives [latex]2+2+2=6[/latex] fragments.<br><br>\n<b>Answer: 6</b><br><br><a href=\"https://gateoverflow.in/422787/gate-cse-2024-set-1-question-55#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-layer-protocol",
+   "ansMin": 6,
+   "ansMax": 6
+  }
+ ]
+}

@@ -1,0 +1,131 @@
+{
+ "meta": {
+  "quizId": 11221,
+  "quizName": "GATE CSE 2022",
+  "pageTitle": "GATE CSE 2022",
+  "timeLimit": 0,
+  "pageNo": 3,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2022",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1122111,
+   "number": 11,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "What is printed by the following ANSI C program?<pre><code>\n#include &lt;stdio.h&gt;\nint main(int argc, char *argv[])\n{\nint x = 1, z[2] = {10, 11};\nint *p=NULL; p=&x;\n*p=10;\np =&z[1];\n*(&z[0]+1)+=3;\nprintf(\"%d, %d, %d \\n\",x,z[0],z[1]); return   0;\n}\n</code>\n</pre>",
+   "solution": "Trace the program line by line:<br>- p = [latex]\\&[/latex]x; *p = 10 [latex]\\rightarrow[/latex] <b>x = 10</b><br>\n- p = [latex]\\&[/latex]z[1] (not used afterwards)<br>\n- [latex]*(\\&z[0]+1)[/latex] is z[1], so z[1] += 3 [latex]\\rightarrow[/latex] <b>z[1] = 14</b><br>\n- z[0] is unchanged [latex]\\rightarrow[/latex] <b>10</b><br><br>\nOutput: 10, 10, 14<br><br>\n<b>Answer: 10, 10, 14</b><br><br><a href=\"https://gateoverflow.in/371925/Gate-cse-2022-question-11#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Array and Pointer",
+   "tag2_url": "https://practicepaper.in/gate-cse/array-and-pointer",
+   "options": [
+    "1, 10, 11",
+    "1, 10, 14",
+    "10, 14, 11",
+    "10, 10, 14"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1122112,
+   "number": 12,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider an enterprise network with two Ethernet segments, a web server and a firewall, connected via three routers as shown below.<br><img src=\"/wp-content/uploads/GATE/CS/20221/q12.jpg\" /><br>What is the number of subnets inside the enterprise network?",
+   "solution": "Every link between router interfaces (and every LAN behind a router) is a separate subnet:<br>\n1. Firewall - left router<br>\n2. Firewall - top router<br>\n3. Top router - web server<br>\n4. Top router - right router<br>\n5. Left router - left Ethernet<br>\n6. Right router - right Ethernet<br><br>\n<b>Answer: 6</b><br><br><a href=\"https://gateoverflow.in/371924/Gate-cse-2022-question-12#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-layer-protocol",
+   "options": [
+    "3",
+    "12",
+    "6",
+    "8"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1122113,
+   "number": 13,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following statements is/are TRUE?",
+   "solution": "Checking each statement:<br>- A subset of an RE language need not be recursive (e.g. the halting language is a subset of [latex]\\Sigma^*[/latex]) [latex]\\text{---}[/latex] FALSE.<br>\n- If [latex]L[/latex] and [latex]\\bar L[/latex] are both RE, run both recognizers in parallel; one must accept, so [latex]L[/latex] is recursive [latex]\\text{---}[/latex] TRUE.<br>\n- Every CFL is recursive and recursive languages are closed under complement [latex]\\text{---}[/latex] TRUE.<br>\n- [latex]L_1\\cap L_2[/latex] is regular, and every regular language is deterministic context-free [latex]\\text{---}[/latex] TRUE.<br><br>\n<b>Answer: Options 2, 3 and 4</b><br><br><a href=\"https://gateoverflow.in/371923/Gate-cse-2022-question-13#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Recursive Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/recursive-language",
+   "options": [
+    "Every subset of a recursively enumerable language is recursive.",
+    "If a language [latex]L[/latex] and its complement [latex]\\bar{L}[/latex] are both recursively enumerable, then [latex]L[/latex] must be recursive.",
+    "Complement of a context-free language must be recursive.",
+    "If [latex]L_1[/latex] and [latex]L_2[/latex] are regular, then [latex]L_1 \\cap L_2 [/latex]must be deterministic context-free."
+   ],
+   "correctSet": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1122114,
+   "number": 14,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Let WB and WT be two set associative cache organizations that use LRU algorithm for cache block replacement. WB is a write back cache and WT is a write through cache. Which of the following statements is/are FALSE?",
+   "solution": "Check each statement (we need the FALSE ones):<br>- \"Each block in WB and WT has a dirty bit\": WT writes memory on every write, so it needs no dirty bit [latex]\\text{---}[/latex] <b>FALSE</b>.<br>\n- \"Every write hit in WB transfers data to memory\": WB only sets the dirty bit; memory is updated on eviction [latex]\\text{---}[/latex] <b>FALSE</b>.<br>\n- \"Eviction from WT causes no transfer to memory\": memory is already up to date [latex]\\text{---}[/latex] TRUE.<br>\n- \"A read miss in WB never evicts a dirty block\": the LRU victim can be dirty [latex]\\text{---}[/latex] <b>FALSE</b>.<br><br>\n<b>Answer: Options 1, 2 and 4</b><br><br><a href=\"https://gateoverflow.in/371922/Gate-cse-2022-question-14#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "options": [
+    "Each cache block in WB and WT has a dirty bit.",
+    "Every write hit in WB leads to a data transfer from cache to main memory.",
+    "Eviction of a block from WT will not lead to data transfer from cache to main memory.",
+    "A read miss in WB will never lead to eviction of a dirty block from WB."
+   ],
+   "correctSet": [
+    0,
+    1,
+    3
+   ]
+  },
+  {
+   "id": 1122115,
+   "number": 15,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Consider the following three relations in a relational database.<br>[latex]Employee(eId, Name), Brand (bId, bName), Own(eId ,bId)[/latex]<br>Which of the following relational algebra expressions return the set of [latex]eIds[/latex] who own all the brands?",
+   "solution": "\"Owns all brands\" is relational <b>division</b> by the set of all brands.<br><br>\n- Option 1: [latex]\\Pi_{eId,bId}(Own)\\div\\Pi_{bId}(Brand)[/latex] [latex]\\text{---}[/latex] exactly division [latex]\\text{---}[/latex] TRUE.<br>\n- Option 2: [latex]\\Pi_{eId}(Own)\\times\\Pi_{bId}(Brand)[/latex] lists every (employee, brand) pair; subtracting Own leaves the pairs an employee does <i>not</i> own. Removing those employees leaves those who own every brand [latex]\\text{---}[/latex] TRUE (this is the expansion of division).<br>\n- Option 3 divides by [latex]\\Pi_{bId}(Own)[/latex] (brands owned by someone); a brand owned by nobody would be ignored [latex]\\text{---}[/latex] wrong.<br>\n- Option 4 divides a full cross product, which returns every employee [latex]\\text{---}[/latex] wrong.<br><br>\n<b>Answer: Options 1 and 2</b><br><br><a href=\"https://gateoverflow.in/371921/Gate-cse-2022-question-15#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Relational Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/relational-algebra",
+   "options": [
+    "[latex]  \\Pi _{eId}(\\Pi _{eId,bId}(Own)/\\Pi _{bId}(Brand))[/latex]",
+    "[latex]  \\Pi _{eId}(Own)-\\Pi _{eId}\\left ((\\Pi _{eId}(Own) \\times \\Pi _{bId}(Brand) )-\\Pi _{eId,bId}(Own)  \\right )[/latex]",
+    "[latex]\\Pi _{eId}(\\Pi _{eId,bId}(Own)/\\Pi _{bId}(Own))  [/latex]",
+    "[latex] \\Pi _{eId}\\left ((\\Pi _{eId}(Own) \\times \\Pi _{bId}(Own) )/\\Pi _{bId}(Brand)  \\right ) [/latex]"
+   ],
+   "correctSet": [
+    0,
+    1
+   ]
+  }
+ ]
+}

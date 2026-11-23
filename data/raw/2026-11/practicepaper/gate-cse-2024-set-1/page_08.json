@@ -1,0 +1,135 @@
+{
+ "meta": {
+  "quizId": 11241,
+  "quizName": "GATE CSE 2024 SET-1",
+  "pageTitle": "GATE CSE 2024 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 8,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124136,
+   "number": 36,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider the following read-write schedule [latex] S [/latex] over three transactions [latex] T_1, T_2 [/latex], and [latex] T_3 [/latex], where the subscripts in the schedule indicate transaction IDs:\n<br> <br>[latex]\nS: r_1(z) ; w_1(z) ; r_2(x) ; r_3(y) ; w_3(y) ; r_2(y) ; w_2(x) ; w_2(y) ;\n [/latex] <br><br>\n\nWhich of the following transaction schedules is/are conflict equivalent to [latex] S [/latex] ?",
+   "solution": "Conflicting pairs (same item, different transactions, at least one write):<br>\n- z: only T1 uses it [latex]\\rightarrow[/latex] T1 has no conflict with anyone.<br>\n- x: only T2 uses it.<br>\n- y: [latex]r_3(y),w_3(y)[/latex] come before [latex]r_2(y),w_2(y)[/latex] [latex]\\rightarrow[/latex] <b>T3 must come before T2</b>.<br><br>\nSo any serial order with T3 before T2 is conflict equivalent, and T1 can be anywhere: [latex]T_1T_3T_2,\\;T_3T_2T_1,\\;T_3T_1T_2[/latex].<br>\n[latex]T_1T_2T_3[/latex] puts T2 before T3 [latex]\\rightarrow[/latex] not equivalent.<br><br>\n<b>Answer: [latex]T_1T_3T_2[/latex], [latex]T_3T_2T_1[/latex], [latex]T_3T_1T_2[/latex]</b><br><br><a href=\"https://gateoverflow.in/422806/gate-cse-2024-set-1-question-36#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Transaction",
+   "tag2_url": "https://practicepaper.in/gate-cse/transaction",
+   "options": [
+    "[latex] T_1 T_2 T_3 [/latex]",
+    "[latex] T_1 T_3 T_2 [/latex]",
+    "[latex] T_3 T_2 T_1 [/latex]",
+    "[latex] T_3 T_1 T_2 [/latex]"
+   ],
+   "correctSet": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1124137,
+   "number": 37,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider a Boolean expression given by [latex] F(X, Y, Z)=\\Sigma(3,5,6,7) [/latex].<br>\nWhich of the following statements is/are CORRECT?",
+   "solution": "Minterms 3, 5, 6, 7 = 011, 101, 110, 111 [latex]\\rightarrow[/latex] F = 1 when at least two inputs are 1 (majority function).<br><br>\n- Maxterms are the remaining combinations: [latex]\\Pi(0,1,2,4)[/latex] [latex]\\text{---}[/latex] TRUE.<br>\n- Majority function [latex]=XY+YZ+XZ[/latex] [latex]\\text{---}[/latex] TRUE.<br>\n- Depends on Y: [latex]F(1,0,0)=0[/latex] but [latex]F(1,1,0)=1[/latex] [latex]\\text{---}[/latex] so not independent of Y.<br>\n- Depends on X: [latex]F(0,1,0)=0[/latex] but [latex]F(1,1,0)=1[/latex] [latex]\\text{---}[/latex] so not independent of X.<br><br>\n<b>Answer: [latex]F=\\Pi(0,1,2,4)[/latex] and [latex]F=XY+YZ+XZ[/latex]</b><br><br><a href=\"https://gateoverflow.in/422805/gate-cse-2024-set-1-question-37#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "options": [
+    "[latex]F(X, Y, Z)=\\Pi(0,1,2,4)[/latex] ",
+    "[latex]F(X, Y, Z)=X Y+Y Z+X Z[/latex] ",
+    "[latex] F(X, Y, Z) [/latex] is independent of input [latex] Y [/latex]",
+    "[latex] F(X, Y, Z) [/latex] is independent of input [latex] X [/latex]"
+   ],
+   "correctSet": [
+    0,
+    1
+   ]
+  },
+  {
+   "id": 1124138,
+   "number": 38,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider the following C function definition.<pre><code>\nint f(int x, int y) {\nfor (int i=0; i < y; i++) {\nx=x+x+y;\n}\nreturn x;\n}</code></pre>\nWhich of the following statements is/are TRUE about the above function?",
+   "solution": "Each iteration does [latex]x\\leftarrow2x+y[/latex], repeated [latex]y[/latex] times. Solving:<br>\n[latex]f(x,y)=2^y x+(2^y-1)y=2^y(x+y)-y[/latex]<br><br>\n- [latex]x=20,y=10[/latex]: [latex]1024\\times30-10=30710[/latex]. This is less than [latex]2^{20}[/latex] but more than [latex]2^{10}[/latex] [latex]\\rightarrow[/latex] options 1 and 3 FALSE.<br>\n- [latex]x=20,y=20[/latex]: [latex]2^{20}\\times40-20 \\gt 2^{20}[/latex] [latex]\\rightarrow[/latex] TRUE.<br>\n- [latex]x=10,y=20[/latex]: [latex]2^{20}\\times30-20 \\gt 2^{20}[/latex] [latex]\\rightarrow[/latex] TRUE.<br>\n(Both values are about [latex]4\\times10^7[/latex], so no int overflow.)<br><br>\n<b>Answer: Options 2 and 4</b><br><br><a href=\"https://gateoverflow.in/422804/gate-cse-2024-set-1-question-38#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Loop",
+   "tag2_url": "https://practicepaper.in/gate-cse/loop",
+   "options": [
+    "If the inputs are [latex] x=20, y=10 [/latex], then the return value is greater than [latex] 2^{20} [/latex]",
+    "If the inputs are [latex] x=20, y=20 [/latex], then the return value is greater than [latex] 2^{20} [/latex]",
+    "If the inputs are [latex] x=20, y=10 [/latex], then the return value is less than [latex] 2^{10} [/latex]",
+    "If the inputs are [latex] x=10, y=20 [/latex], then the return value is greater than [latex] 2^{20} [/latex]"
+   ],
+   "correctSet": [
+    1,
+    3
+   ]
+  },
+  {
+   "id": 1124139,
+   "number": 39,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Let [latex] A [/latex] be any [latex] n \\times m [/latex] matrix, where [latex] m > n [/latex]. Which of the following statements is/are TRUE about the system of linear equations [latex] A x=0 [/latex] ?",
+   "solution": "[latex]rank(A)\\le n \\lt m[/latex], so the solution space has dimension [latex]m-rank(A)\\ge m-n[/latex].<br><br>\n- At least [latex]m-n[/latex] linearly independent solutions [latex]\\text{---}[/latex] TRUE.<br>\n- \"[latex]m-n[/latex] vectors span every solution\" fails when the dimension is larger, e.g. A = zero matrix (dimension m) [latex]\\text{---}[/latex] FALSE.<br>\n- [latex]A=[1\\;\\;1][/latex] ([latex]n=1,m=2[/latex]): solutions are [latex]t(1,-1)[/latex]; no non-zero solution has a zero entry, though [latex]m-n=1[/latex] [latex]\\text{---}[/latex] FALSE.<br>\n- [latex]A=\\begin{bmatrix}1&0&0\\\\0&1&0\\end{bmatrix}[/latex]: solutions [latex](0,0,t)[/latex] have only 1 non-zero variable [latex]\\lt n=2[/latex] [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: There exist at least [latex]m-n[/latex] linearly independent solutions</b><br><br><a href=\"https://gateoverflow.in/422803/gate-cse-2024-set-1-question-39#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "There exist at least [latex] m-n [/latex] linearly independent solutions to this system",
+    "There exist [latex] m-n [/latex] linearly independent vectors such that every solution is a linear combination of these vectors",
+    "There exists a non-zero solution in which at least [latex] m-n [/latex] variables are 0",
+    "There exists a solution in which at least [latex] n [/latex] variables are non-zero"
+   ],
+   "correctSet": [
+    0
+   ]
+  },
+  {
+   "id": 1124140,
+   "number": 40,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider the 5 -state DFA [latex] M [/latex] accepting the language [latex] L(M) \\subset(0+1)^* [/latex] shown below. For any string [latex] w \\in(0+1)^* [/latex] let [latex] n_0(w) [/latex] be the number of [latex] 0^{\\prime} s [/latex] in [latex] w [/latex] and [latex] n_1(w) [/latex] be the number of 1 's in [latex] w [/latex].\n<br><img src=\"/wp-content/uploads/GATE/CS/20241/q40.webp\" /><br>\nWhich of the following statements is/are FALSE?",
+   "solution": "Reading 0 moves 1[latex]\\rightarrow[/latex]2[latex]\\rightarrow[/latex]3[latex]\\rightarrow[/latex]1, reading 1 moves 1[latex]\\rightarrow[/latex]4[latex]\\rightarrow[/latex]5[latex]\\rightarrow[/latex]1, and the reverse arrows undo a step. So the DFA tracks [latex](n_0-n_1)\\bmod 3[/latex]:<br>\nstate 1 = 0, states 2 and 5 = 1, states 3 and 4 = 2.<br><br>\n[latex]L(M)=\\{w: n_0(w)\\equiv n_1(w)\\pmod 3\\}[/latex], and states with the same value are equivalent.<br><br>\n- 2 and 4 (values 1 and 2): distinguishable (input \"1\": 2[latex]\\rightarrow[/latex]1 accept, 4[latex]\\rightarrow[/latex]5 reject) [latex]\\text{---}[/latex] TRUE.<br>\n- <b>3 and 4</b>: both value 2 [latex]\\rightarrow[/latex] equivalent [latex]\\text{---}[/latex] statement FALSE.<br>\n- <b>2 and 5</b>: both value 1 [latex]\\rightarrow[/latex] equivalent [latex]\\text{---}[/latex] statement FALSE.<br>\n- [latex]n_0=n_1[/latex] [latex]\\Rightarrow[/latex] difference 0 [latex]\\Rightarrow[/latex] accepted [latex]\\text{---}[/latex] TRUE.<br><br>\n<b>Answer: \"States 3 and 4 are distinguishable\" and \"States 2 and 5 are distinguishable\"</b><br><br><a href=\"https://gateoverflow.in/422802/gate-cse-2024-set-1-question-40#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Finite Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/finite-automata",
+   "options": [
+    "States 2 and 4 are distinguishable in [latex] M [/latex]",
+    "States 3 and 4 are distinguishable in [latex] M [/latex]",
+    "States 2 and 5 are distinguishable in [latex] M [/latex]",
+    "Any string [latex] w [/latex] with [latex] n_0(w)=n_1(w) [/latex] is in [latex] L(M) [/latex]"
+   ],
+   "correctSet": [
+    1,
+    2
+   ]
+  }
+ ]
+}

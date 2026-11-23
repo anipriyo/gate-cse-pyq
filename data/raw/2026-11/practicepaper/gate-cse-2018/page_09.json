@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "quizId": 11181,
+  "quizName": "GATE CS 2018",
+  "pageTitle": "GATE CSE 2018",
+  "timeLimit": 0,
+  "pageNo": 9,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2018",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1118141,
+   "number": 41,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the relations r(A, B) and s(B, C), where s.B is a primary key and r.B is a foreign key referencing s.B. Consider the query<br> [latex]Q:r \\Join (\\sigma _{B\\lt 5}(s))[/latex] <br> Let LOJ denote the natural left outer-join operation. Assume that r and s contain no null values. <br>\nWhich one of the following queries is NOT equivalent to Q?",
+   "solution": "Q keeps only r-tuples whose B value is [latex]\\lt[/latex] 5 (joined with s).<br>\nOption 3, [latex]r\\ LOJ\\ \\sigma_{B \\lt 5}(s)[/latex], also keeps r-tuples with B [latex]\\ge[/latex] 5, padded with NULLs, so it returns extra rows [latex]\\rightarrow[/latex] not equivalent.<br><br>\nThe others filter on B [latex]\\lt[/latex] 5, and since every r.B exists in s (foreign key), the outer joins add nothing.<br><br>\n<b>Answer: [latex]r\\ LOJ\\ (\\sigma_{B \\lt 5}(s))[/latex]</b><br><br><a href=\"https://gateoverflow.in/204115/gate2018-41#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Relational Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/relational-algebra",
+   "options": [
+    "[latex]\\sigma _{B \\lt 5}(r\\Join s)[/latex]",
+    "[latex]\\sigma _{B\\lt 5}(r LOJ s)[/latex]",
+    "[latex]r LOJ(\\sigma _{B\\lt 5}(s))[/latex]",
+    "[latex]\\sigma _{B\\lt 5}(r) LOJ s[/latex]"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1118142,
+   "number": 42,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following four relational schemas. For each schema, all non-trivial functional\ndependencies are listed. The underlined attributes are the respective primary keys.<br>\n <img src=\"/wp-content/uploads/GATE/CS/2018/q42.jpg\" />\n<br>\nWhich one of the relational schemas above is in 3NF but not in BCNF?",
+   "solution": "Checking each statement:<br>- I: a set-valued attribute violates 1NF.<br>\n- <b>II</b>: keys are (rollno, courseid) and (email, courseid). In email [latex]\\rightarrow[/latex] rollno, email is not a superkey, but rollno is <b>prime</b> [latex]\\rightarrow[/latex] allowed in 3NF, not in BCNF True<br>\n- III: marks [latex]\\rightarrow[/latex] grade is transitive with a non-prime target [latex]\\rightarrow[/latex] not 3NF.<br>\n- IV: courseid [latex]\\rightarrow[/latex] credit is a partial dependency [latex]\\rightarrow[/latex] not 2NF.<br><br>\n<b>Answer: Schema II</b><br><br><a href=\"https://gateoverflow.in/204116/gate2018-42#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Normal Form",
+   "tag2_url": "https://practicepaper.in/gate-cse/normal-form",
+   "options": [
+    "Schema I",
+    "Schema II",
+    "Schema III",
+    "Schema IV"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1118143,
+   "number": 43,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Let G be a graph with 100! vertices, with each vertex labelled by a distinct permutation of the numbers 1,2,...,100. There is an edge between vertices u and v if and only if the label of u can be obtained by swapping two adjacent numbers in the label of v. Let y denote the degree of a vertex in G, and z denote the number of connected components in G. Then, y+ 10z = _____.",
+   "solution": "Checking each statement:<br>- Degree: a permutation of 100 numbers has 99 adjacent pairs to swap [latex]\\rightarrow[/latex] y = 99.<br>\n- Adjacent swaps can produce every permutation (bubble sort), so the graph is connected [latex]\\rightarrow[/latex] z = 1.<br><br>\ny + 10z = 99 + 10 = 109<br><br>\n<b>Answer: 109</b><br><br><a href=\"https://gateoverflow.in/204117/gate2018-43#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "ansMin": 109,
+   "ansMax": 109
+  },
+  {
+   "id": 1118144,
+   "number": 44,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider Guwahati (G) and Delhi (D) whose temperatures can be classified as high (G), medium (M) and low (L). Let P([latex]H_{G}[/latex]) denote the probability that Guwahati has high temperature. Similarly, P([latex]M_{G}[/latex]) and P([latex]L_{G}[/latex]\n) denotes the probability of Guwahati having medium and low temperatures respectively. Similarly, we use P([latex]H_{D}[/latex]),P([latex]M_{D}[/latex]) and P([latex]L_{D}[/latex]) for Delhi. <br>\nThe following table gives the conditional probabilities for Delhi's temperature given Guwahati's temperature. <br><img src=\"/wp-content/uploads/GATE/CS/2018/q44.jpg\" /> <br>   Consider the first row in the table above. The first entry denotes that if Guwahati has high\ntemperature ([latex]H_{G}[/latex]) then the probability of Delhi also having a high temperature ([latex]H_{D}[/latex]) is 0.40;\ni.e., ([latex]H_{D}[/latex]|[latex]H_{G}[/latex]) = 0.40. Similarly, the next two entries are P([latex]M_{D}[/latex]| [latex]H_{G}[/latex])= 0.48 and\nP([latex]L_{D}[/latex]|[latex]H_{G}[/latex]) = 0.12. Similarly for the other rows.\nIf it is known that P([latex]H_{G}[/latex])= 0.2, P([latex]M_{G}[/latex])= 0.5, andP([latex]L_{G}[/latex])= 0.3, then the probability\n(correct to two decimal places) that Guwahati has high temperature given that Delhi has high\ntemperature is _______",
+   "solution": "[latex]P(H_D)=0.2(0.40)+0.5(0.10)+0.3(0.01)=0.08+0.05+0.003=0.133[/latex]<br><br>\nBayes: [latex]P(H_G\\mid H_D)=\\frac{0.08}{0.133}\\approx0.60[/latex]<br><br>\n<b>Answer: 0.60</b><br><br><a href=\"https://gateoverflow.in/204119/gate2018-44#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "ansMin": 0.6,
+   "ansMax": 0.62
+  },
+  {
+   "id": 1118145,
+   "number": 45,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following program written in pseudo-code. Assume that x and y are integers. <pre><code>\nCount(x,y) {\n     if (y != 1){\n        if (x != 1) {\n                  print(\"*\");\n                  Count(x/2, y);\n                  }\n            else {\n                     y = y-1;\n                    Count(1024, y);\n                  }\n      }\n} </code></pre>\nThe number of times that the print statement is executed by the call\nCount(1024,1024) is _____.",
+   "solution": "For each value of y from 1024 down to 2, x is halved from 1024 to 1, printing once per halving: 10 stars. Then y decreases by 1 and x resets to 1024. When y = 1 the recursion stops.<br><br>\nStars = 10 [latex]\\times[/latex] 1023 = 10230<br><br>\n<b>Answer: 10230</b><br><br><a href=\"https://gateoverflow.in/204120/gate2018-45#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "ansMin": 10230,
+   "ansMax": 10230
+  }
+ ]
+}

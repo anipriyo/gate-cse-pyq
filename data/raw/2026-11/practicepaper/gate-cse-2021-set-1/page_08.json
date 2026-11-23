@@ -1,0 +1,123 @@
+{
+ "meta": {
+  "quizId": 11211,
+  "quizName": "GATE CSE 2021 SET 1",
+  "pageTitle": "GATE CSE 2021 SET-1",
+  "timeLimit": 0,
+  "pageNo": 8,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2021-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1121136,
+   "number": 36,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let [latex]G=(V,E)[/latex] be an undirected unweighted connected graph. The diameter of [latex]G[/latex] is defined as:\n<br>\n[latex]diam(G)=\\displaystyle \\max_{u,v \\in V} \\{ \\text{the length of shortest path between }u \\text{ and }v \\}[/latex]\n<br><br>Let [latex]M[/latex] be the adjacency matrix of [latex]G[/latex].\n<br>\nDefine graph [latex]G_2[/latex] on the same set of vertices with adjacency matrix [latex]N[/latex], where \n<br><br>\n[latex]N_{ij}=\\left\\{\\begin{array} {lcl} 1 &\\text{if}\\; M_{ij}>0 \\text{ or } P_{ij}>0, \\text{ where }P=M^2\\\\0 &\\text{otherwise} \\end{array}\\right.[/latex]<br><br>\nWhich one of the following statements is true?",
+   "solution": "[latex]P=M^2[/latex] has [latex]P_{ij} \\gt 0[/latex] exactly when there is a path of length 2. So in [latex]G_2[/latex], u and v are adjacent whenever their distance in G is 1 or 2.<br><br>\nA shortest path of length d in G can be covered with [latex]\\lceil d/2\\rceil[/latex] such jumps, so [latex]diam(G_2)=\\lceil diam(G)/2\\rceil[/latex].<br><br>\n<b>Answer: [latex]diam(G_2)\\le\\lceil diam(G)/2\\rceil[/latex]</b><br><br><a href=\"https://gateoverflow.in/357415/gate-cse-2021-set-1-question-36#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Shortest Path",
+   "tag2_url": "https://practicepaper.in/gate-cse/shortest-path",
+   "options": [
+    "[latex]diam(G_2)\\leq \\left \\lceil diam(G)/2 \\right \\rceil[/latex]",
+    "[latex]\\left \\lceil diam(G)/2 \\right \\rceil \\lt diam(G_2) \\lt diam(G)[/latex]",
+    "[latex]diam(G_2) =diam(G)[/latex]",
+    "[latex]diam(G) \\lt diam(G_2) \\leq 2 \\; diam(G)[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1121137,
+   "number": 37,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following ANSI C program.<pre><code> #include &lt;stdio.h&gt;\nint main()\n{\n    int i, j, count;\n    count=0;\n    i=0;\n    for (j=-3; j &lt;=3; j++)\n    {\n        if (( j &gt;= 0) && (i++))\n        count = count + j;\n    }\n    count = count +i;\n    printf(\"%d\", count);\n    return 0;\n}</code></pre>Which one of the following options is correct?",
+   "solution": "(The loop runs j = [latex]-[/latex]3 to 3; the program compiles.) For j [latex]\\lt[/latex] 0, && short-circuits, so i++ does not run.<br>\nFor j [latex]\\ge[/latex] 0, i++ returns the <b>old</b> value of i:<br>\n- j = 0: i++ gives 0 (false), i = 1<br>\n- j = 1: gives 1 (true), count = 1, i = 2<br>\n- j = 2: count = 3, i = 3<br>\n- j = 3: count = 6, i = 4<br><br>\ncount = 6 + i = 6 + 4 = 10<br><br>\n<b>Answer: The program will compile successfully and output 10 when executed</b><br><br><a href=\"https://gateoverflow.in/357414/gate-cse-2021-set-1-question-37#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Conditional Statement",
+   "tag2_url": "https://practicepaper.in/gate-cse/conditional-statement",
+   "options": [
+    "The program will not compile successfully",
+    "The program will compile successfully and output 10 when executed",
+    "The program will compile successfully and output 8 when executed",
+    "The program will compile successfully and output 13 when executed"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1121138,
+   "number": 38,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following language:<br>\n<br>[latex]L= \\{ w \\in \\{0,1\\}^* \\mid w \\text{ ends with the substring } 011 \\}[/latex]\n<br><br>\nWhich one of the following deterministic finite automata accepts [latex]L[/latex]?<br><img src=\"/wp-content/uploads/GATE/CS/20211/q38.jpg\" /><br>",
+   "solution": "States should remember the longest suffix matching a prefix of 011: q0 (nothing), q1 (\"0\"), q2 (\"01\"), q3 (\"011\", final).<br><br>\nFrom the final state: on 0 [latex]\\rightarrow[/latex] q1 (suffix \"0\"), on 1 [latex]\\rightarrow[/latex] <b>q0</b> (suffix \"0111\" has no useful part).<br>\n- (A) and (B) loop on 1 at the final state, accepting 0111 False<br>\n- (C) goes from the final state to q2 on 1, accepting 01111 False<br>\n- <b>(D)</b> has exactly the transitions above True<br><br>\n<b>Answer: D</b><br><br><a href=\"https://gateoverflow.in/357413/gate-cse-2021-set-1-question-38#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Finite Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/finite-automata",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1121139,
+   "number": 39,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "For a Turing machine M, < M > denotes an encoding of M. Consider the following two languages.<br><br>\n[latex]\\begin{array}{ll} L1 = \\{ \\langle M \\rangle \\mid M \\text{ takes more than } 2021 \\text{ steps on all inputs} \\} \\\\ L2 = \\{ \\langle M \\rangle \\mid M\\text{ takes more than } 2021 \\text{ steps on some input} \\} \\end{array}[/latex]<br><br>\nWhich one of the following options is correct?",
+   "solution": "In 2021 steps, M can read at most the first 2021 input symbols. So \"more than 2021 steps\" depends only on inputs of length up to 2021, a finite set.<br><br>\nSimulate M for 2022 steps on each such input; this decides both \"on all inputs\" (L1) and \"on some input\" (L2).<br><br>\n<b>Answer: Both L1 and L2 are decidable</b><br><br><a href=\"https://gateoverflow.in/357412/gate-cse-2021-set-1-question-39#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Turing Machine",
+   "tag2_url": "https://practicepaper.in/gate-cse/turing-machine",
+   "options": [
+    "Both L1 and L2 are decidable.",
+    "L1 is decidable  and L2 is undecidable.",
+    "L1 is undecidable  and L2 is decidable.",
+    "Both L1 and L2 are undecidable."
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1121140,
+   "number": 40,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Define [latex]R_n[/latex] to be the maximum amount earned by cutting a rod of length n meters into one or more pieces of integer length and selling them. For [latex]i > 0[/latex], let [latex]p[i][/latex] denote the selling price of a rod whose length is [latex]i[/latex] meters. Consider the array of prices:\n<br><br>\n[latex]\\text{p}[1]=1,\\text{p}[2]=5,\\text{p}[3]=8,\\text{p}[4]=9,\\text{p}[5]=10,\\text{p}[6]=17,\\text{p}[7]=18[/latex]<br><br>\nwhich of the following statements is/are correct about [latex]R_7[/latex]?",
+   "solution": "Best values: R1 = 1, R2 = 5, R3 = 8, R4 = 10 (2+2), R5 = 13 (2+3), R6 = 17, R7 = <b>18</b>.<br><br>\nR7 = 18 is reached by:<br>\n- one piece of 7 (18)<br>\n- 6 + 1 (17 + 1)<br>\n- 2 + 2 + 3 (5 + 5 + 8)<br><br>\nThree different solutions, one of which has three pieces (so option 4 is false).<br><br>\n<b>Answer: [latex]R_7=18[/latex] and it is achieved by three different solutions</b><br><br><a href=\"https://gateoverflow.in/357411/gate-cse-2021-set-1-question-40#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Greedy Technique",
+   "tag2_url": "https://practicepaper.in/gate-cse/greedy-technique",
+   "options": [
+    "[latex]R_7=18[/latex]",
+    "[latex]R_7=19[/latex]",
+    "[latex]R_7[/latex] is achieved by three different solutions.",
+    "[latex]R_7[/latex] cannot be achieved by a solution consisting of three pieces."
+   ],
+   "correctSet": [
+    0,
+    2
+   ]
+  }
+ ]
+}

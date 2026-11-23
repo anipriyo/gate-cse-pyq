@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11261,
+  "quizName": "GATE CSE 2026 SET-1",
+  "pageTitle": "GATE CSE 2026 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 11,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2026-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1126151,
+   "number": 51,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the recursive functions represented by the following code segment: <pre><code>int bar(int n) {\n  if (n == 1) return 0;\n  else return 1 + bar(n/2);\n }\n int foo(int n) {\n  if (n == 1) return 1;\n  else return 1 + foo(bar(n));\n } </code></pre>The smallest positive integer n for which [latex]\\text{foo(n)}[/latex] returns [latex]5[/latex] is ________. (answer in integer) <br>Note: Ignore syntax errors (if any) in the function.",
+   "solution": "First, note [latex]\\text{bar}(n)[/latex] repeatedly integer-halves [latex]n[/latex] until reaching [latex]1[/latex], counting the number of halvings &mdash; this is exactly [latex]\\lfloor\\log_2 n\\rfloor[/latex].<br><br>\n[latex]\\text{foo}(n)=1+\\text{foo}(\\text{bar}(n))[/latex] for [latex]n>1[/latex], and [latex]\\text{foo}(1)=1[/latex]. So [latex]\\text{foo}(n)[/latex] counts [latex]1[/latex] plus the number of times we must apply [latex]\\text{bar}[/latex] (i.e. take [latex]\\lfloor\\log_2\\cdot\\rfloor[/latex]) starting from [latex]n[/latex] to eventually reach [latex]1[/latex].<br><br>\nBuild up the <i>smallest</i> [latex]n[/latex] achieving each target value of [latex]\\text{foo}[/latex]:<br>\n- [latex]\\text{foo}(n)=1[/latex]: smallest [latex]n=1[/latex].<br>\n- [latex]\\text{foo}(n)=2[/latex]: need [latex]\\text{bar}(n)=1[/latex], i.e. [latex]\\lfloor\\log_2 n\\rfloor=1[/latex]: smallest [latex]n=2[/latex].<br>\n- [latex]\\text{foo}(n)=3[/latex]: need [latex]\\text{bar}(n)=2[/latex]: smallest [latex]n=2^2=4[/latex].<br>\n- [latex]\\text{foo}(n)=4[/latex]: need [latex]\\text{bar}(n)=4[/latex]: smallest [latex]n=2^4=16[/latex].<br>\n- [latex]\\text{foo}(n)=5[/latex]: need [latex]\\text{bar}(n)=16[/latex]: smallest [latex]n=2^{16}=65536[/latex].<br><br>\n<b>Answer: 65536</b> <br><br> <a href=\"https://gateoverflow.in/523029/gate-cse-2026-set-1-question-51#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "C Programming ",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "ansMin": 65536,
+   "ansMax": 65536
+  },
+  {
+   "id": 1126152,
+   "number": 52,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The following sequence corresponds to the preorder traversal of a binary search tree [latex]T[/latex] : <br><br>[latex] 50,25,13,40,30,47,75,60,70,80,77 [/latex] <br><br>The position of the element [latex]60[/latex] in the postorder traversal of [latex]T[/latex] is ________ . (answer in integer)<br> Note: The position begins with [latex]1[/latex].",
+   "solution": "Reconstruct the BST from the preorder [latex]50,25,13,40,30,47,75,60,70,80,77[/latex] (each root's left subtree holds smaller values, right subtree holds larger values, read off in preorder root-first fashion):<br><br>\n[latex]50[/latex] is the root. Left subtree (values [latex]<50[/latex]): [latex]25,13,40,30,47[/latex]; right subtree (values [latex]>50[/latex]): [latex]75,60,70,80,77[/latex].<br>\nLeft subtree: root [latex]25[/latex], left child [latex]13[/latex] (leaf), right subtree [latex]40,30,47[/latex] &rarr; root [latex]40[/latex], left [latex]30[/latex], right [latex]47[/latex].<br>\nRight subtree: root [latex]75[/latex], left subtree [latex]60,70[/latex] &rarr; root [latex]60[/latex] with right child [latex]70[/latex] (no left); right subtree [latex]80,77[/latex] &rarr; root [latex]80[/latex] with left child [latex]77[/latex] (no right).<br><br>\nPostorder (left, right, root) of the whole tree:<br>\nFrom the [latex]25[/latex]-subtree: [latex]13,\\ 30,47,40,\\ 25[/latex]<br>\nFrom the [latex]75[/latex]-subtree: [latex]70,60,\\ 77,80,\\ 75[/latex]<br>\nThen the root [latex]50[/latex].<br><br>\nFull postorder: [latex]13,\\,30,\\,47,\\,40,\\,25,\\,70,\\,60,\\,77,\\,80,\\,75,\\,50[/latex]<br><br>\nCounting positions (starting at [latex]1[/latex]): [latex]60[/latex] is the [latex]7[/latex]th element.<br><br>\n<b>Answer: 7</b> <br><br> <a href=\"https://gateoverflow.in/523028/gate-cse-2026-set-1-question-52#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Search Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-search-tree",
+   "ansMin": 7,
+   "ansMax": 7
+  },
+  {
+   "id": 1126153,
+   "number": 53,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following program snippet. Assume that the program compiles and runs successfully. Further, assume that the fork() system call is always successful in creating a process. <pre><code>int main () {\n  int i;\n  for (i = 0; i < 3; i++) {\n  \tif (fork() == 0) {\n  \t\tcontinue;\n  \t}\n  \tbreak;\n  }\n  printf(\"Hello!\");\n  return 0;\n } </pre></code>The total number of times that the printf statement gets executed is ________. (answer in integer)",
+   "solution": "Trace the loop, remembering that after [latex]\\text{fork()}[/latex], the <b>child</b> gets return value [latex]0[/latex] (executes [latex]\\text{continue}[/latex], moving to the next loop iteration), while the <b>parent</b> gets a nonzero value (executes [latex]\\text{break}[/latex], immediately leaving the loop).<br><br>\n- [latex]i=0[/latex]: original process forks &rarr; <b>parent breaks</b> immediately (1 process reaches printf with [latex]i=0[/latex]); the <b>child continues</b> the loop.<br>\n- [latex]i=1[/latex] (in that child): it forks again &rarr; this process (now acting as parent of its own fork) <b>breaks</b> (2nd process reaches printf); its own child continues.<br>\n- [latex]i=2[/latex] (in that grandchild): forks again &rarr; this one <b>breaks</b> (3rd process reaches printf); its child continues.<br>\n- [latex]i=3[/latex] (in the great-grandchild): loop condition [latex]i<3[/latex] fails, so the loop ends naturally without another fork (4th process reaches printf).<br><br>\nSo exactly [latex]4[/latex] distinct processes each execute the [latex]\\text{printf}[/latex] statement exactly once.<br><br>\n<b>Answer: 4</b> <br><br> <a href=\"https://gateoverflow.in/523027/gate-cse-2026-set-1-question-53#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "System Call",
+   "tag2_url": "https://practicepaper.in/gate-cse/system-call",
+   "ansMin": 4,
+   "ansMax": 4
+  },
+  {
+   "id": 1126154,
+   "number": 54,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a CPU that has to execute two types of processes. The first type, Actuators (A), requires a CPU burst of [latex]6[/latex] seconds. The second type, Controllers (C), requires a CPU burst of [latex]8[/latex] seconds. A new process of type A arrives at time [latex]t=10[/latex], [latex]20, 30, 40[/latex], and [latex]50[/latex] (in seconds). Similarly, a new process of type C arrives at time [latex]t=[/latex] [latex]11, 22, 33, 44[/latex], and [latex]55[/latex] (in seconds). The CPU scheduling policy is First Come First Serve (FCFS). The first process of type A starts running at [latex]t=10[/latex] seconds. The average waiting time (in seconds) for the [latex]10[/latex] processes is ________. (rounded off to one decimal place)",
+   "solution": "List all [latex]10[/latex] arrivals in chronological order and simulate FCFS execution (CPU serves strictly in arrival order, non-preemptive):<br><br>\n[latex]\\begin{array}{c|c|c|c|c|c}\\text{Proc}&\\text{Arrival}&\\text{Burst}&\\text{Start}&\\text{Finish}&\\text{Waiting}\\\\\\hline A&10&6&10&16&0\\\\C&11&8&16&24&5\\\\A&20&6&24&30&4\\\\C&22&8&30&38&8\\\\A&30&6&38&44&8\\\\C&33&8&44&52&11\\\\A&40&6&52&58&12\\\\C&44&8&58&66&14\\\\A&50&6&66&72&16\\\\C&55&8&72&80&17\\end{array}[/latex]<br><br>\nSum of waiting times [latex]=0+5+4+8+8+11+12+14+16+17=95[/latex].<br><br>\nAverage waiting time [latex]=\\dfrac{95}{10}=9.5[/latex] seconds.<br><br>\n<b>Answer: 9.5</b> <br><br> <a href=\"https://gateoverflow.in/523026/gate-cse-2026-set-1-question-54#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "CPU Scheduling",
+   "tag2_url": "https://practicepaper.in/gate-cse/cpu-scheduling",
+   "ansMin": 9.5,
+   "ansMax": 9.5
+  },
+  {
+   "id": 1126155,
+   "number": 55,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a relational database schema with a relation [latex]R(A, B, C, D)[/latex]. If [latex]\\{A, B\\}[/latex] and [latex]\\{A, C\\}[/latex] are the only two candidate keys of the relation [latex]R[/latex], then the number of superkeys of relation [latex]R[/latex] is ________. (answer in integer)",
+   "solution": "A <b>superkey</b> is any subset of attributes that contains at least one candidate key as a subset. Here the [latex]4[/latex] attributes are [latex]\\{A,B,C,D\\}[/latex] and the candidate keys are [latex]\\{A,B\\}[/latex] and [latex]\\{A,C\\}[/latex].<br><br>\nCount subsets of [latex]\\{A,B,C,D\\}[/latex] containing [latex]\\{A,B\\}[/latex]: freely choose the remaining [latex]\\{C,D\\}[/latex] &rarr; [latex]2^2=4[/latex] subsets.<br>\nCount subsets containing [latex]\\{A,C\\}[/latex]: freely choose the remaining [latex]\\{B,D\\}[/latex] &rarr; [latex]2^2=4[/latex] subsets.<br>\nSubsets counted twice are those containing <i>both</i> [latex]\\{A,B\\}[/latex] and [latex]\\{A,C\\}[/latex], i.e. containing [latex]\\{A,B,C\\}[/latex]: freely choose remaining [latex]\\{D\\}[/latex] &rarr; [latex]2^1=2[/latex] subsets.<br><br>\nBy inclusion-exclusion, total superkeys [latex]=4+4-2=6[/latex].<br><br>\n<b>Answer: 6</b> <br><br> <a href=\"https://gateoverflow.in/523025/gate-cse-2026-set-1-question-55#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Relational Schema",
+   "tag2_url": "https://practicepaper.in/gate-cse/relational-schema",
+   "ansMin": 6,
+   "ansMax": 6
+  }
+ ]
+}

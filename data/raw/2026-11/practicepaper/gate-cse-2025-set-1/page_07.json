@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11251,
+  "quizName": "GATE CSE 2025 SET-1",
+  "pageTitle": "GATE CSE 2025 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 7,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2025-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1125131,
+   "number": 31,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let [latex]A[/latex] be a 2x2 matrix as given:\n<br>\n[latex]A = \\left[\\begin{array}{cc} 1 & 1 \\\\ 1 & -1 \\end{array}\\right][/latex]\n<br>\nWhat are the eigenvalues of the matrix [latex]A^{13}[/latex]?",
+   "solution": "Find the eigenvalues of [latex]A=\\begin{bmatrix}1&1\\\\1&-1\\end{bmatrix}[/latex] from its characteristic equation:<br>\n[latex](1-\\lambda)(-1-\\lambda)-1\\times1=0\\ \\Rightarrow\\ \\lambda^2-1-1=0\\ \\Rightarrow\\ \\lambda^2=2\\ \\Rightarrow\\ \\lambda=\\pm\\sqrt2[/latex]<br><br>\nIf [latex]\\lambda[/latex] is an eigenvalue of [latex]A[/latex], then [latex]\\lambda^{13}[/latex] is the corresponding eigenvalue of [latex]A^{13}[/latex] (eigenvalues of a matrix power are just the original eigenvalues raised to that power):<br>\n[latex](\\sqrt2)^{13}=2^{13/2}=2^{6}\\cdot2^{1/2}=64\\sqrt2[/latex], and similarly [latex](-\\sqrt2)^{13}=-64\\sqrt2[/latex].<br><br>\n<b>Answer: 64&radic;2, -64&radic;2</b><br><br><a href=\"https://gateoverflow.in/460049/gate-cse-2025-set-1-question-31#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "[latex]1,-1[/latex]",
+    "[latex]2\\sqrt{2}, -2\\sqrt{2}[/latex]",
+    "[latex]4\\sqrt{2}, -4\\sqrt{2}[/latex]",
+    "[latex]64\\sqrt{2}, -64\\sqrt{2}[/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1125132,
+   "number": 32,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following four-variable Boolean function in sum-of-product form<br><br> [latex]F(b_3, b_2, b_1, b_0) = \\sum(0, 2, 4, 8, 10, 11, 12)[/latex].\n<br><br>\nWhere the value of the function is computed by considering [latex]b_3b_2b_1b_0[/latex] as a 4-bit binary number, where [latex]b_3[/latex] denotes the most significant bit and [latex]b_0[/latex] denotes the least significant bit. Note that there are no don't care terms. Which ONE of the following options is the CORRECT minimized Boolean expression for [latex]F[/latex]?",
+   "solution": "Plotting [latex]F(b_3,b_2,b_1,b_0)=\\sum(0,2,4,8,10,11,12)[/latex] on a K-map and grouping adjacent [latex]1[/latex]s:<br><br>\n- [latex]\\bar b_1\\bar b_0[/latex] covers minterms where [latex]b_1{=}0,b_0{=}0[/latex]: [latex]0,2,8,10[/latex]<br>\n- [latex]\\bar b_2\\bar b_0[/latex] covers minterms where [latex]b_2{=}0,b_0{=}0[/latex]: [latex]0,4,8,12[/latex]<br>\n- [latex]b_1\\bar b_2b_3[/latex] covers minterms where [latex]b_3{=}1,b_2{=}0,b_1{=}1[/latex]: [latex]10,11[/latex]<br><br>\nUnion of these three terms [latex]=\\{0,2,4,8,10,11,12\\}[/latex] exactly &mdash; matching the target minterm list precisely, with no extra minterms picked up. Each term is also a necessary, non-redundant group (removing any one leaves some minterm uncovered), so this is the minimal SOP form.<br><br>\n<b>Answer: [latex]\\bar b_1\\bar b_0+\\bar b_2\\bar b_0+b_1\\bar b_2b_3[/latex]</b><br><br><a href=\"https://gateoverflow.in/460048/gate-cse-2025-set-1-question-32#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "options": [
+    "[latex] \\bar{b_1} \\bar{b_0} + \\bar{b_2} \\bar{b_0} + b_1 \\bar{b_2} b_3 [/latex]",
+    "[latex] \\bar{b_1} \\bar{b_0} + \\bar{b_2} \\bar{b_0} [/latex]",
+    "[latex] \\bar{b_2} \\bar{b_0} + b_1 b_2 b_3 [/latex]",
+    "[latex] \\bar{b_0} \\bar{b_2} + \\bar{b_3} [/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1125133,
+   "number": 33,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let [latex]G(V, E)[/latex] be an undirected and unweighted graph with 100 vertices. Let [latex]d(u, v)[/latex] denote the number of edges in a shortest path between vertices [latex]u[/latex] and [latex]v[/latex] in [latex]V[/latex]. Let the maximum value of [latex]d(u, v)[/latex], [latex]u, v \\in V[/latex] such that [latex]u \\neq v[/latex], be 30. Let [latex]T[/latex] be any breadth-first-search tree of [latex]G[/latex]. Which ONE of the given options is CORRECT for every such graph [latex]G[/latex]?\n",
+   "solution": "\nLet the <b>diameter</b> of the graph be the maximum shortest distance between any two vertices.<br>\nIt is given that \n\n[latex]\n\\max_{u,v\\in V,\\;u\\ne v} d(u,v)=30.\n[/latex]<br>\n\nThus, the <b>diameter</b> of the graph is 30.<br><br>\n<b>Relation between BFS Tree Height and Graph Diameter</b><br><br>\n\nA Breadth-First Search (BFS) tree rooted at a vertex (r) has the following property:<br><br>\n\n- The level of every vertex equals its shortest distance from the root.<br>\n- Therefore, the height of the BFS tree is the maximum shortest distance from the root to any vertex, which is called the <b>eccentricity</b> of the root.<br><br>\n\nLet the height of the BFS tree be (h). Then,\n\n[latex]\nh=\\max_{v\\in V} d(r,v).\n[/latex]<br><br>\n\n\n<b>Using the Diameter</b><br><br>\n\nLet the diameter of the graph be (D=30). A well-known property of graphs is \n\n[latex]\n\\text{Radius} \\ge \\left\\lceil\\frac{D}{2}\\right\\rceil.\n[/latex]<br><br>\n\nSince \n\n[latex]\nD=30,\n[/latex] \n\nwe get \n\n[latex]\n\\left\\lceil\\frac{30}{2}\\right\\rceil=15.\n[/latex]<br><br>\n\nEvery vertex has eccentricity at least the radius. Hence, regardless of the chosen BFS root, \n\n[latex]\nh\\ge 15.\n[/latex]<br><br>\n\nThe height need not be exactly 15 or exactly 30. It can be any value between 15 and 30 depending on the chosen root.<br><br>\n\nFor example:<br><br>\n\n- If the BFS starts from a central vertex, the height can be 15.<br>\n- If it starts from an end vertex of a diameter, the height can be 30.<br><br>\n\n<b>Correct Answer: (C) The height of (T) is at least 15.</b><br><br><a href=\"https://gateoverflow.in/460047/gate-cse-2025-set-1-question-33#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Shortest Path",
+   "tag2_url": "https://practicepaper.in/gate-cse/shortest-path",
+   "options": [
+    "The height of [latex]T[/latex] is exactly 15.",
+    "The height of [latex]T[/latex] is exactly 30.",
+    "The height of [latex]T[/latex] is at least 15.",
+    "The height of [latex]T[/latex] is at least 30."
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1125134,
+   "number": 34,
+   "type": "MCQ",
+   "marks": 2,
+   "text": " Consider the following two languages over the alphabet [latex]\\{a, b\\}[/latex]:\n<br><br>\n[latex]L_1 = \\{ \\alpha \\beta \\alpha \\mid \\alpha \\in \\{a, b\\}^+ \\text{ and } \\beta \\in \\{a, b\\}^+ \\}[/latex]<br>\n[latex]L_2 = \\{ \\alpha \\beta \\alpha \\mid \\alpha \\in \\{a\\}^+ \\text{ and } \\beta \\in \\{a, b\\}^+ \\}[/latex]\n<br><br>\nWhich ONE of the following statements is CORRECT?",
+   "solution": "<b>[latex]L_1=\\{\\alpha\\beta\\alpha\\mid\\alpha,\\beta\\in\\{a,b\\}^+\\}[/latex] (α completely unrestricted):</b> checking membership genuinely requires comparing an arbitrary-length prefix against an arbitrary-length suffix for exact equality. For instance, \"[latex]abbaab[/latex]\" is in [latex]L_1[/latex] (via [latex]\\alpha=ab,\\beta=ba[/latex]) even though its very first and very last characters differ &mdash; so no bounded \"look at a few characters\" trick works; a finite automaton cannot carry the unbounded memory needed to remember an arbitrarily long prefix for later comparison. This is the same style of argument used to show languages like [latex]\\{ww\\}[/latex] are non-regular. <b>[latex]L_1[/latex] is not regular.</b><br><br>\n<b>[latex]L_2=\\{\\alpha\\beta\\alpha\\mid\\alpha\\in\\{a\\}^+,\\beta\\in\\{a,b\\}^+\\}[/latex] (α restricted to all-a's):</b> here, since [latex]\\alpha[/latex] consists only of [latex]a[/latex]'s, we can always just use the shortest valid split ([latex]|\\alpha|=1[/latex]): any string of length [latex]\\ge3[/latex] that starts with [latex]a[/latex] and ends with [latex]a[/latex] can always be decomposed as (first character [latex]a[/latex]) + (everything in between, as [latex]\\beta[/latex]) + (last character [latex]a[/latex]). So [latex]L_2[/latex] is exactly \"strings of length [latex]\\ge3[/latex] starting and ending with [latex]a[/latex],\" which is simply matched by the regular expression [latex]a(a|b)^+a[/latex]. <b>[latex]L_2[/latex] is regular.</b><br><br>\n<b>Answer: L1 is not regular but L2 is regular.</b><br><br><a href=\"https://gateoverflow.in/460046/gate-cse-2025-set-1-question-34#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Regular Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/regular-language",
+   "options": [
+    "Both [latex]L_1[/latex] and [latex]L_2[/latex] are regular languages.",
+    "[latex]L_1[/latex] is a regular language but [latex]L_2[/latex] is not a regular language.",
+    "[latex]L_1[/latex] is not a regular language but [latex]L_2[/latex] is a regular language.",
+    "Neither [latex]L_1[/latex] nor [latex]L_2[/latex] is a regular language."
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1125135,
+   "number": 35,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following two languages over the alphabet [latex]\\{a, b, c\\}[/latex], where [latex]m[/latex] and [latex]n[/latex] are natural numbers:\n<br><br>\n[latex]L_1 = \\{ a^m b^m c^{m+n} \\mid m, n \\geq 1 \\}[/latex]<br>\n[latex]L_2 = \\{ a^m b^n c^{m+n} \\mid m, n \\geq 1 \\}[/latex]\n<br><br>\nWhich ONE of the following statements is CORRECT?",
+   "solution": "<b>[latex]L_1=\\{a^mb^mc^{m+n}\\mid m,n\\ge1\\}[/latex]:</b> this requires two <i>separate</i> comparisons tied to the same value [latex]m[/latex] &mdash; matching [latex]a[/latex]'s against [latex]b[/latex]'s exactly (using up a stack), <i>and independently</i> comparing the [latex]c[/latex]-count against that same [latex]m[/latex] again. A single-stack PDA can only \"remember and compare\" one running count at a time; once the stack is used up matching [latex]a[/latex]'s against [latex]b[/latex]'s, the value of [latex]m[/latex] is no longer available to compare against the [latex]c[/latex]'s. This mirrors the classic non-context-free pattern [latex]a^nb^nc^n[/latex]. <b>[latex]L_1[/latex] is not context-free.</b><br><br>\n<b>[latex]L_2=\\{a^mb^nc^{m+n}\\mid m,n\\ge1\\}[/latex]:</b> here the [latex]c[/latex]-count only needs to match the <i>combined total</i> of [latex]a[/latex]'s and [latex]b[/latex]'s (not two separate comparisons). A single stack handles this easily: push one symbol for every [latex]a[/latex] <i>and</i> every [latex]b[/latex] (treating them the same way), then pop one symbol per [latex]c[/latex], accepting if the stack empties exactly when the input ends. <b>[latex]L_2[/latex] is context-free.</b><br><br>\n<b>Answer: L1 is not context-free but L2 is context-free.</b><br><br><a href=\"https://gateoverflow.in/460045/gate-cse-2025-set-1-question-35#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-language",
+   "options": [
+    "Both [latex]L_1[/latex] and [latex]L_2[/latex] are context-free languages.",
+    "[latex]L_1[/latex] is a context-free language but [latex]L_2[/latex] is not a context-free language.",
+    "[latex]L_1[/latex] is not a context-free language but [latex]L_2[/latex] is a context-free language.",
+    "Neither [latex]L_1[/latex] nor [latex]L_2[/latex] are context-free languages."
+   ],
+   "correct": 2
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11261,
+  "quizName": "GATE CSE 2026 SET-1",
+  "pageTitle": "GATE CSE 2026 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 6,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2026-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1126126,
+   "number": 26,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the real valued variables [latex]X, Y[/latex] and [latex]Z[/latex] represented using the IEEE [latex]754[/latex] singleprecision floating-point format. The binary representations of [latex]X[/latex] and [latex]Y[/latex] in hexadecimal notation are as follows:<br><br> [latex] X: 35 {C} 00000 \\quad Y: 34 {A} 00000 [/latex] <br><br>Let [latex]Z=X+Y[/latex]. <br><br>Which one of the following is the binary representation of [latex]Z[/latex], in hexadecimal notation?",
+   "solution": "Decode both IEEE-754 single-precision numbers (format: 1 sign bit, 8 exponent bits [bias 127], 23 mantissa bits):<br><br>\n[latex]X=35\\text{C}00000_{16}[/latex] &rarr; sign [latex]=0[/latex], exponent bits [latex]=01101011_2=107[/latex] (unbiased [latex]=107-127=-20[/latex]), mantissa [latex]=1.1_2[/latex]. So [latex]X=1.1_2\\times2^{-20}[/latex].<br><br>\n[latex]Y=34\\text{A}00000_{16}[/latex] &rarr; sign [latex]=0[/latex], exponent bits [latex]=01101001_2=105[/latex] (unbiased [latex]=-22[/latex]), mantissa [latex]=1.01_2[/latex]. So [latex]Y=1.01_2\\times2^{-22}[/latex].<br><br>\nTo add, align [latex]Y[/latex]'s exponent to [latex]-20[/latex] by shifting its mantissa right by [latex]2[/latex] bits: [latex]Y=0.0101_2\\times2^{-20}[/latex].<br><br>\n[latex]X+Y=(1.1000_2+0.0101_2)\\times2^{-20}=1.1101_2\\times2^{-20}[/latex].<br><br>\nThis is already normalized (leading digit [latex]1[/latex], no need to shift the exponent). So [latex]Z[/latex] has the same exponent as [latex]X[/latex] (exponent bits [latex]01101011[/latex]) and mantissa [latex]1101\\underbrace{0\\ldots0}_{19\\text{ zeros}}[/latex], giving hex [latex]35\\text{E}80000[/latex].<br><br>\n<b>Answer: 35E80000</b> <br><br> <a href=\"https://gateoverflow.in/523054/gate-cse-2026-set-1-question-26#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "options": [
+    "[latex]35\\text{C}80000[/latex]",
+    "[latex]35\\text{CC}0000[/latex]",
+    "[latex]35\\text{E}80000[/latex]",
+    "[latex]35\\text{EC}0000[/latex]"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1126127,
+   "number": 27,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a [latex]2[/latex]-bit saturating up/down counter that performs the saturating up count when the input [latex]P[/latex] is [latex]0[/latex], and the saturating down count when [latex]P[/latex] is [latex]1[/latex]. The Next State table of the counter is as shown. The counter is built as a synchronous sequential circuit using D flip-flops. <br><br> [latex]\\begin{array}{c|cc|cc}\n\\text{Input} & \\text{Current} & \\text{State} & \\text{Next} & \\text{State} \\\\\nP & Q_1 & Q_0 & Q_1^+ & Q_0^+ \\\\\n\\hline\n0 & 0 & 0 & 0 & 1 \\\\\n0 & 0 & 1 & 1 & 0 \\\\\n0 & 1 & 0 & 1 & 1 \\\\\n0 & 1 & 1 & 1 & 1 \\\\\n1 & 0 & 0 & 0 & 0 \\\\\n1 & 0 & 1 & 0 & 0 \\\\\n1 & 1 & 0 & 0 & 1 \\\\\n1 & 1 & 1 & 1 & 0 \\\\\n\\end{array}[/latex]  <br><br>Which one of the following options corresponds to the expressions for the inputs of the D flip-flops,  [latex]D_1[/latex] and  [latex]D_0[/latex]?",
+   "solution": "From the given next-state table, list the input combinations [latex](P,Q_1,Q_0)[/latex] for which [latex]D_1(=Q_1^+)=1[/latex]: [latex](0,0,1),\\,(0,1,0),\\,(0,1,1),\\,(1,1,1)[/latex].<br><br>\nGrouping these minterms: [latex](0,1,0)[/latex] and [latex](0,1,1)[/latex] combine to [latex]\\bar P Q_1[/latex]; [latex](0,0,1)[/latex] and [latex](0,1,1)[/latex] combine to [latex]\\bar P Q_0[/latex]; [latex](0,1,1)[/latex] and [latex](1,1,1)[/latex] combine to [latex]Q_1Q_0[/latex]. Together these three product terms cover exactly the [latex]4[/latex] required minterms (and nothing extra), giving:<br>\n[latex]D_1=\\bar P Q_1+\\bar P Q_0+Q_1Q_0[/latex]<br><br>\nSimilarly, [latex]D_0(=Q_0^+)=1[/latex] for [latex](0,0,0),\\,(0,1,0),\\,(0,1,1),\\,(1,1,0)[/latex]. Grouping: [latex](0,0,0)[/latex] & [latex](0,1,0)[/latex] &rarr; [latex]\\bar P\\overline{Q_0}[/latex]; [latex](0,1,0)[/latex] & [latex](0,1,1)[/latex] &rarr; [latex]\\bar P Q_1[/latex]; [latex](0,1,0)[/latex] & [latex](1,1,0)[/latex] &rarr; [latex]Q_1\\overline{Q_0}[/latex]. This covers exactly the required minterms:<br>\n[latex]D_0=\\bar P\\overline{Q_0}+\\bar P Q_1+Q_1\\overline{Q_0}[/latex]<br><br>\n<b>Answer: [latex]D_1=\\bar P Q_1+\\bar P Q_0+Q_1Q_0,\\quad D_0=\\bar P\\overline{Q_0}+\\bar P Q_1+Q_1\\overline{Q_0}[/latex]</b> <br><br> <a href=\"https://gateoverflow.in/523053/gate-cse-2026-set-1-question-27#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Sequential Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/sequential-circuit",
+   "options": [
+    "[latex]D_{1}=P Q_{1}+\\bar{P} Q_{0}+Q_{1} Q_{0} [/latex]<br>[latex] D_{0}=P Q_{0}+\\bar{P} Q_{1}+Q_{1} \\overline{Q_{0}}[/latex]",
+    "[latex]D_{1}=\\bar{P} Q_{1}+\\bar{P} Q_{0}+Q_{1} Q_{0} [/latex]<br>[latex] D_{0}=\\bar{P} \\overline{Q_{0}}+\\bar{P} Q_{1}+Q_{1} \\overline{Q_{0}}[/latex]",
+    "[latex]D_{1}=\\bar{P} \\overline{Q_{1}}+\\bar{P} Q_{0}+Q_{1} Q_{0} [/latex]<br>[latex] D_{0}=\\bar{P} Q_{0}+\\bar{P} Q_{1}+Q_{1} \\overline{Q_{0}}[/latex]",
+    "[latex]D_{1}=P \\overline{Q_{1}}+\\bar{P} Q_{0}+Q_{1} Q_{0} [/latex]<br>[latex] D_{0}=P \\overline{Q_{0}}+\\bar{P} Q_{1}+Q_{1} \\overline{Q_{0}}[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1126128,
+   "number": 28,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The size of the physical address space of a processor is [latex]2^{32}[/latex] bytes. The capacity of a cache memory unit is [latex]2^{23}[/latex] bytes. The cache block size is [latex]128[/latex] bytes. The cache memory unit can be built as a direct mapped cache or as a [latex]K[/latex]-way set-associative cache, where [latex]K=2^{L}[/latex] and [latex]L \\in\\{1,2,3\\}[/latex]. Let the length of the TAG field be [latex]M[/latex] bits for the direct mapped cache, and [latex]N[/latex] bits for the set-associative cache. <br><br> Which one of the following options is true?",
+   "solution": "Given: address space [latex]=2^{32}[/latex] bytes, cache size [latex]=2^{23}[/latex] bytes, block size [latex]=128=2^7[/latex] bytes.<br><br>\n<b>Direct-mapped cache:</b> number of cache lines [latex]=\\dfrac{2^{23}}{2^7}=2^{16}[/latex], so index field [latex]=16[/latex] bits, offset field [latex]=7[/latex] bits. Tag field [latex]M=32-16-7=9[/latex] bits.<br><br>\n<b>[latex]K[/latex]-way set-associative cache ([latex]K=2^L[/latex]):</b> number of sets [latex]=\\dfrac{2^{16}}{2^L}=2^{16-L}[/latex], so index field [latex]=16-L[/latex] bits, offset field still [latex]=7[/latex] bits. Tag field [latex]N=32-(16-L)-7=9+L[/latex] bits.<br><br>\nComparing: [latex]N=9+L=M+L[/latex] (since [latex]M=9[/latex]).<br><br>\n<b>Answer: [latex]N=M+L[/latex]</b> <br><br> <a href=\"https://gateoverflow.in/523052/gate-cse-2026-set-1-question-28#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "options": [
+    "[latex]N=M+L[/latex]",
+    "[latex]N=M-L[/latex]",
+    "[latex]N=M+K[/latex]",
+    "[latex]N=M-K[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1126129,
+   "number": 29,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following code snippet in C language that computes the number of nodes in a non-empty singly linked list pointed to by the pointer variable head. <pre><code>struct node{\n  int elt;\n  struct node *next;\n };\n int getListSize (struct node *head)\n {\n  if( E1 ) return 1;\n  return E2 ;\n } </code></pre>Which one of the following options gives the correct replacements for the expressions [latex]\\textbf{E1}[/latex] and [latex]\\textbf{E2}?[/latex]",
+   "solution": "We want a recursive count of nodes in a non-empty singly linked list.<br><br>\nThe natural recursive base case is: <b>if the current node is the last node</b> (i.e. [latex]\\text{head->next==NULL}[/latex]), then this contributes exactly [latex]1[/latex] to the count, so [latex]\\text{E1: head->next==NULL}[/latex], returning [latex]1[/latex].<br><br>\nOtherwise, the count is [latex]1[/latex] (for the current node) plus however many nodes remain in the rest of the list starting from [latex]\\text{head->next}[/latex]: [latex]\\text{E2: 1+getListSize(head->next)}[/latex].<br><br>\n(Using [latex]\\text{head==NULL}[/latex] as the base case instead would also work logically for a possibly-empty list, but here the function is documented to be called only on a non-empty list, and combined with the given E2 form, the option that consistently checks [latex]\\text{head->next}[/latex] in the base case and recurses on [latex]\\text{head->next}[/latex] is the matching, correct pair.)<br><br>\n<b>Answer: E1: head-&gt;next == NULL, E2: 1 + getListSize(head-&gt;next)</b> <br><br> <a href=\"https://gateoverflow.in/523051/gate-cse-2026-set-1-question-29#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Link List",
+   "tag2_url": "https://practicepaper.in/gate-cse/link-list",
+   "options": [
+    "E1: head == NULL<br>\nE2: 1 + getListSize(head)",
+    "E1: head->next == NULL<br>\nE2: 1 + getListSize(head->next)",
+    "E1: head == NULL<br>\nE2: 1 + getListSize(head->next)",
+    "E1: head->next == NULL<br>\nE2: 1 + getListSize(head)"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1126130,
+   "number": 30,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let [latex]P[/latex] be the set of all integers from [latex]1[/latex] to [latex]15[/latex]. Consider any order of insertion of the elements of [latex]P[/latex] into a binary search tree that creates a complete binary tree. <br><br>Which one of the following elements can NEVER be the third element that is inserted?",
+   "solution": "Since the [latex]15[/latex] elements form a <b>complete</b> binary tree that is also a valid <b>BST</b>, the shape and contents of every position are fully determined: the tree must be a perfectly balanced BST on [latex]\\{1,\\ldots,15\\}[/latex]:<br><br>\nLevel 0 (root): [latex]8[/latex]<br>\nLevel 1: [latex]4,\\ 12[/latex]<br>\nLevel 2: [latex]2,\\ 6,\\ 10,\\ 14[/latex]<br>\nLevel 3 (leaves): [latex]1,3,5,7,9,11,13,15[/latex]<br><br>\nFor an insertion sequence to build up exactly this shape via ordinary BST insertion, a node can only be inserted after its parent has already been inserted (a node's tree position is only \"unlocked\" once its parent exists). So valid insertion orders are precisely the orders in which every node appears after its parent (a topological/level-respecting order).<br><br>\nThe root [latex]8[/latex] must always be inserted first. The <b>second</b> insertion must be one of the root's children, [latex]4[/latex] or [latex]12[/latex]. The <b>third</b> insertion can then be: the other level-1 node ([latex]12[/latex] or [latex]4[/latex]), or a level-2 child of whichever level-1 node was inserted second (e.g. [latex]2[/latex] or [latex]6[/latex] if [latex]4[/latex] went second). This gives possible third elements [latex]\\{2,4,6,10,12,14\\}[/latex] &mdash; only levels 0-2 nodes can ever appear as early as the third insertion.<br><br>\n[latex]5[/latex] is a <b>level-3 leaf</b> (child of [latex]6[/latex], which is itself a level-2 child of [latex]4[/latex]). Before [latex]5[/latex] can be inserted, both its ancestors [latex]8[/latex] and [latex]4[/latex] and [latex]6[/latex] would already need to exist &mdash; requiring at least [latex]4[/latex] prior insertions. So [latex]5[/latex] can never be inserted as early as third.<br><br>\n<b>Answer: 5 can NEVER be the third element inserted.</b> <br><br> <a href=\"https://gateoverflow.in/523050/gate-cse-2026-set-1-question-30#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Search Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-search-tree",
+   "options": [
+    "4",
+    "2",
+    "10",
+    "5"
+   ],
+   "correct": 3
+  }
+ ]
+}

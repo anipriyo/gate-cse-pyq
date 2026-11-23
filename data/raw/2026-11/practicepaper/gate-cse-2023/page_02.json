@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11231,
+  "quizName": "GATE CSE 2023",
+  "pageTitle": "GATE CSE 2023",
+  "timeLimit": 0,
+  "pageNo": 2,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2023",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1123106,
+   "number": 6,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the options given below refers to the degree (or arity) of a relation in\nrelational database systems?",
+   "solution": "<b>Degree (arity)</b> = number of attributes (columns) in the relation schema.<br>\nThe number of tuples (rows) is called the <b>cardinality</b>.<br><br>\n<b>Answer: Number of attributes of its relation schema</b><br><br><a href=\"https://gateoverflow.in/399306/gate-cse-2023-question-6#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Relational Schema",
+   "tag2_url": "https://practicepaper.in/gate-cse/relational-schema",
+   "options": [
+    "Number of attributes of its relation schema.",
+    "Number of tuples stored in the relation.",
+    "Number of entries in the relation.",
+    "Number of distinct domains of its relation schema."
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1123107,
+   "number": 7,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Suppose two hosts are connected by a point-to-point link and they are configured\nto use Stop-and-Wait protocol for reliable data transfer. Identify in which one of\nthe following scenarios, the utilization of the link is the lowest.",
+   "solution": "Stop-and-wait utilization [latex]=\\frac{T_t}{T_t+2T_p}=\\frac{1}{1+2a}[/latex], where [latex]a=\\frac{T_p}{T_t}[/latex].<br><br>\nUtilization is lowest when [latex]a[/latex] is largest:<br>\n- longer link [latex]\\rightarrow[/latex] larger [latex]T_p[/latex]<br>\n- higher transmission rate [latex]\\rightarrow[/latex] smaller [latex]T_t[/latex]<br><br>\n<b>Answer: Longer link length and higher transmission rate</b><br><br><a href=\"https://gateoverflow.in/399305/gate-cse-2023-question-7#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "options": [
+    "Longer link length and lower transmission rate",
+    "Longer link length and higher transmission rate",
+    "Shorter link length and lower transmission rate",
+    "Shorter link length and higher transmission rate"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1123108,
+   "number": 8,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let [latex] A=\\begin{bmatrix}\n1 & 2 & 3 &4 \\\\ \n 4&  1& 2 &3 \\\\ \n 3& 4 & 1 &2 \\\\ \n2 &3  &4  &1 \n\\end{bmatrix}[/latex] and [latex] B=\\begin{bmatrix}\n 3& 4 & 1 &2 \\\\\n 4&  1& 2 &3 \\\\ \n 1 & 2 & 3 &4 \\\\ \n2 &3  &4  &1 \n\\end{bmatrix}[/latex]<br>Let det(A) and det(B) denote the determinants of the matrices A and B,\nrespectively.<br>\nWhich one of the options given below is TRUE?",
+   "solution": "Rows of B are rows of A in the order [latex]R_3,R_2,R_1,R_4[/latex], i.e. B is A with rows 1 and 3 swapped.<br><br>\nOne row swap changes the sign of the determinant: [latex]\\det(B)=-\\det(A)[/latex].<br><br>\n<b>Answer: det(B) = [latex]-[/latex]det(A)</b><br><br><a href=\"https://gateoverflow.in/399304/gate-cse-2023-question-8#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "det(A) = det(B)",
+    "det(B) = - det(A)",
+    "det(A)=0",
+    "det(AB) = det(A) + det(B)"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1123109,
+   "number": 9,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following definition of a lexical token [latex]id[/latex] for an identifier in a programming language, using extended regular expressions:\n<br><br> [latex] letter \\rightarrow  [A-Za-z][/latex]<br>[latex] digit \\rightarrow  [0-9][/latex]<br>[latex] id \\rightarrow letter (letter\\;| \\;digit)^*[/latex]<br>  <br><br>Which one of the following Non-deterministic Finite-state Automata with -\ntransitions accepts the set of valid identifiers? (A double-circle denotes a final\nstate)<br><img src=\"/wp-content/uploads/GATE/CS/20231/q9.jpg\" /><br>",
+   "solution": "An identifier is one letter followed by <b>any mix</b> of letters and digits.<br><br>\n- (A): the [latex]\\epsilon[/latex] edge lets the string skip the first letter, e.g. \"1\" or the empty string is accepted [latex]\\text{---}[/latex] wrong.<br>\n- (B): after choosing a branch you stay with only letters or only digits; \"a1b\" is rejected [latex]\\text{---}[/latex] wrong.<br>\n- <b>(C)</b>: letter, then from the final state any number of letter-or-digit steps through the loop [latex]\\text{---}[/latex] correct.<br>\n- (D): forces \"letter digit\" pairs; \"ab\" is rejected [latex]\\text{---}[/latex] wrong.<br><br>\n<b>Answer: C</b><br><br><a href=\"https://gateoverflow.in/399303/gate-cse-2023-question-9#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Regular Expression",
+   "tag2_url": "https://practicepaper.in/gate-cse/regular-expression",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1123110,
+   "number": 10,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "An algorithm has to store several keys generated by an adversary in a hash\ntable. The adversary is malicious who tries to maximize the number of collisions.\nLet [latex] k[/latex] be the number of keys, [latex] m[/latex] be the number of slots in the hash table, and [latex] k \\gt m[/latex].<br>\nWhich one of the following is the best hashing strategy to counteract the adversary?",
+   "solution": "Any fixed hash function (division or multiplication) is known to the adversary, who can pick keys that all collide.<br><br>\n<b>Universal hashing</b> picks the hash function at random from a family at run time, so the adversary cannot predict it, and the expected number of collisions stays small.<br><br>\n<b>Answer: Universal hashing method</b><br><br><a href=\"https://gateoverflow.in/399302/gate-cse-2023-question-10#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Hashing",
+   "tag2_url": "https://practicepaper.in/gate-cse/hashing",
+   "options": [
+    "Division method, i.e., use the hash function [latex]h(k) = k\\;  mod \\; m[/latex]",
+    "Multiplication method, i.e., use the hash function [latex] h(k) =  \\left \\lfloor m(kA -\\left \\lfloor kA \\right \\rfloor ) \\right \\rfloor[/latex], where\n[latex]A[/latex] is a carefully chosen constant.",
+    "Universal hashing method.",
+    "If [latex]k[/latex] is a prime number, use Division method. Otherwise, use Multiplication method"
+   ],
+   "correct": 2
+  }
+ ]
+}

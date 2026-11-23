@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11191,
+  "quizName": "GATE CS 2019",
+  "pageTitle": "GATE CSE 2019",
+  "timeLimit": 0,
+  "pageNo": 6,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2019",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1119126,
+   "number": 26,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following C program:<pre><code>\nvoid convert(int n) {\n  if (n<0)\n    printf(\"%d\",n);\n  else {\n    convert(n/2);\n    printf(\"%d\",n%2);\n  }\n}</code></pre>\nWhich one of the following will happen when the function convert is called with any positive integer n as argument?",
+   "solution": "For positive n, n/2 keeps getting smaller until it becomes 0. But the base case is n [latex]\\lt[/latex] 0, which never happens: convert(0) calls convert(0) again forever.<br><br>\nprintf comes <b>after</b> the recursive call, so nothing is ever printed. The program does not terminate (until the stack overflows).<br><br>\n<b>Answer: It will not print anything and will not terminate</b><br><br><a href=\"https://gateoverflow.in/302822/gate2019-cs-26#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "options": [
+    "It will print the binary representation of n and terminate.",
+    "It will print the binary representation of n in the reverse order and terminate.",
+    "It will print the binary representation of n but will not terminate. ",
+    "It will not print anything and will not terminate."
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1119127,
+   "number": 27,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following C program:<pre><code>\n#include &lt;stdio.h&gt;\nint r(){\n int static num=7;\n return num--;\n}\nint main() {\n for(r();r();r()) {\n  printf(\"%d \",r());\n  };\n return 0;\n}</code></pre>\nWhich one of the following values will be displayed on execution of the programs?",
+   "solution": "num is static, starts at 7, and r() returns num and then decrements it.<br>\n- init: r() [latex]\\rightarrow[/latex] 7 (num = 6)<br>\n- condition: r() [latex]\\rightarrow[/latex] 6, true; body prints r() [latex]\\rightarrow[/latex] <b>5</b><br>\n- update: r() [latex]\\rightarrow[/latex] 4; condition: r() [latex]\\rightarrow[/latex] 3, true; body prints r() [latex]\\rightarrow[/latex] <b>2</b><br>\n- update: r() [latex]\\rightarrow[/latex] 1; condition: r() [latex]\\rightarrow[/latex] 0, false [latex]\\rightarrow[/latex] stop<br><br>\nOutput: 5 2<br><br>\n<b>Answer: 52</b><br><br><a href=\"https://gateoverflow.in/302821/gate2019-cs-27#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "options": [
+    "41",
+    "52",
+    "63",
+    "630"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1119128,
+   "number": 28,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider three machines M, N and P with IP addresses 100.10.5.2, 100.10.5.5 and 100.10.5.6 respectively. The subnet mask is set to 255.255.255.252 for all the three machines. Which one of the following is true?",
+   "solution": "Mask 255.255.255.252 = /30, so subnets are blocks of 4 in the last octet.<br>\n- M: .2 [latex]\\rightarrow[/latex] block .0-.3<br>\n- N: .5 [latex]\\rightarrow[/latex] block .4-.7<br>\n- P: .6 [latex]\\rightarrow[/latex] block .4-.7<br><br>\n<b>Answer: Only N and P belong to the same subnet</b><br><br><a href=\"https://gateoverflow.in/302820/gate2019-cs-28#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-layer-protocol",
+   "options": [
+    "M, N and P all belong to the same subnet",
+    "Only M and N belong to the same subnet",
+    "Only N and P belong to the same subnet",
+    "M, N, and P belong to three different subnets"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1119129,
+   "number": 29,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Suppose that in an IP-over-Ethernet network, a machine X wishes to find the MAC address of another machine Y in its subnet. Which one of the following techniques can be used for this?",
+   "solution": "ARP request: X does not know Y's MAC, so it sends the request to the <b>broadcast MAC address</b> (FF:FF:FF:FF:FF:FF) in its subnet, carrying Y's IP. Only Y replies, with its MAC.<br><br>\nThe gateway is not involved (Y is in the same subnet), and ARP does not use a broadcast IP address.<br><br>\n<b>Answer: X sends an ARP request packet with broadcast MAC address in its local subnet</b><br><br><a href=\"https://gateoverflow.in/302819/gate2019-cs-29#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "options": [
+    "X sends an ARP request packet to the local gateway's IP address which then finds the  MAC address of Y and sends to X",
+    "X sends an ARP request packet to the local gateway's MAC address which then finds the MAC address of Y and sends to X",
+    "X sends an ARP request packet with broadcast MAC address in its local subnet",
+    "X sends an ARP request packet with broadcast IP address in its local subnet"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1119130,
+   "number": 30,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider three 4-variable functions [latex]f_1,f_2 \\; and \\; f_3[/latex], which are expressed in sum-of-minterms<br><br>\n[latex]f_1=\\Sigma (0,2,5,8,14)[/latex]<br>\n[latex]f_2=\\Sigma (2,3,6,8,14,15)[/latex]<br>\n[latex]f_3=\\Sigma (2,7,11,14)[/latex] <br><br>\nFor the following circuit with one AND gate and one XOR gate, the output function f can be expressed as: <br><img src=\"/wp-content/uploads/GATE/CS/20191/q30.jpg\" />",
+   "solution": "Circuit: [latex]f=(f_1\\cdot f_2)\\oplus f_3[/latex].<br><br>\n- [latex]f_1\\cdot f_2[/latex] = common minterms = {2, 8, 14}<br>\n- XOR with [latex]f_3[/latex] = {2, 7, 11, 14}: keep minterms in exactly one set [latex]\\rightarrow[/latex] 2 and 14 cancel, leaving {7, 8, 11}<br><br>\n<b>Answer: [latex]\\Sigma(7,8,11)[/latex]</b><br><br><a href=\"https://gateoverflow.in/302818/gate2019-cs-30#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "options": [
+    "[latex]\\Sigma (7,8,11)[/latex]",
+    "[latex]\\Sigma (2,7,8,11,14)[/latex]",
+    "[latex]\\Sigma (2,14)[/latex]",
+    "[latex]\\Sigma (0,2,3,5,6,7,8,11,14,15)[/latex]"
+   ],
+   "correct": 0
+  }
+ ]
+}

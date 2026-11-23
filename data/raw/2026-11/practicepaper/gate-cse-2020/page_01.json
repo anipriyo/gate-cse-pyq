@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11201,
+  "quizName": "GATE CS 2020",
+  "pageTitle": "GATE CSE 2020",
+  "timeLimit": 0,
+  "pageNo": 1,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2020",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1120101,
+   "number": 1,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the functions <br><br>I. [latex]e^{-x}[/latex] <br>II. [latex]x^2-\\sin x[/latex] <br>III. [latex]\\sqrt{x^3+1}[/latex] <br> <br> \nWhich of the above functions is/are increasing everywhere in [0,1] ?",
+   "solution": "Check the derivative on [0, 1]:<br>\n- I: [latex](e^{-x})'=-e^{-x} \\lt 0[/latex] [latex]\\rightarrow[/latex] decreasing.<br>\n- II: [latex]2x-\\cos x[/latex] is [latex]-1[/latex] at x = 0 [latex]\\rightarrow[/latex] decreasing near 0.<br>\n- III: [latex]\\frac{3x^2}{2\\sqrt{x^3+1}}\\ge0[/latex] [latex]\\rightarrow[/latex] increasing on the whole interval.<br><br>\n<b>Answer: III only</b><br><br><a href=\"https://gateoverflow.in/333230/gate2020-cs-1#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "options": [
+    "III only",
+    "II only",
+    "II and III only",
+    "I and III only"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1120102,
+   "number": 2,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "For parameters a and b, both of which are [latex]\\omega(1) , T(n)=T(n^{1/a})+1[/latex], and [latex]T(b)=1[/latex]. Then [latex]T(n)[/latex] is",
+   "solution": "Each step takes the a-th root: [latex]n\\rightarrow n^{1/a}\\rightarrow n^{1/a^2}\\rightarrow\\cdots[/latex], until it reaches b.<br><br>\n[latex]n^{1/a^k}=b\\Rightarrow\\frac{\\log_b n}{a^k}=1\\Rightarrow k=\\log_a\\log_b n[/latex]<br><br>\nEach step adds 1, so [latex]T(n)=\\Theta(\\log_a\\log_b n)[/latex].<br><br>\n<b>Answer: [latex]\\Theta(\\log_a\\log_b n)[/latex]</b><br><br><a href=\"https://gateoverflow.in/333229/gate2020-cs-2#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Recurrence Relation",
+   "tag2_url": "https://practicepaper.in/gate-cse/recurrence-relation",
+   "options": [
+    "[latex]\\Theta (\\log _a \\log_b n)[/latex]",
+    "[latex]\\Theta (\\log _{ab} n)[/latex]",
+    "[latex]\\Theta (\\log _b \\log_a n)[/latex]",
+    "[latex]\\Theta (\\log _2 \\log_2 n)[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1120103,
+   "number": 3,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following statements.<br><br>\nI. Daisy chaining is used to assign priorities in attending interrupts.<br>\nII. When a device raises a vectored interrupt, the CPU does polling to identify the source of interrupt.<br>\nIII. In polling,the CPU periodically checks the status bits to know if any device needs its attention.<br>\nIV. During DMA, both the CPU and DMA controller can be bus masters at the same time.<br><br>\nWhich of the above statements is/are TRUE?",
+   "solution": "Checking each statement:<br>- I: daisy chaining serially connects devices; the one nearest the CPU gets highest priority [latex]\\text{---}[/latex] TRUE.<br>\n- II: a vectored interrupt supplies the ISR address itself, so no polling is needed [latex]\\text{---}[/latex] FALSE.<br>\n- III: that is the definition of polling [latex]\\text{---}[/latex] TRUE.<br>\n- IV: only one bus master at a time; the CPU gives up the bus during DMA [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: I and III only</b><br><br><a href=\"https://gateoverflow.in/333228/gate2020-cs-3#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Interrupt",
+   "tag2_url": "https://practicepaper.in/gate-cse/interrupt",
+   "options": [
+    "I and II only",
+    "I and IV only",
+    "I and III only",
+    "III only"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1120104,
+   "number": 4,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following data path diagram. <br><img src=\"/wp-content/uploads/GATE/CS/20201/q4.jpg\" /><br> Consider an instruction: [latex]R0\\leftarrow R1+R2[/latex]. The following steps are used to execute it over the given data path. Assume that PC is incremented appropriately. The subscripts r and w indicate read and write operations, respectively. <br><br>\n[latex]1. \\; R2_r,TEMP1_r,ALU_{add},TEMP2_w[/latex]  <br>  [latex]2. \\; R1_r,TEMP1_w[/latex] <br> [latex]3. \\; PC_r,MAR_w,MEM_r[/latex]  <br>[latex]4. \\; TEMP2_r,R0_w[/latex] <br> [latex]5. \\; MDR_r,IR_w[/latex]<br><br>\nWhich one of the following is the correct order of execution of the above steps? ",
+   "solution": "First fetch the instruction, then execute it:<br>\n- <b>3</b>: PC [latex]\\rightarrow[/latex] MAR, read memory (fetch)<br>\n- <b>5</b>: MDR [latex]\\rightarrow[/latex] IR (instruction now in IR)<br>\n- <b>2</b>: R1 [latex]\\rightarrow[/latex] TEMP1 (one ALU input is latched in TEMP1)<br>\n- <b>1</b>: R2 on the bus + TEMP1 [latex]\\rightarrow[/latex] ALU add [latex]\\rightarrow[/latex] TEMP2<br>\n- <b>4</b>: TEMP2 [latex]\\rightarrow[/latex] R0<br><br>\n<b>Answer: 3, 5, 2, 1, 4</b><br><br><a href=\"https://gateoverflow.in/333227/gate2020-cs-4#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Machine Instruction",
+   "tag2_url": "https://practicepaper.in/gate-cse/machine-instruction",
+   "options": [
+    "2,1,4,5,3",
+    "1,2,4,3,5",
+    "3,5,2,1,4",
+    "3,5,1,2,4"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1120105,
+   "number": 5,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The preorder traversal of a binary search tree is 15,10,12,11,20,18,16,19. Which one of the following is the postorder traversal of the tree?",
+   "solution": "Build the BST from the preorder (root first):<br>\n- Root 15; left subtree {10, 12, 11}: 10 [latex]\\rightarrow[/latex] right 12 [latex]\\rightarrow[/latex] left 11.<br>\n- Right subtree {20, 18, 16, 19}: 20 [latex]\\rightarrow[/latex] left 18 [latex]\\rightarrow[/latex] children 16 and 19.<br><br>\nPostorder (left, right, root): 11, 12, 10, 16, 19, 18, 20, 15<br><br>\n<b>Answer: 11, 12, 10, 16, 19, 18, 20, 15</b><br><br><a href=\"https://gateoverflow.in/333226/gate2020-cs-5#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Search Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-search-tree",
+   "options": [
+    "10,11,12,15,16,18,19,20",
+    "11,12,10,16,19,18,20,15",
+    "20,19,18,16,15,12,11,10",
+    "19,16,18,20,11,12,10,15"
+   ],
+   "correct": 1
+  }
+ ]
+}

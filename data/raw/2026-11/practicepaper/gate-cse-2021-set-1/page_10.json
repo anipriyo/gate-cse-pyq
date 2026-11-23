@@ -1,0 +1,111 @@
+{
+ "meta": {
+  "quizId": 11211,
+  "quizName": "GATE CSE 2021 SET 1",
+  "pageTitle": "GATE CSE 2021 SET-1",
+  "timeLimit": 0,
+  "pageNo": 10,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2021-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1121146,
+   "number": 46,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider the following pseudocode, where Sis a semaphore initialized to 5 in line #2 and counter is a shared variable initialized to 0 in line #1. Assume that the increment operation in line #7 is not atomic.<pre><code>1.  int counter =0;\n2.  Semaphore S= init(5);\n3.  void parop(void)\n4.  {\n5.         wait(S);\n6.         wait(S);\n7.         counter++;\n8.         signal(S);\n9.          signal(S);\n10.  } </pre></code> If five threads execute the function [latex]parop[/latex] concurrently, which of the following program behavior(s) is/are possible?",
+   "solution": "Each thread needs 2 of the 5 permits, so up to 2 threads can be inside together, and counter++ is not atomic.<br>\n- <b>5</b>: threads run one after another [latex]\\text{---}[/latex] possible.<br>\n- <b>1</b>: thread A reads 0 and is preempted; the others run one by one in the second slot (counter = 4); A writes 1 [latex]\\text{---}[/latex] possible.<br>\n- 0: at least the last write stores a value [latex]\\ge1[/latex] [latex]\\text{---}[/latex] impossible.<br>\n- <b>Deadlock</b>: all 5 threads do their first wait (S = 0) and then all block on the second [latex]\\text{---}[/latex] possible.<br><br>\n<b>Answer: Options 1, 2 and 4</b><br><br><a href=\"https://gateoverflow.in/357405/gate-cse-2021-set-1-question-46#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Process Synchronization",
+   "tag2_url": "https://practicepaper.in/gate-cse/process-synchronization",
+   "options": [
+    "The value of countercounter is 5 after all the threads successfully complete the execution of parop.",
+    "The value of countercounter is 1 after all the threads successfully complete the execution of parop.",
+    "The value of countercounter is 0 after all the threads successfully complete the execution of parop.",
+    "There is a deadlock involving all the threads."
+   ],
+   "correctSet": [
+    0,
+    1,
+    3
+   ]
+  },
+  {
+   "id": 1121147,
+   "number": 47,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider a dynamic hashing approach for 4-bit integer keys:\n<br><br>\n1. There is a main hash table of size 4.<br>\n2. The 2 least significant bits of a key is used to index into the main hash table.<br>\n3. Initially, the main hash table entries are empty.<br>\n4. Thereafter, when more keys are hashed into it, to resolve collisions, the set of all keys corresponding to a main hash table. entry is organized as a binary tree that grows on demand.<br>\n5. First, the 3rd least significant bit is used to divide the keys into left and right subtrees.<br>\n6. To resolve more collisions, each node of the binary tree is further sub-divided into left and right subtrees based on the 4th least significant bit.<br>\n7. A split is done only if it is needed, i.e., only when there is a collision.<br><br>\nConsider the following state of the hash table.  <br><img src=\"/wp-content/uploads/GATE/CS/20211/q47.jpg\" /><br>\n  Which of the following sequences of key insertions can cause the above state of the hash table (assume the keys are in decimal notation)?",
+   "solution": "Read the state: index 00 empty; 01 has 3 keys (one with 3rd bit 0, two with 3rd bit 1, split by the 4th bit); 10 has 2 keys (3rd bit 0 and 1); 11 has 1 key.<br><br>\nOption C: 10, 9, 6, 7, 5, 13<br>\n- 10 = 1010 [latex]\\rightarrow[/latex] 10, bit3 = 0; 6 = 0110 [latex]\\rightarrow[/latex] 10, bit3 = 1 True<br>\n- 9 = 1001 [latex]\\rightarrow[/latex] 01, bit3 = 0; 5 = 0101 and 13 = 1101 [latex]\\rightarrow[/latex] 01, bit3 = 1, split by bit4 (0 and 1) True<br>\n- 7 = 0111 [latex]\\rightarrow[/latex] 11 True<br><br>\nThe others fail: (A) has 4 [latex]\\rightarrow[/latex] index 00; (B) has 1 and 9 colliding with bit3 = 0; (D) has 6 and 14 colliding and nothing in 11.<br><br>\n<b>Answer: 10, 9, 6, 7, 5, 13</b><br><br><a href=\"https://gateoverflow.in/357404/gate-cse-2021-set-1-question-47#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Hashing",
+   "tag2_url": "https://practicepaper.in/gate-cse/hashing",
+   "options": [
+    "5,9,4,13,10,7",
+    "9,5,10,6,7,1",
+    "10,9,6,7,5,13",
+    "9,5,13,6,10,14"
+   ],
+   "correctSet": [
+    2
+   ]
+  },
+  {
+   "id": 1121148,
+   "number": 48,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following ANSI C function:<pre><code> int SimpleFunction(int Y[], int n, int x)\n{\nint total = Y[0], loopIndex;\nfor (loopIndex=1; loopIndex<=n-1; loopIndex++)\n    total=x*total +Y[loopIndex];\nreturn total;\n}</code></pre> Let Z be an array of 10 elements with Z[i]=1, for all i such that [latex]0\\leq i \\leq 9[/latex]. The value returned by SimpleFunction(Z,10,2) is __________",
+   "solution": "The function is Horner's rule: it evaluates [latex]Y[0]x^{n-1}+\\cdots+Y[n-1][/latex].<br><br>\nWith all Y[i] = 1, x = 2, n = 10: [latex]2^9+2^8+\\cdots+1=2^{10}-1=1023[/latex]<br><br>\n<b>Answer: 1023</b><br><br><a href=\"https://gateoverflow.in/357403/gate-cse-2021-set-1-question-48#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "ansMin": 1023,
+   "ansMax": 1023
+  },
+  {
+   "id": 1121149,
+   "number": 49,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the sliding window flow-control protocol operating between a sender and a receiver over a full-duplex error-free link. Assume the following:<br><br>\n\nThe time taken for processing the data frame by the receiver is negligible.<br>\nThe time taken for processing the acknowledgement frame by the sender is negligible.<br>\nThe sender has infinite number of frames available for transmission.<br>\nThe size of the data frame is 2,000 bits and the size of the acknowledgement frame is 10 bits.<br>\nThe link data rate in each direction is 1 Mbps ([latex]= 10^6[/latex] bits per second).<br>\nOne way propagation delay of the link is 100 milliseconds.<br><br>\nThe minimum value of the sender's window size in terms of the number of frames, (rounded to the nearest  integer)  needed  to achieve a link utilization of 50% is _____________",
+   "solution": "Checking each statement:<br>- Frame transmission time = 2000 / [latex]10^6[/latex] = 2 ms<br>\n- ACK transmission time = 10 / [latex]10^6[/latex] = 0.01 ms<br>\n- Cycle = 2 + 100 + 0.01 + 100 = 202.01 ms<br><br>\nUtilization [latex]=\\frac{W\\times2}{202.01}=0.5\\Rightarrow W=50.5[/latex] [latex]\\rightarrow[/latex] about 51 frames.<br><br>\n<b>Answer: 51</b><br><br><a href=\"https://gateoverflow.in/357402/gate-cse-2021-set-1-question-49#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "ansMin": 50,
+   "ansMax": 52
+  },
+  {
+   "id": 1121150,
+   "number": 50,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following C code segment:<br><br>a = b + c;<br>\n \ne = a + 1;\n <br>\nd = b + c;\n <br>\nf = d + 1;\n <br>\ng = e + f;<br><br>In a compiler, this code segment is represented internally as a directed acyclic graph (DAG). The number of nodes in the DAG is  _____________",
+   "solution": "Common sub-expressions share nodes:<br>\n- leaves: b, c, 1 (3 nodes)<br>\n- b + c (shared by a and d) [latex]\\rightarrow[/latex] 1 node<br>\n- (b + c) + 1 (shared by e and f) [latex]\\rightarrow[/latex] 1 node<br>\n- e + f [latex]\\rightarrow[/latex] 1 node<br><br>\nTotal = 6<br><br>\n<b>Answer: 6</b><br><br><a href=\"https://gateoverflow.in/357401/gate-cse-2021-set-1-question-50#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Parsing",
+   "tag2_url": "https://practicepaper.in/gate-cse/parsing",
+   "ansMin": 6,
+   "ansMax": 6
+  }
+ ]
+}

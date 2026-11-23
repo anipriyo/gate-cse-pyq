@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11201,
+  "quizName": "GATE CS 2020",
+  "pageTitle": "GATE CSE 2020",
+  "timeLimit": 0,
+  "pageNo": 2,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2020",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1120106,
+   "number": 6,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "What is the worst case time complexity of inserting [latex]n^2[/latex] elements into an AVL-tree with n elements initially?",
+   "solution": "Each AVL insertion costs [latex]O(\\log N)[/latex], where N is the current size, at most [latex]n^2+n[/latex]. [latex]\\log(n^2+n)=\\Theta(\\log n)[/latex].<br><br>\n[latex]n^2[/latex] insertions [latex]\\times[/latex] [latex]\\Theta(\\log n)[/latex] = [latex]\\Theta(n^2\\log n)[/latex]<br><br>\n<b>Answer: [latex]\\Theta(n^2\\log n)[/latex]</b><br><br><a href=\"https://gateoverflow.in/333225/gate2020-cs-6#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "AVL Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/avl-tree",
+   "options": [
+    "[latex]\\Theta (n^4)[/latex]",
+    "[latex]\\Theta (n^2)[/latex]",
+    "[latex]\\Theta (n^2 \\log n)[/latex]",
+    "[latex]\\Theta (n^3)[/latex]"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1120107,
+   "number": 7,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following regular expressions represents the set of all binary strings with an odd number of 1's?",
+   "solution": "Check each option against strings with an odd number of 1s:<br>\n- Option 1: [latex](0+1)^*[/latex] inside can add extra 1s, e.g. 1111 (even) is generated False<br>\n- Option 2: always ends with 1, so \"10\" is missing False<br>\n- Option 3: always starts with 1, so \"01\" is missing False<br>\n- Option 4: [latex](0^*10^*10^*)^*10^*[/latex] gives pairs of 1s and then one more 1, but a leading 0 before a single 1 (e.g. \"01\") cannot be produced False<br><br>\nNone of the options is exactly right, so the official key gave <b>marks to all</b>. A correct expression is [latex]0^*1(0^*10^*1)^*0^*[/latex].<br><br>\n<b>Answer: Option 4 is the closest (MTA in the official key)</b><br><br>As per Official GATE CSE 2020 Answer key _MTA (Marks to All)<br><a href=\"https://gateoverflow.in/333224/gate2020-cs-7#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Regular Expression",
+   "tag2_url": "https://practicepaper.in/gate-cse/regular-expression",
+   "options": [
+    "[latex]((0+1)^* 1(0+1)^*1)^*10^*[/latex]",
+    "[latex](0^*10^*10^*)^*0^*1[/latex]",
+    "[latex]10^*(0^*10^*10^*)^*[/latex]",
+    "[latex](0^*10^*10^*)^*10^*[/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1120108,
+   "number": 8,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following statements.<br><br>\nI.  If [latex]L_1\\cup L_2[/latex] is regular, then both [latex]L_1 \\; and \\; L_2[/latex] must be regular.<br>\n II. The class of regular languages is closed under infinite union.<br><br>\nWhich of the above statements is/are TRUE?",
+   "solution": "Checking each statement:<br>- I: take [latex]L_1[/latex] = any non-regular language and [latex]L_2=\\Sigma^*[/latex]. The union is [latex]\\Sigma^*[/latex] (regular), but [latex]L_1[/latex] is not [latex]\\text{---}[/latex] FALSE.<br>\n- II: any language is an infinite union of single strings, each regular. If this were closed, every language would be regular [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: Neither I nor II</b><br><br><a href=\"https://gateoverflow.in/333223/gate2020-cs-8#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Regular Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/regular-language",
+   "options": [
+    "I only",
+    "II only",
+    "Both I and II",
+    "Neither I nor II"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1120109,
+   "number": 9,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following statements.<br><br>\nI. Symbol table is accessed only during lexical analysis and syntax analysis.<br>\nII. Compilers for programming languages that support recursion necessarily need heap storage for memory allocation in the run-time environment.<br>\nIII. Errors violating the condition 'any variable must be declared before its use' are detected during syntax analysis.<br><br>\n  Which of the above statements is/are TRUE?",
+   "solution": "Checking each statement:<br>- I: the symbol table is used in later phases too (semantic analysis, code generation) [latex]\\text{---}[/latex] FALSE.<br>\n- II: recursion needs a <b>stack</b> of activation records, not a heap [latex]\\text{---}[/latex] FALSE.<br>\n- III: \"declare before use\" is a context-sensitive check done in <b>semantic</b> analysis [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: None of I, II and III</b><br><br><a href=\"https://gateoverflow.in/333222/gate2020-cs-9#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Lexical Analysis",
+   "tag2_url": "https://practicepaper.in/gate-cse/lexical-analysis",
+   "options": [
+    "I only",
+    "I and III only",
+    "II only",
+    "None of I, II and III"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1120110,
+   "number": 10,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the language [latex]L=\\{a^n|n\\geq 0\\}\\cup \\{a^nb^n|n\\geq 0\\}[/latex] and the following statements. <br><br>\nI. L is deterministic context-free.<br>\nII. L is context-free but not deterministic context-free.<br>\nIII. L is not LL(k) for any k.<br><br>\n Which of the above statements is/are TRUE?",
+   "solution": "Checking each statement:<br>- A DPDA can push a's and, on reading b's, pop them; it accepts if it is still on a's or the counts match. So L is <b>deterministic CFL</b> [latex]\\text{---}[/latex] I TRUE, II FALSE.<br>\n- An LL(k) parser must decide at the start whether the string is [latex]a^n[/latex] or [latex]a^nb^n[/latex], but with long runs of a's, k symbols of lookahead are not enough [latex]\\text{---}[/latex] III TRUE.<br><br>\n<b>Answer: I and III only</b><br><br><a href=\"https://gateoverflow.in/333221/gate2020-cs-10#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-language",
+   "options": [
+    "I only",
+    "II only",
+    "I and III only",
+    "III only"
+   ],
+   "correct": 2
+  }
+ ]
+}

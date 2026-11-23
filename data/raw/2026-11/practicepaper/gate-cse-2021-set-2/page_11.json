@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11212,
+  "quizName": "GATE CSE 2021 SET 2",
+  "pageTitle": "GATE CSE 2021 SET-2",
+  "timeLimit": 0,
+  "pageNo": 11,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2021-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1121251,
+   "number": 51,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following augmented grammar with [latex]\\{ \\#, @, <, >, a, b, c \\}[/latex] as the set of terminals.<br><br>\n[latex]\\begin{array}{l} S' \\rightarrow S \\\\ S \\rightarrow S \\# cS \\\\ S \\rightarrow SS \\\\ S \\rightarrow S @ \\\\ S \\rightarrow < S > \\\\ S \\rightarrow a \\\\ S \\rightarrow b \\\\ S \\rightarrow c \\end{array}[/latex]<br><br>\nLet [latex]I_0 = \\text{CLOSURE}(\\{S' \\rightarrow \\bullet S\\})[/latex]. The number of items in the set [latex]\\text{GOTO(GOTO}(I_0 \\lt ), \\lt )[/latex] is ___________",
+   "solution": "In [latex]I_0[/latex], [latex]S\\rightarrow\\bullet\\lt S\\gt[/latex] moves on [latex]\\lt[/latex] to [latex]S\\rightarrow\\lt\\bullet S\\gt[/latex], and its closure adds all 7 S-items with the dot at the start: 1 + 7 = 8 items.<br><br>\nDoing GOTO on [latex]\\lt[/latex] again (from [latex]S\\rightarrow\\bullet\\lt S\\gt[/latex] inside that set) gives the same set again: <b>8</b> items.<br><br>\n<b>Answer: 8</b><br><br><a href=\"https://gateoverflow.in/357486/gate-cse-2021-set-2-question-51#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Parsing",
+   "tag2_url": "https://practicepaper.in/gate-cse/parsing",
+   "ansMin": 8,
+   "ansMax": 8
+  },
+  {
+   "id": 1121252,
+   "number": 52,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a Boolean function [latex]f(w,x,y,z) [/latex] such that  <br><br>[latex]\\begin{array}{lll} f(w,0,0,z) & = & 1 \\\\ f(1,x,1,z) & =& x+z \\\\ f(w,1,y,z) & = & wz +y \\end{array}[/latex]<br><br>\nThe number of literals in the minimal sum-of-products expression of  [latex]f [/latex] is ________",
+   "solution": "From the conditions:<br>\n- x = 0, y = 0 [latex]\\rightarrow[/latex] f = 1 (term [latex]\\bar x\\bar y[/latex])<br>\n- x = 1 [latex]\\rightarrow[/latex] f = wz + y<br>\n- x = 0, y = 1, w = 1 [latex]\\rightarrow[/latex] f = z<br><br>\n[latex]f=\\bar x\\bar y+xy+wz[/latex] satisfies all three (the case x = 0, y = 1, w = 0 is not fixed). It has 2 + 2 + 2 = 6 literals, and no shorter expression fits.<br><br>\n<b>Answer: 6</b><br><br><a href=\"https://gateoverflow.in/357485/gate-cse-2021-set-2-question-52#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "ansMin": 6,
+   "ansMax": 6
+  },
+  {
+   "id": 1121253,
+   "number": 53,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a pipelined processor with 5 stages, Instruction Fetch(IF), Instruction Decode(ID), Execute (EX), Memory Access (MEM), and Write Back (WB). Each stage of the pipeline, except the EX stage, takes one cycle. Assume that the ID stage merely decodes the instruction and the register read is performed in the EX stage. The EX stage takes one cycle for ADD instruction and the register read is performed in the EX stage, The EX stage takes one cycle for ADD instruction and two cycles for MUL instruction. Ignore pipeline register latencies.<br>\nConsider the following sequence of 8 instructions:<br><br>\nADD, MUL, ADD, MUL, ADD, MUL, ADD, MUL<br><br>\nAssume that every MUL instruction is data-dependent on the ADD instruction just before it and every ADD instruction (except the first ADD) is data-dependent on the MUL instruction just before it. The speedup defined as follows.\n<br><br>\n[latex]\\textit{Speedup} = \\dfrac{\\text{Execution time without operand forwarding}}{\\text{Execution time with operand forearding}}[/latex]\n<br><br>\nThe Speedup achieved in executing the given instruction sequence on the pipelined processor (rounded to 2 decimal places) is _____________",
+   "solution": "Each instruction depends on the one before it. ADD uses EX for 1 cycle, MUL for 2.<br><br>\n<b>With forwarding</b>: the EX stages run back to back: 4 [latex]\\times[/latex] (1 + 2) = 12 EX cycles from cycle 3 to 14, then MEM and WB [latex]\\rightarrow[/latex] <b>16 cycles</b>.<br><br>\n<b>Without forwarding</b>: each instruction's EX (register read) waits until the previous one's WB. Each ADD/MUL pair then takes 1 + 2 EX cycles plus 2 waiting cycles (MEM, WB) each [latex]\\rightarrow[/latex] the last WB is at cycle <b>30</b>.<br><br>\nSpeedup = 30 / 16 = 1.875 [latex]\\approx[/latex] 1.87<br><br>\n<b>Answer: 1.87</b><br><br><a href=\"https://gateoverflow.in/357484/gate-cse-2021-set-2-question-53#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Pipeline Processor",
+   "tag2_url": "https://practicepaper.in/gate-cse/pipeline-processor",
+   "ansMin": 1.87,
+   "ansMax": 1.88
+  },
+  {
+   "id": 1121254,
+   "number": 54,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a network using the pure ALOHA medium access control protocol, where each frame is of length 1,000 bits. The channel transmission rate is 1 Mbps (=[latex]10^6[/latex] bits per second). The aggregate number of transmissions across all the nodes (including new frame transmissions and retransmitted frames due to collisions) is modelled as a Poisson process with a rate of 1,000 frames per second. Throughput is defined as the average number of frames successfully transmitted per second. The throughput of the network (rounded to the nearest integer) is ______________",
+   "solution": "Frame time T = 1000 / [latex]10^6[/latex] = 1 ms. Load G = 1000 frames/s [latex]\\times[/latex] 1 ms = 1.<br><br>\nPure ALOHA success probability = [latex]e^{-2G}=e^{-2}\\approx0.135[/latex].<br>\nThroughput = 1000 [latex]\\times[/latex] 0.135 [latex]\\approx[/latex] 135 frames/s<br><br>\n<b>Answer: 135</b><br><br><a href=\"https://gateoverflow.in/357483/gate-cse-2021-set-2-question-54#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "ansMin": 130,
+   "ansMax": 140
+  },
+  {
+   "id": 1121255,
+   "number": 55,
+   "type": "NAT",
+   "marks": 2,
+   "text": "In a directed acyclic graph with a source vertex s, the quality-score of a directed path is defined to be the product of the weights of the edges on the path. Further, for a vertex v other than s, the quality-score of v is defined to be the maximum among the quality-scores of all the paths from s to v. The quality-score of s is assumed to be 1.\n<br><img src=\"/wp-content/uploads/GATE/CS/20212/q55.jpg\" /><br>\nThe sum of the quality-scores of all vertices on the graph shown above is ______",
+   "solution": "Go in topological order, taking the best product into each vertex:<br>\n- s = 1, c = 1, a = 9<br>\n- f = c [latex]\\times[/latex] 9 = 9, b = a [latex]\\times[/latex] 1 = 9<br>\n- d = max(c [latex]\\times[/latex] 1, a [latex]\\times[/latex] 1) = 9<br>\n- g = max(f [latex]\\times[/latex] 1, d [latex]\\times[/latex] 9) = 81<br>\n- e = max(d [latex]\\times[/latex] 9, b [latex]\\times[/latex] 1) = 81<br>\n- t = max(g [latex]\\times[/latex] 1, e [latex]\\times[/latex] 9) = 729<br><br>\nSum = 1 + 1 + 9 + 9 + 9 + 9 + 81 + 81 + 729 = 929<br><br>\n<b>Answer: 929</b><br><br><a href=\"https://gateoverflow.in/357482/gate-cse-2021-set-2-question-55#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "ansMin": 929,
+   "ansMax": 929
+  }
+ ]
+}

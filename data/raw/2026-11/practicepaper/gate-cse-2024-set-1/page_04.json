@@ -1,0 +1,136 @@
+{
+ "meta": {
+  "quizId": 11241,
+  "quizName": "GATE CSE 2024 SET-1",
+  "pageTitle": "GATE CSE 2024 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 4,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124116,
+   "number": 16,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following is/are Bottom-Up Parser(s)?",
+   "solution": "Bottom-up parsers build the parse tree from the leaves up to the root using <b>reductions</b>: shift-reduce parsers, operator precedence parser and the LR family (LR(0), SLR, LALR, CLR).<br><br>\nPredictive parser and LL(1) parser are <b>top-down</b> parsers.<br><br>\n<b>Answer: Shift-reduce Parser, LR Parser</b><br><br><a href=\"https://gateoverflow.in/422826/gate-cse-2024-set-1-question-16#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Parsing",
+   "tag2_url": "https://practicepaper.in/gate-cse/parsing",
+   "options": [
+    "Shift-reduce Parser",
+    "Predictive Parser",
+    "LL(1) Parser",
+    "LR Parser"
+   ],
+   "correctSet": [
+    0,
+    3
+   ]
+  },
+  {
+   "id": 1124117,
+   "number": 17,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Let [latex]A [/latex] and [latex]B [/latex] be two events in a probability space with [latex]P(A)=0.3, P(B)=0.5 [/latex], and [latex]P(A \\cap B)=0.1 [/latex]. Which of the following statements is/are TRUE?",
+   "solution": "Checking each statement:<br>- Independence: [latex]P(A)P(B)=0.15\\ne0.1[/latex] [latex]\\text{---}[/latex] FALSE.<br>\n- [latex]P(A\\cup B)=0.3+0.5-0.1=0.7[/latex] [latex]\\text{---}[/latex] TRUE.<br>\n- [latex]P(A\\cap B^c)=P(A)-P(A\\cap B)=0.3-0.1=0.2[/latex] [latex]\\text{---}[/latex] TRUE.<br>\n- [latex]P(A^c\\cap B^c)=1-P(A\\cup B)=0.3\\ne0.4[/latex] [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: [latex]P(A\\cup B)=0.7[/latex] and [latex]P(A\\cap B^c)=0.2[/latex]</b><br><br><a href=\"https://gateoverflow.in/422825/gate-cse-2024-set-1-question-17#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "options": [
+    "The two events [latex]A [/latex] and [latex]B [/latex] are independent",
+    "[latex]P(A \\cup B)=0.7[/latex]",
+    "[latex]P\\left(A \\cap B^c\\right)=0.2 [/latex], where [latex]B^c [/latex] is the complement of the event [latex]B [/latex]",
+    "[latex]P\\left(A^c \\cap B^c\\right)=0.4 [/latex], where [latex]A^c [/latex] and [latex]B^c [/latex] are the complements of the events [latex]A [/latex] and [latex]B [/latex], respectively"
+   ],
+   "correctSet": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1124118,
+   "number": 18,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Consider the circuit shown below where the gates may have propagation delays.\nAssume that all signal transitions occur instantaneously and that wires have no\ndelays. Which of the following statements about the circuit is/are CORRECT?<br><img src=\"/wp-content/uploads/GATE/CS/20241/q18.webp\" /><br>",
+   "solution": "The circuit computes [latex]Y=X\\cdot\\overline{X}[/latex].<br><br>\n- No delays: [latex]X\\cdot\\overline{X}=0[/latex] always [latex]\\rightarrow[/latex] Y is always 0 (option 1 TRUE, option 2 FALSE).<br>\n- X goes 0 [latex]\\rightarrow[/latex] 1: the AND gate sees X = 1 immediately, but the NOT output is still 1 until its delay passes. For that short time both inputs are 1, so Y gives a <b>transient 1 (glitch)</b> [latex]\\text{---}[/latex] TRUE.<br>\n- X goes 1 [latex]\\rightarrow[/latex] 0: the direct input becomes 0 immediately, so Y stays 0 no matter what the NOT output does [latex]\\text{---}[/latex] no transient, FALSE.<br><br>\n<b>Answer: Y is always 0 with no delays; with delays Y can have a transient 1 after X goes 0 [latex]\\rightarrow[/latex] 1</b><br><br><a href=\"https://gateoverflow.in/422824/gate-cse-2024-set-1-question-18#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Combinational Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/combinational-circuit",
+   "options": [
+    "With no propagation delays, the output Y is always logic Zero",
+    "With no propagation delays, the output Y is always logic One",
+    "With propagation delays, the output Y can have a transient logic One after X\ntransitions from logic Zero to logic One",
+    "With propagation delays, the output Y can have a transient logic Zero after X\ntransitions from logic One to logic Zero"
+   ],
+   "correctSet": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": 1124119,
+   "number": 19,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "TCP client P successfully establishes a connection to TCP server [latex]\\mathrm{Q} [/latex]. Let [latex]N_P [/latex] denote the sequence number in the SYN sent from [latex]\\mathrm{P} [/latex] to [latex]\\mathrm{Q} [/latex]. Let [latex]N_Q [/latex] denote the acknowledgement number in the SYN ACK from Q to P. Which of the following statements is/are CORRECT?",
+   "solution": "Checking each statement:<br>- The initial sequence number (ISN) is chosen randomly (to avoid confusion with old segments and for security) [latex]\\text{---}[/latex] TRUE; it is not always 0.<br>\n- A SYN segment consumes one sequence number, so Q acknowledges with the next expected number: [latex]N_Q=N_P+1[/latex] [latex]\\text{---}[/latex] TRUE (so [latex]N_Q=N_P[/latex] is false).<br><br>\n<b>Answer: [latex]N_P[/latex] is chosen randomly by P; [latex]N_Q=N_P+1[/latex]</b><br><br><a href=\"https://gateoverflow.in/422823/gate-cse-2024-set-1-question-19#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Transport Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/transport-layer-protocol",
+   "options": [
+    "The sequence number [latex]N_P [/latex] is chosen randomly by [latex]\\mathrm{P} [/latex]",
+    "The sequence number [latex]N_P [/latex] is always 0 for a new connection",
+    "The acknowledgement number [latex]N_Q [/latex] is equal to [latex]N_P [/latex]",
+    "The acknowledgement number [latex]N_Q [/latex] is equal to [latex]N_P+1 [/latex]"
+   ],
+   "correctSet": [
+    0,
+    3
+   ]
+  },
+  {
+   "id": 1124120,
+   "number": 20,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Consider a 5-stage pipelined processor with Instruction Fetch (IF), Instruction Decode (ID), Execute (EX), Memory Access (MEM), and Register Writeback (WB) stages. Which of the following statements about forwarding is/are CORRECT?",
+   "solution": "Checking each statement:<br>- Option 1: this is exactly the definition of forwarding (bypassing) [latex]\\text{---}[/latex] TRUE.<br>\n- Option 2: a value available at the output of MEM (e.g. a loaded value) can be fed to the EX input of a later instruction [latex]\\text{---}[/latex] TRUE.<br>\n- Option 3: forwarding cannot remove every stall. Example: <i>load</i> followed immediately by an instruction using the loaded value still needs 1 stall (load-use hazard) [latex]\\text{---}[/latex] TRUE.<br>\n- Option 4: forwarding needs extra hardware (extra paths, multiplexers, hazard detection logic) [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: Options 1, 2 and 3</b><br><br><a href=\"https://gateoverflow.in/422822/gate-cse-2024-set-1-question-20#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Pipeline Processor",
+   "tag2_url": "https://practicepaper.in/gate-cse/pipeline-processor",
+   "options": [
+    "In a pipelined execution, forwarding means the result from a source stage of an\nearlier instruction is passed on to the destination stage of a later instruction",
+    "In forwarding, data from the output of the MEM stage can be passed on to the\ninput of the EX stage of the next instruction",
+    "Forwarding cannot prevent all pipeline stalls",
+    "Forwarding does not require any extra hardware to retrieve the data from the\npipeline stages"
+   ],
+   "correctSet": [
+    0,
+    1,
+    2
+   ]
+  }
+ ]
+}

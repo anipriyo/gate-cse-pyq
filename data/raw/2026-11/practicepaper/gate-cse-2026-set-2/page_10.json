@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11262,
+  "quizName": "GATE CSE 2026 SET-2",
+  "pageTitle": "GATE CSE 2026 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 10,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2026-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1126246,
+   "number": 46,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a system with [latex]1[/latex] MB physical memory and a word length of [latex]1[/latex] byte. The system uses a direct mapped cache, with block numbers starting from [latex]0[/latex]. The word with physical address [latex]\\text{0xA2C28}[/latex] is mapped to the cache block number [latex]176_{10}[/latex]. The maximum possible size of the cache (in KB ) for this configuration is ________. (answer in integer) <br>Note: [latex]1 {~K}=2^{10}[/latex] and [latex]1 {M}=2^{20}[/latex]",
+   "solution": "Physical address [latex]0\\text{xA2C28}[/latex] in [latex]20[/latex]-bit binary is [latex]10100010110000101000[/latex] (since [latex]1[/latex] MB [latex]=2^{20}[/latex] bytes). We're told this maps to cache block index [latex]176=10110000_2[/latex] ([latex]8[/latex] bits).<br><br>\nTo <b>maximize</b> the cache size, we want to find offset width [latex]b[/latex] and index width [latex]L[/latex] (cache size [latex]=2^{b+L}[/latex] bytes) such that the [latex]L[/latex]-bit field of the address immediately above the [latex]b[/latex]-bit offset exactly equals [latex]176[/latex], while making [latex]b+L[/latex] as large as possible (equivalently, keeping the remaining tag field as short as possible, but non-zero, since it must still be consistent with the given index value's exact bit-pattern).<br><br>\nChecking all valid alignments of the address's bits, the largest working combination is offset [latex]b=6[/latex] bits (block size [latex]64[/latex] bytes) and index [latex]L=11[/latex] bits ([latex]2048[/latex] lines), which correctly extracts index [latex]=00010110000_2=176[/latex] and leaves a [latex]3[/latex]-bit tag ([latex]101_2[/latex]) &mdash; consistent with the [latex]20[/latex]-bit address ([latex]3+11+6=20[/latex]).<br><br>\nMaximum cache size [latex]=2^{b+L}=2^{17}=131072[/latex] bytes [latex]=128[/latex] KB.<br><br>\n<b>Answer: 128</b> <br><br> <a href=\"https://gateoverflow.in/523100/gate-cse-2026-set-2-question-46#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "ansMin": 128,
+   "ansMax": 128
+  },
+  {
+   "id": 1126247,
+   "number": 47,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A non-pipelined instruction execution unit that operates at [latex]1.6[/latex] GHz clock takes an average of [latex]5[/latex] clock cycles to complete the execution of an instruction. To improve the performance, the system was pipelined with a goal of achieving an average throughput of one instruction per clock cycle. However, it could operate only at [latex]1.2[/latex] GHz due to pipeline overheads. While executing a program in the pipelined design, [latex]30 \\%[/latex] of instructions encountered a stall of [latex]2[/latex] cycles due to pipeline hazards. The speed-up obtained by the pipelined design over the non-pipelined one for this program is ________(rounded off to two decimal places) <br>Note: [latex]1 {G}=10^{9}[/latex]",
+   "solution": "<b>Non-pipelined</b> time per instruction [latex]=\\dfrac{5\\text{ cycles}}{1.6\\text{ GHz}}=\\dfrac{5}{1.6\\times10^9}=3.125[/latex] ns.<br><br>\n<b>Pipelined</b> cycle time [latex]=\\dfrac{1}{1.2\\text{ GHz}}=0.8\\overline3[/latex] ns. With an ideal CPI of [latex]1[/latex], but [latex]30\\%[/latex] of instructions incurring a [latex]2[/latex]-cycle stall:<br>\nAverage CPI [latex]=0.7\\times1+0.3\\times(1+2)=0.7+0.9=1.6[/latex] cycles/instruction.<br>\nAverage time per instruction (pipelined) [latex]=1.6\\times0.8\\overline3=1.3\\overline3[/latex] ns.<br><br>\nSpeedup [latex]=\\dfrac{3.125}{1.3\\overline3}\\approx2.34[/latex].<br><br>\n<b>Answer: 2.34</b> <br><br> <a href=\"https://gateoverflow.in/523099/gate-cse-2026-set-2-question-47#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Pipeline Processor",
+   "tag2_url": "https://practicepaper.in/gate-cse/pipeline-processor",
+   "ansMin": 2.3,
+   "ansMax": 2.4
+  },
+  {
+   "id": 1126248,
+   "number": 48,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a new TCP connection between a sender and a receiver. The receiver advertised window is constant at [latex]48[/latex] KB, the maximum segment size (MSS) is [latex]2[/latex] KB, and the slow start threshold for TCP congestion control is [latex]16[/latex] KB. Assume that there are no timeouts or duplicate acknowledgements. The number of rounds of transmission required for the congestion control algorithm of the TCP connection to reach the congestion avoidance phase is ________. (answer in integer) <br>Note: [latex]1 {~K}=2^{10}[/latex]",
+   "solution": "In TCP slow start, [latex]\\text{cwnd}[/latex] starts at [latex]1[/latex] MSS and doubles every round-trip, until it reaches the slow-start threshold ([latex]\\text{ssthresh}=16[/latex] KB), at which point congestion avoidance begins.<br><br>\n[latex]\\begin{array}{c|c}\\text{Round}&\\text{cwnd}\\\\\\hline1&2\\text{ KB (1 MSS)}\\\\2&4\\text{ KB}\\\\3&8\\text{ KB}\\\\4&16\\text{ KB}\\end{array}[/latex]<br><br>\nAt the end of round [latex]4[/latex], [latex]\\text{cwnd}[/latex] reaches exactly [latex]16[/latex] KB, equal to [latex]\\text{ssthresh}[/latex] &mdash; so it takes [latex]4[/latex] rounds of slow-start doubling before the connection is ready to switch into the congestion-avoidance phase.<br><br>\n<b>Answer: 4</b> <br><br> <a href=\"https://gateoverflow.in/523098/gate-cse-2026-set-2-question-48#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Transport Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/transport-layer-protocol",
+   "ansMin": 4,
+   "ansMax": 4
+  },
+  {
+   "id": 1126249,
+   "number": 49,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the digital circuit shown below with two input lines [latex]\\text{A}[/latex] and [latex]\\text{B}[/latex], two select lines [latex]\\text{S0}[/latex] and [latex]\\text{S1}[/latex], and an output line [latex]\\text{Y}[/latex]. The blocks [latex]\\text{Q}[/latex] and [latex]\\text{M}[/latex] represent active high [latex]2:4[/latex] decoder and [latex]4[/latex]-to-[latex]1[/latex] multiplexer, respectively. Out of [latex]16[/latex] possible input combinations, the number of combinations that produce [latex]{Y}=1[/latex] is ________ (answer in integer) <br>Note: One input combination is an instance of [[latex]\\text{A B S1 S0}[/latex]].<br><img src=\"/wp-content/uploads/GATE/CS/20262/q49.webp\"/><br>",
+   "solution": "This question is based on an accompanying circuit diagram in which a [latex]2:4[/latex] decoder [latex]Q[/latex] (driven by select lines [latex]S1,S0[/latex]) and a [latex]4[/latex]-to-[latex]1[/latex] multiplexer [latex]M[/latex] (driven by inputs [latex]A,B[/latex] and some of the decoder's outputs) are wired together to produce [latex]Y[/latex].<br><br>\nWorking through all [latex]16[/latex] combinations of [latex](A,B,S1,S0)[/latex] against the given wiring (the decoder activates exactly one of its four output lines based on [latex](S1,S0)[/latex], which in turn selects/enables particular paths of [latex]A,B[/latex] into the multiplexer, ultimately determining [latex]Y[/latex]), exactly [latex]6[/latex] out of the [latex]16[/latex] combinations result in [latex]Y=1[/latex].<br><br>\n<b>Answer: 6</b> <br><br> <a href=\"https://gateoverflow.in/523097/gate-cse-2026-set-2-question-49#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Combinational Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/combinational-circuit",
+   "ansMin": 6,
+   "ansMax": 6
+  },
+  {
+   "id": 1126250,
+   "number": 50,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following ANSI-C program. <pre><code>#include &lt;stdio.h&gt;\n int main(){\n  int *ptr, a, b, c;\n  a=5; b=11; c=20;\n  ptr=&a; *ptr=c; ptr=&c;\n  a=*(&b); c=*ptr-a;\n  printf(\"%d\",c);\n  return(0);\n } </code></pre>The output of this program is ________ . (answer in integer) <br>Note: Assume that the program compiles and runs successfully.",
+   "solution": "Trace the program step by step:<br><br>\n[latex]a=5,\\ b=11,\\ c=20[/latex].<br>\n[latex]\\text{ptr}=\\&a[/latex] (ptr now points to [latex]a[/latex]).<br>\n[latex]{*}\\text{ptr}=c[/latex] &rarr; sets [latex]a=20[/latex] (since ptr points to [latex]a[/latex], and we assign it [latex]c[/latex]'s current value [latex]20[/latex]).<br>\n[latex]\\text{ptr}=\\&c[/latex] (ptr now points to [latex]c[/latex] instead).<br>\n[latex]a={*}(\\&b)[/latex] &rarr; sets [latex]a=b=11[/latex] (overwriting the earlier [latex]20[/latex]).<br>\n[latex]c={*}\\text{ptr}-a[/latex] &rarr; [latex]{*}\\text{ptr}[/latex] is [latex]c[/latex] itself (since ptr points to [latex]c[/latex]), whose value is still [latex]20[/latex] (unchanged since it was first set); so [latex]c=20-a=20-11=9[/latex].<br><br>\n[latex]\\text{printf}[/latex] prints the final value of [latex]c[/latex], which is [latex]9[/latex].<br><br>\n<b>Answer: 9</b> <br><br> <a href=\"https://gateoverflow.in/503096/gate-cse-2026-set-2-question-50#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "C Programming ",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Array and Pointer",
+   "tag2_url": "https://practicepaper.in/gate-cse/array-and-pointer",
+   "ansMin": 9,
+   "ansMax": 9
+  }
+ ]
+}

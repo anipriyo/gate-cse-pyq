@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11241,
+  "quizName": "GATE CSE 2024 SET-1",
+  "pageTitle": "GATE CSE 2024 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 10,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124146,
+   "number": 46,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A given program has 25% load/store instructions. Suppose the ideal CPI (cycles per\ninstruction) without any memory stalls is 2. The program exhibits 2% miss rate on\ninstruction cache and 8% miss rate on data cache. The miss penalty is 100 cycles.\nThe speedup (rounded off to two decimal places) achieved with a perfect cache (i.e.,\nwith NO data or instruction cache misses) is _________",
+   "solution": "Every instruction is fetched (I-cache) and 25% also access data (D-cache).<br><br>\nStall cycles per instruction:<br>\n- I-cache: [latex]1\\times0.02\\times100=2[/latex]<br>\n- D-cache: [latex]0.25\\times0.08\\times100=2[/latex]<br><br>\nActual CPI [latex]=2+2+2=6[/latex], perfect-cache CPI [latex]=2[/latex].<br><br>\nSpeedup [latex]=6/2=3.00[/latex]<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/422796/gate-cse-2024-set-1-question-46#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "ansMin": 3,
+   "ansMax": 3
+  },
+  {
+   "id": 1124147,
+   "number": 47,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following code snippet using the fork() and wait() system calls.\nAssume that the code compiles and runs correctly, and that the system calls run\nsuccessfully without any errors.<pre><code>\nint x = 3;\nwhile(x > 0) {\nfork();\nprintf(\"hello\");\nwait(NULL);\nx--;\n}</pre></code>\nThe total number of times the printf statement is executed is ___",
+   "solution": "In each iteration <b>every</b> existing process calls fork(), so the number of processes doubles, and each of them prints once. (wait() only changes the order, not the count; each child continues the loop with the current x.)<br><br>\n- x = 3: 1 [latex]\\rightarrow[/latex] 2 processes, prints 2<br>\n- x = 2: 2 [latex]\\rightarrow[/latex] 4 processes, prints 4<br>\n- x = 1: 4 [latex]\\rightarrow[/latex] 8 processes, prints 8<br><br>\nTotal [latex]=2+4+8=14[/latex]<br><br>\n<b>Answer: 14</b><br><br><a href=\"https://gateoverflow.in/422795/gate-cse-2024-set-1-question-47#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "System Call",
+   "tag2_url": "https://practicepaper.in/gate-cse/system-call",
+   "ansMin": 14,
+   "ansMax": 14
+  },
+  {
+   "id": 1124148,
+   "number": 48,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the entries shown below in the forwarding table of an [latex] \\mathbb{P} [/latex] router. Each entry consists of an IP prefix and the corresponding next hop router for packets whose destination IP address matches the prefix. The notation \"[latex] \\mathrm{/N} [/latex]\" in a prefix indicates a subnet mask with the most significant [latex] \\mathrm{N} [/latex] bits set to 1. <br><br> [latex]\n\\begin{array}{|l|c|}\n\\hline Prefix & Next\\;  hop \\; router \\\\\n\\hline  10.1 .1 .0 / 24  & R1 \\\\\n\\hline 10.1 .1 .128 / 25  & R2 \\\\\n\\hline  10.1 .1 .64 / 26 & R3 \\\\\n\\hline 10.1 .1 .192 / 26  & R4 \\\\\n\\hline\n\\end{array}[/latex]\n<br><br>\nThis router forwards 20 packets each to 5 hosts. The IP addresses of the hosts are 10.1.1.16, 10.1.1.72, 10.1.1.132, 10.1.1.191, and 10.1.1.205. The number of packets forwarded via the next hop router [latex] R 2 [/latex] is",
+   "solution": "Use longest prefix match. Address ranges (last byte):<br>\n/24 [latex]\\rightarrow[/latex] 0-255 (R1), .128/25 [latex]\\rightarrow[/latex] 128-255 (R2), .64/26 [latex]\\rightarrow[/latex] 64-127 (R3), .192/26 [latex]\\rightarrow[/latex] 192-255 (R4).<br><br>\n- 10.1.1.16 [latex]\\rightarrow[/latex] only /24 [latex]\\rightarrow[/latex] R1<br>\n- 10.1.1.72 [latex]\\rightarrow[/latex] /26 (64-127) [latex]\\rightarrow[/latex] R3<br>\n- 10.1.1.132 [latex]\\rightarrow[/latex] /25 [latex]\\rightarrow[/latex] <b>R2</b><br>\n- 10.1.1.191 [latex]\\rightarrow[/latex] /25 (not in 192-255) [latex]\\rightarrow[/latex] <b>R2</b><br>\n- 10.1.1.205 [latex]\\rightarrow[/latex] /26 (192-255) [latex]\\rightarrow[/latex] R4<br><br>\nR2 gets 2 hosts [latex]\\times[/latex] 20 packets [latex]=40[/latex].<br><br>\n<b>Answer: 40</b><br><br><a href=\"https://gateoverflow.in/422794/gate-cse-2024-set-1-question-48#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-layer-protocol",
+   "ansMin": 40,
+   "ansMax": 40
+  },
+  {
+   "id": 1124149,
+   "number": 49,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Let [latex] G=(V, \\Sigma, S, P) [/latex] be a context-free grammar in Chomsky Normal Form with [latex] \\Sigma=\\{a, b, c\\} [/latex] and [latex] V [/latex] containing 10 variable symbols including the start symbol [latex] S [/latex]. The string [latex] w=a^{30} b^{30} c^{30} [/latex] is derivable from [latex] S [/latex]. The number of steps (application of rules) in the derivation [latex] S \\rightarrow^* w [/latex] is _____",
+   "solution": "CNF rules are [latex]A\\rightarrow BC[/latex] or [latex]A\\rightarrow a[/latex].<br><br>\n- Each [latex]A\\rightarrow BC[/latex] increases the number of symbols by 1. To grow from 1 symbol (S) to [latex]n[/latex] symbols needs [latex]n-1[/latex] such steps.<br>\n- Each of the [latex]n[/latex] variables is then turned into a terminal by [latex]A\\rightarrow a[/latex]: [latex]n[/latex] steps.<br><br>\nTotal [latex]=2n-1[/latex]. Here [latex]n=|w|=90[/latex]: [latex]2(90)-1=179[/latex].<br><br>\n<b>Answer: 179</b><br><br><a href=\"https://gateoverflow.in/422793/gate-cse-2024-set-1-question-49#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Grammar",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-grammar",
+   "ansMin": 179,
+   "ansMax": 179
+  },
+  {
+   "id": 1124150,
+   "number": 50,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The number of edges present in the forest generated by the DFS traversal of an undirected graph [latex] G [/latex] with 100 vertices is 40 . The number of connected components in [latex] G [/latex] is ____",
+   "solution": "DFS produces one tree per connected component. A tree with [latex]k[/latex] vertices has [latex]k-1[/latex] edges, so a forest with [latex]n[/latex] vertices and [latex]c[/latex] trees has [latex]n-c[/latex] edges.<br><br>\n[latex]100-c=40\\Rightarrow c=60[/latex]<br><br>\n<b>Answer: 60</b><br><br><a href=\"https://gateoverflow.in/422792/gate-cse-2024-set-1-question-50#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "ansMin": 60,
+   "ansMax": 60
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11252,
+  "quizName": "GATE CSE 2025 SET-2",
+  "pageTitle": "GATE CSE 2025 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 1,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2025-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1125201,
+   "number": 1,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "[latex] A = \\begin{pmatrix} 1 & 2 \\\\ 2 & -1 \\end{pmatrix}, [/latex]\nthen which ONE of the following is [latex]A^8 [/latex]?",
+   "solution": "Eigenvalues of [latex]A=\\begin{bmatrix}1&2\\\\2&-1\\end{bmatrix}[/latex]: [latex](1-\\lambda)(-1-\\lambda)-4=0\\Rightarrow\\lambda^2-1-4=0\\Rightarrow\\lambda^2=5\\Rightarrow\\lambda=\\pm\\sqrt5[/latex]<br><br>\nSince [latex]A[/latex] is symmetric, it's diagonalizable with these eigenvalues, and [latex]A^8[/latex] has eigenvalues [latex](\\sqrt5)^8=5^4=625[/latex] and [latex](-\\sqrt5)^8=625[/latex] as well (both eigenvalues raised to an even power give the same positive result). Since <i>both</i> eigenvalues of [latex]A^8[/latex] equal [latex]625[/latex], [latex]A^8[/latex] is simply the scalar matrix [latex]625I[/latex].<br><br>\n<b>Answer: [[625,0],[0,625]]</b><br><br><a href=\"https://gateoverflow.in/460834/gate-cse-2025-set-2-question-1#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "[latex]\\begin{pmatrix} 25 & 0 \\\\ 0 & 25 \\end{pmatrix} [/latex]",
+    "[latex]\\begin{pmatrix} 125 & 0 \\\\ 0 & 125 \\end{pmatrix} [/latex]",
+    "[latex]\\begin{pmatrix} 625 & 0 \\\\ 0 & 625 \\end{pmatrix} [/latex]",
+    "[latex]\\begin{pmatrix} 3125 & 0 \\\\ 0 & 3125 \\end{pmatrix} [/latex]"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1125202,
+   "number": 2,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The value of [latex]x [/latex] such that [latex]x > 1 [/latex], satisfying the equation\n[latex]  \\int_{1}^{x}t \\ln t \\, dt = \\frac{1}{4} [/latex] is",
+   "solution": "Integrate by parts: with [latex]u=\\ln t,\\ dv=t\\,dt[/latex] (so [latex]du=dt/t,\\ v=t^2/2[/latex]):<br>\n[latex]\\int t\\ln t\\,dt=\\dfrac{t^2}2\\ln t-\\int\\dfrac{t}2\\,dt=\\dfrac{t^2}2\\ln t-\\dfrac{t^2}4[/latex]<br><br>\nEvaluating from [latex]1[/latex] to [latex]x[/latex]: [latex]\\left(\\dfrac{x^2}2\\ln x-\\dfrac{x^2}4\\right)-\\left(0-\\dfrac14\\right)=\\dfrac{x^2}2\\ln x-\\dfrac{x^2}4+\\dfrac14[/latex]<br><br>\nSetting this equal to [latex]\\dfrac14[/latex]: [latex]\\dfrac{x^2}2\\ln x-\\dfrac{x^2}4=0\\ \\Rightarrow\\ \\dfrac{x^2}2\\left(\\ln x-\\dfrac12\\right)=0[/latex]<br>\nSince [latex]x>1[/latex] means [latex]x^2\\ne0[/latex], we need [latex]\\ln x=\\dfrac12\\ \\Rightarrow\\ x=e^{1/2}=\\sqrt e[/latex]<br><br>\n<b>Answer: [latex]\\sqrt{e}[/latex] </b><br><br><a href=\"https://gateoverflow.in/460833/gate-cse-2025-set-2-question-2#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "options": [
+    "[latex]\\sqrt{e} [/latex]",
+    "[latex]e [/latex]",
+    "[latex]e^2 [/latex]",
+    "[latex]e - 1 [/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1125203,
+   "number": 3,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider a binary tree [latex]T [/latex] in which every node has either zero or two children. Let [latex]n > 0 [/latex] be the number of nodes in [latex]T [/latex]. <br>Which ONE of the following is the number of nodes in [latex]T [/latex] that have exactly two children?",
+   "solution": "In a binary tree where every node has [latex]0[/latex] or [latex]2[/latex] children, let [latex]I[/latex] be the number of [latex]2[/latex]-children (internal) nodes and [latex]L[/latex] the number of leaves. A basic counting fact for such trees: [latex]L=I+1[/latex] (each internal node, when added, net-increases the leaf count by exactly one over what it replaced).<br><br>\nTotal nodes: [latex]n=I+L=I+(I+1)=2I+1\\ \\Rightarrow\\ I=\\dfrac{n-1}2[/latex]<br><br>\n<b>Answer: (n-1)/2</b><br><br><a href=\"https://gateoverflow.in/460832/gate-cse-2025-set-2-question-3#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-tree",
+   "options": [
+    "[latex]\\frac{n -2}{2} [/latex]",
+    "[latex]\\frac{n - 1}{2} [/latex]",
+    "[latex]\\frac{n}{2} [/latex]",
+    "[latex]\\frac{n + 1}{2} [/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1125204,
+   "number": 4,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let [latex]L [/latex], [latex]M [/latex], and [latex]N [/latex] be non-singular matrices of order 3 satisfying the equations <br><br>\n[latex] L^2 = L^{-1}, \\quad M = L^8, \\quad N = L^2. [/latex]<br><br>\nWhich ONE of the following is the value of the determinant of [latex](M - N) [/latex]?",
+   "solution": "From [latex]L^2=L^{-1}[/latex], multiply both sides by [latex]L[/latex]: [latex]L^3=L^2\\cdot L=L^{-1}\\cdot L=I[/latex]. So [latex]L[/latex] has order dividing [latex]3[/latex].<br><br>\n[latex]M=L^8=L^{6+2}=(L^3)^2\\cdot L^2=I^2\\cdot L^2=L^2[/latex]. But we're also given [latex]N=L^2[/latex]. So [latex]M=N[/latex] exactly, meaning [latex]M-N[/latex] is the zero matrix.<br><br>\n[latex]\\det(M-N)=\\det(0)=0[/latex]<br><br>\n<b>Answer: 0</b><br><br><a href=\"https://gateoverflow.in/460831/gate-cse-2025-set-2-question-4#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "0",
+    "1",
+    "2",
+    "3"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1125205,
+   "number": 5,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let [latex]P(x) [/latex] be an arbitrary predicate over the domain of natural numbers. Which ONE of the following statements is TRUE?",
+   "solution": "This is exactly the statement of the <b>principle of mathematical induction</b>: if a predicate [latex]P[/latex] holds for the base case [latex]0[/latex], and truth of [latex]P(x)[/latex] always guarantees truth of [latex]P(x+1)[/latex] (the inductive step, moving <i>forward</i>), then [latex]P[/latex] holds for every natural number.<br><br>\nThe other options either use a backward step ([latex]P(x)\\Rightarrow P(x-1)[/latex], which can't reach numbers larger than the base case) or start from a base case like [latex]1000[/latex] (which, even with a valid forward or backward step, can never establish [latex]P[/latex] for numbers below [latex]1000[/latex] using only a one-directional step) &mdash; none of these actually guarantee [latex]P[/latex] for <i>every</i> natural number.<br><br>\n<b>Answer: (P(0) &and; (&forall;x[P(x)&rArr;P(x+1)])) &rArr; (&forall;x P(x))</b><br><br><a href=\"https://gateoverflow.in/460830/gate-cse-2025-set-2-question-5#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Propositional Logic",
+   "tag2_url": "https://practicepaper.in/gate-cse/propositional-logic",
+   "options": [
+    "[latex](P(0) \\land (\\forall x [P(x) \\Rightarrow P(x+1)])) \\Rightarrow (\\forall x P(x)) [/latex]",
+    "[latex](P(0) \\land (\\forall x [P(x) \\Rightarrow P(x-1)])) \\Rightarrow (\\forall x P(x)) [/latex]",
+    "[latex](P(1000) \\land (\\forall x [P(x) \\Rightarrow P(x-1)])) \\Rightarrow (\\forall x P(x)) [/latex]",
+    "[latex](P(1000) \\land (\\forall x [P(x) \\Rightarrow P(x+1)])) \\Rightarrow (\\forall x P(x)) [/latex]"
+   ],
+   "correct": 0
+  }
+ ]
+}

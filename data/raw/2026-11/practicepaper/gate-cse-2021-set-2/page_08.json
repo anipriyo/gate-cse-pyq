@@ -1,0 +1,124 @@
+{
+ "meta": {
+  "quizId": 11212,
+  "quizName": "GATE CSE 2021 SET 2",
+  "pageTitle": "GATE CSE 2021 SET-2",
+  "timeLimit": 0,
+  "pageNo": 8,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2021-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1121236,
+   "number": 36,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following two statements about regular languages:<br><br>\nS1: Every infinite regular language contains an undecidable language as a subset.<br>\nS2: Every finite language is regular.<br><br>\nWhich one of the following choices is correct?",
+   "solution": "Checking each statement:<br>- S1: an infinite language has uncountably many subsets, but only countably many are decidable. So some subset is undecidable [latex]\\text{---}[/latex] TRUE.<br>\n- S2: a finite language is a finite union of single strings [latex]\\rightarrow[/latex] regular [latex]\\text{---}[/latex] TRUE.<br><br>\n<b>Answer: Both S1 and S2 are true</b><br><br><a href=\"https://gateoverflow.in/357504/gate-cse-2021-set-2-question-36#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Regular Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/regular-language",
+   "options": [
+    "Only S1 is true",
+    "Only S2 is true",
+    "Both S1 and S2 are true",
+    "Neither S1 nor S2 is true"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1121237,
+   "number": 37,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "For two n-dimensional real vectors [latex]P[/latex] and [latex]Q[/latex], the operation [latex]s(P,Q)[/latex] is defined as follows:\n<br><br>\n[latex]s(P,Q) = \\displaystyle \\sum_{i=1}^n (P[i] \\cdot Q[i])[/latex]\n<br><br>Let [latex]\\mathcal{L}[/latex] be a set of 10-dimensional non-zero real vectors such that for every pair of distinct vectors [latex]P,Q \\in \\mathcal{L}, s(P,Q)=0[/latex]. What is the maximum cardinality possible for the set [latex]\\mathcal{L}[/latex]?",
+   "solution": "s(P, Q) is the dot product, so the set contains mutually <b>orthogonal</b> non-zero vectors. Such vectors are linearly independent, and [latex]\\mathbb{R}^{10}[/latex] has at most 10 independent vectors (e.g. the 10 unit vectors).<br><br>\n<b>Answer: 10</b><br><br><a href=\"https://gateoverflow.in/357503/gate-cse-2021-set-2-question-37#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "options": [
+    "9",
+    "10",
+    "11",
+    "100"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1121238,
+   "number": 38,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "For a statement S in a program, in the context of liveness analysis, the following sets are defined:<br><br>\n\nUSE(S) : the set of variables used in S<br>\nIN(S) : the set of variables that are live at the entry of S<br>\nOUT(S) : the set of variables that are live at the exit of S<br><br>\nConsider a basic block that consists of two statements, S1 followed by S2. Which one of the following statements is correct?",
+   "solution": "In a basic block, control always goes from S1 straight to S2, so whatever is live just after S1 is exactly what is live just before S2: OUT(S1) = IN(S2).<br><br>\n<b>Answer: OUT(S1) = IN(S2)</b><br><br><a href=\"https://gateoverflow.in/357502/gate-cse-2021-set-2-question-38#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Runtime Environment",
+   "tag2_url": "https://practicepaper.in/gate-cse/runtime-environment",
+   "options": [
+    "OUT(S1) = IN (S2)",
+    "OUT (S1) = IN (S1) [latex]\\cup[/latex] USE (S1)",
+    "OUT (S1) =IN (S2) [latex]\\cup[/latex] OUT (S2)",
+    "OUT (S1) = USE (S1)[latex]\\cup[/latex] IN (S2)"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1121239,
+   "number": 39,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "For constants [latex]a\\geq 1[/latex] and [latex]b \\gt 1[/latex], consider the following recurrence defined on the non-negative integers:\n<br><br>\n[latex]T(n) = a \\cdot T \\left(\\dfrac{n}{b} \\right) + f(n)[/latex]\n<br><br>Which one of the following options is correct about the recurrence [latex]T(n)[/latex]?",
+   "solution": "This is exactly <b>case 1</b> of the Master theorem: if [latex]f(n)=O(n^{\\log_b a-\\epsilon})[/latex], then [latex]T(n)=\\Theta(n^{\\log_b a})[/latex].<br><br>\nThe others are wrong in general: e.g. option 1 fails for a = 4, b = 2 (gives [latex]\\Theta(n^2)[/latex]), and case 2 has an extra log factor ([latex]\\Theta(n^{\\log_b a}\\log n)[/latex]).<br><br>\n<b>Answer: Option 3</b><br><br><a href=\"https://gateoverflow.in/357501/gate-cse-2021-set-2-question-39#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Recurrence Relation",
+   "tag2_url": "https://practicepaper.in/gate-cse/recurrence-relation",
+   "options": [
+    "if [latex]f(n)[/latex] is [latex]n \\log_2(n)[/latex], then [latex]T(n)[/latex] is [latex]\\Theta(n \\log_2(n))[/latex].",
+    "if [latex]f(n)[/latex] is [latex]\\dfrac{n}{\\log_2(n)}[/latex], then [latex]T(n)[/latex] is [latex]\\Theta(\\log_2(n))[/latex].",
+    "if [latex]f(n)[/latex] is [latex]O(n^{\\log_b(a)-\\epsilon})[/latex] for some [latex]\\epsilon \\gt 0[/latex], then [latex]T(n)[/latex] is [latex]\\Theta(n ^{\\log_b(a)})[/latex].",
+    "if [latex]f(n)[/latex] is [latex]\\Theta(n ^{\\log_b(a)})[/latex], then [latex]T(n)[/latex] is [latex]\\Theta(n ^{\\log_b(a)})[/latex]."
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1121240,
+   "number": 40,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Suppose the following functional dependencies hold on a relation U with attributes [latex]P, Q, R, S, \\text{ and } T[/latex]:\n<br><br>[latex]P \\rightarrow QR \\\\ RS \\rightarrow T[/latex]<br><br>\nWhich of the following functional dependencies can be inferred from the above functional dependencies?",
+   "solution": "Checking each statement:<br>- [latex]P\\rightarrow QR[/latex] [latex]\\Rightarrow[/latex] [latex]P\\rightarrow R[/latex] (decomposition) True<br>\n- [latex]PS\\rightarrow RS[/latex] (augmentation) and [latex]RS\\rightarrow T[/latex] [latex]\\Rightarrow[/latex] [latex]PS\\rightarrow T[/latex] True<br>\n- [latex]P\\rightarrow Q[/latex] [latex]\\Rightarrow[/latex] [latex]PS\\rightarrow Q[/latex] True<br>\n- [latex]R\\rightarrow T[/latex]: [latex]R^+=\\{R\\}[/latex], so not implied False<br><br>\n<b>Answer: [latex]PS\\rightarrow T,\\ P\\rightarrow R,\\ PS\\rightarrow Q[/latex]</b><br><br><a href=\"https://gateoverflow.in/357500/gate-cse-2021-set-2-question-40#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Normal Form",
+   "tag2_url": "https://practicepaper.in/gate-cse/normal-form",
+   "options": [
+    "[latex]PS \\rightarrow T[/latex]",
+    "[latex]R \\rightarrow T[/latex]",
+    "[latex]P \\rightarrow R[/latex]",
+    "[latex]PS \\rightarrow Q[/latex]"
+   ],
+   "correctSet": [
+    0,
+    2,
+    3
+   ]
+  }
+ ]
+}

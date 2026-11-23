@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11211,
+  "quizName": "GATE CSE 2021 SET 1",
+  "pageTitle": "GATE CSE 2021 SET-1",
+  "timeLimit": 0,
+  "pageNo": 7,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2021-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1121131,
+   "number": 31,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following context-free grammar where the set of terminals is [latex]\\{a,b,c,d,f\\}[/latex].<br><br>[latex]\\begin{array}{lll} S & \\rightarrow & d \\: a \\: T \\mid R \\: f \\\\ T & \\rightarrow & a \\: S \\: \\mid \\: b \\: a \\: T \\: \\mid \\epsilon \\\\ R & \\rightarrow & c \\: a \\: T \\: R \\: \\mid \\epsilon \\end{array}[/latex]\n<br><br>\nThe following is a partially-filled LL(1) parsing table.<br><img src=\"/wp-content/uploads/GATE/CS/20211/q31a.jpg\" /><br>\nWhich one of the following choices represents the correct combination for the numbered cells in the parsing table (\"blank\" denotes that the corresponding cell is empty)?<br><img src=\"/wp-content/uploads/GATE/CS/20211/q31b.jpg\" /><br>",
+   "solution": "Checking each statement:<br>- [latex]FIRST(Rf)=\\{c,f\\}[/latex] (R can be [latex]\\epsilon[/latex]) [latex]\\rightarrow[/latex] (1) [S, c] and (2) [S, f] are both [latex]S\\rightarrow Rf[/latex].<br>\n- [latex]T\\rightarrow\\epsilon[/latex] goes in FOLLOW(T). T is followed by R in [latex]R\\rightarrow caTR[/latex] (gives c, and FOLLOW(R) = {f}), and FOLLOW(T) includes FOLLOW(S) = {$}. So FOLLOW(T) = {c, f, $}.<br>\n- (3) [T, c] = [latex]T\\rightarrow\\epsilon[/latex] and (4) [T, $] = [latex]T\\rightarrow\\epsilon[/latex].<br><br>\n<b>Answer: A</b><br><br><a href=\"https://gateoverflow.in/357420/gate-cse-2021-set-1-question-31#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Grammar",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-grammar",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1121132,
+   "number": 32,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let [latex]r_i(z)[/latex] and [latex]w_i(z)[/latex] denote read and write operations respectively on a data item [latex]z[/latex] by a transaction [latex]T_i[/latex]. Consider the following two schedules.\n<br><br>\n[latex]S1: r_1(x)r_1(y)r_2(x)r_2(y)w_2(y)w_1(x)[/latex]\n<br>\n[latex]S2: r_1(x)r_2(x)r_2(y)w_2(y)r_1(y)w_1(x)[/latex]\n<br><br>\nWhich one of the following options is correct?",
+   "solution": "<b>S1</b>: [latex]r_1(y)[/latex] before [latex]w_2(y)[/latex] gives T1 [latex]\\rightarrow[/latex] T2; [latex]r_2(x)[/latex] before [latex]w_1(x)[/latex] gives T2 [latex]\\rightarrow[/latex] T1. Cycle [latex]\\rightarrow[/latex] not conflict serializable.<br><br>\n<b>S2</b>: [latex]r_2(x)[/latex] before [latex]w_1(x)[/latex] gives T2 [latex]\\rightarrow[/latex] T1; [latex]w_2(y)[/latex] before [latex]r_1(y)[/latex] gives T2 [latex]\\rightarrow[/latex] T1. No cycle [latex]\\rightarrow[/latex] conflict serializable (T2, T1).<br><br>\n<b>Answer: S1 is not conflict serializable, and S2 is conflict serializable</b><br><br><a href=\"https://gateoverflow.in/357419/gate-cse-2021-set-1-question-32#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Transaction",
+   "tag2_url": "https://practicepaper.in/gate-cse/transaction",
+   "options": [
+    "S1 is conflict serializable, and S2 is not conflict serializable",
+    "S1 is not conflict serializable, and S2 is conflict serializable",
+    "Both S1 and S2 are conflict serializable",
+    "Niether S1 nor S2 is conflict serializable"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1121133,
+   "number": 33,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the relation [latex]R(P,Q,S,T,X,Y,Z,W)[/latex] with the following functional dependencies.\n<br><br>[latex]PQ\\rightarrow X;\\quad P\\rightarrow YX;\\quad Q\\rightarrow Y; \\quad Y\\rightarrow ZW[/latex]\n<br><br>\nConsider the decomposition of the relation R into the constituent relations according to the following two decomposition schemes.\n<br><br>\n[latex]D1:\\quad R=[(P,QS,T);\\;(P,T,X);\\;(Q,Y);\\;(Y,Z,W)][/latex]<br>\n[latex]D2:\\quad R=[(P,Q,S);\\;(T,X);\\;(Q,Y);\\;(Y,Z,W)][/latex]<br><br>\nWhich one of the following options is correct?",
+   "solution": "<b>D1</b>: join step by step on common attributes that are keys of one side:<br>\n- (P, Q, S, T) with (P, T, X) on PT: [latex]P\\rightarrow X[/latex] so PT [latex]\\rightarrow[/latex] X True<br>\n- with (Q, Y) on Q: [latex]Q\\rightarrow Y[/latex] True<br>\n- with (Y, Z, W) on Y: [latex]Y\\rightarrow ZW[/latex] True<br>\nSo D1 is lossless.<br><br>\n<b>D2</b>: (T, X) shares no attribute with the other relations, so joining it gives a cross product [latex]\\rightarrow[/latex] lossy.<br><br>\n<b>Answer: D1 is lossless, but D2 is lossy</b><br><br><a href=\"https://gateoverflow.in/357418/gate-cse-2021-set-1-question-33#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Relational Schema",
+   "tag2_url": "https://practicepaper.in/gate-cse/relational-schema",
+   "options": [
+    "D1 is a lossless decomposition, but D2 is a lossy decomposition.",
+    "D1 is a lossy decomposition, but D2 is a lossless decomposition.",
+    "Both D1 and D2 are lossless decompositions.",
+    "Both D1 and D2 are lossy decompositions."
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1121134,
+   "number": 34,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let G be a group of order 6, and H be a subgroup of G such that 1 < |H| < 6. Which one of the following options is correct?",
+   "solution": "Checking each statement:<br>- G can be the non-abelian group [latex]S_3[/latex] (order 6), which is not cyclic.<br>\n- By Lagrange, |H| divides 6 and is strictly between 1 and 6, so |H| = 2 or 3, which are primes. Every group of prime order is cyclic.<br><br>\n<b>Answer: G may not be cyclic, but H is always cyclic</b><br><br><a href=\"https://gateoverflow.in/357417/gate-cse-2021-set-1-question-34#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Group Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/group-theory",
+   "options": [
+    "Both G and H are always cyclic.",
+    "G may not be cyclic, but H is always cyclic.",
+    "G is always cyclic, but H may not be cyclic.",
+    "Both G and H may not be cyclic."
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1121135,
+   "number": 35,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the two statements.\n<br><br>\nS1: There exist random variables [latex]X[/latex] and [latex]Y[/latex] such that [latex]\\left(\\mathbb E[(X-\\mathbb E(X))(Y-\\mathbb E(Y))]\\right)^2 > \\textsf{Var}[X]\\textsf{Var}[Y][/latex]<br>\nS2: For all random variables [latex]X[/latex] and [latex]Y[/latex], [latex]\\textsf{Cov}[X,Y]=\\mathbb E \\left[|X-\\mathbb E[X]||Y-\\mathbb E[Y]|\\right ][/latex]<br><br>\nWhich one of the following choices is correct?",
+   "solution": "Checking each statement:<br>- S1: the left side is [latex]Cov(X,Y)^2[/latex]. By Cauchy-Schwarz, [latex]Cov(X,Y)^2\\le Var(X)Var(Y)[/latex] always, so S1 is FALSE.<br>\n- S2: the right side is always [latex]\\ge0[/latex], but covariance can be negative (e.g. Y = [latex]-[/latex]X) [latex]\\rightarrow[/latex] FALSE.<br><br>\n<b>Answer: Both S1 and S2 are false</b><br><br><a href=\"https://gateoverflow.in/357416/gate-cse-2021-set-1-question-35#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "options": [
+    "Both S1 and S2 are true.",
+    "S1 is true, but S2 is false.",
+    "S1 is false, but S2 is true.",
+    "Both S1 and S2 are false."
+   ],
+   "correct": 3
+  }
+ ]
+}

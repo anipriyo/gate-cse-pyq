@@ -1,0 +1,103 @@
+{
+ "meta": {
+  "quizId": 11241,
+  "quizName": "GATE CSE 2024 SET-1",
+  "pageTitle": "GATE CSE 2024 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 5,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124121,
+   "number": 21,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following fields is/are modified in the IP header of a packet going out\nof a network address translation (NAT) device from an internal network to an\nexternal network?",
+   "solution": "For an outgoing packet, NAT replaces the private <b>source IP</b> (and port) with its public IP.<br><br>\nBecause a header field changed, the <b>header checksum</b> must be recomputed.<br><br>\nDestination IP is unchanged (it is the outside server), and total length is unchanged (payload size is the same).<br><br>\n<b>Answer: Source IP, Header Checksum</b><br><br><a href=\"https://gateoverflow.in/422821/gate-cse-2024-set-1-question-21#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-layer-protocol",
+   "options": [
+    "Source IP",
+    "Destination IP",
+    "Header Checksum",
+    "Total Length"
+   ],
+   "correctSet": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": 1124122,
+   "number": 22,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Let [latex]A [/latex] and [latex]B [/latex] be non-empty finite sets such that there exist one-to-one and onto functions (i) from [latex]A [/latex] to [latex]B [/latex] and (ii) from [latex]A \\times A [/latex] to [latex]A \\cup B [/latex]. The number of possible values of [latex]|A| [/latex] is ___",
+   "solution": "Bijection [latex]A\\to B[/latex] [latex]\\Rightarrow[/latex] [latex]|A|=|B|=n[/latex].<br>\nBijection [latex]A\\times A\\to A\\cup B[/latex] [latex]\\Rightarrow[/latex] [latex]n^2=|A\\cup B|[/latex].<br><br>\nBut [latex]n\\le|A\\cup B|\\le 2n[/latex], so [latex]n\\le n^2\\le 2n[/latex] [latex]\\Rightarrow[/latex] [latex]n\\le2[/latex].<br><br>\n- [latex]n=1[/latex]: [latex]A=B[/latex], [latex]|A\\cup B|=1=1^2[/latex] True<br>\n- [latex]n=2[/latex]: take A and B disjoint, [latex]|A\\cup B|=4=2^2[/latex] True<br><br>\nSo [latex]|A|\\in\\{1,2\\}[/latex].<br><br>\n<b>Answer: 2</b><br><br><a href=\"https://gateoverflow.in/422820/gate-cse-2024-set-1-question-22#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Functions",
+   "tag2_url": "https://practicepaper.in/gate-cse/functions",
+   "ansMin": 2,
+   "ansMax": 2
+  },
+  {
+   "id": 1124123,
+   "number": 23,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the operator precedence and associativity rules for the integer arithmetic operators given in the table below.<br>\n[latex]\\begin{array}{|c|l|l|}\n\\hline Operator & Precedence & Associativity \\\\\n\\hline+ & Highest & Left \\\\\n\\hline- & High & Right \\\\\n\\hline* & Medium & Right \\\\\n\\hline  /  & Low & Right \\\\\n\\hline\n\\end{array}\n[/latex]<br>\nThe value of the expression [latex]3+1+5 * 2 / 7+2-4-7-6 / 2 [/latex] as per the above rules is _____",
+   "solution": "Precedence: + (highest) [latex]\\gt[/latex] [latex]-[/latex] [latex]\\gt[/latex] * [latex]\\gt[/latex] / (lowest). The lowest-precedence operator is applied last, so / splits the expression:<br>\n[latex](3+1+5*2)\\;/\\;(7+2-4-7-6)\\;/\\;2[/latex]<br><br>\n<b>First part:</b> + binds before *, so [latex](3+1+5)*2=9*2=18[/latex].<br>\n<b>Second part:</b> + first: [latex]7+2=9[/latex]. Then [latex]-[/latex] is right associative: [latex]9-(4-(7-6))=9-(4-1)=6[/latex].<br><br>\n/ is right associative: [latex]18/(6/2)=18/3=6[/latex].<br><br>\n<b>Answer: 6</b><br><br><a href=\"https://gateoverflow.in/422819/gate-cse-2024-set-1-question-23#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Stack",
+   "tag2_url": "https://practicepaper.in/gate-cse/stack",
+   "ansMin": 6,
+   "ansMax": 6
+  },
+  {
+   "id": 1124124,
+   "number": 24,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The number of spanning trees in a complete graph of 4 vertices labelled A, B, C,\nand D is _________",
+   "solution": "Number of spanning trees of a complete graph [latex]K_n[/latex] (Cayley's formula) [latex]=n^{n-2}[/latex].<br><br>\n[latex]4^{4-2}=16[/latex]<br><br>\n<b>Answer: 16</b><br><br><a href=\"https://gateoverflow.in/422818/gate-cse-2024-set-1-question-24#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Minimum Spanning Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/minimum-spanning-tree",
+   "ansMin": 16,
+   "ansMax": 16
+  },
+  {
+   "id": 1124125,
+   "number": 25,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the following two relations, [latex]R(A, B) [/latex] and [latex]S(A, C) [/latex] :<br>[latex]\\boldsymbol{R} \n\\begin{array}{|c|c|}\n\\hline \\boldsymbol{A}  & \\boldsymbol{B}  \\\\\n\\hline 10 & 20 \\\\\n\\hline 20 & 30 \\\\\n\\hline 30 & 40 \\\\\n\\hline 30 & 50 \\\\\n\\hline 50 & 95 \\\\\n\\hline\n\\end{array}[/latex]<br><br> <br>[latex]\\boldsymbol{S}\n\\begin{array}{|c|c|}\n\\hline \\boldsymbol{A}  & \\boldsymbol{C}  \\\\\n\\hline 10 & 90 \\\\\n\\hline 30 & 45 \\\\\n\\hline 40 & 80 \\\\\n\\hline\n\\end{array}\n[/latex]<br>\nThe total number of tuples obtained by evaluating the following expression [latex] \\sigma_{B \\lt C}\\left(R \\bowtie_{R . A=S . A} S\\right) [/latex]\nis ____",
+   "solution": "Join on [latex]R.A=S.A[/latex]:<br>\n- A = 10: (10, 20, 90) [latex]\\rightarrow[/latex] [latex]20 \\lt 90[/latex] True<br>\n- A = 30: (30, 40, 45) [latex]\\rightarrow[/latex] [latex]40 \\lt 45[/latex] True<br>\n- A = 30: (30, 50, 45) [latex]\\rightarrow[/latex] [latex]50 \\lt 45[/latex] False<br>\n(A = 20, 50 in R and A = 40 in S have no match.)<br><br>\n<b>Answer: 2</b><br><br><a href=\"https://gateoverflow.in/422817/gate-cse-2024-set-1-question-25#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Tuple Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/tuple-calculus",
+   "ansMin": 2,
+   "ansMax": 2
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11212,
+  "quizName": "GATE CSE 2021 SET 2",
+  "pageTitle": "GATE CSE 2021 SET-2",
+  "timeLimit": 0,
+  "pageNo": 6,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2021-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1121226,
+   "number": 26,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the string abbccddeee. Each letter in the string must be assigned a binary code satisfying the following properties:\n<br><br>\nFor any two letters, the code assigned to one letter must not be a prefix of the code assigned to the other letter.<br>\nFor any two letters of the same frequency, the letter which occurs earlier in the dictionary order is assigned a code whose length is at most the length of the code assigned to the other letter.<br><br>\nAmong the set of all binary code assignments which satisfy the above two properties, what is the minimum length of the encoded string?",
+   "solution": "Frequencies: a 1, b 2, c 2, d 2, e 3 (total 10).<br><br>\nHuffman: merge a(1) with a frequency-2 letter. To respect the tie rule (b, c, d in dictionary order), merge a with <b>d</b> [latex]\\rightarrow[/latex] 3; then b + c [latex]\\rightarrow[/latex] 4; then ad + e [latex]\\rightarrow[/latex] 6; then 4 + 6.<br>\nCode lengths: a 3, d 3, b 2, c 2, e 2 (b [latex]\\le[/latex] c [latex]\\le[/latex] d True).<br><br>\nLength = 1[latex]\\times[/latex]3 + 2[latex]\\times[/latex]2 + 2[latex]\\times[/latex]2 + 2[latex]\\times[/latex]3 + 3[latex]\\times[/latex]2 = 3 + 4 + 4 + 6 + 6 = 23<br><br>\n<b>Answer: 23</b><br><br><a href=\"https://gateoverflow.in/357514/gate-cse-2021-set-2-question-26#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Greedy Technique",
+   "tag2_url": "https://practicepaper.in/gate-cse/greedy-technique",
+   "options": [
+    "21",
+    "23",
+    "25",
+    "30"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1121227,
+   "number": 27,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Assume a two-level inclusive cache hierarchy, L1 and L2, where L2 is the larger of the two. Consider the following statements.\n<br><br>\nS1: Read misses in a write through L1 cache do not result in writebacks of dirty lines to the L2<br>\nS2: Write allocate policy must be used in conjunction with write through caches and no-write allocate policy is used with writeback caches.<br><br>\nWhich of the following statements is correct?",
+   "solution": "Checking each statement:<br>- S1: a write-through L1 never has dirty lines (every write already goes to L2), so a read miss never writes back a dirty line [latex]\\text{---}[/latex] TRUE.<br>\n- S2: the usual pairing is the opposite (write-allocate with write-back, no-write-allocate with write-through), and neither is mandatory [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: S1 is true and S2 is false</b><br><br><a href=\"https://gateoverflow.in/357513/gate-cse-2021-set-2-question-27#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "options": [
+    "S1  is true and S2 is false",
+    "S1  is false and S2 is true",
+    "S1  is true and S2 is true",
+    "S1  is false and S2 is false"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1121228,
+   "number": 28,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Suppose we want to design a synchronous circuit that processes a string of 0's and 1's. Given a string, it produces another string by replacing the first 1 in any subsequence of consecutive 1's by a 0. Consider the following example.<br><br>\n[latex]\\begin{array}{ll} \\text{Input sequence:} & 00100011000011100 \\\\ \\text{Output sequence:} & 00000001000001100 \\end{array}[/latex]<br><br>\nA Mealy Machine is a state machine where both the next state and the output are functions of the present state and the current input.<br>\n\nThe above mentioned circuit can be designed as a two-state Mealy machine. The states in the Mealy machine can be represented using Boolean values 0 and 1. We denote the current state, the next state, the next incoming bit, and the output bit of the Mealy machine by the variables s, t, b and y respectively.\n<br>\nAssume the initial state of the Mealy machine is 0.\n<br><br>\nWhat are the Boolean expressions corresponding to t and y in terms of s and b?",
+   "solution": "The state remembers the previous bit: <b>t = b</b>.<br><br>\nOutput 1 only for a 1 that is not the first of a run, i.e. the current bit is 1 <b>and</b> the previous bit was 1: <b>y = sb</b>.<br><br>\nCheck with 0011: outputs 0, 0, 0, 1 True<br><br>\n<b>Answer: t = b, y = sb</b><br><br><a href=\"https://gateoverflow.in/357512/gate-cse-2021-set-2-question-28#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Finite Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/finite-automata",
+   "options": [
+    "t=s+b<br>y=sb",
+    "t=b<br>y=sb",
+    "t=b<br>y=s[latex]\\bar{b}[/latex]",
+    "t=s+b<br>y=s[latex]\\bar{b}[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1121229,
+   "number": 29,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "In an examination, a student can choose the order in which two questions (QuesA and QuesB) must be attempted.<br><br>\n\nIf the first question is answered wrong, the student gets zero marks.<br>\nIf the first question is answered correctly and the second question is not answered correctly, the student gets the marks only for the first question.<br>\nIf both the questions are answered correctly, the student gets the sum of the marks of the two questions.<br><br>\nThe following table shows the probability of correctly answering a question and the marks of the question respectively.\n<br><br>[latex]\\begin{array}{c|c|c} \\text{question} & \\text{probabiloty of answering correctly} & \\text{marks} \\\\ \\hline \\textsf{QuesA} & 0.8 & 10 \\\\ \\textsf{QuesB} & 0.5 & 20 \\end{array}[/latex]\n<br><br>\nAssuming that the student always wants to maximize her expected marks in the examination, in which order should she attempt  the questions and what is the expected marks for that order (assume that the questions are independent)?",
+   "solution": "Checking each statement:<br>- A first: [latex]0.8\\times(10+0.5\\times20)=0.8\\times20=16[/latex]<br>\n- B first: [latex]0.5\\times(20+0.8\\times10)=0.5\\times28=14[/latex]<br><br>\nA first gives more.<br><br>\n<b>Answer: First QuesA and then QuesB. Expected marks 16</b><br><br><a href=\"https://gateoverflow.in/357511/gate-cse-2021-set-2-question-29#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "options": [
+    "First QuesA and then QuesB. Expected marks 14.",
+    "First QuesB and then QuesA. Expected marks 14.",
+    "First QuesB and then QuesA. Expected marks 22.",
+    "First QuesA and then QuesB. Expected marks 16."
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1121230,
+   "number": 30,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following ANSI C code segment:<pre><code> z=x + 3 + y-> f1 + y-> f2;\nfor (i = 0; i < 200; i = i + 2) \n{\n    if (z > i) \n    {\n        p = p + x + 3;\n        q = q + y-> f1;\n    } else \n    {\n        p = p + y-> f2;\n        q = q + x + 3;\n    }\n}</pre></code>Assume that the variable y points to a struct (allocated on the heap) containing two fields f1 and f2, and the local variables x, y, z, p, q, and i are allotted registers. Common sub-expression elimination (CSE) optimization is applied on the code. The number of addition and the dereference operations (of the form  y -> f1 or y -> f2) in the optimized code, respectively, are:",
+   "solution": "CSE computes x + 3, y[latex]\\rightarrow[/latex]f1 and y[latex]\\rightarrow[/latex]f2 <b>once</b> before the loop and reuses them.<br><br>\n- Before the loop: t = x + 3, then z = t + f1 + f2 [latex]\\rightarrow[/latex] 3 additions, 2 dereferences.<br>\n- Loop: 100 iterations (i = 0, 2, [latex]\\ldots[/latex], 198), each with i + 2, one addition to p and one to q [latex]\\rightarrow[/latex] 3 additions [latex]\\times[/latex] 100 = 300.<br><br>\nTotal: 303 additions, 2 dereferences.<br><br>\n<b>Answer: 303 and 2</b><br><br><a href=\"https://gateoverflow.in/357510/gate-cse-2021-set-2-question-30#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Intermediate Code Generation",
+   "tag2_url": "https://practicepaper.in/gate-cse/intermediate-code-generation",
+   "options": [
+    "403  and 102",
+    "203  and 2",
+    "303  and 102",
+    "303  and 2"
+   ],
+   "correct": 3
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11221,
+  "quizName": "GATE CSE 2022",
+  "pageTitle": "GATE CSE 2022",
+  "timeLimit": 0,
+  "pageNo": 13,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2022",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1122161,
+   "number": 61,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Some people believe that \"what gets measured, improves\". Some others believe that \"what gets measured, gets gamed\". One possible reason for the difference in the beliefs is the work culture in organizations. In organizations with good work culture, metrics help improve outcomes. However, the same metrics are counterproductive in organizations with poor work culture.\n<br>\nWhich one of the following is the CORRECT logical inference based on the information in the above passage?\n",
+   "solution": "The passage says: in organizations with good work culture, metrics help improve outcomes; with poor culture they are counterproductive.<br><br>\nSo the direct inference is that metrics are useful in organizations with good work culture. Options 1, 3 and 4 contradict the passage.<br><br>\n<b>Answer: Metrics are useful in organizations with good work culture</b><br><br><a href=\"https://gateoverflow.in/371500/Gate-cse-2022-question-6#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "Metrics are useful in organizations with poor work culture",
+    "Metrics are useful in organizations with good work culture",
+    "Metrics are always counterproductive in organizations with good work culture",
+    "Metrics are never useful in organizations with good work culture"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1122162,
+   "number": 62,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "In a recently conducted national entrance test, boys constituted 65% of those who appeared for the test. Girls constituted the remaining candidates and they accounted for 60% of the qualified candidates.\n<br>\nWhich one of the following is the correct logical inference based on the information provided in the above passage?\n",
+   "solution": "Girls are 60% of the qualified candidates, so boys are only 40% of them. Hence fewer boys than girls qualified.<br><br>\n(Boys were 65% of those who appeared, so the options about who appeared are wrong, and the qualified numbers are not equal.)<br><br>\n<b>Answer: The number of boys who qualified the test is less than the number of girls who qualified</b><br><br><a href=\"https://gateoverflow.in/371499/Gate-cse-2022-question-7#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "Equal number of boys and girls qualified",
+    "Equal number of boys and girls appeared for the test",
+    "The number of boys who appeared for the test is less than the number of girls who appeared",
+    "The number of boys who qualified the test is less than the number of girls who qualified"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1122163,
+   "number": 63,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A box contains five balls of same size and shape. Three of them are green coloured balls and two of them are orange coloured balls. Balls are drawn from the box one at a time. If a green ball is drawn, it is not replaced. If an orange ball is drawn, it is replaced with another orange ball.\n<br>\nFirst ball is drawn. What is the probability of getting an orange ball in the next draw?\n",
+   "solution": "Start: 3 green, 2 orange.<br>\n- First green ([latex]\\frac35[/latex]): it is not replaced [latex]\\rightarrow[/latex] 2G, 2O [latex]\\rightarrow[/latex] P(orange) = [latex]\\frac24[/latex]<br>\n- First orange ([latex]\\frac25[/latex]): replaced [latex]\\rightarrow[/latex] 3G, 2O [latex]\\rightarrow[/latex] P(orange) = [latex]\\frac25[/latex]<br><br>\n[latex]P=\\frac35\\cdot\\frac12+\\frac25\\cdot\\frac25=\\frac{15}{50}+\\frac{8}{50}=\\frac{23}{50}[/latex]<br><br>\n<b>Answer: [latex]\\frac{23}{50}[/latex]</b><br><br><a href=\"https://gateoverflow.in/371498/Gate-cse-2022-question-8#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "[latex]\\frac{1}{2}[/latex]",
+    "[latex]\\frac{8}{25}[/latex]",
+    "[latex]\\frac{19}{50}[/latex]",
+    "[latex]\\frac{23}{50}[/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1122164,
+   "number": 64,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The corners and mid-points of the sides of a triangle are named using the distinct letters P, Q, R, S, T and U, but not necessarily in the same order. Consider the following statements:\n<br><br>\nThe line joining P and R is parallel to the line joining Q and S.<br> P is placed on the side opposite to the corner T.\n<br> S and U cannot be placed on the same side.\n<br><br>\nWhich one of the following statements is correct based on the above information?\n",
+   "solution": "In a triangle, two such lines can be parallel only if one joins <b>two midpoints</b> and the other lies along the opposite side.<br><br>\n- If Q and S are the two midpoints, S is a midpoint.<br>\n- Otherwise P and R are the midpoints, and Q, S lie on the parallel side (its two corners and its midpoint). P sits on the side opposite T, so T is also a point of that side, and U is the remaining corner. S cannot share a side with U, and both corners of that side share a side with U. So S must be the <b>midpoint</b>.<br><br>\nIn every case S is a midpoint.<br><br>\n<b>Answer: S cannot be placed at a corner</b><br><br><a href=\"https://gateoverflow.in/371497/Gate-cse-2022-question-9#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "P cannot be placed at a corner",
+    "S cannot be placed at a corner",
+    "U cannot be placed at a mid-point",
+    "R cannot be placed at a corner"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1122165,
+   "number": 65,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A plot of land must be divided between four families. They want their individual plots to be similar in shape, not necessarily equal in area. The land has equally spaced poles, marked as dots in the below figure. Two ropes, R1 and R2, are already present and cannot be moved.\nWhat is the least number of additional straight ropes needed to create the desired plots? A single rope can pass through three poles that are aligned in a straight line.\n<br><img src=\"/wp-content/uploads/GATE/CS/20221/q65.jpg\" /><br>",
+   "solution": "Take the poles as a 7 [latex]\\times[/latex] 7 grid (0-6). R1 runs from the left edge (0, 2) to (2, 2), R2 from the top edge (4, 6) to (4, 4). The land is symmetric about both diagonals, and R1, R2 are mirror images.<br><br>\nAdd 3 ropes:<br>\n1. (2, 0) to (2, 2) [latex]\\text{---}[/latex] mirror of R1<br>\n2. (6, 4) to (4, 4) [latex]\\text{---}[/latex] mirror of R2<br>\n3. (2, 2) to (4, 4) [latex]\\text{---}[/latex] diagonal through the centre pole (3, 3)<br><br>\nThis gives two small plots (a 2[latex]\\times[/latex]2 square with one corner cut) and two large plots (a 4[latex]\\times[/latex]4 square with one corner cut). The large ones are exactly the small ones scaled by 2, so all four are similar. Two ropes cannot do this.<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/371496/Gate-cse-2022-question-10#a_list_title\"  target=\"_blank\" >Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "2",
+    "4",
+    "5",
+    "3"
+   ],
+   "correct": 3
+  }
+ ]
+}

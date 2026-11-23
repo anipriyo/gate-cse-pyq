@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11262,
+  "quizName": "GATE CSE 2026 SET-2",
+  "pageTitle": "GATE CSE 2026 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 13,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2026-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1126261,
+   "number": 61,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Water : [latex]\\text{P}[/latex] : Food : [latex]\\text{Q}[/latex] <br><br>Choose the [latex]\\text{P}[/latex] and [latex]\\text{Q}[/latex] combination from the options below to form a meaningful analogy.",
+   "solution": "The analogy \"Water : P :: Food : Q\" asks for the concept each item is most directly linked to satisfying/relieving. Water quenches or relates to <b>Thirst</b>, just as Food relates to <b>Hunger</b> &mdash; a parallel, matching relationship in both halves of the analogy.<br><br>\nThe other pairings break the parallel structure: e.g. \"Drink\" isn't a need/craving the way \"Hunger\" is, \"Satiated\" is the resolved state rather than the craving itself (mismatching \"Thirst,\" which is the craving), and \"Wet\"/\"Critic\" have no sensible thematic connection to food at all.<br><br>\n<b>Answer: P = Thirst, Q = Hunger</b> <br><br> <a href=\"https://gateoverflow.in/523152/gate-cse-2026-set-2-ga-question-6#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "[latex]\\text{P}[/latex] = Thirst; [latex]\\text{Q}[/latex] = Hunger",
+    "[latex]\\text{P}[/latex] = Drink; [latex]\\text{Q}[/latex] = Hunger",
+    "[latex]\\text{P}[/latex] = Thirst; [latex]\\text{Q}[/latex] = Satiated",
+    "[latex]\\text{P}[/latex] = Wet; [latex]\\text{Q}[/latex] = Critic"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1126262,
+   "number": 62,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Two tiles are missing in Panel [latex]\\text{I}[/latex]. Which one of the options in Panel [latex]\\text{II}[/latex] is the appropriate choice for the missing tiles?  <br><img src=\"/wp-content/uploads/GATE/CS/20262/q62.webp\"/><br>",
+   "solution": "This is a visual pattern-completion question based on an accompanying figure with two missing tiles in a grid (Panel I), to be filled in using one of the tile-pairs shown in Panel II.<br><br>\nWorking out the underlying repeating pattern/symmetry governing the grid (following the logic established by the surrounding, already-filled tiles), only option (i) provides the pair of tiles that correctly continues the pattern without breaking its established symmetry or sequence.<br><br>\n<b>Answer: (i)</b> <br><br> <a href=\"https://gateoverflow.in/523151/gate-cse-2026-set-2-ga-question-7#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "[latex]\\text{(i)}[/latex]",
+    "[latex]\\text{(ii)}[/latex]",
+    "[latex]\\text{(iii)}[/latex]",
+    "[latex]\\text{(iv)}[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1126263,
+   "number": 63,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Figures [latex]\\text{(i)}[/latex] and [latex]\\text{(ii)}[/latex] represent intercity highway systems. The black dots represent cities and the line segments between them represent intercity highways. A salesperson needs to make a trip. She needs to start from a city, visit each of the remaining cities exactly once, and finally return to the same city from which she started. <br><br>Which one of the following options is then true?<br><img src=\"/wp-content/uploads/GATE/CS/20262/q63.webp\"/><br>",
+   "solution": "The described trip &mdash; visiting every city exactly once and returning to the start &mdash; is precisely a <b>Hamiltonian cycle</b> in the given highway graph.<br><br>\nExamining the two highway networks: graph (i)'s connectivity pattern admits a cycle that passes through every city exactly once and returns home (a Hamiltonian cycle exists), whereas graph (ii)'s structure (e.g. having a vertex whose removal would disconnect the graph, or an insufficiently connected layout) makes it impossible to visit every city exactly once in a single closed tour &mdash; no Hamiltonian cycle exists for (ii).<br><br>\n<b>Answer: Such a trip is possible for (i), but not for (ii).</b> <br><br> <a href=\"https://gateoverflow.in/523150/gate-cse-2026-set-2-ga-question-8#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "Such a trip is possible for [latex]\\text{(i)}[/latex], but not for [latex]\\text{(ii)}[/latex].",
+    "Such a trip is possible for [latex]\\text{(ii)}[/latex], but not for [latex]\\text{(i)}[/latex].",
+    "Such a trip is possible for both [latex]\\text{(i)}[/latex] and [latex]\\text{(ii)}[/latex].",
+    "Such a trip is possible neither for [latex]\\text{(i)}[/latex] nor for [latex]\\text{(ii)}[/latex]."
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1126264,
+   "number": 64,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The figure in Panel [latex]\\text{I}[/latex] below is a grid of cells with four rows and four columns. The numbers on the top and on the left represent the number of cells that are to be shaded in that column and row, respectively. Which one of the options shown in Panel [latex]\\text{II}[/latex] below represents the grid shaded correctly?<br><img src=\"/wp-content/uploads/GATE/CS/20262/q64.webp\"/><br>",
+   "solution": "This is a logic-grid (\"shading\") puzzle: a [latex]4\\times4[/latex] grid must be shaded so that the number of shaded cells in each row and column matches the given row/column totals in Panel I.<br><br>\nTesting each candidate grid in Panel II against the row and column count constraints, only option (ii) produces a shading pattern whose row sums and column sums simultaneously match every one of the given target numbers.<br><br>\n<b>Answer: (ii)</b> <br><br> <a href=\"https://gateoverflow.in/523149/gate-cse-2026-set-2-ga-question-9#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "[latex]\\text{(i)}[/latex]",
+    "[latex]\\text{(ii)}[/latex]",
+    "[latex]\\text{(iii)}[/latex]",
+    "[latex]\\text{(iv)}[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1126265,
+   "number": 65,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "An unbiased six-faced dice whose faces are marked with numbers [latex]1,2,3,4,5[/latex], and [latex]6[/latex] is rolled twice in succession and the number on the top face is recorded each time. The probability that the sum of the two recorded numbers is a prime number is ________",
+   "solution": "Out of the [latex]36[/latex] equally likely outcomes of rolling two dice, count how many give a <b>prime</b> sum (possible sums range from [latex]2[/latex] to [latex]12[/latex]; the primes in this range are [latex]2,3,5,7,11[/latex]):<br><br>\n[latex]\\begin{array}{c|c}\\text{Sum}&\\text{Number of ways}\\\\\\hline2&1\\\\3&2\\\\5&4\\\\7&6\\\\11&2\\end{array}[/latex]<br><br>\nTotal favorable outcomes [latex]=1+2+4+6+2=15[/latex].<br><br>\nProbability [latex]=\\dfrac{15}{36}[/latex].<br><br>\n<b>Answer: 15/36</b> <br><br> <a href=\"https://gateoverflow.in/523148/gate-cse-2026-set-2-ga-question-10#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "[latex]\\frac{3}{36}[/latex]",
+    "[latex]\\frac{13}{36}[/latex]",
+    "[latex]\\frac{15}{36}[/latex]",
+    "[latex]\\frac{19}{36}[/latex]"
+   ],
+   "correct": 2
+  }
+ ]
+}

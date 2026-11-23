@@ -1,0 +1,137 @@
+{
+ "meta": {
+  "quizId": 11242,
+  "quizName": "GATE CSE 2024 SET-2",
+  "pageTitle": "GATE CSE 2024 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 8,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124236,
+   "number": 36,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider a multi-threaded program with two threads T1 and T2. The threads share\ntwo semaphores: s1 (initialized to 1) and s2 (initialized to 0). The threads also\nshare a global variable x (initialized to 0). The threads execute the code shown\nbelow.<pre><code>\n// code of T1\nwait(s1);\nx = x+1;\nprint(x);\nwait(s2);\nsignal(s1);\n\n// code of T2\nwait(s1);\nx = x+1;\nprint(x);\nsignal(s2);\nsignal(s1);</pre></code>\nWhich of the following outcomes is/are possible when threads T1 and T2 execute\nconcurrently?",
+   "solution": "s1 works as a mutex, so whichever thread gets s1 first runs its part first.<br><br>\n<b>T1 first:</b> wait(s1), x = 1, print 1, then wait(s2) blocks (s2 = 0) <i>while holding s1</i>. T2 blocks on wait(s1) [latex]\\rightarrow[/latex] <b>deadlock</b>, only \"1\" printed. So option 3 is possible and option 1 is not.<br><br>\n<b>T2 first:</b> wait(s1), x = 1, print 1, signal(s2), signal(s1). Then T1: x = 2, print 2, wait(s2) succeeds, signal(s1). So option 2 is possible; T2 never blocks, so option 4 is not.<br><br>\n<b>Answer: Options 2 and 3</b><br><br><a href=\"https://gateoverflow.in/422861/gate-cse-2024-set-2-question-36#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Process Synchronization",
+   "tag2_url": "https://practicepaper.in/gate-cse/process-synchronization",
+   "options": [
+    "T1 runs first and prints 1, T2 runs next and prints 2",
+    "T2 runs first and prints 1, T1 runs next and prints 2",
+    "T1 runs first and prints 1, T2 does not print anything (deadlock)",
+    "T2 runs first and prints 1, T1 does not print anything (deadlock)"
+   ],
+   "correctSet": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1124237,
+   "number": 37,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Let [latex]A[/latex]  be an [latex] n \\times n[/latex]  matrix over the set of all real numbers [latex]R[/latex]. Let [latex]B[/latex]  be a matrix obtained from [latex]A[/latex] by swapping two rows. Which of the following statements is/are TRUE?",
+   "solution": "Checking each statement:<br>- Swapping two rows changes the sign of the determinant: [latex]\\det B=-\\det A[/latex] [latex]\\text{---}[/latex] TRUE.<br>\n- So [latex]\\det A\\ne0\\Rightarrow\\det B\\ne0[/latex]: B is invertible [latex]\\text{---}[/latex] TRUE.<br>\n- [latex]A=\\begin{bmatrix}1&2\\\\2&3\\end{bmatrix}[/latex] is symmetric, but [latex]B=\\begin{bmatrix}2&3\\\\1&2\\end{bmatrix}[/latex] is not [latex]\\text{---}[/latex] FALSE.<br>\n- [latex]A=\\begin{bmatrix}0&1\\\\0&0\\end{bmatrix}[/latex] has trace 0, but [latex]B=\\begin{bmatrix}0&0\\\\0&1\\end{bmatrix}[/latex] has trace 1 [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: Options 1 and 2</b><br><br><a href=\"https://gateoverflow.in/422860/gate-cse-2024-set-2-question-37#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "The determinant of [latex]B[/latex] is the negative of the determinant of [latex]A[/latex]",
+    "If [latex]A[/latex] is invertible, then [latex]B[/latex] is also invertible",
+    "If [latex]A[/latex] is symmetric, then [latex]B[/latex] is also symmetric",
+    "If the trace of [latex]A[/latex] is zero, then the trace of [latex]B[/latex] is also zero"
+   ],
+   "correctSet": [
+    0,
+    1
+   ]
+  },
+  {
+   "id": 1124238,
+   "number": 38,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Let S1 and S2 be two stacks. S1 has capacity of 4 elements. S2 has capacity of\n2 elements. S1 already has 4 elements: 100, 200, 300, and 400, whereas S2 is\nempty, as shown below.<br><br>\n[latex]\n\\begin{array}{|c|}\n\\hline  400 (Top)  \\\\\n\\hline  300 \\\\\n\\hline  200\\\\\n\\hline  100 \\\\\n\\hline\n\\end{array}[/latex]<br>Stack S1\n<br>\n<br>\n[latex]\n\\begin{array}{|c|}\n\\hline    \\\\\n\\hline    \\\\\n\\hline\n\\end{array}[/latex]<br>Stack S2\n<br><br>\nOnly the following three operations are available:<br>\n<br>PushToS2: Pop the top element from S1 and push it on S2.\n<br>PushToS1: Pop the top element from S2 and push it on S1.\n<br>GenerateOutput: Pop the top element from S1 and output it to the\nuser.<br><br>\nNote that the pop operation is not allowed on an empty stack and the push operation\nis not allowed on a full stack.\n<br><br>Which of the following output sequences can be generated by using the above\noperations?",
+   "solution": "S1 = 100, 200, 300, 400 (top). S2 can hold only 2 elements.<br><br>\n- <b>100, 200, 400, 300:</b> to output 100 first, 400, 300, 200 (3 elements) must go to S2 [latex]\\text{---}[/latex] impossible.<br>\n- <b>200, 300, 400, 100:</b> move 400, 300 to S2; output 200; move 300 back, output 300; move 400 back, output 400; output 100 True<br>\n- <b>400, 200, 100, 300:</b> output 400; move 300 to S2; output 200, 100; move 300 back, output 300 True<br>\n- <b>300, 200, 400, 100:</b> move 400 to S2; output 300, 200; move 400 back, output 400; output 100 True<br><br>\n<b>Answer: Options 2, 3 and 4</b><br><br><a href=\"https://gateoverflow.in/422859/gate-cse-2024-set-2-question-38#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Stack",
+   "tag2_url": "https://practicepaper.in/gate-cse/stack",
+   "options": [
+    "100, 200, 400, 300",
+    "200, 300, 400, 100",
+    "400, 200, 100, 300",
+    "300, 200, 400, 100"
+   ],
+   "correctSet": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1124239,
+   "number": 39,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Which of the following is/are EQUAL to 224 in radix-5 (i.e., base-5) notation?",
+   "solution": "[latex](224)_5=2\\times25+2\\times5+4=64[/latex]<br><br>\n- [latex](64)_{10}=64[/latex] True<br>\n- [latex](100)_8=64[/latex] True<br>\n- [latex](50)_{16}=80[/latex] False<br>\n- [latex](121)_7=49+14+1=64[/latex] True<br><br>\n<b>Answer: 64 in radix-10, 100 in radix-8, 121 in radix-7</b><br><br><a href=\"https://gateoverflow.in/422858/gate-cse-2024-set-2-question-39#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "options": [
+    "64 in radix-10",
+    "100 in radix-8",
+    "50 in radix-16",
+    "121 in radix-7"
+   ],
+   "correctSet": [
+    0,
+    1,
+    3
+   ]
+  },
+  {
+   "id": 1124240,
+   "number": 40,
+   "type": "MSQ",
+   "marks": 2,
+   "text": "Consider 4-variable functions [latex] f 1, f 2, f 3, f 4 [/latex] expressed in sum-of-minterms form as given below.\n<br> [latex]\n\\begin{aligned}\n& f 1=\\sum(0,2,3,5,7,8,11,13) \\\\\n& f 2=\\sum(1,3,5,7,11,13,15) \\\\\n& f 3=\\sum(0,1,4,11) \\\\\n& f 4=\\sum(0,2,6,13)\n\\end{aligned}\n [/latex] <br>\n<br><img src=\"/wp-content/uploads/GATE/CS/20242/q40.webp\" /><br>\nWith respect to the circuit given above, which of the following options is/are CORRECT?",
+   "solution": "Compute the AND, OR and XOR outputs as minterm sets:<br>- AND: [latex]f_1\\cdot f_2[/latex] = common minterms = [latex]\\{3,5,7,11,13\\}[/latex]<br>\n- OR: [latex]f_3+f_4=\\{0,1,4,11\\}\\cup\\{0,2,6,13\\}=\\{0,1,2,4,6,11,13\\}[/latex]<br>\n- XOR keeps minterms present in exactly one of them: [latex]\\{3,5,7\\}\\cup\\{0,1,2,4,6\\}[/latex]; 11 and 13 are in both, so they drop.<br><br>\n[latex]Y=\\Sigma(0,1,2,3,4,5,6,7)=\\Pi(8,9,10,11,12,13,14,15)[/latex] (i.e. [latex]Y=\\bar A[/latex]).<br><br>\n<b>Answer: [latex]Y=\\Sigma(0,\\ldots,7)[/latex] and [latex]Y=\\Pi(8,\\ldots,15)[/latex]</b><br><br><a href=\"https://gateoverflow.in/422857/gate-cse-2024-set-2-question-40#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Combinational Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/combinational-circuit",
+   "options": [
+    "[latex]\\boldsymbol{Y}=\\sum(0,1,2,11,13)[/latex] ",
+    " [latex]\\boldsymbol{Y}=\\Pi(3,4,5,6,7,8,9,10,12,14,15)[/latex] ",
+    " [latex]\\boldsymbol{Y}=\\sum(0,1,2,3,4,5,6,7)[/latex] ",
+    " [latex]\\boldsymbol{Y}=\\Pi(8,9,10,11,12,13,14,15)[/latex] "
+   ],
+   "correctSet": [
+    2,
+    3
+   ]
+  }
+ ]
+}

@@ -1,0 +1,131 @@
+{
+ "meta": {
+  "quizId": 11241,
+  "quizName": "GATE CSE 2024 SET-1",
+  "pageTitle": "GATE CSE 2024 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 3,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124111,
+   "number": 11,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "In a B+ tree, the requirement of at least half-full (50%) node occupancy is relaxed\nfor which one of the following cases?",
+   "solution": "In a B+ tree of order [latex]m[/latex], every node (internal or leaf) must be at least half full [latex]\\text{---}[/latex] <b>except the root</b>.<br><br>\nThe root can have as few as 2 children (or just 1 key if it is a leaf), otherwise a small tree could never be built.<br><br>\n<b>Answer: Only the root node</b><br><br><a href=\"https://gateoverflow.in/422831/gate-cse-2024-set-1-question-11#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "B plus Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/b-plus-tree",
+   "options": [
+    "Only the root node",
+    "All leaf nodes",
+    "All internal nodes",
+    "Only the leftmost leaf node"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1124112,
+   "number": 12,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following statements about a relation R in first normal form (1NF)\nis/are TRUE ?",
+   "solution": "1NF only requires every attribute value to be <b>atomic</b> (no multi-valued or composite attributes).<br><br>\n- R can have a multi-attribute key [latex]\\text{---}[/latex] TRUE (e.g. key (roll_no, course_id)). This is about keys, not about values.<br>\n- R cannot have a foreign key [latex]\\text{---}[/latex] FALSE, 1NF puts no restriction on foreign keys.<br>\n- R cannot have a composite attribute [latex]\\text{---}[/latex] TRUE, a composite attribute is non-atomic and must be split into simple attributes.<br>\n- R cannot have more than one candidate key [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: R can have a multi-attribute key; R cannot have a composite attribute</b><br><br><a href=\"https://gateoverflow.in/422830/gate-cse-2024-set-1-question-12#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Normal Form",
+   "tag2_url": "https://practicepaper.in/gate-cse/normal-form",
+   "options": [
+    "R can have a multi-attribute key",
+    "R cannot have a foreign key",
+    "R cannot have a composite attribute",
+    "R cannot have more than one candidate key"
+   ],
+   "correctSet": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": 1124113,
+   "number": 13,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Let [latex]L_1, L_2 [/latex] be two regular languages and [latex]L_3 [/latex] a language which is not regular. Which of the following statements is/are always TRUE?",
+   "solution": "Checking each statement:<br>- [latex]L_1\\cap\\overline{L_2}=\\phi[/latex] only means [latex]L_1\\subseteq L_2[/latex]. Equality also needs [latex]L_2\\subseteq L_1[/latex] [latex]\\text{---}[/latex] FALSE.<br>\n- [latex]L_1\\cup L_3[/latex] can be regular: take [latex]L_1=\\Sigma^*[/latex], then [latex]L_1\\cup L_3=\\Sigma^*[/latex] [latex]\\text{---}[/latex] FALSE (not always).<br>\n- If [latex]\\overline{L_3}[/latex] were regular, then its complement [latex]L_3[/latex] would be regular (closure under complement). So [latex]\\overline{L_3}[/latex] is not regular [latex]\\text{---}[/latex] TRUE.<br>\n- Regular languages are closed under complement and union, so [latex]\\overline{L_1}\\cup\\overline{L_2}[/latex] is regular [latex]\\text{---}[/latex] TRUE.<br><br>\n<b>Answer: [latex]\\overline{L_3}[/latex] is not regular; [latex]\\overline{L_1}\\cup\\overline{L_2}[/latex] is regular</b><br><br><a href=\"https://gateoverflow.in/422829/gate-cse-2024-set-1-question-13#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Regular Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/regular-language",
+   "options": [
+    "[latex]L_1=L_2 [/latex] if and only if [latex]L_1 \\cap \\overline{L_2}=\\phi [/latex]",
+    "[latex]L_1 \\cup L_3 [/latex] is not regular",
+    "[latex]\\overline{L_3} [/latex] is not regular",
+    "[latex]\\overline{L_1} \\cup \\overline{L_2} [/latex] is regular"
+   ],
+   "correctSet": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1124114,
+   "number": 14,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following statements about threads is/are TRUE?",
+   "solution": "Checking each statement:<br>- Threads can also be implemented in user space (user-level threads) [latex]\\text{---}[/latex] FALSE.<br>\n- The file descriptor table belongs to the process and is shared by all its threads [latex]\\text{---}[/latex] FALSE.<br>\n- Every thread has its own stack (and registers, PC) [latex]\\text{---}[/latex] FALSE.<br>\n- Threads share the same address space, so one thread can read/overwrite another thread's data; there is no protection between them [latex]\\text{---}[/latex] TRUE.<br><br>\n<b>Answer: Threads belonging to a process are by default not protected from each other</b><br><br><a href=\"https://gateoverflow.in/422828/gate-cse-2024-set-1-question-14#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Thread",
+   "tag2_url": "https://practicepaper.in/gate-cse/thread",
+   "options": [
+    "Threads can only be implemented in kernel space",
+    "Each thread has its own file descriptor table for open files",
+    "All the threads belonging to a process share a common stack",
+    "Threads belonging to a process are by default not protected from each other"
+   ],
+   "correctSet": [
+    3
+   ]
+  },
+  {
+   "id": 1124115,
+   "number": 15,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following process state transitions is/are NOT possible?",
+   "solution": "Checking each statement:<br>- Running [latex]\\rightarrow[/latex] Ready: possible (preemption / time slice over).<br>\n- <b>Waiting [latex]\\rightarrow[/latex] Running: NOT possible.</b> When the I/O finishes, the process goes to Ready; only the scheduler can move it to Running.<br>\n- <b>Ready [latex]\\rightarrow[/latex] Waiting: NOT possible.</b> A process can block (request I/O) only while it is running.<br>\n- Running [latex]\\rightarrow[/latex] Terminated: possible (exit).<br><br>\n<b>Answer: Waiting to Running, Ready to Waiting</b><br><br><a href=\"https://gateoverflow.in/422827/gate-cse-2024-set-1-question-15#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Process",
+   "tag2_url": "https://practicepaper.in/gate-cse/process",
+   "options": [
+    "Running to Ready",
+    "Waiting to Running",
+    "Ready to Waiting",
+    "Running to Terminated"
+   ],
+   "correctSet": [
+    1,
+    2
+   ]
+  }
+ ]
+}

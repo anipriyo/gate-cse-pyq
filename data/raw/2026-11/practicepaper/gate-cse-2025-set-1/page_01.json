@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11251,
+  "quizName": "GATE CSE 2025 SET-1",
+  "pageTitle": "GATE CSE 2025 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 1,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2025-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1125101,
+   "number": 1,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Suppose a program is running on a non-pipelined single processor computer system. The computer is connected to an external device that can interrupt the processor asynchronously. The processor needs to execute the interrupt service routine (ISR) to serve this interrupt. The following steps (not necessarily in order) are taken by the processor when the interrupt arrives:\n<br><br>\n     (i) The processor saves the content of the program counter.\n     <br>(ii) The program counter is loaded with the start address of the ISR.\n     <br>(iii) The processor finishes the present instruction.\n<br><br>\nWhich ONE of the following is the CORRECT sequence of steps?",
+   "solution": "On an asynchronous interrupt, the processor must first reach a clean state before it can safely switch control:<br><br>\n1. <b>(iii) The processor finishes the present instruction</b> &mdash; interrupts are only serviced at instruction boundaries, never mid-instruction.<br>\n2. <b>(i) The processor saves the content of the program counter</b> &mdash; so execution can later resume exactly where it left off.<br>\n3. <b>(ii) The program counter is loaded with the start address of the ISR</b> &mdash; only now does control actually transfer to the ISR.<br><br>\n<b>Answer: (iii), (i), (ii)</b><br><br><a href=\"https://gateoverflow.in/460080/gate-cse-2025-set-1-question-1#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Interrupt",
+   "tag2_url": "https://practicepaper.in/gate-cse/interrupt",
+   "options": [
+    "(iii), (i), (ii)",
+    "(i), (iii), (ii)",
+    "(i), (ii), (iii)",
+    "(iii), (ii), (i)"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1125102,
+   "number": 2,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which ONE of the following statements is FALSE regarding the symbol table?",
+   "solution": "Checking each statement about the symbol table:<br><br>\n- It tracks variable scope &mdash; true, this is one of its core jobs.<br>\n- It can be implemented using a BST &mdash; true, BSTs (or hash tables) are standard implementations.<br>\n- It is created during lexical analysis &mdash; true, entries are typically first added as identifiers are tokenized.<br>\n- <b>\"Symbol table is not required after the parsing phase\"</b> &mdash; <b>FALSE</b>. The symbol table is essential well beyond parsing: semantic analysis (type checking), intermediate code generation, and code optimization (e.g. register allocation) all continue to rely on it.<br><br>\n<b>Answer: \"Symbol table is not required after the parsing phase\" is FALSE.</b><br><br><a href=\"https://gateoverflow.in/460079/gate-cse-2025-set-1-question-2#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Lexical Analysis",
+   "tag2_url": "https://practicepaper.in/gate-cse/lexical-analysis",
+   "options": [
+    "Symbol table is responsible for keeping track of the scope of variables.",
+    "Symbol table can be implemented using a binary search tree.",
+    "Symbol table is not required after the parsing phase.",
+    "Symbol table is created during the lexical analysis phase."
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1125103,
+   "number": 3,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which ONE of the following techniques used in compiler code optimization uses live variable analysis?",
+   "solution": "Live variable analysis determines, at each point in the program, which variables' current values might still be used later (i.e. are \"live\"). This information is exactly what's needed to decide which variables are worth keeping in fast registers versus which can be safely evicted &mdash; that's the core of <b>register allocation/assignment</b>.<br><br>\nRun-time function call management, strength reduction, and constant folding are all real optimizations, but none of them fundamentally depend on liveness information the way register allocation does.<br><br>\n<b>Answer: Register assignment to variables</b><br><br><a href=\"https://gateoverflow.in/460077/gate-cse-2025-set-1-question-3#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Intermediate Code Generation",
+   "tag2_url": "https://practicepaper.in/gate-cse/intermediate-code-generation",
+   "options": [
+    "Run-time function call management",
+    "Register assignment to variables",
+    "Strength reduction",
+    "Constant folding"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1125104,
+   "number": 4,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider a demand paging memory management system with 32-bit logical address, 20-bit physical address, and page size of 2048 bytes. Assuming that the memory is byte addressable, what is the maximum number of entries in the page table?",
+   "solution": "Page size [latex]=2048=2^{11}[/latex] bytes, so the page <b>offset</b> field needs [latex]11[/latex] bits.<br><br>\nWith a [latex]32[/latex]-bit logical address, the remaining bits form the <b>page number</b>: [latex]32-11=21[/latex] bits.<br><br>\nThe page table needs one entry per possible page number, so the maximum number of entries [latex]=2^{21}[/latex].<br><br>\n<b>Answer: [latex]2^{21}[/latex]</b><br><br><a href=\"https://gateoverflow.in/460076/gate-cse-2025-set-1-question-4#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "options": [
+    "[latex]2^{21}[/latex]",
+    "[latex]2^{20}[/latex]",
+    "[latex]2^{22}[/latex]",
+    "[latex]2^{24}[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1125105,
+   "number": 5,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "A schedule of three database transactions [latex]T_1[/latex], [latex]T_2[/latex], and [latex]T_3[/latex] is shown. [latex]R_i(A)[/latex] and [latex]W_i(A)[/latex] denote read and write of data item [latex]A[/latex] by transaction [latex]T_i[/latex], [latex]i = 1, 2, 3[/latex]. The transaction [latex]T_1[/latex] aborts at the end. Which other transaction(s) will be required to be rolled back?\n<br><br> [latex] R_1(X) \\quad W_1(Y) \\quad R_2(X) \\quad R_2(Y) \\quad R_3(Y) \\quad ABORT(T_1)[/latex]",
+   "solution": "Schedule: [latex]R_1(X)\\ W_1(Y)\\ R_2(X)\\ R_2(Y)\\ R_3(Y)\\ \\text{ABORT}(T_1)[/latex].<br><br>\n[latex]T_1[/latex] writes [latex]Y[/latex] before aborting. Any transaction that subsequently <b>read</b> that (now-invalid) value of [latex]Y[/latex] has read \"dirty\" data and must be cascade-rolled-back:<br>\n- [latex]T_2[/latex] executes [latex]R_2(Y)[/latex] <i>after</i> [latex]W_1(Y)[/latex] &mdash; it read [latex]T_1[/latex]'s uncommitted write. [latex]T_2[/latex] must roll back.<br>\n- [latex]T_3[/latex] executes [latex]R_3(Y)[/latex] afterward too. Since no one else wrote [latex]Y[/latex] in between (only [latex]T_2[/latex] read it, without writing), [latex]T_3[/latex] also reads [latex]T_1[/latex]'s dirty value. [latex]T_3[/latex] must roll back as well.<br><br>\n<b>Answer: Both T2 and T3</b><br><br><a href=\"https://gateoverflow.in/460075/gate-cse-2025-set-1-question-5#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Transaction",
+   "tag2_url": "https://practicepaper.in/gate-cse/transaction",
+   "options": [
+    "Only [latex]T_2[/latex]",
+    "Only [latex]T_3[/latex]",
+    "Both [latex]T_2[/latex] and [latex]T_3[/latex]",
+    "Neither [latex]T_2[/latex] nor [latex]T_3[/latex]"
+   ],
+   "correct": 2
+  }
+ ]
+}

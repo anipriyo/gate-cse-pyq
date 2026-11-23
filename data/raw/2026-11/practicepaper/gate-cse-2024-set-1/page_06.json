@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11241,
+  "quizName": "GATE CSE 2024 SET-1",
+  "pageTitle": "GATE CSE 2024 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 6,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124126,
+   "number": 26,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a network path [latex]\\mathrm{P}-\\mathrm{Q}-\\mathrm{R} [/latex] between nodes [latex]\\mathrm{P} [/latex] and [latex]\\mathrm{R} [/latex] via router [latex]\\mathrm{Q} [/latex]. Node [latex]\\mathrm{P} [/latex] sends a file of size [latex]10^6 [/latex] bytes to [latex]R [/latex] via this path by splitting the file into chunks of [latex]10^3 [/latex] bytes each. Node [latex]P [/latex] sends these chunks one after the other without any wait time between the successive chunk transmissions. Assume that the size of extra headers added to these chunks is negligible, and that the chunk size is less than the MTU.\n<br>\nEach of the links [latex]\\mathrm{P}-\\mathrm{Q} [/latex] and [latex]\\mathrm{Q}-\\mathrm{R} [/latex] has a bandwidth of [latex]10^6 \\mathrm{bits} / \\mathrm{sec} [/latex], and negligible propagation latency. Router [latex]Q [/latex] immediately transmits every packet it receives from [latex]P [/latex] to [latex]R [/latex], with negligible processing and queueing delays. Router [latex]Q [/latex] can simultaneously receive on link [latex]P-Q [/latex] and transmit on [latex]\\operatorname{link} Q-R [/latex].\n<br>\nAssume P starts transmitting the chunks at time [latex]t=0 [/latex].\nWhich one of the following options gives the time (in seconds, rounded off to 3 decimal places) at which [latex]\\mathrm{R} [/latex] receives all the chunks of the file?",
+   "solution": "Number of chunks [latex]=10^6/10^3=1000[/latex]. Each chunk [latex]=8000[/latex] bits, so transmission time on a link [latex]=\\frac{8000}{10^6}=8[/latex] ms.<br><br>\nP sends the chunks back to back: the last chunk is fully sent by P at [latex]1000\\times8\\text{ ms}=8[/latex] s.<br>\nQ forwards each chunk while receiving the next, so only the last chunk adds one more transmission of 8 ms on Q-R.<br><br>\nTotal [latex]=8+0.008=8.008[/latex] s.<br><br>\n<b>Answer: 8.008</b><br><br><a href=\"https://gateoverflow.in/422816/gate-cse-2024-set-1-question-26#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "options": [
+    "8",
+    "8.008",
+    "15.992",
+    "16"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1124127,
+   "number": 27,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following syntax-directed definition (SDD).<br><br>[latex]\n\\begin{array}{|l|l|}\n\\hline S \\rightarrow  DHTU & \\{ S.val = D.val + H.val + T.val + U.val; \\} \\\\\n\\hline D \\rightarrow \"M\"D_1 &  \\{ D.val =5+D_1 . val; \\} \\\\\n\\hline D \\rightarrow \\epsilon  & \\{ D.val =-5 ;\\} \\\\\n\\hline H \\rightarrow \"L\" H_1 & \\{ H.val =5 * 10+H_1 . val; \\} \\\\\n\\hline H \\rightarrow \\epsilon  &  \\{ H.val =-10 ;\\} \\\\\n\\hline T \\rightarrow  \"C\"  T_1  &  \\{T . v a l=5 * 100+T_1 . val; \\} \\\\\n\\hline T \\rightarrow \\epsilon  &  \\{T . v a l=-5 ;\\}  \\\\\n\\hline U \\rightarrow  \"K\" &  \\{  U.val =5 ;\\}  \\\\\n\\hline\n\\end{array}\n[/latex]<br><br>\nGiven \"MMLK\" as the input, which one of the following options is the CORRECT value computed by the SDD (in the attribute S.val)?",
+   "solution": "Input \"MMLK\" [latex]\\Rightarrow[/latex] D = \"MM\", H = \"L\", T = [latex]\\epsilon[/latex], U = \"K\".<br><br>\n- [latex]D[/latex]: [latex]5+5+(-5)=5[/latex]<br>\n- [latex]H[/latex]: [latex]5*10+(-10)=40[/latex]<br>\n- [latex]T=\\epsilon[/latex]: [latex]-5[/latex]<br>\n- [latex]U[/latex]: [latex]5[/latex]<br><br>\n[latex]S.val=5+40-5+5=45[/latex]<br><br>\n<b>Answer: 45</b><br><br><a href=\"https://gateoverflow.in/422815/gate-cse-2024-set-1-question-27#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Syntax-directed Translation",
+   "tag2_url": "https://practicepaper.in/gate-cse/syntax-directed-translation",
+   "options": [
+    "45",
+    "50",
+    "55",
+    "65"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1124128,
+   "number": 28,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following grammar [latex]G [/latex], with [latex]S [/latex] as the start symbol. The grammar [latex]G [/latex] has three incomplete productions denoted by (1), (2), and (3).<br><br>\n[latex]\n\\begin{aligned}\n& S \\rightarrow d a T \\mid \\quad(1) \\\\\n& T \\rightarrow a S|b T|(2) \\\\\n& R \\rightarrow \\text { (3) } \\mid \\epsilon\n\\end{aligned}\n [/latex]\n<br><br>\nThe set of terminals is [latex]\\{a, b, c, d, f\\} [/latex]. The FIRST and FOLLOW sets of the different non-terminals are as follows.<br><br>\n[latex]\n\\begin{aligned}\n& \\operatorname{FIRST}(S)=\\{c, d, f\\}, \\operatorname{FIRST}(T)=\\{a, b, \\epsilon\\}, \\operatorname{FIRST}(R)=\\{c, \\epsilon\\} \\\\\n& \\operatorname{FOLLOW}(S)=\\operatorname{FOLLOW}(T)=\\{c, f, \\$\\}, \\operatorname{FOLLOW}(R)=\\{f\\}\n\\end{aligned}\n [/latex]\n<br><br>\nWhich one of the following options CORRECTLY fills in the incomplete productions?",
+   "solution": "Use the given FIRST and FOLLOW sets:<br>- [latex]FIRST(S)=\\{c,d,f\\}[/latex] but [latex]daT[/latex] gives only d, so (1) must give c and f. [latex]S\\rightarrow Rf[/latex] gives [latex](FIRST(R)-\\epsilon)\\cup\\{f\\}=\\{c,f\\}[/latex] True ([latex]S\\rightarrow fR[/latex] gives only f).<br>\n- [latex]\\epsilon\\in FIRST(T)[/latex], so (2) is [latex]T\\rightarrow\\epsilon[/latex].<br>\n- [latex]FIRST(R)=\\{c,\\epsilon\\}[/latex], so (3) starts with c.<br><br>\nCheck FOLLOW with [latex]R\\rightarrow cTR[/latex]: [latex]FOLLOW(T)\\supseteq FIRST(R)-\\epsilon=\\{c\\}[/latex] and [latex]FOLLOW(R)=\\{f\\}[/latex] (from [latex]S\\rightarrow Rf[/latex]); together with $ this gives [latex]FOLLOW(S)=FOLLOW(T)=\\{c,f,\\$\\}[/latex] True. With [latex]R\\rightarrow cR[/latex], c could never follow T.<br><br>\n<b>Answer: (1) [latex]S\\rightarrow Rf[/latex] (2) [latex]T\\rightarrow\\epsilon[/latex] (3) [latex]R\\rightarrow cTR[/latex]</b><br><br><a href=\"https://gateoverflow.in/422814/gate-cse-2024-set-1-question-28#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Parsing",
+   "tag2_url": "https://practicepaper.in/gate-cse/parsing",
+   "options": [
+    "(1) [latex]S \\rightarrow R f [/latex]\n(2) [latex]T \\rightarrow \\epsilon [/latex]\n(3) [latex]R \\rightarrow c T R [/latex]",
+    "(1) [latex]S \\rightarrow f R [/latex]\n(2) [latex]T \\rightarrow \\epsilon [/latex]\n(3) [latex]R \\rightarrow c T R [/latex]",
+    "(1) [latex]S \\rightarrow f R [/latex]\n(2) [latex]T \\rightarrow c T [/latex]\n(3) [latex]R \\rightarrow c R [/latex]",
+    "(1) [latex]S \\rightarrow R f [/latex]\n(2) [latex]T \\rightarrow c T [/latex]\n(3) [latex]R \\rightarrow c R [/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1124129,
+   "number": 29,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following pseudo-code.<br>[latex]\n\\begin{array}{ll}\nL 1: & t 1=-1 \\\\\nL 2: & t 2=0 \\\\\nL 3: & t 3=0 \\\\\nL 4: & t 4=4 * t 3 \\\\\nL 5: & t 5=4 * t 2 \\\\\nL 6: & t 6=t 5 * M \\\\\nL 7: & t 7=t 4+t 6 \\\\\nL 8: & t 8=a[t 7] \\\\\nL 9: & if \\; t 8 \\lt = max  \\; goto  \\; L 11 \\\\\nL 10: & t 1=t 8 \\\\\nL 11: & t 3=t 3+1 \\\\\nL 12: & if  \\; t 3 \\lt M  \\;  goto L 4 \\\\\nL 13: & t 2=t 2+1 \\\\\nL 14: & if  \\; t 2 \\lt N  \\; goto  \\; L 3 \\\\\nL 15: & max =t 1\n\\end{array}\n[/latex]<br>\nWhich of of the following options CORRECTLY specifies the number of basic blocks and the number of instructions in the largest basic block, respectively?",
+   "solution": "<b>Leaders:</b> first instruction (L1), targets of jumps (L3, L4, L11) and instructions right after a conditional jump (L10, L13, L15).<br><br>\nBasic blocks:<br>\n- B1: L1-L2 (2)<br>\n- B2: L3 (1)<br>\n- B3: L4-L9 (6)<br>\n- B4: L10 (1)<br>\n- B5: L11-L12 (2)<br>\n- B6: L13-L14 (2)<br>\n- B7: L15 (1)<br><br>\n7 basic blocks; the largest (B3) has 6 instructions.<br><br>\n<b>Answer: 7 and 6</b><br><br><a href=\"https://gateoverflow.in/422813/gate-cse-2024-set-1-question-29#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Intermediate Code Generation",
+   "tag2_url": "https://practicepaper.in/gate-cse/intermediate-code-generation",
+   "options": [
+    "6 and 6",
+    "6 and 7",
+    "7 and 7",
+    "7 and 6"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1124130,
+   "number": 30,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following two threads [latex]\\mathrm{T} 1 [/latex] and [latex]\\mathrm{T} 2 [/latex] that update two shared variables [latex]\\mathrm{a} [/latex] and [latex]\\mathrm{b} [/latex]. Assume that initially [latex]\\mathrm{a}=\\mathrm{b}=1 [/latex]. Though context switching between threads can happen at any time, each statement of [latex]\\mathrm{T} 1 [/latex] or [latex]\\mathrm{T} 2 [/latex] is executed atomically without interruption.<br><br>\n[latex]\n\\begin{array}{cc}\n\\mathrm{T} 1 & \\mathrm{~T} 2 \\\\\n\\mathrm{a}=\\mathrm{a}+1 ; & \\mathrm{b}=2*\\mathrm{b} ; \\\\\n\\mathrm{b}=\\mathrm{b}+1 ; & \\mathrm{a}=2*\\mathrm{a} ;\n\\end{array}\n [/latex]\n<br><br>\nWhich one of the following options lists all the possible combinations of values of [latex]\\mathrm{a} [/latex] and [latex]\\mathrm{b} [/latex] after both [latex]\\mathrm{T} 1 [/latex] and [latex]\\mathrm{T} 2 [/latex] finish execution?",
+   "solution": "Final a depends only on which a-update runs first; final b only on which b-update runs first.<br>\n- a: [latex](1+1)\\times2=4[/latex] if T1's update is first, [latex]2\\times1+1=3[/latex] otherwise.<br>\n- b: [latex](1+1)\\times2=4[/latex] if T1's update is first, [latex]3[/latex] otherwise.<br><br>\n- T1 then T2: (4, 4). T2 then T1: (3, 3).<br>\n- T1: a=a+1, T2: b=2b, T2: a=2a, T1: b=b+1 [latex]\\rightarrow[/latex] (4, 3).<br>\n- (3, 4) is impossible: it needs T2's a-update before T1's a-update and T1's b-update before T2's b-update. But in program order T1 does a before b and T2 does b before a, so this creates a cycle.<br><br>\n<b>Answer: (a=4, b=4); (a=3, b=3); (a=4, b=3)</b><br><br><a href=\"https://gateoverflow.in/422812/gate-cse-2024-set-1-question-30#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Process Synchronization",
+   "tag2_url": "https://practicepaper.in/gate-cse/process-synchronization",
+   "options": [
+    "(a=4, b=4) ;(a=3, b=3) ;(a=4, b=3) ",
+    "(a=3, b=4) ;(a=4, b=3) ;(a=3, b=3) ",
+    "(a=4, b=4) ;(a=4, b=3) ;(a=3, b=4) ",
+    "(a=2, b=2) ;(a=2, b=3) ;(a=3, b=4)"
+   ],
+   "correct": 0
+  }
+ ]
+}

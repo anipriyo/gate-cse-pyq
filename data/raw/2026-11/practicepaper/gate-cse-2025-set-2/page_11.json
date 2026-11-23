@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11252,
+  "quizName": "GATE CSE 2025 SET-2",
+  "pageTitle": "GATE CSE 2025 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 11,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2025-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1125251,
+   "number": 51,
+   "type": "NAT",
+   "marks": 2,
+   "text": "An application executes [latex]6.4 \\times 10^8[/latex] number of instructions in 6.3 seconds. There are four types of instructions, the details of which are given in the table. The duration of a clock cycle in nanoseconds is _________. (rounded off to one decimal place)\n\n[latex] \\begin{array}{|c|c|c|}\n\\hline\n\\text{Instruction type} & \\text{Clock cycles required per instruction (CPI)} & \\text{Number of instructions executed} \\\\\n\\hline\n\\text{Branch} & 2 & 2.25 \\times 10^8 \\\\\n\\text{Load} & 5 & 1.20 \\times 10^8 \\\\\n\\text{Store} & 4 & 1.65 \\times 10^8 \\\\\n\\text{Arithmetic} & 3 & 1.30 \\times 10^8 \\\\\n\\hline\n\\end{array} [/latex]",
+   "solution": "Total clock cycles [latex]=\\sum(\\text{CPI}\\times\\text{count})[/latex]:<br>\n[latex]=2(2.25\\times10^8)+5(1.20\\times10^8)+4(1.65\\times10^8)+3(1.30\\times10^8)[/latex]<br>\n[latex]=4.5\\times10^8+6.0\\times10^8+6.6\\times10^8+3.9\\times10^8=21.0\\times10^8=2.1\\times10^9[/latex] cycles.<br><br>\nClock cycle duration [latex]=\\dfrac{\\text{total time}}{\\text{total cycles}}=\\dfrac{6.3\\text{ s}}{2.1\\times10^9}=3\\times10^{-9}\\text{ s}=3[/latex] ns.<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/460842/gate-cse-2025-set-2-question-51#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Machine Instruction",
+   "tag2_url": "https://practicepaper.in/gate-cse/machine-instruction",
+   "ansMin": 3,
+   "ansMax": 3
+  },
+  {
+   "id": 1125252,
+   "number": 52,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following C program:\n<pre><code>\n#include &lt;stdio.h&gt;\n\nint main(){\n    int a;\n    int arr[5] = {30,50,10};\n    int *ptr;\n    ptr = &arr[0] + 1;\n    a = *ptr;\n    (*ptr)++;\n    ptr++;\n    printf(\"%d\", a + (*ptr) + arr[1]);\n    return 0;\n}\n</code></pre>\nThe output of the above program is ___________. (Answer in integer)",
+   "solution": "[latex]\\text{arr}=\\{30,50,10,0,0\\}[/latex] (remaining elements zero-initialized, since at least one initializer was given).<br><br>\n[latex]\\text{ptr}=\\&\\text{arr[0]}+1[/latex] &rarr; points to [latex]\\text{arr[1]}=50[/latex].<br>\n[latex]a={*}\\text{ptr}[/latex] &rarr; [latex]a=50[/latex].<br>\n[latex]({*}\\text{ptr})++[/latex] &rarr; increments [latex]\\text{arr[1]}[/latex] from [latex]50[/latex] to [latex]51[/latex].<br>\n[latex]\\text{ptr}++[/latex] &rarr; now points to [latex]\\text{arr[2]}=10[/latex] (unaffected).<br><br>\n[latex]\\text{printf}[/latex] computes [latex]a+({*}\\text{ptr})+\\text{arr[1]}=50+10+51=111[/latex] (using [latex]\\text{arr[1]}[/latex]'s <i>updated</i> value [latex]51[/latex], since the increment already happened).<br><br>\n<b>Answer: 111</b><br><br><a href=\"https://gateoverflow.in/460841/gate-cse-2025-set-2-question-52#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Array and Pointer",
+   "tag2_url": "https://practicepaper.in/gate-cse/array-and-pointer",
+   "ansMin": 111,
+   "ansMax": 111
+  },
+  {
+   "id": 1125253,
+   "number": 53,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following C program:\n<pre><code>\n#include &lt;stdio.h&gt;\n\nint g(int n) {\n    return (n+10);\n}\n\nint f(int n) {\n    return g(n*2);\n}\n\nint main() {\n    int sum, n;\n    sum=0;\n    for (n=1; n<3; n++)\n        sum += g(f(n));\n    printf (\"%d\", sum);\n    return 0;\n}\n</code></pre>\nThe output of the given C program is ________. (Answer in integer)",
+   "solution": "[latex]g(n)=n+10[/latex], [latex]f(n)=g(n\\times2)=2n+10[/latex].<br><br>\nLoop [latex]n=1[/latex] to [latex]2[/latex]:<br>\n[latex]n{=}1[/latex]: [latex]f(1)=2(1)+10=12[/latex]; [latex]g(f(1))=g(12)=22[/latex]; [latex]\\text{sum}=0+22=22[/latex]<br>\n[latex]n{=}2[/latex]: [latex]f(2)=2(2)+10=14[/latex]; [latex]g(f(2))=g(14)=24[/latex]; [latex]\\text{sum}=22+24=46[/latex]<br><br>\n<b>Answer: 46</b><br><br><a href=\"https://gateoverflow.in/460840/gate-cse-2025-set-2-question-53#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "ansMin": 46,
+   "ansMax": 46
+  },
+  {
+   "id": 1125254,
+   "number": 54,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A quadratic polynomial [latex](x - \\alpha)(x - \\beta)[/latex] over complex numbers is said to be square invariant if [latex](x - \\alpha)(x - \\beta) = (x - \\alpha^2)(x - \\beta^2)[/latex]. Suppose from the set of all square invariant quadratic polynomials we choose one at random. <br><br>The probability that the roots of the chosen polynomial are equal is ______. (rounded off to one decimal place)",
+   "solution": "[latex](x-\\alpha)(x-\\beta)=(x-\\alpha^2)(x-\\beta^2)[/latex] for all [latex]x[/latex] means the root <i>sets</i> [latex]\\{\\alpha,\\beta\\}[/latex] and [latex]\\{\\alpha^2,\\beta^2\\}[/latex] must be identical (as unordered pairs). Two cases:<br><br>\n<b>Case 1 (each root is individually fixed by squaring):</b> [latex]\\alpha^2=\\alpha,\\ \\beta^2=\\beta[/latex], forcing each of [latex]\\alpha,\\beta[/latex] independently into [latex]\\{0,1\\}[/latex] (the only solutions of [latex]z^2=z[/latex]). This gives root-pairs [latex]\\{0,0\\},\\{1,1\\},\\{0,1\\}[/latex] ([latex]3[/latex] distinct polynomials, of which [latex]2[/latex]&mdash;[latex]\\{0,0\\}[/latex] and [latex]\\{1,1\\}[/latex]&mdash;have a <i>repeated</i> root).<br><br>\n<b>Case 2 (roots swap under squaring):</b> [latex]\\alpha^2=\\beta,\\ \\beta^2=\\alpha[/latex], giving [latex]\\alpha^4=\\alpha\\Rightarrow\\alpha(\\alpha^3-1)=0[/latex]. Besides the [latex]\\alpha=0,1[/latex] solutions already counted, this adds the genuinely new pair of primitive cube roots of unity [latex]\\{\\omega,\\omega^2\\}[/latex] (distinct, non-repeated roots).<br><br>\nSo there are [latex]4[/latex] distinct square-invariant polynomials total: [latex]\\{0,0\\},\\{1,1\\},\\{0,1\\},\\{\\omega,\\omega^2\\}[/latex], of which exactly [latex]2[/latex] ([latex]\\{0,0\\}[/latex] and [latex]\\{1,1\\}[/latex]) have equal (repeated) roots.<br><br>\nProbability [latex]=\\dfrac24=0.5[/latex]<br><br>\n<b>Answer: 0.5</b><br><br><a href=\"https://gateoverflow.in/460839/gate-cse-2025-set-2-question-54#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "ansMin": 0.5,
+   "ansMax": 0.5
+  },
+  {
+   "id": 1125255,
+   "number": 55,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The unit interval [latex](0, 1)[/latex] is divided at a point chosen uniformly distributed over [latex](0,1)[/latex] in [latex]\\mathbb{R}[/latex] into two disjoint subintervals. <br><br>The expected length of the subinterval that contains 0.4 is ___________. (rounded off to two decimal places)",
+   "solution": "Let [latex]U\\sim\\text{Uniform}(0,1)[/latex] be the split point. If [latex]U>0.4[/latex], the sub-interval containing [latex]0.4[/latex] is [latex](0,U)[/latex], with length [latex]U[/latex]. If [latex]U<0.4[/latex], the sub-interval containing [latex]0.4[/latex] is [latex](U,1)[/latex], with length [latex]1-U[/latex].<br><br>\n[latex]E[\\text{length}]=\\displaystyle\\int_0^{0.4}(1-u)\\,du+\\int_{0.4}^1u\\,du[/latex]<br>\n[latex]=\\Big[u-\\tfrac{u^2}2\\Big]_0^{0.4}+\\Big[\\tfrac{u^2}2\\Big]_{0.4}^1=(0.4-0.08)+(0.5-0.08)=0.32+0.42=0.74[/latex]<br><br>\n<b>Answer: 0.74</b><br><br><a href=\"https://gateoverflow.in/460838/gate-cse-2025-set-2-question-55#a_list\" target=\"_blank\">Click here for detail solution</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "ansMin": 0.7,
+   "ansMax": 0.8
+  }
+ ]
+}

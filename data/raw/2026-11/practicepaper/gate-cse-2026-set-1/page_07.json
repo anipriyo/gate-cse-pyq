@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11261,
+  "quizName": "GATE CSE 2026 SET-1",
+  "pageTitle": "GATE CSE 2026 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 7,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2026-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1126131,
+   "number": 31,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let [latex]G(V, E)[/latex] be an undirected, edge-weighted graph with integer weights. The weight of a path is the sum of the weights of the edges in that path. The length of a path is the number of edges in that path. <br><br>Let [latex]s \\in V[/latex] be a vertex in [latex]G[/latex]. For every [latex]u \\in V[/latex] and for every [latex]k \\geq 0[/latex], let [latex]d_{k}(u)[/latex] denote the weight of a shortest path (in terms of weight) from [latex]s[/latex] to [latex]u[/latex] of length at most [latex]k[/latex]. If there is no path from [latex]s[/latex] to [latex]u[/latex] of length at most [latex]k[/latex], then [latex]d_{k}(u)=\\infty[/latex]. <br><br>Consider the statements: <br><br>S1: For every [latex]k \\geq 0[/latex] and [latex]u \\in V, d_{k+1}(u) \\leq d_{k}(u)[/latex]. <br><br>S2: For every [latex](u, v) \\in E[/latex], if [latex](u, v)[/latex] is part of a shortest path (in terms of weight) from [latex]s[/latex] to [latex]v[/latex], then for every [latex]k \\geq 0, d_{k}(u) \\leq d_{k}(v)[/latex]. <br><br>Which one of the following options is correct?",
+   "solution": "[latex]d_k(u)[/latex] is the shortest-path weight from [latex]s[/latex] to [latex]u[/latex] using <b>at most [latex]k[/latex] edges</b> &mdash; this is exactly the quantity computed by the Bellman-Ford relaxation process after [latex]k[/latex] rounds.<br><br>\n<b>S1:</b> [latex]d_{k+1}(u)\\le d_k(u)[/latex] &mdash; allowing one extra edge of \"budget\" can only give access to more paths (a path of length [latex]\\le k[/latex] is also a path of length [latex]\\le k+1[/latex]), so the shortest weight can only stay the same or decrease. <b>True</b>, always.<br><br>\n<b>S2:</b> Suppose [latex](u,v)[/latex] lies on a shortest path from [latex]s[/latex] to [latex]v[/latex]; then [latex]d(v)=d(u)+w(u,v)\\ge d(u)[/latex] in the limit, so eventually [latex]d_k(u)\\le d_k(v)[/latex] once [latex]k[/latex] is large enough. But for small [latex]k[/latex] this need not hold: it's possible that [latex]u[/latex] has not yet been reached with a short enough path (so [latex]d_k(u)=\\infty[/latex] is even bigger) or, more subtly, that a different, cheaper path of length [latex]\\le k[/latex] to [latex]v[/latex] exists that doesn't go through [latex]u[/latex] at all &mdash; the inequality can fail for some particular [latex]k[/latex] even though it eventually holds in the limit. So S2 is <b>not always true for every [latex]k[/latex]</b>.<br><br>\n<b>Answer: Only S1 is true.</b> <br><br> <a href=\"https://gateoverflow.in/523049/gate-cse-2026-set-1-question-31#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Shortest Path",
+   "tag2_url": "https://practicepaper.in/gate-cse/shortest-path",
+   "options": [
+    "Only [latex]\\text{S1}[/latex] is true",
+    "Only [latex]\\text{S2}[/latex] is true",
+    "Both [latex]\\text{S1}[/latex] and [latex]\\text{S2}[/latex] are true",
+    "Neither [latex]\\text{S1}[/latex] nor [latex]\\text{S2}[/latex] is true"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1126132,
+   "number": 32,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the control flow graph shown in the figure. <br><img src=\"/wp-content/uploads/GATE/CS/20261/q32.webp\"/><br>Which one of the following options correctly lists the set of redundant expressions (common subexpressions) in the basic blocks B[latex]4[/latex] and B[latex]5[/latex]?<br> Note: All the variables are integers.",
+   "solution": "This question is based on an accompanying control-flow-graph figure showing the statements inside basic blocks B4 and B5. A <b>redundant expression / common subexpression</b> is one that is computed more than once with the same operand values still holding (no intervening redefinition of any operand) at the second computation point, so the second computation could be eliminated and the previously-computed value reused.<br><br>\nWorking through the statements of B4, only the expression [latex]g*k[/latex] is recomputed later in the block with [latex]g[/latex] and [latex]k[/latex] unchanged in between &mdash; so it is the sole common subexpression there. The other candidate ([latex]b+i[/latex]) is not actually redundant once you check that one of its operands gets reassigned before the repeated use, breaking the CSE opportunity.<br><br>\nIn B5, tracing through similarly shows that the candidate [latex]c+m[/latex] is <i>not</i> a valid common subexpression, because one of its operands ([latex]c[/latex] or [latex]m[/latex]) is redefined between the two apparent uses &mdash; so B5 has no redundant expressions at all.<br><br>\n<b>Answer: B4 = {g*k}, B5 = { } (empty).</b> <br><br> <a href=\"https://gateoverflow.in/523048/gate-cse-2026-set-1-question-32#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Intermediate Code Generation",
+   "tag2_url": "https://practicepaper.in/gate-cse/intermediate-code-generation",
+   "options": [
+    "B4: [latex]\\{b+i\\}[/latex]               B5: [latex]\\{c+m\\}[/latex]",
+    "B4: [latex]\\{g * k\\}[/latex]             B5: [latex]\\{c+m\\}[/latex]",
+    "B4: [latex]\\{g * k, b+i\\}[/latex]      B5:[latex]\\{[/latex] [latex]\\}[/latex]",
+    "B4: [latex]\\{g * k\\}[/latex]             B5:[latex]\\{[/latex] [latex]\\}[/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1126133,
+   "number": 33,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a relational database schema with two relations [latex]R(P, Q)[/latex] and [latex]S(X, Y)[/latex]. Let [latex]E=\\{\\langle u\\rangle \\mid \\exists v \\exists w\\langle u, v\\rangle \\in R \\wedge\\langle v, w\\rangle \\in S\\}[/latex] be a tuple relational calculus expression.<br> Which one of the following relational algebraic expressions is equivalent to [latex]E[/latex] ?",
+   "solution": "The calculus expression [latex]E=\\{\\langle u\\rangle \\mid \\exists v\\,\\exists w\\,\\langle u,v\\rangle\\in R \\wedge \\langle v,w\\rangle\\in S\\}[/latex] asks for all [latex]u[/latex] such that some tuple [latex]\\langle u,v\\rangle[/latex] is in [latex]R[/latex] <i>and</i> that same [latex]v[/latex] appears as the first component of some tuple [latex]\\langle v,w\\rangle[/latex] in [latex]S[/latex].<br><br>\nThis is a natural join of [latex]R[/latex] and [latex]S[/latex] where [latex]R[/latex]'s second attribute ([latex]Q[/latex], which plays the role of [latex]v[/latex]) matches [latex]S[/latex]'s first attribute ([latex]X[/latex], which also plays the role of [latex]v[/latex]): join condition [latex]R.Q=S.X[/latex]. After joining, we only want the value of [latex]u[/latex], i.e. project onto [latex]P[/latex].<br><br>\nSo [latex]E\\equiv\\Pi_P\\big(S\\bowtie_{S.X=R.Q}R\\big)[/latex] (the join is symmetric, so writing [latex]S[/latex] first or [latex]R[/latex] first with the same condition gives the same relation).<br><br>\n<b>Answer: [latex]\\Pi_P\\left(S\\bowtie_{S.X=R.Q}R\\right)[/latex]</b> <br><br> <a href=\"https://gateoverflow.in/523047/gate-cse-2026-set-1-question-33#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Tuple Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/tuple-calculus",
+   "options": [
+    "[latex]\\Pi_{P}\\left(R \\bowtie_{R . P=S . X} S\\right)[/latex]",
+    "[latex]\\Pi_{P}\\left(S \\bowtie_{S . X=R . Q} R\\right)[/latex]",
+    "[latex]\\Pi_{P}\\left(R \\bowtie_{R . P=S . Y} S\\right)[/latex]",
+    "[latex]\\Pi_{P}\\left(S \\bowtie_{S . Y=R . Q} R\\right)[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1126134,
+   "number": 34,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A TCP sender successfully establishes a connection with a TCP receiver and starts the transmission of segments. The TCP congestion control mechanism's slow-start threshold is set to [latex]10000[/latex] segments. Assume that the round-trip time is fixed at [latex]1[/latex] millisecond. Assume that the sender always has data to send, the segments are numbered from [latex]1[/latex], and no segment is lost. Let [latex]t[/latex] denote the time (in milliseconds) at which the transmission of segment number [latex]2000[/latex] starts. <br><br>Which one of the following options is correct?",
+   "solution": "In slow start, the congestion window (in segments) doubles every RTT, starting from [latex]1[/latex] segment, as long as it stays below the threshold ([latex]10000[/latex], which is far above anything we'll reach here).<br><br>\n[latex]\\begin{array}{c|c|c}\\text{RTT (start time, ms)}&\\text{cwnd (segments sent)}&\\text{Segment numbers sent}\\\\\\hline0&1&1\\\\1&2&2\\text{-}3\\\\2&4&4\\text{-}7\\\\3&8&8\\text{-}15\\\\4&16&16\\text{-}31\\\\5&32&32\\text{-}63\\\\6&64&64\\text{-}127\\\\7&128&128\\text{-}255\\\\8&256&256\\text{-}511\\\\9&512&512\\text{-}1023\\\\10&1024&1024\\text{-}2047\\end{array}[/latex]<br><br>\nSegment number [latex]2000[/latex] falls in the batch sent starting at time [latex]t=10[/latex]ms (the [latex]1024[/latex]-[latex]2047[/latex] range).<br><br>\n<b>Answer: [latex]10\\le t<11[/latex]</b> <br><br> <a href=\"https://gateoverflow.in/523046/gate-cse-2026-set-1-question-34#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Transport Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/transport-layer-protocol",
+   "options": [
+    "[latex]9 \\leq t < 10[/latex]",
+    "[latex]10 \\leq t < 11[/latex]",
+    "[latex]11 \\leq t < 12[/latex]",
+    "[latex]12 \\leq t < 13[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1126135,
+   "number": 35,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the implementation of sliding window protocol over a lossless link, with a window size of [latex]W[/latex] frames, where each frame is of size [latex]1000[/latex] bits (including header). The bandwidth of the link is [latex]100 {kbps}\\left(1 {k}=10^{3}\\right)[/latex] and the one-way propagation delay is [latex]100[/latex] milliseconds. Assume that processing times at the sender and receiver are zero and the transmission time of acknowledgements is also zero. Which one of the following options gives the minimum size of [latex]W[/latex] (in number of frames) required to achieve [latex]100\\%[/latex] link utilization?",
+   "solution": "Transmission time [latex]T_t=\\dfrac{\\text{frame size}}{\\text{bandwidth}}=\\dfrac{1000\\text{ bits}}{100\\times10^3\\text{ bps}}=10[/latex] ms.<br><br>\nFor [latex]100\\%[/latex] link utilization with a sliding window, the sender must be able to keep transmitting continuously until the acknowledgement of the very first frame returns, which takes [latex]T_t+2T_p[/latex] (one-way propagation to receiver, plus one-way for the ack to come back, plus zero processing/ack-transmission time).<br><br>\nSo we need: [latex]W\\cdot T_t\\ge T_t+2T_p\\;\\Rightarrow\\;W\\ge1+\\dfrac{2T_p}{T_t}=1+\\dfrac{2\\times100}{10}=1+20=21[/latex].<br><br>\n<b>Answer: 21</b> <br><br> <a href=\"https://gateoverflow.in/523045/gate-cse-2026-set-1-question-35#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "options": [
+    "10",
+    "21",
+    "20",
+    "11"
+   ],
+   "correct": 1
+  }
+ ]
+}

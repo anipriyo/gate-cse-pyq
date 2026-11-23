@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11212,
+  "quizName": "GATE CSE 2021 SET 2",
+  "pageTitle": "GATE CSE 2021 SET-2",
+  "timeLimit": 0,
+  "pageNo": 12,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2021-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1121256,
+   "number": 56,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Gauri said that she can play the keyboard __________ her sister.",
+   "solution": "The correct comparison phrase is \"<b>as well as</b>\" (as + adverb + as). \"As better as\", \"as nicest as\" and \"as worse as\" are ungrammatical.<br><br>\n<b>Answer: as well as</b><br><br><a href=\"https://gateoverflow.in/357549/gate-cse-2021-set-2-ga-question-1#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "as well as",
+    "as better as",
+    "as nicest as",
+    "as worse as"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1121257,
+   "number": 57,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "<br><img src=\"/wp-content/uploads/GATE/CS/20212/q57a.jpg\" /><br>A transparent square sheet shown above is folded along the dotted line. The folded sheet will look like ___________<br><img src=\"/wp-content/uploads/GATE/CS/20212/q57b.jpg\" /><br>",
+   "solution": "The sheet is transparent, so folding the left half over the dotted line puts the <b>mirror image</b> of the left drawing on top of the right half.<br><br>\nThe rising curve on the left reflects into a falling curve that meets the existing curve at the fold, making a closed lens. The two small vertical ticks on the left reflect and join the two horizontal dashes, giving the step-shaped marks inside the lens. Only option B shows this.<br><br>\n<b>Answer: B</b><br><br><a href=\"https://gateoverflow.in/357548/gate-cse-2021-set-2-ga-question-2#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1121258,
+   "number": 58,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "If [latex]\\theta[/latex] is the angle, in degrees, between the longest diagonal of the cube and any one of the edges of the cube, then, [latex]\\cos \\theta =[/latex]",
+   "solution": "For a cube of side a, the long diagonal is (a, a, a) with length [latex]a\\sqrt3[/latex]. An edge along the x-axis is (a, 0, 0).<br><br>\n[latex]\\cos\\theta=\\frac{a\\cdot a}{a\\cdot a\\sqrt3}=\\frac{1}{\\sqrt3}[/latex]<br><br>\n<b>Answer: [latex]\\frac{1}{\\sqrt3}[/latex]</b><br><br><a href=\"https://gateoverflow.in/357547/gate-cse-2021-set-2-ga-question-3#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "[latex]\\frac{1}{2}[/latex]",
+    "[latex]\\frac{1}{\\sqrt{3}}[/latex]",
+    "[latex]\\frac{1}{\\sqrt{2}}[/latex]",
+    "[latex]\\frac{\\sqrt{3}}{2}[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1121259,
+   "number": 59,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "If [latex]\\left( x - \\dfrac{1}{2} \\right)^2 - \\left( x- \\dfrac{3}{2} \\right) ^2 = x+2[/latex], then the value of [latex]x[/latex] is:",
+   "solution": "Difference of squares: [latex](x-\\tfrac12)^2-(x-\\tfrac32)^2=\\left[(x-\\tfrac12)-(x-\\tfrac32)\\right]\\left[(x-\\tfrac12)+(x-\\tfrac32)\\right]=1\\cdot(2x-2)[/latex]<br><br>\n[latex]2x-2=x+2\\Rightarrow x=4[/latex]<br><br>\n<b>Answer: 4</b><br><br><a href=\"https://gateoverflow.in/357546/gate-cse-2021-set-2-ga-question-4#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "2",
+    "4",
+    "6",
+    "8"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1121260,
+   "number": 60,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Pen : Write :: Knife :  _______<br><br>\nWhich one of the following options maintains a similar logical relation in the above?",
+   "solution": "A pen is used to <b>write</b>; a knife is used to <b>cut</b> (tool : its function).<br><br>\n<b>Answer: Cut</b><br><br><a href=\"https://gateoverflow.in/357545/gate-cse-2021-set-2-ga-question-5#a_list_title\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "Vegetables",
+    "Sharp",
+    "Cut",
+    "Blunt"
+   ],
+   "correct": 2
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11181,
+  "quizName": "GATE CS 2018",
+  "pageTitle": "GATE CSE 2018",
+  "timeLimit": 0,
+  "pageNo": 12,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2018",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1118156,
+   "number": 56,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "\"From where are they bringing their books? _______ bringing _______ books from ________\"\n<br><br>\nThe words that best fill the blanks in the above sentence are",
+   "solution": "\"<b>They're</b> (they are) bringing <b>their</b> (belonging to them) books from <b>there</b> (that place).\"<br><br>\n<b>Answer: They're, their, there</b><br><br><a href=\"https://gateoverflow.in/204062/gate-cse-2018-question-ga-1#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "Their, they're, there",
+    "They're, their, there",
+    "There, their, they're",
+    "They're, there,there"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1118157,
+   "number": 57,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "A ________ investigation can sometimes yield new facts, but typically organized ones are more successful.\n<br><br>\nThe word that best fills the blank in the above sentence is",
+   "solution": "The contrast is with \"organized\" investigations, so the blank needs an unorganized, wandering kind: <b>meandering</b>.<br><br>\n<b>Answer: meandering</b><br><br><a href=\"https://gateoverflow.in/204063/gate-cse-2018-question-ga-2#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "meandering",
+    "timely",
+    "consistent",
+    "systematic"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1118158,
+   "number": 58,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The area of a square is [latex]d[/latex]. What is the area of the circle which has the diagonal of the square as its diameter?",
+   "solution": "Side s with [latex]s^2=d[/latex]. Diagonal = [latex]s\\sqrt2[/latex], so the circle's radius is [latex]\\frac{s}{\\sqrt2}[/latex].<br>\nArea = [latex]\\pi\\frac{s^2}{2}=\\frac12\\pi d[/latex]<br><br>\n<b>Answer: [latex]\\frac12\\pi d[/latex]</b><br><br><a href=\"https://gateoverflow.in/204064/gate-cse-2018-question-ga-3#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "[latex]\\pi d[/latex]",
+    "[latex]\\pi d^2[/latex]",
+    "[latex]\\frac{1}{4} \\pi d^2[/latex]",
+    "[latex]\\frac{1}{2} \\pi d[/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1118159,
+   "number": 59,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "What would be the smallest natural number which when divided either by 20 or by 42\nor by 76 leaves a remainder of 7 in each case?",
+   "solution": "LCM(20, 42, 76) = [latex]2^2\\times3\\times5\\times7\\times19=7980[/latex]. Remainder 7 in each case: 7980 + 7 = 7987.<br><br>\n<b>Answer: 7987</b><br><br><a href=\"https://gateoverflow.in/204065/gate-cse-2018-question-ga-4#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "3047",
+    "6047",
+    "7987",
+    "63847"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1118160,
+   "number": 60,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "What is the missing number in the following sequence?<br> 2, 12, 60, 240, 720, 1440,  _____ ,0",
+   "solution": "Each term is multiplied by 6, 5, 4, 3, 2, 1, 0 in turn: 2 [latex]\\times[/latex] 6 = 12, [latex]\\times[/latex] 5 = 60, [latex]\\times[/latex] 4 = 240, [latex]\\times[/latex] 3 = 720, [latex]\\times[/latex] 2 = 1440, [latex]\\times[/latex] 1 = <b>1440</b>, [latex]\\times[/latex] 0 = 0.<br><br>\n<b>Answer: 1440</b><br><br><a href=\"https://gateoverflow.in/204066/gate-cse-2018-question-ga-5#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "2880",
+    "1440",
+    "720",
+    "0"
+   ],
+   "correct": 1
+  }
+ ]
+}

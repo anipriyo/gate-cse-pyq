@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11242,
+  "quizName": "GATE CSE 2024 SET-2",
+  "pageTitle": "GATE CSE 2024 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 1,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124201,
+   "number": 1,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider  a  computer  with  a  4  MHz  processor.  Its  DMA  controller  can  transfer 8 bytes in 1 cycle from a device to main memory through cycle stealing at regular intervals. Which one of the following is the data transfer rate (in bits per second) of the DMA controller if 1% of the processor cycles are used for DMA?",
+   "solution": "Cycles used by DMA per second [latex]=1\\%\\times4\\times10^6=4\\times10^4[/latex].<br>\nEach cycle moves 8 bytes = 64 bits.<br><br>\nRate [latex]=4\\times10^4\\times64=2.56\\times10^6[/latex] bits/s = 25,60,000 bps<br><br>\n<b>Answer: 25,60,000</b><br><br><a href=\"https://gateoverflow.in/422896/gate-cse-2024-set-2-question-1#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "IO Interface",
+   "tag2_url": "https://practicepaper.in/gate-cse/io-interface",
+   "options": [
+    "2,56,000",
+    "3,200",
+    "25,60,000",
+    "32,000"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1124202,
+   "number": 2,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let [latex] p [/latex] and [latex] q [/latex] be the following propositions:<br><br>\n[latex] p [/latex] : Fail grade can be given.<br>\n[latex] q [/latex] : Student scores more than [latex] 50 \\% [/latex] marks.\n<br><br>\nConsider the statement: \"Fail grade cannot be given when student scores more than [latex] 50 \\% [/latex] marks.\"\n<br>\nWhich one of the following is the CORRECT representation of the above statement in propositional logic?",
+   "solution": "\"Fail grade cannot be given <b>when</b> student scores more than 50%\" means: if [latex]q[/latex] (scores [latex]\\gt[/latex] 50%) then not [latex]p[/latex] (fail cannot be given).<br><br>\n[latex]q\\rightarrow\\neg p[/latex]<br><br>\n<b>Answer: [latex]q\\rightarrow\\neg p[/latex]</b><br><br><a href=\"https://gateoverflow.in/422895/gate-cse-2024-set-2-question-2#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Propositional Logic",
+   "tag2_url": "https://practicepaper.in/gate-cse/propositional-logic",
+   "options": [
+    "[latex]  q \\rightarrow \\neg p [/latex]",
+    "[latex]  q \\rightarrow p [/latex]",
+    "[latex]  p \\rightarrow q [/latex]",
+    "[latex] \\neg p \\rightarrow q [/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1124203,
+   "number": 3,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following C program. Assume parameters to a function are evaluated\nfrom right to left.<pre><code>\n#include &lt;stdio.h&gt;\nint g(int p) { printf(\"%d\", p); return p; }\nint h(int q) { printf(\"%d\", q); return q; }\nvoid f(int x, int y) {\ng(x);\nh(y);\n}\nint main() {\nf(g(10),h(20));\n}</code></pre>\nWhich one of the following options is the CORRECT output of the above\nC program?",
+   "solution": "Arguments of f are evaluated right to left:<br>\n- h(20) first [latex]\\rightarrow[/latex] prints <b>20</b><br>\n- then g(10) [latex]\\rightarrow[/latex] prints <b>10</b><br><br>\nInside f(10, 20):<br>\n- g(x) [latex]\\rightarrow[/latex] prints <b>10</b><br>\n- h(y) [latex]\\rightarrow[/latex] prints <b>20</b><br><br>\nOutput: 20101020<br><br>\n<b>Answer: 20101020</b><br><br><a href=\"https://gateoverflow.in/422894/gate-cse-2024-set-2-question-3#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "options": [
+    "20101020",
+    "10202010",
+    "20102010",
+    "10201020"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1124204,
+   "number": 4,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The format of a single-precision floating-point number as per the\nIEEE 754 standard is:    <br><img src=\"/wp-content/uploads/GATE/CS/20242/q4.webp\" /><br>Choose the largest floating-point number among the following options.<br><img src=\"/wp-content/uploads/GATE/CS/20242/q4a.webp\" /><br>",
+   "solution": "In IEEE 754, an exponent of all 1s (255) is reserved for [latex]\\infty[/latex]/NaN.<br><br>\n- (A): exponent 127 [latex]\\rightarrow[/latex] [latex]1.11\\ldots1\\times2^{0}\\approx2[/latex]<br>\n- (B): exponent [latex]11111110=254[/latex] [latex]\\rightarrow[/latex] [latex]1.11\\ldots1\\times2^{127}\\approx2^{128}[/latex], the largest finite number<br>\n- (C): exponent 255 with non-zero mantissa [latex]\\rightarrow[/latex] <b>NaN</b>, not a number at all<br>\n- (D): [latex]1.0\\times2^0=1[/latex]<br><br>\n<b>Answer: B</b><br><br><a href=\"https://gateoverflow.in/422893/gate-cse-2024-set-2-question-4#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1124205,
+   "number": 5,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let [latex] T(n) [/latex] be the recurrence relation defined as follows:\n<br> [latex]\n\\begin{aligned}\n& T(0)=1, \\\\\n& T(1)=2, \\text { and } \\\\\n& T(n)=5 T(n-1)-6 T(n-2) \\text { for } n \\geq 2\n\\end{aligned}\n [/latex] <br>\n\nWhich one of the following statements is TRUE?",
+   "solution": "Characteristic equation: [latex]r^2-5r+6=0\\Rightarrow r=2,3[/latex].<br>\n[latex]T(n)=\\alpha2^n+\\beta3^n[/latex]<br><br>\n[latex]T(0)=1:\\ \\alpha+\\beta=1[/latex]<br>\n[latex]T(1)=2:\\ 2\\alpha+3\\beta=2[/latex]<br>\n[latex]\\Rightarrow[/latex] [latex]\\beta=0,\\ \\alpha=1[/latex], so [latex]T(n)=2^n[/latex] (check: [latex]T(2)=10-6=4[/latex] True).<br><br>\n<b>Answer: [latex]T(n)=\\Theta(2^n)[/latex]</b><br><br><a href=\"https://gateoverflow.in/422892/gate-cse-2024-set-2-question-5#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Recurrence Relation",
+   "tag2_url": "https://practicepaper.in/gate-cse/recurrence-relation",
+   "options": [
+    "[latex] T(n)=\\Theta\\left(2^n\\right)  [/latex]",
+    "[latex] T(n)=\\Theta\\left(n 2^n\\right)  [/latex]",
+    "[latex] T(n)=\\Theta\\left(3^n\\right)  [/latex]",
+    "[latex] T(n)=\\Theta\\left(n 3^n\\right)[/latex]"
+   ],
+   "correct": 0
+  }
+ ]
+}

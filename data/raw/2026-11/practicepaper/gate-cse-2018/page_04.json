@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11181,
+  "quizName": "GATE CS 2018",
+  "pageTitle": "GATE CSE 2018",
+  "timeLimit": 0,
+  "pageNo": 4,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2018",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1118116,
+   "number": 16,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The value of [latex]\\int_{0}^{\\frac{\\pi }{4}}x\\cos (x^{2})dx[/latex] correct to three decimal places\n(assuming that [latex]\\pi[/latex]  = 3.14 ) is",
+   "solution": "Substitute [latex]u=x^2[/latex], [latex]du=2x\\,dx[/latex]:<br>\n[latex]\\int_0^{\\pi/4}x\\cos(x^2)dx=\\frac12\\sin(x^2)\\Big|_0^{\\pi/4}=\\frac12\\sin\\left(\\frac{\\pi^2}{16}\\right)=\\frac12\\sin(0.616)\\approx\\frac12(0.578)\\approx0.289[/latex]<br><br>\n<b>Answer: 0.289</b><br><br><a href=\"https://gateoverflow.in/204090/gate2018-16#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "ansMin": 0.27,
+   "ansMax": 0.3
+  },
+  {
+   "id": 1118117,
+   "number": 17,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider a matrix [latex]A=uv^{T}\\; where \\; u=\\begin{bmatrix} 1\\\\ 2 \\end{bmatrix},v=\\begin{bmatrix} 1\\\\ 1 \\end{bmatrix}[/latex]  Note that [latex]v^{T}[/latex]  denotes the transpose of v. The largest eigenvalue of A is _____.",
+   "solution": "[latex]A=uv^T[/latex] has rank 1. [latex]Au=u(v^Tu)[/latex], so u is an eigenvector with eigenvalue [latex]v^Tu=1+2=3[/latex]; the other eigenvalue is 0.<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/204091/gate2018-17#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "ansMin": 3,
+   "ansMax": 3
+  },
+  {
+   "id": 1118118,
+   "number": 18,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The chromatic number of the following graph is _______.  <br> <img src=\"/wp-content/uploads/GATE/CS/2018/q18.jpg\" />",
+   "solution": "a, b, c form a triangle, so at least 3 colours are needed. A 3-colouring: a = 1, b = 2, c = 3, e = 2, d = 1, f = 3 (check: every edge has different colours).<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/204092/gate2018-18#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "ansMin": 3,
+   "ansMax": 3
+  },
+  {
+   "id": 1118119,
+   "number": 19,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Let G be a finite group on 84 elements. The size of a largest possible proper subgroup of G is ________.",
+   "solution": "By Lagrange's theorem the order of a subgroup divides 84. The largest proper divisor of 84 is 42 (index 2).<br><br>\n<b>Answer: 42</b><br><br><a href=\"https://gateoverflow.in/204093/gate2018-19#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Group Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/group-theory",
+   "ansMin": 42,
+   "ansMax": 42
+  },
+  {
+   "id": 1118120,
+   "number": 20,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The postorder traversal of a binary tree is 8,9,6,7,4,5,2,3,1. The inorder traversal of the same tree is 8,6,9,4,7,2,5,1,3. The height of a tree is the length of the longest path from the root to any leaf. The height of the binary tree above is ______.",
+   "solution": "Postorder ends with 1 [latex]\\rightarrow[/latex] root 1. Inorder splits into left {8, 6, 9, 4, 7, 2, 5} and right {3}.<br>\n- Left subtree: root 2 (last in its postorder), with left {8, 6, 9, 4, 7} and right {5}.<br>\n- {8, 6, 9, 4, 7}: root 4, left {8, 6, 9} (root 6 with children 8, 9), right {7}.<br><br>\nLongest path: 1 [latex]\\rightarrow[/latex] 2 [latex]\\rightarrow[/latex] 4 [latex]\\rightarrow[/latex] 6 [latex]\\rightarrow[/latex] 8 = 4 edges.<br><br>\n<b>Answer: 4</b><br><br><a href=\"https://gateoverflow.in/204094/gate2018-20#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-tree",
+   "ansMin": 4,
+   "ansMax": 4
+  }
+ ]
+}

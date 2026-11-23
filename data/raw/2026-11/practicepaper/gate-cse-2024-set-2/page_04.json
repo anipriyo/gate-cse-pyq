@@ -1,0 +1,136 @@
+{
+ "meta": {
+  "quizId": 11242,
+  "quizName": "GATE CSE 2024 SET-2",
+  "pageTitle": "GATE CSE 2024 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 4,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124216,
+   "number": 16,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following file organizations is/are I/O efficient for the scan operation in DBMS?",
+   "solution": "A scan reads every record of the file.<br><br>\n- <b>Heap</b> and <b>sorted</b> files store records packed in consecutive pages, so each page is read once [latex]\\text{---}[/latex] I/O efficient.<br>\n- Unclustered tree / hash index: following the index, records are scattered in random pages; the same page may be read many times (about one I/O per record) [latex]\\text{---}[/latex] not efficient for a scan.<br><br>\n<b>Answer: Sorted, Heap</b><br><br><a href=\"https://gateoverflow.in/422881/gate-cse-2024-set-2-question-16#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "File System",
+   "tag2_url": "https://practicepaper.in/gate-cse/file-system",
+   "options": [
+    "Sorted",
+    "Heap",
+    "Unclustered tree index",
+    "Unclustered hash index"
+   ],
+   "correctSet": [
+    0,
+    1
+   ]
+  },
+  {
+   "id": 1124217,
+   "number": 17,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following statements about the Two Phase Locking (2PL) protocol is/are TRUE?",
+   "solution": "Checking each statement:<br>- 2PL guarantees conflict serializability, so it permits only serializable schedules [latex]\\text{---}[/latex] TRUE.<br>\n- Locking just before each operation and releasing just after violates 2PL (a release followed by a new lock) [latex]\\text{---}[/latex] FALSE.<br>\n- Growing phase then shrinking phase: once a lock is released, no new lock can be acquired [latex]\\text{---}[/latex] TRUE (definition).<br>\n- Deadlock is possible: T1 locks A, T2 locks B, then each waits for the other [latex]\\text{---}[/latex] TRUE.<br><br>\n<b>Answer: Options 1, 3 and 4</b><br><br><a href=\"https://gateoverflow.in/422880/gate-cse-2024-set-2-question-17#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Transaction",
+   "tag2_url": "https://practicepaper.in/gate-cse/transaction",
+   "options": [
+    "2PL permits only serializable schedules",
+    "With 2PL, a transaction always locks the data item being read or written just before every operation and always releases the lock just after the operation",
+    "With 2PL, once a lock is released on any data item inside a transaction, no more locks on any data item can be obtained inside that transaction",
+    "A deadlock is possible with 2PL"
+   ],
+   "correctSet": [
+    0,
+    2,
+    3
+   ]
+  },
+  {
+   "id": 1124218,
+   "number": 18,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following statements about IPv4 fragmentation is/are TRUE?",
+   "solution": "Recall the IPv4 fragmentation rules:<br>- In IPv4, <b>any router</b> whose outgoing link MTU is smaller than the datagram can fragment it (not only the source).<br>\n- Fragments may take different routes, so <b>reassembly is done only at the destination</b>.<br><br>\n<b>Answer: Options 2 and 3</b><br><br><a href=\"https://gateoverflow.in/422879/gate-cse-2024-set-2-question-18#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Transport Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/transport-layer-protocol",
+   "options": [
+    "The fragmentation of an IP datagram is performed only at the source of the datagram",
+    "The fragmentation of an IP datagram is performed at any IP router which finds that the size of the datagram to be transmitted exceeds the MTU",
+    "The reassembly of fragments is performed only at the destination of the datagram",
+    "The reassembly of fragments is performed at all intermediate routers along the path from the source to the destination"
+   ],
+   "correctSet": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1124219,
+   "number": 19,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "Which of the following statements is/are FALSE?",
+   "solution": "Checking each statement:<br>- An attribute grammar is an SDD whose semantic rules have no side effects [latex]\\text{---}[/latex] TRUE (definition).<br>\n- <b>\"L-attributed definitions cannot always be evaluated in depth-first order\"</b> [latex]\\text{---}[/latex] FALSE. Every L-attributed definition can be evaluated by a left-to-right depth-first traversal; that is why they are called L-attributed.<br>\n- Synthesized attributes can be evaluated by a bottom-up parser during reductions [latex]\\text{---}[/latex] TRUE.<br>\n- <b>\"All L-attributed definitions based on LR(1) grammars can be evaluated bottom-up\"</b> [latex]\\text{---}[/latex] FALSE. The marker non-terminal method is guaranteed only for L-attributed definitions on LL(1) grammars; adding markers can make an LR(1) grammar non-LR.<br><br>\n<b>Answer: Options 2 and 4</b><br><br><a href=\"https://gateoverflow.in/422878/gate-cse-2024-set-2-question-19#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Syntax-directed Translation",
+   "tag2_url": "https://practicepaper.in/gate-cse/syntax-directed-translation",
+   "options": [
+    "An attribute grammar is a syntax-directed definition (SDD) in which the functions in the semantic rules have no side effects",
+    "The attributes in a L-attributed definition cannot always be evaluated in a depth- first order",
+    "Synthesized attributes can be evaluated by a bottom-up parser as the input is parsed",
+    "All  L-attributed  definitions  based  on  LR(1)  grammar  can  be  evaluated  using  a bottom-up parsing strategy"
+   ],
+   "correctSet": [
+    1,
+    3
+   ]
+  },
+  {
+   "id": 1124220,
+   "number": 20,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "For a Boolean variable [latex]x[/latex], which of the following statements is/are FALSE?",
+   "solution": "Checking each statement:<br>- [latex]x\\cdot1=x[/latex] [latex]\\text{---}[/latex] TRUE (identity).<br>\n- [latex]x+1=x[/latex] [latex]\\text{---}[/latex] <b>FALSE</b>, since [latex]x+1=1[/latex].<br>\n- [latex]x\\cdot x=0[/latex] [latex]\\text{---}[/latex] <b>FALSE</b>, since [latex]x\\cdot x=x[/latex] (idempotence).<br>\n- [latex]x+\\bar{x}=1[/latex] [latex]\\text{---}[/latex] TRUE (complement).<br><br>\n<b>Answer: [latex]x+1=x[/latex] and [latex]x.x=0[/latex]</b><br><br><a href=\"https://gateoverflow.in/422877/gate-cse-2024-set-2-question-20#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "options": [
+    "[latex]x.1 = x[/latex]",
+    "[latex]x+1 = x[/latex]",
+    "[latex]x.x= 0[/latex] ",
+    "[latex]x+\\bar{x}= 1[/latex] "
+   ],
+   "correctSet": [
+    1,
+    2
+   ]
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+{
+ "meta": {
+  "quizId": 11261,
+  "quizName": "GATE CSE 2026 SET-1",
+  "pageTitle": "GATE CSE 2026 SET-1 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 5,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2026-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1126121,
+   "number": 21,
+   "type": "MSQ",
+   "marks": 1,
+   "text": "In the context of relational database normalization, which of the following statements is/are true?",
+   "solution": "Standard relational-normalization theory results:<br><br>\n- <b>3NF:</b> It is a classical theorem that <i>every</i> relation schema has a dependency-preserving (and lossless-join) decomposition into 3NF, via the synthesis algorithm on a minimal cover of the FDs. <b>True.</b><br>\n- <b>1NF:</b> 1NF only requires atomic domains; a relation can always trivially satisfy/preserve 1NF without needing to give up any functional dependency (no decomposition is even forced). <b>True.</b><br>\n- <b>BCNF:</b> It is a well-known counterexample-backed result that a dependency-preserving BCNF decomposition is <i>not always</i> possible &mdash; achieving BCNF can force us to lose some functional dependency (they can only be checked by joining relations back together, which is expensive/impossible to enforce locally). <b>True</b> (i.e., \"not always possible\" is a true statement).<br>\n- <b>2NF:</b> Since a dependency-preserving 3NF decomposition always exists, and 3NF automatically implies 2NF, a dependency-preserving 2NF decomposition is <i>always</i> achievable too. So \"it is not always possible to get a dependency-preserving 2NF decomposition\" is <b>false</b>.<br><br>\n<b>Answer: Dependency-preserving decompositions always exist for 3NF and for 1NF; it is not always possible for BCNF.</b> <br><br> <a href=\"https://gateoverflow.in/523059/gate-cse-2026-set-1-question-21#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Normal Form",
+   "tag2_url": "https://practicepaper.in/gate-cse/normal-form",
+   "options": [
+    "It is always possible to obtain a dependency-preserving [latex]3[/latex]NF decomposition of a relation",
+    "It is always possible to obtain a dependency-preserving [latex]1[/latex]NF decomposition of a relation",
+    "It is not always possible to obtain a dependency-preserving BCNF decomposition of a relation",
+    "It is not always possible to obtain a dependency-preserving [latex]2[/latex]NF decomposition of a relation"
+   ],
+   "correctSet": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": 1126122,
+   "number": 22,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the function [latex]f: \\mathbb{R} \\rightarrow \\mathbb{R}[/latex] defined as follows: <br><br>[latex] f(x)=\\left\\{\\begin{array}{lr} c_{1} e^{x}-c_{2} \\log _{{e}}\\left(\\frac{1}{x}\\right), & \\text { if } x>0 \\\\ 3 & \\text { otherwise } \\end{array}\\right. [/latex] <br><br> where [latex]c_{1}, c_{2} \\in \\mathbb{R}[/latex].<br><br> If [latex]f[/latex] is continuous at [latex]x=0[/latex], then [latex]c_{1}+c_{2}=[/latex] ________. (answer in integer)",
+   "solution": "For [latex]f[/latex] to be continuous at [latex]x=0[/latex], we need [latex]\\lim_{x\\to0^{+}}f(x)=f(0)=3[/latex].<br><br>\n[latex]\\lim_{x\\to0^{+}}\\left[c_1e^{x}-c_2\\log_e\\left(\\dfrac1x\\right)\\right][/latex]<br><br>\nAs [latex]x\\to0^{+}[/latex]: [latex]e^{x}\\to1[/latex], while [latex]\\log_e(1/x)=-\\log_e x\\to+\\infty[/latex]. For the overall limit to be a finite number, the coefficient of this diverging term must be zero:<br>\n[latex]c_2=0[/latex].<br><br>\nWith [latex]c_2=0[/latex], the limit becomes [latex]c_1\\cdot1=c_1[/latex]. Setting this equal to [latex]f(0)=3[/latex] gives [latex]c_1=3[/latex].<br><br>\nSo [latex]c_1+c_2=3+0=3[/latex].<br><br>\n<b>Answer: 3</b> <br><br> <a href=\"https://gateoverflow.in/523058/gate-cse-2026-set-1-question-22#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "ansMin": 3,
+   "ansMax": 3
+  },
+  {
+   "id": 1126123,
+   "number": 23,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The height of a binary tree is the number of edges in the longest path from the root to a leaf in the tree. The maximum possible height of a full binary tree with [latex]23[/latex] nodes is ________.(answer in integer)",
+   "solution": "In a <b>full</b> binary tree, every node has either [latex]0[/latex] or [latex]2[/latex] children. If there are [latex]I[/latex] internal (2-children) nodes and [latex]L[/latex] leaves, then [latex]L=I+1[/latex], and total nodes [latex]N=I+L=2I+1[/latex].<br><br>\nFor [latex]N=23[/latex]: [latex]23=2I+1\\Rightarrow I=11[/latex] internal nodes and [latex]L=12[/latex] leaves.<br><br>\nTo <b>maximize height</b>, make the tree as \"skewed\"/chain-like as possible while still keeping every internal node's 2-children rule: each internal node (except the last one in the chain) has one leaf child and one internal child continuing the chain; the very last internal node has two leaf children.<br><br>\nThis chain uses exactly [latex]I=11[/latex] internal nodes along the main path, with the deepest leaves appearing right after the [latex]11[/latex]th internal node. So the longest root-to-leaf path has [latex]11[/latex] edges.<br><br>\n<b>Answer: 11</b> <br><br> <a href=\"https://gateoverflow.in/523057/gate-cse-2026-set-1-question-23#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-tree",
+   "ansMin": 11,
+   "ansMax": 11
+  },
+  {
+   "id": 1126124,
+   "number": 24,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the following program in C:<pre><code> #include &lt;stdio.h&gt;\n void func(int i, int j) {\n  if(i < j) {\n  \tint i = 0;\n  \twhile (i < 10) {\n  \t\tj += 2;\n  \t\ti++;\n  \t}\n  }\n  printf(\"%d\", i);\n }\n int main() {\n  \tint i = 9, j = 10;\n  \tfunc(i, j);\n  \treturn 0;\n }</code></pre> The output of the program is ________. (answer in integer)<br> Note: Assume that the program compiles and runs successfully.",
+   "solution": "Trace the call [latex]\\text{func(9, 10)}[/latex] (parameters [latex]i=9,\\,j=10[/latex] inside func, independent copies of main's variables):<br><br>\n1. Condition [latex]i\\lt j[/latex] i.e. [latex]9\\lt 10[/latex] is true, so we enter the block.<br>\n2. Inside the block, a <b>new, block-scoped</b> variable [latex]\\text{int } i=0[/latex] is declared &mdash; this shadows/hides the outer parameter [latex]i[/latex] only within this inner block.<br>\n3. The while loop runs while this inner [latex]i\\lt 10[/latex]: it executes [latex]10[/latex] times, each time doing [latex]j{+}{=}2[/latex] (affecting the outer/parameter [latex]j[/latex]) and incrementing the inner [latex]i[/latex] (from [latex]0[/latex] up to [latex]10[/latex], at which point the loop stops).<br>\n4. Once the block ends, the inner [latex]i[/latex] goes out of scope entirely; the outer parameter [latex]i[/latex] (value [latex]9[/latex]) was never touched by anything in the block.<br>\n5. [latex]\\text{printf(\"\\%d\", i)}[/latex] refers to the (unshadowed, outer) parameter [latex]i[/latex], which is still [latex]9[/latex].<br><br>\n<b>Answer: 9</b> <br><br> <a href=\"https://gateoverflow.in/523056/gate-cse-2026-set-1-question-24#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "C Programming ",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "ansMin": 9,
+   "ansMax": 9
+  },
+  {
+   "id": 1126125,
+   "number": 25,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider a system consisting of [latex]k[/latex] instances of a resource [latex]R[/latex], being shared by [latex]5[/latex] processes. Assume that each process requires a maximum of two instances of resource [latex]R[/latex] and a process can request or release only one instance at a time. Further, a process can request the second instance of the resource only after acquiring the first instance.<br><br> The minimum value of [latex]k[/latex] for the system to be deadlock-free is ________. (answer in integer)",
+   "solution": "This is the classic deadlock-avoidance-by-resource-count formula. Each of the [latex]5[/latex] processes needs at most [latex]2[/latex] instances of [latex]R[/latex].<br><br>\nA guaranteed deadlock-free allocation is possible if, even in the worst case where every process is holding one instance and waiting for its second, at least one process can still obtain its second instance and finish (then release both, allowing the rest to proceed in turn).<br><br>\nWorst case: each of the [latex]5[/latex] processes holds [latex](max-1)=1[/latex] instance already, using up [latex]5\\times1=5[/latex] instances, and one more instance must be available so that at least one waiting process can get its 2nd instance and complete.<br><br>\nSo minimum [latex]k=5\\times(2-1)+1=6[/latex].<br><br>\n<b>Answer: 6</b> <br><br> <a href=\"https://gateoverflow.in/523055/gate-cse-2026-set-1-question-25#a_list\" target=\"_blank\">Click here for detail solution</a>",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Deadlock",
+   "tag2_url": "https://practicepaper.in/gate-cse/deadlock",
+   "ansMin": 6,
+   "ansMax": 6
+  }
+ ]
+}

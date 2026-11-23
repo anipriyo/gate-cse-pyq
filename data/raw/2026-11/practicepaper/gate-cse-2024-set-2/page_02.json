@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11242,
+  "quizName": "GATE CSE 2024 SET-2",
+  "pageTitle": "GATE CSE 2024 SET-2 Question Paper with Solutions and Answer Key",
+  "timeLimit": 0,
+  "pageNo": 2,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2024-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1124206,
+   "number": 6,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let [latex] f(x) [/latex] be a continuous function from [latex] \\mathbb{R} [/latex] to [latex] \\mathbb{R} [/latex] such that\n<br> [latex]\nf(x)=1-f(2-x)\n [/latex] <br>\nWhich one of the following options is the CORRECT value of [latex] \\int_0^2 f(x) d x [/latex] ?",
+   "solution": "Let [latex]I=\\int_0^2 f(x)\\,dx[/latex]. Substituting [latex]x\\to2-x[/latex] gives [latex]I=\\int_0^2 f(2-x)\\,dx[/latex].<br><br>\nAdding both: [latex]2I=\\int_0^2\\big(f(x)+f(2-x)\\big)dx=\\int_0^2 1\\,dx=2[/latex]<br><br>\n[latex]I=1[/latex]<br><br>\n<b>Answer: 1</b><br><br><a href=\"https://gateoverflow.in/422891/gate-cse-2024-set-2-question-6#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "options": [
+    "[latex] 0  [/latex]",
+    "[latex] 1  [/latex]",
+    "[latex] 2  [/latex]",
+    "[latex] -1  [/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1124207,
+   "number": 7,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let [latex] A  [/latex] be the adjacency matrix of a simple undirected graph [latex]G[/latex]. Suppose [latex]A[/latex] is its own inverse. Which one of the following statements is always TRUE?",
+   "solution": "[latex]A=A^{-1}\\Rightarrow A^2=I[/latex].<br><br>\n- [latex](A^2)_{ii}[/latex] = degree of vertex [latex]i[/latex] = 1 [latex]\\rightarrow[/latex] every vertex has exactly one neighbour.<br>\n- [latex](A^2)_{ij}=0[/latex] for [latex]i\\ne j[/latex] [latex]\\rightarrow[/latex] consistent with that.<br><br>\nA graph where every vertex has degree exactly 1 is a set of disjoint edges covering all vertices [latex]\\text{---}[/latex] a <b>perfect matching</b>.<br><br>\n<b>Answer: G is a perfect matching</b><br><br><a href=\"https://gateoverflow.in/422890/gate-cse-2024-set-2-question-7#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "options": [
+    "[latex]G[/latex] is a cycle",
+    "[latex]G[/latex] is a perfect matching",
+    "[latex]G[/latex] is a complete graph",
+    "There is no such graph [latex]G[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1124208,
+   "number": 8,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "When six unbiased dice are rolled simultaneously, the probability of getting all\ndistinct numbers (i.e., 1, 2, 3, 4, 5, and 6) is",
+   "solution": "Total outcomes [latex]=6^6=46656[/latex].<br>\nAll distinct means the six dice show 1-6 in some order: [latex]6!=720[/latex] outcomes.<br><br>\n[latex]P=\\dfrac{720}{46656}=\\dfrac{5}{324}[/latex]<br><br>\n<b>Answer: [latex]\\frac{5}{324}[/latex]</b><br><br><a href=\"https://gateoverflow.in/422889/gate-cse-2024-set-2-question-8#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "options": [
+    "[latex]\\frac{1}{324}[/latex] ",
+    "[latex]\\frac{5}{324}[/latex] ",
+    "[latex]\\frac{7}{324}[/latex] ",
+    "[latex]\\frac{11}{324}[/latex] "
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1124209,
+   "number": 9,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Once the DBMS informs the user that a transaction has been successfully\ncompleted, its effect should persist even if the system crashes before all its changes\nare reflected on disk. This property is called",
+   "solution": "Once a transaction commits, its changes must survive any later crash (using the log for recovery). This is the <b>Durability</b> property of ACID.<br><br>\n<b>Answer: durability</b><br><br><a href=\"https://gateoverflow.in/422888/gate-cse-2024-set-2-question-9#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Transaction",
+   "tag2_url": "https://practicepaper.in/gate-cse/transaction",
+   "options": [
+    "durability",
+    "atomicity",
+    "consistency",
+    "isolation"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1124210,
+   "number": 10,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "In the context of owner and weak entity sets in the ER (Entity-Relationship) data model, which one of the following statements is TRUE?",
+   "solution": "A weak entity cannot exist without its owner, so <b>every</b> weak entity must take part in the identifying relationship [latex]\\rightarrow[/latex] total participation of the weak entity set.<br><br>\nAn owner may have no weak entities (e.g. an employee with no dependents), so the owner's participation is not necessarily total.<br><br>\n<b>Answer: The weak entity set MUST have total participation in the identifying relationship</b><br><br><a href=\"https://gateoverflow.in/422887/gate-cse-2024-set-2-question-10#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "ER Model",
+   "tag2_url": "https://practicepaper.in/gate-cse/er-model",
+   "options": [
+    "The weak entity set MUST have total participation in the identifying relationship",
+    "The owner entity set MUST have total participation in the identifying relationship",
+    "Both weak and owner entity sets MUST have total participation in the identifying relationship",
+    "Neither weak entity set nor owner entity set MUST have total participation in the identifying relationship"
+   ],
+   "correct": 0
+  }
+ ]
+}
