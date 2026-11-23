@@ -9,6 +9,8 @@ A personal practice site for GATE CSE previous-year questions (2018 onwards), pl
 - **Results:** score with GATE marking, per-subject and per-topic breakdown, full review with solutions, a GATE Overflow link and a YouTube search link for every question.
 - Progress is stored in the browser (localStorage). Use *Progress → Export* to move it between devices.
 
+**Mac app (offline + AI tutor):** `app/` builds `GATE PYQ.app`, which runs the same site locally without internet and adds an AI tutor (✦ Hint, ✦ Explain with AI, an Ask AI chat page) backed by a local Qwen model or a ChatGPT account through Codex CLI. See `app/README.md`.
+
 ## Layout
 
 | Folder | What |

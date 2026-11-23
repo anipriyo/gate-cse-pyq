@@ -1,2 +1,5 @@
 .DS_Store
 __pycache__/
+app/webview_data/
+app/codex_cwd/
+app/app.log

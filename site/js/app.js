@@ -3,6 +3,7 @@ import {
   answerText, correctText, typeName, renderMath, safe, fmtTime, shuffle, linksHTML, saveResult, getResult, computeSummary,
 } from "./util.js";
 import { renderExamInstructions, resumeExamIfAny } from "./exam.js";
+import { aiStatus, aiAvailable, openTutor, closeTutor, viewAsk } from "./ai.js";
 
 const app = $("#app");
 let DB;
@@ -42,13 +43,15 @@ const routes = {
   "mock-start": (id) => renderExamInstructions(app, DB, id),
   exam: () => resumeExamIfAny(app, DB) || (location.hash = "#/mock"),
   history: viewHistory,
+  ask: (id) => { if (!aiAvailable()) { location.hash = "#/"; return; } setCleanup(viewAsk(app, id)); },
 };
 
 async function route() {
   if (cleanup) { cleanup(); cleanup = null; }
+  closeTutor();
   document.body.classList.remove("exam-mode");
   const [name, arg] = location.hash.replace(/^#\/?/, "").split("/");
-  $$(".nav a").forEach((a) => a.classList.toggle("active", a.dataset.nav === name || (name === "session" && a.dataset.nav === "practice")));
+  $$(".nav a").forEach((a) => a.classList.toggle("active", a.dataset.nav === (name || "") || (name === "session" && a.dataset.nav === "practice")));
   const fn = routes[name] || viewHome;
   window.scrollTo(0, 0);
   await fn(arg && decodeURIComponent(arg));
@@ -57,7 +60,11 @@ export function setCleanup(fn) { cleanup = fn; }
 
 (async function init() {
   try {
-    DB = await loadDB();
+    [DB] = await Promise.all([loadDB(), aiStatus()]);
+    if (aiAvailable()) {
+      document.body.classList.add("has-ai");
+      $(".nav").append(h(`<a href="#/ask" data-nav="ask">✦ Ask AI</a>`));
+    }
   } catch (e) {
     app.innerHTML = `<div class="wrap"><div class="card">Could not load the question database. ${esc(e.message)}</div></div>`;
     return;
@@ -400,10 +407,12 @@ function viewSession() {
       ${locked ? `<div class="verdict ${v}">${v === "correct" ? "✓ Correct" : v === "wrong" ? "✕ Wrong" : "Skipped"}
           ${q.type !== "NAT" ? `<span style="font-weight:500">· answer ${esc(correctText(q))}${isAnswered(q, r.ans) ? ` · you chose ${esc(answerText(q, r.ans))}` : ""}</span>` : ""}
           <span style="font-weight:500">· ${fmtMarks(marksFor(q, v))} marks · ${fmtTime(r.time)}</span></div>
-        <div class="solution"><span class="lbl">Solution</span>${safe(q.solution) || "<i>No written solution available.</i>"}${linksHTML(q)}</div>` : ""}
+        <div class="solution"><span class="lbl">Solution</span>${safe(q.solution) || "<i>No written solution available.</i>"}${linksHTML(q)}
+          ${aiAvailable() ? `<div class="sol-links"><button class="btn btn-sm btn-ai" id="aiExplain">✦ Explain with AI</button><button class="btn btn-sm btn-ghost" id="aiAsk">✦ Ask AI about this</button></div>` : ""}</div>` : ""}
       <div class="actions">
         <button class="btn" id="prevBtn" ${s.idx === 0 ? "disabled" : ""}>← Prev</button>
         <button class="btn btn-ghost" id="flagBtn">${r.flag ? "⚑ Unflag" : "⚐ Flag"}</button>
+        ${aiAvailable() && !locked ? `<button class="btn btn-ghost" id="aiHint" title="AI hint without the answer">✦ Hint</button>` : ""}
         <div class="spacer"></div>
         ${s.mode === "instant"
           ? (locked ? "" : `<button class="btn btn-ghost" id="skipBtn">Skip &amp; show solution</button><button class="btn btn-primary" id="checkBtn">Submit</button>`)
@@ -422,6 +431,9 @@ function viewSession() {
         if (s.mode === "end") { r.ans = draft; save(); renderPalette(); }
       });
     }
+    $("#aiExplain")?.addEventListener("click", () => openTutor(q, r.ans, { revealed: true, action: "explain" }));
+    $("#aiAsk")?.addEventListener("click", () => openTutor(q, r.ans, { revealed: true, action: null }));
+    $("#aiHint")?.addEventListener("click", () => openTutor(q, undefined, { revealed: false, action: "hint" }));
     $("#bmBtn").onclick = () => { const on = toggleBookmark(q.id); $("#bmBtn").classList.toggle("on", on); $("#bmBtn").textContent = on ? "★" : "☆"; };
     $("#prevBtn").onclick = () => go(s.idx - 1);
     $("#nextBtn").onclick = () => (s.idx === s.qids.length - 1 ? finish() : go(s.idx + 1));
@@ -482,7 +494,7 @@ function viewSession() {
   $("#finishBtn").onclick = () => finish();
 
   const onKey = (e) => {
-    if ($(".modal-bg")) return;
+    if ($(".modal-bg") || $(".ai-drawer-bg")) return;
     const typing = e.target.matches("input, textarea, select");
     const q = qOf(s.idx);
     if (!typing && /^[a-dA-D]$/.test(e.key) && q.type !== "NAT") { const r = s.responses[q.id]; if (!(s.mode === "instant" && r?.checked)) pick("abcd".indexOf(e.key.toLowerCase())); }
@@ -572,7 +584,9 @@ export function viewResult(id) {
         return `<li class="option ${isRight ? "right" : picked ? "wrong" : ""}"><span class="key">${"ABCD"[i]}</span><div class="otext">${safe(o)}</div></li>`;
       }).join("")}</ul>` : ""}
       <div class="yours"><span>Your answer: <b>${esc(answerText(q, r.ans))}</b></span><span>Correct: <b>${esc(correctText(q))}</b></span></div>
-      <div class="solution"><span class="lbl">Solution</span>${safe(q.solution) || "<i>No written solution available.</i>"}${linksHTML(q)}</div>`;
+      <div class="solution"><span class="lbl">Solution</span>${safe(q.solution) || "<i>No written solution available.</i>"}${linksHTML(q)}
+        ${aiAvailable() ? `<div class="sol-links"><button class="btn btn-sm btn-ai" data-ai="explain">✦ Explain with AI</button><button class="btn btn-sm btn-ghost" data-ai="ask">✦ Ask AI about this</button></div>` : ""}</div>`;
+    $$("[data-ai]", body).forEach((b) => (b.onclick = () => openTutor(q, r.ans, { revealed: true, action: b.dataset.ai === "explain" ? "explain" : null })));
     renderMath(body);
   }));
   $$("#revFilter .chip").forEach((c) => (c.onclick = () => {
