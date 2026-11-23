@@ -80,12 +80,18 @@ def qwen_healthy():
         return False
 
 
+QWEN_IDLE_MIN = 10   # unload Qwen after this many minutes without use (only if this app loaded it)
+
 _start_lock = threading.Lock()
 _start_state = {"starting": False, "error": None, "t0": 0}
+# Server this app loaded itself: {"tray": QwenTray-like object, "pid": int}. Only this one is ever stopped.
+_ours = {"tray": None, "pid": None}
+_activity = {"last": 0.0, "task": None}
 
 
 def qwen_start():
-    """Start llama-server like Qwen Chat.app does. Never stops anything."""
+    """Load Qwen on demand (same command + PID file as Qwen Chat.app). Called only when a Qwen
+    request arrives or the user clicks Start; nothing loads Qwen at app launch."""
     with _start_lock:
         if qwen_healthy() or _start_state["starting"]:
             return
@@ -98,10 +104,12 @@ def qwen_start():
         app.pid = None
         app.adopt_existing()
         if not app.running():
-            app.start()  # writes logs/server.pid; keeps running after this app quits
+            app.start()  # writes logs/server.pid
+            _ours.update(tray=app, pid=app.pid)
+        _activity["last"] = time.time()
         _start_state.update(starting=True, error=None, t0=time.time())
         if TRAY_APP.exists():
-            subprocess.run(["open", "-g", str(TRAY_APP)])  # menu-bar OFF switch
+            subprocess.run(["open", "-g", str(TRAY_APP)])  # menu-bar switch shows it's on
 
         def watch():
             while not qwen_healthy():
@@ -114,6 +122,48 @@ def qwen_start():
                 time.sleep(1)
             _start_state["starting"] = False
         threading.Thread(target=watch, daemon=True).start()
+
+
+def _qwen_busy_or_used():
+    """True if llama-server is generating or has run a new task since the last check (any client)."""
+    try:
+        with urllib.request.urlopen(qwen_url() + "/slots", timeout=2) as r:
+            slots = json.loads(r.read())
+    except Exception:
+        return False
+    task = max((s.get("id_task") or 0) for s in slots) if slots else 0
+    busy = any(s.get("is_processing") for s in slots)
+    changed = _activity["task"] is not None and task != _activity["task"]
+    _activity["task"] = task
+    return busy or changed
+
+
+def qwen_stop_ours(reason=""):
+    """Stop the server only if this app started it (by its own PID)."""
+    tray = _ours["tray"]
+    if tray is None:
+        return
+    try:
+        if tray.running():
+            tray.stop()  # SIGTERM to its own PID; also clears logs/server.pid
+            print(f"Unloaded Qwen ({reason})", file=sys.stderr)
+    except Exception as e:
+        print("stop failed:", e, file=sys.stderr)
+    _ours.update(tray=None, pid=None)
+
+
+def idle_watcher():
+    while True:
+        time.sleep(30)
+        if _ours["tray"] is None:
+            continue
+        if not _ours["tray"].running():  # turned off elsewhere (menu bar)
+            _ours.update(tray=None, pid=None)
+            continue
+        if _qwen_busy_or_used() or _start_state["starting"]:
+            _activity["last"] = time.time()
+        elif time.time() - _activity["last"] > QWEN_IDLE_MIN * 60:
+            qwen_stop_ours(f"idle {QWEN_IDLE_MIN} min")
 
 
 # ---------------------------------------------------------------- ChatGPT (Codex CLI)
@@ -208,6 +258,7 @@ class Handler(BaseHTTPRequestHandler):
                 "app": True,
                 "qwen": {"available": (MODELS_ROOT / "server_config.json").exists(), "healthy": qwen_healthy(),
                          "starting": _start_state["starting"], "error": _start_state["error"],
+                         "ours": _ours["tray"] is not None, "idle_min": QWEN_IDLE_MIN,
                          "model": qwen_cfg().get("model", "").split(".gguf")[0]},
                 "chatgpt": {"available": codex_bin() is not None, "logged_in": codex_logged_in()},
             })
@@ -271,8 +322,19 @@ class Handler(BaseHTTPRequestHandler):
 
     def _chat_qwen(self, messages, imgs, think):
         if not qwen_healthy():
-            self._sse(t="error", text="Qwen is off. Click “Start Qwen” (takes about 30 s to load).")
-            return
+            qwen_start()  # load on demand
+            t0 = time.time()
+            while not qwen_healthy():
+                if _start_state["error"]:
+                    self._sse(t="error", text=_start_state["error"])
+                    return
+                if time.time() - t0 > 200:
+                    self._sse(t="error", text="Qwen took too long to load.")
+                    return
+                # heartbeat: also raises BrokenPipe if the user pressed Stop
+                self._sse(t="status", text=f"Loading Qwen into memory… {int(time.time() - t0)} s")
+                time.sleep(1)
+        _activity["last"] = time.time()
         msgs = [{"role": "system", "content": TUTOR_SYSTEM}]
         first_user = True
         for m in messages:
@@ -310,6 +372,7 @@ class Handler(BaseHTTPRequestHandler):
                     self._sse(t="reasoning", text=d["reasoning_content"])
                 if d.get("content"):
                     self._sse(t="delta", text=d["content"])
+        _activity["last"] = time.time()
         self._sse(t="done")
 
     def _chat_codex(self, messages, imgs, think):
@@ -380,6 +443,7 @@ def serve():
     httpd = ThreadingHTTPServer(("127.0.0.1", PORT), Handler)
     httpd.daemon_threads = True
     threading.Thread(target=httpd.serve_forever, daemon=True).start()
+    threading.Thread(target=idle_watcher, daemon=True).start()
     return httpd
 
 
@@ -399,6 +463,7 @@ def main():
             while True:
                 time.sleep(3600)
         except KeyboardInterrupt:
+            qwen_stop_ours("server stopped")
             return
     import webview
     STORAGE.mkdir(parents=True, exist_ok=True)
@@ -406,6 +471,7 @@ def main():
     webview.settings["ALLOW_DOWNLOADS"] = True
     webview.create_window("GATE PYQ", url, width=1320, height=880, min_size=(420, 560), text_select=True)
     webview.start(private_mode=False, storage_path=str(STORAGE))
+    qwen_stop_ours("app closed")  # window closed: free the RAM if this app loaded Qwen
 
 
 if __name__ == "__main__":
