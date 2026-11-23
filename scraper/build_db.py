@@ -84,7 +84,7 @@ def localise_images(s, missing):
         rel = p.path.lstrip("/").replace("wp-content/uploads/", "")
         rel = re.sub(r"[^A-Za-z0-9._/-]", "_", rel)
         if download(absu, ROOT / "data" / "img" / rel):
-            return f"{m.group(1)}img/{rel}{m.group(3)}"
+            return f"{m.group(1)}data/img/{rel}{m.group(3)}"
         missing.append(absu)
         return m.group(0)
     return IMG_RE.sub(repl, s or "")

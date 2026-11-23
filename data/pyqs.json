@@ -174,7 +174,7 @@
    "marks": 1,
    "subject": "Data Structure",
    "topic": "Queue",
-   "text": "A queue is implemented using a non-circular singly linked list. The queue has a head pointer and a tail pointer, as shown in the figure. Let n denote the number of nodes in the queue. Let enqueue be implemented by inserting a new node at the head, and dequeue be implemented by deletion of a node from the tail.    <br><img src=\"img/GATE/CS/2018/q3.jpg\" /><br>  Which one of the following is the time complexity of the most time-efficient implementation of enqueue and dequeue, respectively, for this data structure?",
+   "text": "A queue is implemented using a non-circular singly linked list. The queue has a head pointer and a tail pointer, as shown in the figure. Let n denote the number of nodes in the queue. Let enqueue be implemented by inserting a new node at the head, and dequeue be implemented by deletion of a node from the tail.    <br><img src=\"data/img/GATE/CS/2018/q3.jpg\" /><br>  Which one of the following is the time complexity of the most time-efficient implementation of enqueue and dequeue, respectively, for this data structure?",
    "options": [
     "[latex]\\Theta (1), \\Theta (1)[/latex] ",
     "[latex]\\Theta (1), \\Theta (n)[/latex] ",
@@ -417,7 +417,7 @@
    "marks": 1,
    "subject": "Database Management System",
    "topic": "SQL",
-   "text": "Consider the following two tables and four queries in SQL. <br> <img src=\"img/GATE/CS/2018/q12.jpg\" />   <br>Which one of the queries above is certain to have an output that is a superset of the outputs of the other three queries?",
+   "text": "Consider the following two tables and four queries in SQL. <br> <img src=\"data/img/GATE/CS/2018/q12.jpg\" />   <br>Which one of the queries above is certain to have an output that is a superset of the outputs of the other three queries?",
    "options": [
     "Query 1",
     "Query 2",
@@ -444,7 +444,7 @@
    "marks": 1,
    "subject": "Computer Network",
    "topic": "Transport Layer Protocol",
-   "text": "Match the following: <br> <img src=\"img/GATE/CS/2018/q13.jpg\" />  ",
+   "text": "Match the following: <br> <img src=\"data/img/GATE/CS/2018/q13.jpg\" />  ",
    "options": [
     "P-III, Q-IV, R-II, S-I",
     "P-II, Q-I, R-IV, S-III",
@@ -567,7 +567,7 @@
    "marks": 1,
    "subject": "Discrete Mathematics",
    "topic": "Graph Theory",
-   "text": "The chromatic number of the following graph is _______.  <br> <img src=\"img/GATE/CS/2018/q18.jpg\" />",
+   "text": "The chromatic number of the following graph is _______.  <br> <img src=\"data/img/GATE/CS/2018/q18.jpg\" />",
    "options": [],
    "answer": {
     "min": 3,
@@ -659,7 +659,7 @@
    "marks": 1,
    "subject": "Digital Logic",
    "topic": "Sequential Circuit",
-   "text": "Consider the sequential circuit shown in the figure, where both flip-flops used are positive edge-triggered D flip-flops.  <br> <img src=\"img/GATE/CS/2018/q22.jpg\" /> <br>  The number of states in the state transition diagram of this circuit that have a transition back to the same state on some value of \"in\" is _____.",
+   "text": "Consider the sequential circuit shown in the figure, where both flip-flops used are positive edge-triggered D flip-flops.  <br> <img src=\"data/img/GATE/CS/2018/q22.jpg\" /> <br>  The number of states in the state transition diagram of this circuit that have a transition back to the same state on some value of \"in\" is _____.",
    "options": [],
    "answer": {
     "min": 2,
@@ -1075,7 +1075,7 @@
    "marks": 2,
    "subject": "Compiler Design",
    "topic": "Parsing",
-   "text": "C onsider the following parse tree for the expression a#b$c$d#e#f, involving two binary operators $ and #. <br> <img src=\"img/GATE/CS/2018/q38.jpg\" /> <br>  Which one of the following is correct for the given parse tree?",
+   "text": "C onsider the following parse tree for the expression a#b$c$d#e#f, involving two binary operators $ and #. <br> <img src=\"data/img/GATE/CS/2018/q38.jpg\" /> <br>  Which one of the following is correct for the given parse tree?",
    "options": [
     "[latex]\\$[/latex] has higher precedence and is left associative; # is right associative",
     " # has higher precedence and is left associative; [latex]\\$[/latex] is right associative",
@@ -1102,7 +1102,7 @@
    "marks": 2,
    "subject": "Operating System",
    "topic": "Deadlock",
-   "text": "In a system, there are three types of resources: E, F and G. Four processes [latex]P_0,P_1,P_2 \\; and \\; P_3[/latex] execute concurrently. At the outset, the processes have declared their maximum resource requirements using a matrix named Max as given below. For example, Max[[latex]P_2[/latex],F] is the maximum number of instances of F that [latex]P_2[/latex] would require. The number of instances of the resources allocated to the various processes at any given state is given by a matrix named Allocation. <br>\nConsider a state of the system with the Allocation matrix as shown below, and in which 3 instances of E and 3 instances of F are the only resources available. <br> <img src=\"img/GATE/CS/2018/q39.jpg\" /> <br> From the perspective of deadlock avoidance, which one of the following is true?",
+   "text": "In a system, there are three types of resources: E, F and G. Four processes [latex]P_0,P_1,P_2 \\; and \\; P_3[/latex] execute concurrently. At the outset, the processes have declared their maximum resource requirements using a matrix named Max as given below. For example, Max[[latex]P_2[/latex],F] is the maximum number of instances of F that [latex]P_2[/latex] would require. The number of instances of the resources allocated to the various processes at any given state is given by a matrix named Allocation. <br>\nConsider a state of the system with the Allocation matrix as shown below, and in which 3 instances of E and 3 instances of F are the only resources available. <br> <img src=\"data/img/GATE/CS/2018/q39.jpg\" /> <br> From the perspective of deadlock avoidance, which one of the following is true?",
    "options": [
     "The system is in safe state.",
     "The system is not in safe state, but would be safe if one more instance of E were available",
@@ -1129,7 +1129,7 @@
    "marks": 2,
    "subject": "Operating System",
    "topic": "Process Synchronization",
-   "text": "Consider the following solution to the producer-consumer synchronization problem. The shared buffer size is N. Three semaphores <i>empty, full</i> and <i>mutex</i> are defined with respective initial values of 0, N and 1. Semaphore <i>empty</i>  denotes the number of available slots in the buffer, for the consumer to read from. Semaphore <i>full</i> denotes the number of available slots in the buffer, for the producer to write to. The placeholder variables, denoted by P, Q, R, and S, in the code below can be assigned either <i>empty or full</i>. The valid semaphore operations are: <i>wait() and signal()</i>. <br> <img src=\"img/GATE/CS/2018/q40.jpg\" /> <br>  Which one of the following assignments to P, Q, R and S will yield the correct solution?",
+   "text": "Consider the following solution to the producer-consumer synchronization problem. The shared buffer size is N. Three semaphores <i>empty, full</i> and <i>mutex</i> are defined with respective initial values of 0, N and 1. Semaphore <i>empty</i>  denotes the number of available slots in the buffer, for the consumer to read from. Semaphore <i>full</i> denotes the number of available slots in the buffer, for the producer to write to. The placeholder variables, denoted by P, Q, R, and S, in the code below can be assigned either <i>empty or full</i>. The valid semaphore operations are: <i>wait() and signal()</i>. <br> <img src=\"data/img/GATE/CS/2018/q40.jpg\" /> <br>  Which one of the following assignments to P, Q, R and S will yield the correct solution?",
    "options": [
     "P: full, Q: full, R: empty, S: empty",
     "P: empty, Q: empty, R: full, S: full",
@@ -1183,7 +1183,7 @@
    "marks": 2,
    "subject": "Database Management System",
    "topic": "Normal Form",
-   "text": "Consider the following four relational schemas. For each schema, all non-trivial functional\ndependencies are listed. The underlined attributes are the respective primary keys.<br>\n <img src=\"img/GATE/CS/2018/q42.jpg\" />\n<br>\nWhich one of the relational schemas above is in 3NF but not in BCNF?",
+   "text": "Consider the following four relational schemas. For each schema, all non-trivial functional\ndependencies are listed. The underlined attributes are the respective primary keys.<br>\n <img src=\"data/img/GATE/CS/2018/q42.jpg\" />\n<br>\nWhich one of the relational schemas above is in 3NF but not in BCNF?",
    "options": [
     "Schema I",
     "Schema II",
@@ -1233,7 +1233,7 @@
    "marks": 2,
    "subject": "Discrete Mathematics",
    "topic": "Probability Theory",
-   "text": "Consider Guwahati (G) and Delhi (D) whose temperatures can be classified as high (G), medium (M) and low (L). Let P([latex]H_{G}[/latex]) denote the probability that Guwahati has high temperature. Similarly, P([latex]M_{G}[/latex]) and P([latex]L_{G}[/latex]\n) denotes the probability of Guwahati having medium and low temperatures respectively. Similarly, we use P([latex]H_{D}[/latex]),P([latex]M_{D}[/latex]) and P([latex]L_{D}[/latex]) for Delhi. <br>\nThe following table gives the conditional probabilities for Delhi's temperature given Guwahati's temperature. <br><img src=\"img/GATE/CS/2018/q44.jpg\" /> <br>   Consider the first row in the table above. The first entry denotes that if Guwahati has high\ntemperature ([latex]H_{G}[/latex]) then the probability of Delhi also having a high temperature ([latex]H_{D}[/latex]) is 0.40;\ni.e., ([latex]H_{D}[/latex]|[latex]H_{G}[/latex]) = 0.40. Similarly, the next two entries are P([latex]M_{D}[/latex]| [latex]H_{G}[/latex])= 0.48 and\nP([latex]L_{D}[/latex]|[latex]H_{G}[/latex]) = 0.12. Similarly for the other rows.\nIf it is known that P([latex]H_{G}[/latex])= 0.2, P([latex]M_{G}[/latex])= 0.5, andP([latex]L_{G}[/latex])= 0.3, then the probability\n(correct to two decimal places) that Guwahati has high temperature given that Delhi has high\ntemperature is _______",
+   "text": "Consider Guwahati (G) and Delhi (D) whose temperatures can be classified as high (G), medium (M) and low (L). Let P([latex]H_{G}[/latex]) denote the probability that Guwahati has high temperature. Similarly, P([latex]M_{G}[/latex]) and P([latex]L_{G}[/latex]\n) denotes the probability of Guwahati having medium and low temperatures respectively. Similarly, we use P([latex]H_{D}[/latex]),P([latex]M_{D}[/latex]) and P([latex]L_{D}[/latex]) for Delhi. <br>\nThe following table gives the conditional probabilities for Delhi's temperature given Guwahati's temperature. <br><img src=\"data/img/GATE/CS/2018/q44.jpg\" /> <br>   Consider the first row in the table above. The first entry denotes that if Guwahati has high\ntemperature ([latex]H_{G}[/latex]) then the probability of Delhi also having a high temperature ([latex]H_{D}[/latex]) is 0.40;\ni.e., ([latex]H_{D}[/latex]|[latex]H_{G}[/latex]) = 0.40. Similarly, the next two entries are P([latex]M_{D}[/latex]| [latex]H_{G}[/latex])= 0.48 and\nP([latex]L_{D}[/latex]|[latex]H_{G}[/latex]) = 0.12. Similarly for the other rows.\nIf it is known that P([latex]H_{G}[/latex])= 0.2, P([latex]M_{G}[/latex])= 0.5, andP([latex]L_{G}[/latex])= 0.3, then the probability\n(correct to two decimal places) that Guwahati has high temperature given that Delhi has high\ntemperature is _______",
    "options": [],
    "answer": {
     "min": 0.6,
@@ -1302,7 +1302,7 @@
    "marks": 2,
    "subject": "Algorithm",
    "topic": "Minimum Spanning Tree",
-   "text": "Consider the following undirected graph G:<br> <img src=\"img/GATE/CS/2018/q47.jpg\" /> <br>  Choose a value for x that will maximize the number of minimum weight spanning trees (MWSTs) of G. The number of MWSTs of G for this value of x is ______.",
+   "text": "Consider the following undirected graph G:<br> <img src=\"data/img/GATE/CS/2018/q47.jpg\" /> <br>  Choose a value for x that will maximize the number of minimum weight spanning trees (MWSTs) of G. The number of MWSTs of G for this value of x is ______.",
    "options": [],
    "answer": {
     "min": 4,
@@ -1325,7 +1325,7 @@
    "marks": 2,
    "subject": "Algorithm",
    "topic": "Greedy Technique",
-   "text": "Consider the weights and values of items listed below. Note that there is only one unit of each item. <br><img src=\"img/GATE/CS/2018/q48.jpg\" /> <br>  The task is to pick a subset of these items such that their total weight is no more than 11 Kgs\nand their total value is maximized. Moreover, no item may be split. The total value of items picked by an optimal algorithm is denoted by  [latex]V_{opt}[/latex]. A greedy algorithm sorts the items by their value-to-weight ratios in descending order and packs them greedily, starting from the first item in the ordered list. The total value of items picked by the greedy algorithm is denoted by [latex]V_{greedy}[/latex].<br>\nThe value of [latex]V_{opt}[/latex]-[latex]V_{greedy}[/latex] is ____________.",
+   "text": "Consider the weights and values of items listed below. Note that there is only one unit of each item. <br><img src=\"data/img/GATE/CS/2018/q48.jpg\" /> <br>  The task is to pick a subset of these items such that their total weight is no more than 11 Kgs\nand their total value is maximized. Moreover, no item may be split. The total value of items picked by an optimal algorithm is denoted by  [latex]V_{opt}[/latex]. A greedy algorithm sorts the items by their value-to-weight ratios in descending order and packs them greedily, starting from the first item in the ordered list. The total value of items picked by the greedy algorithm is denoted by [latex]V_{greedy}[/latex].<br>\nThe value of [latex]V_{opt}[/latex]-[latex]V_{greedy}[/latex] is ____________.",
    "options": [],
    "answer": {
     "min": 16,
@@ -1417,7 +1417,7 @@
    "marks": 2,
    "subject": "Theory of Computation",
    "topic": "Finite Automata",
-   "text": "Given a language L, define [latex]L^{i}[/latex] as follows:<br> [latex]L^{0}=\\{\\varepsilon \\} [/latex]<br>[latex]L^{i}=L^{i-1} \\cdot L [/latex] for all [latex] i \\gt 0[/latex]<br> The order of a language L is defined as the smallest k such that [latex]L^{k}=L^{k+1}[/latex].\nConsider the language L1 (over alphabet 0) accepted by the following automaton. <br><img src=\"img/GATE/CS/2018/q52.jpg\" /> <br> The order of  L1 is ______",
+   "text": "Given a language L, define [latex]L^{i}[/latex] as follows:<br> [latex]L^{0}=\\{\\varepsilon \\} [/latex]<br>[latex]L^{i}=L^{i-1} \\cdot L [/latex] for all [latex] i \\gt 0[/latex]<br> The order of a language L is defined as the smallest k such that [latex]L^{k}=L^{k+1}[/latex].\nConsider the language L1 (over alphabet 0) accepted by the following automaton. <br><img src=\"data/img/GATE/CS/2018/q52.jpg\" /> <br> The order of  L1 is ______",
    "options": [],
    "answer": {
     "min": 2,
@@ -1725,7 +1725,7 @@
    "marks": 2,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "In the figure below,  [latex]\\angle DEC + \\angle BFC[/latex]  is equal to _____<br><img src=\"img/GATE/CS/2018/q64.webp\" /> <br>",
+   "text": "In the figure below,  [latex]\\angle DEC + \\angle BFC[/latex]  is equal to _____<br><img src=\"data/img/GATE/CS/2018/q64.webp\" /> <br>",
    "options": [
     "[latex]\\angle BCD - \\angle BAD[/latex]",
     "[latex]\\angle BAD + \\angle BCF[/latex]",
@@ -1806,7 +1806,7 @@
    "marks": 1,
    "subject": "Computer Organization",
    "topic": "Memory Chip Design",
-   "text": "The chip select logic for a certain DRAM chip in a memory system design is shown below. Assume that the memory system has 16 address lines denoted by [latex]A_{15} \\; to \\; A_0[/latex]. What is the range of address (in hexadecimal) of the memory system that can get enabled by the chip select (CS) signal? <br><img src=\"img/GATE/CS/20191/q2.jpg\" />",
+   "text": "The chip select logic for a certain DRAM chip in a memory system design is shown below. Assume that the memory system has 16 address lines denoted by [latex]A_{15} \\; to \\; A_0[/latex]. What is the range of address (in hexadecimal) of the memory system that can get enabled by the chip select (CS) signal? <br><img src=\"data/img/GATE/CS/20191/q2.jpg\" />",
    "options": [
     "C800 to CFFF",
     "CA00 to CAFF",
@@ -2257,7 +2257,7 @@
    "marks": 1,
    "subject": "Compiler Design",
    "topic": "Parsing",
-   "text": "Consider the following given grammar:\n<pre><code> \nS -> Aa\nA -> BD\nB -> b| &epsilon;\nD -> d| &epsilon; </pre></code> Let a, b, d and $ be indexed as follows:   <br><img src=\"img/GATE/CS/20191/q19.jpg\" /><br>Compute the FOLLOW set of the non-terminal B and write the index values for the symbols in the FOLLOW set in the descending order. (For example, if the FOLLOW set is {a, b, d, $}, then the answer should be 3210). <br> Answer:_____",
+   "text": "Consider the following given grammar:\n<pre><code> \nS -> Aa\nA -> BD\nB -> b| &epsilon;\nD -> d| &epsilon; </pre></code> Let a, b, d and $ be indexed as follows:   <br><img src=\"data/img/GATE/CS/20191/q19.jpg\" /><br>Compute the FOLLOW set of the non-terminal B and write the index values for the symbols in the FOLLOW set in the descending order. (For example, if the FOLLOW set is {a, b, d, $}, then the answer should be 3210). <br> Answer:_____",
    "options": [],
    "answer": {
     "min": 31,
@@ -2349,7 +2349,7 @@
    "marks": 1,
    "subject": "Operating System",
    "topic": "Process Synchronization",
-   "text": "Consider three concurrent processes P1, P2 and P3 as shown below, which access a shared variable D that has been initialized to 100. <br><img src=\"img/GATE/CS/20191/q23.jpg\" /><br>\nThe process are executed on a uniprocessor system running a time-shared operating system. If the minimum and maximum possible values of D after the three processes have completed execution are X and Y respectively, then the value of Y-X is __________. ",
+   "text": "Consider three concurrent processes P1, P2 and P3 as shown below, which access a shared variable D that has been initialized to 100. <br><img src=\"data/img/GATE/CS/20191/q23.jpg\" /><br>\nThe process are executed on a uniprocessor system running a time-shared operating system. If the minimum and maximum possible values of D after the three processes have completed execution are X and Y respectively, then the value of Y-X is __________. ",
    "options": [],
    "answer": {
     "min": 80,
@@ -2526,7 +2526,7 @@
    "marks": 2,
    "subject": "Digital Logic",
    "topic": "Boolean Algebra",
-   "text": "Consider three 4-variable functions [latex]f_1,f_2 \\; and \\; f_3[/latex], which are expressed in sum-of-minterms<br><br>\n[latex]f_1=\\Sigma (0,2,5,8,14)[/latex]<br>\n[latex]f_2=\\Sigma (2,3,6,8,14,15)[/latex]<br>\n[latex]f_3=\\Sigma (2,7,11,14)[/latex] <br><br>\nFor the following circuit with one AND gate and one XOR gate, the output function f can be expressed as: <br><img src=\"img/GATE/CS/20191/q30.jpg\" />",
+   "text": "Consider three 4-variable functions [latex]f_1,f_2 \\; and \\; f_3[/latex], which are expressed in sum-of-minterms<br><br>\n[latex]f_1=\\Sigma (0,2,5,8,14)[/latex]<br>\n[latex]f_2=\\Sigma (2,3,6,8,14,15)[/latex]<br>\n[latex]f_3=\\Sigma (2,7,11,14)[/latex] <br><br>\nFor the following circuit with one AND gate and one XOR gate, the output function f can be expressed as: <br><img src=\"data/img/GATE/CS/20191/q30.jpg\" />",
    "options": [
     "[latex]\\Sigma (7,8,11)[/latex]",
     "[latex]\\Sigma (2,7,8,11,14)[/latex]",
@@ -2688,7 +2688,7 @@
    "marks": 2,
    "subject": "Compiler Design",
    "topic": "Syntax-directed Translation",
-   "text": "Consider the following grammar and the semantic actions to support the inherited type declaration attributes. Let [latex]X_1,X_2,X_3,X_4,X_5 \\; and \\; X_6[/latex] be the placeholders for the non-terminals D, T, L or [latex]L_1[/latex] in the following table: <br><img src=\"img/GATE/CS/20191/q36.jpg\" /><br> Which one of the following are the appropriate choices for [latex]X_1,X_2,X_3 \\; and \\; X_4[/latex]?",
+   "text": "Consider the following grammar and the semantic actions to support the inherited type declaration attributes. Let [latex]X_1,X_2,X_3,X_4,X_5 \\; and \\; X_6[/latex] be the placeholders for the non-terminals D, T, L or [latex]L_1[/latex] in the following table: <br><img src=\"data/img/GATE/CS/20191/q36.jpg\" /><br> Which one of the following are the appropriate choices for [latex]X_1,X_2,X_3 \\; and \\; X_4[/latex]?",
    "options": [
     "[latex]X_1=L,X_2=T,X_3=L_1,X_4=L[/latex]",
     "[latex]X_1=T,X_2=L,X_3=L_1,X_4=T[/latex]",
@@ -2823,7 +2823,7 @@
    "marks": 2,
    "subject": "Operating System",
    "topic": "CPU Scheduling",
-   "text": "Consider the following four processes with arrival times (in milliseconds) and their length of CPU burst (in milliseconds) as shown below:\n<br><img src=\"img/GATE/CS/20191/q41.jpg\" />\nThese processes are run on a single processor using preemptive Shortest Remaining Time First scheduling algorithm. If the average waiting time of the processes is 1 millisecond, then the value of Z is __________.",
+   "text": "Consider the following four processes with arrival times (in milliseconds) and their length of CPU burst (in milliseconds) as shown below:\n<br><img src=\"data/img/GATE/CS/20191/q41.jpg\" />\nThese processes are run on a single processor using preemptive Shortest Remaining Time First scheduling algorithm. If the average waiting time of the processes is 1 millisecond, then the value of Z is __________.",
    "options": [],
    "answer": {
     "min": 2,
@@ -3053,7 +3053,7 @@
    "marks": 2,
    "subject": "Database Management System",
    "topic": "SQL",
-   "text": "A relational database contains two tables Student and Performance as shown below: <br><img src=\"img/GATE/CS/20191/q51.jpg\" /><br>The primary key of the Student table is Roll_no. For the Performance table, the columns Roll_no. and Subject_code together from the primary key. Consider the SQL query given below: <pre><code>SELECT S.Student_name, sum(P.Marks)\nFROM Student S, Performance P\nWHERE  P.Marks  >  84\nGROUP BY S.Student_name;</pre></code>The number of rows returned by the above SQL query is _________ . ",
+   "text": "A relational database contains two tables Student and Performance as shown below: <br><img src=\"data/img/GATE/CS/20191/q51.jpg\" /><br>The primary key of the Student table is Roll_no. For the Performance table, the columns Roll_no. and Subject_code together from the primary key. Consider the SQL query given below: <pre><code>SELECT S.Student_name, sum(P.Marks)\nFROM Student S, Performance P\nWHERE  P.Marks  >  84\nGROUP BY S.Student_name;</pre></code>The number of rows returned by the above SQL query is _________ . ",
    "options": [],
    "answer": {
     "min": 5,
@@ -3145,7 +3145,7 @@
    "marks": 2,
    "subject": "Database Management System",
    "topic": "Relational Algebra",
-   "text": "Consider the following relation P(X, Y, Z), Q(X, Y, T) and R(Y, V):\n<br><img src=\"img/GATE/CS/20191/q55.jpg\" /><br>How many tuples will be returned by the following relational algebra query?  <br><img src=\"img/GATE/CS/20191/q55a.jpg\" /><br>Answer:______",
+   "text": "Consider the following relation P(X, Y, Z), Q(X, Y, T) and R(Y, V):\n<br><img src=\"data/img/GATE/CS/20191/q55.jpg\" /><br>How many tuples will be returned by the following relational algebra query?  <br><img src=\"data/img/GATE/CS/20191/q55a.jpg\" /><br>Answer:______",
    "options": [],
    "answer": {
     "min": 1,
@@ -3330,7 +3330,7 @@
    "marks": 2,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "In the given diagram, teachers are represented in the triangle, researchers in the circle and administrators in the rectangle. Out of the total number of the people, the percentage of administrators shall be in the range of _______<br><img src=\"img/GATE/CS/20191/q62.jpg\" /><br>\n",
+   "text": "In the given diagram, teachers are represented in the triangle, researchers in the circle and administrators in the rectangle. Out of the total number of the people, the percentage of administrators shall be in the range of _______<br><img src=\"data/img/GATE/CS/20191/q62.jpg\" /><br>\n",
    "options": [
     "0 to 15",
     "16 to  30",
@@ -3411,7 +3411,7 @@
    "marks": 2,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "Three of the five students are allocated to a hostel put in special requests to the warden, Given the floor plan of the vacant rooms, select the allocation plan that will accommodate all their requests.<br><br>\n\nRequest by X: Due to pollen allergy, I want to avoid a wing next to the garden.\n<br>\nRequest by Y: I want to live as far from the washrooms as possible, since I am very mich sensitive to smell.\n<br>\nRequest by Z: I believe in Vaastu and so I want to stay in South-West wing.\n<br><br>\nThe shaded rooms are already occupied. WR is washroom<br><img src=\"img/GATE/CS/20191/q65.jpg\" /><br>\n",
+   "text": "Three of the five students are allocated to a hostel put in special requests to the warden, Given the floor plan of the vacant rooms, select the allocation plan that will accommodate all their requests.<br><br>\n\nRequest by X: Due to pollen allergy, I want to avoid a wing next to the garden.\n<br>\nRequest by Y: I want to live as far from the washrooms as possible, since I am very mich sensitive to smell.\n<br>\nRequest by Z: I believe in Vaastu and so I want to stay in South-West wing.\n<br><br>\nThe shaded rooms are already occupied. WR is washroom<br><img src=\"data/img/GATE/CS/20191/q65.jpg\" /><br>\n",
    "options": [
     "A",
     "B",
@@ -3519,7 +3519,7 @@
    "marks": 1,
    "subject": "Computer Organization",
    "topic": "Machine Instruction",
-   "text": "Consider the following data path diagram. <br><img src=\"img/GATE/CS/20201/q4.jpg\" /><br> Consider an instruction: [latex]R0\\leftarrow R1+R2[/latex]. The following steps are used to execute it over the given data path. Assume that PC is incremented appropriately. The subscripts r and w indicate read and write operations, respectively. <br><br>\n[latex]1. \\; R2_r,TEMP1_r,ALU_{add},TEMP2_w[/latex]  <br>  [latex]2. \\; R1_r,TEMP1_w[/latex] <br> [latex]3. \\; PC_r,MAR_w,MEM_r[/latex]  <br>[latex]4. \\; TEMP2_r,R0_w[/latex] <br> [latex]5. \\; MDR_r,IR_w[/latex]<br><br>\nWhich one of the following is the correct order of execution of the above steps? ",
+   "text": "Consider the following data path diagram. <br><img src=\"data/img/GATE/CS/20201/q4.jpg\" /><br> Consider an instruction: [latex]R0\\leftarrow R1+R2[/latex]. The following steps are used to execute it over the given data path. Assume that PC is incremented appropriately. The subscripts r and w indicate read and write operations, respectively. <br><br>\n[latex]1. \\; R2_r,TEMP1_r,ALU_{add},TEMP2_w[/latex]  <br>  [latex]2. \\; R1_r,TEMP1_w[/latex] <br> [latex]3. \\; PC_r,MAR_w,MEM_r[/latex]  <br>[latex]4. \\; TEMP2_r,R0_w[/latex] <br> [latex]5. \\; MDR_r,IR_w[/latex]<br><br>\nWhich one of the following is the correct order of execution of the above steps? ",
    "options": [
     "2,1,4,5,3",
     "1,2,4,3,5",
@@ -3762,7 +3762,7 @@
    "marks": 1,
    "subject": "Database Management System",
    "topic": "SQL",
-   "text": "Consider a relational database containing the following schemas. <br><img src=\"img/GATE/CS/20201/q13.jpg\" /><br>The primary key of each table is indicated by underlining the constituent fields.    <pre><code> SELECT s.sno, s.sname\n    FROM Suppliers s, Catalogue c\n    WHERE s.sno=c.sno AND\n        cost > (SELECT AVG (cost)\n                FROM Catalogue\n                WHERE pno = 'P4'\n                GROUP BY pno) ;</pre></code><br>The number of rows returned by the above SQL query is",
+   "text": "Consider a relational database containing the following schemas. <br><img src=\"data/img/GATE/CS/20201/q13.jpg\" /><br>The primary key of each table is indicated by underlining the constituent fields.    <pre><code> SELECT s.sno, s.sname\n    FROM Suppliers s, Catalogue c\n    WHERE s.sno=c.sno AND\n        cost > (SELECT AVG (cost)\n                FROM Catalogue\n                WHERE pno = 'P4'\n                GROUP BY pno) ;</pre></code><br>The number of rows returned by the above SQL query is",
    "options": [
     "4",
     "5",
@@ -4131,7 +4131,7 @@
    "marks": 2,
    "subject": "Digital Logic",
    "topic": "Boolean Algebra",
-   "text": "Consider the Boolean function [latex]z(a,b,c)[/latex]. <br><img src=\"img/GATE/CS/20201/q28.jpg\" /><br>Which one of the following minterm lists represents the circuit given above?",
+   "text": "Consider the Boolean function [latex]z(a,b,c)[/latex]. <br><img src=\"data/img/GATE/CS/20201/q28.jpg\" /><br>Which one of the following minterm lists represents the circuit given above?",
    "options": [
     "[latex]z=\\Sigma (0,1,3,7)[/latex]",
     "[latex]z=\\Sigma (1,4,5,6,7)[/latex]",
@@ -4293,7 +4293,7 @@
    "marks": 2,
    "subject": "Operating System",
    "topic": "Process Synchronization",
-   "text": "Each of a set of n processes executes the following code using two semaphores a and b initialized to 1 and 0, respectively. Assume that count is a shared variable initialized to 0 and not used in CODE SECTION P.<br><img src=\"img/GATE/CS/20201/q34.jpg\" /><br> What does the code achieve?",
+   "text": "Each of a set of n processes executes the following code using two semaphores a and b initialized to 1 and 0, respectively. Assume that count is a shared variable initialized to 0 and not used in CODE SECTION P.<br><img src=\"data/img/GATE/CS/20201/q34.jpg\" /><br> What does the code achieve?",
    "options": [
     "It ensures that no process executes CODE SECTION Q before every process has finished CODE SECTION P.",
     "It ensures that two processes are in CODE SECTION Q at any time.",
@@ -4374,7 +4374,7 @@
    "marks": 2,
    "subject": "Database Management System",
    "topic": "Transaction",
-   "text": "Consider a schedule of transactions T1 and T2: <br><img src=\"img/GATE/CS/20201/q37.jpg\" /><br>Here, RX stands for \"Read(X)\" and WX stands for \"Write(X)\". Which one of the following schedules is conflict equivalent to the above schedule?<br><img src=\"img/GATE/CS/20201/q37a.jpg\" />",
+   "text": "Consider a schedule of transactions T1 and T2: <br><img src=\"data/img/GATE/CS/20201/q37.jpg\" /><br>Here, RX stands for \"Read(X)\" and WX stands for \"Write(X)\". Which one of the following schedules is conflict equivalent to the above schedule?<br><img src=\"data/img/GATE/CS/20201/q37a.jpg\" />",
    "options": [
     "A",
     "B",
@@ -4601,7 +4601,7 @@
    "marks": 2,
    "subject": "C Programming",
    "topic": "Function",
-   "text": "Consider the following C functions.  <br><img src=\"img/GATE/CS/20201/q46.jpg\" /><br>The return value of fun2(5) is ______",
+   "text": "Consider the following C functions.  <br><img src=\"data/img/GATE/CS/20201/q46.jpg\" /><br>The return value of fun2(5) is ______",
    "options": [],
    "answer": {
     "min": 55,
@@ -4647,7 +4647,7 @@
    "marks": 2,
    "subject": "C Programming",
    "topic": "Function",
-   "text": "Consider the following C functions.  <br><img src=\"img/GATE/CS/20201/q48.jpg\" /><br>The value returned by pp(3,4) is _____",
+   "text": "Consider the following C functions.  <br><img src=\"data/img/GATE/CS/20201/q48.jpg\" /><br>The value returned by pp(3,4) is _____",
    "options": [],
    "answer": {
     "min": 81,
@@ -4693,7 +4693,7 @@
    "marks": 2,
    "subject": "Operating System",
    "topic": "CPU Scheduling",
-   "text": "Consider the following set of processes, assumed to have arrived at time 0. Consider the CPU scheduling algorithms Shortest Job First (SJF) and Round Robin (RR). For RR, assume that the processes are scheduled in the order [latex]P_1,P_2,P_3,P_4[/latex]. <br><img src=\"img/GATE/CS/20201/q50.jpg\" /><br>If the time quantum for RR is 4 ms, then the absolute value of the difference between the average turnaround times (in ms) of SJF and RR  (round off to 2 decimal places is_______",
+   "text": "Consider the following set of processes, assumed to have arrived at time 0. Consider the CPU scheduling algorithms Shortest Job First (SJF) and Round Robin (RR). For RR, assume that the processes are scheduled in the order [latex]P_1,P_2,P_3,P_4[/latex]. <br><img src=\"data/img/GATE/CS/20201/q50.jpg\" /><br>If the time quantum for RR is 4 ms, then the absolute value of the difference between the average turnaround times (in ms) of SJF and RR  (round off to 2 decimal places is_______",
    "options": [],
    "answer": {
     "min": 5.25,
@@ -4939,7 +4939,7 @@
    "marks": 1,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "There are multiple routes to reach from node 1 to node 2, as shown in the network.   <br><img src=\"img/GATE/CS/20201/q60.jpg\" /><br>\n  The cost of travel on an edge between two nodes is given in rupees. Nodes 'a', 'b', 'c', 'd', 'e', and 'f' are toll booths. The toll price at toll booths marked 'a' and 'e' is Rs. 200, and is Rs. 100 for the other toll booths. Which is the cheapest route from node 1 to node 2?",
+   "text": "There are multiple routes to reach from node 1 to node 2, as shown in the network.   <br><img src=\"data/img/GATE/CS/20201/q60.jpg\" /><br>\n  The cost of travel on an edge between two nodes is given in rupees. Nodes 'a', 'b', 'c', 'd', 'e', and 'f' are toll booths. The toll price at toll booths marked 'a' and 'e' is Rs. 200, and is Rs. 100 for the other toll booths. Which is the cheapest route from node 1 to node 2?",
    "options": [
     "1 - a - c - 2",
     "1 - f - b - 2",
@@ -5020,7 +5020,7 @@
    "marks": 2,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "The figure below shows an annular ring with outer and inner as b and a, respectively. The annular space has been painted in the form of blue colour circles touching the outer and inner periphery of annular space. If maximum n number of circles can be painted, then the unpainted area available in annular space is _____.<br><img src=\"img/GATE/CS/20201/q63.jpg\" /><br>",
+   "text": "The figure below shows an annular ring with outer and inner as b and a, respectively. The annular space has been painted in the form of blue colour circles touching the outer and inner periphery of annular space. If maximum n number of circles can be painted, then the unpainted area available in annular space is _____.<br><img src=\"data/img/GATE/CS/20201/q63.jpg\" /><br>",
    "options": [
     "[latex]\\pi [(b^{2}-a^{2})-\\frac{n}{4}(b-a)^{2}][/latex]",
     "[latex]\\pi [(b^{2}-a^{2})-n(b-a)^{2}][/latex]",
@@ -5074,7 +5074,7 @@
    "marks": 2,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "The total revenue of a company during 2014 - 2018 is shown in the bar graph. If the total expenditure of the company in each year is 500 million rupees, then the aggregate profit or loss (in percentage) on the total expenditure of the company during 2014 - 2018 is ___________.  <br><br><img src=\"img/GATE/CS/20201/q65.jpg\"/><br>",
+   "text": "The total revenue of a company during 2014 - 2018 is shown in the bar graph. If the total expenditure of the company in each year is 500 million rupees, then the aggregate profit or loss (in percentage) on the total expenditure of the company during 2014 - 2018 is ___________.  <br><br><img src=\"data/img/GATE/CS/20201/q65.jpg\"/><br>",
    "options": [
     "16.67%  profit",
     "16.67%  loss",
@@ -5542,7 +5542,7 @@
    "marks": 1,
    "subject": "Algorithm",
    "topic": "Minimum Spanning Tree",
-   "text": "Consider the following undirected graph with edge weights as shown:<br><img src=\"img/GATE/CS/20211/q17.jpg\" /><br>The number of minimum-weight spanning trees of the graph is __________",
+   "text": "Consider the following undirected graph with edge weights as shown:<br><img src=\"data/img/GATE/CS/20211/q17.jpg\" /><br>The number of minimum-weight spanning trees of the graph is __________",
    "options": [],
    "answer": {
     "min": 3,
@@ -5803,7 +5803,7 @@
    "marks": 2,
    "subject": "Digital Logic",
    "topic": "Sequential Circuit",
-   "text": "Consider a 3-bit counter, designed using T flip-flops, as shown below:<br><img src=\"img/GATE/CS/20211/q28.jpg\" /><br>\nAssuming the initial state of the counter given by PQR as 000, what are the next three states?",
+   "text": "Consider a 3-bit counter, designed using T flip-flops, as shown below:<br><img src=\"data/img/GATE/CS/20211/q28.jpg\" /><br>\nAssuming the initial state of the counter given by PQR as 000, what are the next three states?",
    "options": [
     "011, 101, 000",
     "001, 010, 111",
@@ -5830,7 +5830,7 @@
    "marks": 2,
    "subject": "Computer Network",
    "topic": "Data Link Layer",
-   "text": "Assume that a 12-bit Hamming codeword consisting of 8-bit data and 4 check bits is [latex]d_8d_7d_6d_5c_8d_4d_4d_3d_2c_4d_1c_2c_1[/latex], where the data bits and the check bits are given in the following tables:\n<br><img src=\"img/GATE/CS/20211/q29.jpg\" /><br>\nWhich one of the following choices gives the correct values of x and y?",
+   "text": "Assume that a 12-bit Hamming codeword consisting of 8-bit data and 4 check bits is [latex]d_8d_7d_6d_5c_8d_4d_4d_3d_2c_4d_1c_2c_1[/latex], where the data bits and the check bits are given in the following tables:\n<br><img src=\"data/img/GATE/CS/20211/q29.jpg\" /><br>\nWhich one of the following choices gives the correct values of x and y?",
    "options": [
     "x is 0 and y is 0",
     "x is 0 and y is 1",
@@ -5884,7 +5884,7 @@
    "marks": 2,
    "subject": "Theory of Computation",
    "topic": "Context Free Grammar",
-   "text": "Consider the following context-free grammar where the set of terminals is [latex]\\{a,b,c,d,f\\}[/latex].<br><br>[latex]\\begin{array}{lll} S & \\rightarrow & d \\: a \\: T \\mid R \\: f \\\\ T & \\rightarrow & a \\: S \\: \\mid \\: b \\: a \\: T \\: \\mid \\epsilon \\\\ R & \\rightarrow & c \\: a \\: T \\: R \\: \\mid \\epsilon \\end{array}[/latex]\n<br><br>\nThe following is a partially-filled LL(1) parsing table.<br><img src=\"img/GATE/CS/20211/q31a.jpg\" /><br>\nWhich one of the following choices represents the correct combination for the numbered cells in the parsing table (\"blank\" denotes that the corresponding cell is empty)?<br><img src=\"img/GATE/CS/20211/q31b.jpg\" /><br>",
+   "text": "Consider the following context-free grammar where the set of terminals is [latex]\\{a,b,c,d,f\\}[/latex].<br><br>[latex]\\begin{array}{lll} S & \\rightarrow & d \\: a \\: T \\mid R \\: f \\\\ T & \\rightarrow & a \\: S \\: \\mid \\: b \\: a \\: T \\: \\mid \\epsilon \\\\ R & \\rightarrow & c \\: a \\: T \\: R \\: \\mid \\epsilon \\end{array}[/latex]\n<br><br>\nThe following is a partially-filled LL(1) parsing table.<br><img src=\"data/img/GATE/CS/20211/q31a.jpg\" /><br>\nWhich one of the following choices represents the correct combination for the numbered cells in the parsing table (\"blank\" denotes that the corresponding cell is empty)?<br><img src=\"data/img/GATE/CS/20211/q31b.jpg\" /><br>",
    "options": [
     "A",
     "B",
@@ -6073,7 +6073,7 @@
    "marks": 2,
    "subject": "Theory of Computation",
    "topic": "Finite Automata",
-   "text": "Consider the following language:<br>\n<br>[latex]L= \\{ w \\in \\{0,1\\}^* \\mid w \\text{ ends with the substring } 011 \\}[/latex]\n<br><br>\nWhich one of the following deterministic finite automata accepts [latex]L[/latex]?<br><img src=\"img/GATE/CS/20211/q38.jpg\" /><br>",
+   "text": "Consider the following language:<br>\n<br>[latex]L= \\{ w \\in \\{0,1\\}^* \\mid w \\text{ ends with the substring } 011 \\}[/latex]\n<br><br>\nWhich one of the following deterministic finite automata accepts [latex]L[/latex]?<br><img src=\"data/img/GATE/CS/20211/q38.jpg\" /><br>",
    "options": [
     "A",
     "B",
@@ -6338,7 +6338,7 @@
    "marks": 2,
    "subject": "Data Structure",
    "topic": "Hashing",
-   "text": "Consider a dynamic hashing approach for 4-bit integer keys:\n<br><br>\n1. There is a main hash table of size 4.<br>\n2. The 2 least significant bits of a key is used to index into the main hash table.<br>\n3. Initially, the main hash table entries are empty.<br>\n4. Thereafter, when more keys are hashed into it, to resolve collisions, the set of all keys corresponding to a main hash table. entry is organized as a binary tree that grows on demand.<br>\n5. First, the 3rd least significant bit is used to divide the keys into left and right subtrees.<br>\n6. To resolve more collisions, each node of the binary tree is further sub-divided into left and right subtrees based on the 4th least significant bit.<br>\n7. A split is done only if it is needed, i.e., only when there is a collision.<br><br>\nConsider the following state of the hash table.  <br><img src=\"img/GATE/CS/20211/q47.jpg\" /><br>\n  Which of the following sequences of key insertions can cause the above state of the hash table (assume the keys are in decimal notation)?",
+   "text": "Consider a dynamic hashing approach for 4-bit integer keys:\n<br><br>\n1. There is a main hash table of size 4.<br>\n2. The 2 least significant bits of a key is used to index into the main hash table.<br>\n3. Initially, the main hash table entries are empty.<br>\n4. Thereafter, when more keys are hashed into it, to resolve collisions, the set of all keys corresponding to a main hash table. entry is organized as a binary tree that grows on demand.<br>\n5. First, the 3rd least significant bit is used to divide the keys into left and right subtrees.<br>\n6. To resolve more collisions, each node of the binary tree is further sub-divided into left and right subtrees based on the 4th least significant bit.<br>\n7. A split is done only if it is needed, i.e., only when there is a collision.<br><br>\nConsider the following state of the hash table.  <br><img src=\"data/img/GATE/CS/20211/q47.jpg\" /><br>\n  Which of the following sequences of key insertions can cause the above state of the hash table (assume the keys are in decimal notation)?",
    "options": [
     "5,9,4,13,10,7",
     "9,5,10,6,7,1",
@@ -6436,7 +6436,7 @@
    "marks": 2,
    "subject": "Theory of Computation",
    "topic": "Push-down Automata",
-   "text": "In a  pushdown automaton [latex]P=(Q, \\Sigma, \\Gamma, \\delta, q_0, F)[/latex], a transition of the form,\n<br><img src=\"img/GATE/CS/20211/q51a.jpg\" /><br>where [latex]p,q \\in Q \\; a \\in \\sigma \\cup \\{ \\epsilon \\} ,\\;X,Y, \\in \\Gamma \\cup \\{ \\epsilon \\}[/latex], represents<br><br>[latex](q,Y) \\in \\delta(p,a,X)[/latex]\n<br><br>\nConsider the following pushdown automaton over the input alphabet [latex]\\Sigma = \\{a,b\\}[/latex] and stack alphabet [latex]\\Gamma = \\{ \\#, A\\}[/latex]. <br><img src=\"img/GATE/CS/20211/q51b.jpg\" /><br>\nThe number of strings of length 100 accepted by the above pushdown automaton is ___________",
+   "text": "In a  pushdown automaton [latex]P=(Q, \\Sigma, \\Gamma, \\delta, q_0, F)[/latex], a transition of the form,\n<br><img src=\"data/img/GATE/CS/20211/q51a.jpg\" /><br>where [latex]p,q \\in Q \\; a \\in \\sigma \\cup \\{ \\epsilon \\} ,\\;X,Y, \\in \\Gamma \\cup \\{ \\epsilon \\}[/latex], represents<br><br>[latex](q,Y) \\in \\delta(p,a,X)[/latex]\n<br><br>\nConsider the following pushdown automaton over the input alphabet [latex]\\Sigma = \\{a,b\\}[/latex] and stack alphabet [latex]\\Gamma = \\{ \\#, A\\}[/latex]. <br><img src=\"data/img/GATE/CS/20211/q51b.jpg\" /><br>\nThe number of strings of length 100 accepted by the above pushdown automaton is ___________",
    "options": [],
    "answer": {
     "min": 50,
@@ -6505,7 +6505,7 @@
    "marks": 2,
    "subject": "Discrete Mathematics",
    "topic": "Probability Theory",
-   "text": "A sender (S) transmits a signal, which can be one of the two kinds: H and L with probabilities 0.1 and 0.9 respectively, to a receiver (R)<br>\nIn the graph below, the weight of edge [latex](u,v)[/latex] is the probability of receiving [latex]v[/latex] when [latex]u[/latex] is transmitted, where [latex]u,v\\in\\{H,L\\}[/latex]. For example, the probability that the received signal is [latex]L[/latex] given the transmitted signal was [latex]H[/latex], is 0.7.\n<br><img src=\"img/GATE/CS/20211/q54.jpg\" /><br>\nIf the received signal is [latex]H[/latex], the probability that the transmitted signal was [latex]H[/latex] (rounded to 2 decimal places) is __________.",
+   "text": "A sender (S) transmits a signal, which can be one of the two kinds: H and L with probabilities 0.1 and 0.9 respectively, to a receiver (R)<br>\nIn the graph below, the weight of edge [latex](u,v)[/latex] is the probability of receiving [latex]v[/latex] when [latex]u[/latex] is transmitted, where [latex]u,v\\in\\{H,L\\}[/latex]. For example, the probability that the received signal is [latex]L[/latex] given the transmitted signal was [latex]H[/latex], is 0.7.\n<br><img src=\"data/img/GATE/CS/20211/q54.jpg\" /><br>\nIf the received signal is [latex]H[/latex], the probability that the transmitted signal was [latex]H[/latex] (rounded to 2 decimal places) is __________.",
    "options": [],
    "answer": {
     "min": 0.04,
@@ -6578,7 +6578,7 @@
    "marks": 1,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "A polygon is convex if, for every pair of points, P and Q belonging to the polygon, the line segment PQ lies completely inside or on the polygon.\n<br>\nWhich one of the following is NOT a convex polygon?<br><img src=\"img/GATE/CS/20211/q57.jpg\" />",
+   "text": "A polygon is convex if, for every pair of points, P and Q belonging to the polygon, the line segment PQ lies completely inside or on the polygon.\n<br>\nWhich one of the following is NOT a convex polygon?<br><img src=\"data/img/GATE/CS/20211/q57.jpg\" />",
    "options": [
     "A",
     "B",
@@ -6632,7 +6632,7 @@
    "marks": 1,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "<br><img src=\"img/GATE/CS/20211/q59a.jpg\" /><br>A circular sheet of paper is folded along the lines in the direction shown. The paper, after being punched in the final folded state as shown and unfolded in the reverse order of folding, will look like _______.<br><img src=\"img/GATE/CS/20211/q59b.jpg\" />",
+   "text": "<br><img src=\"data/img/GATE/CS/20211/q59a.jpg\" /><br>A circular sheet of paper is folded along the lines in the direction shown. The paper, after being punched in the final folded state as shown and unfolded in the reverse order of folding, will look like _______.<br><img src=\"data/img/GATE/CS/20211/q59b.jpg\" />",
    "options": [
     "A",
     "B",
@@ -6929,7 +6929,7 @@
    "marks": 1,
    "subject": "Digital Logic",
    "topic": "Combinational Circuit",
-   "text": "Which one of the following circuits implements the Boolean function given below?<br><br>[latex]f(x,y,z) = m_0+m_1+m_3+m_4+m_5+m_6[/latex]<br><br>where [latex]m_i[/latex] is the [latex]i^{th}[/latex] minterm.<br><img src=\"img/GATE/CS/20212/q5.jpg\" /><br>",
+   "text": "Which one of the following circuits implements the Boolean function given below?<br><br>[latex]f(x,y,z) = m_0+m_1+m_3+m_4+m_5+m_6[/latex]<br><br>where [latex]m_i[/latex] is the [latex]i^{th}[/latex] minterm.<br><img src=\"data/img/GATE/CS/20212/q5.jpg\" /><br>",
    "options": [
     "A",
     "B",
@@ -7265,7 +7265,7 @@
    "marks": 1,
    "subject": "Theory of Computation",
    "topic": "Finite Automata",
-   "text": "Consider the following deterministic finite automaton (DFA)<br><img src=\"img/GATE/CS/20212/q17.jpg\" /><br>The number of strings of length 8 accepted by the above automaton is  _________",
+   "text": "Consider the following deterministic finite automaton (DFA)<br><img src=\"data/img/GATE/CS/20212/q17.jpg\" /><br>The number of strings of length 8 accepted by the above automaton is  _________",
    "options": [],
    "answer": {
     "min": 256,
@@ -8003,7 +8003,7 @@
    "marks": 2,
    "subject": "Computer Network",
    "topic": "Network Layer Protocol",
-   "text": "Consider a computer network using the distance vector routing algorithm in its network layer. The partial topology of the network is shown below.<br><img src=\"img/GATE/CS/20212/q45.jpg\" /><br>\nThe objective is to find the shortest-cost path from the router R to routers P and Q. Assume that R does not initially know the shortest routes to P and Q. Assume that R has three neighboring routers denoted as X, Y and Z. During one iteration, R measures its distance to its neighbors X, Y, and Z as 3, 2 and 5, respectively. Router R gets routing vectors from its neighbors that indicate that the distance to router P from routers X, Y and Z are 7, 6 and 5, respectively. The routing vector also indicates that the distance to router Q from routers X, Y and Z are 4, 6 and 8 respectively. Which of the following statement(s) is/are correct with respect to the new routing table o R, after updation during this iteration?",
+   "text": "Consider a computer network using the distance vector routing algorithm in its network layer. The partial topology of the network is shown below.<br><img src=\"data/img/GATE/CS/20212/q45.jpg\" /><br>\nThe objective is to find the shortest-cost path from the router R to routers P and Q. Assume that R does not initially know the shortest routes to P and Q. Assume that R has three neighboring routers denoted as X, Y and Z. During one iteration, R measures its distance to its neighbors X, Y, and Z as 3, 2 and 5, respectively. Router R gets routing vectors from its neighbors that indicate that the distance to router P from routers X, Y and Z are 7, 6 and 5, respectively. The routing vector also indicates that the distance to router Q from routers X, Y and Z are 4, 6 and 8 respectively. Which of the following statement(s) is/are correct with respect to the new routing table o R, after updation during this iteration?",
    "options": [
     "The distance from R to P will be stored as 10",
     "The distance from R to Q will be stored as 7",
@@ -8033,7 +8033,7 @@
    "marks": 2,
    "subject": "Discrete Mathematics",
    "topic": "Graph Theory",
-   "text": "Consider the following directed graph:<br><img src=\"img/GATE/CS/20212/q46.jpg\" /><br>\nWhich of the following is/are correct about the graph?",
+   "text": "Consider the following directed graph:<br><img src=\"data/img/GATE/CS/20212/q46.jpg\" /><br>\nWhich of the following is/are correct about the graph?",
    "options": [
     "The graph does not have a topological order",
     "A depth-first traversal starting at vertex S classifies three directed edges as back edges",
@@ -8094,7 +8094,7 @@
    "marks": 2,
    "subject": "Operating System",
    "topic": "Memory Management",
-   "text": "Consider a three-level page table to translate a 39-bit virtual address to a physical address as shown below:<br><img src=\"img/GATE/CS/20212/q48.jpg\" /><br>\nThe page size is 4 KB = (1KB =[latex]2^{10}[/latex] bytes) and page table entry size at every level is 8 bytes. A process P is currently using 2 GB (1 GB =[latex]2^{30}[/latex] bytes) virtual memory which os mapped to 2 GB of physical memory. The minimum amount of memory required for the page table of P across all levels is _________ KB",
+   "text": "Consider a three-level page table to translate a 39-bit virtual address to a physical address as shown below:<br><img src=\"data/img/GATE/CS/20212/q48.jpg\" /><br>\nThe page size is 4 KB = (1KB =[latex]2^{10}[/latex] bytes) and page table entry size at every level is 8 bytes. A process P is currently using 2 GB (1 GB =[latex]2^{30}[/latex] bytes) virtual memory which os mapped to 2 GB of physical memory. The minimum amount of memory required for the page table of P across all levels is _________ KB",
    "options": [],
    "answer": {
     "min": 4108,
@@ -8255,7 +8255,7 @@
    "marks": 2,
    "subject": "Discrete Mathematics",
    "topic": "Graph Theory",
-   "text": "In a directed acyclic graph with a source vertex s, the quality-score of a directed path is defined to be the product of the weights of the edges on the path. Further, for a vertex v other than s, the quality-score of v is defined to be the maximum among the quality-scores of all the paths from s to v. The quality-score of s is assumed to be 1.\n<br><img src=\"img/GATE/CS/20212/q55.jpg\" /><br>\nThe sum of the quality-scores of all vertices on the graph shown above is ______",
+   "text": "In a directed acyclic graph with a source vertex s, the quality-score of a directed path is defined to be the product of the weights of the edges on the path. Further, for a vertex v other than s, the quality-score of v is defined to be the maximum among the quality-scores of all the paths from s to v. The quality-score of s is assumed to be 1.\n<br><img src=\"data/img/GATE/CS/20212/q55.jpg\" /><br>\nThe sum of the quality-scores of all vertices on the graph shown above is ______",
    "options": [],
    "answer": {
     "min": 929,
@@ -8305,7 +8305,7 @@
    "marks": 1,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "<br><img src=\"img/GATE/CS/20212/q57a.jpg\" /><br>A transparent square sheet shown above is folded along the dotted line. The folded sheet will look like ___________<br><img src=\"img/GATE/CS/20212/q57b.jpg\" /><br>",
+   "text": "<br><img src=\"data/img/GATE/CS/20212/q57a.jpg\" /><br>A transparent square sheet shown above is folded along the dotted line. The folded sheet will look like ___________<br><img src=\"data/img/GATE/CS/20212/q57b.jpg\" /><br>",
    "options": [
     "A",
     "B",
@@ -8440,7 +8440,7 @@
    "marks": 2,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "<br><img src=\"img/GATE/CS/20212/q62a.jpg\" /><br>A jigsaw puzzle has 2 pieces. One of the pieces is shown above. Which one of the given options for the missing piece when assembled will form a rectangle? The piece can be moved, rotated or flipped to assemble with the above piece.<br><img src=\"img/GATE/CS/20212/q62b.jpg\" /><br>",
+   "text": "<br><img src=\"data/img/GATE/CS/20212/q62a.jpg\" /><br>A jigsaw puzzle has 2 pieces. One of the pieces is shown above. Which one of the given options for the missing piece when assembled will form a rectangle? The piece can be moved, rotated or flipped to assemble with the above piece.<br><img src=\"data/img/GATE/CS/20212/q62b.jpg\" /><br>",
    "options": [
     "A",
     "B",
@@ -8494,7 +8494,7 @@
    "marks": 2,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "<br><img src=\"img/GATE/CS/20212/q64.jpg\" /><br>The number of units of a product sold in three different years and the respective net profits are presented in the figure above. The cost/unit in Year 3 was Re. 1, which was half the cost/unit in Year 2. The cost/unit in Year 3 was one-third of the cost/unit in Year 1. Taxes were paid on the selling price at 10%, 13%, and 15% respectively for the three years. Net profit is calculated as the difference between the selling price and teh sum of cost and taxes paid in that year.<br><br>\nThe ratio of the selling price in Year 2 to the selling price in Year 3 is _________.",
+   "text": "<br><img src=\"data/img/GATE/CS/20212/q64.jpg\" /><br>The number of units of a product sold in three different years and the respective net profits are presented in the figure above. The cost/unit in Year 3 was Re. 1, which was half the cost/unit in Year 2. The cost/unit in Year 3 was one-third of the cost/unit in Year 1. Taxes were paid on the selling price at 10%, 13%, and 15% respectively for the three years. Net profit is calculated as the difference between the selling price and teh sum of cost and taxes paid in that year.<br><br>\nThe ratio of the selling price in Year 2 to the selling price in Year 3 is _________.",
    "options": [
     "04:03",
     "01:01",
@@ -8575,7 +8575,7 @@
    "marks": 1,
    "subject": "Theory of Computation",
    "topic": "Finite Automata",
-   "text": "Which one of the following regular expressions correctly represents the language of the finite automaton given below? <br><img src=\"img/GATE/CS/20221/q2.jpg\" /><br>",
+   "text": "Which one of the following regular expressions correctly represents the language of the finite automaton given below? <br><img src=\"data/img/GATE/CS/20221/q2.jpg\" /><br>",
    "options": [
     "ab*bab* + ba*aba*",
     "(ab*b)*ab* + (ba*a)*ba*",
@@ -8656,7 +8656,7 @@
    "marks": 1,
    "subject": "Data Structure",
    "topic": "Link List",
-   "text": "Consider the problem of reversing a singly linked list. To take an example, given the linked list below,<br><img src=\"img/GATE/CS/20221/q5a.jpg\" /><br>the reversed linked list should look like   <br><img src=\"img/GATE/CS/20221/q5b.jpg\" /><br>   Which one of the following statements is TRUE about the time complexity of algorithms that solve the above problem in O(1) space?",
+   "text": "Consider the problem of reversing a singly linked list. To take an example, given the linked list below,<br><img src=\"data/img/GATE/CS/20221/q5a.jpg\" /><br>the reversed linked list should look like   <br><img src=\"data/img/GATE/CS/20221/q5b.jpg\" /><br>   Which one of the following statements is TRUE about the time complexity of algorithms that solve the above problem in O(1) space?",
    "options": [
     "The best algorithm for the problem takes [latex]\\theta(n)[/latex] time in the worst case.",
     "The best algorithm for the problem takes [latex]\\theta(n \\log n)[/latex] time in the worst case.",
@@ -8764,7 +8764,7 @@
    "marks": 1,
    "subject": "Operating System",
    "topic": "Process Synchronization",
-   "text": "Consider the following threads, [latex]T_1, T_2,  \\text{ and }T_3[/latex] executing on a single processor, synchronized using three binary semaphore variables, [latex]S_1, S_2,  \\text{ and }S_3[/latex], operated upon using standard [latex]wait()[/latex] and [latex]signal()[/latex]. The threads can be context switched in any order and at any time.<br><img src=\"img/GATE/CS/20221/q9.jpg\" /><br>Which initialization of the semaphores would print the sequence BCABCABCA ...?",
+   "text": "Consider the following threads, [latex]T_1, T_2,  \\text{ and }T_3[/latex] executing on a single processor, synchronized using three binary semaphore variables, [latex]S_1, S_2,  \\text{ and }S_3[/latex], operated upon using standard [latex]wait()[/latex] and [latex]signal()[/latex]. The threads can be context switched in any order and at any time.<br><img src=\"data/img/GATE/CS/20221/q9.jpg\" /><br>Which initialization of the semaphores would print the sequence BCABCABCA ...?",
    "options": [
     "[latex]S_1 = 1; S_2 = 1; S_3 = 1[/latex]",
     "[latex]S_1 = 1; S_2 = 1; S_3 = 0[/latex]",
@@ -8845,7 +8845,7 @@
    "marks": 1,
    "subject": "Computer Network",
    "topic": "Network Layer Protocol",
-   "text": "Consider an enterprise network with two Ethernet segments, a web server and a firewall, connected via three routers as shown below.<br><img src=\"img/GATE/CS/20221/q12.jpg\" /><br>What is the number of subnets inside the enterprise network?",
+   "text": "Consider an enterprise network with two Ethernet segments, a web server and a firewall, connected via three routers as shown below.<br><img src=\"data/img/GATE/CS/20221/q12.jpg\" /><br>What is the number of subnets inside the enterprise network?",
    "options": [
     "3",
     "12",
@@ -9317,7 +9317,7 @@
    "marks": 2,
    "subject": "Computer Organization",
    "topic": "ALU Data Path and Control Unit",
-   "text": "Consider a digital display system (DDS) shown in the figure that displays the contents of register X. A 16-bit code word is used to load a word in X, either from S or from R. S is a 1024-word memory segment and R is a 32-word register file. Based on the value of mode bit M, T selects an input word to load in X. P and Q interface with the corresponding bits in the code word to choose the addressed word. Which one of the following represents the functionality of P, Q, and T?<br><img src=\"img/GATE/CS/20221/q30.jpg\" /><br>",
+   "text": "Consider a digital display system (DDS) shown in the figure that displays the contents of register X. A 16-bit code word is used to load a word in X, either from S or from R. S is a 1024-word memory segment and R is a 32-word register file. Based on the value of mode bit M, T selects an input word to load in X. P and Q interface with the corresponding bits in the code word to choose the addressed word. Which one of the following represents the functionality of P, Q, and T?<br><img src=\"data/img/GATE/CS/20221/q30.jpg\" /><br>",
    "options": [
     "P is 10:1 multiplexer; <br>Q is 5:1 multiplexer; <br>T is 2:1 multiplexer",
     "P is [latex]10:2^{10}[/latex] decoder; <br>Q is [latex]5:2^{5}[/latex] decoder; <br>T is 2:1 encoder",
@@ -9425,7 +9425,7 @@
    "marks": 2,
    "subject": "C Programming",
    "topic": "Arithmetic Operation",
-   "text": "What is printed by the following ANSI C program?<pre><code>#include &lt;stdio.h&gt;\nint main(int argc, char *argv[]){ \n char a = 'P';\n char b = 'x';\n char c = (a  &  b) + '*';\n char d = (a | b) - '-';\n char e = (a ^ b) + '+'; \n printf(\"%c %c %c \\n\", c, d, e); \n return 0;\n}\n</code></pre><br>ASCII encoding for relevant characters is given below<br><img src=\"img/GATE/CS/20221/q34.jpg\" /><br>\n",
+   "text": "What is printed by the following ANSI C program?<pre><code>#include &lt;stdio.h&gt;\nint main(int argc, char *argv[]){ \n char a = 'P';\n char b = 'x';\n char c = (a  &  b) + '*';\n char d = (a | b) - '-';\n char e = (a ^ b) + '+'; \n printf(\"%c %c %c \\n\", c, d, e); \n return 0;\n}\n</code></pre><br>ASCII encoding for relevant characters is given below<br><img src=\"data/img/GATE/CS/20221/q34.jpg\" /><br>\n",
    "options": [
     "z K  S",
     "122 75  83",
@@ -9603,11 +9603,11 @@
    "marks": 2,
    "subject": "Discrete Mathematics",
    "topic": "Graph Theory",
-   "text": "The following simple undirected graph is referred to as the Peterson graph.<br><img src=\"img/GATE/CS/20221/q40.jpg\" /><br>Which of the following statements is/are TRUE?",
+   "text": "The following simple undirected graph is referred to as the Peterson graph.<br><img src=\"data/img/GATE/CS/20221/q40.jpg\" /><br>Which of the following statements is/are TRUE?",
    "options": [
     "The chromatic number of the graph is 3.",
     "The graph has a Hamiltonian path.",
-    "The following graph is isomorphic to the Peterson graph.<br><img src=\"img/GATE/CS/20221/a40.jpg\" /><br>",
+    "The following graph is isomorphic to the Peterson graph.<br><img src=\"data/img/GATE/CS/20221/a40.jpg\" /><br>",
     "The size of the largest independent set of the given graph is 3. (A subset of vertices of a graph form an independent set if no two vertices of the subset are adjacent.)"
    ],
    "answer": {
@@ -9786,7 +9786,7 @@
    "marks": 2,
    "subject": "Database Management System",
    "topic": "SQL",
-   "text": "Consider the relational database with the following four schemas and their respective instances.<br><br><img src=\"img/GATE/CS/20221/q46.jpg\" /><br>The number of rows returned by the above SQL query is ___",
+   "text": "Consider the relational database with the following four schemas and their respective instances.<br><br><img src=\"data/img/GATE/CS/20221/q46.jpg\" /><br>The number of rows returned by the above SQL query is ___",
    "options": [],
    "answer": {
     "min": 2,
@@ -9809,7 +9809,7 @@
    "marks": 2,
    "subject": "Computer Network",
    "topic": "Network Layer Protocol",
-   "text": "Consider a network with three routers P, Q, R shown in the figure below. All the links have cost of unity.<br><img src=\"img/GATE/CS/20221/q47.jpg\" /><br>The routers exchange distance vector routing information and have converged on the routing tables, after which the link Q-R fails. Assume that P and Q send out routing updates at random times, each at the same average rate. The probability of a routing loop formation (rounded off to one decimal place) between P and Q, leading to count-to-infinity problem, is ____",
+   "text": "Consider a network with three routers P, Q, R shown in the figure below. All the links have cost of unity.<br><img src=\"data/img/GATE/CS/20221/q47.jpg\" /><br>The routers exchange distance vector routing information and have converged on the routing tables, after which the link Q-R fails. Assume that P and Q send out routing updates at random times, each at the same average rate. The probability of a routing loop formation (rounded off to one decimal place) between P and Q, leading to count-to-infinity problem, is ____",
    "options": [],
    "answer": {
     "min": 0.5,
@@ -9924,7 +9924,7 @@
    "marks": 2,
    "subject": "Data Structure",
    "topic": "Queue",
-   "text": "Consider the queues Q1 containing four elements and Q2 containing none (shown\nas the Initial State in the figure). The only operations allowed on these two queues are  [latex]Enqueue(Q,element)[/latex]   and  [latex]Dequeue(Q)[/latex].   The  minimum  number  of [latex]Enqueue [/latex] operations on Q1 required to place the elements of Q1 in Q2 in reverse\norder (shown as the Final State in the figure) without using any additional storage is<br><img src=\"img/GATE/CS/20221/q52.jpg\" /><br>\n",
+   "text": "Consider the queues Q1 containing four elements and Q2 containing none (shown\nas the Initial State in the figure). The only operations allowed on these two queues are  [latex]Enqueue(Q,element)[/latex]   and  [latex]Dequeue(Q)[/latex].   The  minimum  number  of [latex]Enqueue [/latex] operations on Q1 required to place the elements of Q1 in Q2 in reverse\norder (shown as the Final State in the figure) without using any additional storage is<br><img src=\"data/img/GATE/CS/20221/q52.jpg\" /><br>\n",
    "options": [],
    "answer": {
     "min": 0,
@@ -10124,7 +10124,7 @@
    "marks": 1,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "A palindrome is a word that reads the same forwards and backwards. In a game of words, a player has the following two plates painted with letters.<br><img src=\"img/GATE/CS/20221/q60.jpg\" /><br>From the additional plates given in the options, which one of the combinations of additional plates would allow the player to construct a five-letter palindrome. The player should use all the five plates exactly once. The plates can be rotated in their plane.<br><img src=\"img/GATE/CS/20221/q60a.jpg\" /><br>",
+   "text": "A palindrome is a word that reads the same forwards and backwards. In a game of words, a player has the following two plates painted with letters.<br><img src=\"data/img/GATE/CS/20221/q60.jpg\" /><br>From the additional plates given in the options, which one of the combinations of additional plates would allow the player to construct a five-letter palindrome. The player should use all the five plates exactly once. The plates can be rotated in their plane.<br><img src=\"data/img/GATE/CS/20221/q60a.jpg\" /><br>",
    "options": [
     "A",
     "B",
@@ -10259,7 +10259,7 @@
    "marks": 2,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "A plot of land must be divided between four families. They want their individual plots to be similar in shape, not necessarily equal in area. The land has equally spaced poles, marked as dots in the below figure. Two ropes, R1 and R2, are already present and cannot be moved.\nWhat is the least number of additional straight ropes needed to create the desired plots? A single rope can pass through three poles that are aligned in a straight line.\n<br><img src=\"img/GATE/CS/20221/q65.jpg\" /><br>",
+   "text": "A plot of land must be divided between four families. They want their individual plots to be similar in shape, not necessarily equal in area. The land has equally spaced poles, marked as dots in the below figure. Two ropes, R1 and R2, are already present and cannot be moved.\nWhat is the least number of additional straight ropes needed to create the desired plots? A single rope can pass through three poles that are aligned in a straight line.\n<br><img src=\"data/img/GATE/CS/20221/q65.jpg\" /><br>",
    "options": [
     "2",
     "4",
@@ -10367,7 +10367,7 @@
    "marks": 1,
    "subject": "Theory of Computation",
    "topic": "Regular Expression",
-   "text": "Consider the Deterministic Finite-state Automaton (DFA) [latex]A[/latex] shown below. The\nDFA runs on the alphabet {0, 1}, and has the set of states {s, p, q, r}, with s being\nthe start state and p being the only final state.<br><img src=\"img/GATE/CS/20231/q4.jpg\" /><br>Which one of the following regular expressions correctly describes the language\naccepted by [latex]A[/latex]?",
+   "text": "Consider the Deterministic Finite-state Automaton (DFA) [latex]A[/latex] shown below. The\nDFA runs on the alphabet {0, 1}, and has the set of states {s, p, q, r}, with s being\nthe start state and p being the only final state.<br><img src=\"data/img/GATE/CS/20231/q4.jpg\" /><br>Which one of the following regular expressions correctly describes the language\naccepted by [latex]A[/latex]?",
    "options": [
     "[latex]1(0^*11)^*[/latex]",
     "[latex]0(0 + 1)^*[/latex]",
@@ -10502,7 +10502,7 @@
    "marks": 1,
    "subject": "Theory of Computation",
    "topic": "Regular Expression",
-   "text": "Consider the following definition of a lexical token [latex]id[/latex] for an identifier in a programming language, using extended regular expressions:\n<br><br> [latex] letter \\rightarrow  [A-Za-z][/latex]<br>[latex] digit \\rightarrow  [0-9][/latex]<br>[latex] id \\rightarrow letter (letter\\;| \\;digit)^*[/latex]<br>  <br><br>Which one of the following Non-deterministic Finite-state Automata with -\ntransitions accepts the set of valid identifiers? (A double-circle denotes a final\nstate)<br><img src=\"img/GATE/CS/20231/q9.jpg\" /><br>",
+   "text": "Consider the following definition of a lexical token [latex]id[/latex] for an identifier in a programming language, using extended regular expressions:\n<br><br> [latex] letter \\rightarrow  [A-Za-z][/latex]<br>[latex] digit \\rightarrow  [0-9][/latex]<br>[latex] id \\rightarrow letter (letter\\;| \\;digit)^*[/latex]<br>  <br><br>Which one of the following Non-deterministic Finite-state Automata with -\ntransitions accepts the set of valid identifiers? (A double-circle denotes a final\nstate)<br><img src=\"data/img/GATE/CS/20231/q9.jpg\" /><br>",
    "options": [
     "A",
     "B",
@@ -10556,7 +10556,7 @@
    "marks": 1,
    "subject": "Digital Logic",
    "topic": "Combinational Circuit",
-   "text": "The output of a 2-input multiplexer is connected back to one of its inputs as shown\nin the figure.<br><img src=\"img/GATE/CS/20231/q11.jpg\" /><br>Match the functional equivalence of this circuit to one of the following options.",
+   "text": "The output of a 2-input multiplexer is connected back to one of its inputs as shown\nin the figure.<br><img src=\"data/img/GATE/CS/20231/q11.jpg\" /><br>Match the functional equivalence of this circuit to one of the following options.",
    "options": [
     "D Flip-flop",
     "D Latch",
@@ -10825,7 +10825,7 @@
    "marks": 1,
    "subject": "Engineering Mathematics",
    "topic": "Linear Algebra",
-   "text": "Let A be the adjacency matrix of the graph with vertices {1, 2, 3, 4, 5}.<br><img src=\"img/GATE/CS/20231/q20.jpg\" /><br>Let [latex]\\lambda _1,\\lambda _2,\\lambda _3,\\lambda _4,\\; and \\; \\lambda _5[/latex] be the five eigenvalues of A. Note that these eigenvalues\nneed not be distinct.<br>The value of [latex]\\lambda _1+\\lambda _2+\\lambda _3+ \\lambda _4+  \\lambda _5 \n =[/latex] _____",
+   "text": "Let A be the adjacency matrix of the graph with vertices {1, 2, 3, 4, 5}.<br><img src=\"data/img/GATE/CS/20231/q20.jpg\" /><br>Let [latex]\\lambda _1,\\lambda _2,\\lambda _3,\\lambda _4,\\; and \\; \\lambda _5[/latex] be the five eigenvalues of A. Note that these eigenvalues\nneed not be distinct.<br>The value of [latex]\\lambda _1+\\lambda _2+\\lambda _3+ \\lambda _4+  \\lambda _5 \n =[/latex] _____",
    "options": [],
    "answer": {
     "min": 2,
@@ -10963,7 +10963,7 @@
    "marks": 2,
    "subject": "C Programming",
    "topic": "Function",
-   "text": "Consider the following program:<br><pre><code>\nint main()\n{\n  f1();\n  f2(2);\n  f3();\n  return(0);\n}\n\nint f1()\n{\n  return(1);\n}\n\nint f2(int X)\n{\n  f3();\n  if (X==1)\n     return f1();\n  else\n     return (X*f2(X-1));\n}\n\nint f3()\n{\n  return(5);\n}\n\n</code></pre><br>Which one of the following options represents the activation tree corresponding to\nthe main function?<br><img src=\"img/GATE/CS/20231/q26.jpg\" /><br>\n",
+   "text": "Consider the following program:<br><pre><code>\nint main()\n{\n  f1();\n  f2(2);\n  f3();\n  return(0);\n}\n\nint f1()\n{\n  return(1);\n}\n\nint f2(int X)\n{\n  f3();\n  if (X==1)\n     return f1();\n  else\n     return (X*f2(X-1));\n}\n\nint f3()\n{\n  return(5);\n}\n\n</code></pre><br>Which one of the following options represents the activation tree corresponding to\nthe main function?<br><img src=\"data/img/GATE/CS/20231/q26.jpg\" /><br>\n",
    "options": [
     "A",
     "B",
@@ -10990,7 +10990,7 @@
    "marks": 2,
    "subject": "Compiler Design",
    "topic": "Runtime Environment",
-   "text": "Consider the control flow graph shown. <br><img src=\"img/GATE/CS/20231/q27.jpg\" /><br>\n   Which one of the following choices correctly lists the set of live variables at the exit\npoint of each basic block?",
+   "text": "Consider the control flow graph shown. <br><img src=\"data/img/GATE/CS/20231/q27.jpg\" /><br>\n   Which one of the following choices correctly lists the set of live variables at the exit\npoint of each basic block?",
    "options": [
     "B1: {}, B2: {a}, B3: {a}, B4: {a}",
     "B1: {i, j}, B2: {a}, B3: {a}, B4: {i}",
@@ -11071,7 +11071,7 @@
    "marks": 2,
    "subject": "Theory of Computation",
    "topic": "Push-down Automata",
-   "text": "Consider the pushdown automaton (PDA) [latex]P[/latex] below, which runs on the input alphabet [latex]\\{a,b\\}[/latex], has stack alphabet [latex] \\{ \\perp ,A\\}[/latex], and has three states [latex] \\{s,p,q\\}[/latex], with [latex]s[/latex]  being\nthe start state. A transition from state [latex]u[/latex]  to state [latex]v[/latex] , labelled [latex]c/X/\\gamma [/latex] , where [latex]c[/latex] is\nan input symbol or , [latex]X[/latex] is a stack symbol, and [latex]\\gamma [/latex] is a string of stack symbols,\nrepresents the fact that in state  [latex]u[/latex], the PDA can read  [latex]c[/latex] from the input, with  [latex]X[/latex] on\nthe top of its stack, pop  [latex]X[/latex] from the stack, push in the string  [latex]\\gamma [/latex] on the stack, and\ngo to state [latex]v[/latex]. In the initial configuration, the stack has only the symbol  [latex]\\perp [/latex] in it.\nThe PDA accepts by empty stack.<br><img src=\"img/GATE/CS/20231/q30.jpg\" /><br>Which one of the following options correctly describes the language accepted by [latex]P[/latex]?",
+   "text": "Consider the pushdown automaton (PDA) [latex]P[/latex] below, which runs on the input alphabet [latex]\\{a,b\\}[/latex], has stack alphabet [latex] \\{ \\perp ,A\\}[/latex], and has three states [latex] \\{s,p,q\\}[/latex], with [latex]s[/latex]  being\nthe start state. A transition from state [latex]u[/latex]  to state [latex]v[/latex] , labelled [latex]c/X/\\gamma [/latex] , where [latex]c[/latex] is\nan input symbol or , [latex]X[/latex] is a stack symbol, and [latex]\\gamma [/latex] is a string of stack symbols,\nrepresents the fact that in state  [latex]u[/latex], the PDA can read  [latex]c[/latex] from the input, with  [latex]X[/latex] on\nthe top of its stack, pop  [latex]X[/latex] from the stack, push in the string  [latex]\\gamma [/latex] on the stack, and\ngo to state [latex]v[/latex]. In the initial configuration, the stack has only the symbol  [latex]\\perp [/latex] in it.\nThe PDA accepts by empty stack.<br><img src=\"data/img/GATE/CS/20231/q30.jpg\" /><br>Which one of the following options correctly describes the language accepted by [latex]P[/latex]?",
    "options": [
     "[latex] \\{ a^mb^n |1\\leq m\\text{ and }n \\lt m \\}[/latex]",
     "[latex] \\{ a^mb^n |0 \\leq n \\leq m \\}[/latex]",
@@ -11098,7 +11098,7 @@
    "marks": 2,
    "subject": "Computer Organization",
    "topic": "Machine Instruction",
-   "text": "Consider the given C-code and its corresponding assembly code, with a few\noperands U1-U4 being unknown. Some useful information as well as the semantics\nof each unique assembly instruction is annotated as inline comments in the code.\nThe memory is byte-addressable.<br><img src=\"img/GATE/CS/20231/q31.jpg\" /><br>Which one of the following options is a CORRECT replacement for operands in\nthe position (U1, U2, U3, U4) in the above assembly code?",
+   "text": "Consider the given C-code and its corresponding assembly code, with a few\noperands U1-U4 being unknown. Some useful information as well as the semantics\nof each unique assembly instruction is annotated as inline comments in the code.\nThe memory is byte-addressable.<br><img src=\"data/img/GATE/CS/20231/q31.jpg\" /><br>Which one of the following options is a CORRECT replacement for operands in\nthe position (U1, U2, U3, U4) in the above assembly code?",
    "options": [
     "(8, 4, 1, Lo2)",
     "(3, 4, 4, Lo1)",
@@ -11125,7 +11125,7 @@
    "marks": 2,
    "subject": "Computer Organization",
    "topic": "Memory Chip Design",
-   "text": "A 4 kilobyte (KB) byte-addressable memory is realized using four 1 KB memory\nblocks. Two input address lines (IA4 and IA3) are connected to the chip select\n(CS) port of these memory blocks through a decoder as shown in the figure. The\nremaining ten input address lines from IA11-IA0 are connected to the address\nport of these blocks. The chip select (CS) is active high. <br><img src=\"img/GATE/CS/20231/q32.jpg\" /><br>The input memory addresses (IA11-IA0), in decimal, for the starting locations\n(Addr=0) of each block (indicated as X1, X2, X3, X4 in the figure) are among the\noptions given below. Which one of the following options is CORRECT?",
+   "text": "A 4 kilobyte (KB) byte-addressable memory is realized using four 1 KB memory\nblocks. Two input address lines (IA4 and IA3) are connected to the chip select\n(CS) port of these memory blocks through a decoder as shown in the figure. The\nremaining ten input address lines from IA11-IA0 are connected to the address\nport of these blocks. The chip select (CS) is active high. <br><img src=\"data/img/GATE/CS/20231/q32.jpg\" /><br>The input memory addresses (IA11-IA0), in decimal, for the starting locations\n(Addr=0) of each block (indicated as X1, X2, X3, X4 in the figure) are among the\noptions given below. Which one of the following options is CORRECT?",
    "options": [
     "(0, 1, 2, 3)",
     "(0, 1024, 2048, 3072)",
@@ -11152,7 +11152,7 @@
    "marks": 2,
    "subject": "Digital Logic",
    "topic": "Sequential Circuit",
-   "text": "Consider a sequential digital circuit consisting of T flip-flops and D flip-flops as\nshown in the figure. CLKIN is the clock input to the circuit. At the beginning,\nQ1, Q2 and Q3 have values 0, 1 and 1, respectively.<br><img src=\"img/GATE/CS/20231/q33.jpg\" /><br>Which one of the given values of (Q1, Q2, Q3) can NEVER be obtained with this\ndigital circuit?\n",
+   "text": "Consider a sequential digital circuit consisting of T flip-flops and D flip-flops as\nshown in the figure. CLKIN is the clock input to the circuit. At the beginning,\nQ1, Q2 and Q3 have values 0, 1 and 1, respectively.<br><img src=\"data/img/GATE/CS/20231/q33.jpg\" /><br>Which one of the given values of (Q1, Q2, Q3) can NEVER be obtained with this\ndigital circuit?\n",
    "options": [
     "(0, 0, 1)",
     "(1, 0, 0)",
@@ -11179,7 +11179,7 @@
    "marks": 2,
    "subject": "Digital Logic",
    "topic": "Combinational Circuit",
-   "text": "A Boolean digital circuit is composed using two 4-input multiplexers (M1 and M2)\nand one 2-input multiplexer (M3) as shown in the figure. X0-X7 are the inputs of\nthe multiplexers M1 and M2 and could be connected to either 0 or 1. The select\nlines of the multiplexers are connected to Boolean variables A, B and C as shown.<br><img src=\"img/GATE/CS/20231/q34.jpg\" /><br>Which one of the following set of values of (X0, X1, X2, X3, X4, X5, X6, X7) will\nrealise the Boolean function [latex] \\bar{A}+\\bar{A}\\cdot \\bar{C}+A\\cdot \\bar{B}\\cdot C[/latex] ?",
+   "text": "A Boolean digital circuit is composed using two 4-input multiplexers (M1 and M2)\nand one 2-input multiplexer (M3) as shown in the figure. X0-X7 are the inputs of\nthe multiplexers M1 and M2 and could be connected to either 0 or 1. The select\nlines of the multiplexers are connected to Boolean variables A, B and C as shown.<br><img src=\"data/img/GATE/CS/20231/q34.jpg\" /><br>Which one of the following set of values of (X0, X1, X2, X3, X4, X5, X6, X7) will\nrealise the Boolean function [latex] \\bar{A}+\\bar{A}\\cdot \\bar{C}+A\\cdot \\bar{B}\\cdot C[/latex] ?",
    "options": [
     "(1, 1, 0, 0, 1, 1, 1, 0)",
     "(1, 1, 0, 0, 1, 1, 0, 1)",
@@ -11260,7 +11260,7 @@
    "marks": 2,
    "subject": "Data Structure",
    "topic": "Binary Tree",
-   "text": "Consider the C function foo and the binary tree shown.<br><pre><code>\ntypedef struct node {\n   int val;\n   struct node *left, *right;\n} node;\n\nint foo(node *p) {\n   int retval;\n   if (p == NULL)\n       return 0;\nelse {\n     retval = p->val + foo(p->left) + foo(p->right);\n     printf(\"%d \", retval);\n     return retval;\n     }\n}\n</code></pre><br><br><img src=\"img/GATE/CS/20231/q37.jpg\" /><br>When foo is called with a pointer to the root node of the given binary tree, what\nwill it print?",
+   "text": "Consider the C function foo and the binary tree shown.<br><pre><code>\ntypedef struct node {\n   int val;\n   struct node *left, *right;\n} node;\n\nint foo(node *p) {\n   int retval;\n   if (p == NULL)\n       return 0;\nelse {\n     retval = p->val + foo(p->left) + foo(p->right);\n     printf(\"%d \", retval);\n     return retval;\n     }\n}\n</code></pre><br><br><img src=\"data/img/GATE/CS/20231/q37.jpg\" /><br>When foo is called with a pointer to the root node of the given binary tree, what\nwill it print?",
    "options": [
     "3 8 5 13 11 10",
     "3 5 8 10 11 13",
@@ -11466,7 +11466,7 @@
    "marks": 2,
    "subject": "Algorithm",
    "topic": "Asymptotic Notation",
-   "text": "Consider functions Function 1 and Function 2 expressed in pseudocode as\nfollows:<br><img src=\"img/GATE/CS/20231/q44.jpg\" /><br>Let [latex]f_1(n)[/latex] and [latex]f_2(n)[/latex] denote the number of times the statement [latex]\"x = x + 1\"[/latex] is\nexecuted in Function 1 and Function 2, respectively.<br>\nWhich of the following statements is/are TRUE?",
+   "text": "Consider functions Function 1 and Function 2 expressed in pseudocode as\nfollows:<br><img src=\"data/img/GATE/CS/20231/q44.jpg\" /><br>Let [latex]f_1(n)[/latex] and [latex]f_2(n)[/latex] denote the number of times the statement [latex]\"x = x + 1\"[/latex] is\nexecuted in Function 1 and Function 2, respectively.<br>\nWhich of the following statements is/are TRUE?",
    "options": [
     "[latex] f_1(n)\\in \\Theta (f_2(n)) [/latex]",
     "[latex] f_1(n)\\in o (f_2(n)) [/latex]",
@@ -11664,7 +11664,7 @@
    "marks": 2,
    "subject": "Database Management System",
    "topic": "File System",
-   "text": "Consider a database of fixed-length records, stored as an ordered file. The database\nhas 25,000 records, with each record being 100 bytes, of which the primary key\noccupies 15 bytes. The data file is block-aligned in that each data record is fully\ncontained within a block. The database is indexed by a primary index file, which\nis also stored as a block-aligned ordered file. The figure below depicts this indexing\nscheme.<br><img src=\"img/GATE/CS/20231/q52.jpg\" /><br>Suppose the block size of the file system is 1024 bytes, and a pointer to a block\noccupies 5 bytes. The system uses binary search on the index file to search for a\nrecord with a given key. You may assume that a binary search on an index file of\n[latex]b[/latex] blocks takes  [latex]\\left \\lceil \\log_2 b \\right \\rceil [/latex]  block accesses in the worst case.<br>\nGiven a key, the number of block accesses required to identify the block in the data\nfile that may contain a record with the key, in the worst case, is _____",
+   "text": "Consider a database of fixed-length records, stored as an ordered file. The database\nhas 25,000 records, with each record being 100 bytes, of which the primary key\noccupies 15 bytes. The data file is block-aligned in that each data record is fully\ncontained within a block. The database is indexed by a primary index file, which\nis also stored as a block-aligned ordered file. The figure below depicts this indexing\nscheme.<br><img src=\"data/img/GATE/CS/20231/q52.jpg\" /><br>Suppose the block size of the file system is 1024 bytes, and a pointer to a block\noccupies 5 bytes. The system uses binary search on the index file to search for a\nrecord with a given key. You may assume that a binary search on an index file of\n[latex]b[/latex] blocks takes  [latex]\\left \\lceil \\log_2 b \\right \\rceil [/latex]  block accesses in the worst case.<br>\nGiven a key, the number of block accesses required to identify the block in the data\nfile that may contain a record with the key, in the worst case, is _____",
    "options": [],
    "answer": {
     "min": 6,
@@ -11999,7 +11999,7 @@
    "marks": 2,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "Which one of the options best describes the transformation of the 2-dimensional\nfigure P to Q, and then to R, as shown?<br><img src=\"img/GATE/CS/20231/q65.jpg\" /><br>",
+   "text": "Which one of the options best describes the transformation of the 2-dimensional\nfigure P to Q, and then to R, as shown?<br><img src=\"data/img/GATE/CS/20231/q65.jpg\" /><br>",
    "options": [
     "Operation 1: A clockwise rotation by [latex]90^{\\circ} [/latex] about an axis perpendicular to the plane\nof the figure<br>\nOperation 2: A reflection along a horizontal line",
     "Operation 1: A counter clockwise rotation by [latex]90^{\\circ} [/latex] about an axis perpendicular to\nthe plane of the figure<br>\nOperation 2: A reflection along a horizontal line ",
@@ -12269,7 +12269,7 @@
    "marks": 1,
    "subject": "Database Management System",
    "topic": "ER Model",
-   "text": "Let S be the specification: \"Instructors teach courses. Students register for courses.\nCourses are allocated classrooms. Instructors guide students.\" Which one of the\nfollowing ER diagrams CORRECTLY represents S? <br><img src=\"img/GATE/CS/20241/q10.webp\" /><br>",
+   "text": "Let S be the specification: \"Instructors teach courses. Students register for courses.\nCourses are allocated classrooms. Instructors guide students.\" Which one of the\nfollowing ER diagrams CORRECTLY represents S? <br><img src=\"data/img/GATE/CS/20241/q10.webp\" /><br>",
    "options": [
     "(i)",
     "(ii)",
@@ -12502,7 +12502,7 @@
    "marks": 1,
    "subject": "Digital Logic",
    "topic": "Combinational Circuit",
-   "text": "Consider the circuit shown below where the gates may have propagation delays.\nAssume that all signal transitions occur instantaneously and that wires have no\ndelays. Which of the following statements about the circuit is/are CORRECT?<br><img src=\"img/GATE/CS/20241/q18.webp\" /><br>",
+   "text": "Consider the circuit shown below where the gates may have propagation delays.\nAssume that all signal transitions occur instantaneously and that wires have no\ndelays. Which of the following statements about the circuit is/are CORRECT?<br><img src=\"data/img/GATE/CS/20241/q18.webp\" /><br>",
    "options": [
     "With no propagation delays, the output Y is always logic Zero",
     "With no propagation delays, the output Y is always logic One",
@@ -13111,7 +13111,7 @@
    "marks": 2,
    "subject": "Theory of Computation",
    "topic": "Finite Automata",
-   "text": "Consider the 5 -state DFA [latex] M [/latex] accepting the language [latex] L(M) \\subset(0+1)^* [/latex] shown below. For any string [latex] w \\in(0+1)^* [/latex] let [latex] n_0(w) [/latex] be the number of [latex] 0^{\\prime} s [/latex] in [latex] w [/latex] and [latex] n_1(w) [/latex] be the number of 1 's in [latex] w [/latex].\n<br><img src=\"img/GATE/CS/20241/q40.webp\" /><br>\nWhich of the following statements is/are FALSE?",
+   "text": "Consider the 5 -state DFA [latex] M [/latex] accepting the language [latex] L(M) \\subset(0+1)^* [/latex] shown below. For any string [latex] w \\in(0+1)^* [/latex] let [latex] n_0(w) [/latex] be the number of [latex] 0^{\\prime} s [/latex] in [latex] w [/latex] and [latex] n_1(w) [/latex] be the number of 1 's in [latex] w [/latex].\n<br><img src=\"data/img/GATE/CS/20241/q40.webp\" /><br>\nWhich of the following statements is/are FALSE?",
    "options": [
     "States 2 and 4 are distinguishable in [latex] M [/latex]",
     "States 3 and 4 are distinguishable in [latex] M [/latex]",
@@ -13461,7 +13461,7 @@
    "marks": 2,
    "subject": "Digital Logic",
    "topic": "Combinational Circuit",
-   "text": "Consider a digital logic circuit consisting of three 2-to-1 multiplexers M1, M2, and M3 as shown below. [latex] X 1 [/latex] and [latex] X 2 [/latex] are inputs of [latex] M 1 [/latex]. [latex] X 3 [/latex] and [latex] X 4 [/latex] are inputs of [latex] M 2 [/latex]. [latex] A, B [/latex], and [latex] C [/latex] are select lines of [latex] M 1, M 2 [/latex], and [latex] M 3 [/latex], respectively.<br><img src=\"img/GATE/CS/20241/q54.webp\" /><br>\n\nFor an instance of inputs [latex] X \\mathbf{X l}=\\mathbf{X} \\mathbf{2}=\\mathbf{1}, \\mathrm{X} 3=\\mathbf{0} [/latex], and [latex] \\mathrm{X} 4=\\mathbf{0} [/latex], the number of combinations of [latex] A, B, C [/latex] that give the output [latex] Y=1 [/latex] is _____",
+   "text": "Consider a digital logic circuit consisting of three 2-to-1 multiplexers M1, M2, and M3 as shown below. [latex] X 1 [/latex] and [latex] X 2 [/latex] are inputs of [latex] M 1 [/latex]. [latex] X 3 [/latex] and [latex] X 4 [/latex] are inputs of [latex] M 2 [/latex]. [latex] A, B [/latex], and [latex] C [/latex] are select lines of [latex] M 1, M 2 [/latex], and [latex] M 3 [/latex], respectively.<br><img src=\"data/img/GATE/CS/20241/q54.webp\" /><br>\n\nFor an instance of inputs [latex] X \\mathbf{X l}=\\mathbf{X} \\mathbf{2}=\\mathbf{1}, \\mathrm{X} 3=\\mathbf{0} [/latex], and [latex] \\mathrm{X} 4=\\mathbf{0} [/latex], the number of combinations of [latex] A, B, C [/latex] that give the output [latex] Y=1 [/latex] is _____",
    "options": [],
    "answer": {
     "min": 4,
@@ -13696,7 +13696,7 @@
    "marks": 2,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "The pie chart presents the percentage contribution of different macronutrients to a\ntypical 2,000 kcal diet of a person.<br><img src=\"img/GATE/CS/20241/q63.webp\" /><br>\nThe typical energy density (kcal/g) of these macronutrients is given in the table.\n<br>[latex]\n\\begin{array}{|l|c|}\n\\hline Macronutrient & Energy density (kcal/g) \\\\\n\\hline Carbohydrates &4\\\\\n\\hline Proteins &4 \\\\\n\\hline Unsaturated fat &9 \\\\\n\\hline Saturated fat &9 \\\\\n\\hline Trans fat &9 \\\\\n\\hline\n\\end{array}[/latex]<br>\n\nThe total fat (all three types), in grams, this person consumes is",
+   "text": "The pie chart presents the percentage contribution of different macronutrients to a\ntypical 2,000 kcal diet of a person.<br><img src=\"data/img/GATE/CS/20241/q63.webp\" /><br>\nThe typical energy density (kcal/g) of these macronutrients is given in the table.\n<br>[latex]\n\\begin{array}{|l|c|}\n\\hline Macronutrient & Energy density (kcal/g) \\\\\n\\hline Carbohydrates &4\\\\\n\\hline Proteins &4 \\\\\n\\hline Unsaturated fat &9 \\\\\n\\hline Saturated fat &9 \\\\\n\\hline Trans fat &9 \\\\\n\\hline\n\\end{array}[/latex]<br>\n\nThe total fat (all three types), in grams, this person consumes is",
    "options": [
     "44.4",
     "77.8",
@@ -13750,7 +13750,7 @@
    "marks": 2,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "The least number of squares to be added in the figure to make AB a line of\nsymmetry is <br><img src=\"img/GATE/CS/20241/q65.webp\" /><br>",
+   "text": "The least number of squares to be added in the figure to make AB a line of\nsymmetry is <br><img src=\"data/img/GATE/CS/20241/q65.webp\" /><br>",
    "options": [
     "6",
     "4",
@@ -13858,7 +13858,7 @@
    "marks": 1,
    "subject": "Digital Logic",
    "topic": "Number System",
-   "text": "The format of a single-precision floating-point number as per the\nIEEE 754 standard is:    <br><img src=\"img/GATE/CS/20242/q4.webp\" /><br>Choose the largest floating-point number among the following options.<br><img src=\"img/GATE/CS/20242/q4a.webp\" /><br>",
+   "text": "The format of a single-precision floating-point number as per the\nIEEE 754 standard is:    <br><img src=\"data/img/GATE/CS/20242/q4.webp\" /><br>Choose the largest floating-point number among the following options.<br><img src=\"data/img/GATE/CS/20242/q4a.webp\" /><br>",
    "options": [
     "A",
     "B",
@@ -14074,7 +14074,7 @@
    "marks": 1,
    "subject": "Theory of Computation",
    "topic": "Regular Expression",
-   "text": "Which one of the following regular expressions is equivalent to the language\naccepted by the DFA given below?<br><img src=\"img/GATE/CS/20242/q12.webp\" /><br>",
+   "text": "Which one of the following regular expressions is equivalent to the language\naccepted by the DFA given below?<br><img src=\"data/img/GATE/CS/20242/q12.webp\" /><br>",
    "options": [
     "[latex]0^*1(0+10^*1)^*[/latex] ",
     "[latex]0^*(10^*11)^*0^*[/latex] ",
@@ -14613,7 +14613,7 @@
    "marks": 2,
    "subject": "Theory of Computation",
    "topic": "Regular Expression",
-   "text": "Let M be the 5-state NFA with [latex]\\epsilon[/latex]-transitions shown in the diagram below:\n<br><img src=\"img/GATE/CS/20242/q31.webp\" /><br>\nWhich one of the following regular expressions represents the language accepted\nby M ?",
+   "text": "Let M be the 5-state NFA with [latex]\\epsilon[/latex]-transitions shown in the diagram below:\n<br><img src=\"data/img/GATE/CS/20242/q31.webp\" /><br>\nWhich one of the following regular expressions represents the language accepted\nby M ?",
    "options": [
     "[latex](00)^*  +  1(11)^*[/latex]",
     "[latex]0^* + (1 + 0(00)^*)(11)^*[/latex]",
@@ -14870,7 +14870,7 @@
    "marks": 2,
    "subject": "Digital Logic",
    "topic": "Combinational Circuit",
-   "text": "Consider 4-variable functions [latex] f 1, f 2, f 3, f 4 [/latex] expressed in sum-of-minterms form as given below.\n<br> [latex]\n\\begin{aligned}\n& f 1=\\sum(0,2,3,5,7,8,11,13) \\\\\n& f 2=\\sum(1,3,5,7,11,13,15) \\\\\n& f 3=\\sum(0,1,4,11) \\\\\n& f 4=\\sum(0,2,6,13)\n\\end{aligned}\n [/latex] <br>\n<br><img src=\"img/GATE/CS/20242/q40.webp\" /><br>\nWith respect to the circuit given above, which of the following options is/are CORRECT?",
+   "text": "Consider 4-variable functions [latex] f 1, f 2, f 3, f 4 [/latex] expressed in sum-of-minterms form as given below.\n<br> [latex]\n\\begin{aligned}\n& f 1=\\sum(0,2,3,5,7,8,11,13) \\\\\n& f 2=\\sum(1,3,5,7,11,13,15) \\\\\n& f 3=\\sum(0,1,4,11) \\\\\n& f 4=\\sum(0,2,6,13)\n\\end{aligned}\n [/latex] <br>\n<br><img src=\"data/img/GATE/CS/20242/q40.webp\" /><br>\nWith respect to the circuit given above, which of the following options is/are CORRECT?",
    "options": [
     "[latex]\\boldsymbol{Y}=\\sum(0,1,2,11,13)[/latex] ",
     " [latex]\\boldsymbol{Y}=\\Pi(3,4,5,6,7,8,9,10,12,14,15)[/latex] ",
@@ -15097,7 +15097,7 @@
    "marks": 2,
    "subject": "Algorithm",
    "topic": "Minimum Spanning Tree",
-   "text": "The number of distinct minimum-weight spanning trees of the following graph\nis _______<br><img src=\"img/GATE/CS/20242/q49.webp\" /><br>",
+   "text": "The number of distinct minimum-weight spanning trees of the following graph\nis _______<br><img src=\"data/img/GATE/CS/20242/q49.webp\" /><br>",
    "options": [],
    "answer": {
     "min": 9,
@@ -15120,7 +15120,7 @@
    "marks": 2,
    "subject": "Discrete Mathematics",
    "topic": "Graph Theory",
-   "text": "The chromatic number of a graph is the minimum number of colours used in a\nproper colouring of the graph. The chromatic number of the following graph\nis _______<br><img src=\"img/GATE/CS/20242/q50.webp\" /><br>",
+   "text": "The chromatic number of a graph is the minimum number of colours used in a\nproper colouring of the graph. The chromatic number of the following graph\nis _______<br><img src=\"data/img/GATE/CS/20242/q50.webp\" /><br>",
    "options": [],
    "answer": {
     "min": 2,
@@ -15143,7 +15143,7 @@
    "marks": 2,
    "subject": "Computer Organization",
    "topic": "Machine Instruction",
-   "text": "A processor uses a 32-bit instruction format and supports byte-addressable memory\naccess. The ISA of the processor has 150 distinct instructions. The instructions are\nequally divided into two types, namely R-type and I-type, whose formats are shown\nbelow.\n<br><img src=\"img/GATE/CS/20242/q51.webp\" /><br>\nIn the OPCODE, 1 bit is used to distinguish between I-type and R-type instructions\nand the remaining bits indicate the operation. The processor has 50 architectural\nregisters, and all register fields in the instructions are of equal size.<br>\nLet X be the number of bits used to encode the UNUSED field, Y be the number\nof bits used to encode the OPCODE field, and Z be the number of bits used to\nencode the immediate value/address field. The value of X + 2Y + Z is ______\n",
+   "text": "A processor uses a 32-bit instruction format and supports byte-addressable memory\naccess. The ISA of the processor has 150 distinct instructions. The instructions are\nequally divided into two types, namely R-type and I-type, whose formats are shown\nbelow.\n<br><img src=\"data/img/GATE/CS/20242/q51.webp\" /><br>\nIn the OPCODE, 1 bit is used to distinguish between I-type and R-type instructions\nand the remaining bits indicate the operation. The processor has 50 architectural\nregisters, and all register fields in the instructions are of equal size.<br>\nLet X be the number of bits used to encode the UNUSED field, Y be the number\nof bits used to encode the OPCODE field, and Z be the number of bits used to\nencode the immediate value/address field. The value of X + 2Y + Z is ______\n",
    "options": [],
    "answer": {
     "min": 34,
@@ -15447,7 +15447,7 @@
    "marks": 2,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "The pie charts depict the shares of various power generation technologies in the\ntotal electricity generation of a country for the years 2007 and 2023.<br><img src=\"img/GATE/CS/20242/q63.webp\" /><br>\nThe renewable sources of electricity generation consist of Hydro, Solar and Wind.\nAssuming that the total electricity generated remains the same from 2007 to 2023,\nwhat is the percentage increase in the share of the renewable sources of electricity\ngeneration over this period?",
+   "text": "The pie charts depict the shares of various power generation technologies in the\ntotal electricity generation of a country for the years 2007 and 2023.<br><img src=\"data/img/GATE/CS/20242/q63.webp\" /><br>\nThe renewable sources of electricity generation consist of Hydro, Solar and Wind.\nAssuming that the total electricity generated remains the same from 2007 to 2023,\nwhat is the percentage increase in the share of the renewable sources of electricity\ngeneration over this period?",
    "options": [
     "25%",
     "50%",
@@ -15501,7 +15501,7 @@
    "marks": 2,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "In the 4 x 4 array shown below, each cell of the first three rows has either a\ncross (X) or a number.<br><img src=\"img/GATE/CS/20242/q65.webp\" /><br>\nThe number in a cell represents the count of the immediate neighboring cells\n(left, right, top, bottom, diagonals) NOT having a cross (X). Given that the last row\nhas no crosses (X), the sum of the four numbers to be filled in the last row is",
+   "text": "In the 4 x 4 array shown below, each cell of the first three rows has either a\ncross (X) or a number.<br><img src=\"data/img/GATE/CS/20242/q65.webp\" /><br>\nThe number in a cell represents the count of the immediate neighboring cells\n(left, right, top, bottom, diagonals) NOT having a cross (X). Given that the last row\nhas no crosses (X), the sum of the four numbers to be filled in the last row is",
    "options": [
     "11",
     "10",
@@ -15798,7 +15798,7 @@
    "marks": 1,
    "subject": "Data Structure",
    "topic": "B plus Tree",
-   "text": "Consider the following [latex]B^+[/latex] tree with 5 nodes, in which a node can store at most 3 key values. The value 23 is now inserted in the [latex]B^+[/latex] tree. Which of the following options(s) is/are CORRECT? <br><img src=\"img/GATE/CS/20251/q11.webp\"/><br>",
+   "text": "Consider the following [latex]B^+[/latex] tree with 5 nodes, in which a node can store at most 3 key values. The value 23 is now inserted in the [latex]B^+[/latex] tree. Which of the following options(s) is/are CORRECT? <br><img src=\"data/img/GATE/CS/20251/q11.webp\"/><br>",
    "options": [
     "None of the nodes will split.",
     "At least one node will split and redistribute.",
@@ -15978,7 +15978,7 @@
    "marks": 1,
    "subject": "Computer Organization",
    "topic": "ALU Data Path and Control Unit",
-   "text": "A partial data path of a processor is given in the figure, where [latex]RA[/latex], [latex]RB[/latex], and [latex]RZ[/latex] are 32-bit registers. Which option(s) is/are CORRECT related to arithmetic operations using the data path as shown? <br><img src=\"img/GATE/CS/20251/q17.webp\"/><br>\n",
+   "text": "A partial data path of a processor is given in the figure, where [latex]RA[/latex], [latex]RB[/latex], and [latex]RZ[/latex] are 32-bit registers. Which option(s) is/are CORRECT related to arithmetic operations using the data path as shown? <br><img src=\"data/img/GATE/CS/20251/q17.webp\"/><br>\n",
    "options": [
     "The data path can implement arithmetic operations involving two registers.",
     "The data path can implement arithmetic operations involving one register and one immediate value.",
@@ -16588,7 +16588,7 @@
    "marks": 2,
    "subject": "Theory of Computation",
    "topic": "Finite Automata",
-   "text": "Consider the following deterministic finite automaton (DFA) defined over the alphabet, [latex] \\Sigma = \\{ a, b \\} [/latex]. Identify which of the following language(s) is/are accepted by the given DFA. <br><img src=\"img/GATE/CS/20251/q40.webp\"/><br>",
+   "text": "Consider the following deterministic finite automaton (DFA) defined over the alphabet, [latex] \\Sigma = \\{ a, b \\} [/latex]. Identify which of the following language(s) is/are accepted by the given DFA. <br><img src=\"data/img/GATE/CS/20251/q40.webp\"/><br>",
    "options": [
     "The set of all strings containing an even number of [latex] b [/latex]'s.",
     "The set of all strings containing the pattern [latex] bab [/latex].",
@@ -16663,7 +16663,7 @@
    "marks": 2,
    "subject": "Computer Organization",
    "topic": "Cache Memory",
-   "text": "A computer has a memory hierarchy consisting of two-level cache (L1 and L2) and a main memory. If the processor needs to access data from memory, it first looks into L1 cache. If the data is not found in L1 cache, it goes to L2 cache. If it fails to get the data from L2 cache, it goes to main memory, where the data is definitely available. Hit rates and access times of various memory units are shown in the figure. The average memory access time in nanoseconds (ns) is _________. (rounded off to two decimal places) <br><img src=\"img/GATE/CS/20251/q43.webp\"/><br>",
+   "text": "A computer has a memory hierarchy consisting of two-level cache (L1 and L2) and a main memory. If the processor needs to access data from memory, it first looks into L1 cache. If the data is not found in L1 cache, it goes to L2 cache. If it fails to get the data from L2 cache, it goes to main memory, where the data is definitely available. Hit rates and access times of various memory units are shown in the figure. The average memory access time in nanoseconds (ns) is _________. (rounded off to two decimal places) <br><img src=\"data/img/GATE/CS/20251/q43.webp\"/><br>",
    "options": [],
    "answer": {
     "min": 11.83,
@@ -16709,7 +16709,7 @@
    "marks": 2,
    "subject": "Database Management System",
    "topic": "SQL",
-   "text": "Consider the following database tables of a sports league.  \n<br><br>\nplayer(pid,pname,age) \n<br>coach(cid,cname) \n<br>team(tid,tname,city,cid) \n<br>members(pid,tid)\n<br><br>\nAn instance of the table and an SQL query are given.  \n<br><img src=\"img/GATE/CS/20251/q45.webp\"/><br>\nThe value returned by the given SQL query is _________. (Answer in integer)",
+   "text": "Consider the following database tables of a sports league.  \n<br><br>\nplayer(pid,pname,age) \n<br>coach(cid,cname) \n<br>team(tid,tname,city,cid) \n<br>members(pid,tid)\n<br><br>\nAn instance of the table and an SQL query are given.  \n<br><img src=\"data/img/GATE/CS/20251/q45.webp\"/><br>\nThe value returned by the given SQL query is _________. (Answer in integer)",
    "options": [],
    "answer": {
     "min": 26,
@@ -16755,7 +16755,7 @@
    "marks": 2,
    "subject": "Computer Network",
    "topic": "Network Layer Protocol",
-   "text": "Suppose a message of size 15000 bytes is transmitted from a source to a destination using IPv4 protocol via two routers as shown in the figure. Each router has a defined maximum transmission unit (MTU) as shown in the figure, including IP header. The number of fragments that will be delivered to the destination is _________. (Answer in integer)\n<br><img src=\"img/GATE/CS/20251/q47.webp\"/><br>",
+   "text": "Suppose a message of size 15000 bytes is transmitted from a source to a destination using IPv4 protocol via two routers as shown in the figure. Each router has a defined maximum transmission unit (MTU) as shown in the figure, including IP header. The number of fragments that will be delivered to the destination is _________. (Answer in integer)\n<br><img src=\"data/img/GATE/CS/20251/q47.webp\"/><br>",
    "options": [],
    "answer": {
     "min": 7,
@@ -16801,7 +16801,7 @@
    "marks": 2,
    "subject": "Theory of Computation",
    "topic": "Turing Machine",
-   "text": "Consider a finite state machine (FSM) with one input [latex] X [/latex] and one output [latex] f [/latex], represented by the given state transition table. The minimum number of states required to realize this FSM is _________. (Answer in integer)\n<br><img src=\"img/GATE/CS/20251/q49.webp\"/><br>",
+   "text": "Consider a finite state machine (FSM) with one input [latex] X [/latex] and one output [latex] f [/latex], represented by the given state transition table. The minimum number of states required to realize this FSM is _________. (Answer in integer)\n<br><img src=\"data/img/GATE/CS/20251/q49.webp\"/><br>",
    "options": [],
    "answer": {
     "min": 5,
@@ -16824,7 +16824,7 @@
    "marks": 2,
    "subject": "Digital Logic",
    "topic": "Sequential Circuit",
-   "text": "Consider the given sequential circuit designed using D-Flip-flops. The circuit is initialized with some value (initial state). The number of distinct states the circuit will go through before returning back to the initial state is _________. (Answer in integer)<br><img src=\"img/GATE/CS/20251/q50.webp\"/><br>\n",
+   "text": "Consider the given sequential circuit designed using D-Flip-flops. The circuit is initialized with some value (initial state). The number of distinct states the circuit will go through before returning back to the initial state is _________. (Answer in integer)<br><img src=\"data/img/GATE/CS/20251/q50.webp\"/><br>\n",
    "options": [],
    "answer": {
     "min": 7,
@@ -16870,7 +16870,7 @@
    "marks": 2,
    "subject": "Data Structure",
    "topic": "Link List",
-   "text": "Let LIST be a datatype for an implementation of linked list defined as follows:  \n<pre><code>\ntypedef struct list {  \n    int data;  \n    struct list *next;  \n} LIST;  \n</code></pre>\nSuppose the program has created two linked lists, L1 and L2,  whose contents are given \nin the figure below (code for creating L1 and L2 is not provided here). L1 contains 9 \nnodes, and L2 contains 7 nodes.<br><br>\nConsider the following C program segment that modifies the list L1. The number of nodes in L1 after the execution of the code segment is _________. (Answer in integer) <br><img src=\"img/GATE/CS/20251/q52.webp\"/><br>",
+   "text": "Let LIST be a datatype for an implementation of linked list defined as follows:  \n<pre><code>\ntypedef struct list {  \n    int data;  \n    struct list *next;  \n} LIST;  \n</code></pre>\nSuppose the program has created two linked lists, L1 and L2,  whose contents are given \nin the figure below (code for creating L1 and L2 is not provided here). L1 contains 9 \nnodes, and L2 contains 7 nodes.<br><br>\nConsider the following C program segment that modifies the list L1. The number of nodes in L1 after the execution of the code segment is _________. (Answer in integer) <br><img src=\"data/img/GATE/CS/20251/q52.webp\"/><br>",
    "options": [],
    "answer": {
     "min": 5,
@@ -16916,7 +16916,7 @@
    "marks": 2,
    "subject": "Algorithm",
    "topic": "Minimum Spanning Tree",
-   "text": "The maximum value of [latex] x [/latex] such that the edge between the nodes B and C is included in every minimum spanning tree of the given graph is _________. (Answer in integer) <br><img src=\"img/GATE/CS/20251/q54.webp\"/><br>",
+   "text": "The maximum value of [latex] x [/latex] such that the edge between the nodes B and C is included in every minimum spanning tree of the given graph is _________. (Answer in integer) <br><img src=\"data/img/GATE/CS/20251/q54.webp\"/><br>",
    "options": [],
    "answer": {
     "min": 5,
@@ -17070,7 +17070,7 @@
    "marks": 1,
    "subject": "General Aptitude",
    "topic": "Verbal Ability",
-   "text": "According to the map shown in the figure, which one of the following statements is correct?  <br>\nNote: The figure shown is representative. <br><img src=\"img/GATE/CS/20251/q60.webp\"/><br>",
+   "text": "According to the map shown in the figure, which one of the following statements is correct?  <br>\nNote: The figure shown is representative. <br><img src=\"data/img/GATE/CS/20251/q60.webp\"/><br>",
    "options": [
     "The library is located to the northwest of the canteen.",
     "The hospital is located to the east of the chemistry lab.",
@@ -17124,7 +17124,7 @@
    "marks": 2,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "In the diagram, the lines QR and ST are parallel to each other. The shortest distance between these two lines is half the shortest distance between the point P and line QR. What is the ratio of the area of the triangle PST to the area of the trapezium SQRT?  \n<br>Note: The figure shown is representative.<br><img src=\"img/GATE/CS/20251/q62.webp\"/><br>",
+   "text": "In the diagram, the lines QR and ST are parallel to each other. The shortest distance between these two lines is half the shortest distance between the point P and line QR. What is the ratio of the area of the triangle PST to the area of the trapezium SQRT?  \n<br>Note: The figure shown is representative.<br><img src=\"data/img/GATE/CS/20251/q62.webp\"/><br>",
    "options": [
     " [latex]\\frac{1}{3}[/latex]",
     " [latex]\\frac{1}{4}[/latex]",
@@ -17178,7 +17178,7 @@
    "marks": 2,
    "subject": "General Aptitude",
    "topic": "Verbal Ability",
-   "text": "A square paper, shown in figure (I), is folded along the dotted lines as shown in the figures (II) and (III). Then a few cuts are made as shown in figure (IV). Which one of the following patterns will be obtained when the paper is unfolded?  \n<br>Note: The figures shown are representative.<br><img src=\"img/GATE/CS/20251/q64a.webp\"/><br><br><img src=\"img/GATE/CS/20251/q64b.webp\"/><br>",
+   "text": "A square paper, shown in figure (I), is folded along the dotted lines as shown in the figures (II) and (III). Then a few cuts are made as shown in figure (IV). Which one of the following patterns will be obtained when the paper is unfolded?  \n<br>Note: The figures shown are representative.<br><img src=\"data/img/GATE/CS/20251/q64a.webp\"/><br><br><img src=\"data/img/GATE/CS/20251/q64b.webp\"/><br>",
    "options": [
     "A",
     "B",
@@ -17784,7 +17784,7 @@
    "marks": 1,
    "subject": "Digital Logic",
    "topic": "Combinational Circuit",
-   "text": "Consider the following logic circuit diagram.\n<br><img src=\"img/GATE/CS/20252/q21.webp\"/><br>\nWhich is/are the CORRECT option(s) for the output function [latex]F [/latex]?",
+   "text": "Consider the following logic circuit diagram.\n<br><img src=\"data/img/GATE/CS/20252/q21.webp\"/><br>\nWhich is/are the CORRECT option(s) for the output function [latex]F [/latex]?",
    "options": [
     "[latex]\\overline{XY} [/latex]",
     "[latex]\\overline{X} + \\overline{Y} + X \\overline{Y} [/latex]",
@@ -18099,7 +18099,7 @@
    "marks": 2,
    "subject": "Digital Logic",
    "topic": "Boolean Algebra",
-   "text": "Given the following Karnaugh Map for a Boolean function [latex]F(w, x, y, z) [/latex]:   <br><img src=\"img/GATE/CS/20252/q33.webp\"/><br>\nWhich one or more of the following Boolean expression(s) represent(s) [latex]F [/latex]?",
+   "text": "Given the following Karnaugh Map for a Boolean function [latex]F(w, x, y, z) [/latex]:   <br><img src=\"data/img/GATE/CS/20252/q33.webp\"/><br>\nWhich one or more of the following Boolean expression(s) represent(s) [latex]F [/latex]?",
    "options": [
     "[latex]\\bar{w} \\bar{x} \\bar{y} \\bar{z} + w \\bar{x} \\bar{y} \\bar{z} + \\bar{w} \\bar{x} y\\bar{z} + w \\bar{x} y \\bar{z}  + xz [/latex]",
     "[latex]\\bar{w} \\bar{x} \\bar{y} \\bar{z} + \\bar{w} \\bar{x} y \\bar{z} + w \\bar{x} yz + xz [/latex]",
@@ -18219,7 +18219,7 @@
    "marks": 2,
    "subject": "Operating System",
    "topic": "Memory Management",
-   "text": "Consider a demand paging system with three frames, and the following page reference string:  \n1 2 3 4 5 4 1 6 4 5 1 3 2. The contents of the frames are as follows initially and after each reference (from left to right):\n<br><img src=\"img/GATE/CS/20252/q37.webp\"/><br>\nThe *-marked references cause page replacements.  <br>\nWhich one or more of the following could be the page replacement policy/policies in use?",
+   "text": "Consider a demand paging system with three frames, and the following page reference string:  \n1 2 3 4 5 4 1 6 4 5 1 3 2. The contents of the frames are as follows initially and after each reference (from left to right):\n<br><img src=\"data/img/GATE/CS/20252/q37.webp\"/><br>\nThe *-marked references cause page replacements.  <br>\nWhich one or more of the following could be the page replacement policy/policies in use?",
    "options": [
     "Least Recently Used page replacement policy",
     "Least Frequently Used page replacement policy",
@@ -18552,7 +18552,7 @@
    "marks": 2,
    "subject": "Algorithm",
    "topic": "Graph Traversal",
-   "text": "Consider the following algorithm someAlgo that takes an undirected graph [latex]G[/latex] as input.\n<br><br>\n\n[latex]\\texttt{someAlgo(G)}:[/latex]<br>\n1. Let [latex]v[/latex] be any vertex in [latex]G[/latex]. Run BFS on [latex]G[/latex] starting at [latex]v[/latex]. Let [latex]u[/latex] be a vertex in [latex]G[/latex] at maximum distance from [latex]v[/latex] as given by the BFS.<br>\n2. Run BFS on [latex]G[/latex] again with [latex]u[/latex] as the starting vertex. Let [latex]z[/latex] be the vertex at maximum distance from [latex]u[/latex] as given by the BFS.<br>\n3. Output the distance between [latex]u[/latex] and [latex]z[/latex] in [latex]G[/latex].\n<br><br>The output of [latex]\\texttt{someAlgo(T)}[/latex] for the tree shown in the given figure is __________. (Answer in integer) <br><img src=\"img/GATE/CS/20252/q49.webp\"/><br>",
+   "text": "Consider the following algorithm someAlgo that takes an undirected graph [latex]G[/latex] as input.\n<br><br>\n\n[latex]\\texttt{someAlgo(G)}:[/latex]<br>\n1. Let [latex]v[/latex] be any vertex in [latex]G[/latex]. Run BFS on [latex]G[/latex] starting at [latex]v[/latex]. Let [latex]u[/latex] be a vertex in [latex]G[/latex] at maximum distance from [latex]v[/latex] as given by the BFS.<br>\n2. Run BFS on [latex]G[/latex] again with [latex]u[/latex] as the starting vertex. Let [latex]z[/latex] be the vertex at maximum distance from [latex]u[/latex] as given by the BFS.<br>\n3. Output the distance between [latex]u[/latex] and [latex]z[/latex] in [latex]G[/latex].\n<br><br>The output of [latex]\\texttt{someAlgo(T)}[/latex] for the tree shown in the given figure is __________. (Answer in integer) <br><img src=\"data/img/GATE/CS/20252/q49.webp\"/><br>",
    "options": [],
    "answer": {
     "min": 6,
@@ -18794,7 +18794,7 @@
    "marks": 1,
    "subject": "General Aptitude",
    "topic": "Verbal Ability",
-   "text": "The paper as shown in the figure is folded to make a cube where each square corresponds to a particular face of the cube. Which one of the following options correctly represents the cube?<br>Note: The figures shown are representative.  <br><img src=\"img/GATE/CS/20252/q59a.webp\"/><br><br><img src=\"img/GATE/CS/20252/q59b.webp\"/><br>",
+   "text": "The paper as shown in the figure is folded to make a cube where each square corresponds to a particular face of the cube. Which one of the following options correctly represents the cube?<br>Note: The figures shown are representative.  <br><img src=\"data/img/GATE/CS/20252/q59a.webp\"/><br><br><img src=\"data/img/GATE/CS/20252/q59b.webp\"/><br>",
    "options": [
     "A",
     "B",
@@ -18929,7 +18929,7 @@
    "marks": 2,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "In the given figure, PQRS is a square of side 2 cm and PLMN is a rectangle. The corner L of the rectangle is on the side QR. Side MN of the rectangle passes through the corner S of the square.<br> <br>What is the area (in [latex]cm^{2} [/latex]) of the rectangle PLMN?<br><br>Note: The figure shown is representative. <br><img src=\"img/GATE/CS/20252/q64.webp\"/><br>",
+   "text": "In the given figure, PQRS is a square of side 2 cm and PLMN is a rectangle. The corner L of the rectangle is on the side QR. Side MN of the rectangle passes through the corner S of the square.<br> <br>What is the area (in [latex]cm^{2} [/latex]) of the rectangle PLMN?<br><br>Note: The figure shown is representative. <br><img src=\"data/img/GATE/CS/20252/q64.webp\"/><br>",
    "options": [
     "[latex]2 \\sqrt{2} [/latex]",
     "2",
@@ -18956,7 +18956,7 @@
    "marks": 2,
    "subject": "General Aptitude",
    "topic": "Verbal Ability",
-   "text": "The diagram below shows a river system consisting of 7 segments, marked P, Q, R, S, T, U, and V. It splits the land into 5 zones, marked Z1, Z2, Z3, Z4, and Z5. We need to connect these zones using the least number of bridges. Out of the following options, which one is correct? <br>Note: The figure shown is representative. <br><img src=\"img/GATE/CS/20252/q65.webp\"/><br>",
+   "text": "The diagram below shows a river system consisting of 7 segments, marked P, Q, R, S, T, U, and V. It splits the land into 5 zones, marked Z1, Z2, Z3, Z4, and Z5. We need to connect these zones using the least number of bridges. Out of the following options, which one is correct? <br>Note: The figure shown is representative. <br><img src=\"data/img/GATE/CS/20252/q65.webp\"/><br>",
    "options": [
     "Bridges on P, Q, and T",
     "Bridges on P, Q, S, and T",
@@ -19843,7 +19843,7 @@
    "marks": 2,
    "subject": "Compiler Design",
    "topic": "Intermediate Code Generation",
-   "text": "Consider the control flow graph shown in the figure. <br><img src=\"img/GATE/CS/20261/q32.webp\"/><br>Which one of the following options correctly lists the set of redundant expressions (common subexpressions) in the basic blocks B[latex]4[/latex] and B[latex]5[/latex]?<br> Note: All the variables are integers.",
+   "text": "Consider the control flow graph shown in the figure. <br><img src=\"data/img/GATE/CS/20261/q32.webp\"/><br>Which one of the following options correctly lists the set of redundant expressions (common subexpressions) in the basic blocks B[latex]4[/latex] and B[latex]5[/latex]?<br> Note: All the variables are integers.",
    "options": [
     "B4: [latex]\\{b+i\\}[/latex]               B5: [latex]\\{c+m\\}[/latex]",
     "B4: [latex]\\{g * k\\}[/latex]             B5: [latex]\\{c+m\\}[/latex]",
@@ -20516,7 +20516,7 @@
    "marks": 1,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "The figure shows two [latex]4[/latex]-tile patterns. <br><img src=\"img/GATE/CS/20261/q57a.webp\"/><br> Either one or both of the patterns can be used any number of times and in any orientation to construct a new pattern. Which one of the options below cannot be constructed by using only these two [latex]4[/latex]-tile patterns assuming there are no overlaps among them?<br><img src=\"img/GATE/CS/20261/q57b.webp\"/><br>",
+   "text": "The figure shows two [latex]4[/latex]-tile patterns. <br><img src=\"data/img/GATE/CS/20261/q57a.webp\"/><br> Either one or both of the patterns can be used any number of times and in any orientation to construct a new pattern. Which one of the options below cannot be constructed by using only these two [latex]4[/latex]-tile patterns assuming there are no overlaps among them?<br><img src=\"data/img/GATE/CS/20261/q57b.webp\"/><br>",
    "options": [
     "A",
     "B",
@@ -20651,7 +20651,7 @@
    "marks": 2,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "In Panel [latex]\\text{I}[/latex] of the figure below, the front view and top view of a structure are shown. Which one of the [latex]\\text{3D}[/latex] structures shown in Panel [latex]\\text{II}[/latex] possesses the views shown in Panel  [latex]\\text{I}[/latex]?<br><img src=\"img/GATE/CS/20261/q62.webp\"/><br> ",
+   "text": "In Panel [latex]\\text{I}[/latex] of the figure below, the front view and top view of a structure are shown. Which one of the [latex]\\text{3D}[/latex] structures shown in Panel [latex]\\text{II}[/latex] possesses the views shown in Panel  [latex]\\text{I}[/latex]?<br><img src=\"data/img/GATE/CS/20261/q62.webp\"/><br> ",
    "options": [
     "[latex]\\text{(i)}[/latex]",
     "[latex]\\text{(ii)}[/latex]",
@@ -20678,7 +20678,7 @@
    "marks": 2,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "For positive real numbers [latex]S[/latex] and [latex]K[/latex], the function [latex]H_{K}(S)[/latex] is defined as: [latex]H_{K}(S)=\\max (S-K, 0)[/latex]. The max function is defined as: <br><br>[latex] \\max (a, b)=\\left\\{\\begin{array}{ll} a, & \\text { when } a>b \\\\ b, & \\text { when } a \\leq b \\end{array}\\right. [/latex] <br><br>The graph below shows the plot of a function [latex]N(S)[/latex] versus [latex]S[/latex]. <br>[latex]N(S)[/latex] can be expressed as ________.<br><img src=\"img/GATE/CS/20261/q63.webp\"/><br> ",
+   "text": "For positive real numbers [latex]S[/latex] and [latex]K[/latex], the function [latex]H_{K}(S)[/latex] is defined as: [latex]H_{K}(S)=\\max (S-K, 0)[/latex]. The max function is defined as: <br><br>[latex] \\max (a, b)=\\left\\{\\begin{array}{ll} a, & \\text { when } a>b \\\\ b, & \\text { when } a \\leq b \\end{array}\\right. [/latex] <br><br>The graph below shows the plot of a function [latex]N(S)[/latex] versus [latex]S[/latex]. <br>[latex]N(S)[/latex] can be expressed as ________.<br><img src=\"data/img/GATE/CS/20261/q63.webp\"/><br> ",
    "options": [
     "[latex]H_{10}(S)-H_{20}(S)[/latex]",
     "[latex]H_{10}(S)-2 H_{20}(S)[/latex]",
@@ -21669,7 +21669,7 @@
    "marks": 2,
    "subject": "Compiler Design",
    "topic": "Runtime Environment",
-   "text": "Consider the control flow graph given below.  <br><img src=\"img/GATE/CS/20262/q35.webp\"/><br>Which one of the following options is the set of live variables at the exit point of each basic block?",
+   "text": "Consider the control flow graph given below.  <br><img src=\"data/img/GATE/CS/20262/q35.webp\"/><br>Which one of the following options is the set of live variables at the exit point of each basic block?",
    "options": [
     "[latex]{B} 1:\\{{a}, {b}, {c}, {e}, {f}\\}, {B} 2:\\{{d}, {e}\\}, {B} 3:\\{{b}, {c}, {e}, {f}\\}, {B} 4: \\phi[/latex]",
     "[latex]{B} 1[/latex]: [latex]\\phi[/latex], [latex]{B} 2[/latex]: [latex]\\{[/latex] d, e [latex]\\}[/latex], [latex]{B} 3[/latex]: [latex]\\{[/latex] a, c, f [latex]\\}[/latex], [latex]{B} 4[/latex]: [latex]\\phi[/latex]",
@@ -21723,7 +21723,7 @@
    "marks": 2,
    "subject": "Theory of Computation",
    "topic": "Finite Automata",
-   "text": "Consider the following two finite automata [latex]D_{1}[/latex] and [latex]D_{2}[/latex].  <br><img src=\"img/GATE/CS/20262/q37.webp\"/><br>Which of the following statements is/are true?",
+   "text": "Consider the following two finite automata [latex]D_{1}[/latex] and [latex]D_{2}[/latex].  <br><img src=\"data/img/GATE/CS/20262/q37.webp\"/><br>Which of the following statements is/are true?",
    "options": [
     "[latex]L\\left(D_{1}\\right)=L\\left(D_{2}\\right)[/latex]",
     "[latex]L\\left(D_{1}\\right)[/latex] is a proper subset of [latex]L\\left(D_{2}\\right)[/latex]",
@@ -22043,7 +22043,7 @@
    "marks": 2,
    "subject": "Digital Logic",
    "topic": "Combinational Circuit",
-   "text": "Consider the digital circuit shown below with two input lines [latex]\\text{A}[/latex] and [latex]\\text{B}[/latex], two select lines [latex]\\text{S0}[/latex] and [latex]\\text{S1}[/latex], and an output line [latex]\\text{Y}[/latex]. The blocks [latex]\\text{Q}[/latex] and [latex]\\text{M}[/latex] represent active high [latex]2:4[/latex] decoder and [latex]4[/latex]-to-[latex]1[/latex] multiplexer, respectively. Out of [latex]16[/latex] possible input combinations, the number of combinations that produce [latex]{Y}=1[/latex] is ________ (answer in integer) <br>Note: One input combination is an instance of [[latex]\\text{A B S1 S0}[/latex]].<br><img src=\"img/GATE/CS/20262/q49.webp\"/><br>",
+   "text": "Consider the digital circuit shown below with two input lines [latex]\\text{A}[/latex] and [latex]\\text{B}[/latex], two select lines [latex]\\text{S0}[/latex] and [latex]\\text{S1}[/latex], and an output line [latex]\\text{Y}[/latex]. The blocks [latex]\\text{Q}[/latex] and [latex]\\text{M}[/latex] represent active high [latex]2:4[/latex] decoder and [latex]4[/latex]-to-[latex]1[/latex] multiplexer, respectively. Out of [latex]16[/latex] possible input combinations, the number of combinations that produce [latex]{Y}=1[/latex] is ________ (answer in integer) <br>Note: One input combination is an instance of [[latex]\\text{A B S1 S0}[/latex]].<br><img src=\"data/img/GATE/CS/20262/q49.webp\"/><br>",
    "options": [],
    "answer": {
     "min": 6,
@@ -22231,7 +22231,7 @@
    "marks": 1,
    "subject": "General Aptitude",
    "topic": "Verbal Ability",
-   "text": "A black square PQRS has been cut into two parts. One part of it is shown in Panel [latex]\\text{I}.[/latex] Which one of the shapes in Panel [latex]\\text{II}[/latex] is the other part? <br><img src=\"img/GATE/CS/20262/q57.webp\"/><br>",
+   "text": "A black square PQRS has been cut into two parts. One part of it is shown in Panel [latex]\\text{I}.[/latex] Which one of the shapes in Panel [latex]\\text{II}[/latex] is the other part? <br><img src=\"data/img/GATE/CS/20262/q57.webp\"/><br>",
    "options": [
     "[latex]\\text{(i)}[/latex]",
     "[latex]\\text{(ii)}[/latex]",
@@ -22366,7 +22366,7 @@
    "marks": 2,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "Two tiles are missing in Panel [latex]\\text{I}[/latex]. Which one of the options in Panel [latex]\\text{II}[/latex] is the appropriate choice for the missing tiles?  <br><img src=\"img/GATE/CS/20262/q62.webp\"/><br>",
+   "text": "Two tiles are missing in Panel [latex]\\text{I}[/latex]. Which one of the options in Panel [latex]\\text{II}[/latex] is the appropriate choice for the missing tiles?  <br><img src=\"data/img/GATE/CS/20262/q62.webp\"/><br>",
    "options": [
     "[latex]\\text{(i)}[/latex]",
     "[latex]\\text{(ii)}[/latex]",
@@ -22393,7 +22393,7 @@
    "marks": 2,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "Figures [latex]\\text{(i)}[/latex] and [latex]\\text{(ii)}[/latex] represent intercity highway systems. The black dots represent cities and the line segments between them represent intercity highways. A salesperson needs to make a trip. She needs to start from a city, visit each of the remaining cities exactly once, and finally return to the same city from which she started. <br><br>Which one of the following options is then true?<br><img src=\"img/GATE/CS/20262/q63.webp\"/><br>",
+   "text": "Figures [latex]\\text{(i)}[/latex] and [latex]\\text{(ii)}[/latex] represent intercity highway systems. The black dots represent cities and the line segments between them represent intercity highways. A salesperson needs to make a trip. She needs to start from a city, visit each of the remaining cities exactly once, and finally return to the same city from which she started. <br><br>Which one of the following options is then true?<br><img src=\"data/img/GATE/CS/20262/q63.webp\"/><br>",
    "options": [
     "Such a trip is possible for [latex]\\text{(i)}[/latex], but not for [latex]\\text{(ii)}[/latex].",
     "Such a trip is possible for [latex]\\text{(ii)}[/latex], but not for [latex]\\text{(i)}[/latex].",
@@ -22420,7 +22420,7 @@
    "marks": 2,
    "subject": "General Aptitude",
    "topic": "Numerical Ability",
-   "text": "The figure in Panel [latex]\\text{I}[/latex] below is a grid of cells with four rows and four columns. The numbers on the top and on the left represent the number of cells that are to be shaded in that column and row, respectively. Which one of the options shown in Panel [latex]\\text{II}[/latex] below represents the grid shaded correctly?<br><img src=\"img/GATE/CS/20262/q64.webp\"/><br>",
+   "text": "The figure in Panel [latex]\\text{I}[/latex] below is a grid of cells with four rows and four columns. The numbers on the top and on the left represent the number of cells that are to be shaded in that column and row, respectively. Which one of the options shown in Panel [latex]\\text{II}[/latex] below represents the grid shaded correctly?<br><img src=\"data/img/GATE/CS/20262/q64.webp\"/><br>",
    "options": [
     "[latex]\\text{(i)}[/latex]",
     "[latex]\\text{(ii)}[/latex]",
