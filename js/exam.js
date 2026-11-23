@@ -10,7 +10,7 @@ const SECTIONS = [
 ];
 
 function paperQids(DB, slug) {
-  const qs = DB.questions.filter((q) => q.paper === slug);
+  const qs = DB.all.filter((q) => q.paper === slug);
   // GATE order: General Aptitude first (Q1–10), then the subject paper (Q11–65)
   return [...qs.filter((q) => q.section === "GA"), ...qs.filter((q) => q.section !== "GA")].map((q) => q.id);
 }

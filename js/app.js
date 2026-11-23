@@ -4,6 +4,7 @@ import {
 } from "./util.js";
 import { renderExamInstructions, resumeExamIfAny } from "./exam.js";
 import { aiStatus, aiAvailable, openTutor, closeTutor, viewAsk } from "./ai.js";
+import { viewSyllabus } from "./syllabus.js";
 
 const app = $("#app");
 let DB;
@@ -43,6 +44,7 @@ const routes = {
   "mock-start": (id) => renderExamInstructions(app, DB, id),
   exam: () => resumeExamIfAny(app, DB) || (location.hash = "#/mock"),
   history: viewHistory,
+  syllabus: () => viewSyllabus(app, DB),
   ask: (id) => { if (!aiAvailable()) { location.hash = "#/"; return; } setCleanup(viewAsk(app, id)); },
 };
 
@@ -84,7 +86,7 @@ function viewHome() {
   const n = DB.questions.length;
   app.innerHTML = `<div class="wrap">
     <h1>GATE CSE previous-year questions</h1>
-    <p class="sub">${n} questions from ${DB.papers.length} papers (${Math.min(...DB.years)}–${Math.max(...DB.years)}), with answers and solutions. Your progress stays in this browser.</p>
+    <p class="sub">${n} practice questions from ${DB.papers.filter((p) => !p.mock_only).length} papers (${Math.min(...DB.years)}–${Math.max(...DB.years)}), arranged by the official GATE 2027 syllabus, plus ${DB.papers.filter((p) => p.mock_only).length} older papers (${Math.min(...DB.papers.filter((p) => p.mock_only).map((p) => p.year))}–${Math.max(...DB.papers.filter((p) => p.mock_only).map((p) => p.year))}) kept for full mock tests only. Your progress stays on this device.</p>
     ${sess && !sess.finished ? `<div class="card row" style="margin-bottom:16px"><div><b>Unfinished practice:</b> ${esc(sess.title)} <span class="muted">· ${Object.values(sess.responses).filter((r) => r.checked || isAnswered(DB.byId.get(r.qid) || {}, r.ans)).length}/${sess.qids.length} done</span></div><div class="spacer"></div><button class="btn btn-ghost btn-sm" id="dropSess">Discard</button><a class="btn btn-primary btn-sm" href="#/session">Resume</a></div>` : ""}
     ${exam && !exam.finished ? `<div class="card row" style="margin-bottom:16px"><div><b>Mock test in progress:</b> ${esc(exam.title)} <span class="muted">· ${fmtTime(exam.remaining)} left</span></div><div class="spacer"></div><a class="btn btn-primary btn-sm" href="#/exam">Resume</a></div>` : ""}
     <div class="grid grid-3" style="margin-bottom:20px">
@@ -143,6 +145,10 @@ function filterQuestions(cfg) {
 
 function viewBuilder() {
   const cfg = { ...DEFAULT_CFG, ...store.get("builder", {}) };
+  // drop selections whose topic/year no longer exists (e.g. after the syllabus re-mapping)
+  const validTopics = new Set(DB.tree.flatMap((s) => s.topics.map((t) => s.subject + "||" + t.topic)));
+  cfg.topics = (cfg.topics || []).filter((k) => validTopics.has(k));
+  cfg.years = (cfg.years || []).filter((y) => DB.years.includes(y));
   const qstats = store.get("qstats", {});
   const open = new Set(store.get("builder.open", []));
 
@@ -170,7 +176,7 @@ function viewBuilder() {
               <span class="bar-mini" title="${acc.done}/${all.length} attempted"><i style="width:${acc.pct}%"></i></span><span class="count">${all.length}</span></div>
             <div class="topics">${s.topics.map((t) => {
               const ta = topicAcc(t.ids);
-              return `<label class="topic" data-name="${esc(t.topic.toLowerCase())}"><input type="checkbox" data-topic="${esc(s.subject + "||" + t.topic)}"><span class="t">${esc(t.topic)}</span><span class="bar-mini" title="${ta.done}/${t.ids.length} attempted"><i style="width:${ta.pct}%"></i></span><span class="count">${t.ids.length}</span></label>`;
+              return `<label class="topic" data-name="${esc(t.topic.toLowerCase())}"><input type="checkbox" data-topic="${esc(s.subject + "||" + t.topic)}"><span class="t">${esc(t.topic)}${t.out ? ` <span class="tag out-tag" title="Not in the GATE 2027 syllabus">not in 2027 syllabus</span>` : ""}</span><span class="bar-mini" title="${ta.done}/${t.ids.length} attempted"><i style="width:${ta.pct}%"></i></span><span class="count">${t.ids.length}</span></label>`;
             }).join("")}</div></div>`;
         }).join("")}</div>
       </div>
@@ -516,6 +522,7 @@ export function viewResult(id) {
   if (!res) { app.innerHTML = `<div class="wrap"><div class="card empty">Result not found. <a href="#/history">Back to progress</a></div></div>`; return; }
   const S = computeSummary(DB, res.qids, res.responses);
   const isMock = res.kind === "mock";
+  const mockOnly = isMock && DB.papers.find((p) => p.slug === res.paper)?.mock_only;
   const pct = S.max ? Math.max(0, S.score) / S.max : 0;
   const C = 2 * Math.PI * 54;
   const attempted = S.c + S.w;
@@ -552,8 +559,9 @@ export function viewResult(id) {
       <div class="row" style="margin-bottom:12px"><h2 style="margin:0">Review</h2><div class="spacer"></div>
         <div class="chips" id="revFilter"><button class="chip on" data-f="all">All ${S.n}</button><button class="chip" data-f="wrong">Wrong ${S.w}</button><button class="chip" data-f="skip">Skipped ${S.s}</button><button class="chip" data-f="correct">Correct ${S.c}</button></div></div>
       <div class="row" style="margin-bottom:14px">
-        <button class="btn btn-sm" id="retryWrong" ${S.w + S.s ? "" : "disabled"}>Practise wrong + skipped again</button>
-        <button class="btn btn-sm" id="retryAll">Redo all ${S.n}</button>
+        ${isMock ? `<a class="btn btn-sm btn-primary" href="#/mock-start/${esc(res.paper)}">Retake this mock</a>` : ""}
+        ${mockOnly ? "" : `<button class="btn btn-sm" id="retryWrong" ${S.w + S.s ? "" : "disabled"}>Practise wrong + skipped again</button>`}
+        ${isMock ? "" : `<button class="btn btn-sm" id="retryAll">Redo all ${S.n}</button>`}
         <button class="btn btn-sm btn-ghost" id="expandRev">Expand all</button>
       </div>
       <div id="review"></div>
@@ -594,11 +602,11 @@ export function viewResult(id) {
     $$(".review-item").forEach((d) => (d.style.display = c.dataset.f === "all" || d.dataset.v === c.dataset.f ? "" : "none"));
   }));
   $("#expandRev").onclick = () => { const anyClosed = $$(".review-item").some((d) => !d.open && d.style.display !== "none"); $$(".review-item").forEach((d) => { if (d.style.display !== "none") d.open = anyClosed; }); };
-  $("#retryWrong").onclick = () => {
+  $("#retryWrong") && ($("#retryWrong").onclick = () => {
     const ids = res.qids.filter((id) => verdict(DB.byId.get(id), res.responses[id]?.ans) !== "correct");
     startPractice({ qids: ids, title: "Retry: " + res.title, mode: "instant", timeLimit: 0 });
-  };
-  $("#retryAll").onclick = () => startPractice({ qids: res.qids, title: "Redo: " + res.title, mode: isMock ? "end" : res.mode, timeLimit: 0 });
+  });
+  $("#retryAll") && ($("#retryAll").onclick = () => startPractice({ qids: res.qids, title: "Redo: " + res.title, mode: res.mode, timeLimit: 0 }));
 }
 
 // ---------------- mock list ----------------
@@ -607,17 +615,24 @@ function viewMockList() {
   const best = {};
   results.forEach((r) => { if (!best[r.paper] || r.summary.score > best[r.paper].summary.score) best[r.paper] = r; });
   const papers = [...DB.papers].sort((a, b) => b.year - a.year || (a.set || 0) - (b.set || 0));
-  app.innerHTML = `<div class="wrap">
-    <h1>Mock tests</h1>
-    <p class="sub">Full previous-year papers in a GATE-style exam screen: 180 minutes, General Aptitude + CS sections, question palette, mark-for-review, on-screen calculator and keypad, negative marking for MCQs. Results and solutions appear after you submit.</p>
-    <div class="grid grid-3">${papers.map((p) => {
+  const card = (p) => {
       const b = best[p.slug];
       const tries = results.filter((r) => r.paper === p.slug).length;
       return `<div class="card paper-card"><div class="yr">${p.year}${p.set ? ` <span class="muted" style="font-size:16px;font-weight:600">Set ${p.set}</span>` : ""}</div>
         <div class="muted small">${p.questions} questions · ${p.marks} marks · 3 hours</div>
         <div class="small">${b ? `Best: <b>${fmtMarks(b.summary.score)}</b> / ${b.summary.max} · ${tries} attempt${tries > 1 ? "s" : ""}` : `<span class="muted">Not attempted</span>`}</div>
         <div class="row"><a class="btn btn-primary btn-sm" href="#/mock-start/${p.slug}">Start test</a>${b ? `<a class="btn btn-sm btn-ghost" href="#/result/${b.id}">Best result</a>` : ""}</div></div>`;
-    }).join("")}</div></div>`;
+  };
+  const recent = papers.filter((p) => !p.mock_only), older = papers.filter((p) => p.mock_only);
+  app.innerHTML = `<div class="wrap stack">
+    <div><h1>Mock tests</h1>
+    <p class="sub" style="margin:0">Full previous-year papers in a GATE-style exam screen: 180 minutes, General Aptitude + CS sections, question palette, mark-for-review, on-screen calculator and keypad, negative marking for MCQs. Results and solutions appear after you submit.</p></div>
+    <h2 style="margin:8px 0 0">2018 onwards <span class="muted small" style="font-weight:500">· these questions are also in topic-wise practice</span></h2>
+    <div class="grid grid-3">${recent.map(card).join("")}</div>
+    ${older.length ? `<h2 style="margin:18px 0 0">Older papers ${Math.min(...older.map((p) => p.year))}–${Math.max(...older.map((p) => p.year))} <span class="muted small" style="font-weight:500">· full mock tests only, never shown in practice</span></h2>
+    <p class="muted small" style="margin:0">Older papers follow the syllabus of their year, so a few questions (software engineering, web technology, numerical methods) are outside the 2027 syllabus. These papers have no MSQs, which started in 2021.</p>
+    <div class="grid grid-3">${older.map(card).join("")}</div>` : ""}
+  </div>`;
 }
 
 // ---------------- history / progress ----------------

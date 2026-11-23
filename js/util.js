@@ -19,7 +19,10 @@ export async function loadDB() {
   if (DB) return DB;
   const r = await fetch("data/questions.json");
   const d = await r.json();
-  d.byId = new Map(d.questions.map((q) => [q.id, q]));
+  // d.all = every question (incl. mock-only 2014–2017 papers); d.questions = the practice pool
+  d.all = d.questions;
+  d.byId = new Map(d.all.map((q) => [q.id, q]));
+  d.questions = d.all.filter((q) => !q.mock_only);
   // subject -> topic -> [ids]
   const tree = new Map();
   for (const q of d.questions) {
@@ -28,10 +31,12 @@ export async function loadDB() {
     if (!t.has(q.topic)) t.set(q.topic, []);
     t.get(q.topic).push(q.id);
   }
-  const order = (s) => (s === "General Aptitude" ? "zz" : s === "Engineering Mathematics" ? "zy" : s);
+  // subjects in official syllabus order (S1..S10, then General Aptitude)
+  const secOrder = (d.syllabus?.sections || []).map((x) => x.name);
+  const order = (s) => { const i = secOrder.indexOf(s); return i < 0 ? 999 : i; };
   d.tree = [...tree.entries()]
-    .sort((a, b) => order(a[0]).localeCompare(order(b[0])))
-    .map(([s, t]) => ({ subject: s, topics: [...t.entries()].sort((a, b) => b[1].length - a[1].length).map(([n, ids]) => ({ topic: n, ids })) }));
+    .sort((a, b) => order(a[0]) - order(b[0]) || a[0].localeCompare(b[0]))
+    .map(([s, t]) => ({ subject: s, topics: [...t.entries()].sort((a, b) => b[1].length - a[1].length).map(([n, ids]) => ({ topic: n, ids, out: d.byId.get(ids[0])?.in_syllabus === false })) }));
   d.years = [...new Set(d.questions.map((q) => q.year))].sort((a, b) => b - a);
   DB = d;
   return d;

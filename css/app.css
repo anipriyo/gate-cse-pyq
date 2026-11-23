@@ -288,3 +288,24 @@ table.tbl tr.sub-row td { font-size: 13px; color: var(--muted); padding-left: 24
 [hidden] { display: none !important; }
 .ai-chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
 .ai-chips .chip { flex: none; }
+
+/* ---------- syllabus ---------- */
+.syl-sec { padding: 0; }
+.syl-head { display: flex; align-items: center; gap: 10px; padding: 16px 20px; cursor: pointer; user-select: none; flex-wrap: wrap; }
+.syl-head .chev { color: var(--muted); transition: transform .15s; width: 14px; }
+.syl-sec.open .syl-head .chev { transform: rotate(90deg); }
+.syl-id { font-size: 12px; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: 2px 7px; border-radius: 6px; }
+.syl-name { font-size: 16px; flex: 1; min-width: 160px; }
+.syl-head .acc-bar { width: 120px; flex: none; }
+.syl-body { display: none; padding: 0 20px 18px 44px; }
+.syl-sec.open .syl-body { display: block; }
+@media (max-width: 600px) { .syl-body { padding: 0 14px 16px; } .syl-head .acc-bar { width: 100%; } }
+.syl-group { margin: 14px 0 4px; font-size: 14px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.syl-item { padding: 10px 0; border-bottom: 1px solid var(--border); }
+.syl-item:last-of-type { border-bottom: 0; }
+.syl-check { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; line-height: 1.5; }
+.syl-check input { margin-top: 3px; }
+.syl-check input:checked + span { color: var(--muted); text-decoration: line-through; text-decoration-color: color-mix(in srgb, var(--muted) 50%, transparent); }
+.syl-topics { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 8px 0 0 26px; }
+.syl-mini .acc-bar { width: 70px; min-width: 70px; }
+.out-tag { font-size: 10.5px; padding: 1px 6px; margin-left: 4px; background: var(--bad-soft); color: var(--bad); vertical-align: 1px; }
