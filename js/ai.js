@@ -150,9 +150,9 @@ export function mountChat(root, chat, { chips = [], autoSend = null, onSaved } =
     const st = await aiStatus(true);
     if (prefs.provider === "qwen") {
       if (!st.qwen?.available) status.innerHTML = `<span class="bad">Qwen setup not found on this Mac.</span>`;
-      else if (st.qwen.healthy) status.innerHTML = `<span class="ok">●</span> ${esc(st.qwen.model || "Qwen")} is on · runs offline · about 10 words/s`;
+      else if (st.qwen.healthy) status.innerHTML = `<span class="ok">●</span> ${esc(st.qwen.model || "Qwen")} is loaded · offline · ~10 words/s${st.qwen.ours ? ` · unloads after ${st.qwen.idle_min} min unused or when you close the app` : ""}`;
       else if (st.qwen.starting) { status.innerHTML = `<span class="warn">●</span> Loading Qwen into memory… (about 30 s)`; pollT = setTimeout(refreshStatus, 2000); }
-      else status.innerHTML = `<span class="muted">●</span> Qwen is off. <button class="btn btn-sm" id="qStart">Start Qwen</button>${st.qwen.error ? ` <span class="bad">${esc(st.qwen.error)}</span>` : ""}`;
+      else status.innerHTML = `<span class="muted">●</span> Qwen is not in memory. It loads when you ask something (~30 s). <button class="btn btn-sm" id="qStart">Load now</button>${st.qwen.error ? ` <span class="bad">${esc(st.qwen.error)}</span>` : ""}`;
       $("#qStart", status)?.addEventListener("click", async () => { await fetch("api/qwen/start", { method: "POST" }); refreshStatus(); });
     } else {
       if (!st.chatgpt?.available) status.innerHTML = `<span class="bad">Codex CLI not found (npm i -g @openai/codex).</span>`;
@@ -250,6 +250,7 @@ export function mountChat(root, chat, { chips = [], autoSend = null, onSaved } =
     $(".ai-stop", root).hidden = true;
     saveChat(chat);
     onSaved && onSaved(chat);
+    refreshStatus();
   }
 
   $(".ai-stop", root).onclick = () => ctrl?.abort();
