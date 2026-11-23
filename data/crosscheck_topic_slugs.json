@@ -1,0 +1,4495 @@
+{
+"2014-1-01": [
+"discrete-mathematics"
+],
+"2014-1-02": [
+"discrete-mathematics"
+],
+"2014-1-03": [
+"discrete-mathematics"
+],
+"2014-1-04": [
+"engineering-mathematics"
+],
+"2014-1-05": [
+"engineering-mathematics"
+],
+"2014-1-06": [
+"engineering-mathematics"
+],
+"2014-1-07": [
+"digital-logic"
+],
+"2014-1-08": [
+"digital-logic"
+],
+"2014-1-09": [
+"computer-organization"
+],
+"2014-1-10": [
+"c-programming"
+],
+"2014-1-11": [
+"algorithm",
+"discrete-mathematics"
+],
+"2014-1-12": [
+"data-structure"
+],
+"2014-1-13": [
+"discrete-mathematics"
+],
+"2014-1-14": [
+"algorithm"
+],
+"2014-1-15": [
+"theory-of-computation"
+],
+"2014-1-16": [
+"theory-of-computation"
+],
+"2014-1-17": [
+"compiler-design"
+],
+"2014-1-18": [
+"software-engg"
+],
+"2014-1-19": [
+"operating-system"
+],
+"2014-1-20": [
+"operating-system"
+],
+"2014-1-21": [
+"database-management-system"
+],
+"2014-1-22": [
+"database-management-system"
+],
+"2014-1-23": [
+"computer-network"
+],
+"2014-1-24": [
+"computer-network"
+],
+"2014-1-25": [
+"computer-network"
+],
+"2014-1-26": [
+"computer-network"
+],
+"2014-1-27": [
+"computer-network"
+],
+"2014-1-28": [
+"computer-network"
+],
+"2014-1-29": [
+"database-management-system"
+],
+"2014-1-30": [
+"database-management-system"
+],
+"2014-1-31": [
+"operating-system"
+],
+"2014-1-32": [
+"operating-system"
+],
+"2014-1-33": [
+"operating-system"
+],
+"2014-1-34": [
+"compiler-design"
+],
+"2014-1-35": [
+"theory-of-computation"
+],
+"2014-1-36": [
+"theory-of-computation"
+],
+"2014-1-37": [
+"discrete-mathematics"
+],
+"2014-1-38": [
+"algorithm"
+],
+"2014-1-39": [
+"algorithm"
+],
+"2014-1-40": [
+"data-structure"
+],
+"2014-1-41": [
+"c-programming"
+],
+"2014-1-42": [
+"c-programming"
+],
+"2014-1-43": [
+"computer-organization"
+],
+"2014-1-44": [
+"computer-organization"
+],
+"2014-1-45": [
+"digital-logic"
+],
+"2014-1-46": [
+"engineering-mathematics"
+],
+"2014-1-47": [
+"engineering-mathematics"
+],
+"2014-1-48": [
+"discrete-mathematics"
+],
+"2014-1-49": [
+"discrete-mathematics"
+],
+"2014-1-50": [
+"discrete-mathematics"
+],
+"2014-1-51": [
+"discrete-mathematics"
+],
+"2014-1-52": [
+"discrete-mathematics"
+],
+"2014-1-53": [
+"discrete-mathematics"
+],
+"2014-1-54": [
+"database-management-system"
+],
+"2014-1-55": [
+"computer-organization"
+],
+"2014-1-56": [
+"general-aptitude"
+],
+"2014-1-57": [
+"general-aptitude"
+],
+"2014-1-58": [
+"general-aptitude"
+],
+"2014-1-59": [
+"general-aptitude"
+],
+"2014-1-60": [
+"general-aptitude"
+],
+"2014-1-61": [
+"general-aptitude"
+],
+"2014-1-62": [
+"general-aptitude"
+],
+"2014-1-63": [
+"general-aptitude"
+],
+"2014-1-64": [
+"general-aptitude"
+],
+"2014-1-65": [
+"general-aptitude"
+],
+"2014-2-01": [
+"discrete-mathematics"
+],
+"2014-2-02": [
+"discrete-mathematics"
+],
+"2014-2-03": [
+"discrete-mathematics"
+],
+"2014-2-04": [
+"engineering-mathematics"
+],
+"2014-2-05": [
+"engineering-mathematics"
+],
+"2014-2-06": [
+"digital-logic"
+],
+"2014-2-07": [
+"digital-logic"
+],
+"2014-2-08": [
+"digital-logic"
+],
+"2014-2-09": [
+"computer-organization"
+],
+"2014-2-10": [
+"c-programming"
+],
+"2014-2-11": [
+"c-programming"
+],
+"2014-2-12": [
+"data-structure"
+],
+"2014-2-13": [
+"algorithm"
+],
+"2014-2-14": [
+"algorithm"
+],
+"2014-2-15": [
+"theory-of-computation"
+],
+"2014-2-16": [
+"theory-of-computation"
+],
+"2014-2-17": [
+"compiler-design"
+],
+"2014-2-18": [
+"compiler-design"
+],
+"2014-2-19": [
+"software-engg"
+],
+"2014-2-20": [
+"operating-system"
+],
+"2014-2-21": [
+"database-management-system"
+],
+"2014-2-22": [
+"database-management-system"
+],
+"2014-2-23": [
+"computer-network"
+],
+"2014-2-24": [
+"computer-network"
+],
+"2014-2-25": [
+"computer-network"
+],
+"2014-2-26": [
+"computer-network"
+],
+"2014-2-27": [
+"computer-network"
+],
+"2014-2-28": [
+"computer-network"
+],
+"2014-2-29": [
+"database-management-system"
+],
+"2014-2-30": [
+"database-management-system"
+],
+"2014-2-31": [
+"operating-system"
+],
+"2014-2-32": [
+"operating-system"
+],
+"2014-2-33": [
+"operating-system"
+],
+"2014-2-34": [
+"compiler-design"
+],
+"2014-2-35": [
+"theory-of-computation"
+],
+"2014-2-36": [
+"theory-of-computation"
+],
+"2014-2-37": [
+"algorithm"
+],
+"2014-2-38": [
+"algorithm"
+],
+"2014-2-39": [
+"data-structure"
+],
+"2014-2-40": [
+"c-programming"
+],
+"2014-2-41": [
+"data-structure"
+],
+"2014-2-42": [
+"c-programming"
+],
+"2014-2-43": [
+"computer-organization"
+],
+"2014-2-44": [
+"computer-organization"
+],
+"2014-2-45": [
+"digital-logic"
+],
+"2014-2-46": [
+"engineering-mathematics"
+],
+"2014-2-47": [
+"engineering-mathematics"
+],
+"2014-2-48": [
+"discrete-mathematics"
+],
+"2014-2-49": [
+"discrete-mathematics"
+],
+"2014-2-50": [
+"discrete-mathematics"
+],
+"2014-2-51": [
+"discrete-mathematics"
+],
+"2014-2-52": [
+"algorithm"
+],
+"2014-2-53": [
+"discrete-mathematics"
+],
+"2014-2-54": [
+"database-management-system"
+],
+"2014-2-55": [
+"computer-organization"
+],
+"2014-2-56": [
+"general-aptitude"
+],
+"2014-2-57": [
+"general-aptitude"
+],
+"2014-2-58": [
+"general-aptitude"
+],
+"2014-2-59": [
+"general-aptitude"
+],
+"2014-2-60": [
+"general-aptitude"
+],
+"2014-2-61": [
+"general-aptitude"
+],
+"2014-2-62": [
+"general-aptitude"
+],
+"2014-2-63": [
+"general-aptitude"
+],
+"2014-2-64": [
+"general-aptitude"
+],
+"2014-2-65": [
+"general-aptitude"
+],
+"2014-3-01": [
+"discrete-mathematics"
+],
+"2014-3-02": [
+"discrete-mathematics"
+],
+"2014-3-03": [
+"discrete-mathematics"
+],
+"2014-3-04": [
+"engineering-mathematics"
+],
+"2014-3-05": [
+"engineering-mathematics"
+],
+"2014-3-06": [
+"engineering-mathematics"
+],
+"2014-3-07": [
+"digital-logic"
+],
+"2014-3-08": [
+"digital-logic"
+],
+"2014-3-09": [
+"computer-organization"
+],
+"2014-3-10": [
+"engineering-mathematics"
+],
+"2014-3-11": [
+"compiler-design"
+],
+"2014-3-12": [
+"data-structure"
+],
+"2014-3-13": [
+"algorithm",
+"discrete-mathematics"
+],
+"2014-3-14": [
+"algorithm"
+],
+"2014-3-15": [
+"theory-of-computation"
+],
+"2014-3-16": [
+"theory-of-computation"
+],
+"2014-3-17": [
+"compiler-design"
+],
+"2014-3-18": [
+"compiler-design"
+],
+"2014-3-19": [
+"software-engg"
+],
+"2014-3-20": [
+"operating-system"
+],
+"2014-3-21": [
+"database-management-system"
+],
+"2014-3-22": [
+"database-management-system"
+],
+"2014-3-23": [
+"computer-network"
+],
+"2014-3-24": [
+"computer-network"
+],
+"2014-3-25": [
+"computer-network"
+],
+"2014-3-26": [
+"computer-network"
+],
+"2014-3-27": [
+"computer-network"
+],
+"2014-3-28": [
+"computer-network"
+],
+"2014-3-29": [
+"database-management-system"
+],
+"2014-3-30": [
+"database-management-system"
+],
+"2014-3-31": [
+"operating-system"
+],
+"2014-3-32": [
+"operating-system"
+],
+"2014-3-33": [
+"operating-system"
+],
+"2014-3-34": [
+"compiler-design"
+],
+"2014-3-35": [
+"theory-of-computation"
+],
+"2014-3-36": [
+"theory-of-computation"
+],
+"2014-3-37": [
+"algorithm"
+],
+"2014-3-38": [
+"algorithm"
+],
+"2014-3-39": [
+"data-structure"
+],
+"2014-3-40": [
+"data-structure"
+],
+"2014-3-41": [
+"data-structure"
+],
+"2014-3-42": [
+"c-programming"
+],
+"2014-3-43": [
+"computer-organization"
+],
+"2014-3-44": [
+"computer-organization"
+],
+"2014-3-45": [
+"digital-logic"
+],
+"2014-3-46": [
+"engineering-mathematics"
+],
+"2014-3-47": [
+"engineering-mathematics"
+],
+"2014-3-48": [
+"discrete-mathematics"
+],
+"2014-3-49": [
+"discrete-mathematics"
+],
+"2014-3-50": [
+"discrete-mathematics"
+],
+"2014-3-51": [
+"discrete-mathematics"
+],
+"2014-3-52": [
+"discrete-mathematics"
+],
+"2014-3-53": [
+"discrete-mathematics"
+],
+"2014-3-54": [
+"database-management-system"
+],
+"2014-3-55": [
+"digital-logic"
+],
+"2014-3-56": [
+"general-aptitude"
+],
+"2014-3-57": [
+"general-aptitude"
+],
+"2014-3-58": [
+"general-aptitude"
+],
+"2014-3-59": [
+"general-aptitude"
+],
+"2014-3-60": [
+"general-aptitude"
+],
+"2014-3-61": [
+"general-aptitude"
+],
+"2014-3-62": [
+"general-aptitude"
+],
+"2014-3-63": [
+"general-aptitude"
+],
+"2014-3-64": [
+"general-aptitude"
+],
+"2014-3-65": [
+"general-aptitude"
+],
+"2015-1-01": [
+"discrete-mathematics"
+],
+"2015-1-02": [
+"engineering-mathematics"
+],
+"2015-1-03": [
+"algorithm"
+],
+"2015-1-04": [
+"algorithm"
+],
+"2015-1-05": [
+"data-structure"
+],
+"2015-1-06": [
+"software-engg"
+],
+"2015-1-07": [
+"data-structure"
+],
+"2015-1-08": [
+"compiler-design"
+],
+"2015-1-09": [
+"discrete-mathematics"
+],
+"2015-1-10": [
+"discrete-mathematics"
+],
+"2015-1-11": [
+"digital-logic"
+],
+"2015-1-12": [
+"computer-organization"
+],
+"2015-1-13": [
+"computer-network"
+],
+"2015-1-14": [
+"computer-network"
+],
+"2015-1-15": [
+"web-technology"
+],
+"2015-1-16": [
+"computer-network"
+],
+"2015-1-17": [
+"computer-network"
+],
+"2015-1-18": [
+"theory-of-computation"
+],
+"2015-1-19": [
+"operating-system"
+],
+"2015-1-20": [
+"operating-system"
+],
+"2015-1-21": [
+"database-management-system"
+],
+"2015-1-22": [
+"database-management-system"
+],
+"2015-1-23": [
+"engineering-mathematics"
+],
+"2015-1-24": [
+"c-programming"
+],
+"2015-1-25": [
+"data-structure"
+],
+"2015-1-26": [
+"computer-network"
+],
+"2015-1-27": [
+"data-structure"
+],
+"2015-1-28": [
+"software-engg"
+],
+"2015-1-29": [
+"computer-network"
+],
+"2015-1-30": [
+"discrete-mathematics"
+],
+"2015-1-31": [
+"engineering-mathematics"
+],
+"2015-1-32": [
+"discrete-mathematics"
+],
+"2015-1-33": [
+"digital-logic"
+],
+"2015-1-34": [
+"discrete-mathematics"
+],
+"2015-1-35": [
+"discrete-mathematics"
+],
+"2015-1-36": [
+"compiler-design"
+],
+"2015-1-37": [
+"compiler-design"
+],
+"2015-1-38": [
+"database-management-system"
+],
+"2015-1-39": [
+"theory-of-computation"
+],
+"2015-1-40": [
+"theory-of-computation"
+],
+"2015-1-41": [
+"algorithm",
+"discrete-mathematics"
+],
+"2015-1-42": [
+"operating-system"
+],
+"2015-1-43": [
+"digital-logic"
+],
+"2015-1-44": [
+"computer-organization"
+],
+"2015-1-45": [
+"computer-organization"
+],
+"2015-1-46": [
+"operating-system"
+],
+"2015-1-47": [
+"operating-system"
+],
+"2015-1-48": [
+"engineering-mathematics"
+],
+"2015-1-49": [
+"engineering-mathematics"
+],
+"2015-1-50": [
+"data-structure"
+],
+"2015-1-51": [
+"database-management-system"
+],
+"2015-1-52": [
+"c-programming"
+],
+"2015-1-53": [
+"algorithm"
+],
+"2015-1-54": [
+"algorithm"
+],
+"2015-1-55": [
+"c-programming"
+],
+"2015-1-56": [
+"general-aptitude"
+],
+"2015-1-57": [
+"general-aptitude"
+],
+"2015-1-58": [
+"general-aptitude"
+],
+"2015-1-59": [
+"general-aptitude"
+],
+"2015-1-60": [
+"general-aptitude"
+],
+"2015-1-61": [
+"general-aptitude"
+],
+"2015-1-62": [
+"general-aptitude"
+],
+"2015-1-63": [
+"general-aptitude"
+],
+"2015-1-64": [
+"general-aptitude"
+],
+"2015-1-65": [
+"general-aptitude"
+],
+"2015-2-01": [
+"discrete-mathematics"
+],
+"2015-2-02": [
+"discrete-mathematics"
+],
+"2015-2-03": [
+"discrete-mathematics"
+],
+"2015-2-04": [
+"discrete-mathematics"
+],
+"2015-2-05": [
+"engineering-mathematics"
+],
+"2015-2-06": [
+"data-structure"
+],
+"2015-2-07": [
+"digital-logic"
+],
+"2015-2-08": [
+"computer-organization"
+],
+"2015-2-09": [
+"operating-system"
+],
+"2015-2-10": [
+"theory-of-computation"
+],
+"2015-2-11": [
+"c-programming"
+],
+"2015-2-12": [
+"data-structure"
+],
+"2015-2-13": [
+"data-structure"
+],
+"2015-2-14": [
+"c-programming"
+],
+"2015-2-15": [
+"software-engg"
+],
+"2015-2-16": [
+"algorithm"
+],
+"2015-2-17": [
+"compiler-design"
+],
+"2015-2-18": [
+"compiler-design"
+],
+"2015-2-19": [
+"software-engg"
+],
+"2015-2-20": [
+"operating-system"
+],
+"2015-2-21": [
+"database-management-system"
+],
+"2015-2-22": [
+"data-structure"
+],
+"2015-2-23": [
+"operating-system"
+],
+"2015-2-24": [
+"computer-network"
+],
+"2015-2-25": [
+"computer-network"
+],
+"2015-2-26": [
+"computer-network"
+],
+"2015-2-27": [
+"computer-network"
+],
+"2015-2-28": [
+"computer-network"
+],
+"2015-2-29": [
+"database-management-system"
+],
+"2015-2-30": [
+"database-management-system"
+],
+"2015-2-31": [
+"operating-system"
+],
+"2015-2-32": [
+"computer-organization"
+],
+"2015-2-33": [
+"operating-system"
+],
+"2015-2-34": [
+"compiler-design"
+],
+"2015-2-35": [
+"theory-of-computation"
+],
+"2015-2-36": [
+"theory-of-computation"
+],
+"2015-2-37": [
+"algorithm"
+],
+"2015-2-38": [
+"algorithm"
+],
+"2015-2-39": [
+"algorithm"
+],
+"2015-2-40": [
+"data-structure"
+],
+"2015-2-41": [
+"engineering-mathematics"
+],
+"2015-2-42": [
+"c-programming"
+],
+"2015-2-43": [
+"computer-organization"
+],
+"2015-2-44": [
+"computer-organization"
+],
+"2015-2-45": [
+"digital-logic"
+],
+"2015-2-46": [
+"engineering-mathematics"
+],
+"2015-2-47": [
+"engineering-mathematics"
+],
+"2015-2-48": [
+"discrete-mathematics"
+],
+"2015-2-49": [
+"discrete-mathematics"
+],
+"2015-2-50": [
+"theory-of-computation"
+],
+"2015-2-51": [
+"discrete-mathematics"
+],
+"2015-2-52": [
+"discrete-mathematics"
+],
+"2015-2-53": [
+"discrete-mathematics"
+],
+"2015-2-54": [
+"software-engg"
+],
+"2015-2-55": [
+"digital-logic"
+],
+"2015-2-56": [
+"general-aptitude"
+],
+"2015-2-57": [
+"general-aptitude"
+],
+"2015-2-58": [
+"general-aptitude"
+],
+"2015-2-59": [
+"general-aptitude"
+],
+"2015-2-60": [
+"general-aptitude"
+],
+"2015-2-61": [
+"general-aptitude"
+],
+"2015-2-62": [
+"general-aptitude"
+],
+"2015-2-63": [
+"general-aptitude"
+],
+"2015-2-64": [
+"general-aptitude"
+],
+"2015-2-65": [
+"general-aptitude"
+],
+"2015-3-01": [
+"c-programming"
+],
+"2015-3-02": [
+"discrete-mathematics"
+],
+"2015-3-03": [
+"database-management-system"
+],
+"2015-3-04": [
+"operating-system"
+],
+"2015-3-05": [
+"compiler-design"
+],
+"2015-3-06": [
+"digital-logic"
+],
+"2015-3-07": [
+"software-engg"
+],
+"2015-3-08": [
+"web-technology"
+],
+"2015-3-09": [
+"computer-network"
+],
+"2015-3-10": [
+"algorithm"
+],
+"2015-3-11": [
+"data-structure"
+],
+"2015-3-12": [
+"data-structure"
+],
+"2015-3-13": [
+"engineering-mathematics"
+],
+"2015-3-14": [
+"engineering-mathematics"
+],
+"2015-3-15": [
+"discrete-mathematics"
+],
+"2015-3-16": [
+"discrete-mathematics"
+],
+"2015-3-17": [
+"data-structure"
+],
+"2015-3-18": [
+"data-structure"
+],
+"2015-3-19": [
+"database-management-system"
+],
+"2015-3-20": [
+"data-structure"
+],
+"2015-3-21": [
+"operating-system"
+],
+"2015-3-22": [
+"theory-of-computation"
+],
+"2015-3-23": [
+"software-engg"
+],
+"2015-3-24": [
+"computer-organization"
+],
+"2015-3-25": [
+"computer-network"
+],
+"2015-3-26": [
+"engineering-mathematics"
+],
+"2015-3-27": [
+"algorithm"
+],
+"2015-3-28": [
+"c-programming"
+],
+"2015-3-29": [
+"database-management-system"
+],
+"2015-3-30": [
+"digital-logic"
+],
+"2015-3-31": [
+"algorithm"
+],
+"2015-3-32": [
+"c-programming"
+],
+"2015-3-33": [
+"c-programming"
+],
+"2015-3-34": [
+"theory-of-computation"
+],
+"2015-3-35": [
+"operating-system"
+],
+"2015-3-36": [
+"computer-network"
+],
+"2015-3-37": [
+"computer-network"
+],
+"2015-3-38": [
+"computer-organization"
+],
+"2015-3-39": [
+"computer-organization"
+],
+"2015-3-40": [
+"data-structure"
+],
+"2015-3-41": [
+"database-management-system"
+],
+"2015-3-42": [
+"engineering-mathematics"
+],
+"2015-3-43": [
+"c-programming"
+],
+"2015-3-44": [
+"engineering-mathematics"
+],
+"2015-3-45": [
+"algorithm"
+],
+"2015-3-46": [
+"computer-network"
+],
+"2015-3-47": [
+"operating-system"
+],
+"2015-3-48": [
+"software-engg"
+],
+"2015-3-49": [
+"digital-logic"
+],
+"2015-3-50": [
+"discrete-mathematics"
+],
+"2015-3-51": [
+"discrete-mathematics"
+],
+"2015-3-52": [
+"digital-logic"
+],
+"2015-3-53": [
+"c-programming"
+],
+"2015-3-54": [
+"algorithm"
+],
+"2015-3-55": [
+"compiler-design"
+],
+"2015-3-56": [
+"general-aptitude"
+],
+"2015-3-57": [
+"general-aptitude"
+],
+"2015-3-58": [
+"general-aptitude"
+],
+"2015-3-59": [
+"general-aptitude"
+],
+"2015-3-60": [
+"general-aptitude"
+],
+"2015-3-61": [
+"general-aptitude"
+],
+"2015-3-62": [
+"general-aptitude"
+],
+"2015-3-63": [
+"general-aptitude"
+],
+"2015-3-64": [
+"general-aptitude"
+],
+"2015-3-65": [
+"general-aptitude"
+],
+"2016-1-01": [
+"discrete-mathematics"
+],
+"2016-1-02": [
+"discrete-mathematics"
+],
+"2016-1-03": [
+"engineering-mathematics"
+],
+"2016-1-04": [
+"discrete-mathematics"
+],
+"2016-1-05": [
+"engineering-mathematics"
+],
+"2016-1-06": [
+"digital-logic"
+],
+"2016-1-07": [
+"digital-logic"
+],
+"2016-1-08": [
+"digital-logic"
+],
+"2016-1-09": [
+"operating-system"
+],
+"2016-1-10": [
+"data-structure"
+],
+"2016-1-11": [
+"algorithm",
+"discrete-mathematics"
+],
+"2016-1-12": [
+"c-programming"
+],
+"2016-1-13": [
+"algorithm"
+],
+"2016-1-14": [
+"algorithm"
+],
+"2016-1-15": [
+"c-programming"
+],
+"2016-1-16": [
+"theory-of-computation"
+],
+"2016-1-17": [
+"theory-of-computation"
+],
+"2016-1-18": [
+"theory-of-computation"
+],
+"2016-1-19": [
+"compiler-design"
+],
+"2016-1-20": [
+"operating-system"
+],
+"2016-1-21": [
+"database-management-system"
+],
+"2016-1-22": [
+"database-management-system"
+],
+"2016-1-23": [
+"database-management-system"
+],
+"2016-1-24": [
+"computer-network"
+],
+"2016-1-25": [
+"computer-network"
+],
+"2016-1-26": [
+"engineering-mathematics"
+],
+"2016-1-27": [
+"discrete-mathematics"
+],
+"2016-1-28": [
+"discrete-mathematics"
+],
+"2016-1-29": [
+"discrete-mathematics"
+],
+"2016-1-30": [
+"digital-logic"
+],
+"2016-1-31": [
+"computer-organization"
+],
+"2016-1-32": [
+"computer-organization"
+],
+"2016-1-33": [
+"algorithm"
+],
+"2016-1-34": [
+"c-programming"
+],
+"2016-1-35": [
+"c-programming"
+],
+"2016-1-36": [
+"c-programming"
+],
+"2016-1-37": [
+"data-structure"
+],
+"2016-1-38": [
+"algorithm"
+],
+"2016-1-39": [
+"algorithm"
+],
+"2016-1-40": [
+"algorithm"
+],
+"2016-1-41": [
+"data-structure"
+],
+"2016-1-42": [
+"theory-of-computation"
+],
+"2016-1-43": [
+"theory-of-computation"
+],
+"2016-1-44": [
+"theory-of-computation"
+],
+"2016-1-45": [
+"c-programming"
+],
+"2016-1-46": [
+"compiler-design"
+],
+"2016-1-47": [
+"operating-system"
+],
+"2016-1-48": [
+"operating-system"
+],
+"2016-1-49": [
+"operating-system"
+],
+"2016-1-50": [
+"operating-system"
+],
+"2016-1-51": [
+"database-management-system"
+],
+"2016-1-52": [
+"computer-network"
+],
+"2016-1-53": [
+"computer-network"
+],
+"2016-1-54": [
+"computer-network"
+],
+"2016-1-55": [
+"computer-network"
+],
+"2016-1-56": [
+"general-aptitude"
+],
+"2016-1-57": [
+"general-aptitude"
+],
+"2016-1-58": [
+"general-aptitude"
+],
+"2016-1-59": [
+"general-aptitude"
+],
+"2016-1-60": [
+"general-aptitude"
+],
+"2016-1-61": [
+"general-aptitude"
+],
+"2016-1-62": [
+"general-aptitude"
+],
+"2016-1-63": [
+"general-aptitude"
+],
+"2016-1-64": [
+"general-aptitude"
+],
+"2016-1-65": [
+"general-aptitude"
+],
+"2016-2-01": [
+"discrete-mathematics"
+],
+"2016-2-02": [
+"engineering-mathematics"
+],
+"2016-2-03": [
+"discrete-mathematics"
+],
+"2016-2-04": [
+"engineering-mathematics"
+],
+"2016-2-05": [
+"discrete-mathematics"
+],
+"2016-2-06": [
+"engineering-mathematics"
+],
+"2016-2-07": [
+"digital-logic"
+],
+"2016-2-08": [
+"digital-logic"
+],
+"2016-2-09": [
+"digital-logic"
+],
+"2016-2-10": [
+"computer-organization"
+],
+"2016-2-11": [
+"algorithm",
+"discrete-mathematics"
+],
+"2016-2-12": [
+"c-programming"
+],
+"2016-2-13": [
+"algorithm"
+],
+"2016-2-14": [
+"algorithm"
+],
+"2016-2-15": [
+"data-structure"
+],
+"2016-2-16": [
+"theory-of-computation"
+],
+"2016-2-17": [
+"theory-of-computation"
+],
+"2016-2-18": [
+"theory-of-computation"
+],
+"2016-2-19": [
+"compiler-design"
+],
+"2016-2-20": [
+"operating-system"
+],
+"2016-2-21": [
+"data-structure"
+],
+"2016-2-22": [
+"database-management-system"
+],
+"2016-2-23": [
+"computer-network"
+],
+"2016-2-24": [
+"computer-network"
+],
+"2016-2-25": [
+"computer-network"
+],
+"2016-2-26": [
+"discrete-mathematics"
+],
+"2016-2-27": [
+"engineering-mathematics"
+],
+"2016-2-28": [
+"discrete-mathematics"
+],
+"2016-2-29": [
+"engineering-mathematics"
+],
+"2016-2-30": [
+"computer-organization"
+],
+"2016-2-31": [
+"computer-organization"
+],
+"2016-2-32": [
+"computer-organization"
+],
+"2016-2-33": [
+"computer-organization"
+],
+"2016-2-34": [
+"data-structure"
+],
+"2016-2-35": [
+"c-programming"
+],
+"2016-2-36": [
+"data-structure"
+],
+"2016-2-37": [
+"c-programming"
+],
+"2016-2-38": [
+"algorithm"
+],
+"2016-2-39": [
+"algorithm"
+],
+"2016-2-40": [
+"data-structure"
+],
+"2016-2-41": [
+"algorithm"
+],
+"2016-2-42": [
+"theory-of-computation"
+],
+"2016-2-43": [
+"theory-of-computation"
+],
+"2016-2-44": [
+"theory-of-computation"
+],
+"2016-2-45": [
+"theory-of-computation"
+],
+"2016-2-46": [
+"compiler-design"
+],
+"2016-2-47": [
+"operating-system"
+],
+"2016-2-48": [
+"operating-system"
+],
+"2016-2-49": [
+"operating-system"
+],
+"2016-2-50": [
+"computer-organization"
+],
+"2016-2-51": [
+"database-management-system"
+],
+"2016-2-52": [
+"database-management-system"
+],
+"2016-2-53": [
+"computer-network"
+],
+"2016-2-54": [
+"computer-network"
+],
+"2016-2-55": [
+"computer-network"
+],
+"2016-2-56": [
+"general-aptitude"
+],
+"2016-2-57": [
+"general-aptitude"
+],
+"2016-2-58": [
+"general-aptitude"
+],
+"2016-2-59": [
+"general-aptitude"
+],
+"2016-2-60": [
+"general-aptitude"
+],
+"2016-2-61": [
+"general-aptitude"
+],
+"2016-2-62": [
+"general-aptitude"
+],
+"2016-2-63": [
+"general-aptitude"
+],
+"2016-2-64": [
+"general-aptitude"
+],
+"2016-2-65": [
+"general-aptitude"
+],
+"2017-1-01": [
+"discrete-mathematics"
+],
+"2017-1-02": [
+"discrete-mathematics"
+],
+"2017-1-03": [
+"engineering-mathematics"
+],
+"2017-1-04": [
+"algorithm"
+],
+"2017-1-05": [
+"algorithm"
+],
+"2017-1-06": [
+"data-structure"
+],
+"2017-1-07": [
+"digital-logic"
+],
+"2017-1-08": [
+"data-structure"
+],
+"2017-1-09": [
+"digital-logic"
+],
+"2017-1-10": [
+"theory-of-computation"
+],
+"2017-1-11": [
+"computer-organization"
+],
+"2017-1-12": [
+"compiler-design"
+],
+"2017-1-13": [
+"c-programming"
+],
+"2017-1-14": [
+"computer-network"
+],
+"2017-1-15": [
+"computer-network"
+],
+"2017-1-16": [
+"database-management-system"
+],
+"2017-1-17": [
+"theory-of-computation"
+],
+"2017-1-18": [
+"operating-system"
+],
+"2017-1-19": [
+"discrete-mathematics"
+],
+"2017-1-20": [
+"discrete-mathematics"
+],
+"2017-1-21": [
+"digital-logic"
+],
+"2017-1-22": [
+"theory-of-computation"
+],
+"2017-1-23": [
+"database-management-system"
+],
+"2017-1-24": [
+"operating-system"
+],
+"2017-1-25": [
+"computer-organization"
+],
+"2017-1-26": [
+"algorithm"
+],
+"2017-1-27": [
+"operating-system"
+],
+"2017-1-28": [
+"engineering-mathematics"
+],
+"2017-1-29": [
+"discrete-mathematics"
+],
+"2017-1-30": [
+"engineering-mathematics"
+],
+"2017-1-31": [
+"engineering-mathematics"
+],
+"2017-1-32": [
+"computer-network"
+],
+"2017-1-33": [
+"digital-logic"
+],
+"2017-1-34": [
+"theory-of-computation"
+],
+"2017-1-35": [
+"c-programming"
+],
+"2017-1-36": [
+"c-programming"
+],
+"2017-1-37": [
+"theory-of-computation"
+],
+"2017-1-38": [
+"theory-of-computation"
+],
+"2017-1-39": [
+"theory-of-computation"
+],
+"2017-1-40": [
+"operating-system"
+],
+"2017-1-41": [
+"database-management-system"
+],
+"2017-1-42": [
+"database-management-system"
+],
+"2017-1-43": [
+"compiler-design"
+],
+"2017-1-44": [
+"computer-network"
+],
+"2017-1-45": [
+"computer-network"
+],
+"2017-1-46": [
+"database-management-system"
+],
+"2017-1-47": [
+"discrete-mathematics"
+],
+"2017-1-48": [
+"data-structure"
+],
+"2017-1-49": [
+"computer-organization"
+],
+"2017-1-50": [
+"computer-organization"
+],
+"2017-1-51": [
+"computer-organization"
+],
+"2017-1-52": [
+"compiler-design"
+],
+"2017-1-53": [
+"c-programming"
+],
+"2017-1-54": [
+"computer-organization"
+],
+"2017-1-55": [
+"c-programming"
+],
+"2017-1-56": [
+"general-aptitude"
+],
+"2017-1-57": [
+"general-aptitude"
+],
+"2017-1-58": [
+"general-aptitude"
+],
+"2017-1-59": [
+"general-aptitude"
+],
+"2017-1-60": [
+"general-aptitude"
+],
+"2017-1-61": [
+"general-aptitude"
+],
+"2017-1-62": [
+"general-aptitude"
+],
+"2017-1-63": [
+"general-aptitude"
+],
+"2017-1-64": [
+"general-aptitude"
+],
+"2017-1-65": [
+"general-aptitude"
+],
+"2017-2-01": [
+"digital-logic"
+],
+"2017-2-02": [
+"c-programming"
+],
+"2017-2-03": [
+"algorithm"
+],
+"2017-2-04": [
+"theory-of-computation"
+],
+"2017-2-05": [
+"compiler-design"
+],
+"2017-2-06": [
+"theory-of-computation"
+],
+"2017-2-07": [
+"operating-system"
+],
+"2017-2-08": [
+"operating-system"
+],
+"2017-2-09": [
+"computer-network"
+],
+"2017-2-10": [
+"engineering-mathematics"
+],
+"2017-2-11": [
+"discrete-mathematics"
+],
+"2017-2-12": [
+"digital-logic"
+],
+"2017-2-13": [
+"data-structure"
+],
+"2017-2-14": [
+"c-programming"
+],
+"2017-2-15": [
+"algorithm",
+"discrete-mathematics"
+],
+"2017-2-16": [
+"theory-of-computation"
+],
+"2017-2-17": [
+"database-management-system"
+],
+"2017-2-18": [
+"computer-network"
+],
+"2017-2-19": [
+"database-management-system"
+],
+"2017-2-20": [
+"computer-network"
+],
+"2017-2-21": [
+"discrete-mathematics"
+],
+"2017-2-22": [
+"engineering-mathematics"
+],
+"2017-2-23": [
+"discrete-mathematics"
+],
+"2017-2-24": [
+"engineering-mathematics"
+],
+"2017-2-25": [
+"theory-of-computation"
+],
+"2017-2-26": [
+"discrete-mathematics"
+],
+"2017-2-27": [
+"digital-logic"
+],
+"2017-2-28": [
+"digital-logic"
+],
+"2017-2-29": [
+"computer-organization"
+],
+"2017-2-30": [
+"algorithm"
+],
+"2017-2-31": [
+"discrete-mathematics"
+],
+"2017-2-32": [
+"theory-of-computation"
+],
+"2017-2-33": [
+"operating-system"
+],
+"2017-2-34": [
+"computer-network"
+],
+"2017-2-35": [
+"computer-network"
+],
+"2017-2-36": [
+"data-structure"
+],
+"2017-2-37": [
+"c-programming"
+],
+"2017-2-38": [
+"algorithm"
+],
+"2017-2-39": [
+"theory-of-computation"
+],
+"2017-2-40": [
+"theory-of-computation"
+],
+"2017-2-41": [
+"theory-of-computation"
+],
+"2017-2-42": [
+"digital-logic"
+],
+"2017-2-43": [
+"c-programming"
+],
+"2017-2-44": [
+"database-management-system"
+],
+"2017-2-45": [
+"computer-organization"
+],
+"2017-2-46": [
+"database-management-system"
+],
+"2017-2-47": [
+"discrete-mathematics"
+],
+"2017-2-48": [
+"engineering-mathematics"
+],
+"2017-2-49": [
+"database-management-system"
+],
+"2017-2-50": [
+"algorithm"
+],
+"2017-2-51": [
+"operating-system"
+],
+"2017-2-52": [
+"engineering-mathematics"
+],
+"2017-2-53": [
+"computer-organization"
+],
+"2017-2-54": [
+"c-programming"
+],
+"2017-2-55": [
+"c-programming"
+],
+"2017-2-56": [
+"general-aptitude"
+],
+"2017-2-57": [
+"general-aptitude"
+],
+"2017-2-58": [
+"general-aptitude"
+],
+"2017-2-59": [
+"general-aptitude"
+],
+"2017-2-60": [
+"general-aptitude"
+],
+"2017-2-61": [
+"general-aptitude"
+],
+"2017-2-62": [
+"general-aptitude"
+],
+"2017-2-63": [
+"general-aptitude"
+],
+"2017-2-64": [
+"general-aptitude"
+],
+"2017-2-65": [
+"general-aptitude"
+],
+"2018-01": [
+"engineering-mathematics"
+],
+"2018-02": [
+"c-programming"
+],
+"2018-03": [
+"data-structure"
+],
+"2018-04": [
+"digital-logic"
+],
+"2018-05": [
+"computer-organization"
+],
+"2018-06": [
+"theory-of-computation"
+],
+"2018-07": [
+"theory-of-computation"
+],
+"2018-08": [
+"compiler-design"
+],
+"2018-09": [
+"computer-organization"
+],
+"2018-10": [
+"operating-system"
+],
+"2018-11": [
+"database-management-system"
+],
+"2018-12": [
+"database-management-system"
+],
+"2018-13": [
+"computer-network"
+],
+"2018-14": [
+"computer-network"
+],
+"2018-15": [
+"discrete-mathematics"
+],
+"2018-16": [
+"engineering-mathematics"
+],
+"2018-17": [
+"engineering-mathematics"
+],
+"2018-18": [
+"discrete-mathematics"
+],
+"2018-19": [
+"discrete-mathematics"
+],
+"2018-20": [
+"data-structure"
+],
+"2018-21": [
+"c-programming"
+],
+"2018-22": [
+"digital-logic"
+],
+"2018-23": [
+"computer-organization"
+],
+"2018-24": [
+"operating-system"
+],
+"2018-25": [
+"computer-network"
+],
+"2018-26": [
+"engineering-mathematics"
+],
+"2018-27": [
+"discrete-mathematics"
+],
+"2018-28": [
+"discrete-mathematics"
+],
+"2018-29": [
+"c-programming"
+],
+"2018-30": [
+"algorithm",
+"discrete-mathematics"
+],
+"2018-31": [
+"algorithm"
+],
+"2018-32": [
+"c-programming"
+],
+"2018-33": [
+"digital-logic"
+],
+"2018-34": [
+"computer-organization"
+],
+"2018-35": [
+"theory-of-computation"
+],
+"2018-36": [
+"theory-of-computation"
+],
+"2018-37": [
+"compiler-design"
+],
+"2018-38": [
+"compiler-design"
+],
+"2018-39": [
+"operating-system"
+],
+"2018-40": [
+"operating-system"
+],
+"2018-41": [
+"database-management-system"
+],
+"2018-42": [
+"database-management-system"
+],
+"2018-43": [
+"discrete-mathematics"
+],
+"2018-44": [
+"discrete-mathematics"
+],
+"2018-45": [
+"c-programming"
+],
+"2018-46": [
+"data-structure"
+],
+"2018-47": [
+"algorithm"
+],
+"2018-48": [
+"algorithm"
+],
+"2018-49": [
+"digital-logic"
+],
+"2018-50": [
+"computer-organization"
+],
+"2018-51": [
+"computer-organization"
+],
+"2018-52": [
+"theory-of-computation"
+],
+"2018-53": [
+"operating-system"
+],
+"2018-54": [
+"computer-network"
+],
+"2018-55": [
+"computer-network"
+],
+"2018-56": [
+"general-aptitude"
+],
+"2018-57": [
+"general-aptitude"
+],
+"2018-58": [
+"general-aptitude"
+],
+"2018-59": [
+"general-aptitude"
+],
+"2018-60": [
+"general-aptitude"
+],
+"2018-61": [
+"general-aptitude"
+],
+"2018-62": [
+"general-aptitude"
+],
+"2018-63": [
+"general-aptitude"
+],
+"2018-64": [
+"general-aptitude"
+],
+"2018-65": [
+"general-aptitude"
+],
+"2019-01": [
+"computer-organization"
+],
+"2019-02": [
+"computer-organization"
+],
+"2019-03": [
+"compiler-design"
+],
+"2019-04": [
+"digital-logic"
+],
+"2019-05": [
+"discrete-mathematics"
+],
+"2019-06": [
+"digital-logic"
+],
+"2019-07": [
+"theory-of-computation"
+],
+"2019-08": [
+"digital-logic"
+],
+"2019-09": [
+"engineering-mathematics"
+],
+"2019-10": [
+"discrete-mathematics"
+],
+"2019-11": [
+"database-management-system"
+],
+"2019-12": [
+"discrete-mathematics"
+],
+"2019-13": [
+"engineering-mathematics"
+],
+"2019-14": [
+"database-management-system"
+],
+"2019-15": [
+"theory-of-computation"
+],
+"2019-16": [
+"computer-network"
+],
+"2019-17": [
+"operating-system"
+],
+"2019-18": [
+"c-programming"
+],
+"2019-19": [
+"compiler-design"
+],
+"2019-20": [
+"algorithm"
+],
+"2019-21": [
+"engineering-mathematics"
+],
+"2019-22": [
+"discrete-mathematics"
+],
+"2019-23": [
+"operating-system"
+],
+"2019-24": [
+"c-programming"
+],
+"2019-25": [
+"algorithm"
+],
+"2019-26": [
+"c-programming"
+],
+"2019-27": [
+"c-programming"
+],
+"2019-28": [
+"computer-network"
+],
+"2019-29": [
+"computer-network"
+],
+"2019-30": [
+"digital-logic"
+],
+"2019-31": [
+"theory-of-computation"
+],
+"2019-32": [
+"database-management-system"
+],
+"2019-33": [
+"operating-system"
+],
+"2019-34": [
+"theory-of-computation"
+],
+"2019-35": [
+"discrete-mathematics"
+],
+"2019-36": [
+"compiler-design"
+],
+"2019-37": [
+"algorithm"
+],
+"2019-38": [
+"algorithm"
+],
+"2019-39": [
+"operating-system"
+],
+"2019-40": [
+"data-structure"
+],
+"2019-41": [
+"operating-system"
+],
+"2019-42": [
+"operating-system"
+],
+"2019-43": [
+"compiler-design"
+],
+"2019-44": [
+"engineering-mathematics"
+],
+"2019-45": [
+"computer-organization"
+],
+"2019-46": [
+"data-structure"
+],
+"2019-47": [
+"discrete-mathematics"
+],
+"2019-48": [
+"theory-of-computation"
+],
+"2019-49": [
+"computer-network"
+],
+"2019-50": [
+"digital-logic"
+],
+"2019-51": [
+"database-management-system"
+],
+"2019-52": [
+"c-programming"
+],
+"2019-53": [
+"c-programming"
+],
+"2019-54": [
+"computer-network"
+],
+"2019-55": [
+"database-management-system"
+],
+"2019-56": [
+"general-aptitude"
+],
+"2019-57": [
+"general-aptitude"
+],
+"2019-58": [
+"general-aptitude"
+],
+"2019-59": [
+"general-aptitude"
+],
+"2019-60": [
+"general-aptitude"
+],
+"2019-61": [
+"general-aptitude"
+],
+"2019-62": [
+"general-aptitude"
+],
+"2019-63": [
+"general-aptitude"
+],
+"2019-64": [
+"general-aptitude"
+],
+"2019-65": [
+"general-aptitude"
+],
+"2020-01": [
+"engineering-mathematics"
+],
+"2020-02": [
+"algorithm"
+],
+"2020-03": [
+"computer-organization"
+],
+"2020-04": [
+"computer-organization"
+],
+"2020-05": [
+"data-structure"
+],
+"2020-06": [
+"data-structure"
+],
+"2020-07": [
+"theory-of-computation"
+],
+"2020-08": [
+"theory-of-computation"
+],
+"2020-09": [
+"compiler-design"
+],
+"2020-10": [
+"theory-of-computation"
+],
+"2020-11": [
+"operating-system"
+],
+"2020-12": [
+"operating-system"
+],
+"2020-13": [
+"database-management-system"
+],
+"2020-14": [
+"database-management-system"
+],
+"2020-15": [
+"computer-network"
+],
+"2020-16": [
+"data-structure"
+],
+"2020-17": [
+"discrete-mathematics"
+],
+"2020-18": [
+"discrete-mathematics"
+],
+"2020-19": [
+"digital-logic"
+],
+"2020-20": [
+"digital-logic"
+],
+"2020-21": [
+"computer-organization"
+],
+"2020-22": [
+"c-programming"
+],
+"2020-23": [
+"data-structure"
+],
+"2020-24": [
+"compiler-design"
+],
+"2020-25": [
+"computer-network"
+],
+"2020-26": [
+"theory-of-computation"
+],
+"2020-27": [
+"engineering-mathematics"
+],
+"2020-28": [
+"digital-logic"
+],
+"2020-29": [
+"digital-logic"
+],
+"2020-30": [
+"computer-organization"
+],
+"2020-31": [
+"algorithm"
+],
+"2020-32": [
+"theory-of-computation"
+],
+"2020-33": [
+"compiler-design"
+],
+"2020-34": [
+"operating-system"
+],
+"2020-35": [
+"operating-system"
+],
+"2020-36": [
+"database-management-system"
+],
+"2020-37": [
+"database-management-system"
+],
+"2020-38": [
+"computer-network"
+],
+"2020-39": [
+"discrete-mathematics"
+],
+"2020-40": [
+"algorithm"
+],
+"2020-41": [
+"data-structure"
+],
+"2020-42": [
+"discrete-mathematics"
+],
+"2020-43": [
+"computer-organization"
+],
+"2020-44": [
+"computer-organization"
+],
+"2020-45": [
+"discrete-mathematics"
+],
+"2020-46": [
+"c-programming"
+],
+"2020-47": [
+"data-structure"
+],
+"2020-48": [
+"c-programming"
+],
+"2020-49": [
+"algorithm"
+],
+"2020-50": [
+"operating-system"
+],
+"2020-51": [
+"theory-of-computation"
+],
+"2020-52": [
+"discrete-mathematics"
+],
+"2020-53": [
+"operating-system"
+],
+"2020-54": [
+"database-management-system"
+],
+"2020-55": [
+"computer-network"
+],
+"2020-56": [
+"general-aptitude"
+],
+"2020-57": [
+"general-aptitude"
+],
+"2020-58": [
+"general-aptitude"
+],
+"2020-59": [
+"general-aptitude"
+],
+"2020-60": [
+"general-aptitude"
+],
+"2020-61": [
+"general-aptitude"
+],
+"2020-62": [
+"general-aptitude"
+],
+"2020-63": [
+"general-aptitude"
+],
+"2020-64": [
+"general-aptitude"
+],
+"2020-65": [
+"general-aptitude"
+],
+"2021-1-01": [
+"theory-of-computation"
+],
+"2021-1-02": [
+"data-structure"
+],
+"2021-1-03": [
+"algorithm"
+],
+"2021-1-04": [
+"compiler-design"
+],
+"2021-1-05": [
+"compiler-design"
+],
+"2021-1-06": [
+"digital-logic"
+],
+"2021-1-07": [
+"discrete-mathematics"
+],
+"2021-1-08": [
+"computer-network"
+],
+"2021-1-09": [
+"algorithm"
+],
+"2021-1-10": [
+"data-structure"
+],
+"2021-1-11": [
+"operating-system"
+],
+"2021-1-12": [
+"theory-of-computation"
+],
+"2021-1-13": [
+"database-management-system"
+],
+"2021-1-14": [
+"operating-system"
+],
+"2021-1-15": [
+"database-management-system"
+],
+"2021-1-16": [
+"discrete-mathematics"
+],
+"2021-1-17": [
+"algorithm"
+],
+"2021-1-18": [
+"discrete-mathematics"
+],
+"2021-1-19": [
+"discrete-mathematics"
+],
+"2021-1-20": [
+"engineering-mathematics"
+],
+"2021-1-21": [
+"data-structure"
+],
+"2021-1-22": [
+"computer-organization"
+],
+"2021-1-23": [
+"database-management-system"
+],
+"2021-1-24": [
+"digital-logic"
+],
+"2021-1-25": [
+"operating-system"
+],
+"2021-1-26": [
+"compiler-design"
+],
+"2021-1-27": [
+"database-management-system"
+],
+"2021-1-28": [
+"digital-logic"
+],
+"2021-1-29": [
+"computer-network"
+],
+"2021-1-30": [
+"algorithm"
+],
+"2021-1-31": [
+"theory-of-computation"
+],
+"2021-1-32": [
+"database-management-system"
+],
+"2021-1-33": [
+"database-management-system"
+],
+"2021-1-34": [
+"discrete-mathematics"
+],
+"2021-1-35": [
+"discrete-mathematics"
+],
+"2021-1-36": [
+"algorithm"
+],
+"2021-1-37": [
+"c-programming"
+],
+"2021-1-38": [
+"theory-of-computation"
+],
+"2021-1-39": [
+"theory-of-computation"
+],
+"2021-1-40": [
+"algorithm"
+],
+"2021-1-41": [
+"algorithm",
+"discrete-mathematics"
+],
+"2021-1-42": [
+"digital-logic"
+],
+"2021-1-43": [
+"discrete-mathematics"
+],
+"2021-1-44": [
+"computer-network"
+],
+"2021-1-45": [
+"computer-network"
+],
+"2021-1-46": [
+"operating-system"
+],
+"2021-1-47": [
+"data-structure"
+],
+"2021-1-48": [
+"c-programming"
+],
+"2021-1-49": [
+"computer-network"
+],
+"2021-1-50": [
+"compiler-design"
+],
+"2021-1-51": [
+"theory-of-computation"
+],
+"2021-1-52": [
+"engineering-mathematics"
+],
+"2021-1-53": [
+"computer-organization"
+],
+"2021-1-54": [
+"discrete-mathematics"
+],
+"2021-1-55": [
+"computer-organization"
+],
+"2021-1-56": [
+"general-aptitude"
+],
+"2021-1-57": [
+"general-aptitude"
+],
+"2021-1-58": [
+"general-aptitude"
+],
+"2021-1-59": [
+"general-aptitude"
+],
+"2021-1-60": [
+"general-aptitude"
+],
+"2021-1-61": [
+"general-aptitude"
+],
+"2021-1-62": [
+"general-aptitude"
+],
+"2021-1-63": [
+"general-aptitude"
+],
+"2021-1-64": [
+"general-aptitude"
+],
+"2021-1-65": [
+"general-aptitude"
+],
+"2021-2-01": [
+"algorithm"
+],
+"2021-2-02": [
+"data-structure"
+],
+"2021-2-03": [
+"compiler-design"
+],
+"2021-2-04": [
+"digital-logic"
+],
+"2021-2-05": [
+"digital-logic"
+],
+"2021-2-06": [
+"database-management-system"
+],
+"2021-2-07": [
+"computer-network"
+],
+"2021-2-08": [
+"data-structure"
+],
+"2021-2-09": [
+"theory-of-computation"
+],
+"2021-2-10": [
+"c-programming"
+],
+"2021-2-11": [
+"discrete-mathematics"
+],
+"2021-2-12": [
+"theory-of-computation"
+],
+"2021-2-13": [
+"compiler-design"
+],
+"2021-2-14": [
+"operating-system"
+],
+"2021-2-15": [
+"discrete-mathematics"
+],
+"2021-2-16": [
+"data-structure"
+],
+"2021-2-17": [
+"theory-of-computation"
+],
+"2021-2-18": [
+"digital-logic"
+],
+"2021-2-19": [
+"computer-organization"
+],
+"2021-2-20": [
+"computer-organization"
+],
+"2021-2-21": [
+"database-management-system"
+],
+"2021-2-22": [
+"discrete-mathematics"
+],
+"2021-2-23": [
+"c-programming"
+],
+"2021-2-24": [
+"engineering-mathematics"
+],
+"2021-2-25": [
+"engineering-mathematics"
+],
+"2021-2-26": [
+"algorithm"
+],
+"2021-2-27": [
+"computer-organization"
+],
+"2021-2-28": [
+"theory-of-computation"
+],
+"2021-2-29": [
+"discrete-mathematics"
+],
+"2021-2-30": [
+"compiler-design"
+],
+"2021-2-31": [
+"database-management-system"
+],
+"2021-2-32": [
+"database-management-system"
+],
+"2021-2-33": [
+"discrete-mathematics"
+],
+"2021-2-34": [
+"computer-network"
+],
+"2021-2-35": [
+"data-structure"
+],
+"2021-2-36": [
+"theory-of-computation"
+],
+"2021-2-37": [
+"engineering-mathematics"
+],
+"2021-2-38": [
+"compiler-design"
+],
+"2021-2-39": [
+"algorithm"
+],
+"2021-2-40": [
+"database-management-system"
+],
+"2021-2-41": [
+"theory-of-computation"
+],
+"2021-2-42": [
+"operating-system"
+],
+"2021-2-43": [
+"operating-system"
+],
+"2021-2-44": [
+"digital-logic"
+],
+"2021-2-45": [
+"computer-network"
+],
+"2021-2-46": [
+"discrete-mathematics"
+],
+"2021-2-47": [
+"theory-of-computation"
+],
+"2021-2-48": [
+"operating-system"
+],
+"2021-2-49": [
+"c-programming"
+],
+"2021-2-50": [
+"discrete-mathematics"
+],
+"2021-2-51": [
+"compiler-design"
+],
+"2021-2-52": [
+"digital-logic"
+],
+"2021-2-53": [
+"computer-organization"
+],
+"2021-2-54": [
+"computer-network"
+],
+"2021-2-55": [
+"discrete-mathematics"
+],
+"2021-2-56": [
+"general-aptitude"
+],
+"2021-2-57": [
+"general-aptitude"
+],
+"2021-2-58": [
+"general-aptitude"
+],
+"2021-2-59": [
+"general-aptitude"
+],
+"2021-2-60": [
+"general-aptitude"
+],
+"2021-2-61": [
+"general-aptitude"
+],
+"2021-2-62": [
+"general-aptitude"
+],
+"2021-2-63": [
+"general-aptitude"
+],
+"2021-2-64": [
+"general-aptitude"
+],
+"2021-2-65": [
+"general-aptitude"
+],
+"2022-01": [
+"algorithm"
+],
+"2022-02": [
+"theory-of-computation"
+],
+"2022-03": [
+"compiler-design"
+],
+"2022-04": [
+"database-management-system"
+],
+"2022-05": [
+"data-structure"
+],
+"2022-06": [
+"data-structure"
+],
+"2022-07": [
+"computer-organization"
+],
+"2022-08": [
+"digital-logic"
+],
+"2022-09": [
+"operating-system"
+],
+"2022-10": [
+"engineering-mathematics"
+],
+"2022-11": [
+"c-programming"
+],
+"2022-12": [
+"computer-network"
+],
+"2022-13": [
+"theory-of-computation"
+],
+"2022-14": [
+"computer-organization"
+],
+"2022-15": [
+"database-management-system"
+],
+"2022-16": [
+"operating-system"
+],
+"2022-17": [
+"discrete-mathematics"
+],
+"2022-18": [
+"data-structure"
+],
+"2022-19": [
+"compiler-design"
+],
+"2022-20": [
+"discrete-mathematics"
+],
+"2022-21": [
+"database-management-system"
+],
+"2022-22": [
+"discrete-mathematics"
+],
+"2022-23": [
+"computer-organization"
+],
+"2022-24": [
+"engineering-mathematics"
+],
+"2022-25": [
+"computer-network"
+],
+"2022-26": [
+"discrete-mathematics"
+],
+"2022-27": [
+"discrete-mathematics"
+],
+"2022-28": [
+"operating-system"
+],
+"2022-29": [
+"database-management-system"
+],
+"2022-30": [
+"computer-organization"
+],
+"2022-31": [
+"digital-logic"
+],
+"2022-32": [
+"operating-system"
+],
+"2022-33": [
+"c-programming"
+],
+"2022-34": [
+"c-programming"
+],
+"2022-35": [
+"engineering-mathematics"
+],
+"2022-36": [
+"theory-of-computation"
+],
+"2022-37": [
+"theory-of-computation"
+],
+"2022-38": [
+"theory-of-computation"
+],
+"2022-39": [
+"algorithm"
+],
+"2022-40": [
+"discrete-mathematics"
+],
+"2022-41": [
+"discrete-mathematics"
+],
+"2022-42": [
+"discrete-mathematics"
+],
+"2022-43": [
+"engineering-mathematics"
+],
+"2022-44": [
+"computer-organization"
+],
+"2022-45": [
+"computer-network"
+],
+"2022-46": [
+"database-management-system"
+],
+"2022-47": [
+"computer-network"
+],
+"2022-48": [
+"algorithm"
+],
+"2022-49": [
+"computer-network"
+],
+"2022-50": [
+"computer-network"
+],
+"2022-51": [
+"computer-organization"
+],
+"2022-52": [
+"data-structure"
+],
+"2022-53": [
+"operating-system"
+],
+"2022-54": [
+"operating-system"
+],
+"2022-55": [
+"compiler-design"
+],
+"2022-56": [
+"general-aptitude"
+],
+"2022-57": [
+"general-aptitude"
+],
+"2022-58": [
+"general-aptitude"
+],
+"2022-59": [
+"general-aptitude"
+],
+"2022-60": [
+"general-aptitude"
+],
+"2022-61": [
+"general-aptitude"
+],
+"2022-62": [
+"general-aptitude"
+],
+"2022-63": [
+"general-aptitude"
+],
+"2022-64": [
+"general-aptitude"
+],
+"2022-65": [
+"general-aptitude"
+],
+"2023-01": [
+"compiler-design"
+],
+"2023-02": [
+"data-structure"
+],
+"2023-03": [
+"data-structure"
+],
+"2023-04": [
+"theory-of-computation"
+],
+"2023-05": [
+"discrete-mathematics"
+],
+"2023-06": [
+"database-management-system"
+],
+"2023-07": [
+"computer-network"
+],
+"2023-08": [
+"engineering-mathematics"
+],
+"2023-09": [
+"theory-of-computation"
+],
+"2023-10": [
+"data-structure"
+],
+"2023-11": [
+"digital-logic"
+],
+"2023-12": [
+"operating-system"
+],
+"2023-13": [
+"operating-system"
+],
+"2023-14": [
+"theory-of-computation"
+],
+"2023-15": [
+"computer-network"
+],
+"2023-16": [
+"discrete-mathematics"
+],
+"2023-17": [
+"operating-system"
+],
+"2023-18": [
+"engineering-mathematics"
+],
+"2023-19": [
+"algorithm"
+],
+"2023-20": [
+"engineering-mathematics"
+],
+"2023-21": [
+"engineering-mathematics"
+],
+"2023-22": [
+"digital-logic"
+],
+"2023-23": [
+"computer-organization"
+],
+"2023-24": [
+"computer-organization"
+],
+"2023-25": [
+"c-programming"
+],
+"2023-26": [
+"c-programming"
+],
+"2023-27": [
+"compiler-design"
+],
+"2023-28": [
+"operating-system"
+],
+"2023-29": [
+"theory-of-computation"
+],
+"2023-30": [
+"theory-of-computation"
+],
+"2023-31": [
+"computer-organization"
+],
+"2023-32": [
+"computer-organization"
+],
+"2023-33": [
+"digital-logic"
+],
+"2023-34": [
+"digital-logic"
+],
+"2023-35": [
+"digital-logic"
+],
+"2023-36": [
+"data-structure"
+],
+"2023-37": [
+"data-structure"
+],
+"2023-38": [
+"discrete-mathematics"
+],
+"2023-39": [
+"discrete-mathematics"
+],
+"2023-40": [
+"computer-network"
+],
+"2023-41": [
+"discrete-mathematics"
+],
+"2023-42": [
+"computer-network"
+],
+"2023-43": [
+"discrete-mathematics"
+],
+"2023-44": [
+"algorithm"
+],
+"2023-45": [
+"discrete-mathematics"
+],
+"2023-46": [
+"algorithm"
+],
+"2023-47": [
+"operating-system"
+],
+"2023-48": [
+"operating-system"
+],
+"2023-49": [
+"data-structure"
+],
+"2023-50": [
+"compiler-design"
+],
+"2023-51": [
+"database-management-system"
+],
+"2023-52": [
+"database-management-system"
+],
+"2023-53": [
+"theory-of-computation"
+],
+"2023-54": [
+"computer-organization"
+],
+"2023-55": [
+"computer-network"
+],
+"2023-56": [
+"general-aptitude"
+],
+"2023-57": [
+"general-aptitude"
+],
+"2023-58": [
+"general-aptitude"
+],
+"2023-59": [
+"general-aptitude"
+],
+"2023-60": [
+"general-aptitude"
+],
+"2023-61": [
+"general-aptitude"
+],
+"2023-62": [
+"general-aptitude"
+],
+"2023-63": [
+"general-aptitude"
+],
+"2023-64": [
+"general-aptitude"
+],
+"2023-65": [
+"general-aptitude"
+],
+"2024-1-01": [
+"discrete-mathematics"
+],
+"2024-1-02": [
+"engineering-mathematics"
+],
+"2024-1-03": [
+"digital-logic"
+],
+"2024-1-04": [
+"discrete-mathematics"
+],
+"2024-1-05": [
+"computer-organization"
+],
+"2024-1-06": [
+"computer-network"
+],
+"2024-1-07": [
+"algorithm"
+],
+"2024-1-08": [
+"c-programming"
+],
+"2024-1-09": [
+"c-programming"
+],
+"2024-1-10": [
+"database-management-system"
+],
+"2024-1-11": [
+"data-structure"
+],
+"2024-1-12": [
+"database-management-system"
+],
+"2024-1-13": [
+"theory-of-computation"
+],
+"2024-1-14": [
+"operating-system"
+],
+"2024-1-15": [
+"operating-system"
+],
+"2024-1-16": [
+"compiler-design"
+],
+"2024-1-17": [
+"discrete-mathematics"
+],
+"2024-1-18": [
+"digital-logic"
+],
+"2024-1-19": [
+"computer-network"
+],
+"2024-1-20": [
+"computer-organization"
+],
+"2024-1-21": [
+"computer-network"
+],
+"2024-1-22": [
+"discrete-mathematics"
+],
+"2024-1-23": [
+"data-structure"
+],
+"2024-1-24": [
+"algorithm"
+],
+"2024-1-25": [
+"database-management-system"
+],
+"2024-1-26": [
+"computer-network"
+],
+"2024-1-27": [
+"compiler-design"
+],
+"2024-1-28": [
+"compiler-design"
+],
+"2024-1-29": [
+"compiler-design"
+],
+"2024-1-30": [
+"operating-system"
+],
+"2024-1-31": [
+"data-structure"
+],
+"2024-1-32": [
+"algorithm"
+],
+"2024-1-33": [
+"data-structure"
+],
+"2024-1-34": [
+"database-management-system"
+],
+"2024-1-35": [
+"discrete-mathematics"
+],
+"2024-1-36": [
+"database-management-system"
+],
+"2024-1-37": [
+"digital-logic"
+],
+"2024-1-38": [
+"c-programming"
+],
+"2024-1-39": [
+"engineering-mathematics"
+],
+"2024-1-40": [
+"theory-of-computation"
+],
+"2024-1-41": [
+"discrete-mathematics"
+],
+"2024-1-42": [
+"discrete-mathematics"
+],
+"2024-1-43": [
+"computer-organization"
+],
+"2024-1-44": [
+"computer-organization"
+],
+"2024-1-45": [
+"computer-organization"
+],
+"2024-1-46": [
+"computer-organization"
+],
+"2024-1-47": [
+"operating-system"
+],
+"2024-1-48": [
+"computer-network"
+],
+"2024-1-49": [
+"theory-of-computation"
+],
+"2024-1-50": [
+"discrete-mathematics"
+],
+"2024-1-51": [
+"theory-of-computation"
+],
+"2024-1-52": [
+"operating-system"
+],
+"2024-1-53": [
+"discrete-mathematics"
+],
+"2024-1-54": [
+"digital-logic"
+],
+"2024-1-55": [
+"computer-network"
+],
+"2024-1-56": [
+"general-aptitude"
+],
+"2024-1-57": [
+"general-aptitude"
+],
+"2024-1-58": [
+"general-aptitude"
+],
+"2024-1-59": [
+"general-aptitude"
+],
+"2024-1-60": [
+"general-aptitude"
+],
+"2024-1-61": [
+"general-aptitude"
+],
+"2024-1-62": [
+"general-aptitude"
+],
+"2024-1-63": [
+"general-aptitude"
+],
+"2024-1-64": [
+"general-aptitude"
+],
+"2024-1-65": [
+"general-aptitude"
+],
+"2024-2-01": [
+"computer-organization"
+],
+"2024-2-02": [
+"discrete-mathematics"
+],
+"2024-2-03": [
+"c-programming"
+],
+"2024-2-04": [
+"digital-logic"
+],
+"2024-2-05": [
+"algorithm"
+],
+"2024-2-06": [
+"engineering-mathematics"
+],
+"2024-2-07": [
+"discrete-mathematics"
+],
+"2024-2-08": [
+"discrete-mathematics"
+],
+"2024-2-09": [
+"database-management-system"
+],
+"2024-2-10": [
+"database-management-system"
+],
+"2024-2-11": [
+"compiler-design"
+],
+"2024-2-12": [
+"theory-of-computation"
+],
+"2024-2-13": [
+"computer-network"
+],
+"2024-2-14": [
+"operating-system"
+],
+"2024-2-15": [
+"operating-system"
+],
+"2024-2-16": [
+"database-management-system"
+],
+"2024-2-17": [
+"database-management-system"
+],
+"2024-2-18": [
+"computer-network"
+],
+"2024-2-19": [
+"compiler-design"
+],
+"2024-2-20": [
+"digital-logic"
+],
+"2024-2-21": [
+"computer-organization"
+],
+"2024-2-22": [
+"computer-network"
+],
+"2024-2-23": [
+"c-programming"
+],
+"2024-2-24": [
+"discrete-mathematics"
+],
+"2024-2-25": [
+"data-structure"
+],
+"2024-2-26": [
+"c-programming"
+],
+"2024-2-27": [
+"operating-system"
+],
+"2024-2-28": [
+"computer-network"
+],
+"2024-2-29": [
+"data-structure"
+],
+"2024-2-30": [
+"theory-of-computation"
+],
+"2024-2-31": [
+"theory-of-computation"
+],
+"2024-2-32": [
+"c-programming"
+],
+"2024-2-33": [
+"compiler-design"
+],
+"2024-2-34": [
+"engineering-mathematics"
+],
+"2024-2-35": [
+"database-management-system"
+],
+"2024-2-36": [
+"operating-system"
+],
+"2024-2-37": [
+"engineering-mathematics"
+],
+"2024-2-38": [
+"data-structure"
+],
+"2024-2-39": [
+"digital-logic"
+],
+"2024-2-40": [
+"digital-logic"
+],
+"2024-2-41": [
+"algorithm"
+],
+"2024-2-42": [
+"theory-of-computation"
+],
+"2024-2-43": [
+"computer-organization"
+],
+"2024-2-44": [
+"computer-network"
+],
+"2024-2-45": [
+"computer-network"
+],
+"2024-2-46": [
+"database-management-system"
+],
+"2024-2-47": [
+"computer-organization"
+],
+"2024-2-48": [
+"computer-organization"
+],
+"2024-2-49": [
+"algorithm"
+],
+"2024-2-50": [
+"discrete-mathematics"
+],
+"2024-2-51": [
+"computer-organization"
+],
+"2024-2-52": [
+"theory-of-computation"
+],
+"2024-2-53": [
+"discrete-mathematics"
+],
+"2024-2-54": [
+"operating-system"
+],
+"2024-2-55": [
+"theory-of-computation"
+],
+"2024-2-56": [
+"general-aptitude"
+],
+"2024-2-57": [
+"general-aptitude"
+],
+"2024-2-58": [
+"general-aptitude"
+],
+"2024-2-59": [
+"general-aptitude"
+],
+"2024-2-60": [
+"general-aptitude"
+],
+"2024-2-61": [
+"general-aptitude"
+],
+"2024-2-62": [
+"general-aptitude"
+],
+"2024-2-63": [
+"general-aptitude"
+],
+"2024-2-64": [
+"general-aptitude"
+],
+"2024-2-65": [
+"general-aptitude"
+],
+"2025-1-01": [
+"computer-organization"
+],
+"2025-1-02": [
+"compiler-design"
+],
+"2025-1-03": [
+"compiler-design"
+],
+"2025-1-04": [
+"operating-system"
+],
+"2025-1-05": [
+"database-management-system"
+],
+"2025-1-06": [
+"computer-network"
+],
+"2025-1-07": [
+"discrete-mathematics"
+],
+"2025-1-08": [
+"algorithm"
+],
+"2025-1-09": [
+"theory-of-computation"
+],
+"2025-1-10": [
+"algorithm"
+],
+"2025-1-11": [
+"data-structure"
+],
+"2025-1-12": [
+"computer-network"
+],
+"2025-1-13": [
+"engineering-mathematics"
+],
+"2025-1-14": [
+"digital-logic"
+],
+"2025-1-15": [
+"digital-logic"
+],
+"2025-1-16": [
+"data-structure"
+],
+"2025-1-17": [
+"computer-organization"
+],
+"2025-1-18": [
+"theory-of-computation"
+],
+"2025-1-19": [
+"operating-system"
+],
+"2025-1-20": [
+"discrete-mathematics"
+],
+"2025-1-21": [
+"engineering-mathematics"
+],
+"2025-1-22": [
+"discrete-mathematics"
+],
+"2025-1-23": [
+"c-programming"
+],
+"2025-1-24": [
+"c-programming"
+],
+"2025-1-25": [
+"data-structure"
+],
+"2025-1-26": [
+"computer-organization"
+],
+"2025-1-27": [
+"computer-organization"
+],
+"2025-1-28": [
+"operating-system"
+],
+"2025-1-29": [
+"database-management-system"
+],
+"2025-1-30": [
+"computer-network"
+],
+"2025-1-31": [
+"engineering-mathematics"
+],
+"2025-1-32": [
+"digital-logic"
+],
+"2025-1-33": [
+"algorithm"
+],
+"2025-1-34": [
+"theory-of-computation"
+],
+"2025-1-35": [
+"theory-of-computation"
+],
+"2025-1-36": [
+"compiler-design"
+],
+"2025-1-37": [
+"database-management-system"
+],
+"2025-1-38": [
+"discrete-mathematics"
+],
+"2025-1-39": [
+"discrete-mathematics"
+],
+"2025-1-40": [
+"theory-of-computation"
+],
+"2025-1-41": [
+"operating-system"
+],
+"2025-1-42": [
+"compiler-design"
+],
+"2025-1-43": [
+"computer-organization"
+],
+"2025-1-44": [
+"operating-system"
+],
+"2025-1-45": [
+"database-management-system"
+],
+"2025-1-46": [
+"discrete-mathematics"
+],
+"2025-1-47": [
+"computer-network"
+],
+"2025-1-48": [
+"discrete-mathematics"
+],
+"2025-1-49": [
+"theory-of-computation"
+],
+"2025-1-50": [
+"digital-logic"
+],
+"2025-1-51": [
+"c-programming"
+],
+"2025-1-52": [
+"data-structure"
+],
+"2025-1-53": [
+"c-programming"
+],
+"2025-1-54": [
+"algorithm"
+],
+"2025-1-55": [
+"data-structure"
+],
+"2025-1-56": [
+"general-aptitude"
+],
+"2025-1-57": [
+"general-aptitude"
+],
+"2025-1-58": [
+"general-aptitude"
+],
+"2025-1-59": [
+"general-aptitude"
+],
+"2025-1-60": [
+"general-aptitude"
+],
+"2025-1-61": [
+"general-aptitude"
+],
+"2025-1-62": [
+"general-aptitude"
+],
+"2025-1-63": [
+"general-aptitude"
+],
+"2025-1-64": [
+"general-aptitude"
+],
+"2025-1-65": [
+"general-aptitude"
+],
+"2025-2-01": [
+"engineering-mathematics"
+],
+"2025-2-02": [
+"engineering-mathematics"
+],
+"2025-2-03": [
+"data-structure"
+],
+"2025-2-04": [
+"engineering-mathematics"
+],
+"2025-2-05": [
+"discrete-mathematics"
+],
+"2025-2-06": [
+"computer-network"
+],
+"2025-2-07": [
+"computer-network"
+],
+"2025-2-08": [
+"computer-network"
+],
+"2025-2-09": [
+"c-programming"
+],
+"2025-2-10": [
+"data-structure"
+],
+"2025-2-11": [
+"compiler-design"
+],
+"2025-2-12": [
+"compiler-design"
+],
+"2025-2-13": [
+"computer-network"
+],
+"2025-2-14": [
+"theory-of-computation"
+],
+"2025-2-15": [
+"theory-of-computation"
+],
+"2025-2-16": [
+"operating-system"
+],
+"2025-2-17": [
+"database-management-system"
+],
+"2025-2-18": [
+"computer-organization"
+],
+"2025-2-19": [
+"algorithm"
+],
+"2025-2-20": [
+"theory-of-computation"
+],
+"2025-2-21": [
+"digital-logic"
+],
+"2025-2-22": [
+"digital-logic"
+],
+"2025-2-23": [
+"c-programming"
+],
+"2025-2-24": [
+"digital-logic"
+],
+"2025-2-25": [
+"data-structure"
+],
+"2025-2-26": [
+"computer-network"
+],
+"2025-2-27": [
+"algorithm"
+],
+"2025-2-28": [
+"data-structure"
+],
+"2025-2-29": [
+"computer-organization"
+],
+"2025-2-30": [
+"theory-of-computation"
+],
+"2025-2-31": [
+"data-structure"
+],
+"2025-2-32": [
+"discrete-mathematics"
+],
+"2025-2-33": [
+"digital-logic"
+],
+"2025-2-34": [
+"engineering-mathematics"
+],
+"2025-2-35": [
+"data-structure"
+],
+"2025-2-36": [
+"database-management-system"
+],
+"2025-2-37": [
+"operating-system"
+],
+"2025-2-38": [
+"operating-system"
+],
+"2025-2-39": [
+"digital-logic"
+],
+"2025-2-40": [
+"digital-logic"
+],
+"2025-2-41": [
+"theory-of-computation"
+],
+"2025-2-42": [
+"theory-of-computation"
+],
+"2025-2-43": [
+"database-management-system"
+],
+"2025-2-44": [
+"database-management-system"
+],
+"2025-2-45": [
+"computer-organization"
+],
+"2025-2-46": [
+"computer-organization"
+],
+"2025-2-47": [
+"data-structure"
+],
+"2025-2-48": [
+"operating-system"
+],
+"2025-2-49": [
+"algorithm"
+],
+"2025-2-50": [
+"theory-of-computation"
+],
+"2025-2-51": [
+"computer-organization"
+],
+"2025-2-52": [
+"c-programming"
+],
+"2025-2-53": [
+"c-programming"
+],
+"2025-2-54": [
+"discrete-mathematics"
+],
+"2025-2-55": [
+"discrete-mathematics"
+],
+"2025-2-56": [
+"general-aptitude"
+],
+"2025-2-57": [
+"general-aptitude"
+],
+"2025-2-58": [
+"general-aptitude"
+],
+"2025-2-59": [
+"general-aptitude"
+],
+"2025-2-60": [
+"general-aptitude"
+],
+"2025-2-61": [
+"general-aptitude"
+],
+"2025-2-62": [
+"general-aptitude"
+],
+"2025-2-63": [
+"general-aptitude"
+],
+"2025-2-64": [
+"general-aptitude"
+],
+"2025-2-65": [
+"general-aptitude"
+],
+"2026-1-01": [
+"discrete-mathematics"
+],
+"2026-1-02": [
+"engineering-mathematics"
+],
+"2026-1-03": [
+"engineering-mathematics"
+],
+"2026-1-04": [
+"computer-organization"
+],
+"2026-1-05": [
+"computer-organization"
+],
+"2026-1-06": [
+"computer-organization"
+],
+"2026-1-07": [
+"algorithm"
+],
+"2026-1-08": [
+"computer-network"
+],
+"2026-1-09": [
+"computer-network"
+],
+"2026-1-10": [
+"engineering-mathematics"
+],
+"2026-1-11": [
+"digital-logic"
+],
+"2026-1-12": [
+"digital-logic"
+],
+"2026-1-13": [
+"data-structure"
+],
+"2026-1-14": [
+"data-structure"
+],
+"2026-1-15": [
+"theory-of-computation"
+],
+"2026-1-16": [
+"theory-of-computation"
+],
+"2026-1-17": [
+"compiler-design"
+],
+"2026-1-18": [
+"compiler-design"
+],
+"2026-1-19": [
+"operating-system"
+],
+"2026-1-20": [
+"database-management-system"
+],
+"2026-1-21": [
+"database-management-system"
+],
+"2026-1-22": [
+"engineering-mathematics"
+],
+"2026-1-23": [
+"data-structure"
+],
+"2026-1-24": [
+"c-programming"
+],
+"2026-1-25": [
+"operating-system"
+],
+"2026-1-26": [
+"digital-logic"
+],
+"2026-1-27": [
+"digital-logic"
+],
+"2026-1-28": [
+"computer-organization"
+],
+"2026-1-29": [
+"data-structure"
+],
+"2026-1-30": [
+"data-structure"
+],
+"2026-1-31": [
+"algorithm"
+],
+"2026-1-32": [
+"compiler-design"
+],
+"2026-1-33": [
+"database-management-system"
+],
+"2026-1-34": [
+"computer-network"
+],
+"2026-1-35": [
+"computer-network"
+],
+"2026-1-36": [
+"engineering-mathematics"
+],
+"2026-1-37": [
+"discrete-mathematics"
+],
+"2026-1-38": [
+"digital-logic"
+],
+"2026-1-39": [
+"algorithm"
+],
+"2026-1-40": [
+"algorithm"
+],
+"2026-1-41": [
+"theory-of-computation"
+],
+"2026-1-42": [
+"theory-of-computation"
+],
+"2026-1-43": [
+"compiler-design"
+],
+"2026-1-44": [
+"operating-system"
+],
+"2026-1-45": [
+"discrete-mathematics"
+],
+"2026-1-46": [
+"computer-network"
+],
+"2026-1-47": [
+"discrete-mathematics"
+],
+"2026-1-48": [
+"discrete-mathematics"
+],
+"2026-1-49": [
+"computer-organization"
+],
+"2026-1-50": [
+"computer-organization"
+],
+"2026-1-51": [
+"c-programming"
+],
+"2026-1-52": [
+"data-structure"
+],
+"2026-1-53": [
+"operating-system"
+],
+"2026-1-54": [
+"operating-system"
+],
+"2026-1-55": [
+"database-management-system"
+],
+"2026-1-56": [
+"general-aptitude"
+],
+"2026-1-57": [
+"general-aptitude"
+],
+"2026-1-58": [
+"general-aptitude"
+],
+"2026-1-59": [
+"general-aptitude"
+],
+"2026-1-60": [
+"general-aptitude"
+],
+"2026-1-61": [
+"general-aptitude"
+],
+"2026-1-62": [
+"general-aptitude"
+],
+"2026-1-63": [
+"general-aptitude"
+],
+"2026-1-64": [
+"general-aptitude"
+],
+"2026-1-65": [
+"general-aptitude"
+],
+"2026-2-01": [
+"discrete-mathematics"
+],
+"2026-2-02": [
+"data-structure"
+],
+"2026-2-03": [
+"theory-of-computation"
+],
+"2026-2-04": [
+"discrete-mathematics"
+],
+"2026-2-05": [
+"database-management-system"
+],
+"2026-2-06": [
+"digital-logic"
+],
+"2026-2-07": [
+"compiler-design"
+],
+"2026-2-08": [
+"computer-organization"
+],
+"2026-2-09": [
+"compiler-design"
+],
+"2026-2-10": [
+"database-management-system"
+],
+"2026-2-11": [
+"computer-network"
+],
+"2026-2-12": [
+"computer-network"
+],
+"2026-2-13": [
+"operating-system"
+],
+"2026-2-14": [
+"algorithm"
+],
+"2026-2-15": [
+"algorithm"
+],
+"2026-2-16": [
+"discrete-mathematics"
+],
+"2026-2-17": [
+"engineering-mathematics"
+],
+"2026-2-18": [
+"digital-logic"
+],
+"2026-2-19": [
+"compiler-design"
+],
+"2026-2-20": [
+"data-structure"
+],
+"2026-2-21": [
+"engineering-mathematics"
+],
+"2026-2-22": [
+"algorithm"
+],
+"2026-2-23": [
+"computer-network"
+],
+"2026-2-24": [
+"digital-logic"
+],
+"2026-2-25": [
+"compiler-design"
+],
+"2026-2-26": [
+"algorithm"
+],
+"2026-2-27": [
+"algorithm"
+],
+"2026-2-28": [
+"algorithm"
+],
+"2026-2-29": [
+"algorithm"
+],
+"2026-2-30": [
+"digital-logic"
+],
+"2026-2-31": [
+"compiler-design"
+],
+"2026-2-32": [
+"database-management-system"
+],
+"2026-2-33": [
+"computer-network"
+],
+"2026-2-34": [
+"computer-organization"
+],
+"2026-2-35": [
+"compiler-design"
+],
+"2026-2-36": [
+"database-management-system"
+],
+"2026-2-37": [
+"theory-of-computation"
+],
+"2026-2-38": [
+"theory-of-computation"
+],
+"2026-2-39": [
+"data-structure"
+],
+"2026-2-40": [
+"data-structure"
+],
+"2026-2-41": [
+"operating-system"
+],
+"2026-2-42": [
+"computer-organization"
+],
+"2026-2-43": [
+"computer-organization"
+],
+"2026-2-44": [
+"operating-system"
+],
+"2026-2-45": [
+"operating-system"
+],
+"2026-2-46": [
+"computer-organization"
+],
+"2026-2-47": [
+"computer-organization"
+],
+"2026-2-48": [
+"computer-network"
+],
+"2026-2-49": [
+"digital-logic"
+],
+"2026-2-50": [
+"c-programming"
+],
+"2026-2-51": [
+"c-programming"
+],
+"2026-2-52": [
+"engineering-mathematics"
+],
+"2026-2-53": [
+"discrete-mathematics"
+],
+"2026-2-54": [
+"engineering-mathematics"
+],
+"2026-2-55": [
+"computer-network"
+],
+"2026-2-56": [
+"general-aptitude"
+],
+"2026-2-57": [
+"general-aptitude"
+],
+"2026-2-58": [
+"general-aptitude"
+],
+"2026-2-59": [
+"general-aptitude"
+],
+"2026-2-60": [
+"general-aptitude"
+],
+"2026-2-61": [
+"general-aptitude"
+],
+"2026-2-62": [
+"general-aptitude"
+],
+"2026-2-63": [
+"general-aptitude"
+],
+"2026-2-64": [
+"general-aptitude"
+],
+"2026-2-65": [
+"general-aptitude"
+]
+}

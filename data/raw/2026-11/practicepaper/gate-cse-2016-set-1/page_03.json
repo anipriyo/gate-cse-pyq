@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "quizId": 11161,
+  "quizName": "GATE CS 2016 SET 1",
+  "pageTitle": "GATE CSE 2016 SET-1",
+  "timeLimit": 0,
+  "pageNo": 3,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2016-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1116111,
+   "number": 11,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the following directed graph: <br><img src=\"/wp-content/uploads/GATE/CS/20161/q11.jpg\"/> <br>\nThe number of different topological orderings of the vertices of the graph is",
+   "solution": "a must come first and f last. In between, b must come before c, and d before e, but the two chains are independent.<br><br>\nNumber of ways to interleave b c with d e = [latex]\\binom42=6[/latex].<br><br>\n<b>Answer: 6</b><br><br><a href=\"https://gateoverflow.in/39669/gate2016-1-11#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Graph Traversal",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-traversal",
+   "ansMin": 6,
+   "ansMax": 6
+  },
+  {
+   "id": 1116112,
+   "number": 12,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following C program. <pre><code> void f(int,short);\nvoid main()\n{\nint i=100;\nshort s=12;\nshort *p=&s;\n__________ ;//calltof()\n} </code></pre> Which one of the following expressions, when placed in the blank above, will NOT result in a typec hecking error?",
+   "solution": "f takes (int, short) and returns void.<br>\n- f(s, *s): s is a short, not a pointer, so *s is invalid.<br>\n- i = f(i, s): f returns void, so it cannot be assigned.<br>\n- f(i, *s): again *s is invalid.<br>\n- <b>f(i, *p)</b>: i is int, *p is the short s True<br><br>\n<b>Answer: f(i,*p)</b><br><br><a href=\"https://gateoverflow.in/39638/gate2016-1-12#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "options": [
+    "f(s,*s)",
+    "i=f(i,s)",
+    "f(i,*s)",
+    "f(i,*p)"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1116113,
+   "number": 13,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The worst case running times of Insertion sort, Mergesort and Quicksort, respectively, are:",
+   "solution": "Checking each statement:<br>- Insertion sort worst case (reverse sorted): [latex]\\Theta(n^2)[/latex]<br>\n- Merge sort is always [latex]\\Theta(n\\log n)[/latex]<br>\n- Quicksort worst case (bad pivots every time): [latex]\\Theta(n^2)[/latex]<br><br>\n<b>Answer: [latex]\\Theta(n^2),\\Theta(n\\log n),\\Theta(n^2)[/latex]</b><br><br><a href=\"https://gateoverflow.in/39660/gate2016-1-13#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Sorting",
+   "tag2_url": "https://practicepaper.in/gate-cse/sorting",
+   "options": [
+    "[latex]\\Theta[/latex](n logn), [latex]\\Theta[/latex](n logn), and [latex]\\Theta(n^{2})[/latex]",
+    "[latex]\\Theta (n^{2}),\\Theta(n^{2}), and \\Theta (n logn)[/latex]",
+    "[latex]\\Theta (n^{2}),\\Theta(n logn), and \\Theta (n logn)[/latex]",
+    "[latex]\\Theta (n^{2}),\\Theta(n logn), and \\Theta (n^{2})[/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1116114,
+   "number": 14,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let G be a weighted connected undirected graph with distinct positive edge weights. If every edge weight is increasedby the same value ,then which of the following statements is/are TRUE?<br>\nP: Minimum spanning tree of G does not change <br>\nQ: Shortest path between any pair of vertices does not change",
+   "solution": "Checking each statement:<br>- <b>P</b>: adding the same value to every edge keeps their relative order, so Kruskal picks the same edges [latex]\\rightarrow[/latex] the MST does not change [latex]\\text{---}[/latex] TRUE.<br>\n- <b>Q</b>: a path with more edges gains more. E.g. a path 1 + 1 = 2 vs a direct edge 3 becomes 11 + 11 = 22 vs 13 (adding 10) [latex]\\rightarrow[/latex] shortest paths can change [latex]\\text{---}[/latex] FALSE.<br><br>\n<b>Answer: P only</b><br><br><a href=\"https://gateoverflow.in/39673/gate2016-1-14#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Minimum Spanning Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/minimum-spanning-tree",
+   "options": [
+    "P only",
+    "Q only",
+    "Neither P nor Q",
+    "Both P and Q"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1116115,
+   "number": 15,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider  the following C program.<pre><code>\n#include &lt;stdio.h&gt;\nvoid mystery(int *ptra,int *ptrb){\n   int *temp;\n   temp =ptrb; \n   ptrb =ptra;\n   ptra =temp;\n}\nint main(){\n   int a=2016,b=0,c=4,d=42;\n   mystery(&a, &b);\n   if (a &lt; c)\n            mystery(&c, &a);\n   mystery(&a, &d);\n   printf(\"%d\\n\", a);\n}</code></pre>\nThe output of the program is _________.",
+   "solution": "mystery only swaps its <b>local pointer copies</b> (ptra, ptrb); it never changes *ptra or *ptrb. So a, b, c, d in main never change.<br><br>\na is still 2016.<br><br>\n<b>Answer: 2016</b><br><br><a href=\"https://gateoverflow.in/39642/gate2016-1-15#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "ansMin": 2016,
+   "ansMax": 2016
+  }
+ ]
+}

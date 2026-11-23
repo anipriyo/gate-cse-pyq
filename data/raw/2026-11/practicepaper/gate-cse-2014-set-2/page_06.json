@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11142,
+  "quizName": "GATE CS 2014 SET 2",
+  "pageTitle": "GATE CSE 2014 SET-2",
+  "timeLimit": 0,
+  "pageNo": 6,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114226,
+   "number": 26,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the store and forward packet switched network given below. Assume that the\nbandwidth of each link is [latex]10^{6}[/latex] bytes / sec. A user on host A sends a file of size [latex]10^{3}[/latex] bytes to\nhost B through routers R1 and R2 in three different ways. In the first case a single packet\ncontaining the complete file is transmitted from A to B. In the second case, the file is split\ninto 10 equal parts, and these packets are transmitted from A to B. In the third case, the file is split into 20 equal parts and these packets are sent from A to B. Each packet contains 100\nbytes of header information along with the user data. Consider only transmission time and\nignore processing, queuing and propagation delays. Also assume that there are no errors\nduring transmission. Let T1, T2 and T3 be the times taken to transmit the file in the first,\nsecond and third case respectively. Which one of the following is CORRECT?<br><img src=\"/wp-content/uploads/GATE/CS/20142/q26.jpg\"/>",
+   "solution": "Rate = [latex]10^6[/latex] B/s, so 1 byte takes 1 [latex]\\mu s[/latex]. There are 3 links (A[latex]\\rightarrow[/latex]R1[latex]\\rightarrow[/latex]R2[latex]\\rightarrow[/latex]B). With pipelining, time = (packets + 2) [latex]\\times[/latex] one-packet time.<br><br>\n- T1: 1 packet of 1000 + 100 = 1100 B [latex]\\rightarrow[/latex] 3 [latex]\\times[/latex] 1100 = 3300 [latex]\\mu s[/latex]<br>\n- T2: 10 packets of 100 + 100 = 200 B [latex]\\rightarrow[/latex] 12 [latex]\\times[/latex] 200 = 2400 [latex]\\mu s[/latex]<br>\n- T3: 20 packets of 50 + 100 = 150 B [latex]\\rightarrow[/latex] 22 [latex]\\times[/latex] 150 = 3300 [latex]\\mu s[/latex]<br><br>\n<b>Answer: T1 = T3, T3 [latex]\\gt[/latex] T2</b><br><br><a href=\"https://gateoverflow.in/1985/gate2014-2-26#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "options": [
+    "[latex]T1 \\lt T2 \\lt T3[/latex]",
+    "[latex]T1 \\gt T2 \\gt T3[/latex]",
+    "[latex]T2=T3, T3 \\lt T1[/latex]",
+    "[latex]T1=T3, T3 \\gt T2[/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1114227,
+   "number": 27,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "An IP machine Q has a path to another IP machine H via three IP routers R1, R2, and R3. <br>\nQ---R1---R2---R3---H  <br> \nH acts as an HTTP server, and Q connects to H via HTTP and downloads a file. Session layer\nencryption is used, with DES as the shared key encryption protocol. Consider the following\nfour pieces of information: <br>\n[I1] The URL of the file downloaded by Q <br>\n[I2] The TCP port numbers at Q and H <br>\n[I3] The IP addresses of Q and H <br>\n[I4] The link layer addresses of Q and H <br>\nWhich of I1, I2, I3, and I4 can an intruder learn through sniffing at R2 alone?",
+   "solution": "Session-layer encryption hides everything above the session layer (the HTTP request, so the URL I1 is hidden).<br><br>\n- TCP header (ports, I2) and IP header (addresses of Q and H, I3) are below it and travel in clear [latex]\\rightarrow[/latex] visible at R2.<br>\n- Link layer addresses change at every hop; at R2 the frame carries the MACs of R1/R2/R3, not of Q and H [latex]\\rightarrow[/latex] I4 not visible.<br><br>\n<b>Answer: Only I2 and I3</b><br><br><a href=\"https://gateoverflow.in/1986/gate2014-2-27#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "OSI layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/osi-layer",
+   "options": [
+    "Only I1 and I2",
+    "Only I1",
+    "Only I2 and I3",
+    "Only I3 and I4"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1114228,
+   "number": 28,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A graphical HTML browser resident at a network client machine Q accesses a static HTML\nwebpage from a HTTP server S. The static HTML page has exactly one static embedded\nimage which is also at S. Assuming no caching, which one of the following is correct about\nthe HTML webpage loading (including the embedded image)?",
+   "solution": "The HTML page and the embedded image are two separate objects, so at least 2 HTTP GET requests are needed.<br><br>\nWith persistent HTTP (keep-alive), both requests can be sent over one TCP connection.<br><br>\n<b>Answer: Q needs to send at least 2 HTTP requests to S, but a single TCP connection is sufficient</b><br><br><a href=\"https://gateoverflow.in/1987/gate2014-2-28#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Application Layer Protocols",
+   "tag2_url": "https://practicepaper.in/gate-cse/application-layer-protocols",
+   "options": [
+    "Q needs to send at least 2 HTTP requests to S, each necessarily in a separate TCP\nconnection to server S",
+    "Q needs to send at least 2 HTTP requests to S, but a single TCP connection to server S is sufficient",
+    "A single HTTP request from Q to S is sufficient, and a single TCP connection between Q and S is necessary for this",
+    "A single HTTP request from Q to S is sufficient, and this is possible without any TCP connection between Q and S"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1114229,
+   "number": 29,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following schedule S of transactions T1, T2, T3, T4: <br><img src=\"/wp-content/uploads/GATE/CS/20142/q29.jpg\"/> <br> Which one of the following statements is CORRECT?",
+   "solution": "Order: R2(X), W3(X), C3, W1(X), C1, W2(Y), R2(Z), C2, R4(X), R4(Y), C4.<br><br>\nConflict edges: T2[latex]\\rightarrow[/latex]T3, T2[latex]\\rightarrow[/latex]T1, T3[latex]\\rightarrow[/latex]T1 (on X), T1[latex]\\rightarrow[/latex]T4, T3[latex]\\rightarrow[/latex]T4 (on X), T2[latex]\\rightarrow[/latex]T4 (on Y). No cycle [latex]\\rightarrow[/latex] conflict serializable (T2, T3, T1, T4).<br><br>\nT4 reads X from T1 and Y from T2, and both commit before T4 commits [latex]\\rightarrow[/latex] recoverable.<br><br>\n<b>Answer: S is both conflict-serializable and recoverable</b><br><br><a href=\"https://gateoverflow.in/1988/gate2014-2-29#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Transaction",
+   "tag2_url": "https://practicepaper.in/gate-cse/transaction",
+   "options": [
+    "S is conflict-serializable but not recoverable",
+    "S is not conflict-serializable but is recoverable",
+    "S is both conflict-serializable and recoverable",
+    "S is neither conflict-serializable nor is it recoverable"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1114230,
+   "number": 30,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a join (relation algebra) between relations r(R)and s(S) using the nested loop\nmethod. There are 3 buffers each of size equal to disk block size, out of which one buffer is\nreserved for intermediate results. Assuming size(r(R))[latex]\\lt[/latex]size(s(S)), the join will have fewer\nnumber of disk block accesses if",
+   "solution": "With one buffer each for the outer and inner relation, block accesses = [latex]b_{outer}+b_{outer}\\times b_{inner}[/latex].<br><br>\nThe product term is the same either way, so the cost is smaller when the outer relation has fewer blocks. Since r is smaller, put r in the outer loop.<br><br>\n<b>Answer: relation r(R) is in the outer loop</b><br><br><a href=\"https://gateoverflow.in/1989/gate2014-2-30#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Relational Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/relational-algebra",
+   "options": [
+    "relation r(R) is in the outer loop.",
+    "relation s(S) is in the outer loop",
+    "join selection factor between r(R) and s(S) is more than 0.5.",
+    "join selection factor between r(R) and s(S) is less than 0.5"
+   ],
+   "correct": 0
+  }
+ ]
+}

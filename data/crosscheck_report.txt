@@ -1,0 +1,5 @@
+Topic/subject slugs checked: 15
+Distinct 2014+ questions seen on topic pages: 1495; in database: 1495
+On a topic page but MISSING from database: 0
+In database but on NO topic/subject page: 0
+Quiz ids on topic pages that are not a scraped GATE paper (expected: ISRO papers): 11144 = ISRO CSE 2014, 11154 = ISRO CSE 2015, 11163 = ISRO CSE 2016, 11173 = ISRO CSE 2017, 11182 = ISRO CSE 2018, 11202 = ISRO CSE 2020

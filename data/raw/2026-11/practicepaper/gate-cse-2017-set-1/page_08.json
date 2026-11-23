@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11171,
+  "quizName": "GATE CS 2017 SET 1",
+  "pageTitle": "GATE CSE 2017 SET-1",
+  "timeLimit": 0,
+  "pageNo": 8,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2017-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1117136,
+   "number": 36,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the C functions foo and bar given below:\n<pre><code>int foo (int val ) {\n    int x = 0;\n    while (val > 0) {\n    x = x + foo(val--);\n}\n   return val ;\n}\nint bar (int val ) {\nint x = 0;\nwhile (val > 0) {\n    x = x + bar(val-1);}\n    return val ;\n}</code></pre>\nInvocations of foo(3) and bar(3) will result in:",
+   "solution": "Checking each statement:<br>- foo(3): foo(val--) passes the <b>old</b> value 3, so foo(3) calls foo(3) again and again [latex]\\rightarrow[/latex] stack overflow [latex]\\rightarrow[/latex] <b>abnormal termination</b>.<br>\n- bar(3) [latex]\\rightarrow[/latex] bar(2) [latex]\\rightarrow[/latex] bar(1) [latex]\\rightarrow[/latex] bar(0) returns 0. Back in bar(1), val is never changed, so while (val [latex]\\gt[/latex] 0) loops forever [latex]\\rightarrow[/latex] <b>infinite loop</b>.<br><br>\n<b>Answer: Abnormal termination and infinite loop respectively</b><br><br><a href=\"https://gateoverflow.in/118319/gate2017-1-36#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "options": [
+    "Return of 6 and 6 respectively.",
+    "Infinite loop and abnormal termination respectively.",
+    "Abnormal termination and infinite loop respectively.",
+    "Both terminating abnormally"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1117137,
+   "number": 37,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the context-free grammars over the alphabet {a,b,c} given below. S and T are non-terminals <br><br>[latex]G_{1}:S\\rightarrow aSb|T, T\\rightarrow cT|\\epsilon[/latex] [latex]G_{2}:S\\rightarrow bSa|T,T\\rightarrow cT|\\epsilon[/latex] <br><br>The language [latex]L(G_{1})\\cap L(G_{2})[/latex] is",
+   "solution": "[latex]L(G_1)=\\{a^nc^mb^n\\}[/latex] and [latex]L(G_2)=\\{b^nc^ma^n\\}[/latex]. A common string must have n = 0 in both (otherwise one starts with a and the other with b), so the intersection is [latex]c^*[/latex]: infinite but regular.<br><br>\n<b>Answer: Not finite but regular</b><br><br><a href=\"https://gateoverflow.in/118320/gate2017-1-37#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-language",
+   "options": [
+    "Finite.",
+    "Not finite but regular.",
+    "Context-free but not regular.",
+    "Recursive but not context-free."
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1117138,
+   "number": 38,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following languages over the alphabet [latex]\\Sigma = \\{a, b,c\\}[/latex]. <br>Let [latex]L_{1}=\\{a^{n}b^{n}c^{m}|m,n\\geq 0\\}[/latex] and [latex]L_{2}=\\{a^{m}b^{n}c^{n}|m,n\\geq 0\\}[/latex]<br><br> Which of the following are context-free languages ?  <br>   I. [latex]L_{1}\\cup L_{2}[/latex]  <br>       II. [latex]L_{1}\\cap L_{2}[/latex]",
+   "solution": "Checking each statement:<br>- [latex]L_1\\cup L_2[/latex]: union of two CFLs is CFL True<br>\n- [latex]L_1\\cap L_2=\\{a^nb^nc^n\\}[/latex]: not CFL False<br><br>\n<b>Answer: I only</b><br><br><a href=\"https://gateoverflow.in/118321/gate2017-1-38#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-language",
+   "options": [
+    "I only",
+    "II only",
+    "I and II",
+    "Neither I nor II"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1117139,
+   "number": 39,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let A and B be infinite alphabets and let # be a symbol outside both A and B. Let f be a total\nfunctional from A* to B*. We say f is computable if there exists a Turning machine M which\ngiven an input x in A*, always halts with f(x) on its tape. Let [latex]L_{f}[/latex] denote the language\n{x#f(x)|x[latex]\\in[/latex]A*}. Which of the following statements is true:",
+   "solution": "Checking each statement:<br>- If f is computable: on input x#y, compute f(x) and compare with y [latex]\\rightarrow[/latex] always halts [latex]\\rightarrow[/latex] [latex]L_f[/latex] is recursive.<br>\n- If [latex]L_f[/latex] is recursive: on input x, try y = each string of B* in order and test x#y with the decider; since f is total, the correct y is found and the search halts [latex]\\rightarrow[/latex] f is computable.<br><br>\n<b>Answer: f is computable if and only if [latex]L_f[/latex] is recursive</b><br><br><a href=\"https://gateoverflow.in/118322/gate2017-1-39#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Turing Machine",
+   "tag2_url": "https://practicepaper.in/gate-cse/turing-machine",
+   "options": [
+    "f is computable if and only if  [latex]L_{f}[/latex]  is recursive.",
+    " f is computable if and only  [latex]L_{f}[/latex]  recursively enumerable.",
+    " If f is computable then  [latex]L_{f}[/latex]  is recursive, but not conversely.",
+    " If f is computable then  [latex]L_{f}[/latex]  is recursively enumerable, but not conversely."
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1117140,
+   "number": 40,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Recall that Belady's anomaly is that the pages-fault rate may increase as the number of\nallocated frames increases. Now consider the following statements: <br><br>\nS1: Random page replacement algorithm (where a page chosen at random is replaced)\nsuffers from Belady's anomaly <br>\nS2: LRU page replacement algorithm suffers from Belady's anomaly <br><br>\nWhich of the following is CORRECT ?",
+   "solution": "Checking each statement:<br>- Random replacement can evict an unlucky page in the bigger memory, so faults can increase with more frames [latex]\\text{---}[/latex] S1 TRUE.<br>\n- LRU is a stack algorithm (the pages in k frames are always a subset of those in k + 1 frames), so no Belady anomaly [latex]\\text{---}[/latex] S2 FALSE.<br><br>\n<b>Answer: S1 is true, S2 is false</b><br><br><a href=\"https://gateoverflow.in/118323/gate-cse-2017-set-1-question-40#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "options": [
+    "S1 is true, S2 is true",
+    "S1 is true, S2 is false",
+    "S1 is false , S2 is true",
+    "S1 is false, S2 is false"
+   ],
+   "correct": 1
+  }
+ ]
+}

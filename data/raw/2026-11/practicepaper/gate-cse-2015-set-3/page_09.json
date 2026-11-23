@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "quizId": 11153,
+  "quizName": "GATE CS 2015 SET 3",
+  "pageTitle": "GATE CSE 2015 SET-3",
+  "timeLimit": 0,
+  "pageNo": 9,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-3",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115341,
+   "number": 41,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following partial Schedule S involving two transactions T1 and T2. Only the read and the write operations have been shown. The read operation on data item P is denoted by read(P) and the write operation on data item P is denoted by write(P). <br><img src=\"/wp-content/uploads/GATE/CS/20153/q41.jpg\"/> <br> Suppose that the transaction T1 fails immediately after time instance 9. Which one of the following statements is correct?",
+   "solution": "T2 reads A (time 7) after T1 wrote it (time 2), and T2 commits at time 8 before T1 commits.<br><br>\nWhen T1 fails, T2 has already committed using a value of A that must be rolled back. Its effects cannot be undone, so S is non-recoverable.<br><br>\n<b>Answer: Schedule S is non-recoverable and cannot ensure transaction atomicity</b><br><br><a href=\"https://gateoverflow.in/8482/gate2015-3-41#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Transaction",
+   "tag2_url": "https://practicepaper.in/gate-cse/transaction",
+   "options": [
+    "T2 must be aborted and then both T1 and T2 must be re-started to ensure transaction atomicity",
+    "Schedule S is non-recoverable and cannot ensure transaction atomicity",
+    "Only T2 must be aborted and then re-started to ensure transaction atomicity",
+    "Schedule S is recoverable and can ensure atomicity and nothing else needs to be done"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1115342,
+   "number": 42,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "If the following system has non-trivial solution,<br> px+qy+rz=0 <br> qx+ry+pz=0 <br> rx+py+qz=0,<br> then which one of the following options is TRUE?",
+   "solution": "Non-trivial solution needs determinant = 0:<br><br>\n[latex]\\begin{vmatrix}p&q&r\\\\q&r&p\\\\r&p&q\\end{vmatrix}=-(p+q+r)(p^2+q^2+r^2-pq-qr-rp)=0[/latex]<br><br>\nThe second factor is [latex]\\frac12[(p-q)^2+(q-r)^2+(r-p)^2][/latex], zero only when p = q = r.<br><br>\n<b>Answer: p + q + r = 0 or p = q = r</b><br><br><a href=\"https://gateoverflow.in/8490/gate2015-3-42#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "p-q+r=0 or p=q=-r",
+    "p+q-r=0 or p=-q=r",
+    "p+q+r=0 or p=q=r",
+    "p-q+r=0 or p=-q=-r"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115343,
+   "number": 43,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following C program: <br> <pre><code>#include &lt;stdio.h&gt;\nint main( )\n{\n    int i, j, k = 0;\n    j = 2 * 3 / 4 + 2.0 / 5 + 8 / 5;\n    k -=  --j;\n    for(i = 0; i < 5; i++)\n    {\n         switch(i + k)\n        {\n          case 1:\n          case 2: printf(\"\\n%d\", i+k);\n          case 3: printf(\"\\n%d\", i+k);\n          default: printf(\"\\n%d\", i+k);\n        }\n   }\nreturn 0;\n}</code></pre> The number of times printf statement is executed is ________.",
+   "solution": "j = 2*3/4 + 2.0/5 + 8/5 = 1 + 0.4 + 1 = 2.4 [latex]\\rightarrow[/latex] j = 2. Then --j makes j = 1, so k = [latex]-[/latex]1.<br><br>\ni + k takes the values [latex]-[/latex]1, 0, 1, 2, 3 (no break, so cases fall through):<br>\n- [latex]-[/latex]1, 0: default only [latex]\\rightarrow[/latex] 1 + 1<br>\n- 1, 2: case 2, case 3, default [latex]\\rightarrow[/latex] 3 + 3<br>\n- 3: case 3, default [latex]\\rightarrow[/latex] 2<br><br>\nTotal = 10<br><br>\n<b>Answer: 10</b><br><br><a href=\"https://gateoverflow.in/8557/gate2015-3-43#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Conditional Statement",
+   "tag2_url": "https://practicepaper.in/gate-cse/conditional-statement",
+   "ansMin": 10,
+   "ansMax": 10
+  },
+  {
+   "id": 1115344,
+   "number": 44,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "If for non-zero  [latex]x,af(x)+bf\\left ( \\frac{1}{x} \\right )=\\frac{1}{x}-25[/latex] where [latex] a\\neq b[/latex]  then [latex] \\int_{1}^{2}f(x)dx[/latex] is",
+   "solution": "Replace x by 1/x: [latex]af(1/x)+bf(x)=x-25[/latex]. Eliminate f(1/x):<br><br>\n[latex](a^2-b^2)f(x)=\\frac ax-25a-bx+25b[/latex]<br><br>\nIntegrate from 1 to 2: [latex]a\\ln2-25a-\\frac{3b}{2}+25b=a(\\ln2-25)+\\frac{47b}{2}[/latex]<br><br>\n<b>Answer: [latex]\\frac{1}{a^2-b^2}[a(\\ln2-25)+\\frac{47b}{2}][/latex]</b><br><br><a href=\"https://gateoverflow.in/8554/gate2015-3-44#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "options": [
+    "[latex]\\frac{1}{a^{2}-b^{2}}[a(ln2-25)+\\frac{47b}{2}][/latex]",
+    "[latex]\\frac{1}{a^{2}-b^{2}}[a(2ln2-25)-\\frac{47b}{2}][/latex]",
+    "[latex]\\frac{1}{a^{2}-b^{2}}[a(2ln2-25)+\\frac{47b}{2}][/latex]",
+    "[latex]\\frac{1}{a^{2}-b^{2}}[a(ln2-25)-\\frac{47b}{2}][/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1115345,
+   "number": 45,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Let G be a connected undirected graph of 100 vertices and 300 edges. The weight of a minimum spanning tree of G is 500. When the weight of each edge of G is increased by five, the weight of a minimum spanning tree becomes ________.",
+   "solution": "Every spanning tree has 99 edges, so each tree's weight rises by exactly 99 [latex]\\times[/latex] 5 = 495. The same tree stays minimum.<br><br>\n500 + 495 = 995<br><br>\n<b>Answer: 995</b><br><br><a href=\"https://gateoverflow.in/8499/gate2015-3-45#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Minimum Spanning Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/minimum-spanning-tree",
+   "ansMin": 995,
+   "ansMax": 995
+  }
+ ]
+}

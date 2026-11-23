@@ -26,7 +26,7 @@ BASE = "https://practicepaper.in"
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
 DATA_RE = re.compile(r'<script[^>]*id=["\']pp-quiz-data["\'][^>]*>(.*?)</script>', re.S)
 YEAR_LIST = "/gate-cse/gate-cse-year-wise-questions"
-FIRST_YEAR = 2018
+FIRST_YEAR = 2014  # 2014-2017 are kept as mock-test-only papers (see build_db.py)
 
 
 def fetch(url, tries=4):

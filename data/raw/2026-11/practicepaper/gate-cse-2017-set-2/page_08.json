@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11172,
+  "quizName": "GATE CS 2017 SET 2",
+  "pageTitle": "GATE CSE 2017 SET-2",
+  "timeLimit": 0,
+  "pageNo": 8,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2017-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1117236,
+   "number": 36,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The pre-order transversal of a binary search tree is given by 12, 8, 6, 2, 7, 9, 10, 16, 15, 19,\n17, 20. Then the post-order traversal of this tree is:",
+   "solution": "Build the BST from the preorder: root 12; left subtree 8 (left 6 with children 2, 7; right 9 with right child 10); right subtree 16 (left 15; right 19 with children 17, 20).<br><br>\nPostorder: 2, 7, 6, 10, 9, 8, 15, 17, 20, 19, 16, 12<br><br>\n<b>Answer: 2,7,6,10,9,8,15,17,20,19,16,12</b><br><br><a href=\"https://gateoverflow.in/118378/gate2017-2-36#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Search Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-search-tree",
+   "options": [
+    "2,6,7,8,9,10,12,15,16,17,19,20",
+    "2,7,6,10,9,8,15,17,20,19,16,12",
+    "7,2,6,8,9,10,20,17,19,15,16,12",
+    "7,6,2,10,9,8,15,16,17,20,19,12"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1117237,
+   "number": 37,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the C program fragment below which is meant to divide x by y using repeated\nsubtractions. The variables x, y, q and r are all unsigned int.\n<pre><code>while (r >= y) {\nr = r - y;\nq = q +1;\n}</code></pre>\nWhich of the following conditions on the variables x, y, q and r before the execution of the\nfragment will ensure that the loop terminates in a state satisfying the condition x==(y*q+r)?",
+   "solution": "The loop keeps [latex]x=yq+r[/latex] true if it is true at the start: each pass subtracts y from r and adds 1 to q. q = 0 and r = x make it true initially, and y [latex]\\gt[/latex] 0 makes r shrink so the loop ends (with r [latex]\\lt[/latex] y).<br><br>\n<b>Answer: (q==0) && (r==x) && (y [latex]\\gt[/latex] 0)</b><br><br><a href=\"https://gateoverflow.in/118381/gate2017-2-37#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Loop",
+   "tag2_url": "https://practicepaper.in/gate-cse/loop",
+   "options": [
+    "(q==r) && (r==0)",
+    "(x [latex]\\gt[/latex] 0) && (r==x) && (y [latex]\\gt[/latex] 0)",
+    "(q==0) && (r==x) && (y [latex]\\gt[/latex] 0)",
+    " (q==0) && (y [latex]\\gt[/latex] 0)"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1117238,
+   "number": 38,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following C function<pre><code>\nint fun (int n) {\n  int i, j;\n  for (i = 1; i < = n; i++) {\n      for (j = 1 ; j < n ; j+=i) {\n          printf (\"%d %d , i, j ) ;\n          }\n     }\n}</pre></code>\nAsymptotic Notation of fun in terms of [latex]\\theta[/latex] notation is",
+   "solution": "For each i, the inner loop runs about n/i times. Total [latex]\\sum_{i=1}^{n}\\frac ni=n\\cdot H_n=\\Theta(n\\log n)[/latex].<br><br>\n<b>Answer: [latex]\\theta(n\\log n)[/latex]</b><br><br><a href=\"https://gateoverflow.in/118283/gate2017-2-38#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Asymptotic Notation",
+   "tag2_url": "https://practicepaper.in/gate-cse/asymptotic-notation",
+   "options": [
+    "[latex]\\theta (n\\sqrt{n})[/latex]",
+    "[latex]\\theta (n^{2})[/latex]",
+    "[latex]\\theta (n logn)[/latex]",
+    "[latex]\\theta (n^{2} logn)[/latex]"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1117239,
+   "number": 39,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let [latex]\\delta[/latex] denote that transition function and [latex]\\hat{\\delta}[/latex] denote the extended transition function of the [latex]\\epsilon[/latex]- NFA whose transition table is given below: <br><img src=\"/wp-content/uploads/GATE/CS/20172/q54.jpg\"/>  <br>Then [latex]\\hat{\\delta}(q_{2},aba)[/latex] is ____",
+   "solution": "Use [latex]\\epsilon[/latex]-closures: closure(q2) = {q2, q0}.<br>\n- on a: q0 [latex]\\rightarrow[/latex] q1 [latex]\\rightarrow[/latex] closure {q1, q2, q0}<br>\n- on b: q1 [latex]\\rightarrow[/latex] q3, q0 [latex]\\rightarrow[/latex] q0 [latex]\\rightarrow[/latex] closure {q3, q0, q2}<br>\n- on a: q0 [latex]\\rightarrow[/latex] q1 [latex]\\rightarrow[/latex] closure {q1, q2, q0}<br><br>\n<b>Answer: {q0, q1, q2}</b><br><br><a href=\"https://gateoverflow.in/118384/gate2017-2-39#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Finite Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/finite-automata",
+   "options": [
+    "[latex]\\varnothing[/latex]",
+    "[latex]\\{q_{0},q_{1},q_{3}\\}[/latex]",
+    "[latex]\\{q_{0},q_{1},q_{2}\\}[/latex]",
+    "[latex]\\{q_{0},q_{2},q_{3}\\}[/latex]"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1117240,
+   "number": 40,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following languages<br><br> [latex]L_{1}=\\{a^{p}|p[/latex] is a prime number} <br>[latex]L_{2}=\\{a^{n}b^{m}c^{2m}|n\\geq 0,m\\geq 0\\} [/latex]<br> [latex]L_{3}=\\{a^{n}b^{n}c^{2n}|n\\geq 0\\}[/latex]<br>[latex] L_{4}=\\{a^{n}b^{n}|n\\geq 1\\}[/latex]<br><br> Which of the following are CORRECT ?<br><br>\nI.[latex]L_{1}[/latex] is context-free but not regular. <br>\nII. [latex]L_{2}[/latex] is not context-free. <br>\nIII. [latex]L_{3}[/latex] is not context-free but recursive. <br>\nIV. [latex]L_{4}[/latex] is deterministic context-free. ",
+   "solution": "Checking each statement:<br>- [latex]L_1[/latex] (prime lengths) is not even context-free False<br>\n- [latex]L_2=a^nb^mc^{2m}[/latex] is context-free (push 2 per b, pop per c) False<br>\n- [latex]L_3=a^nb^nc^{2n}[/latex] is not CFL but clearly decidable True<br>\n- [latex]L_4=a^nb^n[/latex] is a deterministic CFL True<br><br>\n<b>Answer: III and IV only</b><br><br><a href=\"https://gateoverflow.in/118615/gate2017-2-40#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-language",
+   "options": [
+    "I ,II and IV only",
+    "II and III only",
+    "I and IV only",
+    "III and IV only"
+   ],
+   "correct": 3
+  }
+ ]
+}

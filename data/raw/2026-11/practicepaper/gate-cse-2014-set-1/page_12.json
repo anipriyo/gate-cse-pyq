@@ -1,0 +1,115 @@
+{
+ "meta": {
+  "quizId": 11141,
+  "quizName": "GATE CS 2014 SET 1",
+  "pageTitle": "GATE CSE 2014 SET-1",
+  "timeLimit": 0,
+  "pageNo": 12,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114156,
+   "number": 56,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which of the following options is the closest in meaning to the phrase in bold in the\nsentence below?<br><br>It is fascinating to see life forms **cope with** varied environmental conditions.",
+   "solution": "To cope with conditions is to <b>adapt to</b> them. (Adopt = take up, adept = skilled.)<br><br>\n<b>Answer: Adapt to</b><br><br><a href=\"https://gateoverflow.in/56/gate-cse-2014-set-1-question-ga-1#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "Adopt to",
+    "Adapt to",
+    "Adept in",
+    "Accept with"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1114157,
+   "number": 57,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Choose the most appropriate word from the options given below to complete the following sentence.\n<br><br>\nHe could not understand the judges awarding her the first prize, because he thought that her performance was quite _________.",
+   "solution": "He could not understand the award because he thought her performance was ordinary: <b>mediocre</b>.<br><br>\n<b>Answer: mediocre</b><br><br><a href=\"https://gateoverflow.in/771/gate-cse-2014-set-1-question-ga-2#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "superb",
+    "medium",
+    "mediocre",
+    "exhilarating"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1114158,
+   "number": 58,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "In a press meet on the recent scam, the minister said, \"The buck stops here\". What did the minister convey by the statement?",
+   "solution": "\"The buck stops here\" means the speaker accepts final responsibility and will not pass it on.<br><br>\n<b>Answer: He will assume final responsibility</b><br><br><a href=\"https://gateoverflow.in/772/gate-cse-2014-set-1-question-ga-3#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "He wants all the money",
+    "He will return the money",
+    "He will assume final responsibility",
+    "He will resist all enquiries"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1114159,
+   "number": 59,
+   "type": "NAT",
+   "marks": 1,
+   "text": "If [latex]\\left(z + \\dfrac{1}{z}\\right)^{2}= 98[/latex], compute [latex]\\left(z^2 + \\dfrac{1}{z^2}\\right)[/latex]",
+   "solution": "[latex]\\left(z+\\frac1z\\right)^2=z^2+2+\\frac1{z^2}=98\\Rightarrow z^2+\\frac1{z^2}=96[/latex]<br><br>\n<b>Answer: 96</b><br><br><a href=\"https://gateoverflow.in/773/gate-cse-2014-set-1-question-ga-4#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "ansMin": 96,
+   "ansMax": 96
+  },
+  {
+   "id": 1114160,
+   "number": 60,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The roots of [latex]ax^2+bx+c=0[/latex] are real and positive.  [latex]a,b \\text{ and } c[/latex] are real. Then [latex]ax^2+b|x|+c=0[/latex] has ",
+   "solution": "For x [latex]\\ge[/latex] 0, [latex]ax^2+b|x|+c=0[/latex] is the original equation, with its 2 positive roots. For x [latex]\\lt[/latex] 0 it becomes [latex]ax^2-bx+c=0[/latex], whose roots are the negatives of those. So there are 4 real roots: [latex]\\pm r_1,\\pm r_2[/latex].<br><br>\n<b>Answer: 4 real roots</b><br><br><a href=\"https://gateoverflow.in/770/gate-cse-2014-set-1-question-ga-5#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "no roots",
+    "2 real roots",
+    "3 real roots",
+    "4 real roots"
+   ],
+   "correct": 3
+  }
+ ]
+}

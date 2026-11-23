@@ -1,0 +1,115 @@
+{
+ "meta": {
+  "quizId": 11142,
+  "quizName": "GATE CS 2014 SET 2",
+  "pageTitle": "GATE CSE 2014 SET-2",
+  "timeLimit": 0,
+  "pageNo": 13,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114261,
+   "number": 61,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The old city of Koenigsberg, which had a German majority population before World War 2, is now called Kaliningrad. After the events of the war, Kaliningrad is now a Russian territory and has a predominantly Russian population. It is bordered by the Baltic Sea on the north and the countries of Poland to the south and west and Lithuania to the east respectively. Which of the statements below can be inferred from this passage?",
+   "solution": "Kaliningrad is Russian territory, but it is bordered by the Baltic Sea, Poland and Lithuania, so it does not touch the rest of Russia.<br><br>\nThe passage says nothing about its original name or historic ethnicity, or about the travel route.<br><br>\n<b>Answer: Kaliningrad is a part of Russia despite it not being contiguous with the rest of Russia</b><br><br><a href=\"https://gateoverflow.in/1943/gate-cse-2014-set-2-question-ga-6#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "Kaliningrad was historically Russian in its ethnic make up",
+    "Kaliningrad is a part of Russia despite it not being contiguous with the rest of Russia",
+    "Koenigsberg was renamed Kaliningrad, as that was its original Russian name",
+    "Poland and Lithuania are on the route from Kaliningrad to the rest of Russia"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1114262,
+   "number": 62,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Number of people diagnosed with dengue fever (contracted from the bite of a mosquito) in North India is twice the number diagnosed last year. Municipal authorities have concluded that measures to control the mosquito population have failed in this region. \n<br><br>\nWhich one of the following statements, if true, does not contradict this conclusion?",
+   "solution": "Options 1, 2, 3 give other reasons for more dengue cases (imported cases, better reporting, better diagnosis), so they weaken the conclusion.<br><br>\nMore malaria (also mosquito-borne) supports that mosquito control failed, so it does not contradict it.<br><br>\n<b>Answer: The number of people with malarial fever has increased this year</b><br><br><a href=\"https://gateoverflow.in/1944/gate-cse-2014-set-2-question-ga-7#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "A high proportion of the affected population has returned from neighbouring countries where dengue is prevalent",
+    "More cases of dengue are now reported because of an increase in the Municipal Office's administrative efficiency",
+    "Many more cases of dengue are being diagnosed this year since the introduction of a new and effective diagnostic test",
+    "The number of people with malarial fever (also contracted from mosquito bites) has increased this year"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1114263,
+   "number": 63,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "If [latex]x[/latex] is real and [latex]|x^2-2x+3|=11[/latex], then possible values of [latex]|-x^3+x^2-x|[/latex] include",
+   "solution": "[latex]x^2-2x+3=(x-1)^2+2\\gt0[/latex], so [latex]x^2-2x+3=11\\Rightarrow x^2-2x-8=0\\Rightarrow x=4[/latex] or [latex]x=-2[/latex].<br><br>\n- x = 4: [latex]|-64+16-4|=52[/latex]<br>\n- x = [latex]-[/latex]2: [latex]|8+4+2|=14[/latex]<br><br>\n<b>Answer: 14, 52</b><br><br><a href=\"https://gateoverflow.in/1950/gate-cse-2014-set-2-question-ga-8#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "2, 4",
+    "2, 14",
+    "4, 52",
+    "14, 52"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1114264,
+   "number": 64,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The ratio of male to female students in a college for five years is plotted in the following line graph. If the number of female students doubled in 2009, by what percent did the number of male students increase in 2009?<br><img src=\"/wp-content/uploads/GATE/CS/20142/q64.jpg\" /><br>",
+   "solution": "From the graph: ratio in 2008 = 2.5, in 2009 = 3.<br><br>\nLet females in 2008 = F [latex]\\rightarrow[/latex] males = 2.5F. In 2009 females = 2F [latex]\\rightarrow[/latex] males = 3 [latex]\\times[/latex] 2F = 6F.<br><br>\nIncrease = [latex]\\frac{6F-2.5F}{2.5F}\\times100=140\\%[/latex]<br><br>\n<b>Answer: 140</b><br><br><a href=\"https://gateoverflow.in/1951/gate-cse-2014-set-2-question-ga-9#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "ansMin": 140,
+   "ansMax": 140
+  },
+  {
+   "id": 1114265,
+   "number": 65,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "At what time between 6 a. m. and 7 a. m. will the minute hand and hour hand of a clock make an angle closest to [latex]60^{\\circ}[/latex]?",
+   "solution": "Angle at 6:m = [latex]|180-5.5m|[/latex].<br><br>\nSetting it to 60: 5.5m = 120 [latex]\\rightarrow[/latex] m = 21.8 minutes.<br><br>\nAt 6:22 the angle is 180 [latex]-[/latex] 121 = 59[latex]^\\circ[/latex], the closest among the options.<br><br>\n<b>Answer: 6:22 a.m.</b><br><br><a href=\"https://gateoverflow.in/1952/gate-cse-2014-set-2-question-ga-10#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "6: 22 a.m.",
+    "6: 27 a.m.",
+    "6: 38 a.m.",
+    "6: 45 a.m."
+   ],
+   "correct": 0
+  }
+ ]
+}

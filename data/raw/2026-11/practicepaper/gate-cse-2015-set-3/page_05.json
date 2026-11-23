@@ -1,0 +1,115 @@
+{
+ "meta": {
+  "quizId": 11153,
+  "quizName": "GATE CS 2015 SET 3",
+  "pageTitle": "GATE CSE 2015 SET-3",
+  "timeLimit": 0,
+  "pageNo": 5,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-3",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115321,
+   "number": 21,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Two processes X and Y need to access a critical section. Consider the following synchronization construct used by both the processes <br><img src=\"/wp-content/uploads/GATE/CS/20153/q21.jpg\"/> <br> Here, varP and varQ are shared variables and both are initialized to false. Which one of the following statements is true?",
+   "solution": "Suppose X sets varP = true and Y sets varQ = true. Now both while conditions are true, so both enter the critical section at the same time [latex]\\rightarrow[/latex] mutual exclusion fails.<br><br>\nNeither process ever blocks waiting for the other (the critical section is inside the loop, not after a busy-wait), so there is no deadlock.<br><br>\n<b>Answer: prevents deadlock but fails to guarantee mutual exclusion</b><br><br><a href=\"https://gateoverflow.in/8405/gate2015-3-21#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Process Synchronization",
+   "tag2_url": "https://practicepaper.in/gate-cse/process-synchronization",
+   "options": [
+    "The proposed solution prevents deadlock but fails to guarantee mutual exclusion",
+    " The proposed solution guarantees mutual exclusion but fails to prevent deadlock",
+    "The proposed solution guarantees mutual exclusion and prevents deadlock",
+    "The proposed solution fails to prevent deadlock and fails to guarantee mutual exclusion"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1115322,
+   "number": 22,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let L be the language represented by the regular expression [latex]\\Sigma ^{*}0011\\Sigma ^{*}[/latex] where [latex]\\Sigma[/latex]={0,1}. What is the minimum number of states in a DFA that recognizes [latex]\\bar{L}[/latex] (complement of L)?",
+   "solution": "A DFA for \"contains 0011\" tracks progress: nothing, 0, 00, 001, 0011 (trap accepting) [latex]\\rightarrow[/latex] 5 states.<br><br>\nThe complement uses the same DFA with final and non-final states swapped, so it also needs 5 states.<br><br>\n<b>Answer: 5</b><br><br><a href=\"https://gateoverflow.in/8415/gate2015-3-22#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Finite Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/finite-automata",
+   "options": [
+    "4",
+    "5",
+    "6",
+    "8"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1115323,
+   "number": 23,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider a software program that is artificially seeded with 100 faults. While testing this program, 159 faults are detected, out of which 75 faults are from those artificially seeded faults. Assuming that both real and seeded faults are of same nature and have same distribution, the estimated number of undetected real faults is ____________.",
+   "solution": "Checking each statement:<br>- Seeded faults found: 75 of 100 [latex]\\rightarrow[/latex] detection rate 0.75<br>\n- Real faults found: 159 [latex]-[/latex] 75 = 84<br>\n- Estimated real faults = 84 / 0.75 = 112<br><br>\nUndetected = 112 [latex]-[/latex] 84 = 28<br><br>\n<b>Answer: 28</b><br><br><a href=\"https://gateoverflow.in/8407/gate2015-3-23#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Software Engg",
+   "tag1_url": "https://practicepaper.in/gate-cse/software-engg",
+   "tag2": "",
+   "tag2_url": "https://practicepaper.in/gate-cse/",
+   "ansMin": 28,
+   "ansMax": 28
+  },
+  {
+   "id": 1115324,
+   "number": 24,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider a machine with a byte addressable main memory of [latex]2^{20}[/latex]  bytes, block size of 16 bytes and a direct mapped cache having [latex]2^{12}[/latex] cache lines. Let the addresses of two consecutive bytes in main memory be [latex](E201F)_{16}[/latex] and [latex](E2020)_{16}[/latex]. What are the tag and cache line address (in hex) for main memory address [latex](E201F)_{16}[/latex]?",
+   "solution": "Address = 20 bits: offset = 4 bits (16-byte block), line = 12 bits ([latex]2^{12}[/latex] lines), tag = 20 [latex]-[/latex] 16 = 4 bits.<br><br>\nE201F = E | 201 | F [latex]\\rightarrow[/latex] tag = E, line = 201<br><br>\n<b>Answer: E, 201</b><br><br><a href=\"https://gateoverflow.in/8410/gate2015-3-24#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "options": [
+    "E, 201",
+    "F, 201",
+    "E, E20",
+    "2, 01F"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1115325,
+   "number": 25,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider a CSMA/CD network that transmits data at a rate of 100 Mbps ([latex]10^{8}[/latex] bits per second) over a 1 km (kilometer) cable with no repeaters. If the minimum frame size required for this network is 1250 bytes, what is the signal speed (km/sec) in the cable?",
+   "solution": "CSMA/CD needs [latex]T_t\\ge2T_p[/latex]:<br>\n[latex]\\frac{1250\\times8}{10^8}=100\\,\\mu s=2T_p\\Rightarrow T_p=50\\,\\mu s[/latex]<br><br>\nSpeed = 1 km / 50 [latex]\\mu s[/latex] = 20000 km/s<br><br>\n<b>Answer: 20000</b><br><br><a href=\"https://gateoverflow.in/8400/gate2015-3-25#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "options": [
+    "8000",
+    "10000",
+    "16000",
+    "20000"
+   ],
+   "correct": 3
+  }
+ ]
+}

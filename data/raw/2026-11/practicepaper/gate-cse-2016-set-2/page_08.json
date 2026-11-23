@@ -1,0 +1,100 @@
+{
+ "meta": {
+  "quizId": 11162,
+  "quizName": "GATE CS 2016 SET 2",
+  "pageTitle": "GATE CSE 2016 SET-2",
+  "timeLimit": 0,
+  "pageNo": 8,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2016-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1116236,
+   "number": 36,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following New-order strategy for traversing a binary tree: <br>\n  Visit the root; <br>\n  Visit the right sub tree using New-order; <br>\n  Visit the left sub tree using New-order; <br>\nThe New-order traversal of the expression tree corresponding to the reverse polish expression <br> 3  4 * 5 - 2 ^ 6 7 * 1 + - is given by:",
+   "solution": "Expression tree of 3 4 * 5 - 2 ^ 6 7 * 1 + - :<br>\nroot [latex]-[/latex], left = ((3*4) [latex]-[/latex] 5) ^ 2, right = (6*7) + 1.<br><br>\nNew-order = root, right subtree, left subtree:<br>\n- root: [latex]-[/latex]<br>\n- right: + 1 * 7 6<br>\n- left: ^ 2 [latex]-[/latex] 5 * 4 3<br><br>\n<b>Answer: - + 1 * 7 6 ^ 2 - 5 * 4 3</b><br><br><a href=\"https://gateoverflow.in/39597/gate2016-2-36#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-tree",
+   "options": [
+    "+ - 1 6 7 * 2 ^ 5 - 3 4 *",
+    "- + 1 * 7 6 ^ 2 - 5 * 4 3",
+    "- + 1 * 6 7 ^ 2 - 5 * 3 4",
+    "1 7 6 * + 2 5 4 3 * - ^ -"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1116237,
+   "number": 37,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider thefollowingprogram:<pre><code>\nint f(int*p, int n)\n{\n   if (n<=1)return 0;\n    else return max(f(p+1,n-1),p[0]-p[1]);\n}\nint main()\n{\n    int a[]={3,5,2,6,4};\n    printf(\"%d\", f(a,5));\n }</code></pre>\nNote: max(x,y) returns the maxi mumof x and y.\nThe value printed by this program is____________ .",
+   "solution": "f returns the largest value of p[i] [latex]-[/latex] p[i+1] over neighbouring pairs (or 0):<br>\n3 [latex]-[/latex] 5 = [latex]-[/latex]2, 5 [latex]-[/latex] 2 = 3, 2 [latex]-[/latex] 6 = [latex]-[/latex]4, 6 [latex]-[/latex] 4 = 2<br><br>\nmax = 3<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/39602/gate2016-2-37#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "ansMin": 3,
+   "ansMax": 3
+  },
+  {
+   "id": 1116238,
+   "number": 38,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Let A1,A2,A3, and A4 be four matrices of dimensions 10x5, 5x20, 20x10, and 10x5, respectively. The minimum number of scalar multiplications required to find the product A1A2A3A4 using the basic matrix multiplication method is __________.",
+   "solution": "Dimensions 10, 5, 20, 10, 5. Matrix chain DP:<br>\n- Pairs: A1A2 = 1000, A2A3 = 1000, A3A4 = 1000<br>\n- A2A3A4: (A2A3)A4 = 1000 + 5[latex]\\cdot[/latex]10[latex]\\cdot[/latex]5 = 1250<br>\n- A1A2A3A4: A1((A2A3)A4) = 1250 + 10[latex]\\cdot[/latex]5[latex]\\cdot[/latex]5 = <b>1500</b> (other splits give 3000 and 2000)<br><br>\n<b>Answer: 1500</b><br><br><a href=\"https://gateoverflow.in/39587/gate2016-2-38#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Dynamic Programming",
+   "tag2_url": "https://practicepaper.in/gate-cse/dynamic-programming",
+   "ansMin": 1500,
+   "ansMax": 1500
+  },
+  {
+   "id": 1116239,
+   "number": 39,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The given diagram shows the flowchart for a recursive function A(n). Assume that all statements, except for the recursive calls,have O(1) Asymptotic Notation. If the worst case Asymptotic Notation of this functionis [latex]O(n^{\\alpha })[/latex], then the least possible value(accurate upto two decimal positions) of [latex]\\alpha[/latex] is .<br><img src=\"/wp-content/uploads/GATE/CS/20162/q39.jpg\"/>",
+   "solution": "Worst-case path in the flowchart: A(n/2) at the start, then the right branch with two calls, then down with one more call, then the left branch with one more call. That is <b>5</b> calls to A(n/2).<br><br>\n[latex]T(n)=5T(n/2)+O(1)\\Rightarrow T(n)=O(n^{\\log_2 5})=O(n^{2.32})[/latex]<br><br>\n<b>Answer: 2.32</b><br><br><a href=\"https://gateoverflow.in/39581/gate2016-2-39#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Asymptotic Notation",
+   "tag2_url": "https://practicepaper.in/gate-cse/asymptotic-notation",
+   "ansMin": 2.2,
+   "ansMax": 2.4
+  },
+  {
+   "id": 1116240,
+   "number": 40,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The number of ways in which the numbers 1,2,3,4,5,6,7 can be inserted in an empty binary search tree, such that the resulting tree has height 6, is _____.<br>\nNote: The height of a tree with a single node is 0.",
+   "solution": "Height 6 with 7 nodes means the tree is a single path. After each insertion, the next number must be the smallest or the largest of the numbers still left (2 choices each), and the last number is forced.<br><br>\n[latex]2^6=64[/latex]<br><br>\n<b>Answer: 64</b><br><br><a href=\"https://gateoverflow.in/39586/gate2016-2-40#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Search Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-search-tree",
+   "ansMin": 64,
+   "ansMax": 64
+  }
+ ]
+}

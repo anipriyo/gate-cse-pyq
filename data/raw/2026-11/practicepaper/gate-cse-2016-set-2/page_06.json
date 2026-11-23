@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "quizId": 11162,
+  "quizName": "GATE CS 2016 SET 2",
+  "pageTitle": "GATE CSE 2016 SET-2",
+  "timeLimit": 0,
+  "pageNo": 6,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2016-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1116226,
+   "number": 26,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A binary relation R on [latex]\\mathbb{N}\\times \\mathbb{N}[/latex]  is defined as follows: (a,b)R(c,d) if   [latex]a \\leq c[/latex]\nor [latex]b \\leq d[/latex]. Consider the following propositions:<br>\nP: R is reflexive <br>\nQ: R is transitive <br>\nWhich one of the following statements is TRUE?",
+   "solution": "Checking each statement:<br>- Reflexive: (a, b) R (a, b) since [latex]a\\le a[/latex] True<br>\n- Transitive fails: (3, 2) R (1, 3) because 2 [latex]\\le[/latex] 3, and (1, 3) R (2, 1) because 1 [latex]\\le[/latex] 2, but (3, 2) R (2, 1) needs 3 [latex]\\le[/latex] 2 or 2 [latex]\\le[/latex] 1 [latex]\\text{---}[/latex] both false.<br><br>\n<b>Answer: P is true and Q is false</b><br><br><a href=\"https://gateoverflow.in/39603/gate2016-2-26#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Relation",
+   "tag2_url": "https://practicepaper.in/gate-cse/relation",
+   "options": [
+    "Both P and Q are true",
+    "P is true and Q is false.",
+    "P is false and Q is true",
+    "Both P and Q are false"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1116227,
+   "number": 27,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Which one of the following well-formed formulae in predicate calculus is NOT valid?",
+   "solution": "Option 4 is not valid: take a domain {1, 2} with p(1), q(2) true and p(2), q(1) false. Then every x satisfies p(x) [latex]\\vee[/latex] q(x), but neither \"all p\" nor \"all q\" holds.<br><br>\nOptions 1-3 are standard valid implications.<br><br>\n<b>Answer: Option 4</b><br><br><a href=\"https://gateoverflow.in/39618/gate2016-2-27#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "options": [
+    "[latex](\\forall x p(x)\\Rightarrow \\forall xq(x))\\Rightarrow (\\exists x\\neg p(x) \\vee \\forall xq(x))[/latex]",
+    "[latex](\\exists xp(x)\\vee \\exists xq(x))\\Rightarrow \\exists x(p(x)\\vee  q(x))[/latex]",
+    "[latex]\\exists x (p(x)\\wedge q(x)) \\Rightarrow (\\exists xp(x)\\wedge \\exists xq(x))[/latex]",
+    "[latex]\\forall x (p(x)\\vee q(x))\\Rightarrow (\\forall x p(x) \\vee \\forall x q(x)) [/latex]\n"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1116228,
+   "number": 28,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a set U of 23 different compounds in a Chemistry lab. There is a subset S of U of 9 compounds, each of which reacts with exactly 3 compounds of  U. Consider the following statements: <br><br>\nI. Each compound in U \\ S reacts with an odd number of compounds. <br>\nII. At least one compound in U \\ S reacts with an odd number of compounds. <br>\nIII. Each compound in U n S reacts with an even number of compounds. <br><br>\nWhich one of the above statements is ALWAYS TRUE?",
+   "solution": "Model compounds as vertices and reactions as edges. The sum of all degrees is even (handshake lemma).<br><br>\nThe 9 compounds in S have degree 3 each: total 27 (odd). So the degrees of U \\ S must add to an odd number, which needs <b>at least one</b> odd degree there. Nothing forces <i>every</i> one to be odd.<br><br>\n<b>Answer: Only II</b><br><br><a href=\"https://gateoverflow.in/39595/gate2016-2-28#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Set Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/set-theory",
+   "options": [
+    "Only I",
+    "Only II",
+    "Only III",
+    "None"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1116229,
+   "number": 29,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The value of the expression [latex]13^{99}[/latex](mod 17), in the range 0 to 16, is _________.",
+   "solution": "[latex]13\\equiv-4\\pmod{17}[/latex], so [latex]13^2\\equiv16\\equiv-1[/latex] and [latex]13^4\\equiv1[/latex].<br><br>\n[latex]99=4\\times24+3\\Rightarrow13^{99}\\equiv13^3=13^2\\cdot13\\equiv-13\\equiv4\\pmod{17}[/latex]<br><br>\n<b>Answer: 4</b><br><br><a href=\"https://gateoverflow.in/39588/gate2016-2-29#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "",
+   "tag2_url": "https://practicepaper.in/gate-cse/",
+   "ansMin": 4,
+   "ansMax": 4
+  },
+  {
+   "id": 1116230,
+   "number": 30,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Suppose the functions F and G can be computed in 5 and 3 nano seconds by functional units [latex]U_{F}[/latex] and [latex]U_{G}[/latex], respectively. Given two instances of [latex]U_{F}[/latex] and two instances of [latex]U_{G}[/latex], it is required to implement the computation [latex]F(G(X_{i}))[/latex] for [latex]1\\leq i\\leq 10[/latex]. Ignoring all other delays, the minimum time required to complete this computation is ________ nanoseconds.",
+   "solution": "Each item needs G (3 ns) then F (5 ns). With 2 units of each, the F units are the bottleneck: 10 F computations on 2 units = 5 rounds [latex]\\times[/latex] 5 ns = 25 ns.<br><br>\nF can start only after the first G results are ready (3 ns), and the G units keep feeding F in time after that.<br><br>\nTotal = 3 + 25 = 28 ns<br><br>\n<b>Answer: 28</b><br><br><a href=\"https://gateoverflow.in/39627/gate-cse-2016-set-2-question-30#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Pipeline Processor",
+   "tag2_url": "https://practicepaper.in/gate-cse/pipeline-processor",
+   "ansMin": 28,
+   "ansMax": 28
+  }
+ ]
+}

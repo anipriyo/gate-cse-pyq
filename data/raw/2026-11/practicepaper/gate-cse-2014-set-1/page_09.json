@@ -1,0 +1,115 @@
+{
+ "meta": {
+  "quizId": 11141,
+  "quizName": "GATE CS 2014 SET 1",
+  "pageTitle": "GATE CSE 2014 SET-1",
+  "timeLimit": 0,
+  "pageNo": 9,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114141,
+   "number": 41,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following C function in which size is the number of elements in the array E:\n<pre><code> int MyX(int *E, unsigned int size)\n{\n  int Y = 0;\n  int Z;\n  int i, j, k; \n    for(i = 0; i < size; i++)\n    Y = Y + E[i];\n  for(i = 0; i < size; i++)\n    for(j = i; j < size; j++)\n    {\n       Z = 0;\n       for(k = i; k <= j; k++)\n           Z= Z + E[k];\n       if (Z > Y)\n            Y = Z;\n   }\nreturn Y;\n}</code></pre>\nThe value returned by the function MyX is the",
+   "solution": "Y starts as the sum of the whole array (which is itself a sub-array). The loops compute the sum Z of every sub-array E[i..j] and keep the largest. So the result is the maximum sub-array sum.<br><br>\n<b>Answer: maximum possible sum of elements in any sub-array of array E</b><br><br><a href=\"https://gateoverflow.in/1919/gate2014-1-41#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Loop",
+   "tag2_url": "https://practicepaper.in/gate-cse/loop",
+   "options": [
+    "maximum possible sum of elements in any sub-array of array E.",
+    "maximum element in any sub-array of array E.",
+    "sum of the maximum elements in all possible sub-arrays of array E.",
+    "the sum of all the elements in the array E."
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1114142,
+   "number": 42,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following pseudo code. What is the total number of multiplications to be performed?\n<pre><code> D= 2\nfor i = 1 to n do\n   for j = i to n do\n      for k = j + 1 to n do\n           D = D * 3 </code></pre>",
+   "solution": "For fixed i and j the innermost loop runs n [latex]-[/latex] j times. Summing over [latex]1\\le i\\le j\\le n[/latex] gives [latex]\\binom{n+1}{3}=\\frac{(n-1)n(n+1)}{6}[/latex].<br><br>\nThat is one-sixth of the product of 3 consecutive integers.<br><br>\n<b>Answer: One-sixth of the product of the 3 consecutive integers</b><br><br><a href=\"https://gateoverflow.in/1920/gate2014-1-42#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Loop",
+   "tag2_url": "https://practicepaper.in/gate-cse/loop",
+   "options": [
+    "Half of the product of the 3 consecutive integers",
+    "One-third of the product of the 3 consecutive integers.",
+    "One-sixth of the product of the 3 consecutive integers",
+    "None of the above."
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1114143,
+   "number": 43,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a 6-stage instruction pipeline, where all stages are perfectly balanced. Assume that\nthere is no cycle-time overhead of pipelining. When an application is executing on this 6-stage pipeline, the speedup achieved with respect to non-pipelined execution if 25% of the instructions incur 2 pipeline stall cycles is _________.",
+   "solution": "Pipelined CPI = 1 + 0.25 [latex]\\times[/latex] 2 = 1.5. A balanced 6-stage pipeline ideally gives speedup 6.<br><br>\nSpeedup = 6 / 1.5 = 4<br><br>\n<b>Answer: 4</b><br><br><a href=\"https://gateoverflow.in/1921/gate2014-1-43#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Pipeline Processor",
+   "tag2_url": "https://practicepaper.in/gate-cse/pipeline-processor",
+   "ansMin": 4,
+   "ansMax": 4
+  },
+  {
+   "id": 1114144,
+   "number": 44,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "An access sequence of cache block addresses is of length N and contains n unique block\naddresses. The number of unique block addresses between two consecutive accesses to the\nsame block address is bounded above K. What is the miss ratio if the access sequence is\npassed through a cache of associativity A[latex]\\geq[/latex]k exercising least-recently-used replacement policy?",
+   "solution": "Between two uses of the same block, at most k other blocks are used, and the cache holds A [latex]\\ge[/latex] k blocks per set with LRU. So a block is never evicted before it is used again: only the first access to each of the n distinct blocks misses.<br><br>\nMiss ratio = n / N<br><br>\n<b>Answer: n/N</b><br><br><a href=\"https://gateoverflow.in/1922/gate2014-1-44#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "options": [
+    "n/N",
+    "1/N",
+    "1/A",
+    "k/n"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1114145,
+   "number": 45,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the 4-to-1 multiplexer with two lines S1 and S0 given below. <br><img src=\"/wp-content/uploads/GATE/CS/20141/q45.jpg\"/>  <br>  The minimal sum of-products form of the Boolean expression for the output F of the multiplexer is",
+   "solution": "Selects S1 = P, S0 = Q:<br>\n[latex]F=\\bar P\\bar Q\\cdot0+\\bar PQ\\cdot1+P\\bar Q\\cdot R+PQ\\cdot\\bar R[/latex]<br>\n[latex]\\bar PQ+PQ\\bar R=Q(\\bar P+\\bar R)=\\bar PQ+Q\\bar R[/latex]<br><br>\n[latex]F=\\bar PQ+Q\\bar R+P\\bar QR[/latex]<br><br>\n<b>Answer: Option 1</b><br><br><a href=\"https://gateoverflow.in/1923/gate2014-1-45#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Combinational Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/combinational-circuit",
+   "options": [
+    "[latex]\\bar{P}Q+Q\\bar{R}+P\\bar{Q}R[/latex]",
+    "[latex]\\bar{P}Q+\\bar{P}Q\\bar{R}+PQ\\bar{R}+P\\bar{Q}R[/latex]",
+    "[latex]\\bar{P}QR+\\bar{P}Q\\bar{R}+Q\\bar{R}+P\\bar{Q}R[/latex]",
+    "[latex]PQ\\bar{R}[/latex]"
+   ],
+   "correct": 0
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11162,
+  "quizName": "GATE CS 2016 SET 2",
+  "pageTitle": "GATE CSE 2016 SET-2",
+  "timeLimit": 0,
+  "pageNo": 9,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2016-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1116241,
+   "number": 41,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "In an adjacency list representation of an undirected simple graph G = (V,E), each edge (u,v) has two adjacency list entries: [v] in the adjacency list of u, and [u] in the adjacency list of v. These are called twins of each other. A twin pointer is a pointer from an adjacency list entry to its twin. If |E|=m and |V|=n, and the memory size is not a constraint, what is the Asymptotic Notation of the most efficient algorithm to set the twin pointer in each entry in each adjacency list?",
+   "solution": "Go through all edges once (scanning every adjacency list), using an n [latex]\\times[/latex] n table (memory is no problem) to remember where entry [v] in u's list is. When you meet [u] in v's list, look up its twin and link them. Each of the 2m entries is handled once, plus [latex]O(n)[/latex] to scan the lists.<br><br>\n<b>Answer: [latex]\\Theta(n+m)[/latex]</b><br><br><a href=\"https://gateoverflow.in/39620/gate2016-2-41#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Asymptotic Notation",
+   "tag2_url": "https://practicepaper.in/gate-cse/asymptotic-notation",
+   "options": [
+    "[latex]\\Theta (n^{2})[/latex]",
+    "[latex]\\Theta (n+m)[/latex]",
+    "[latex]\\Theta (m^{2})[/latex]",
+    "[latex]\\Theta (n^{4})[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1116242,
+   "number": 42,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following two statements:<br>\nI. If all states of an NFA are accepting states then the language accepted by the NFA is [latex]\\sum ^{*}[/latex] .<br>\nII. There exists a regular language A such that for all languages B, A[latex]\\cap[/latex]B is regular. <br>\nWhich one of the following is CORRECT?",
+   "solution": "Checking each statement:<br>- I: an NFA may simply have no transition for some symbol, so some strings have no path and are rejected even if every state is accepting [latex]\\text{---}[/latex] FALSE.<br>\n- II: take [latex]A=\\phi[/latex]: [latex]A\\cap B=\\phi[/latex] is regular for every B [latex]\\text{---}[/latex] TRUE.<br><br>\n<b>Answer: Only II is true</b><br><br><a href=\"https://gateoverflow.in/39591/gate2016-2-42#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Finite Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/finite-automata",
+   "options": [
+    "Only I is true",
+    "Only II is true",
+    "Both I and II are true",
+    "Both I and II are false"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1116243,
+   "number": 43,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following languages: <br>[latex]L_{1}=\\{a^{n}b^{m}c^{n+m}:m,n\\geq 1\\}[/latex]<br> [latex]L_{2}=\\{a^{n}b^{n}c^{2n}:n\\geq 1\\}[/latex] <br>Which one of the following is TRUE?",
+   "solution": "Checking each statement:<br>- [latex]L_1=a^nb^mc^{n+m}[/latex]: push for every a and b, pop one per c [latex]\\rightarrow[/latex] context-free.<br>\n- [latex]L_2=a^nb^nc^{2n}[/latex]: needs to match a with b <b>and</b> with c [latex]\\rightarrow[/latex] not context-free.<br><br>\n<b>Answer: L1 is context-free while L2 is not context-free</b><br><br><a href=\"https://gateoverflow.in/39605/gate2016-2-43#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-language",
+   "options": [
+    "Both L1 and L2 are context-free.",
+    "L1 is context-free while L2 is not context-free.",
+    "L2 is context-free while L1 is not context-free.",
+    "Neither L1 nor L2 is context-free."
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1116244,
+   "number": 44,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following languages.<br>\nL1 = {[latex]\\lt[/latex]M[latex]\\gt[/latex] |M takes at least 2016 steps on some input},<br>\nL2 = {[latex]\\lt[/latex]M[latex]\\gt[/latex]| M takes at least 2016 steps on all inputs} and <br>\nL3 = {[latex]\\lt[/latex]M|M accepts [latex]\\varepsilon[/latex]},<br>\nwhere for each Turing machine M, [latex]\\lt[/latex]M[latex]\\gt[/latex] denotes a specific encoding of M. Which one of the following is TRUE?",
+   "solution": "In 2016 steps a TM reads at most the first 2016 input symbols, so only inputs of length up to 2016 matter. Simulating M on all of them for 2016 steps decides both L1 and L2 [latex]\\rightarrow[/latex] recursive.<br><br>\nL3 (M accepts [latex]\\varepsilon[/latex]) is a non-trivial property of L(M) [latex]\\rightarrow[/latex] undecidable (Rice).<br><br>\n<b>Answer: L1, L2 are recursive and L3 is not recursive</b><br><br><a href=\"https://gateoverflow.in/39596/gate2016-2-44#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Turing Machine",
+   "tag2_url": "https://practicepaper.in/gate-cse/turing-machine",
+   "options": [
+    "L1 is recursive and L2,L3 are notrecursive",
+    "L2 is recursiveand L1,L3 are notrecursive",
+    "L1,L2 are recursiveand L3 is notrecursive",
+    "L1,L2,L3 are recursive"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1116245,
+   "number": 45,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Which one of the following grammars is free from left recursion?",
+   "solution": "Checking each statement:<br>- Option 1: [latex]A\\rightarrow Aa[/latex] is directly left recursive.<br>\n- <b>Option 2</b>: S, A, B never start with themselves, directly or indirectly True<br>\n- Option 3: [latex]S\\rightarrow Aa[/latex] and [latex]A\\rightarrow Sc[/latex] give [latex]S\\Rightarrow Sca[/latex] (indirect).<br>\n- Option 4: [latex]A\\rightarrow Bd[/latex] and [latex]B\\rightarrow Ae[/latex] give [latex]A\\Rightarrow Aed[/latex] (indirect).<br><br>\n<b>Answer: Option 2</b><br><br><a href=\"https://gateoverflow.in/39594/gate2016-2-45#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Grammar",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-grammar",
+   "options": [
+    "[latex]S\\rightarrow AB [/latex] <br> [latex]A\\rightarrow Aa|b[/latex]<br> [latex]B\\rightarrow c[/latex]",
+    "[latex]S\\rightarrow Ab|Bb|c [/latex] <br> [latex] A\\rightarrow Bb|\\varepsilon [/latex] <br> [latex]B\\rightarrow e[/latex]",
+    "[latex]S\\rightarrow Aa|B [/latex] <br> [latex]A\\rightarrow Bb|Sc|\\varepsilon [/latex] <br> [latex]B\\rightarrow d[/latex]",
+    "[latex]S\\rightarrow Aa|Bb|c [/latex] <br> [latex]A\\rightarrow Bd|\\varepsilon [/latex] <br> [latex]B\\rightarrow Ae|\\varepsilon[/latex]"
+   ],
+   "correct": 1
+  }
+ ]
+}

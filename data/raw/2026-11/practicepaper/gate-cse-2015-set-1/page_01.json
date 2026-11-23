@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11151,
+  "quizName": "GATE CS 2015 SET 1",
+  "pageTitle": "GATE CSE 2015 SET-1",
+  "timeLimit": 0,
+  "pageNo": 1,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115101,
+   "number": 1,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "If [latex]g(x)=1-x[/latex] and [latex]h(x)=\\frac{x}{x-1}[/latex], then [latex]\\frac{g(h(x))}{h(g(x))}[/latex] is:",
+   "solution": "Checking each statement:<br>- [latex]g(h(x))=1-\\frac{x}{x-1}=\\frac{-1}{x-1}[/latex]<br>\n- [latex]h(g(x))=\\frac{1-x}{(1-x)-1}=\\frac{x-1}{x}[/latex]<br><br>\n[latex]\\frac{g(h(x))}{h(g(x))}=\\frac{-x}{(x-1)^2}[/latex]<br><br>\nAlso [latex]\\frac{h(x)}{g(x)}=\\frac{x}{(x-1)(1-x)}=\\frac{-x}{(x-1)^2}[/latex], the same.<br><br>\n<b>Answer: [latex]\\frac{h(x)}{g(x)}[/latex]</b><br><br><a href=\"https://gateoverflow.in/8025/gate2015-1-1#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Functions",
+   "tag2_url": "https://practicepaper.in/gate-cse/functions",
+   "options": [
+    "[latex]\\frac{h(x)}{g(x)}[/latex]",
+    "[latex]\\frac{-1}{x}[/latex]",
+    "[latex]\\frac{g(x)}{h(x)}[/latex]",
+    "[latex]\\frac{x}{(1-x)^{2}}[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1115102,
+   "number": 2,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "[latex]\\lim_{x\\rightarrow \\infty }x^{1/x}[/latex] is",
+   "solution": "[latex]x^{1/x}=e^{\\frac{\\ln x}{x}}[/latex], and [latex]\\frac{\\ln x}{x}\\rightarrow0[/latex] as [latex]x\\rightarrow\\infty[/latex].<br><br>\nSo the limit is [latex]e^0=1[/latex].<br><br>\n<b>Answer: 1</b><br><br><a href=\"https://gateoverflow.in/8021/gate2015-1-2#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "options": [
+    "[latex]\\infty[/latex]",
+    "0",
+    "1",
+    "Not defined"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115103,
+   "number": 3,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Match the following:\n<br><img src=\"/wp-content/uploads/GATE/CS/20151/q3.jpg\"/> ",
+   "solution": "Checking each statement:<br>- Prim's MST: greedy (ii)<br>\n- Floyd-Warshall: dynamic programming (iii)<br>\n- Mergesort: divide and conquer (iv)<br>\n- Hamiltonian circuit: backtracking (i)<br><br>\n<b>Answer: P-ii, Q-iii, R-iv, S-i</b><br><br><a href=\"https://gateoverflow.in/8088/gate2015-1-3#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Divide and Conquer",
+   "tag2_url": "https://practicepaper.in/gate-cse/divide-and-conquer",
+   "options": [
+    "P-iii, Q-ii, R-iv, S-i",
+    "P-i, Q-ii, R-iv, S-iii",
+    "P-ii, Q-iii, R-iv, S-i",
+    "P-ii, Q-i, R-iii, S-iv"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115104,
+   "number": 4,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following is the recurrence equation for the worst case time complexity of the Quicksort algorithm for sorting n ( [latex]\\geq[/latex]2) numbers? In the recurrence equations given in the options below, c is a constant.",
+   "solution": "Worst case: the pivot is the smallest/largest each time, so the partition sizes are n[latex]-[/latex]1 and 1, plus linear partitioning work.<br><br>\nT(n) = T(n [latex]-[/latex] 1) + T(1) + cn<br><br>\n<b>Answer: T(n) = T(n-1) + T(1) + cn</b><br><br><a href=\"https://gateoverflow.in/8017/gate2015-1-4#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Sorting",
+   "tag2_url": "https://practicepaper.in/gate-cse/sorting",
+   "options": [
+    "T(n)=2T(n/2)+cn",
+    "T(n)=T(n-1)+T(1)+cn",
+    "T(n)=2T(n-1)+cn",
+    "T(n)=T(n/2)+cn"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1115105,
+   "number": 5,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The height of a tree is the length of the longest root-to-leaf path in it. The maximum and minimum number of nodes in a binary tree of height 5 are",
+   "solution": "Checking each statement:<br>- Maximum: complete tree with levels 0 to 5 = [latex]2^6-1=63[/latex] nodes<br>\n- Minimum: a single path of 5 edges = 6 nodes<br><br>\n<b>Answer: 63 and 6</b><br><br><a href=\"https://gateoverflow.in/8223/gate2015-1-5#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-tree",
+   "options": [
+    "63 and 6, respectively",
+    "64 and 5, respectively",
+    "32 and 6, respectively",
+    "31 and 5, respectively"
+   ],
+   "correct": 0
+  }
+ ]
+}

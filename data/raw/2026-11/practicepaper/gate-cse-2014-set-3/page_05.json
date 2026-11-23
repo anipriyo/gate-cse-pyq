@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11143,
+  "quizName": "GATE CS 2014 SET 3",
+  "pageTitle": "GATE CSE 2014 SET-3",
+  "timeLimit": 0,
+  "pageNo": 5,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-3",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114321,
+   "number": 21,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "What is the optimized version of the relation algebra expression  [latex]\\pi _{A1}(\\pi _{A2}(\\sigma _{F1}(\\sigma_{F2}(r))))[/latex] , where A1, A2 are sets of attributes in r with [latex]A_{1}\\subset A_{2}[/latex] and F1, F2 are Boolean expressions based on the attributes in r?",
+   "solution": "Checking each statement:<br>- Two selections combine: [latex]\\sigma_{F1}(\\sigma_{F2}(r))=\\sigma_{F1\\wedge F2}(r)[/latex]<br>\n- Since [latex]A_1\\subset A_2[/latex], [latex]\\pi_{A1}(\\pi_{A2}(\\cdot))=\\pi_{A1}(\\cdot)[/latex]<br><br>\n<b>Answer: [latex]\\pi_{A1}(\\sigma_{F1\\wedge F2}(r))[/latex]</b><br><br><a href=\"https://gateoverflow.in/2055/gate2014-3-21#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Relational Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/relational-algebra",
+   "options": [
+    "[latex]\\pi _{A1}(\\sigma_{(F1 \\wedge F2)}(r))[/latex]",
+    "[latex]\\pi _{A1}(\\sigma_{(F1\\vee F2)}(r))[/latex]",
+    "[latex]\\pi _{A2}(\\sigma_{(F1\\wedge F2)}(r))[/latex]",
+    "[latex]\\pi _{A2}(\\sigma_{(F1 \\vee F2)}(r))[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1114322,
+   "number": 22,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "A prime attribute of a relation scheme R is an attribute that appears",
+   "solution": "A prime attribute is one that belongs to at least one candidate key.<br><br>\n<b>Answer: in some candidate key of R</b><br><br><a href=\"https://gateoverflow.in/2056/gate2014-3-22#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Normal Form",
+   "tag2_url": "https://practicepaper.in/gate-cse/normal-form",
+   "options": [
+    "in all candidate keys of R.",
+    "in some candidate key of R.",
+    "in a foreign keys of R",
+    "only in the primary key of R."
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1114323,
+   "number": 23,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "In the following pairs of OSI protocol layer/sub-layer and its functionality, the\nINCORRECT pair is",
+   "solution": "Bit synchronization is done by the physical layer. The data link layer handles framing, error control and flow control.<br><br>\nThe other pairs are correct.<br><br>\n<b>Answer: Data Link Layer and Bit synchronization</b><br><br><a href=\"https://gateoverflow.in/2057/gate2014-3-23#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "OSI Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/osi-layer",
+   "options": [
+    "Network layer and Routing",
+    "Data Link Layer and Bit synchronization",
+    "Transport layer and End-to-end process communication",
+    "Medium Access Control sub-layer and Channel sharing"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1114324,
+   "number": 24,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "A bit-stuffing based framing protocol uses an 8-bit delimiter pattern of 01111110. If the output bit-string after stuffing is 01111100101, then the input bit-string is",
+   "solution": "The sender inserts a 0 after every five consecutive 1s. Remove it:<br><br>\n0 11111 <b>0</b> 0101 [latex]\\rightarrow[/latex] 0 11111 0101 = 0111110101<br><br>\n<b>Answer: 0111110101</b><br><br><a href=\"https://gateoverflow.in/2058/gate2014-3-24#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "options": [
+    "0111110100",
+    "0111110101",
+    "0111111101",
+    "0111111111"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1114325,
+   "number": 25,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Host A (on TCP/IP v4 network A) sends an IP datagram D to host B (also on TCP/IP V4\nnetwork B). Assume that no error occurred during the transmission of D. When D reaches B, which of the following IP header field(s) may be different from that of the original datagram D?<br>\n(i) TTL <br>(ii) Checksum <br> (iii) Fragment Offset",
+   "solution": "Checking each statement:<br>- TTL is decremented at each router.<br>\n- Checksum is recomputed whenever the header changes.<br>\n- If a router fragments D, the fragments have new Fragment Offset values.<br><br>\nAll three may differ.<br><br>\n<b>Answer: (i), (ii) and (iii)</b><br><br><a href=\"https://gateoverflow.in/2059/gate2014-3-25#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-layer-protocol",
+   "options": [
+    "(i) only",
+    "(i) and (ii) only",
+    "(ii) and (iii) only",
+    "(i), (ii) and (iii)"
+   ],
+   "correct": 3
+  }
+ ]
+}

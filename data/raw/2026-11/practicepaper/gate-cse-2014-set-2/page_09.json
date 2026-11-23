@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11142,
+  "quizName": "GATE CS 2014 SET 2",
+  "pageTitle": "GATE CSE 2014 SET-2",
+  "timeLimit": 0,
+  "pageNo": 9,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114241,
+   "number": 41,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Suppose a stack implementation supports an instruction REVERSE, which reverses the order\nof elements on the stack, in addition to the PUSH and POP instructions. Which one of the\nfollowing statements is TRUE with respect to this modified stack?",
+   "solution": "Keep the front of the queue at the top of the stack.<br><br>\n- ENQUEUE(x): REVERSE, PUSH x, REVERSE (3 instructions)<br>\n- DEQUEUE: POP (1 instruction)<br><br>\n<b>Answer: ENQUEUE takes three instructions and DEQUEUE takes one</b><br><br><a href=\"https://gateoverflow.in/2007/gate2014-2-41#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Stack",
+   "tag2_url": "https://practicepaper.in/gate-cse/stack",
+   "options": [
+    "A queue cannot be implemented using this stack.",
+    "A queue can be implemented where ENQUEUE takes a single instruction and\nDEQUEUE takes a sequence of two instructions.",
+    "A queue can be implemented where ENQUEUE takes a sequence of three instructions\nand DEQUEUE takes a single instruction",
+    "A queue can be implemented where both ENQUEUE and DEQUEUE take a single\ninstruction each."
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1114242,
+   "number": 42,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the C function given below\n<pre><code> int f(int j)\n{\nstatic int i = 50;\nint k;\nif (i == j)\n{\nprintf(\"something\");\nk = f(i);\nreturn 0;\n}\nelse return 0;\n} </code></pre>\nWhich one of the following is TRUE?",
+   "solution": "i is static and stays 50. When j = 50, i == j is true, so f(i) = f(50) is called again, which again finds i == j... The recursion never ends and the stack overflows.<br><br>\nFor other j it simply returns 0.<br><br>\n<b>Answer: The function will exhaust the runtime stack or run into an infinite loop when j = 50</b><br><br><a href=\"https://gateoverflow.in/2008/gate2014-2-42#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "options": [
+    "The function returns 0 for all values of j.",
+    "The function prints the string something for all values of j.",
+    "The function returns 0 when j = 50.",
+    "The function will exhaust the runtime stack or run into an infinite loop when j = 50"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1114243,
+   "number": 43,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "In designing a computer's cache system, the cache block (or cache line) size is an important\nParameter. Which one of the following statements is correct in this context?",
+   "solution": "Checking each statement:<br>- Smaller blocks bring fewer neighbouring words, so spatial locality is used <b>less</b>.<br>\n- Smaller blocks mean more blocks [latex]\\rightarrow[/latex] more tags overall, i.e. more tag overhead.<br>\n- On a miss only a small block is transferred, so miss penalty is lower [latex]\\rightarrow[/latex] True.<br><br>\n<b>Answer: A smaller block size incurs a lower cache miss penalty</b><br><br><a href=\"https://gateoverflow.in/2009/gate2014-2-43#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "options": [
+    "A smaller block size implies better spatial locality",
+    "A smaller block size implies a smaller cache tag and hence lower cache tag overhead",
+    "A smaller block size implies a larger cache tag and hence lower cache hit time",
+    "A smaller block size incurs a lower cache miss penalty"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1114244,
+   "number": 44,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "If the associativity of a processor cache is doubled while keeping the capacity and block size\nunchanged, which one of the following is guaranteed to be NOT affected?",
+   "solution": "Doubling associativity halves the number of sets: the index loses 1 bit, the tag gains 1 bit, and the way multiplexer gets twice the inputs.<br><br>\nThe processor-to-memory data bus width does not depend on cache organisation.<br><br>\n<b>Answer: Width of processor to main memory data bus</b><br><br><a href=\"https://gateoverflow.in/2010/gate2014-2-44#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "options": [
+    "Width of tag comparator",
+    "Width of set index decoder",
+    "Width of way selection multiplexor",
+    "Width of processor to main memory data bus"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1114245,
+   "number": 45,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The value of a float type variable is represented using the single-precision 32-bit floating\npoint format of IEEE-754 standard that uses 1 bit for sign, 8 bits for biased exponent and 23\nbits for mantissa. A float type variable x is assigned the decimal value of -14.25. The\nrepresentation of x in hexadecimal notation is",
+   "solution": "[latex]14.25=(1110.01)_2=1.11001\\times2^3[/latex]<br><br>\n- Sign = 1<br>\n- Exponent = 3 + 127 = 130 = 10000010<br>\n- Mantissa = 1100100...0<br><br>\n1 10000010 11001000... = 1100 0001 0110 0100 0000... = C1640000H<br><br>\n<b>Answer: C1640000H</b><br><br><a href=\"https://gateoverflow.in/2011/gate2014-2-45#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "options": [
+    "C1640000H",
+    "416C0000H",
+    "41640000H",
+    "C16C0000H"
+   ],
+   "correct": 0
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11171,
+  "quizName": "GATE CS 2017 SET 1",
+  "pageTitle": "GATE CSE 2017 SET-1",
+  "timeLimit": 0,
+  "pageNo": 10,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2017-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1117146,
+   "number": 46,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a database that has the relation schema CR (StudentName, CourseName). An\ninstance of the schema CR is as given below. <br><img src=\"/wp-content/uploads/GATE/CS/20171/q53.jpg\"/><br> The following query is made on the database <br><br>[latex]T1\\leftarrow \\pi _{CourseName}(\\sigma _{StudentName='SA'}(CR))[/latex]<br>[latex] T2\\leftarrow CR\\div T1[/latex] <br><br>The number of rows in T2 is ____________.",
+   "solution": "T1 = courses of SA = {CA, CB, CC}. T2 = students who take <b>all</b> of these:<br>\n- SA True, SB (no CA) False, SC True, SD True, SE (no CC) False, SF True<br><br>\n<b>Answer: 4</b><br><br><a href=\"https://gateoverflow.in/118329/gate2017-1-46#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Relational Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/relational-algebra",
+   "ansMin": 4,
+   "ansMax": 4
+  },
+  {
+   "id": 1117147,
+   "number": 47,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The number of integers between 1 and 500 (both inclusive) that are divisible by 3 or 5 or 7 is\n______________.",
+   "solution": "Inclusion-exclusion for 1-500:<br>\n[latex]\\lfloor\\tfrac{500}{3}\\rfloor+\\lfloor\\tfrac{500}{5}\\rfloor+\\lfloor\\tfrac{500}{7}\\rfloor-\\lfloor\\tfrac{500}{15}\\rfloor-\\lfloor\\tfrac{500}{21}\\rfloor-\\lfloor\\tfrac{500}{35}\\rfloor+\\lfloor\\tfrac{500}{105}\\rfloor[/latex]<br>\n= 166 + 100 + 71 [latex]-[/latex] 33 [latex]-[/latex] 23 [latex]-[/latex] 14 + 4 = 271<br><br>\n<b>Answer: 271</b><br><br><a href=\"https://gateoverflow.in/118330/gate2017-1-47#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Combination",
+   "tag2_url": "https://practicepaper.in/gate-cse/combination",
+   "ansMin": 271,
+   "ansMax": 271
+  },
+  {
+   "id": 1117148,
+   "number": 48,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Let A be an array of 31 numbers consisting of sequence of 0's followed by a sequence of 1's.\nThe problem is to find the smallest index i that A[i] is 1 by probing the minimum numbers of\nlocations in A. The worst case number of probes performed by an optimal algorithm is\n_____________.",
+   "solution": "The array is sorted (0s then 1s), so binary search finds the first 1. 31 numbers give 32 possible answers (the first 1 can be at any position, or there are no 1s), which needs [latex]\\log_2 32=5[/latex] probes.<br><br>\n<b>Answer: 5</b><br><br><a href=\"https://gateoverflow.in/118331/gate2017-1-48#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Array",
+   "tag2_url": "https://practicepaper.in/gate-cse/array",
+   "ansMin": 5,
+   "ansMax": 5
+  },
+  {
+   "id": 1117149,
+   "number": 49,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a RISC machine where each instruction is exactly 4 bytes long. Conditional and\nunconditional branch instructions use PC- relative addressing mode with Offset specified in\nbytes to the target location of the branch instruction. Further the Offset is always with respect\nto the address of the next instruction in the program sequence. Consider the following\ninstruction sequence.\n<br><img src=\"/wp-content/uploads/GATE/CS/20171/q28.jpg\"/><br>\nIf the target of the branch instruction is i, then the decimal value of the Offset is __________",
+   "solution": "The offset is measured from the instruction after the branch, i.e. i + 4 (in instruction numbers). The target is i, which is 4 instructions back.<br><br>\nOffset = [latex]-[/latex]4 [latex]\\times[/latex] 4 bytes = [latex]-[/latex]16<br><br>\n<b>Answer: -16</b><br><br><a href=\"https://gateoverflow.in/118332/gate2017-1-49#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Addressing Modes",
+   "tag2_url": "https://practicepaper.in/gate-cse/addressing-modes",
+   "ansMin": -16,
+   "ansMax": -16
+  },
+  {
+   "id": 1117150,
+   "number": 50,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Instructions execution in a processor is divided into 5 stages. Instruction Fetch (IF),\nInstruction Decode (ID) , Operand Fetch (OF), Execute (EX), and Write Back (WB), These\nstages take 5,4,20, 10 and 3 nanoseconds (ns) respectively. A pipelined implementation of\nthe processor requires buffering between each pair of consecutive stages with a delay of 2ns. <br>\nTwo pipelined implementations of the processor are contemplated.<br><br>\n(i) a naive pipeline implementation (NP) with 5 stages and <br>\n(ii) an efficient pipeline (EP) where the OF stage id divided into stages OF1 and OF2\nwith execution times of 12 ns and 8 ns respectively. <br><br>\nThe speedup (correct to two decimals places) achieved by EP over NP in executing 20\nindependent instructions with no hazards is ________________.",
+   "solution": "Checking each statement:<br>- NP: slowest stage 20 + 2 (buffer) = 22 ns; 5 stages, 20 instructions [latex]\\rightarrow[/latex] (5 + 19) [latex]\\times[/latex] 22 = 528 ns<br>\n- EP: stages 5, 4, 12, 8, 10, 3 [latex]\\rightarrow[/latex] slowest 12 + 2 = 14 ns; (6 + 19) [latex]\\times[/latex] 14 = 350 ns<br><br>\nSpeedup = 528 / 350 [latex]\\approx[/latex] 1.51<br><br>\n<b>Answer: 1.51</b><br><br><a href=\"https://gateoverflow.in/118719/gate2017-1-50#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Pipeline Processor",
+   "tag2_url": "https://practicepaper.in/gate-cse/pipeline-processor",
+   "ansMin": 1.49,
+   "ansMax": 1.52
+  }
+ ]
+}

@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "quizId": 11171,
+  "quizName": "GATE CS 2017 SET 1",
+  "pageTitle": "GATE CSE 2017 SET-1",
+  "timeLimit": 0,
+  "pageNo": 4,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2017-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1117116,
+   "number": 16,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The following functional dependencies hold true for the relational schema R{V,W,X,Y,Z}: <br>\nV [latex]\\rightarrow[/latex]W <br>\nVW [latex]\\rightarrow[/latex]X <br>\nY[latex]\\rightarrow[/latex] VX <br>\nY [latex]\\rightarrow[/latex]Z <br> Which of the following is irreducible equivalent for this set of functional dependencies ?",
+   "solution": "Checking each statement:<br>- [latex]VW\\rightarrow X[/latex]: W is extra because V [latex]\\rightarrow[/latex] W, so it becomes [latex]V\\rightarrow X[/latex].<br>\n- [latex]Y\\rightarrow VX[/latex] splits into [latex]Y\\rightarrow V[/latex] and [latex]Y\\rightarrow X[/latex]; the latter is redundant ([latex]Y\\rightarrow V\\rightarrow X[/latex]).<br><br>\nMinimal cover: [latex]V\\rightarrow W,\\ V\\rightarrow X,\\ Y\\rightarrow V,\\ Y\\rightarrow Z[/latex]<br><br>\n<b>Answer: Option 1</b><br><br><a href=\"https://gateoverflow.in/118296/gate2017-1-16#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Normal Form",
+   "tag2_url": "https://practicepaper.in/gate-cse/normal-form",
+   "options": [
+    "V [latex]\\rightarrow[/latex]W   <br>       V[latex]\\rightarrow[/latex]X <br>   \nY [latex]\\rightarrow[/latex]V     <br>       Y [latex]\\rightarrow[/latex]Z",
+    "V [latex]\\rightarrow[/latex]W  <br>       W [latex]\\rightarrow[/latex]X<br>\nY[latex]\\rightarrow[/latex] V    <br>       Y[latex]\\rightarrow[/latex] Z",
+    "V [latex]\\rightarrow[/latex]W   <br>     V[latex]\\rightarrow[/latex] X<br>\nY[latex]\\rightarrow[/latex] V    <br>     Y [latex]\\rightarrow[/latex]X<br>\nY [latex]\\rightarrow[/latex]Z",
+    "V [latex]\\rightarrow[/latex]W  <br>      W[latex]\\rightarrow[/latex] X<br>\nY[latex]\\rightarrow[/latex] V   <br>      Y [latex]\\rightarrow[/latex]X<br>\nY [latex]\\rightarrow[/latex]Z"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1117117,
+   "number": 17,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following grammar.<br><br>\nP[latex]\\rightarrow[/latex]xQRS <br>\nQ[latex]\\rightarrow[/latex]yz|z<br>R[latex]\\rightarrow[/latex]w|[latex]\\varepsilon[/latex] <br>S[latex]\\rightarrow[/latex]y<br><br>What is FOLLOW (Q) ?",
+   "solution": "In [latex]P\\rightarrow xQRS[/latex], Q is followed by RS. FIRST(R) = {w, [latex]\\varepsilon[/latex]}, so FOLLOW(Q) gets w, and since R can vanish, FIRST(S) = {y} too.<br><br>\nFOLLOW(Q) = {w, y}<br><br>\n<b>Answer: {w, y}</b><br><br><a href=\"https://gateoverflow.in/118297/gate2017-1-17#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Grammar",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-grammar",
+   "options": [
+    "{R}",
+    "{w}",
+    "{w, y}",
+    "{w, $}"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1117118,
+   "number": 18,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Threads of a process share",
+   "solution": "Threads of the same process share the whole address space, including global variables and the heap. Only the stack and registers are private.<br><br>\n<b>Answer: Both heap and global variables</b><br><br><a href=\"https://gateoverflow.in/118298/gate2017-1-18#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Thread",
+   "tag2_url": "https://practicepaper.in/gate-cse/thread",
+   "options": [
+    "global variable but not heap.",
+    "heap but not global variables.",
+    " neither global variables nor heap.",
+    "Both heap and global variables."
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1117119,
+   "number": 19,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Let X be a Gaussian random variable mean 0 and variance [latex]\\sigma ^{2}[/latex]\n. Let Y=max(X, 0) where max\n(a,b) is the maximum of a and b. The median of Y is ____________.",
+   "solution": "X is symmetric about 0, so P(X [latex]\\le[/latex] 0) = 0.5. Y = max(X, 0) equals 0 whenever X [latex]\\le[/latex] 0, so [latex]P(Y\\le0)=0.5[/latex] and [latex]P(Y\\ge0)=1[/latex]. The median of Y is 0.<br><br>\n<b>Answer: 0</b><br><br><a href=\"https://gateoverflow.in/118299/gate2017-1-19#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "ansMin": 0,
+   "ansMax": 0
+  },
+  {
+   "id": 1117120,
+   "number": 20,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Let T be a tree with 10 vertices. The sum of the degrees of all the vertices in T is _________.",
+   "solution": "A tree with 10 vertices has 9 edges. Sum of degrees = 2 [latex]\\times[/latex] edges = 18.<br><br>\n<b>Answer: 18</b><br><br><a href=\"https://gateoverflow.in/118300/gate2017-1-20#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "ansMin": 18,
+   "ansMax": 18
+  }
+ ]
+}

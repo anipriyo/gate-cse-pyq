@@ -1,0 +1,100 @@
+{
+ "meta": {
+  "quizId": 11161,
+  "quizName": "GATE CS 2016 SET 1",
+  "pageTitle": "GATE CSE 2016 SET-1",
+  "timeLimit": 0,
+  "pageNo": 6,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2016-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1116126,
+   "number": 26,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The coefficient of [latex]x^{12}[/latex] in [latex](x^{3}+x^{4}+x^{5}+x^{6}+. . . )^{3}[/latex] is ______.",
+   "solution": "[latex](x^3+x^4+\\cdots)^3=x^9(1+x+x^2+\\cdots)^3=x^9(1-x)^{-3}[/latex]<br><br>\nWe need the coefficient of [latex]x^3[/latex] in [latex](1-x)^{-3}[/latex]: [latex]\\binom{3+2}{2}=10[/latex].<br><br>\n<b>Answer: 10</b><br><br><a href=\"https://gateoverflow.in/39693/gate2016-1-26#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "ansMin": 10,
+   "ansMax": 10
+  },
+  {
+   "id": 1116127,
+   "number": 27,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the recurrence relation [latex]a_{1}[/latex]=8, [latex]a_{n}=6n^{2}+2n+a_{n-1}[/latex]. Let [latex]a_{99}= K  \\times  10^{4}[/latex]. The value of K is .",
+   "solution": "Since [latex]a_1=8=6+2[/latex], [latex]a_n=\\sum_{k=1}^{n}(6k^2+2k)=n(n+1)(2n+1)+n(n+1)=2n(n+1)^2[/latex].<br><br>\n[latex]a_{99}=2\\times99\\times100^2=1980000=198\\times10^4[/latex]<br><br>\n<b>Answer: 198</b><br><br><a href=\"https://gateoverflow.in/39714/gate2016-1-27#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Recurrence",
+   "tag2_url": "https://practicepaper.in/gate-cse/recurrence",
+   "ansMin": 197.9,
+   "ansMax": 198.1
+  },
+  {
+   "id": 1116128,
+   "number": 28,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A function [latex]f:\\mathbb{N}^{+}\\rightarrow \\mathbb{N}^{+}[/latex], defined on the set of positive integers [latex]\\mathbb{N}^{+}[/latex], satisfies the following properties:<br>\nf(n)=f(n/2)   if n  is even <br>\nf(n)=f(n+5)   if n is odd <br>\nLet R={[latex]i|\\exists j:f(j)=i[/latex]} be the set of distinct values that f takes. The maximum possible size of R is ____.",
+   "solution": "Both rules keep a number inside its class:<br>\n- If n is a multiple of 5, n/2 (when even) and n + 5 are still multiples of 5.<br>\n- If n is not a multiple of 5, neither are n/2 and n + 5.<br><br>\nWithin each class all values are linked (e.g. 1 [latex]\\rightarrow[/latex] 6 [latex]\\rightarrow[/latex] 3 [latex]\\rightarrow[/latex] 8 [latex]\\rightarrow[/latex] 4 [latex]\\rightarrow[/latex] 2 [latex]\\rightarrow[/latex] 1, and 5 [latex]\\rightarrow[/latex] 10 [latex]\\rightarrow[/latex] 5), so f can take at most one value per class: at most 2 values.<br><br>\n<b>Answer: 2</b><br><br><a href=\"https://gateoverflow.in/39717/gate2016-1-28#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Set Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/set-theory",
+   "ansMin": 2,
+   "ansMax": 2
+  },
+  {
+   "id": 1116129,
+   "number": 29,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following experiment. <br>\nStep 1. Flip a fair coin twice. <br>\nStep 2. If the outcomes are(TAILS, HEADS) then output Y and stop. <br>\nStep 3. If the outcomes are either(HEADS, HEADS) or(HEADS, TAILS), then output N and stop. <br>\nStep 4. If the out comes are(TAILS, TAILS), then go to Step1. <br>\nThe probability that the output of the experiment is Y is (up to two decimal places)_____.",
+   "solution": "In each round of two flips: Y with probability 1/4 (TH), N with 1/2 (HH or HT), repeat with 1/4 (TT).<br><br>\n[latex]P(Y)=\\frac{1/4}{1/4+1/2}=\\frac13\\approx0.33[/latex]<br><br>\n<b>Answer: 0.33</b><br><br><a href=\"https://gateoverflow.in/39709/gate2016-1-29#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "ansMin": 0.33,
+   "ansMax": 0.34
+  },
+  {
+   "id": 1116130,
+   "number": 30,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the two cascaded 2-to-1 multiplexers as shown in the figure. <br><img src=\"/wp-content/uploads/GATE/CS/20161/q30.jpg\"/>  <br> The minimal sum of products form of the output X is",
+   "solution": "First mux (select P): output = R if P = 1, else 0 [latex]\\rightarrow[/latex] PR.<br>\nSecond mux (select Q): X = PR if Q = 1, else [latex]\\bar R[/latex].<br><br>\n[latex]X=\\bar Q\\bar R+QPR[/latex]<br><br>\n<b>Answer: [latex]\\bar Q\\bar R+PQR[/latex]</b><br><br><a href=\"https://gateoverflow.in/39722/gate2016-1-30#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Combinational Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/combinational-circuit",
+   "options": [
+    "[latex]\\bar{P}\\bar{Q}+PQR[/latex]",
+    "[latex]\\bar{P}Q+QR[/latex]",
+    "[latex]PQ+\\bar{P}\\bar{Q}R[/latex]",
+    "[latex]\\bar{Q}\\bar{R}+PQR[/latex]"
+   ],
+   "correct": 3
+  }
+ ]
+}

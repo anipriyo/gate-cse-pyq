@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11172,
+  "quizName": "GATE CS 2017 SET 2",
+  "pageTitle": "GATE CSE 2017 SET-2",
+  "timeLimit": 0,
+  "pageNo": 11,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2017-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1117251,
+   "number": 51,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the set of processes with arrival time (in milliseconds). CPU burst time (in\nmilliseconds), and priority (0 is the highest priority) shown below. None of the processes have\nI/O burst time.  <br><img src=\"/wp-content/uploads/GATE/CS/20172/q43.jpg\"/> <br> The average waiting time (in milliseconds) of all the processes using preemptive priority scheduling algorithm is __________",
+   "solution": "Preemptive priority (0 = highest):<br>\nP1 0-2, P4 2-5, P2 5-33, P4 33-40, P1 40-49, P3 49-51, P5 51-67<br><br>\nWaiting: P1 49 [latex]-[/latex] 11 = 38, P2 0, P3 51 [latex]-[/latex] 12 [latex]-[/latex] 2 = 37, P4 40 [latex]-[/latex] 2 [latex]-[/latex] 10 = 28, P5 67 [latex]-[/latex] 9 [latex]-[/latex] 16 = 42<br>\nAverage = 145 / 5 = 29<br><br>\n<b>Answer: 29</b><br><br><a href=\"https://gateoverflow.in/118558/gate2017-2-51#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "CPU Scheduling",
+   "tag2_url": "https://practicepaper.in/gate-cse/cpu-scheduling",
+   "ansMin": 29,
+   "ansMax": 29
+  },
+  {
+   "id": 1117252,
+   "number": 52,
+   "type": "NAT",
+   "marks": 2,
+   "text": "If the characteristics polynomial of 3x3 matrix M over R ( the set of real numbers) is\n[latex]\\lambda ^{3}-4\\lambda ^{2}+a\\lambda +30,a\\in R[/latex], and one eigenvalue of M is 2, then the largest among the absolute values of the eigenvalues of M is ________.",
+   "solution": "2 is a root: [latex]8-16+2a+30=0\\Rightarrow a=-11[/latex].<br>\n[latex]\\lambda^3-4\\lambda^2-11\\lambda+30=(\\lambda-2)(\\lambda-5)(\\lambda+3)[/latex] [latex]\\rightarrow[/latex] eigenvalues 2, 5, [latex]-[/latex]3.<br><br>\nLargest absolute value = 5<br><br>\n<b>Answer: 5</b><br><br><a href=\"https://gateoverflow.in/118618/gate2017-2-52#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "ansMin": 5,
+   "ansMax": 5
+  },
+  {
+   "id": 1117253,
+   "number": 53,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a machine with a byte addressable main memory of [latex]2^{32}[/latex] bytes divided into blocks of size 32 bytes. Assume that a direct mapped cache having 512 cache lines is used with this machine. The size of the tag field in bits is ______.",
+   "solution": "Offset = 5 bits (32 B), index = 9 bits (512 lines). Tag = 32 [latex]-[/latex] 5 [latex]-[/latex] 9 = 18 bits.<br><br>\n<b>Answer: 18</b><br><br><a href=\"https://gateoverflow.in/118613/gate2017-2-53#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "ansMin": 18,
+   "ansMax": 18
+  },
+  {
+   "id": 1117254,
+   "number": 54,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following C program.\n<pre><code> #include &lt;stdio.h&gt;\nint main ( ) {\n    int m = 10;\n    int n, n1;\n    n = ++m;\n    n1 = m++;\n    n--;\n    --n1;\n    n-=n1;\nprintf (\"%d\", n) ;\nreturn 0;\n}</code></pre>\nThe output of the program is ______________.",
+   "solution": "Checking each statement:<br>- n = ++m: m = 11, n = 11<br>\n- n1 = m++: n1 = 11, m = 12<br>\n- n-- [latex]\\rightarrow[/latex] 10, --n1 [latex]\\rightarrow[/latex] 10<br>\n- n -= n1 [latex]\\rightarrow[/latex] 0<br><br>\n<b>Answer: 0</b><br><br><a href=\"https://gateoverflow.in/118272/gate2017-2-54#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Arithmetic Operation",
+   "tag2_url": "https://practicepaper.in/gate-cse/arithmetic-operation",
+   "ansMin": 0,
+   "ansMax": 0
+  },
+  {
+   "id": 1117255,
+   "number": 55,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following C Program.\n<pre><code> #include &lt;stdio.h&gt;\n#include &lt;string.h&gt;\nint main ( ) {\nchar* c = \"GATECSIT2017\";\nchar* p = c;\nprintf(\"%d\", (int) strlen (c+2[p]-6[p]-1));\nreturn 0;\n}\n</code></pre>The output of the program is _______________.",
+   "solution": "2[p] = p[2] = 'T' (84) and 6[p] = p[6] = 'I' (73). So c + 84 [latex]-[/latex] 73 [latex]-[/latex] 1 = c + 10, which points to \"17\".<br><br>\nstrlen(\"17\") = 2<br><br>\n<b>Answer: 2</b><br><br><a href=\"https://gateoverflow.in/118335/gate2017-2-55#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Array and Pointer",
+   "tag2_url": "https://practicepaper.in/gate-cse/array-and-pointer",
+   "ansMin": 2,
+   "ansMax": 2
+  }
+ ]
+}

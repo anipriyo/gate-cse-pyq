@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11171,
+  "quizName": "GATE CS 2017 SET 1",
+  "pageTitle": "GATE CSE 2017 SET-1",
+  "timeLimit": 0,
+  "pageNo": 3,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2017-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1117111,
+   "number": 11,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the C struct defined below:\n<pre><code>struct data {\nint marks [100] ;\nchar grade;\nint cnumber;\n};\nstruct data student;</pre></code>\n\nThe base address of student is available in register R1. The field student.grade can be\naccessed efficiently using",
+   "solution": "grade is at a fixed offset from the start of the struct (after the 100-int array, i.e. 400 bytes). Its address is R1 + 400, which is exactly <b>index (displacement) addressing</b> X(R1).<br><br>\n<b>Answer: Index addressing mode, X(R1)</b><br><br><a href=\"https://gateoverflow.in/118291/gate2017-1-11#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Addressing Modes",
+   "tag2_url": "https://practicepaper.in/gate-cse/addressing-modes",
+   "options": [
+    "Post-increment addressing mode. (R1)+",
+    " Pre-decrement addressing mode, -(R1)",
+    "Register direct addressing mode, R1",
+    "Index addressing mode, X(R1), where X is an offset represented in 2's complement 16-bit representation"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1117112,
+   "number": 12,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following intermediate program in three address code<br>\np= a -b <br>\nq= p *c <br>\np= u * v <br>\nq= p + q <br>\nWhich one of the following corresponds to a static single assignment form of the above code?",
+   "solution": "In SSA every variable is assigned exactly once, and each use refers to the latest version. Option 2: [latex]p_3=a-b[/latex], [latex]q_4=p_3c[/latex], [latex]p_4=uv[/latex], [latex]q_3=p_4+q_4[/latex] [latex]\\text{---}[/latex] all distinct names with correct uses (the numbers themselves do not matter).<br><br>\nOption 1 reassigns [latex]p_1[/latex] and [latex]q_1[/latex]; option 3 uses undefined names; option 4 uses plain p and q.<br><br>\n<b>Answer: Option 2</b><br><br><a href=\"https://gateoverflow.in/118292/gate2017-1-12#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Intermediate Code Generation",
+   "tag2_url": "https://practicepaper.in/gate-cse/intermediate-code-generation",
+   "options": [
+    "[latex]p_{1}=a-b[/latex]<br>[latex] q_{1}=p_{1}*c [/latex]<br>[latex]p_{1}=u*v [/latex]<br>[latex]q_{1}=p_{1}+q_{1}[/latex]",
+    "[latex]p_{3}=a-b [/latex]<br>[latex]q_{4}=p_{3}*c [/latex]<br>[latex]p_{4}=u*v [/latex]<br>[latex]q_{3}=p_{4}+q_{4}[/latex]",
+    "[latex]p_{1}=a-b [/latex]<br>[latex]q_{1}=p_{2}*c [/latex]<br>[latex]p_{3}=u*v [/latex]<br>[latex]q_{2}=p_{4}+q_{3}[/latex]",
+    "[latex]p_{1}=a-b [/latex]<br>[latex]q_{1}=p_{1}*c [/latex]<br>[latex]p_{2}=u*v [/latex]<br>[latex]q_{2}=p+q[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1117113,
+   "number": 13,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following C code:\n<pre><code>#include &lt;stdio.h&gt;\nint * assignval (int *x, int val) {\n      *x = val;\n      return x;\n}\nvoid main ( ) {\n    int * x= malloc (sizeof (int));\n    if (NULL == x) return;\n    x = assignval (x,0);\n    if(x) { \n    x=(int *) malloc (sizeof (int));\n    if (NULL == x) return;\n    x = assignval (x, 10);\n}\nprintf(\"%d\\n\", *x);\nfree (x);\n}</code></pre>\nThe code suffers from which one of the following problems:",
+   "solution": "The first malloc'd block (holding 0) is never freed: x is overwritten by the second malloc, so that memory can no longer be reached [latex]\\rightarrow[/latex] <b>memory leak</b>. The code compiles fine (C allows void* to int* without a cast).<br><br>\n<b>Answer: compiles successfully but execution may result in memory leak</b><br><br><a href=\"https://gateoverflow.in/118293/gate2017-1-13#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Array and Pointer",
+   "tag2_url": "https://practicepaper.in/gate-cse/array-and-pointer",
+   "options": [
+    "compiler error as the return of malloc is not typecast appropriately.",
+    "compiler error because the comparison should be made as x==NULL and not as shown.",
+    "compiles successfully but execution may result in dangling pointer.",
+    "compiles successfully but execution may result in memory leak."
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1117114,
+   "number": 14,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider a TCP client and a TCP server running on two different machines. After completing\ndata transfer, the TCP client calls close to terminate the connectional and a FIN segment is\nsent to the TCP server. Server-side TCP responds by sending an ACK which is received by\nthe client-side TCP. As per the TCP connections state diagram (RFC 793), in which state does\nthe client-side TCP connection wait for the FIN from the sever-side TCP?",
+   "solution": "Client sends FIN [latex]\\rightarrow[/latex] FIN-WAIT-1. When the ACK of its FIN arrives [latex]\\rightarrow[/latex] <b>FIN-WAIT-2</b>, where it waits for the server's FIN.<br><br>\n<b>Answer: FIN-WAIT-2</b><br><br><a href=\"https://gateoverflow.in/118194/gate2017-1-14#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Transport Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/transport-layer-protocol",
+   "options": [
+    "LAST-ACK",
+    "TIME-WAIT",
+    "FIN-WAIT-1",
+    "FIN-WAIT-2"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1117115,
+   "number": 15,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "A sender S sends a message m to receiver R, which is digitally signed by S with its\nprivate key. In this scenario, one or more of the following security violations can take place. <br><br>\nI. S can launch a birthday attack to replace m with a fraudulent message.<br>\nII. A third party attacker can launch a birthday attack to replace m with a fraudulent message  <br>  III. R can launch a birthday attack to replace m with a fraudulent message.<br><br>\nWhich of the following are possible security violations?",
+   "solution": "A birthday attack finds two messages with the same hash. Only the <b>signer S</b> can use it: S signs a harmless message and later claims the signature was for the other one with the same hash. A third party or R cannot create S's signature on a new hash.<br><br>\n<b>Answer: I only</b><br><br><a href=\"https://gateoverflow.in/118295/gate2017-1-15#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Security",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-security",
+   "options": [
+    "I and II only",
+    "I only",
+    "II only",
+    "II and III only"
+   ],
+   "correct": 1
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11162,
+  "quizName": "GATE CS 2016 SET 2",
+  "pageTitle": "GATE CSE 2016 SET-2",
+  "timeLimit": 0,
+  "pageNo": 5,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2016-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1116221,
+   "number": 21,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "B+ Trees are considered BALANCED because",
+   "solution": "In a B+ tree all leaves are always at the <b>same depth</b> (splits and merges happen at the root level), so every root-to-leaf path has the same length.<br><br>\n<b>Answer: the lengths of the paths from the root to all leaf nodes are all equal</b><br><br><a href=\"https://gateoverflow.in/39569/gate2016-2-21#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "B Plus Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/b-plus-tree",
+   "options": [
+    "the lengths of the paths from the root to all leaf nodes are all equal.",
+    "the lengths of the paths from the root to all leaf nodes differ from each other by at most 1.",
+    "the number of children of any two non-leaf sibling nodes differ by at most 1",
+    "the number of records in any two leaf nodes differ by at most 1."
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1116222,
+   "number": 22,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Suppose  a database schedule S involves transactions T1,...,Tn. Construct the precedence graph of S with vertices representing the transactions and edges representing the conflicts. If S is serializable, which one of the following orderings of the vertices of the precedence graph is guaranteed to yield a serial schedule?",
+   "solution": "Each edge [latex]T_i\\rightarrow T_j[/latex] means [latex]T_i[/latex] must come first. A serializable schedule has an acyclic precedence graph, and any <b>topological order</b> respects every edge, so it gives an equivalent serial schedule.<br><br>\n<b>Answer: Topological order</b><br><br><a href=\"https://gateoverflow.in/39550/gate2016-2-22#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Transaction",
+   "tag2_url": "https://practicepaper.in/gate-cse/transaction",
+   "options": [
+    "Topological order",
+    "Depth-first order",
+    "Breadth-first order",
+    "Ascending orderoftransactionindices"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1116223,
+   "number": 23,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Anarkali digitally signs a message and sends it to Salim. Verification of the signature by Salim requires",
+   "solution": "Anarkali signs with <b>her private key</b>, so anyone (Salim) verifies with <b>her public key</b>.<br><br>\n<b>Answer: Anarkali's public key</b><br><br><a href=\"https://gateoverflow.in/39555/gate2016-2-23#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Security",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-security",
+   "options": [
+    "Anarkali's public key",
+    "Salim's public key.",
+    "Salim's private key",
+    "Anarkali's private key"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1116224,
+   "number": 24,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "In an Ethernet local area network,which one of the following statements is TRUE?",
+   "solution": "Checking each statement:<br>- A station keeps sensing while transmitting (that is how it detects collisions) False<br>\n- The jam signal tells everyone a collision happened; padding is something else False<br>\n- After a collision the station stops transmitting False<br>\n- Exponential backoff makes stations wait random, growing times, so they are less likely to collide again True<br><br>\n<b>Answer: The exponential backoff mechanism reduces the probability of collision on retransmissions</b><br><br><a href=\"https://gateoverflow.in/39543/gate2016-2-24#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "options": [
+    "A station stops to sense the channel once it starts transmitting a frame.",
+    "The purpose of the jamming signal is to pad the frames that are smaller than the minimum framesize.",
+    "A station continues to transmit the packet even after the collision is detected.",
+    "The exponential backoff mechanism reduces the probability of collisionon\nretransmissions."
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1116225,
+   "number": 25,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Identify the correct sequence in which the following packets are transmitted on the network by a host when a browser requests a webpage from a remote server,assuming that the host has just been restarted.",
+   "solution": "After a restart, nothing is cached:<br>\n1. <b>DNS query</b> to get the server's IP<br>\n2. <b>TCP SYN</b> to open the connection<br>\n3. <b>HTTP GET</b> on that connection<br><br>\n<b>Answer: DNS query, TCP SYN, HTTP GET request</b><br><br><a href=\"https://gateoverflow.in/39572/gate2016-2-25#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Application Layer Protocols",
+   "tag2_url": "https://practicepaper.in/gate-cse/application-layer-protocols",
+   "options": [
+    "HTTP GET request, DNS query, TCP SYN",
+    "DNS query, HTTP GET request, TCP SYN",
+    "DNS query,TCP SYN, HTTP GET request",
+    "TCP SYN, DNS query, HTTP GET request"
+   ],
+   "correct": 2
+  }
+ ]
+}

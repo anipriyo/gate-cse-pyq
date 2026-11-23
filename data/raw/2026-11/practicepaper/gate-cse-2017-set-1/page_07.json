@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11171,
+  "quizName": "GATE CS 2017 SET 1",
+  "pageTitle": "GATE CSE 2017 SET-1",
+  "timeLimit": 0,
+  "pageNo": 7,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2017-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1117131,
+   "number": 31,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let A be nxn real valued square symmetric matrix of rank 2 with [latex]\\sum_{i=1}^{n}\\sum_{j=1}^{n}A^{2}_{ij}=50[/latex]. Consider\nthe following statements. <br> <br>(I) One eigen value must be in [-5, 5]   <br>      (II) The eigen value with the largest magnitude must be strictly greater than 5. <br> <br>\nWhich of the above statements about eigen values of A is/are necessarily CORRECT?",
+   "solution": "A is symmetric with rank 2, so it has two non-zero eigenvalues [latex]\\lambda_1,\\lambda_2[/latex] (the rest are 0), and [latex]\\sum A_{ij}^2=\\lambda_1^2+\\lambda_2^2=50[/latex].<br><br>\n- (I): [latex]\\lambda_1^2+\\lambda_2^2=50[/latex] forces one of them to have [latex]|\\lambda|\\le5[/latex] (and the zero eigenvalues are in [[latex]-[/latex]5, 5] anyway) True<br>\n- (II): [latex]\\lambda_1=\\lambda_2=5[/latex] gives 50, and the largest is not strictly greater than 5 False<br><br>\n<b>Answer: (I) only</b><br><br><a href=\"https://gateoverflow.in/118312/gate2017-1-31#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "Both (I) and (II)",
+    "(I) only",
+    "(II) only",
+    "Neither (I) nor (II)"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1117132,
+   "number": 32,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A computer network uses polynomials over GF(2) for error checking with 8 bits as\ninformation bits and uses [latex]x^{3}+x+1[/latex] as the generator polynomial to generate the check bits. In\nthis network, the message 01011011 is transmitted as",
+   "solution": "Generator [latex]x^3+x+1[/latex] = 1011. Append 3 zeros to 01011011 and divide: 01011011000 [latex]\\div[/latex] 1011 leaves remainder <b>101</b>.<br><br>\nTransmitted = 01011011 101<br><br>\n<b>Answer: 01011011101</b><br><br><a href=\"https://gateoverflow.in/118313/gate2017-1-32#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "options": [
+    "01011011010",
+    "01011011011",
+    "01011011101",
+    "01011011100"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1117133,
+   "number": 33,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a combination of T and D flip-flops connected as shown below. The output of the D flip-flop is connected to the input of the T flip-flop and the output of the T flip-flop is connected to the input of the D flip-flop <br><img src=\"/wp-content/uploads/GATE/CS/20171/q26.jpg\"/><br> Initailly, both [latex]Q_{0}[/latex] and [latex]Q_{1}[/latex]  are set to 1 (before the 1st clock cycle). The outputs",
+   "solution": "T input = [latex]Q_0[/latex], D input = [latex]Q_1[/latex]. So [latex]Q_1^+=Q_1\\oplus Q_0[/latex] and [latex]Q_0^+=Q_1[/latex]. Start [latex]Q_1Q_0[/latex] = 11:<br>\n- cycle 1: 01<br>\n- cycle 2: 10<br>\n- cycle 3: <b>11</b><br>\n- cycle 4: <b>01</b><br><br>\n<b>Answer: 11 after the 3rd cycle and 01 after the 4th cycle</b><br><br><a href=\"https://gateoverflow.in/118315/gate2017-1-33#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Sequential Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/sequential-circuit",
+   "options": [
+    "[latex]Q_{1}Q_{0}[/latex]  after 3rd cycle are 11 and after the 4th cycle are 00 respectively",
+    "[latex]Q_{1}Q_{0}[/latex]  after 3rd cycle are 11 and after the 4th cycle are 01 respectively",
+    "[latex]Q_{1}Q_{0}[/latex]  after 3rd cycle are 00 and after the 4th cycle are 11 respectively",
+    "[latex]Q_{1}Q_{0}[/latex]  after 3rd cycle are 01 and after the 4th cycle are 01 respectively"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1117134,
+   "number": 34,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "If G is grammar with productions <br>\n[latex]S\\rightarrow SaS|aSb|bSa|SS|\\epsilon[/latex]<br>\nwhere S is the start variable, then which one of the following is not generated by G?",
+   "solution": "Each rule adds a's and b's in a way that never gives more b's than a's: aSb and bSa add one of each, SaS adds an extra a, SS and [latex]\\epsilon[/latex] add nothing. So every generated string has [latex]\\#a\\ge\\#b[/latex].<br><br>\nbabba has 2 a's and 3 b's [latex]\\rightarrow[/latex] cannot be generated.<br><br>\n<b>Answer: babba</b><br><br><a href=\"https://gateoverflow.in/118316/gate2017-1-34#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Grammar",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-grammar",
+   "options": [
+    "abab",
+    "aaab",
+    "abbaa",
+    "babba"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1117135,
+   "number": 35,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following two functions.\n <br><img src=\"/wp-content/uploads/GATE/CS/20171/q52.jpg\"/>\nThe output printed when fun1(5) is called is",
+   "solution": "Trace (each function prints n before and after its call; fun2 calls fun1(++n), so its second print shows n + 1):<br>\nfun1(5): 5 [latex]\\rightarrow[/latex] fun2(3): 3 [latex]\\rightarrow[/latex] fun1(4): 4 [latex]\\rightarrow[/latex] fun2(2): 2 [latex]\\rightarrow[/latex] fun1(3): 3 [latex]\\rightarrow[/latex] fun2(1): 1 [latex]\\rightarrow[/latex] fun1(2): 2 [latex]\\rightarrow[/latex] fun2(0) returns.<br>\nUnwinding: 2, 2, 3, 3, 4, 4, 5.<br><br>\nOutput: 5 3 4 2 3 1 2 2 2 3 3 4 4 5<br><br>\n<b>Answer: 53423122233445</b><br><br><a href=\"https://gateoverflow.in/118317/gate2017-1-35#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "options": [
+    "[latex]53423122233445[/latex]",
+    "[latex]53423120112233[/latex]",
+    "[latex]53423122132435[/latex]",
+    "[latex]53423120213243[/latex]"
+   ],
+   "correct": 0
+  }
+ ]
+}

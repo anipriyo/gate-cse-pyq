@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "quizId": 11143,
+  "quizName": "GATE CS 2014 SET 3",
+  "pageTitle": "GATE CSE 2014 SET-3",
+  "timeLimit": 0,
+  "pageNo": 9,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-3",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114341,
+   "number": 41,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the pseudocode given below. The function Dosomething () takes as argument a pointer to the root of an arbitrary tree represented by the leftMostChild-rightSibling representation. Each node of the tree is of type treeNode.\n<pre><code>  typedef struct treeNode*  treeptr;\nstruct treeNode\n{\n        treeptr leftMostChild, rightSibling;\n};\nint DoSomething (treeptr tree)\n{\n     int value=0;\n     if (tree != NULL) {\n          if (tree->leftMostChild == NULL)\n               value = 1;\n          else\n               value = DoSomething(tree->leftMostChild);\n         value = value + DoSomething(tree->rightSibling);\n     }\n     return(value);\n}</code></pre>\nWhen the pointer to the root of a tree is passed as the argument to DoSomething, the value returned by the function corresponds to the",
+   "solution": "For each node, a node with no child contributes 1; otherwise its count comes from its children. Then the count for the right siblings is added.<br><br>\nSo only nodes without children (leaves) are counted.<br><br>\n<b>Answer: number of leaf nodes in the tree</b><br><br><a href=\"https://gateoverflow.in/2075/gate2014-3-41#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-tree",
+   "options": [
+    "number of internal nodes in the tree",
+    "height of the tree",
+    "number of nodes without a right sibling in the tree.",
+    "number of leaf nodes in the tree."
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1114342,
+   "number": 42,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the C function given below. Assume that the array listA contains n (> 0) elements,\nsorted in ascending order.\n<pre><code>int ProcessArray(int *listA, int x, int n)\n{\n   int i, j, k;\n   i = 0;\n   j = n-1;\n   do {\n          k = (i+j)/2;\n          if (x <= listA[k])\n               j = k-1;\n          if (listA[k] <= x)\n              i = k+1;\n       }while (i <= j);\nif (listA[k] == x)\n     return(k);\nelse\n    return -1;\n} </code></pre>\nWhich one of the following statements about the function ProcessArray is CORRECT?",
+   "solution": "k is the middle of [i, j]. If x [latex]\\lt[/latex] A[k] search the left half; if x [latex]\\gt[/latex] A[k] search the right half; if equal both updates make i [latex]\\gt[/latex] j and the loop stops with A[k] = x.<br><br>\nThis is binary search: it returns k when found and [latex]-[/latex]1 otherwise, and always terminates.<br><br>\n<b>Answer: It is an implementation of binary search</b><br><br><a href=\"https://gateoverflow.in/2076/gate2014-3-42#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Array and Pointer",
+   "tag2_url": "https://practicepaper.in/gate-cse/array-and-pointer",
+   "options": [
+    "It will run into an infinite loop when x is not in listA",
+    "It is an implementation of binary search",
+    "It will always find the maximum element in listA.",
+    "It will return ? 1 even when x is present in listA."
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1114343,
+   "number": 43,
+   "type": "NAT",
+   "marks": 2,
+   "text": "An instruction pipeline has five stages, namely, instruction fetch (IF), instruction decode and register fetch (ID/RF), instruction execution (Ex), memory access (MEM), and register write back (WB) with stage latencies 1 ns, 2.2 ns, 2 ns, 1 ns, and 0.75 ns, respectively (ns stands for nanoseconds). To gain in terms of frequency, the designers have decided to split the ID/RF stage into three stages (ID, RF1, RF2) each of latency 2.2/3 ns. Also, the Ex stage is split into two stages (Ex1, Ex2) each of latency 1 ns. The new design has a total of eight pipeline stages. A program has 20% branch instructions which execute in the Ex stage and produce the next instruction pointer at the end of the Ex stage in the old design and at the end of the Ex2 stage in the new design. The IF stage stalls after fetching a branch instruction until the next instruction pointer is computed. All instructions other than the branch instruction have an average CPI of one in both the designs. The execution times of this program on the old and the new design are P and Q nanoseconds, respectively. The value of P/Q is __________",
+   "solution": "<b>Old design:</b> clock = 2.2 ns. Branch resolved at end of stage 3 [latex]\\rightarrow[/latex] 2 stall cycles.<br>\nCPI = 0.8 [latex]\\times[/latex] 1 + 0.2 [latex]\\times[/latex] 3 = 1.4 [latex]\\rightarrow[/latex] P = 1.4 [latex]\\times[/latex] 2.2 = 3.08 ns per instruction<br><br>\n<b>New design:</b> clock = 1 ns. Branch resolved at end of Ex2 = stage 6 [latex]\\rightarrow[/latex] 5 stall cycles.<br>\nCPI = 0.8 [latex]\\times[/latex] 1 + 0.2 [latex]\\times[/latex] 6 = 2 [latex]\\rightarrow[/latex] Q = 2 ns per instruction<br><br>\nP/Q = 3.08 / 2 = 1.54<br><br>\n<b>Answer: 1.54</b><br><br><a href=\"https://gateoverflow.in/2077/gate2014-3-43#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Pipeline Processor",
+   "tag2_url": "https://practicepaper.in/gate-cse/pipeline-processor",
+   "ansMin": 1.5,
+   "ansMax": 1.6
+  },
+  {
+   "id": 1114344,
+   "number": 44,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The memory access time is 1 nanosecond for a read operation with a hit in cache, 5\nnanoseconds for a read operation with a miss in cache, 2 nanoseconds for a write operation\nwith a hit in cache and 10 nanoseconds for a write operation with a miss in cache. Execution\nof a sequence of instructions involves 100 instruction fetch operations, 60 memory operand\nread operations and 40 memory operand write operations. The cache hit-ratio is 0.9. The\naverage memory access time (in nanoseconds) in executing the sequence of instructions is\n__________.",
+   "solution": "Reads = 100 fetches + 60 operands = 160, writes = 40.<br><br>\n- Avg read = 0.9 [latex]\\times[/latex] 1 + 0.1 [latex]\\times[/latex] 5 = 1.4 ns<br>\n- Avg write = 0.9 [latex]\\times[/latex] 2 + 0.1 [latex]\\times[/latex] 10 = 2.8 ns<br><br>\nAverage = [latex]\\frac{160\\times1.4+40\\times2.8}{200}=\\frac{224+112}{200}=1.68[/latex]<br><br>\n<b>Answer: 1.68</b><br><br><a href=\"https://gateoverflow.in/2078/gate2014-3-44#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "ansMin": 1.68,
+   "ansMax": 1.68
+  },
+  {
+   "id": 1114345,
+   "number": 45,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "<img src=\"/wp-content/uploads/GATE/CS/20143/q45.jpg\"/><br> The above synchronous sequential circuit built using JK flip-flops is initialized with\n[latex]Q_{2}Q_{1}Q_{0}[/latex] = 000. The state sequence for this circuit for the next 3 clock cycles is ",
+   "solution": "From the circuit: [latex]J_2=\\bar Q_1, K_2=Q_0[/latex]; [latex]J_1=Q_2, K_1=\\bar Q_2[/latex]; [latex]J_0=Q_1, K_0=\\bar Q_0[/latex].<br><br>\n- 000: J2K2 = 10 (set), J1K1 = 01 (reset), J0K0 = 01 (reset) [latex]\\rightarrow[/latex] 100<br>\n- 100: J2K2 = 10, J1K1 = 10 (set), J0K0 = 01 [latex]\\rightarrow[/latex] 110<br>\n- 110: J2K2 = 00 (hold 1), J1K1 = 10, J0K0 = 11 (toggle) [latex]\\rightarrow[/latex] 111<br><br>\n<b>Answer: 100, 110, 111</b><br><br><a href=\"https://gateoverflow.in/2079/gate2014-3-45#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Sequential Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/sequential-circuit",
+   "options": [
+    "001, 010, 011",
+    "111, 110, 101",
+    "100, 110, 111",
+    "100, 011, 001"
+   ],
+   "correct": 2
+  }
+ ]
+}

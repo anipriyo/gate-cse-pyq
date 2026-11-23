@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11153,
+  "quizName": "GATE CS 2015 SET 3",
+  "pageTitle": "GATE CSE 2015 SET-3",
+  "timeLimit": 0,
+  "pageNo": 12,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-3",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115356,
+   "number": 56,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "If ROAD is written as URDG, then SWANshould be written as:",
+   "solution": "Each letter moves 3 places forward: R[latex]\\rightarrow[/latex]U, O[latex]\\rightarrow[/latex]R, A[latex]\\rightarrow[/latex]D, D[latex]\\rightarrow[/latex]G.<br><br>\nS[latex]\\rightarrow[/latex]V, W[latex]\\rightarrow[/latex]Z, A[latex]\\rightarrow[/latex]D, N[latex]\\rightarrow[/latex]Q = VZDQ<br><br>\n<b>Answer: VZDQ</b><br><br><a href=\"https://gateoverflow.in/8298/gate-cse-2015-set-3-question-ga-1#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "VXDQ",
+    "VZDQ",
+    "VZDP",
+    "UXDQ"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1115357,
+   "number": 57,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The Tamil version of __________ John Abraham-starrer Madras Cafe __________ cleared by the Censor Board with no cuts last week, but the film's distributor _______ no takers among the exhibitors for a release in Tamilnadu _______ this Friday.",
+   "solution": "\"<b>the</b> John Abraham-starrer\", \"<b>was</b> cleared\" (passive, singular), \"distributor <b>found</b>\" (past), release \"<b>on</b> this Friday\".<br><br>\n<b>Answer: the, was, found, on</b><br><br><a href=\"https://gateoverflow.in/8300/gate-cse-2015-set-3-question-ga-2#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "Mr., was, found, on",
+    "a, was, found, at",
+    "the, was, found, on",
+    "a, being, find at"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115358,
+   "number": 58,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Extreme focus on syllabus and studying for tests has become such a dominant concern of Indian student that they close their minds to anything ___________ to the requirements of the exam.",
+   "solution": "Extraneous = irrelevant, unrelated. Students ignore anything not related to the exam.<br><br>\n<b>Answer: extraneous</b><br><br><a href=\"https://gateoverflow.in/8301/gate-cse-2015-set-3-question-ga-3#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "related",
+    "extraneous",
+    "outside",
+    "useful"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1115359,
+   "number": 59,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Select the pair of best expresses a relationship similar to that expressed in the pair:\n<br><br>\nChildren : Pediatrician",
+   "solution": "A paediatrician treats a group of people (children). Similarly, a gynaecologist treats a group of people (females). The others match an organ with its specialist.<br><br>\n<b>Answer: Females : Gynaecologist</b><br><br><a href=\"https://gateoverflow.in/8302/gate-cse-2015-set-3-question-ga-4#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "Adult : Orthopaedist",
+    "Females : Gynaecologist",
+    "Kidney : Nephrologist",
+    "Skin : Dermatologist"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1115360,
+   "number": 60,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "A function f(x) is linear and has a value of 29 at x= -2 and 39 at x=3. Find its value at x=5.",
+   "solution": "Slope = [latex]\\frac{39-29}{3-(-2)}=2[/latex]<br><br>\nf(5) = 39 + 2 [latex]\\times[/latex] (5 [latex]-[/latex] 3) = 43<br><br>\n<b>Answer: 43</b><br><br><a href=\"https://gateoverflow.in/8303/gate-cse-2015-set-3-question-ga-5#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "59",
+    "45",
+    "43",
+    "35"
+   ],
+   "correct": 2
+  }
+ ]
+}

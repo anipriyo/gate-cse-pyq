@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "quizId": 11143,
+  "quizName": "GATE CS 2014 SET 3",
+  "pageTitle": "GATE CSE 2014 SET-3",
+  "timeLimit": 0,
+  "pageNo": 8,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-3",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114336,
+   "number": 36,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following languages over the alphabet [latex]\\sum =\\{0,1,c\\}:  [/latex]<br> [latex]L_{1}=\\{0^{n}|1^{n}|n\\geq 0\\}[/latex]<br> [latex]L_{2}=\\{wcw^{r}|w\\in \\{0,1\\}^{*}\\}[/latex] <br> [latex]  L_{3}=\\{ww^{r}|w\\in \\{0,1\\}^{*}\\}[/latex] <br>Here [latex]w^{r}[/latex] is the reverse of the string w. Which of these languages are deterministic Contextfree languages?",
+   "solution": "Checking each statement:<br>- [latex]L_1=\\{0^n1^n\\}[/latex]: push 0s, pop on 1s [latex]\\rightarrow[/latex] DCFL.<br>\n- [latex]L_2=\\{wcw^r\\}[/latex]: c marks the middle, so the PDA knows when to start popping [latex]\\rightarrow[/latex] DCFL.<br>\n- [latex]L_3=\\{ww^r\\}[/latex]: the middle must be guessed [latex]\\rightarrow[/latex] CFL but not DCFL.<br><br>\n<b>Answer: Only L1 and L2</b><br><br><a href=\"https://gateoverflow.in/2070/gate2014-3-36#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-language",
+   "options": [
+    "None of the languages",
+    "Only L1",
+    "Only L1 and L2",
+    "All the three languages"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1114337,
+   "number": 37,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Suppose you want to move from 0 to 100 on the number line. In each step, you either move right by a unit distance or you take a shortcut. A shortcut is simply a pre-specified pair of integers i,j with [latex]i \\lt j[/latex]. Given a shortcut i, j if you are at position i on the number line, you may directly move to j. Suppose T(k) denotes the smallest number of steps needed to move from k to 100. suppose further that there is at most 1 shortcut involving any number, and in particular from 9 there is a shortcut to 15. Let y and z be such that T(9) = 1 + min(T(y), T(z)). Then the value of the product yz is_______.",
+   "solution": "From 9 you can either step right to 10 or take the shortcut to 15.<br><br>\n[latex]T(9)=1+\\min(T(10),T(15))[/latex] [latex]\\rightarrow[/latex] y, z = 10, 15<br><br>\nyz = 150<br><br>\n<b>Answer: 150</b><br><br><a href=\"https://gateoverflow.in/2071/gate2014-3-37#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Recurrence Relation",
+   "tag2_url": "https://practicepaper.in/gate-cse/recurrence-relation",
+   "ansMin": 150,
+   "ansMax": 150
+  },
+  {
+   "id": 1114338,
+   "number": 38,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the decision problem 2CNFSAT defined as follows: <br>\n{ [latex]\\phi[/latex] | [latex]\\phi[/latex]  is a satisfiable propositional formula in CNF with at most two literal per clause} <br>\nFor example, [latex]\\phi =(x_{1} \\vee x_{2}) \\wedge (x_{1}  \\vee \\bar{x_{3}}) \\wedge (x_{2}  \\vee x_{4})[/latex] is a Boolean formula and it is in 2CNFSAT. <br> The decision problem 2CNFSAT is",
+   "solution": "Each clause [latex](a\\vee b)[/latex] gives implications [latex]\\neg a\\rightarrow b[/latex] and [latex]\\neg b\\rightarrow a[/latex]. The formula is unsatisfiable iff some x reaches [latex]\\neg x[/latex] and [latex]\\neg x[/latex] reaches x in this implication graph.<br><br>\nSo 2-SAT is solved in polynomial (linear) time by graph reachability.<br><br>\n<b>Answer: solvable in polynomial time by reduction to directed graph reachability</b><br><br><a href=\"https://gateoverflow.in/2072/gate2014-3-38#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "P-NP Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/p-np-theory",
+   "options": [
+    "NP-Complete",
+    "solvable in polynomial time by reduction to directed graph reachability.",
+    "solvable in constant time since any input instance is satisfiable",
+    "NP-hard, but not NP-complete"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1114339,
+   "number": 39,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Suppose we have a balanced binary search tree T holding n numbers. We are given two numbers L and H and wish to sum up all the numbers in T that lie between L and H. Suppose there are m such numbers in T. If the tightest upper bound on the time to compute the sum is [latex]O(n^{a}log^{b}n+m^{c}log^{d}n)[/latex], the value of a + 10b + 100c + 1000d is _______.",
+   "solution": "Find L in the balanced BST in [latex]O(\\log n)[/latex], then walk in-order through the m values up to H in O(m).<br><br>\nTime = [latex]O(\\log n+m)[/latex] [latex]\\rightarrow[/latex] a = 0, b = 1, c = 1, d = 0<br><br>\na + 10b + 100c + 1000d = 0 + 10 + 100 + 0 = 110<br><br>\n<b>Answer: 110</b><br><br><a href=\"https://gateoverflow.in/2073/gate2014-3-39#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "AVL Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/avl-tree",
+   "ansMin": 110,
+   "ansMax": 110
+  },
+  {
+   "id": 1114340,
+   "number": 40,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a hash table with 100 slots. Collisions are resolved using chaining. Assuming\nsimple uniform hashing, what is the probability that the first 3 slots are unfilled after the first 3 insertions?",
+   "solution": "With chaining, each key independently goes to any of the 100 slots. The chance it avoids the first 3 slots is 97/100.<br><br>\nFor 3 insertions: [latex]\\frac{97\\times97\\times97}{100^3}[/latex]<br><br>\n<b>Answer: (97 [latex]\\times[/latex] 97 [latex]\\times[/latex] 97) / [latex]100^3[/latex]</b><br><br><a href=\"https://gateoverflow.in/2074/gate2014-3-40#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Hashing",
+   "tag2_url": "https://practicepaper.in/gate-cse/hashing",
+   "options": [
+    "(97 x 97 x 97)/[latex]100^{3}[/latex]",
+    "(99 x 98 x 97)/[latex]100^{3}[/latex]",
+    "(97 x 96 x 95)/[latex]100^{3}[/latex]",
+    "(97 x 96 x 95)/(3! x [latex]100^{3}[/latex])"
+   ],
+   "correct": 0
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11153,
+  "quizName": "GATE CS 2015 SET 3",
+  "pageTitle": "GATE CSE 2015 SET-3",
+  "timeLimit": 0,
+  "pageNo": 1,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-3",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115301,
+   "number": 1,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following C program segment. <pre><code> #include &lt;stdio.h&gt;\nint main()\n{\nchar s1[7] = \"1234\", *p;\np = s1 + 2;\n*p = '0';\nprintf(\"%s\", s1);\n} </code></pre>  What will be printed by the program?",
+   "solution": "p = s1 + 2 points to s1[2] (the character '3'). *p = '0' changes it to '0'.<br><br>\ns1 becomes \"1204\" (the string still ends at the original '\\0').<br><br>\n<b>Answer: 1204</b><br><br><a href=\"https://gateoverflow.in/8401/gate2015-3-1#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Array and Pointer",
+   "tag2_url": "https://practicepaper.in/gate-cse/array-and-pointer",
+   "options": [
+    "12",
+    "120400",
+    "1204",
+    "1034"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115302,
+   "number": 2,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Suppose U is the power set of the set S={1,2,3,4,5,6}. For any T[latex]\\in[/latex]U, let |T| denote the number of elements in T and T' denote the complement of T. For any T,R[latex]\\in[/latex]U, let T\\R be the set of all elements in T which are not in R. Which one of the following is true?",
+   "solution": "[latex]X\\setminus Y=X\\cap Y'[/latex] and [latex]Y'\\setminus X'=Y'\\cap X[/latex]. These are the same set for every X, Y.<br><br>\n- Option 1 fails for X = {1}.<br>\n- Option 2: two 5-element subsets of a 6-element set must overlap.<br>\n- Option 3 is not true for all X, Y.<br><br>\n<b>Answer: [latex]\\forall X\\,\\forall Y\\,(X\\setminus Y=Y'\\setminus X')[/latex]</b><br><br><a href=\"https://gateoverflow.in/8426/gate2015-3-2#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Set Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/set-theory",
+   "options": [
+    "[latex]\\forall X\\in U \\; (|X|=|X'|)[/latex]",
+    "[latex]\\exists X\\in U \\; \\exists Y\\in U \\; [/latex] [latex](|X|=5,\\; |Y|=5 \\; and \\;  X \\cap  Y=\\phi )[/latex]",
+    "[latex]\\forall X\\in U \\; \\forall Y\\in U \\;[/latex] [latex] (|X|=2,\\; |Y|=3 \\; and \\; X \\setminus  Y=\\phi )[/latex]",
+    "[latex]\\forall X \\in U \\; \\forall Y\\in U\\; (X \\setminus  Y=Y' \\setminus  X')[/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1115303,
+   "number": 3,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the relation X(P,Q,R,S,T,U) with the following set of functional  dependencies <br> F= {{P,R}[latex]\\rightarrow[/latex]{S,T}, {P,S,U}[latex]\\rightarrow[/latex]{Q,R} } <br>\nWhich of the following is the trivial functional dependency in [latex]F^{+}[/latex], where [latex]F^{+}[/latex] is closure of F ?",
+   "solution": "A dependency is trivial when its right side is a subset of its left side.<br><br>\n{S} [latex]\\subseteq[/latex] {P, S}, so {P, S} [latex]\\rightarrow[/latex] {S} is trivial. In option 2, T is not in {P, R}.<br><br>\n<b>Answer: {P, S} [latex]\\rightarrow[/latex] {S}</b><br><br><a href=\"https://gateoverflow.in/8420/gate2015-3-3#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Normal Form",
+   "tag2_url": "https://practicepaper.in/gate-cse/normal-form",
+   "options": [
+    "{P,R}[latex]\\rightarrow[/latex]{S,T}",
+    "{P,R}[latex]\\rightarrow[/latex]{R,T}",
+    "{P,S}[latex]\\rightarrow[/latex]{S}",
+    "{P,S,U}[latex]\\rightarrow[/latex]{Q}"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115304,
+   "number": 4,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The maximum number of processes that can be in Ready state for a computer system with n CPUs is",
+   "solution": "The number of CPUs limits how many processes can be <i>running</i>. Any number of processes can wait in the ready queue.<br><br>\n<b>Answer: Independent of n</b><br><br><a href=\"https://gateoverflow.in/8390/gate2015-3-4#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Process",
+   "tag2_url": "https://practicepaper.in/gate-cse/process",
+   "options": [
+    "n",
+    "[latex]n^{2}[/latex]",
+    "[latex]2^{n}[/latex]",
+    "Independent of  n"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1115305,
+   "number": 5,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Among simple LR (SLR) , canonical LR, and look-ahead LR (LALR), which of the following pairs identify the method that is very easy to implement and the method that is the most powerful , in that order?",
+   "solution": "SLR uses LR(0) items with FOLLOW sets, so it is the simplest. Canonical LR(1) has the most states and recognises the largest class of grammars (most powerful). LALR lies in between.<br><br>\n<b>Answer: SLR, canonical LR</b><br><br><a href=\"https://gateoverflow.in/8413/gate2015-3-5#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Parsing",
+   "tag2_url": "https://practicepaper.in/gate-cse/parsing",
+   "options": [
+    "SLR, LALR",
+    "Canonical LR, LALR",
+    "SLR, canonical LR",
+    "LALR, canonical LR"
+   ],
+   "correct": 2
+  }
+ ]
+}

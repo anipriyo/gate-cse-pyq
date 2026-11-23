@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11172,
+  "quizName": "GATE CS 2017 SET 2",
+  "pageTitle": "GATE CSE 2017 SET-2",
+  "timeLimit": 0,
+  "pageNo": 7,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2017-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1117231,
+   "number": 31,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "For any discrete random variable X, with probability mass function <br>[latex]P(X=j)=p_{j}, p_{j}\\geq 0, j \\in \\{0,....N\\}[/latex] and [latex] \\sum_{j=0}^{N}p_{j}=1[/latex], define the polynomial function [latex]g_{x}(z)=\\sum_{j=0}^{N}p_{j}z^{j}[/latex]. For a certain discrete random variable Y, there exists a scalar [latex]\\beta \\in [/latex][0,1] such that [latex]g_{Y}(z)=(1-\\beta +\\beta  z)^{N}[/latex]. The expectation of Y is",
+   "solution": "For a pgf, [latex]E[Y]=g_Y'(1)[/latex]:<br>\n[latex]g_Y'(z)=N\\beta(1-\\beta+\\beta z)^{N-1}\\Rightarrow g_Y'(1)=N\\beta[/latex]<br><br>\n(Y is Binomial(N, [latex]\\beta[/latex]).)<br><br>\n<b>Answer: [latex]N\\beta[/latex]</b><br><br><a href=\"https://gateoverflow.in/118373/gate2017-2-31#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "options": [
+    "[latex]N\\beta (1-\\beta )[/latex]",
+    "[latex]N\\beta[/latex]",
+    "[latex]N(1-\\beta )[/latex]",
+    "Not expressible in terms of N and [latex]\\beta[/latex] alone"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1117232,
+   "number": 32,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following expression grammar G:<br>\nE[latex]\\rightarrow[/latex]E-T|T <br>\nT[latex]\\rightarrow[/latex]T+F|F <br>\nF[latex]\\rightarrow[/latex](E)|id <br>\nWhich of the following grammars is not left recursive, but is equivalent to G?",
+   "solution": "Remove left recursion with the standard rule [latex]A\\rightarrow A\\alpha\\mid\\beta\\Rightarrow A\\rightarrow\\beta A',\\ A'\\rightarrow\\alpha A'\\mid\\epsilon[/latex]:<br>\n- [latex]E\\rightarrow E-T\\mid T[/latex] becomes [latex]E\\rightarrow TX,\\ X\\rightarrow-TX\\mid\\epsilon[/latex]<br>\n- [latex]T\\rightarrow T+F\\mid F[/latex] becomes [latex]T\\rightarrow FY,\\ Y\\rightarrow+FY\\mid\\epsilon[/latex]<br><br>\nOption 1 is still left recursive, option 2 keeps [latex]T\\rightarrow T+F[/latex] and loses the minus, option 4 changes the language.<br><br>\n<b>Answer: Option 3</b><br><br><a href=\"https://gateoverflow.in/118374/gate2017-2-32#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Grammar",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-grammar",
+   "options": [
+    "E[latex]\\rightarrow[/latex]E-T|T<br>\nT[latex]\\rightarrow[/latex]T+F|F <br>\nF[latex]\\rightarrow[/latex](E)|id",
+    "E[latex]\\rightarrow[/latex]TE' <br>\nE'[latex]\\rightarrow[/latex]TE'|[latex]\\in[/latex]<br>\nT[latex]\\rightarrow[/latex]T+F|F <br>\nF[latex]\\rightarrow[/latex](E)|id <br>",
+    "E[latex]\\rightarrow[/latex]TX <br>\nX[latex]\\rightarrow[/latex]-TX|[latex]\\in[/latex]<br>\nT[latex]\\rightarrow[/latex]FY <br>\nY[latex]\\rightarrow[/latex]+FY|[latex]\\in[/latex]<br>\nF[latex]\\rightarrow[/latex](E)|id",
+    "E[latex]\\rightarrow[/latex]TX|(TX)<br>\nX[latex]\\rightarrow[/latex] -TX|+TX|[latex]\\in[/latex]<br>\nT [latex]\\rightarrow[/latex]id"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1117233,
+   "number": 33,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A system shares 9 tape drives. The current allocation and maximum requirement of tape\ndrives for three processes are shown below: <br><img src=\"/wp-content/uploads/GATE/CS/20172/q27.jpg\"/><br> Which of the following best describes current state of the system ?",
+   "solution": "Allocated = 3 + 1 + 3 = 7, so 2 drives are free. Remaining needs: P1 4, P2 5, P3 2.<br>\nP3 can finish (needs 2) [latex]\\rightarrow[/latex] free 5 [latex]\\rightarrow[/latex] P1 can finish [latex]\\rightarrow[/latex] free 8 [latex]\\rightarrow[/latex] P2 can finish. A safe sequence exists, and no process is stuck right now.<br><br>\n<b>Answer: Safe, Not Deadlocked</b><br><br><a href=\"https://gateoverflow.in/118375/gate2017-2-33#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Deadlock",
+   "tag2_url": "https://practicepaper.in/gate-cse/deadlock",
+   "options": [
+    "Safe, Deadlocked",
+    "Safe, Not Deadlocked",
+    "Not Safe, Deadlocked",
+    "Not Safe, Not deadlocked"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1117234,
+   "number": 34,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a binary code that consists of only four valid code words as given below:<br>\n00000,01011,10101,11110<br>\nLet the minimum Hamming distance of the code be p and the maximum number of erroneous\nbits that can be corrected by the code be q. Then the values of p and q are",
+   "solution": "Pairwise distances: 00000-01011 = 3, 00000-10101 = 3, 00000-11110 = 4, 01011-10101 = 4, 01011-11110 = 3, 10101-11110 = 3.<br><br>\nMinimum p = 3. It can correct [latex]\\lfloor(3-1)/2\\rfloor=1[/latex] error.<br><br>\n<b>Answer: p = 3 and q = 1</b><br><br><a href=\"https://gateoverflow.in/118376/gate2017-2-34#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "options": [
+    "p = 3 and q = 1",
+    "p = 3 and q = 2",
+    "p = 4 and q = 2",
+    "p = 4 and q = 1"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1117235,
+   "number": 35,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider two hosts X and Y, connected by a single direct link of rate [latex]10^{6}[/latex] bits/sec . The\ndistance between the two hosts is 10,000 km and the propagation speed along the link is\n2x[latex]10^{8}[/latex] m/sec . Host X sends a file of 50,000 bytes as one large message to host Y\ncontinuously. Let the transmission and propagation delays be p milliseconds and q\nmilliseconds, respectively . Then the values of p and q are",
+   "solution": "Checking each statement:<br>- Transmission: [latex]\\frac{50000\\times8}{10^6}=0.4[/latex] s = 400 ms<br>\n- Propagation: [latex]\\frac{10^7}{2\\times10^8}=0.05[/latex] s = 50 ms<br><br>\n<b>Answer: p = 400 and q = 50</b><br><br><a href=\"https://gateoverflow.in/118537/gate2017-2-35#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "options": [
+    "p = 50 and q = 100",
+    "p = 50 and q = 400",
+    "p = 100 and q = 50",
+    "p = 400 and q = 50"
+   ],
+   "correct": 3
+  }
+ ]
+}

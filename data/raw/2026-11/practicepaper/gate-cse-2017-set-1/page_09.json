@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "quizId": 11171,
+  "quizName": "GATE CS 2017 SET 1",
+  "pageTitle": "GATE CSE 2017 SET-1",
+  "timeLimit": 0,
+  "pageNo": 9,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2017-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1117141,
+   "number": 41,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a database that has the relation schemas EMP(EmpId, EmpName, DepId) and\n DEPT(DeptName, DeptId). Note that the DeptId can be permitted to be NULL in the relation\nEMP. Consider the following queries on the database expressed in tuple relational calculus.\n<br><img src=\"/wp-content/uploads/GATE/CS/20171/q35.jpg\"/><br>\nWhich of the above queries are safe?",
+   "solution": "A tuple calculus query is <b>safe</b> if every result value comes from relations in the database. In all three queries, t takes its EmpName from some u in EMP, so the result is finite and drawn from the database in every case. The DEPT conditions only filter.<br><br>\n<b>Answer: (I), (II) and (III)</b><br><br><a href=\"https://gateoverflow.in/118324/gate2017-1-41#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Tuple Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/tuple-calculus",
+   "options": [
+    "(I) and (II) only",
+    "(I) and (III) only",
+    "(II) and (III) only",
+    "(I), (II) and (III)"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1117142,
+   "number": 42,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "In a database system, unique time stamps are assigned to each transaction using Lamport's\nlogical clock . Let TS([latex]T_{1}[/latex]) and TS([latex]T_{2}[/latex]) be the timestamps of transactions [latex]T_{1}[/latex] and [latex]T_{2}[/latex] respectively. Besides, [latex]T_{1}[/latex] holds a lock on the resource R, and [latex]T_{2}[/latex] has requested a conflicting lock on the same resource R. The following algorithm is used to prevent deadlocks in the database system assuming that a killed transaction is restarted with the same timestamp.  <br><img src=\"/wp-content/uploads/GATE/CS/20171/q42.jpg\"/>  <br>Assume any transactions that is not killed terminates eventually. Which of the following is TRUE about the database system that uses the above algorithm to prevent deadlocks?",
+   "solution": "If the requester T2 is older (smaller timestamp), the younger holder T1 is killed; otherwise the younger requester waits. So a transaction only ever waits for an <b>older</b> one: no cycle of waits [latex]\\rightarrow[/latex] deadlock-free.<br><br>\nA killed transaction restarts with its old timestamp, so it keeps getting older relative to new ones and eventually becomes the oldest, which is never killed [latex]\\rightarrow[/latex] starvation-free.<br><br>\n<b>Answer: both deadlock-free and starvation-free</b><br><br><a href=\"https://gateoverflow.in/118325/gate2017-1-42#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Transaction",
+   "tag2_url": "https://practicepaper.in/gate-cse/transaction",
+   "options": [
+    "The database system is both deadlock-free and starvation- free.",
+    " The database system is deadlock- free, but not starvation-free.",
+    "The database system is starvation-free but not deadlock- free.",
+    "The database system is neither deadlock- free nor starvation-free."
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1117143,
+   "number": 43,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following grammar:<br><br>\nstmt[latex]\\rightarrow[/latex] if expr then expr else expr; stmt| [latex]\\dot{O}[/latex]<br>\nexpr[latex]\\rightarrow[/latex]term relop term|term<br>\nterm[latex]\\rightarrow[/latex] id|number <br>\nif[latex]\\rightarrow[/latex]a|b|c <br>\nnumber[latex]\\rightarrow[/latex] [0-9] <br><br>\nwhere <b>relop</b> is a relational operate (e.g [latex]\\lt ,\\gt[/latex],...), [latex]\\dot{O}[/latex] refers to the empty statement, and if\n,then, else are terminals. <br><br>\nConsider a program P following the above grammar containing ten if terminals. The number\nof control flows paths in P is ____________. For example the program <br><br>\nif [latex]e_1[/latex] then [latex]e_2[/latex] else [latex]e_3[/latex]<br><br> \nhas 2 controls flow paths  [latex]e_{1} \\rightarrow e_{2}[/latex] and  [latex]e_{1} \\rightarrow e_{3}[/latex].",
+   "solution": "A program is a sequence of if-then-else statements. Each one has 2 possible branches, and the choices are independent.<br><br>\nWith 10 of them: [latex]2^{10}=1024[/latex] control flow paths.<br><br>\n<b>Answer: 1024</b><br><br><a href=\"https://gateoverflow.in/118326/gate2017-1-43#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Parsing",
+   "tag2_url": "https://practicepaper.in/gate-cse/parsing",
+   "ansMin": 1024,
+   "ansMax": 1024
+  },
+  {
+   "id": 1117144,
+   "number": 44,
+   "type": "NAT",
+   "marks": 2,
+   "text": "In a RSA cryptosystem a participant A uses two prime numbers p=13 and q=17 to generate\nher public and private keys. If the public key of A is 35. Then the private key of A is\n__________.",
+   "solution": "n = 13 [latex]\\times[/latex] 17 = 221, [latex]\\phi(n)=12\\times16=192[/latex]. Private key d satisfies [latex]35d\\equiv1\\pmod{192}[/latex].<br><br>\n[latex]35\\times11=385=2\\times192+1[/latex] [latex]\\rightarrow[/latex] d = 11<br><br>\n<b>Answer: 11</b><br><br><a href=\"https://gateoverflow.in/118327/gate2017-1-44#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Security",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-security",
+   "ansMin": 11,
+   "ansMax": 11
+  },
+  {
+   "id": 1117145,
+   "number": 45,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The values of parameters for the Stop-and-Wait ARQ protocol are as given below:<br><br>\nBit rate of the transmission channel = 1Mbps <br>\nPropagation delay from sender to receiver = 0.75 ms <br>\nTime to process a frame = 0.25ms <br>\nNumber of bytes in the information frame =1980 <br>\nNumber of bytes in the acknowledge frame = 20          <br>                               Number of overhead bytes in the information frame = 20 <br><br>\nAssume that there are no transmission errors. Then the transmission efficiency ( expressed in\npercentage) of the Stop-and - Wait ARQ protocol for the above parameters is _________(\ncorrect to 2 decimal places)",
+   "solution": "Checking each statement:<br>- Frame transmission: 1980 [latex]\\times[/latex] 8 / [latex]10^6[/latex] = 15.84 ms (useful data 1960 bytes = 15.68 ms)<br>\n- ACK transmission: 20 [latex]\\times[/latex] 8 / [latex]10^6[/latex] = 0.16 ms<br>\n- Propagation: 0.75 ms each way; processing 0.25 ms<br><br>\nCycle = 15.84 + 0.75 + 0.25 + 0.16 + 0.75 = 17.75 ms<br>\nEfficiency = 15.68 / 17.75 [latex]\\approx[/latex] 88.34%<br><br>\n<b>Answer: 88.34</b><br><br><a href=\"https://gateoverflow.in/118328/gate2017-1-45#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "ansMin": 86.5,
+   "ansMax": 89.5
+  }
+ ]
+}

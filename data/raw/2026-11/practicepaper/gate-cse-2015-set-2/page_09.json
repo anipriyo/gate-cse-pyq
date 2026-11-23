@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "quizId": 11152,
+  "quizName": "GATE CS 2015 SET 2",
+  "pageTitle": "GATE CSE 2015 SET-2",
+  "timeLimit": 0,
+  "pageNo": 9,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115241,
+   "number": 41,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The secant method is used to find the root of an equation f(x)=0. It is started from two distinct estimates [latex]x_{a}[/latex] and [latex]x_{b}[/latex] for the root. It is an iterative procedure involving linear interpolation to a root. The iteration stops if [latex]f(x_{b})[/latex] is very small and then [latex]x_{b}[/latex] is the solution. The procedure is given below. Observe that there is an expression which is missing and is marked by ?. Which is the suitable expression that is to be put in place of ? so that it follows all steps of the secant method?  <br><img src=\"/wp-content/uploads/GATE/CS/20152/q41.jpg\"/>",
+   "solution": "The secant line through [latex](x_a,f(x_a))[/latex] and [latex](x_b,f_b)[/latex] crosses the x-axis at:<br><br>\n[latex]x_t=x_b-\\frac{(x_b-x_a)f_b}{f_b-f(x_a)}[/latex]<br><br>\n<b>Answer: [latex]x_b-(x_b-x_a)f_b/(f_b-f(x_a))[/latex]</b><br><br><a href=\"https://gateoverflow.in/8210/gate2015-2-41#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Numerical Method",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-method",
+   "options": [
+    "[latex]x_{b}-(f_{b}-f(x_{a}))f_{b}/(x_{b}-x_{a})[/latex]",
+    "[latex]x_{a}-(f_{b}-f(x_{a}))f_{a}/(x_{b}-x_{a})[/latex]",
+    "[latex]x_{b}-(x_{b}-x_{a})f_{b}/(f_{b}-f(x_{a}))[/latex]",
+    "[latex]x_{a}-(x_{b}-x_{a})f_{a}/(f_{b}-f(x_{a}))[/latex]"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115242,
+   "number": 42,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the C program below. <pre><code>\n#include &lt;stdio.h&gt;\nint *A, stkTop;\nint stkFunc(int opcode, int val)\n{\n    static int size=0, stkTop=0;\n    switch (opcode) {\n        case -1: size = val; break;\n        case 0: if (stkTop < size) A[stkTop++] = val; break;\n        default: if (stkTop) return A[--stkTop];\n        }\n       return -1;\n}\nint main()\n{\n    int B[20]; A = B; stkTop = -1;\n    stkFunc (-1, 10);\n    stkFunc ( 0, 5);\n    stkFunc ( 0, 10);\n    printf (\"%d\\n\", stkFunc(1, 0) + stkFunc(1, 0));\n}</code></pre> The value printed by the above program is __________.",
+   "solution": "Inside stkFunc, the static local stkTop (starting at 0) hides the global one.<br><br>\n- stkFunc([latex]-[/latex]1, 10): size = 10<br>\n- push 5, push 10<br>\n- the two pops return 10 and 5<br><br>\n10 + 5 = 15<br><br>\n<b>Answer: 15</b><br><br><a href=\"https://gateoverflow.in/8164/gate2015-2-42#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Conditional Statement",
+   "tag2_url": "https://practicepaper.in/gate-cse/conditional-statement",
+   "ansMin": 15,
+   "ansMax": 15
+  },
+  {
+   "id": 1115243,
+   "number": 43,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the sequence of machine instructions given below:<br>\nMUL R5, R0, R1  <br>\nDIV R6, R2, R3 <br>\nADD R7, R5, R6 <br>\nSUB R8, R7, R4 <br>\nIn the above sequence, R0 to R8 are general purpose registers. In the instructions shown, the first register stores the result of the operation performed on the second and the third registers. This sequence of instructions is to be executed in a pipelined instruction processor with the following 4 stages: (1) Instruction Fetch and Decode (IF), (2) Operand Fetch (OF), (3) Perform Operation (PO) and (4) Write back the result (WB). The IF, OF and WB stages take 1 clock cycle each for any instruction. The PO stage takes 1 clock cycle for ADD or SUB instruction, 3 clock cycles for MUL instruction and 5 clock cycles for DIV instruction. The pipelined processor uses operand forwarding from the PO stage to the OF stage. <br><br>The number of clock cycles taken for the execution of the above sequence of instructions is ___________.",
+   "solution": "Cycle-by-cycle (PO stage can hold one instruction at a time; results forwarded from PO):<br><br>\n- MUL: IF 1, OF 2, PO 3-5, WB 6<br>\n- DIV: IF 2, OF 3, PO 6-10, WB 11<br>\n- ADD: IF 3, OF 4, waits for R6, PO 11, WB 12<br>\n- SUB: IF 4, OF 5, waits for R7, PO 12, WB 13<br><br>\n<b>Answer: 13</b><br><br><a href=\"https://gateoverflow.in/8218/gate2015-2-43#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Pipeline Processor",
+   "tag2_url": "https://practicepaper.in/gate-cse/pipeline-processor",
+   "ansMin": 13,
+   "ansMax": 13
+  },
+  {
+   "id": 1115244,
+   "number": 44,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a processor with byte-addressable memory. Assume that all registers, including Program Counter (PC) and Program Status Word (PSW), are of size 2 bytes. A stack in the main memory is implemented from memory location [latex](0100)_{16}[/latex] and it grows upward. The stack pointer (SP) points to the top element of the stack. The current value of SP is [latex](016E)_{16}[/latex]. The CALL instruction is of two words, the first word is the op-code and the second word is the starting address of the subroutine (one word = 2 bytes). The CALL instruction is implemented as follows: <br><br>\nStore the current value of PC in the stack <br>\nStore the value of PSW register in the stack <br>\nLoad the starting address of the subroutine in PC <br><br>\nThe content of PC just before the fetch of a CALL instruction is [latex](5FA0)_{16}[/latex].  After execution of the CALL instruction, the value of the stack pointer is",
+   "solution": "The stack grows upward and SP points to the top element, so each push adds 2 to SP and then stores.<br><br>\n- Push PC: SP = 016E + 2 = 0170<br>\n- Push PSW: SP = 0170 + 2 = 0172<br><br>\n<b>Answer: [latex](0172)_{16}[/latex]</b><br><br><a href=\"https://gateoverflow.in/8215/gate2015-2-44#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Machine Instruction",
+   "tag2_url": "https://practicepaper.in/gate-cse/machine-instruction",
+   "options": [
+    "[latex](016A)_{16}[/latex]",
+    "[latex](016C)_{16}[/latex]",
+    "[latex](0170)_{16}[/latex]",
+    "[latex](0172)_{16}[/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1115245,
+   "number": 45,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The number of min-terms after minimizing the following Boolean Algebra is _________. <br>[latex]{[{D}'+A{B}'+{A}'C+A{C}'D+{A}'{C}'{D}]}'[/latex]",
+   "solution": "Simplify inside the bracket:<br>\n- [latex]A\\bar CD+\\bar A\\bar CD=\\bar CD[/latex], and [latex]\\bar D+\\bar CD=\\bar D+\\bar C[/latex]<br>\n- [latex]\\bar C+\\bar AC=\\bar C+\\bar A[/latex]<br>\n- [latex]\\bar A+A\\bar B=\\bar A+\\bar B[/latex]<br><br>\nInside = [latex]\\bar A+\\bar B+\\bar C+\\bar D[/latex], so its complement = ABCD, a single minterm.<br><br>\n<b>Answer: 1</b><br><br><a href=\"https://gateoverflow.in/8162/gate2015-2-45#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "ansMin": 1,
+   "ansMax": 1
+  }
+ ]
+}

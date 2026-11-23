@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11143,
+  "quizName": "GATE CS 2014 SET 3",
+  "pageTitle": "GATE CSE 2014 SET-3",
+  "timeLimit": 0,
+  "pageNo": 12,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-3",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114356,
+   "number": 56,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "[latex]\\underset{\\text{I}}{\\underline{\\text{While trying to collect}}}[/latex] an envelope [latex]\\underset{\\text{II}}{\\underline{\\text{from under the table}}}[/latex],<br> [latex]\\underset{\\text{III}}{\\underline{\\text{Mr. X fell down}}}[/latex] and [latex]\\underset{\\text{IV}}{\\underline{\\text{was losing consciousness}}}[/latex].<br><br>Which one of the above underlined parts of the sentence is NOT appropriate?",
+   "solution": "Falling down is a completed event, so it should be \"lost consciousness\". \"Was losing consciousness\" (continuous) does not fit.<br><br>\n<b>Answer: IV</b><br><br><a href=\"https://gateoverflow.in/2024/gate-cse-2014-set-3-question-ga-1#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1114357,
+   "number": 57,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "If she _______ how to calibrate the instrument, she ________ done the experiment.",
+   "solution": "Third conditional (an unreal past situation): \"If + had + past participle, ... could/would have + past participle\".<br><br>\n\"If she had known how to calibrate the instrument, she could have done the experiment.\"<br><br>\n<b>Answer: had known, could have</b><br><br><a href=\"https://gateoverflow.in/2025/gate-cse-2014-set-3-question-ga-2#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "knows, will have",
+    "knew, had",
+    "had known, could have",
+    "should have known, would have"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1114358,
+   "number": 58,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Choose the word that is opposite in meaning to the word \"coherent\".",
+   "solution": "Coherent = logical and well connected. Rambling = wandering, disconnected (opposite).<br><br>\n<b>Answer: rambling</b><br><br><a href=\"https://gateoverflow.in/2026/gate-cse-2014-set-3-question-ga-3#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "sticky",
+    "well-connected",
+    "rambling",
+    "friendly"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1114359,
+   "number": 59,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which number does not belong in the series below?\n<br><br>\n2, 5, 10, 17, 26, 37, 50, 64",
+   "solution": "The terms are [latex]n^2+1[/latex]: 2, 5, 10, 17, 26, 37, 50, 65.<br><br>\nThe last term should be 65, not 64.<br><br>\n<b>Answer: 64</b><br><br><a href=\"https://gateoverflow.in/2027/gate-cse-2014-set-3-question-ga-4#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "17",
+    "37",
+    "64",
+    "26"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1114360,
+   "number": 60,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The table below has question-wise data on the performance of students in an examination. The marks for each question are also listed. There is no negative or partial marking in the examination.<br><br>  [latex]\\begin{array}{|c|c|c|c|c|} \\hline \\textbf{Q No.} & \\textbf{Marks} &\\textbf{Answered}&\\textbf{Answered}&\\textbf{Not}\\\\&&\\textbf{ Correctly} &\\textbf{Wrongly} & \\textbf{Attempted} \\\\\\hline \\text{1} & \\text{2} &\\text{21} &\\text{17} &\\text{6}\\\\\\hline \\text{2} & \\text{3} &\\text{15} & \\text{27}& \\text{2}\\\\\\hline \\text{3} & \\text{2} &\\text{23} & \\text{18} & \\text{3}\\\\\\hline \\end{array}[/latex]\n <br><br>What is the average of the marks obtained by the class in the examination?",
+   "solution": "Marks: Q1 = 21 [latex]\\times[/latex] 2 = 42, Q2 = 15 [latex]\\times[/latex] 3 = 45, Q3 = 23 [latex]\\times[/latex] 2 = 46 [latex]\\rightarrow[/latex] total 133.<br><br>\nStudents = 21 + 17 + 6 = 44.<br><br>\nAverage = 133 / 44 = 3.02<br><br>\n<b>Answer: 3.02</b><br><br><a href=\"https://gateoverflow.in/2028/gate-cse-2014-set-3-question-ga-5#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "1.34",
+    "1.74",
+    "3.02",
+    "3.91"
+   ],
+   "correct": 2
+  }
+ ]
+}

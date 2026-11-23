@@ -1,0 +1,115 @@
+{
+ "meta": {
+  "quizId": 11143,
+  "quizName": "GATE CS 2014 SET 3",
+  "pageTitle": "GATE CSE 2014 SET-3",
+  "timeLimit": 0,
+  "pageNo": 4,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-3",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114316,
+   "number": 16,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let [latex]\\Sigma[/latex] be a finite non-empty alphabet and let [latex]2^{\\Sigma^{*}}[/latex] be the power set of [latex]\\Sigma^{*}[/latex] . Which one of the following is TRUE?",
+   "solution": "[latex]\\Sigma^*[/latex] can be listed in order of length (then dictionary order), so it is countably infinite.<br><br>\n[latex]2^{\\Sigma^*}[/latex] is the power set of a countably infinite set, which is uncountable (Cantor's theorem).<br><br>\n<b>Answer: [latex]2^{\\Sigma^*}[/latex] is uncountable and [latex]\\Sigma^*[/latex] is countable</b><br><br><a href=\"https://gateoverflow.in/2050/gate2014-3-16#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Undecidability",
+   "tag2_url": "https://practicepaper.in/gate-cse/undecidability",
+   "options": [
+    "Both [latex]2^{\\Sigma^{*}}[/latex] and [latex]\\Sigma^{*}[/latex] are countable",
+    "[latex]2^{\\Sigma^{*}}[/latex] is countable [latex]\\Sigma^{*}[/latex] is uncountable",
+    "[latex]2^{\\Sigma^{*}}[/latex]  is uncountable and [latex]\\Sigma^{*}[/latex] is countable",
+    "Both [latex]2^{\\Sigma^{*}}[/latex]  and [latex]\\Sigma^{*}[/latex] are uncountable"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1114317,
+   "number": 17,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "One of the purposes of using intermediate code in compilers is to",
+   "solution": "Intermediate code is machine independent. The same optimizer (and front end) can be reused with different back ends for different machines.<br><br>\n<b>Answer: increase the chances of reusing the machine-independent code optimizer in other compilers</b><br><br><a href=\"https://gateoverflow.in/2051/gate2014-3-17#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Intermediate Code Generation",
+   "tag2_url": "https://practicepaper.in/gate-cse/intermediate-code-generation",
+   "options": [
+    "make parsing and semantic analysis simpler",
+    "improve error recovery and error reporting",
+    "increase the chances of reusing the machine-independent code optimizer in other compliers.",
+    "improve the register allocation"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1114318,
+   "number": 18,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which of the following statements are CORRECT?  <br> 1) Static allocation of all data areas by a compiler makes it impossible to implement recursion. <br>\n2) Automatic garbage collection is essential to implement recursion. <br>\n3) Dynamic allocation of activation records is essential to implement recursion. <br>\n4) Both heap and stack are essential to implement recursion.",
+   "solution": "Checking each statement:<br>- 1: With static allocation each function has one fixed data area, so recursive calls overwrite it [latex]\\rightarrow[/latex] True.<br>\n- 2: Garbage collection is not needed for recursion [latex]\\rightarrow[/latex] False.<br>\n- 3: Each call needs its own activation record created at run time [latex]\\rightarrow[/latex] True.<br>\n- 4: A stack alone is enough; a heap is not needed [latex]\\rightarrow[/latex] False.<br><br>\n<b>Answer: 1 and 3 only</b><br><br><a href=\"https://gateoverflow.in/2052/gate2014-3-18#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Runtime Environment",
+   "tag2_url": "https://practicepaper.in/gate-cse/runtime-environment",
+   "options": [
+    "1 and 2 only",
+    "2 and 3 only",
+    "3 and 4 only",
+    "1 and 3 only"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1114319,
+   "number": 19,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "In the context of modular software design, which one of the following combinations is desirable?",
+   "solution": "Good modules do one job well (high cohesion) and depend little on other modules (low coupling).<br><br>\n<b>Answer: High cohesion and low coupling</b><br><br><a href=\"https://gateoverflow.in/2053/gate2014-3-19#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Software Engg",
+   "tag1_url": "https://practicepaper.in/gate-cse/software-engg",
+   "tag2": "",
+   "tag2_url": "https://practicepaper.in/gate-cse/",
+   "options": [
+    "High cohesion and high coupling",
+    "High cohesion and low coupling",
+    "Low cohesion and high coupling",
+    "Low cohesion and low coupling"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1114320,
+   "number": 20,
+   "type": "NAT",
+   "marks": 1,
+   "text": "A system uses 3 page frames for storing process pages in main memory. It uses the Least Recently Used (LRU) page replacement policy. Assume that all the page frames are initially empty. What is the total number of page faults that will occur while processing the page reference string given below?\n4, 7, 6, 1, 7, 6, 1, 2, 7, 2",
+   "solution": "LRU with 3 frames:<br><br>\n- 4, 7, 6: faults (3)<br>\n- 1: fault, evict 4 [latex]\\rightarrow[/latex] {7, 6, 1} (4)<br>\n- 7, 6, 1: hits<br>\n- 2: fault, evict LRU 7 [latex]\\rightarrow[/latex] {6, 1, 2} (5)<br>\n- 7: fault, evict 6 [latex]\\rightarrow[/latex] {1, 2, 7} (6)<br>\n- 2: hit<br><br>\n<b>Answer: 6</b><br><br><a href=\"https://gateoverflow.in/2054/gate2014-3-20#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "ansMin": 6,
+   "ansMax": 6
+  }
+ ]
+}

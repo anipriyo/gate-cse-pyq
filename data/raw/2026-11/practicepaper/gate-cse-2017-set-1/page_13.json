@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11171,
+  "quizName": "GATE CS 2017 SET 1",
+  "pageTitle": "GATE CSE 2017 SET-1",
+  "timeLimit": 0,
+  "pageNo": 13,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2017-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1117161,
+   "number": 61,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "\"The hold of the nationalist imagination on our colonial past is such that anything inadequately or improperly nationalist is just not history.\"<br><br>\nWhich of the following statements best reflects the author's opinion?",
+   "solution": "The author says anything not nationalist enough is not treated as history, i.e. history is judged through a nationalist filter.<br><br>\n<b>Answer: History is viewed through the filter of nationalism</b><br><br><a href=\"https://gateoverflow.in/118409/gate-cse-2017-set-1-question-ga-6#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "Nationalists are highly imaginative.",
+    "History is viewed through the filter of nationalism.",
+    "Our colonial past never happened.",
+    "Nationalism has to be both adequately and properly imagined."
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1117162,
+   "number": 62,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Six people are seated around a circular table. There are at least two men and two women. There are at least three right-handed persons. Every woman has a left-handed person to her immediate right. None of the women are right-handed. The number of women at the table is",
+   "solution": "Women are not right-handed, so they are left-handed, and each woman has a left-handed person on her immediate right. With at least 3 right-handed people, at most 3 people are left-handed.<br><br>\nWith 2 women sitting together (W1, W2) and one left-handed man to W2's right, the other 3 men are right-handed True. With 3 or more women, the left-handed requirement forces at least 4 left-handed people, which is impossible.<br><br>\n<b>Answer: 2</b><br><br><a href=\"https://gateoverflow.in/118410/gate-cse-2017-set-1-question-ga-7#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "2",
+    "3",
+    "4",
+    "Cannot be determined"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1117163,
+   "number": 63,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The expression  [latex]\\frac{(x+y) - |x-y|}{2}[/latex]   is equal to :",
+   "solution": "If x [latex]\\ge[/latex] y: [latex]\\frac{x+y-(x-y)}{2}=y[/latex]. If x [latex]\\lt[/latex] y: [latex]\\frac{x+y-(y-x)}{2}=x[/latex]. Either way it gives the smaller value.<br><br>\n<b>Answer: The minimum of x and y</b><br><br><a href=\"https://gateoverflow.in/118411/gate-cse-2017-set-1-question-ga-8#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "The maximum of x and y",
+    "The minimum of x and y",
+    "1",
+    "None of the above"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1117164,
+   "number": 64,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Arun, Gulab, Neel and Shweta must choose one shirt each from a pile of four shirts coloured red, pink, blue and white respectively. Arun dislikes the colour red and Shweta dislikes the colour white. Gulab and Neel like all the colours. In how many different ways can they choose the shirts so that no one has a shirt with a colour he or she dislikes?",
+   "solution": "All arrangements: 4! = 24. Arun gets red: 3! = 6. Shweta gets white: 6. Both: 2! = 2.<br><br>\nValid = 24 [latex]-[/latex] 6 [latex]-[/latex] 6 + 2 = 14<br><br>\n<b>Answer: 14</b><br><br><a href=\"https://gateoverflow.in/118412/gate-cse-2017-set-1-question-ga-9#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "21",
+    "18",
+    "16",
+    "14"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1117165,
+   "number": 65,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A contour line joins locations having the same height above the mean sea level. The following is a contour plot of a geographical region. Contour lines are shown at 25 m intervals in this plot. If in a flood, the water level rises to 525 m, which of the villages P, Q, R, S, T get submerged? <br><img src=\"/wp-content/uploads/GATE/CS/20171/q65.jpg\" /><br>",
+   "solution": "A village is flooded if its height is below 525 m. P and Q lie inside the 550 m contours (high ground), so they stay dry. R, S and T lie in lower areas (below the 525 m level), so they get submerged.<br><br>\n<b>Answer: R, S, T</b><br><br><a href=\"https://gateoverflow.in/118413/gate-cse-2017-set-1-question-ga-10#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "P, Q",
+    "P, Q, T",
+    "R, S, T",
+    "Q, R, S"
+   ],
+   "correct": 2
+  }
+ ]
+}

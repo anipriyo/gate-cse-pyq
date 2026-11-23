@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11161,
+  "quizName": "GATE CS 2016 SET 1",
+  "pageTitle": "GATE CSE 2016 SET-1",
+  "timeLimit": 0,
+  "pageNo": 13,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2016-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1116161,
+   "number": 61,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A shaving set company sells 4 different types of razors- Elegance, Smooth, Soft and Executive.<br>\n\nElegance sells at Rs. 48, Smooth at Rs. 63, Soft at Rs. 78 and Executive at Rs. 173 per piece. The table below shows the numbers of each razor sold in each quarter of a year.  <br><br>   [latex]\\begin{array}{|c|r|r|r|r|} \\hline \\textbf{Quarter/Product} & \\textbf{Elegance} &\\textbf{Smooth} &\\textbf{Soft} & \\textbf{Executive}\\\\\\hline \\text{Q1} & \\text{27300} &\\text{20009} &\\text{17602} &\\text{9999}\\\\\\hline \\text{Q2} & \\text{25222} &\\text{19392} & \\text{18445}& \\text{8942}\\\\\\hline \\text{Q3} & \\text{28976} &\\text{22429} & \\text{19544} & \\text{10234}\\\\\\hline \\text{Q4} &\\text{21012} & \\text{18229} & \\text{16595} & \\text{10109}\\\\\\hline \\end{array}[/latex]\n<br> <br>Which product contributes the greatest fraction to the revenue of the company in that year?",
+   "solution": "Yearly revenue = price [latex]\\times[/latex] total units:<br>\n- Elegance: 48 [latex]\\times[/latex] 102510 [latex]\\approx[/latex] 49.2 lakh<br>\n- Smooth: 63 [latex]\\times[/latex] 80059 [latex]\\approx[/latex] 50.4 lakh<br>\n- Soft: 78 [latex]\\times[/latex] 72186 [latex]\\approx[/latex] 56.3 lakh<br>\n- Executive: 173 [latex]\\times[/latex] 39284 [latex]\\approx[/latex] <b>68.0 lakh</b><br><br>\n<b>Answer: Executive</b><br><br><a href=\"https://gateoverflow.in/39616/gate-cse-2016-set-1-question-ga06#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "Elegance",
+    "Executive",
+    "Smooth",
+    "Soft"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1116162,
+   "number": 62,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Indian currency notes show the denomination indicated in at least seventeen languages. If this is not an indication of the nation's diversity, nothing else is.\n<br><br>\nWhich of the following can be logically inferred from the above sentences?",
+   "solution": "The sentence says the many languages on the notes are a clear sign of diversity, so linguistic plurality is <b>strong evidence</b> of India's diversity. It does not say exactly 17 languages, or that language is the only indicator.<br><br>\n<b>Answer: Linguistic pluralism is strong evidence of India's diversity.</b><br><br><a href=\"https://gateoverflow.in/39613/gate-cse-2016-set-1-question-ga07#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "India is a country of exactly seventeen languages.",
+    "Linguistic pluralism is the only indicator of a nation's diversity.",
+    "Indian currency notes have sufficient space for all the Indian languages.",
+    "Linguistic pluralism is strong evidence of India's diversity."
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1116163,
+   "number": 63,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following statements relating to the level of poker play of four players P, Q, R and S.<br><br>\n\nI.    P always beats Q<br>\nII.   R always beats S<br>\nIII.  S loses to P only sometimes.<br>\nIV.  R always loses to Q<br><br>\nWhich of the following can be logically inferred from the above statements?<br><br>(i).  P is likely to beat all the three other players\n<br>(ii).  S is the absolute worst player in the set",
+   "solution": "Checking each statement:<br>- (i): P beats Q always and S only sometimes; nothing is said about P vs R [latex]\\rightarrow[/latex] cannot conclude P beats all three.<br>\n- (ii): S loses to R, but S sometimes beats P, so S is not clearly the worst; there is also no information on S vs Q.<br><br>\n<b>Answer: neither (i) nor (ii)</b><br><br><a href=\"https://gateoverflow.in/39617/gate-cse-2016-set-1-question-ga08#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "(i) only",
+    "(ii) only",
+    "(i) and (ii) only",
+    "neither (i) nor (ii)"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1116164,
+   "number": 64,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "If [latex]f(x) = 2x^{7}+3x-5[/latex], which of the following is a factor of [latex]f(x)[/latex]?",
+   "solution": "Factor theorem: [latex]f(1)=2+3-5=0[/latex], so [latex](x-1)[/latex] is a factor.<br>\n(f([latex]-[/latex]1) = [latex]-[/latex]2 [latex]-[/latex] 3 [latex]-[/latex] 5 [latex]\\ne[/latex] 0, so x + 1 is not.)<br><br>\n<b>Answer: x-1</b><br><br><a href=\"https://gateoverflow.in/39611/gate-cse-2016-set-1-question-ga09#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "[latex]x^3+8[/latex]",
+    "[latex]x-1[/latex]",
+    "[latex]2x-5[/latex]",
+    "[latex]x+1[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1116165,
+   "number": 65,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "In a process, the number of cycles to failure decreases exponentially with an increase in load. At a load of 80 units, it takes 100 cycles for failure. When the load is halved, it takes 10000 cycles for failure.The load for which the failure will happen in 5000 cycles is _________",
+   "solution": "Let cycles [latex]N=Ae^{-kL}[/latex]. Halving the load from 80 to 40 multiplies N by 100, so [latex]e^{40k}=100[/latex].<br><br>\nFrom L = 40 (10000 cycles) to 5000 cycles: [latex]e^{k(L-40)}=2\\Rightarrow L-40=\\frac{40\\ln2}{\\ln100}=40\\times\\frac{0.301}{2}=6.02[/latex]<br><br>\nL = 46.02<br><br>\n<b>Answer: 46.02</b><br><br><a href=\"https://gateoverflow.in/39612/gate-cse-2016-set-1-question-ga10#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "40",
+    "46.02",
+    "60.01",
+    "92.02"
+   ],
+   "correct": 1
+  }
+ ]
+}

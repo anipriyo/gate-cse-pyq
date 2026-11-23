@@ -1,0 +1,115 @@
+{
+ "meta": {
+  "quizId": 11151,
+  "quizName": "GATE CS 2015 SET 1",
+  "pageTitle": "GATE CSE 2015 SET-1",
+  "timeLimit": 0,
+  "pageNo": 13,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115161,
+   "number": 61,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The number of students in a class who have answered correctly, wrongly, or not attempted each question in an exam, are listed in the table below. The marks for each question are also listed. There is no negative or partial marking.<br><br> [latex]\\begin{array}{|c|c|c|c|c|} \\hline \\textbf{Q No.} & \\textbf{Marks} &\\textbf{Answered}&\\textbf{Answered}&\\textbf{Not}\\\\&&\\textbf{ Correctly} &\\textbf{Wrongly} & \\textbf{Attempted} \\\\\\hline \\text{1} & \\text{2} &\\text{21} &\\text{17} &\\text{6}\\\\\\hline \\text{2} & \\text{3} &\\text{15} & \\text{27}& \\text{2}\\\\\\hline \\text{3} & \\text{1} &\\text{11} & \\text{29} & \\text{4}\\\\\\hline \\text{4} & \\text{2} &\\text{23} & \\text{18} & \\text{3}\\\\\\hline \\text{5} & \\text{5} &\\text{31} & \\text{12} & \\text{1} \\\\\\hline \\end{array}[/latex]  <br><br>  What is the average of the marks obtained by the class in the examination?",
+   "solution": "Marks: 21 [latex]\\times[/latex] 2 + 15 [latex]\\times[/latex] 3 + 11 [latex]\\times[/latex] 1 + 23 [latex]\\times[/latex] 2 + 31 [latex]\\times[/latex] 5 = 42 + 45 + 11 + 46 + 155 = 299<br><br>\nStudents = 21 + 17 + 6 = 44<br><br>\nAverage = 299 / 44 = 6.795<br><br>\n<b>Answer: 6.795</b><br><br><a href=\"https://gateoverflow.in/8010/gate-cse-2015-set-1-question-ga-6#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "2.29",
+    "2.97",
+    "6.795",
+    "8.795"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115162,
+   "number": 62,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Select the alternative meaning of the underlined part of the sentence.\n<br>\nThe chain snatchers [latex]\\underline{\\text{took to their heels}}[/latex] when the police party arrived.",
+   "solution": "\"Take to one's heels\" means to run away, i.e. to take flight.<br><br>\n<b>Answer: Took to flight</b><br><br><a href=\"https://gateoverflow.in/8011/gate-cse-2015-set-1-question-ga-7#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "Took shelter in a thick jungle",
+    "Open indiscriminate fire",
+    "Took to flight",
+    "Unconditionally surrendered"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115163,
+   "number": 63,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The given statement is followed by some courses of action. Assuming the statement to be true, decide the correct option.\n<br><br>\nStatement:\n<br>\nThere has been a significant drop in the water level in the lakes supplying water to the city.\n<br><br>\nCourse of action:\n<br>\nI.   The water supply authority should impose a partial cut in supply to tackle the situation.\n<br>II.  The government should appeal to all the residents through mass media for minimal use of water.\n<br>III. The government should ban the water supply in lower areas.",
+   "solution": "A partial supply cut (I) and an appeal to save water (II) are sensible ways to manage a shortage.<br><br>\nBanning supply only in lower areas (III) is unfair and extreme.<br><br>\n<b>Answer: Statements I and II follow</b><br><br><a href=\"https://gateoverflow.in/8012/gate-cse-2015-set-1-question-ga-8#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "Statements I and II follow.",
+    "Statements I and III follow.",
+    "Statements II and III follow.",
+    "All the statements follow."
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1115164,
+   "number": 64,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The pie chart below has the breakup of the number of students from different departments in an engineering college for the year 2012. The proportion of male to female students in each department is 5:4. There are 40 males in Electrical Engineering. What is the difference between the numbers of female students in the civil department and the female students in the Mechanical department?<br><img src=\"/wp-content/uploads/GATE/CS/20151/q64.jpg\" /><br>",
+   "solution": "Electrical = 20% with 40 males. Males : females = 5 : 4, so Electrical total = 40 [latex]\\times[/latex] 9/5 = 72 [latex]\\rightarrow[/latex] college total = 360.<br><br>\n- Civil (30%) = 108 [latex]\\rightarrow[/latex] females = 108 [latex]\\times[/latex] 4/9 = 48<br>\n- Mechanical (10%) = 36 [latex]\\rightarrow[/latex] females = 16<br><br>\nDifference = 48 [latex]-[/latex] 16 = 32<br><br>\n<b>Answer: 32</b><br><br><a href=\"https://gateoverflow.in/8013/gate-cse-2015-set-1-question-ga-9#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "ansMin": 32,
+   "ansMax": 32
+  },
+  {
+   "id": 1115165,
+   "number": 65,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The probabilities that a student passes in mathematics, physics and chemistry are m,p and c respectively. Of these subjects, the student has 75% chance of passing in at least one, a 50% chance of passing in at least two and a 40% chance of passing in exactly two. Following relations are drawn in m,p,c:\n<br><br>\nI.   p+m+c=27/20\n<br>II.  p+m+c=13/20\n<br>III. (p)x(m)x(c)=1/10",
+   "solution": "P(exactly 3) = P(at least 2) [latex]-[/latex] P(exactly 2) = 0.5 [latex]-[/latex] 0.4 = 0.1 [latex]\\rightarrow[/latex] pmc = 1/10 (III true).<br>\nP(exactly 1) = 0.75 [latex]-[/latex] 0.5 = 0.25<br><br>\np + m + c = expected number of subjects passed = 1(0.25) + 2(0.4) + 3(0.1) = 1.35 = 27/20 (I true).<br><br>\n<b>Answer: Relations I and III are true</b><br><br><a href=\"https://gateoverflow.in/8014/gate-cse-2015-set-1-question-ga-10#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "Only relation I is true.",
+    "Only relation II is true.",
+    "Relations II and III are true.",
+    "Relations I and III are true."
+   ],
+   "correct": 3
+  }
+ ]
+}

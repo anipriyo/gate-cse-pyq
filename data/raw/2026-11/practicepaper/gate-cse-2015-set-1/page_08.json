@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "quizId": 11151,
+  "quizName": "GATE CS 2015 SET 1",
+  "pageTitle": "GATE CSE 2015 SET-1",
+  "timeLimit": 0,
+  "pageNo": 8,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115136,
+   "number": 36,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A variable x is said to be live at a statement [latex]S_{i}[/latex] in a program if the following three conditions hold simultaneously: <br>\ni. There exists a statement [latex]S_{j}[/latex] that uses x <br>\nii. There is a path from [latex]S_{i}[/latex] to [latex]S_{j}[/latex] in the flow graph corresponding to the program <br>\niii. The path has no intervening assignment to x including at [latex]S_{i}[/latex] and [latex]S_{j}[/latex] <br><img src=\"/wp-content/uploads/GATE/CS/20151/q36.jpg\"/><br> The variables which are live both at the statement in basic block 2 and at the statement in basic block 3 of the above control flow graph are",
+   "solution": "Live-in = use [latex]\\cup[/latex] (live-out [latex]-[/latex] def).<br><br>\n- Block 1 uses q, r, v before defining them [latex]\\rightarrow[/latex] in(1) = {q, r, v}<br>\n- in(4) = {v, r} [latex]\\cup[/latex] (in(1) [latex]-[/latex] {q}) = {r, v}<br>\n- in(2) = {r, u} [latex]\\cup[/latex] (in(4) [latex]-[/latex] {v}) = {r, u}<br>\n- in(3) = {s, u} [latex]\\cup[/latex] (in(4) [latex]-[/latex] {q}) = {r, s, u, v}<br><br>\nCommon: r, u<br><br>\n<b>Answer: r, u</b><br><br><a href=\"https://gateoverflow.in/8356/gate2015-1-36#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Intermediate Code Generation",
+   "tag2_url": "https://practicepaper.in/gate-cse/intermediate-code-generation",
+   "options": [
+    "p, s, u",
+    "r, s, u",
+    "r,u",
+    "q,v"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115137,
+   "number": 37,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The least number of temporary variables required to create a three-address code in static single assignment form for the expression q + r / 3 + s - t * 5 + u * v /w is _______________.",
+   "solution": "In SSA every result gets a new variable. Count the operations:<br><br>\nt1 = r / 3, t2 = q + t1, t3 = t2 + s, t4 = t * 5, t5 = t3 [latex]-[/latex] t4, t6 = u * v, t7 = t6 / w, t8 = t5 + t7<br><br>\n8 operations [latex]\\rightarrow[/latex] 8 temporaries<br><br>\n<b>Answer: 8</b><br><br><a href=\"https://gateoverflow.in/8365/gate2015-1-37#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Intermediate Code Generation",
+   "tag2_url": "https://practicepaper.in/gate-cse/intermediate-code-generation",
+   "ansMin": 8,
+   "ansMax": 8
+  },
+  {
+   "id": 1115138,
+   "number": 38,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider an Entity-Relationship (ER) model in which entity sets E1 and E2 are connected by an m : n relationship R12. E1 and E3 are connected by a 1 : n (1 on the side of E1 and n on the side of E3) relationship R13. <br><br>E1 has two single-valued attributes a11 and a12 of which a11 is the key attribute. E2 has two single-valued attributes a21 and a22 of which a21 is the key attribute. E3 has two single-valued attributes a31 and a32 of which a31 is the key attribute. The relationships do not have any attributes. <br><br> If a relational model is derived from the above ER model, then the minimum number of relations that would be generated if all the relations are in 3NF is _______.",
+   "solution": "Checking each statement:<br>- E1(a11, a12), E2(a21, a22): one relation each<br>\n- R12 is m:n: needs its own relation (a11, a21)<br>\n- R13 is 1:n: add a11 as a foreign key in E3(a31, a32, a11), no separate table<br><br>\nTotal = 4<br><br>\n<b>Answer: 4</b><br><br><a href=\"https://gateoverflow.in/8309/gate2015-1-38#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "ER Model",
+   "tag2_url": "https://practicepaper.in/gate-cse/er-model",
+   "ansMin": 4,
+   "ansMax": 4
+  },
+  {
+   "id": 1115139,
+   "number": 39,
+   "type": "NAT",
+   "marks": 2,
+   "text": "<img src=\"/wp-content/uploads/GATE/CS/20151/q39.jpg\"/> <br>Consider the DFAs M and N given above. The number of states in a minimal DFA that accepts the language L(M)[latex]\\cap[/latex] L(N) is___________",
+   "solution": "Checking each statement:<br>- M accepts strings ending with a.<br>\n- N accepts strings ending with b.<br><br>\nNo string can end with both, so [latex]L(M)\\cap L(N)=\\emptyset[/latex]. The minimal DFA has a single non-accepting state.<br><br>\n<b>Answer: 1</b><br><br><a href=\"https://gateoverflow.in/8362/gate2015-1-39#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Finite Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/finite-automata",
+   "ansMin": 1,
+   "ansMax": 1
+  },
+  {
+   "id": 1115140,
+   "number": 40,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the NPDA [latex]\\langle Q=\\{q_{0},q_{1},q_{2}\\},[/latex] [latex]\\Sigma  =\\{0,1\\},[/latex] [latex]\\Gamma =\\{0,1,\\perp \\},\\delta ,q_{0},\\perp ,[/latex] [latex]F=\\{q_{2}\\} \\rangle[/latex], where (as per usual convention) Q is the set of states,  [latex]\\Sigma[/latex] is the input alphabet, [latex]\\Gamma[/latex] is the stack alphabet, [latex]\\delta[/latex] is the state transition function, [latex]q_{0}[/latex]  is the initial state, [latex]\\perp[/latex] is the initial stack symbol, and [latex]F[/latex] is the set of accepting states. The state transition is as follows:<br><img src=\"/wp-content/uploads/GATE/CS/20151/q40.webp\"/><br> Which one of the following sequences must follow the string 101100 so that the overall string is accepted by the automaton?",
+   "solution": "q0 pushes the input. It moves to q1 on one symbol or [latex]\\epsilon[/latex] (an optional middle symbol). In q1, a 0 pops a 1 and a 1 pops a 0, so the second half must be the <b>complement</b> of the first half reversed.<br><br>\nTotal length 6 + 5 = 11, so w = 10110 and the middle symbol is 0.<br>\nReverse of w = 01101, complement = 10010.<br><br>\n<b>Answer: 10010</b><br><br><a href=\"https://gateoverflow.in/8357/gate2015-1-40#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Push-down Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/push-down-automata",
+   "options": [
+    "[latex]10110[/latex]",
+    "[latex]10010[/latex]",
+    "[latex]01010[/latex]",
+    "[latex]01001[/latex]"
+   ],
+   "correct": 1
+  }
+ ]
+}

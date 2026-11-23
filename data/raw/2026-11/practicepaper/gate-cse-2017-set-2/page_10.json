@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11172,
+  "quizName": "GATE CS 2017 SET 2",
+  "pageTitle": "GATE CSE 2017 SET-2",
+  "timeLimit": 0,
+  "pageNo": 10,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2017-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1117246,
+   "number": 46,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following database table named top_scorer. <br><img src=\"/wp-content/uploads/GATE/CS/20172/q49.jpg\"/> <br>      Consider the following SQL query:\n<br><img src=\"/wp-content/uploads/GATE/CS/20172/q49a.jpg\"/> <br> \nThe number of tuples returned by the above SQL query is ___________.",
+   "solution": "Checking each statement:<br>- No player is from Spain, so \"[latex]\\gt[/latex] ALL (empty set)\" is true for everyone.<br>\n- \"[latex]\\gt[/latex] ANY (German goals: 16, 14, 11, 10, 10)\" means goals [latex]\\gt[/latex] 10 (the smallest).<br><br>\nPlayers with more than 10 goals: Klose, Ronaldo, G Muller, Fontaine, Pele, Klinsmann, Kocsis = 7<br><br>\n<b>Answer: 7</b><br><br><a href=\"https://gateoverflow.in/118391/gate2017-2-46#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "SQL",
+   "tag2_url": "https://practicepaper.in/gate-cse/sql",
+   "ansMin": 7,
+   "ansMax": 7
+  },
+  {
+   "id": 1117247,
+   "number": 47,
+   "type": "NAT",
+   "marks": 2,
+   "text": "If the ordinary generating function of a sequence [latex]\\{a_{n}\\}_{n=0}^{\\infty} \\;  is \\;  \\frac{1+z}{(1-z)^{3}}[/latex] then [latex]a_{3}-a_{0}[/latex] is equal to ______.",
+   "solution": "[latex](1-z)^{-3}=\\sum\\binom{n+2}{2}z^n[/latex], so [latex]a_n=\\binom{n+2}{2}+\\binom{n+1}{2}[/latex].<br><br>\n[latex]a_3=10+6=16[/latex], [latex]a_0=1[/latex] [latex]\\rightarrow[/latex] [latex]a_3-a_0=15[/latex]<br><br>\n<b>Answer: 15</b><br><br><a href=\"https://gateoverflow.in/118392/gate2017-2-47#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Functions",
+   "tag2_url": "https://practicepaper.in/gate-cse/functions",
+   "ansMin": 15,
+   "ansMax": 15
+  },
+  {
+   "id": 1117248,
+   "number": 48,
+   "type": "NAT",
+   "marks": 2,
+   "text": "If a random variable X has a Poisson distribution with mean 5, then the expectation [latex]E[(X+2)^{2}][/latex] equals ______________.",
+   "solution": "For Poisson, mean = variance = 5, so [latex]E[X^2]=5+25=30[/latex].<br><br>\n[latex]E[(X+2)^2]=E[X^2]+4E[X]+4=30+20+4=54[/latex]<br><br>\n<b>Answer: 54</b><br><br><a href=\"https://gateoverflow.in/118513/gate2017-2-48#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "ansMin": 54,
+   "ansMax": 54
+  },
+  {
+   "id": 1117249,
+   "number": 49,
+   "type": "NAT",
+   "marks": 2,
+   "text": "In a [latex]B^{+}[/latex] tree, if the search -key value is 8 bytes long, the block size is 512 bytes and the block pointer size is 2 bytes, then maximum order of the [latex]B^{+}[/latex] tree is _______________.",
+   "solution": "A node of order p has p block pointers and p [latex]-[/latex] 1 keys:<br>\n[latex]2p+8(p-1)\\le512\\Rightarrow10p\\le520\\Rightarrow p=52[/latex]<br><br>\n<b>Answer: 52</b><br><br><a href=\"https://gateoverflow.in/118561/gate2017-2-49#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "File System",
+   "tag2_url": "https://practicepaper.in/gate-cse/file-system",
+   "ansMin": 52,
+   "ansMax": 52
+  },
+  {
+   "id": 1117250,
+   "number": 50,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A message is made up entirely of characters from the set X= {P,Q,R,S,T}. The table of\nprobabilities for each of the characters is shown below: <br><img src=\"/wp-content/uploads/GATE/CS/20172/q41.jpg\"/> <br>If a message of 100 characters over X is encoded using Huffman coding, then the expected\nlength of the encoded message in bits is_____",
+   "solution": "Huffman: T (0.08) + R (0.17) = 0.25; S (0.19) + P (0.22) = 0.41; 0.25 + Q (0.34) = 0.59; 0.41 + 0.59.<br>\nCode lengths: Q 2, S 2, P 2, T 3, R 3.<br><br>\nAverage = 0.34[latex]\\cdot[/latex]2 + 0.19[latex]\\cdot[/latex]2 + 0.22[latex]\\cdot[/latex]2 + 0.08[latex]\\cdot[/latex]3 + 0.17[latex]\\cdot[/latex]3 = 2.25 bits. For 100 characters: 225 bits.<br><br>\n<b>Answer: 225</b><br><br><a href=\"https://gateoverflow.in/118395/gate2017-2-50#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Greedy Technique",
+   "tag2_url": "https://practicepaper.in/gate-cse/greedy-technique",
+   "ansMin": 225,
+   "ansMax": 225
+  }
+ ]
+}

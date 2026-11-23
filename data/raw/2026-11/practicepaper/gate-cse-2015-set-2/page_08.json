@@ -1,0 +1,115 @@
+{
+ "meta": {
+  "quizId": 11152,
+  "quizName": "GATE CS 2015 SET 2",
+  "pageTitle": "GATE CSE 2015 SET-2",
+  "timeLimit": 0,
+  "pageNo": 8,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115236,
+   "number": 36,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Which of the following languages is/are regular? <br> [latex]L_{1}:\\{wxw^{R}|w,x \\in  \\{a,b\\}^{*} \\; and \\; |w|,|x| \\gt 0 \\}, w^{R}[/latex] is the reverse of string w <br>[latex]L_{2}:\\{a^{n}b^{m}|m\\neq n \\; and \\; m,n\\geq 0\\}[/latex]<br> [latex]L_{3}:\\{a^{p}b^{q}c^{r}|p,q,r\\geq 0\\}[/latex]",
+   "solution": "Checking each statement:<br>- L1: since x can be anything, it is enough that the first and last symbols match (w of length 1). L1 = a(a+b)+a + b(a+b)+b [latex]\\rightarrow[/latex] regular.<br>\n- L2: [latex]a^nb^m[/latex] with [latex]m\\ne n[/latex] needs counting [latex]\\rightarrow[/latex] not regular.<br>\n- L3 = a*b*c* [latex]\\rightarrow[/latex] regular.<br><br>\n<b>Answer: L1 and L3 only</b><br><br><a href=\"https://gateoverflow.in/8254/gate2015-2-36#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Regular Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/regular-language",
+   "options": [
+    "L1 and L3 only",
+    "L2 only",
+    "L2 and L3 only",
+    "L3 only"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1115237,
+   "number": 37,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Given below are some algorithms, and some algorithm design paradigms.\n<br><img src=\"/wp-content/uploads/GATE/CS/20152/q37.jpg\"/><br>\nMatch the above algorithms on the left to the corresponding design paradigm they follow.",
+   "solution": "Checking each statement:<br>- Dijkstra: greedy (iii)<br>\n- Floyd-Warshall: dynamic programming (ii)<br>\n- Binary search: divide and conquer (i)<br>\n- Backtracking: depth-first search (iv)<br><br>\n<b>Answer: 1-iii, 2-ii, 3-i, 4-iv</b><br><br><a href=\"https://gateoverflow.in/8161/gate2015-2-37#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Divide and Conquer",
+   "tag2_url": "https://practicepaper.in/gate-cse/divide-and-conquer",
+   "options": [
+    "1-i, 2-iii, 3-i, 4-v.",
+    "1-iii, 2-iii, 3-i, 4-v",
+    "1-iii, 2-ii, 3-i, 4-iv",
+    "1-iii, 2-ii, 3-i, 4-v."
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115238,
+   "number": 38,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A Young tableau is a 2D array of integers increasing from left to right and from top to bottom. Any unfilled entries are marked with [latex]\\infty[/latex], and hence there cannot be any entry to the right of, or below a [latex]\\infty[/latex]. The following Young tableau consists of unique entries.  <br><img src=\"/wp-content/uploads/GATE/CS/20152/q38.jpg\"/><br> When an element is removed from a Young tableau, other elements should be moved into its place so that the resulting table is still a Young tableau (unfilled entries may be filled in with a [latex]\\infty[/latex]). The minimum number of entries (other than 1) to be shifted, to remove 1 from the given Young tableau is _______.",
+   "solution": "Removing 1 leaves a hole. Repeatedly fill it with the smaller of its right and lower neighbour:<br><br>\n- hole (1,1): min(2, 3) = 2 moves left<br>\n- hole (1,2): min(5, 4) = 4 moves up<br>\n- hole (2,2): min(6, 12) = 6 moves left<br>\n- hole (2,3): min(23, 18) = 18 moves up<br>\n- hole (3,3): min(25, [latex]\\infty[/latex]) = 25 moves left<br>\n- hole (3,4) gets [latex]\\infty[/latex]<br><br>\nShifted: 2, 4, 6, 18, 25 = 5 entries<br><br>\n<b>Answer: 5</b><br><br><a href=\"https://gateoverflow.in/8148/gate2015-2-38#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "",
+   "tag2_url": "https://practicepaper.in/gate-cse/",
+   "ansMin": 5,
+   "ansMax": 5
+  },
+  {
+   "id": 1115239,
+   "number": 39,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Suppose you are provided with the following function declaration in the C programming language.<br><br> int partition(int a[ ], int n); <br><br> The function treats the first element of a[] as a pivot, and rearranges the array so that all elements less than or equal to the pivot is in the left part of the array, and all elements greater than the pivot is in the right part. In addition, it moves the pivot so that the pivot is the last element of the left part. The return value is the number of elements in the left part. <br>\nThe following partially given function in the C programming language is used to find the [latex] k^{th}[/latex] smallest element in an array a[ ] of size n using the partition function. We assume [latex] k \\leq n[/latex]     <pre><code>  int kth_smallest(int a[], int n, int k)\n{\n    int left_end = partition(a,n);\n    if ( left_end+1 == k ){\n         return a[left_end];\n    }\n    if ( left_end+1 > k ){\n         return kth_smallest( ________ );\n    } else {\n         return kth_smallest( ________ );\n    }\n} </pre></code><br> The missing argument lists are respectively",
+   "solution": "The pivot is at index left_end and is the (left_end + 1)-th smallest.<br><br>\n- If left_end + 1 [latex]\\gt[/latex] k: search the left part a[0 .. left_end[latex]-[/latex]1] [latex]\\rightarrow[/latex] (a, left_end, k)<br>\n- Else: search the right part starting at a + left_end + 1, with n [latex]-[/latex] left_end [latex]-[/latex] 1 elements, for the (k [latex]-[/latex] left_end [latex]-[/latex] 1)-th smallest<br><br>\n<b>Answer: (a, left_end, k) and (a+left_end+1, n-left_end-1, k-left_end-1)</b><br><br><a href=\"https://gateoverflow.in/8243/gate2015-2-39#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Sorting",
+   "tag2_url": "https://practicepaper.in/gate-cse/sorting",
+   "options": [
+    "(a, left_end, k) and (a+left_end+1, n-left_end-1, k-left_end-1)",
+    "(a, left_end, k) and (a, n-left_end-1, k-left_end-1)",
+    "(a+left_end+1, n-left_end-1, k-left_end-1) and (a, left_end, k)",
+    "(a, n-left_end-1, k-left_end-1) and (a, left_end, k)"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1115240,
+   "number": 40,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Which one of the following hash functions on integers will distribute keys most uniformly over 10 buckets numbered 0 to 9 for i ranging from 0 to 2020?",
+   "solution": "Last digit of [latex]i^3[/latex] for last digits 0..9: 0, 1, 8, 7, 4, 5, 6, 3, 2, 9. Every bucket gets used equally.<br><br>\nSquares end only in 0, 1, 4, 5, 6, 9, so options 1, 3, 4 leave some buckets empty.<br><br>\n<b>Answer: h(i) = [latex]i^3[/latex] mod 10</b><br><br><a href=\"https://gateoverflow.in/8152/gate2015-2-40#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Hashing",
+   "tag2_url": "https://practicepaper.in/gate-cse/hashing",
+   "options": [
+    "h(i)= [latex]i^{2}[/latex] mod 10",
+    "h(i)= [latex]i^{3}[/latex] mod 10",
+    "h(i)=(11*[latex]i^{2}[/latex]) mod 10",
+    "h(i)=(12*[latex]i^{2}[/latex]) mod 10"
+   ],
+   "correct": 1
+  }
+ ]
+}

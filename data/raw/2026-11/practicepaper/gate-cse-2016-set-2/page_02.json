@@ -1,0 +1,100 @@
+{
+ "meta": {
+  "quizId": 11162,
+  "quizName": "GATE CS 2016 SET 2",
+  "pageTitle": "GATE CSE 2016 SET-2",
+  "timeLimit": 0,
+  "pageNo": 2,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2016-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1116206,
+   "number": 6,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Suppose that the eigen values of matrix A are 1, 2, 4. The determinant of [latex](A^{-1})^{T}[/latex] is _________.",
+   "solution": "[latex]\\det A=1\\times2\\times4=8[/latex]. Transpose does not change the determinant, and [latex]\\det(A^{-1})=\\frac{1}{\\det A}[/latex].<br><br>\n[latex]\\det(A^{-1})^T=\\frac18=0.125[/latex]<br><br>\n<b>Answer: 0.125</b><br><br><a href=\"https://gateoverflow.in/39549/gate2016-2-6#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "ansMin": 0.124,
+   "ansMax": 0.126
+  },
+  {
+   "id": 1116207,
+   "number": 7,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider an eight-bit ripple-carry Combinational Circuit for computing the sum of A and B, where A and B are integers represented in 2's complement form. If the decimal value of  A is one, the decimal value of B that leads to the longest latency for the sum to stabilize is ________.",
+   "solution": "The longest delay happens when a carry is generated at bit 0 and has to ripple through all 8 bits. A = 0000 0001, so B should be all 1s: 1111 1111 = [latex]-[/latex]1.<br><br>\n<b>Answer: -1</b><br><br><a href=\"https://gateoverflow.in/39575/gate2016-2-7#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Combinational Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/combinational-circuit",
+   "ansMin": -1,
+   "ansMax": -1
+  },
+  {
+   "id": 1116208,
+   "number": 8,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let, [latex]x_{1} \\oplus x_{2} \\oplus\nx_{3} \\oplus x_{4}=0[/latex] where [latex]x_{1},  x_{2} ,\nx_{3} , x_{4}[/latex]  are Boolean variables, and  [latex]\\oplus[/latex] is the XOR operator.\nWhich one of the following must always be TRUE?",
+   "solution": "[latex]x_1\\oplus x_2\\oplus x_3\\oplus x_4=0\\Rightarrow x_1\\oplus x_3=x_2\\oplus x_4[/latex].<br><br>\nComplementing both inputs of an XOR does not change it ([latex]\\bar a\\oplus\\bar b=a\\oplus b[/latex]), so [latex]\\bar x_1\\oplus\\bar x_3=\\bar x_2\\oplus\\bar x_4[/latex] is always true.<br><br>\nThe other options fail for x = 1111 (XOR = 0, but the product is 1, and so on).<br><br>\n<b>Answer: Option 3</b><br><br><a href=\"https://gateoverflow.in/39540/gate2016-2-8#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "options": [
+    "[latex]x_{1} x_{2} x_{3} x_{4}=0[/latex] ",
+    "[latex]x_{1} x_{3}+ x_{2}=0[/latex] ",
+    "[latex]\\bar{x}_{1}\\oplus \\bar{x}_{3}=\\bar{x}_{2}\\oplus \\bar{x}_{4}[/latex]",
+    "[latex]x_{1} +x_{2}+ x_{3}+ x_{4}=0[/latex] "
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1116209,
+   "number": 9,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Let X be the number of distinct 16-bit integers in 2's complement representation. Let Y be the number of distinct 16 bit integers in sign magnitude representation. Then X-Y is ________.",
+   "solution": "Checking each statement:<br>- 2's complement: all [latex]2^{16}[/latex] bit patterns are different numbers.<br>\n- Sign-magnitude: +0 and [latex]-[/latex]0 are both zero, so only [latex]2^{16}-1[/latex] distinct numbers.<br><br>\nX [latex]-[/latex] Y = 1<br><br>\n<b>Answer: 1</b><br><br><a href=\"https://gateoverflow.in/39546/gate2016-2-9#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "ansMin": 1,
+   "ansMax": 1
+  },
+  {
+   "id": 1116210,
+   "number": 10,
+   "type": "NAT",
+   "marks": 1,
+   "text": "A processor has 40 distinct instructions and 24 general purpose registers. A 32-bit instruction word has an opcode, two register operands and an immediate operand. The number of bits available for the immediate operand field is _______ .",
+   "solution": "Checking each statement:<br>- 40 instructions [latex]\\rightarrow[/latex] opcode [latex]\\lceil\\log_2 40\\rceil=6[/latex] bits<br>\n- 24 registers [latex]\\rightarrow[/latex] 5 bits each, two operands = 10 bits<br><br>\nImmediate = 32 [latex]-[/latex] 6 [latex]-[/latex] 10 = 16 bits<br><br>\n<b>Answer: 16</b><br><br><a href=\"https://gateoverflow.in/39547/gate2016-2-10#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Machine Instruction",
+   "tag2_url": "https://practicepaper.in/gate-cse/machine-instruction",
+   "ansMin": 16,
+   "ansMax": 16
+  }
+ ]
+}

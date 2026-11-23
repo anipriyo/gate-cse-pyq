@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "quizId": 11161,
+  "quizName": "GATE CS 2016 SET 1",
+  "pageTitle": "GATE CSE 2016 SET-1",
+  "timeLimit": 0,
+  "pageNo": 7,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2016-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1116131,
+   "number": 31,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The size of the data count register of a DMA controller is 16 bits.The processor needs to transfer a file of 29,154 kilobytes from disk to main memory.The memory is byte addressable. The minimum number of times the DMA control lerneeds to get the control of the systembus from the processor to transfer the file from the disk to main memory is ____.",
+   "solution": "A 16-bit count register lets the DMA move at most [latex]2^{16}[/latex] bytes = 64 KB each time it takes the bus.<br><br>\n[latex]\\lceil29154/64\\rceil=\\lceil455.5\\rceil=456[/latex]<br><br>\n<b>Answer: 456</b><br><br><a href=\"https://gateoverflow.in/39698/gate2016-1-31#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "IO Interface",
+   "tag2_url": "https://practicepaper.in/gate-cse/io-interface",
+   "ansMin": 456,
+   "ansMax": 456
+  },
+  {
+   "id": 1116132,
+   "number": 32,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The stage delays in a 4-stage pipeline are 800,500,400 and 300 picoseconds.The first stage (with delay 800 picoseconds)is replaced with a functionally equivalent design involving two stages with respective delays 600 and 350 picoseconds.The throughput increase of the pipeline is ________ percent.",
+   "solution": "Throughput is 1 / (slowest stage).<br>\n- Before: max delay 800 ps.<br>\n- After: stages 600, 350, 500, 400, 300 [latex]\\rightarrow[/latex] max 600 ps.<br><br>\nIncrease [latex]=\\frac{1/600-1/800}{1/800}=\\frac{800}{600}-1=33.3\\%[/latex]<br><br>\n<b>Answer: 33.33</b><br><br><a href=\"https://gateoverflow.in/39691/gate2016-1-32#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Pipeline Processor",
+   "tag2_url": "https://practicepaper.in/gate-cse/pipeline-processor",
+   "ansMin": 33,
+   "ansMax": 34
+  },
+  {
+   "id": 1116133,
+   "number": 33,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a carry lookahead adder for adding two n-bit integers,built using gates of fan-in at most two. The time to perform addition using this adder is",
+   "solution": "Carry lookahead computes all carries from the generate/propagate signals. With gates of fan-in 2, combining n signals needs a tree of depth [latex]\\log_2 n[/latex].<br><br>\n<b>Answer: [latex]\\Theta(\\log n)[/latex]</b><br><br><a href=\"https://gateoverflow.in/39688/gate2016-1-33#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Asymptotic Notation",
+   "tag2_url": "https://practicepaper.in/gate-cse/asymptotic-notation",
+   "options": [
+    "[latex]\\Theta (1)[/latex]",
+    "[latex]\\Theta (log(n))[/latex]",
+    "[latex]\\Theta \\sqrt{n}[/latex]",
+    "[latex]\\Theta (n)[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1116134,
+   "number": 34,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The following function computes the maximum value contained in an integer array p[] of size n (n&gt;=1).<pre><code> \nint max(int*p, int n){\n   int a=0,b=n-1;\n   while (__________){\n   if (p[a]<=p[b]){a=a+1;} \n   else {b=b-1;}\n   }\n   return p[a];\n}</code></pre>\nThe missing loop condition is",
+   "solution": "Two pointers start at the ends; each step discards the smaller of p[a] and p[b] (the maximum is never discarded). The loop must stop when only one candidate is left, i.e. when a and b meet.<br><br>\nLoop condition: b != a.<br><br>\n<b>Answer: b != a</b><br><br><a href=\"https://gateoverflow.in/39704/gate2016-1-34#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Loop",
+   "tag2_url": "https://practicepaper.in/gate-cse/loop",
+   "options": [
+    "a !=n",
+    "b !=0",
+    "b [latex]\\gt[/latex] (a+1)",
+    "b !=a"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1116135,
+   "number": 35,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "What will be the output of the following C program?<pre><code>\nvoid count(int n){\n   static int d=1;\n   printf(\"%d \",n);\n   printf(\"%d \",d);\n   d++;\n   if(n&gt1) count(n-1);\n   printf(\"%d \",d);\n}\nvoid main(){\n    count(3);\n}</code></pre>",
+   "solution": "d is static (one copy, starts at 1).<br>\n- count(3): prints 3, 1; d = 2; calls count(2)<br>\n- count(2): prints 2, 2; d = 3; calls count(1)<br>\n- count(1): prints 1, 3; d = 4; prints 4<br>\n- back in count(2): prints 4; back in count(3): prints 4<br><br>\nOutput: 3 1 2 2 1 3 4 4 4<br><br>\n<b>Answer: 312213444</b><br><br><a href=\"https://gateoverflow.in/39730/gate2016-1-35#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "options": [
+    "312213444",
+    "312111222",
+    "3122134",
+    "3121112"
+   ],
+   "correct": 0
+  }
+ ]
+}

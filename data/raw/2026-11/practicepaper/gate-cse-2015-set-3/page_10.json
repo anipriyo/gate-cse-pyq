@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "quizId": 11153,
+  "quizName": "GATE CS 2015 SET 3",
+  "pageTitle": "GATE CSE 2015 SET-3",
+  "timeLimit": 0,
+  "pageNo": 10,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-3",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115346,
+   "number": 46,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Two hosts are connected via a packet switch with [latex]10^{7}[/latex] bits per second links. Each link has a propagation delay of 20 microseconds. The switch begins forwarding a packet 35 microseconds after it receives the same. If 10000 bits of data are to be transmitted between the two hosts using a packet size of 5000 bits, the time elapsed between the transmission of the first bit of data and the reception of the last bit of the data in microseconds is____________.",
+   "solution": "Each packet: [latex]T_t=\\frac{5000}{10^7}=500\\,\\mu s[/latex], propagation 20 [latex]\\mu s[/latex], switch delay 35 [latex]\\mu s[/latex].<br><br>\n- Packet 1: sent 0-500, at switch by 520, forwarded 555-1055, received by 1075<br>\n- Packet 2: sent 500-1000, at switch by 1020, forwarded 1055-1555, received by 1575<br><br>\n<b>Answer: 1575</b><br><br><a href=\"https://gateoverflow.in/8495/gate2015-3-46#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "ansMin": 1575,
+   "ansMax": 1575
+  },
+  {
+   "id": 1115347,
+   "number": 47,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "For the processes listed in the following table, which of the following scheduling schemes will give the lowest average turnaround time? <br><img src=\"/wp-content/uploads/GATE/CS/20153/q47.jpg\"/> ",
+   "solution": "Average turnaround time:<br><br>\n- FCFS: A 0-3, B 3-9, C 9-13, D 13-15 [latex]\\rightarrow[/latex] (3 + 8 + 9 + 9)/4 = 7.25<br>\n- Non-preemptive SJF: A, B, D, C [latex]\\rightarrow[/latex] (3 + 8 + 5 + 11)/4 = 6.75<br>\n- SRT: A 0-3, B 3-4, C 4-8, D 8-10, B 10-15 [latex]\\rightarrow[/latex] (3 + 14 + 4 + 4)/4 = 6.25<br>\n- RR (q = 2) is higher than SRT<br><br>\n<b>Answer: Shortest Remaining Time</b><br><br><a href=\"https://gateoverflow.in/8492/gate2015-3-47#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "CPU Scheduling",
+   "tag2_url": "https://practicepaper.in/gate-cse/cpu-scheduling",
+   "options": [
+    "First Come First Serve",
+    "Non-preemptive Shortest Job First",
+    "Shortest Remaining Time",
+    "Round Robin with Quantum value two"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115348,
+   "number": 48,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider three software items: Program-X, Control Flow Diagram of Program-Y and Control Flow Diagram of Program-Z as shown below <br><img src=\"/wp-content/uploads/GATE/CS/20153/q48.jpg\"/> <br> The values of McCabe's Cyclomatic complexity of Program-X, Program-Y, and Program-Z respectively are",
+   "solution": "Checking each statement:<br>- Program X: decisions are if, while and if-else [latex]\\rightarrow[/latex] 3 + 1 = 4<br>\n- Program Y: 8 nodes, 7 forward edges + 3 back edges = 10 edges [latex]\\rightarrow[/latex] 10 [latex]-[/latex] 8 + 2 = 4<br>\n- Program Z: X followed by Y, joined by one edge [latex]\\rightarrow[/latex] 4 + 4 [latex]-[/latex] 1 = 7<br><br>\n<b>Answer: 4, 4, 7</b><br><br><a href=\"https://gateoverflow.in/8564/gate2015-3-48#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Software Engg",
+   "tag1_url": "https://practicepaper.in/gate-cse/software-engg",
+   "tag2": "",
+   "tag2_url": "https://practicepaper.in/gate-cse/",
+   "options": [
+    "4, 4, 7",
+    "3, 4, 7",
+    "4, 4, 8",
+    "4, 3, 8"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1115349,
+   "number": 49,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the equation [latex](43)_{x}=(y3)_{8}[/latex] where x and y are unknown. The number of possible solutions is ______________",
+   "solution": "[latex](43)_x=4x+3,\\quad(y3)_8=8y+3\\Rightarrow x=2y[/latex]<br><br>\nDigit 4 needs x [latex]\\ge[/latex] 5 and y must be an octal digit (0 to 7). So y = 3, 4, 5, 6, 7 [latex]\\rightarrow[/latex] 5 solutions.<br><br>\n<b>Answer: 5</b><br><br><a href=\"https://gateoverflow.in/8494/gate2015-3-49#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "ansMin": 5,
+   "ansMax": 5
+  },
+  {
+   "id": 1115350,
+   "number": 50,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let R be a relation on the set of ordered pairs of positive integers such that [latex]((p,q),(r,s)) \\in R[/latex] if and only if [latex]p-s=q-r[/latex]. Which one of the following is true about R?",
+   "solution": "Checking each statement:<br>- Reflexive needs p [latex]-[/latex] q = q [latex]-[/latex] p, i.e. p = q. Fails for (1, 2) [latex]\\rightarrow[/latex] not reflexive.<br>\n- Symmetric: ((r,s),(p,q)) needs r [latex]-[/latex] q = s [latex]-[/latex] p, which rearranges to p [latex]-[/latex] s = q [latex]-[/latex] r [latex]\\rightarrow[/latex] symmetric.<br><br>\n<b>Answer: Not reflexive but symmetric</b><br><br><a href=\"https://gateoverflow.in/8500/gate2015-3-50#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Relation",
+   "tag2_url": "https://practicepaper.in/gate-cse/relation",
+   "options": [
+    "Both reflexive and symmetric",
+    "Reflexive but not symmetric",
+    "Not reflexive but symmetric",
+    "Neither reflexive nor symmetric"
+   ],
+   "correct": 2
+  }
+ ]
+}

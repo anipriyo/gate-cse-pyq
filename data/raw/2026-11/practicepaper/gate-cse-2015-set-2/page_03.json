@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "quizId": 11152,
+  "quizName": "GATE CS 2015 SET 2",
+  "pageTitle": "GATE CSE 2015 SET-2",
+  "timeLimit": 0,
+  "pageNo": 3,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115211,
+   "number": 11,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following function written in the C programming language. <pre><code>   void foo(char *a){\n     if ( *a && *a != ' '){\n          foo(a+1);\n          putchar(*a);\n       }\n} </code></pre> The output of the above function on input [latex]\"ABCD \\;  \\; EFGH\"[/latex] is",
+   "solution": "foo first recurses to the next character and prints the current one on the way back, so it prints in reverse. It stops at the end of string or at a space.<br><br>\nOnly \"ABCD\" is processed, printed reversed: DCBA<br><br>\n<b>Answer: DCBA</b><br><br><a href=\"https://gateoverflow.in/8086/gate2015-2-11#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "options": [
+    "ABCD EFGH",
+    "ABCD",
+    "HGFE DCBA",
+    "DCBA"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1115212,
+   "number": 12,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider a complete binary tree where the left and the right subtrees of the root are max-heaps. The lower bound for the number of operations to convert the tree to a heap is",
+   "solution": "Both subtrees are already heaps, so only the root may be out of place. One heapify (sift-down) from the root fixes it, moving down at most the height of the tree.<br><br>\nBound = [latex]\\Omega(\\log n)[/latex] (and this is enough).<br><br>\n<b>Answer: [latex]\\Omega(\\log n)[/latex]</b><br><br><a href=\"https://gateoverflow.in/8091/gate2015-2-12#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Heap Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/heap-tree",
+   "options": [
+    "[latex]\\Omega (log n)[/latex]",
+    "[latex](n)[/latex]",
+    "[latex]\\Omega (n \\; log n)[/latex]",
+    "[latex]\\Omega (n^{2})[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1115213,
+   "number": 13,
+   "type": "NAT",
+   "marks": 1,
+   "text": "A binary tree T has 20 leaves. The number of nodes in T having two children is _______.",
+   "solution": "In any binary tree, (nodes with 2 children) = (leaves) [latex]-[/latex] 1.<br><br>\n20 [latex]-[/latex] 1 = 19<br><br>\n<b>Answer: 19</b><br><br><a href=\"https://gateoverflow.in/8059/gate2015-2-13#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-tree",
+   "ansMin": 19,
+   "ansMax": 19
+  },
+  {
+   "id": 1115214,
+   "number": 14,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the following C function. <pre><code>int fun(int n){\n   int x=1,k;\n   if (n==1) return x;\n   for (k=1; k < n; ++k)\n       x = x + fun(k) * fun(n-k);\n   return x;\n}</code></pre> The return value of fun(5) is ________.",
+   "solution": "[latex]fun(n)=1+\\sum_{k=1}^{n-1}fun(k)\\,fun(n-k)[/latex], fun(1) = 1:<br><br>\n- fun(2) = 1 + 1 = 2<br>\n- fun(3) = 1 + 2 + 2 = 5<br>\n- fun(4) = 1 + 5 + 4 + 5 = 15<br>\n- fun(5) = 1 + 15 + 10 + 10 + 15 = 51<br><br>\n<b>Answer: 51</b><br><br><a href=\"https://gateoverflow.in/8060/gate2015-2-14#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "ansMin": 51,
+   "ansMax": 51
+  },
+  {
+   "id": 1115215,
+   "number": 15,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "A software requirements specification (SRS) document should avoid discussing which one of the following?",
+   "solution": "An SRS says <i>what</i> the system must do (functional and non-functional needs, interfaces, UI requirements). <i>How</i> it is built (the design) belongs in the design document.<br><br>\n<b>Answer: Design specification</b><br><br><a href=\"https://gateoverflow.in/8050/gate2015-2-15#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Software Engg",
+   "tag1_url": "https://practicepaper.in/gate-cse/software-engg",
+   "tag2": "",
+   "tag2_url": "https://practicepaper.in/gate-cse/",
+   "options": [
+    "User interface issues",
+    "Non-functional requirements",
+    "Design specification",
+    "Interfaces with third party software"
+   ],
+   "correct": 2
+  }
+ ]
+}

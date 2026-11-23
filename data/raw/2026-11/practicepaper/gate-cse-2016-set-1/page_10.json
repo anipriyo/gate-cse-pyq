@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "quizId": 11161,
+  "quizName": "GATE CS 2016 SET 1",
+  "pageTitle": "GATE CSE 2016 SET-1",
+  "timeLimit": 0,
+  "pageNo": 10,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2016-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1116146,
+   "number": 46,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following Syntax Directed Translation Scheme(SDTS),with non-terminals {S, A} and terminals {a, b}. <br>\nS [latex]\\rightarrow[/latex] aA {print 1} <br>\nS [latex]\\rightarrow[/latex] a { print 2} <br>\nA [latex]\\rightarrow[/latex] Sb { print 3} <br>\nUsing the above SDTS, the output printed by a bottom-up parser, for the input aab is:",
+   "solution": "Parse aab bottom-up:<br>\n1. The second a is reduced by [latex]S\\rightarrow a[/latex] [latex]\\rightarrow[/latex] prints <b>2</b><br>\n2. S b is reduced by [latex]A\\rightarrow Sb[/latex] [latex]\\rightarrow[/latex] prints <b>3</b><br>\n3. a A is reduced by [latex]S\\rightarrow aA[/latex] [latex]\\rightarrow[/latex] prints <b>1</b><br><br>\n<b>Answer: 231</b><br><br><a href=\"https://gateoverflow.in/39700/gate2016-1-46#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Parsing",
+   "tag2_url": "https://practicepaper.in/gate-cse/parsing",
+   "options": [
+    "132",
+    "223",
+    "231",
+    "syntax error"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1116147,
+   "number": 47,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a computer system with 40-bit virtual addressing and page size of sixteen\nkilobytes. If the computer system has a one level page table per process and each page table entry requires 48 bits, then the size of the per-process page table is _________ mega bytes.",
+   "solution": "Entries = [latex]\\frac{2^{40}}{2^{14}}=2^{26}[/latex]. Each entry = 48 bits = 6 bytes.<br><br>\nSize [latex]=2^{26}\\times6=6\\times64\\text{ MB}=384[/latex] MB<br><br>\n<b>Answer: 384</b><br><br><a href=\"https://gateoverflow.in/39690/gate2016-1-47#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "ansMin": 384,
+   "ansMax": 384
+  },
+  {
+   "id": 1116148,
+   "number": 48,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a disk queue with requests for I/O to blocks on cylinders 47,38,121,191,87,11, 92, 10. The C-LOOK scheduling algorithm is used. The head is initially at cylinder number 63, moving to wards larger cylinder numbers on its servicing pass. The cylinders are numbered from 0to 199. The total head movement (in number of cylinders) incurred while servicing these requests is____ .",
+   "solution": "C-LOOK from 63 going up: 87, 92, 121, 191 (movement 191 [latex]-[/latex] 63 = 128), then jump to the lowest request 10 (191 [latex]-[/latex] 10 = 181), then 11, 38, 47 (47 [latex]-[/latex] 10 = 37).<br><br>\nTotal = 128 + 181 + 37 = 346<br><br>\n<b>Answer: 346</b><br><br><a href=\"https://gateoverflow.in/39716/gate2016-1-48#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Disk Scheduling",
+   "tag2_url": "https://practicepaper.in/gate-cse/disk-scheduling",
+   "ansMin": 346,
+   "ansMax": 346
+  },
+  {
+   "id": 1116149,
+   "number": 49,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a computer system with ten physical page frames. The system is provided with an accessse quence [latex](a_{1},a_{2},...,a_{20},a_{1},a_{2},...,a_{20})[/latex], where each [latex]a_{i}[/latex] is a distinct virtual page number. The difference in the number of page faults between the last-in-first-outpage replacement policy and the optimal page replacement policy is ______.",
+   "solution": "<b>LIFO</b>: the first pass gives 20 faults; a1-a9 stay in memory and the 10th frame keeps getting replaced (ends with a20). Second pass: a1-a9 hit, a10-a20 fault (11). Total 31.<br><br>\n<b>Optimal</b>: 20 faults in the first pass and only 10 in the second (it keeps 10 of the pages needed next). Total 30.<br><br>\nDifference = 31 [latex]-[/latex] 30 = 1<br><br>\n<b>Answer: 1</b><br><br><a href=\"https://gateoverflow.in/39711/gate2016-1-49#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "ansMin": 1,
+   "ansMax": 1
+  },
+  {
+   "id": 1116150,
+   "number": 50,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following proposed solution for the critical section problem. There are n processes: [latex]P_{0}...P_{n-1}[/latex] . In the code,function [latex]pmax[/latex] returns an integer not smaller than any of its arguments. For all i, t[i] is initialized to zero.  <br><img src=\"/wp-content/uploads/GATE/CS/20161/q50.jpg\"/> <br>\nWhich one of the following is TRUE about the above solution?",
+   "solution": "This is a bakery-style algorithm: a process enters only after every other process with a smaller (non-zero) ticket has finished, so <b>mutual exclusion</b> holds.<br><br>\nBut two processes can pick the <b>same</b> ticket (pmax is not atomic). Then each waits for the other (t[j] [latex]\\le[/latex] t[i] holds both ways) [latex]\\rightarrow[/latex] deadlock, so progress and bounded waiting also fail.<br><br>\n<b>Answer: At most one process can be in the critical section at any time</b><br><br><a href=\"https://gateoverflow.in/39719/gate2016-1-50#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Process Synchronization",
+   "tag2_url": "https://practicepaper.in/gate-cse/process-synchronization",
+   "options": [
+    "At most one process can be in the critical section at any time",
+    "The bounded wait condition is satisfied",
+    "The progress condition is satisfied",
+    "It cannot cause a deadlock"
+   ],
+   "correct": 0
+  }
+ ]
+}

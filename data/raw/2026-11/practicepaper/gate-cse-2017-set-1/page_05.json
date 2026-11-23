@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11171,
+  "quizName": "GATE CS 2017 SET 1",
+  "pageTitle": "GATE CSE 2017 SET-1",
+  "timeLimit": 0,
+  "pageNo": 5,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2017-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1117121,
+   "number": 21,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the Karnaugh map given below, where x represents \"don't care\" and blank\nrepresents 0.<br><img src=\"/wp-content/uploads/GATE/CS/20171/q2.jpg\"/><br> Assume for all inputs (a, b, c, d) the respective complements [latex](\\bar{a},\\bar{b},\\bar{c},\\bar{d})[/latex] are also available. The\nabove logic is implemented 2-input NOR gates only. The minimum number of gates required\nis ____________.",
+   "solution": "The 1s (with suitable don't-cares) form one group: all cells with c = 1 and a = 0. So [latex]f=c\\bar a[/latex].<br><br>\n[latex]c\\bar a=\\overline{\\bar c+a}=NOR(\\bar c,a)[/latex] [latex]\\text{---}[/latex] a single 2-input NOR gate (complements are available).<br><br>\n<b>Answer: 1</b><br><br><a href=\"https://gateoverflow.in/118301/gate2017-1-21#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "ansMin": 1,
+   "ansMax": 1
+  },
+  {
+   "id": 1117122,
+   "number": 22,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the language L given by the regular expression (a+b )* b (a+b )  over the alphabet {a, b}. The smallest number of states needed in a deterministic finite-state automation (DFA) accepting L is ___________.",
+   "solution": "The language is \"the second-last symbol is b\". The DFA must remember the last two symbols: aa, ab, ba, bb [latex]\\rightarrow[/latex] 4 states (all distinguishable).<br><br>\n<b>Answer: 4</b><br><br><a href=\"https://gateoverflow.in/118302/gate2017-1-22#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Finite Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/finite-automata",
+   "ansMin": 4,
+   "ansMax": 4
+  },
+  {
+   "id": 1117123,
+   "number": 23,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider a database that has the relation schema EMP (EmpId, EmpName, and DeptName).\nAn instance of the schema EMP and a SQL query on it are given below. <br><img src=\"/wp-content/uploads/GATE/CS/20171/q20.jpg\"/> The output of executing the SQL query is _____.",
+   "solution": "The inner query counts employees per department: AA 4, AB 3, AC 3, AD 2, AE 1. Every (DeptName, Num) pair is in that result, so all five rows are kept.<br><br>\nAVG = (4 + 3 + 3 + 2 + 1) / 5 = 13 / 5 = 2.6<br><br>\n<b>Answer: 2.6</b><br><br><a href=\"https://gateoverflow.in/118303/gate2017-1-23#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "SQL",
+   "tag2_url": "https://practicepaper.in/gate-cse/sql",
+   "ansMin": 2.6,
+   "ansMax": 2.6
+  },
+  {
+   "id": 1117124,
+   "number": 24,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the following CPU processes with arrival times (in milliseconds) and length of CPU\nburst (in milliseconds) as given below:  <br><img src=\"/wp-content/uploads/GATE/CS/20171/q9.jpg\"/><br> If the pre-emptive shortest remaining time first scheduling algorithm is used to schedule the processes., then the average waiting time across all processes is ________ milliseconds.",
+   "solution": "SRTF: P1 0-3 (4 left); P2 (3) preempts, runs 3-6; at 6: P1 4, P3 5, P4 2 [latex]\\rightarrow[/latex] P4 6-8; P1 8-12; P3 12-17.<br><br>\nWaiting: P1 = 12 [latex]-[/latex] 0 [latex]-[/latex] 7 = 5, P2 = 0, P3 = 17 [latex]-[/latex] 5 [latex]-[/latex] 5 = 7, P4 = 0 [latex]\\rightarrow[/latex] average = 12 / 4 = 3<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/118304/gate2017-1-24#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "CPU Scheduling",
+   "tag2_url": "https://practicepaper.in/gate-cse/cpu-scheduling",
+   "ansMin": 3,
+   "ansMax": 3
+  },
+  {
+   "id": 1117125,
+   "number": 25,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider a two-level cache hierarchy with L1 and L2 caches. An application incurs 1.4\nmemory accesses per instruction on average. For this application, the miss rate of L1 cache 0.1, the L2 cache experiences, on average, 7 misses per 1000 instructions. The miss rate of L2 expressed correct to two decimal places is ___________.",
+   "solution": "Per 1000 instructions: memory accesses = 1400, L1 misses = 0.1 [latex]\\times[/latex] 1400 = 140. These 140 go to L2, which misses 7 times.<br><br>\nL2 miss rate = 7 / 140 = 0.05<br><br>\n<b>Answer: 0.05</b><br><br><a href=\"https://gateoverflow.in/118305/gate2017-1-25#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "ansMin": 0.05,
+   "ansMax": 0.05
+  }
+ ]
+}

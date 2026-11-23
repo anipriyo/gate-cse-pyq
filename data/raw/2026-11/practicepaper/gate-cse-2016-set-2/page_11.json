@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "quizId": 11162,
+  "quizName": "GATE CS 2016 SET 2",
+  "pageTitle": "GATE CSE 2016 SET-2",
+  "timeLimit": 0,
+  "pageNo": 11,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2016-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1116251,
+   "number": 51,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following databases chedule with two transactions, T1 and T2.<br>\n[latex]S=r_{2}(X);r_{1}(X);r_{2}(Y);w_{1}(X);r_{1}(Y);w_{2}(X);a_{1};a_{2}[/latex]<br>\nwhere [latex]r_{i}(Z)[/latex] denotes a read operation by transaction [latex]T_{i}[/latex] on avariable Z, [latex]w_{i}(Z)[/latex]\n denotes a write operation by [latex]T_{i}[/latex] on avariable Z and [latex]a_{i}[/latex] denotes an abort by transaction [latex]T_{i}[/latex].<br>\nWhich one of the following statements about the above schedule is TRUE?",
+   "solution": "No transaction reads a value written by the other before it ends: T1 reads X before T2 writes it, and T2's reads happen before T1's write. So when T1 aborts, T2 does not need to be aborted: <b>no cascading abort</b>.<br><br>\nIt is not strict, because [latex]w_2(X)[/latex] overwrites [latex]w_1(X)[/latex] while T1 is still active.<br><br>\n<b>Answer: S does not have a cascading abort</b><br><br><a href=\"https://gateoverflow.in/39590/gate2016-2-51#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Transaction",
+   "tag2_url": "https://practicepaper.in/gate-cse/transaction",
+   "options": [
+    "S is non-recoverable",
+    "S is recoverable,but has a cascading abort",
+    "S does not have a cascading abort",
+    "S is strict"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1116252,
+   "number": 52,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following database table named water_schemes : <br><img src=\"/wp-content/uploads/GATE/CS/20162/q52.jpg\"/><br> The number of tuples returned by the following SQL query is __________.\n<br><img src=\"/wp-content/uploads/GATE/CS/20162/q52a.jpg\"/>",
+   "solution": "District totals: Ajmer 20, Bikaner 10 + 10 + 20 = 40, Churu 10 + 20 = 30, Dungargarh 10.<br>\nAverage of totals = (20 + 40 + 30 + 10) / 4 = 25.<br><br>\nDistricts with total [latex]\\ge[/latex] 25: Bikaner and Churu [latex]\\rightarrow[/latex] 2 rows.<br><br>\n<b>Answer: 2</b><br><br><a href=\"https://gateoverflow.in/39604/gate2016-2-52#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "SQL",
+   "tag2_url": "https://practicepaper.in/gate-cse/sql",
+   "ansMin": 2,
+   "ansMax": 2
+  },
+  {
+   "id": 1116253,
+   "number": 53,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A network has a data transmission bandwidth of [latex]20 \\times 10^{6}[/latex] bits per second. It uses CSMA/CD in the MAClayer. The maximum signal propagation time from one node to another node is 40 microseconds. The minimum size of a frame in the network is  ______ bytes.",
+   "solution": "For CSMA/CD the frame must still be sending when news of a collision returns: [latex]T_t\\ge2T_p[/latex].<br><br>\nMin frame = [latex]2\\times40\\times10^{-6}\\times20\\times10^6=1600[/latex] bits = 200 bytes<br><br>\n<b>Answer: 200</b><br><br><a href=\"https://gateoverflow.in/39589/gate2016-2-53#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "ansMin": 200,
+   "ansMax": 200
+  },
+  {
+   "id": 1116254,
+   "number": 54,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "For the IEEE802.11 MAC protocol for wireless communication,which of the following\nstatements is/are TRUE?<br>\nI. At least three non-overlapping channels are available for transmissions.<br>\nII. The RTS-CTS mechan is misused for collision detection.<br>\nIII. Unicast frames are ACKed.",
+   "solution": "Checking each statement:<br>- I: 802.11 (2.4 GHz) has 3 non-overlapping channels (1, 6, 11) True<br>\n- II: RTS/CTS is for collision <b>avoidance</b> (hidden terminals); wireless stations cannot detect collisions False<br>\n- III: unicast frames are acknowledged True<br><br>\n<b>Answer: I and III only</b><br><br><a href=\"https://gateoverflow.in/39593/gate2016-2-54#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "options": [
+    "All I,II,andIII",
+    "I andIIIonly",
+    "II andIIIonly",
+    "II only"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1116255,
+   "number": 55,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a [latex]128 \\times 10^{3}[/latex] bits/second satellite communication link with one way propagation delay of 150 milliseconds. Selective retransmission(repeat) protocol is used on this link to send data with a frame size of 1 kilobyte. Neglect the transmission time of acknowledgement. The minimum number of bits required for the sequence number field to achieve 100% utilization is ________.",
+   "solution": "Frame = 1 KB = 8192 bits [latex]\\rightarrow[/latex] [latex]T_t=\\frac{8192}{128000}=64[/latex] ms. RTT = 300 ms.<br>\nFor 100% utilization the window must cover [latex]\\frac{64+300}{64}\\approx5.7[/latex] [latex]\\rightarrow[/latex] 6 frames.<br><br>\nSelective repeat needs window [latex]\\le2^{k-1}[/latex]: [latex]2^{k-1}\\ge6\\Rightarrow k=4[/latex].<br><br>\n<b>Answer: 4</b><br><br><a href=\"https://gateoverflow.in/39577/gate2016-2-55#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "ansMin": 4,
+   "ansMax": 4
+  }
+ ]
+}

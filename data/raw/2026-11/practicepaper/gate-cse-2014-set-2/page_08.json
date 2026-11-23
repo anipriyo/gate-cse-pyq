@@ -1,0 +1,100 @@
+{
+ "meta": {
+  "quizId": 11142,
+  "quizName": "GATE CS 2014 SET 2",
+  "pageTitle": "GATE CSE 2014 SET-2",
+  "timeLimit": 0,
+  "pageNo": 8,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114236,
+   "number": 36,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let [latex]L_{1}=\\{w \\in \\{0,1\\}*|w[/latex] has at least as many occurrences of (110)'s as (011)'s}. <br>Let [latex]L_{2}=\\{w \\in \\{0,1\\}*|w[/latex] has at least as many occurrence of (000)'s as (111)'s}. <br><br>Which one of the following is TRUE?",
+   "solution": "L1: 110 and 011 occurrences alternate in a binary string, so their counts differ by at most 1, depending only on how the string starts and ends. A finite automaton can check this [latex]\\rightarrow[/latex] regular.<br><br>\nL2: counts of 000 and 111 can grow independently (e.g. [latex]0^n1^n[/latex] type strings), and comparing them needs unbounded counting [latex]\\rightarrow[/latex] not regular.<br><br>\n<b>Answer: L1 is regular but not L2</b><br><br><a href=\"https://gateoverflow.in/1995/gate2014-2-36#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Regular Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/regular-language",
+   "options": [
+    "L1 is regular but not L2",
+    "L2 is regular but not L1",
+    "Both L1 and L2 are regular",
+    "Neither L1 nor L2 are regular"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1114237,
+   "number": 37,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider two strings A=\"qpqrr\" and B=\"pqprqrp\". Let x be the length of the longest\ncommon subsequence (not necessarily contiguous) between A and B and let y be the number\nof such longest common subsequences between A and B. Then x + 10y = ___.",
+   "solution": "A = qpqrr, B = pqprqrp.<br><br>\nThe LCS length is x = 4, and the LCSs are: qpqr, qprr, pqrr [latex]\\rightarrow[/latex] y = 3.<br><br>\nx + 10y = 4 + 30 = 34<br><br>\n<b>Answer: 34</b><br><br><a href=\"https://gateoverflow.in/1996/gate2014-2-37#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Dynamic programming",
+   "tag2_url": "https://practicepaper.in/gate-cse/dynamic-programming",
+   "ansMin": 34,
+   "ansMax": 34
+  },
+  {
+   "id": 1114238,
+   "number": 38,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Suppose P, Q, R, S, T are sorted sequences having lengths 20, 24, 30, 35, 50 respectively.\nThey are to be merged into a single sequence by merging together two sequences at a time.\nThe number of comparisons that will be needed in the worst case by the optimal algorithm for doing this is ____.",
+   "solution": "Merging lists of size m and n needs m + n [latex]-[/latex] 1 comparisons in the worst case. Optimal: always merge the two smallest (like Huffman).<br><br>\n- 20 + 24 = 44 [latex]\\rightarrow[/latex] 43<br>\n- 30 + 35 = 65 [latex]\\rightarrow[/latex] 64<br>\n- 44 + 50 = 94 [latex]\\rightarrow[/latex] 93<br>\n- 65 + 94 = 159 [latex]\\rightarrow[/latex] 158<br><br>\nTotal = 43 + 64 + 93 + 158 = 358<br><br>\n<b>Answer: 358</b><br><br><a href=\"https://gateoverflow.in/1997/gate2014-2-38#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Greedy Technique",
+   "tag2_url": "https://practicepaper.in/gate-cse/greedy-technique",
+   "ansMin": 358,
+   "ansMax": 358
+  },
+  {
+   "id": 1114239,
+   "number": 39,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the expression tree shown. Each leaf represents a numerical value, which can either\nbe 0 or 1. Over all possible choices of the values at the leaves, the maximum possible value\nof the expression represented by the tree is ___. <br><img src=\"/wp-content/uploads/GATE/CS/20142/q39.jpg\"/> ",
+   "solution": "Root = (left subtree) + (right subtree).<br><br>\n- Left: (a + b) [latex]-[/latex] (c [latex]-[/latex] d). Max = (1 + 1) [latex]-[/latex] (0 [latex]-[/latex] 1) = 3<br>\n- Right: (e [latex]-[/latex] f) + (g + h). Max = (1 [latex]-[/latex] 0) + (1 + 1) = 3<br><br>\nMaximum = 3 + 3 = 6<br><br>\n<b>Answer: 6</b><br><br><a href=\"https://gateoverflow.in/1999/gate2014-2-39#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-tree",
+   "ansMin": 6,
+   "ansMax": 6
+  },
+  {
+   "id": 1114240,
+   "number": 40,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following function\n<pre><code> double f (double x) {\nif ( abs (x*x - 3) < 0.01) return x;\nelse return f (x / 2 + 1.5/x);\n} </code></pre>\nGive a value q (to 2 decimals) such that f(q) will return q:______",
+   "solution": "f returns x only when [latex]|x^2-3|\\lt 0.01[/latex], i.e. [latex]x\\approx\\sqrt3[/latex]. (The recursion x/2 + 1.5/x is Newton's method for [latex]\\sqrt3[/latex].)<br><br>\nq = 1.73: [latex]1.73^2=2.9929[/latex], [latex]|2.9929-3|=0.0071\\lt 0.01[/latex] [latex]\\rightarrow[/latex] f(1.73) returns 1.73.<br><br>\n<b>Answer: 1.73</b><br><br><a href=\"https://gateoverflow.in/2000/gate2014-2-40#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "ansMin": 1.72,
+   "ansMax": 1.74
+  }
+ ]
+}

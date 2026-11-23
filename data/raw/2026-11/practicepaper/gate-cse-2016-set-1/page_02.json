@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "quizId": 11161,
+  "quizName": "GATE CS 2016 SET 1",
+  "pageTitle": "GATE CSE 2016 SET-1",
+  "timeLimit": 0,
+  "pageNo": 2,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2016-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1116106,
+   "number": 6,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the Boolean operator with the following properties:<br>\n[latex]x \\# 0=x, x \\# 1=\\bar{x}[/latex], [latex]x \\# x=0[/latex] and [latex]x \\# \\bar{x}=1[/latex]. Then [latex]x \\# y[/latex] is equivalent to",
+   "solution": "[latex]x\\#0=x[/latex], [latex]x\\#1=\\bar x[/latex], [latex]x\\#x=0[/latex], [latex]x\\#\\bar x=1[/latex]: these are exactly the properties of <b>XOR</b>.<br><br>\n[latex]x\\#y=x\\bar y+\\bar xy[/latex]<br><br>\n<b>Answer: [latex]x\\bar y+\\bar xy[/latex]</b><br><br><a href=\"https://gateoverflow.in/39629/gate2016-1-6#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "options": [
+    "[latex]x\\bar{y}+\\bar{x}y[/latex]",
+    "[latex]x\\bar{y}+\\bar{x}\\bar{y}[/latex]",
+    "[latex]\\bar{x}y+xy[/latex]",
+    "[latex]xy+\\bar{x}\\bar{y}[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1116107,
+   "number": 7,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The 16 bit 2's complement representation of an integer is 1111 1111 1111 0101;   its decimal representation is__________ .",
+   "solution": "The MSB is 1, so the number is negative. Take the 2's complement of 1111 1111 1111 0101:<br>\ninvert [latex]\\rightarrow[/latex] 0000 0000 0000 1010, add 1 [latex]\\rightarrow[/latex] 0000 0000 0000 1011 = 11.<br><br>\n<b>Answer: -11</b><br><br><a href=\"https://gateoverflow.in/39649/gate2016-1-7#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "ansMin": -11,
+   "ansMax": -11
+  },
+  {
+   "id": 1116108,
+   "number": 8,
+   "type": "NAT",
+   "marks": 1,
+   "text": "We want to design a synchronous counter that counts these quence 0-1-0-2-0-3 and then repeats. The minimum number of J-K flip flop srequired to implement this counteris ________.",
+   "solution": "The sequence 0, 1, 0, 2, 0, 3 has 6 steps, and the three 0s are followed by different numbers, so the counter needs 6 different internal states.<br><br>\n6 states need [latex]\\lceil\\log_2 6\\rceil=3[/latex] flip-flops (the output is then decoded from the state).<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/39670/gate2016-1-8#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Sequential Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/sequential-circuit",
+   "ansMin": 3,
+   "ansMax": 4
+  },
+  {
+   "id": 1116109,
+   "number": 9,
+   "type": "NAT",
+   "marks": 1,
+   "text": "A processor can support a maximum memory of 4GB, where the memory is word-addressable (a word consists of two bytes). The size of the address bus of the process or is at least bits________.",
+   "solution": "4 GB = [latex]2^{32}[/latex] bytes. One word = 2 bytes, so there are [latex]2^{31}[/latex] words.<br>\nWord addressable [latex]\\rightarrow[/latex] [latex]2^{31}[/latex] addresses [latex]\\rightarrow[/latex] 31 address bits.<br><br>\n<b>Answer: 31</b><br><br><a href=\"https://gateoverflow.in/39632/gate2016-1-9#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "ansMin": 31,
+   "ansMax": 31
+  },
+  {
+   "id": 1116110,
+   "number": 10,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "A queue is implemented using an array such that ENQUEUE and DEQUEUE operations are performed efficiently. Which one of the following statements is CORRECT (n refers to the number of items in the queue)?",
+   "solution": "Use a <b>circular array</b> with front and rear indices: ENQUEUE writes at rear and moves it, DEQUEUE reads at front and moves it (both modulo the array size). No shifting is needed, so both are [latex]O(1)[/latex].<br><br>\n<b>Answer: Both operations can be performed in O(1) time</b><br><br><a href=\"https://gateoverflow.in/39667/gate2016-1-10#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Queue",
+   "tag2_url": "https://practicepaper.in/gate-cse/queue",
+   "options": [
+    "Both operations can be performed in O(1) time",
+    "At most one operation can be performed in O(1) time but the worst case time for\nthe other operation will be [latex]\\Omega[/latex](n)",
+    "The worst case time complexity for both operations will be [latex]\\Omega[/latex](n)",
+    "Worst case time complexity for both operations will be [latex]\\Omega[/latex](logn)"
+   ],
+   "correct": 0
+  }
+ ]
+}

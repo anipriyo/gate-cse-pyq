@@ -1,0 +1,115 @@
+{
+ "meta": {
+  "quizId": 11142,
+  "quizName": "GATE CS 2014 SET 2",
+  "pageTitle": "GATE CSE 2014 SET-2",
+  "timeLimit": 0,
+  "pageNo": 7,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114231,
+   "number": 31,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the procedure below for the Producer-Consumer problem which uses semaphores:\n<br><img src=\"/wp-content/uploads/GATE/CS/20142/q31.jpg\"/><br>\nWhich one of the following is TRUE?",
+   "solution": "The consumer does semWait(s) <b>before</b> semWait(n).<br><br>\nIf the buffer is empty (n = 0) and the consumer gets s first, it blocks on n while holding s. The producer then blocks on semWait(s) and can never signal n [latex]\\rightarrow[/latex] deadlock.<br><br>\n<b>Answer: Deadlock occurs if the consumer succeeds in acquiring semaphore s when the buffer is empty</b><br><br><a href=\"https://gateoverflow.in/1990/gate2014-2-31#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Process Synchronization",
+   "tag2_url": "https://practicepaper.in/gate-cse/process-synchronization",
+   "options": [
+    "The producer will be able to add an item to the buffer, but the consumer can never consume it.",
+    "The consumer will remove no more than one item from the buffer.",
+    "Deadlock occurs if the consumer succeeds in acquiring semaphore s when the buffer is empty",
+    "The starting value for the semaphore n must be 1 and not 0 for deadlock-free operation."
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1114232,
+   "number": 32,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Three processes A, B and C each execute a loop of 100 iterations. In each iteration of the\nloop, a process performs a single computation that requires [latex]t_{c}[/latex] CPU milliseconds and then\ninitiates a single I/O operation that lasts for [latex]t_{io}[/latex] milliseconds. It is assumed that the computer\nwhere the processes execute has sufficient number of I/O devices and the OS of the computer assigns different I/O devices to each process. Also, the scheduling overhead of the OS is negligible. The processes have the following characteristics: <br><img src=\"/wp-content/uploads/GATE/CS/20142/q32.jpg\"/> <br> The processes A, B, and C are started at times 0, 5 and 10 milliseconds respectively, in a pure\ntime sharing system (round robin scheduling) that uses a time slice of 50 milliseconds. The\ntime in milliseconds at which process C would complete its first I/O operation is\n___________.",
+   "solution": "Round robin with quantum 50 ms (A needs 100, B 350, C 200 of CPU before first I/O):<br><br>\n- 0-50 A, 50-100 B, 100-150 C, 150-200 A (A done, goes to I/O)<br>\n- 200-250 B, 250-300 C, 300-350 B, 350-400 C<br>\n- 400-450 B, 450-500 C (C done with 200 ms)<br><br>\nC starts I/O at 500 and finishes it at 500 + 500 = 1000 ms.<br><br>\n<b>Answer: 1000</b><br><br><a href=\"https://gateoverflow.in/1991/gate2014-2-32#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "CPU Scheduling",
+   "tag2_url": "https://practicepaper.in/gate-cse/cpu-scheduling",
+   "ansMin": 1000,
+   "ansMax": 1000
+  },
+  {
+   "id": 1114233,
+   "number": 33,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A computer has twenty physical page frames which contain pages numbered 101 through\n120. Now a program accesses the pages numbered 1, 2, ..., 100 in that order, and repeats the\naccess sequence THRICE. Which one of the following page replacement policies experiences\nthe same number of page faults as the optimal page replacement policy for this program?",
+   "solution": "The pages 1..100 are accessed in a cycle, and memory holds only 20.<br><br>\nLRU and FIFO always evict the page that will be needed soonest in a cyclic pattern, so they fault on every access. Optimal evicts the page used farthest in future, which is the most recently used page.<br><br>\nSo MRU behaves exactly like the optimal policy here.<br><br>\n<b>Answer: Most-recently-used</b><br><br><a href=\"https://gateoverflow.in/1992/gate2014-2-33#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "options": [
+    "Least-recently-used",
+    "First-in-first-out",
+    "Last-in-first-out",
+    "Most-recently-used"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1114234,
+   "number": 34,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "For a C program accessing x[i][j][k], the following intermediate code is generated by a\ncompiler. Assume that the size of an integer is 32 bits and the size of a character is 8 bits. <br>\nt0 = i * 1024 <br>\nt1 = j * 32 <br>\nt2 = k * 4 <br>\nt3 = t1 + t0 <br>\nt4 = t3 + t2 <br>\nt5 = x[t4]<br>\nWhich one of the following statements about the source code for the C program is\nCORRECT?",
+   "solution": "t2 = k [latex]\\times[/latex] 4 [latex]\\rightarrow[/latex] element size 4 bytes (int).<br>\nt1 = j [latex]\\times[/latex] 32 [latex]\\rightarrow[/latex] one row of the last dimension = 32 B = 8 ints [latex]\\rightarrow[/latex] third dimension 8.<br>\nt0 = i [latex]\\times[/latex] 1024 [latex]\\rightarrow[/latex] 1024 / 32 = 32 rows [latex]\\rightarrow[/latex] second dimension 32.<br><br>\nSo x is int x[ ][32][8], which matches int x[32][32][8].<br><br>\n<b>Answer: int x[32][32][8]</b><br><br><a href=\"https://gateoverflow.in/1993/gate2014-2-34#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Intermediate Code Generation",
+   "tag2_url": "https://practicepaper.in/gate-cse/intermediate-code-generation",
+   "options": [
+    "x is declared as \"int x[32] [32] [8]\".",
+    "x is declared as \"int x[4] [1024] [32]\".",
+    "x is declared as \"char x[4] [32] [8]\".",
+    "x is declared as \"char x[32] [16] [2]\"."
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1114235,
+   "number": 35,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let [latex]\\lt M \\gt[/latex] be the encoding of a Turing machine as a string over [latex]\\Sigma[/latex]={0,1}. <br>Let L = { [latex]\\lt M \\gt[/latex] |M is a Turning machine that accepts a string of length 2014}. <br>Then, L is",
+   "solution": "RE: run M on all strings of length 2014 in parallel (dovetailing) and accept if any one is accepted.<br><br>\nUndecidable: it is a non-trivial property of the language of M, so by Rice's theorem it is undecidable.<br><br>\n<b>Answer: undecidable but recursively enumerable</b><br><br><a href=\"https://gateoverflow.in/1994/gate2014-2-35#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Turing Machine",
+   "tag2_url": "https://practicepaper.in/gate-cse/turing-machine",
+   "options": [
+    "decidable and recursively enumerable",
+    "undecidable but recursively enumerable",
+    "undecidable and not recursively enumerable",
+    "decidable but not recursively enumerable"
+   ],
+   "correct": 1
+  }
+ ]
+}

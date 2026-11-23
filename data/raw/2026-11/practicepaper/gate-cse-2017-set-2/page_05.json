@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "quizId": 11172,
+  "quizName": "GATE CS 2017 SET 2",
+  "pageTitle": "GATE CSE 2017 SET-2",
+  "timeLimit": 0,
+  "pageNo": 5,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2017-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1117221,
+   "number": 21,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the set X={a, b,c,d,e} under the partial ordering\nR={(a,a),(a,b),(a,c),(a,d),(a,e),(b,b),(b,c),(b,e),(c,c),(c,e),(d,d),(d,e),(e,e)}. <br>\nThe Hasse diagram of the partial order (X, R) is shown below. <br><img src=\"/wp-content/uploads/GATE/CS/20172/q1.jpg\"/> <br> The minimum number of ordered pairs that need to be added to R to make (X, R) a lattice is\n_____.",
+   "solution": "Check the Hasse diagram: a is the bottom, e is the top, with chains a [latex]\\lt[/latex] b [latex]\\lt[/latex] c [latex]\\lt[/latex] e and a [latex]\\lt[/latex] d [latex]\\lt[/latex] e. Every pair has a least upper bound and a greatest lower bound (e.g. join(c, d) = e, meet(c, d) = a). So it is already a lattice: 0 pairs needed.<br><br>\n<b>Answer: 0</b><br><br><a href=\"https://gateoverflow.in/118278/gate2017-2-21#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Lattice",
+   "tag2_url": "https://practicepaper.in/gate-cse/lattice",
+   "ansMin": -0.01,
+   "ansMax": 0.01
+  },
+  {
+   "id": 1117222,
+   "number": 22,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Let [latex]P=\\begin{bmatrix} 1 & 1&-1 \\\\ 2&-3 & 4\\\\ 3 &-2 & 3 \\end{bmatrix} [/latex] and [latex] Q=\\begin{bmatrix} -1 & -2&-1 \\\\ 6 & 12& 6\\\\ 5&10 & 5 \\end{bmatrix}[/latex] be two matrices.\nThen the rank of P +Q is _____________.",
+   "solution": "[latex]P+Q=\\begin{bmatrix}0&-1&-2\\\\8&9&10\\\\8&8&8\\end{bmatrix}[/latex]. Row 2 = Row 3 [latex]-[/latex] Row 1, so the rows are dependent; rows 1 and 3 are independent.<br><br>\nRank = 2<br><br>\n<b>Answer: 2</b><br><br><a href=\"https://gateoverflow.in/118363/gate2017-2-22#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "ansMin": 2,
+   "ansMax": 2
+  },
+  {
+   "id": 1117223,
+   "number": 23,
+   "type": "NAT",
+   "marks": 1,
+   "text": "G is undirected graph with n vertices and 25 edges such that each vertex of G has degree at\nleast 3. Then the maximum possible value of n is ___________.",
+   "solution": "Sum of degrees = 2 [latex]\\times[/latex] 25 = 50. Each vertex has degree [latex]\\ge3[/latex], so [latex]3n\\le50\\Rightarrow n\\le16[/latex].<br><br>\n<b>Answer: 16</b><br><br><a href=\"https://gateoverflow.in/118594/gate2017-2-23#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "ansMin": 16,
+   "ansMax": 16
+  },
+  {
+   "id": 1117224,
+   "number": 24,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider a quadratic equation [latex]x^{2} -13x +36 = 0[/latex] with coefficients in a base b. The solutions of this equation in the same base b are x = 5 and x = 6. Then b = ___________.",
+   "solution": "In base b: 13 = b + 3 and 36 = 3b + 6. Sum of roots: 5 + 6 = 11 = b + 3 [latex]\\rightarrow[/latex] b = 8. Check product: 30 = 3 [latex]\\times[/latex] 8 + 6 True<br><br>\n<b>Answer: 8</b><br><br><a href=\"https://gateoverflow.in/118185/gate2017-2-24#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "ansMin": 8,
+   "ansMax": 8
+  },
+  {
+   "id": 1117225,
+   "number": 25,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The minimum possible number of states of a deterministic automaton that accepts the regular language [latex]L=\\{w_{1}aw_{2}|w_{1},w_{2}\\in \\{a,b\\}^{*},|w_{1}|=2,|w_{2}|\\geq 3\\}[/latex] is ____\n",
+   "solution": "The DFA has to:<br>\n- read the 2 symbols of [latex]w_1[/latex]: states q0, q1, q2<br>\n- check that the 3rd symbol is a: q3 (a b here goes to a dead state)<br>\n- count at least 3 symbols of [latex]w_2[/latex]: q4, q5, then q6, which is accepting and loops on a, b<br>\n- plus the dead state<br><br>\nTotal = 7 + 1 = 8 states, all distinguishable.<br><br>\n<b>Answer: 8</b><br><br><a href=\"https://gateoverflow.in/118160/gate2017-2-25#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Finite Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/finite-automata",
+   "ansMin": 8,
+   "ansMax": 8
+  }
+ ]
+}

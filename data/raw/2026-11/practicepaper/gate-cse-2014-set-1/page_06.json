@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "quizId": 11141,
+  "quizName": "GATE CS 2014 SET 1",
+  "pageTitle": "GATE CSE 2014 SET-1",
+  "timeLimit": 0,
+  "pageNo": 6,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114126,
+   "number": 26,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a token ring network with a length of 2km having 10 stations including a monitoring station. The propagation speed of the signal is 2x[latex]10^{8}[/latex] m/s and the token transmission time is ignored. If each station is allowed to hold the token for 2 [latex]\\mu[/latex]sec, the minimum time for which the monitoring station should wait (in [latex]\\mu[/latex]sec) before assuming that the token is lost is _______.",
+   "solution": "Propagation around the ring = 2000 / ([latex]2\\times10^8[/latex]) = 10 [latex]\\mu[/latex]s. In the worst case each of the other 9 stations holds the token for 2 [latex]\\mu[/latex]s = 18 [latex]\\mu[/latex]s.<br><br>\nWait at least 10 + 18 = 28 [latex]\\mu[/latex]s (30 [latex]\\mu[/latex]s if the monitor's own holding time is counted; both are accepted).<br><br>\n<b>Answer: 28</b><br><br><a href=\"https://gateoverflow.in/1793/gate2014-1-26#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "ansMin": 28,
+   "ansMax": 30
+  },
+  {
+   "id": 1114127,
+   "number": 27,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Let the size of congestion window of a TCP connection be 32 KB when a timeout occurs. The round trip time of the connection is 100 msec and the maximum segment size used is 2kB. The time taken (in msec) by the TCP connection to get back to 32KB congestion window is ______",
+   "solution": "After the timeout: ssthresh = 16 KB, cwnd = 2 KB (1 MSS).<br>\n- Slow start: 2 [latex]\\rightarrow[/latex] 4 [latex]\\rightarrow[/latex] 8 [latex]\\rightarrow[/latex] 16 KB (3 RTTs)<br>\n- Congestion avoidance, +2 KB per RTT: 18, 20, [latex]\\ldots[/latex], 32 KB (8 RTTs)<br><br>\nTotal 11 RTTs [latex]\\times[/latex] 100 ms = 1100 ms<br><br>\n<b>Answer: 1100</b><br><br><a href=\"https://gateoverflow.in/1794/gate2014-1-27#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Transport Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/transport-layer-protocol",
+   "ansMin": 1100,
+   "ansMax": 1300
+  },
+  {
+   "id": 1114128,
+   "number": 28,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a selective repeat sliding window protocol that uses a frame size of 1 KB to send\ndata on a 1.5 Mbps link with a one-way latency of 50 msec. To achieve a link utilization of\n60%, the minimum number of bits required to represent the sequence number field is ________.",
+   "solution": "Frame time = 8192 / 1.5 Mbps [latex]\\approx[/latex] 5.46 ms; one cycle = 5.46 + 2 [latex]\\times[/latex] 50 = 105.46 ms.<br>\nFor 60% utilization: [latex]W\\times5.46=0.6\\times105.46\\Rightarrow W\\approx11.6[/latex] [latex]\\rightarrow[/latex] 12 frames.<br><br>\nSelective repeat needs [latex]2^{k-1}\\ge12\\Rightarrow k=5[/latex] bits.<br><br>\n<b>Answer: 5</b><br><br><a href=\"https://gateoverflow.in/1795/gate2014-1-28#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "ansMin": 5,
+   "ansMax": 5
+  },
+  {
+   "id": 1114129,
+   "number": 29,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following four schedules due to three transactions (indicted by the subscript)\nusing read and write on a data item x, denoted by  r(x) and w(x) respectively. Which one of\nthem is conflict serializable?",
+   "solution": "For r2(x); w2(x); r3(x); r1(x); w1(x): conflicts give T2 [latex]\\rightarrow[/latex] T3, T2 [latex]\\rightarrow[/latex] T1 and T3 [latex]\\rightarrow[/latex] T1. No cycle [latex]\\rightarrow[/latex] equivalent to T2, T3, T1.<br><br>\nEach of the other schedules has a cycle (e.g. option 1: r1 before w2 gives T1 [latex]\\rightarrow[/latex] T2, and r2 before w1 gives T2 [latex]\\rightarrow[/latex] T1).<br><br>\n<b>Answer: r2(x); w2(x); r3(x); r1(x); w1(x)</b><br><br><a href=\"https://gateoverflow.in/1796/gate2014-1-29#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Transaction",
+   "tag2_url": "https://practicepaper.in/gate-cse/transaction",
+   "options": [
+    "r1(x); r2(x); w1(x); r3(x);  w2(x)",
+    "r2(x);  r1(x);  w2(x);  r3(x);  w1(x)",
+    "r3(x); r2(x); r1(x); w2(x);  w1(x)",
+    "r2(x); w2(x); r3(x); r1(x); w1(x)"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1114130,
+   "number": 30,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Given the following two statements: <br>\nS1: Every table with two single-valued attributes is in 1NF, 2NF, 3NF and BCNF <br>\nS2 : AB[latex]\\rightarrow[/latex]C, D[latex]\\rightarrow[/latex] E, E[latex]\\rightarrow[/latex]C is a minimal cover for the set of functional dependencies AB[latex]\\rightarrow[/latex]C, D[latex]\\rightarrow[/latex]E, AB[latex]\\rightarrow[/latex] E,E[latex]\\rightarrow[/latex]C. <br>\nWhich one of the following is CORRECT?",
+   "solution": "Checking each statement:<br>- S1: with two attributes, every non-trivial FD has a key on the left [latex]\\rightarrow[/latex] BCNF (and so 1NF, 2NF, 3NF) [latex]\\rightarrow[/latex] TRUE.<br>\n- S2: in the given set, AB [latex]\\rightarrow[/latex] C is redundant (AB [latex]\\rightarrow[/latex] E [latex]\\rightarrow[/latex] C). A minimal cover is AB [latex]\\rightarrow[/latex] E, D [latex]\\rightarrow[/latex] E, E [latex]\\rightarrow[/latex] C. The proposed cover drops AB [latex]\\rightarrow[/latex] E, which cannot be derived from it [latex]\\rightarrow[/latex] FALSE.<br><br>\n<b>Answer: S1 is TRUE and S2 is FALSE</b><br><br><a href=\"https://gateoverflow.in/1797/gate2014-1-30#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Normal Form",
+   "tag2_url": "https://practicepaper.in/gate-cse/normal-form",
+   "options": [
+    "S1 is TRUE and S2 is FALSE",
+    "Both S1 and S2 are TRUE.",
+    "S1 is FALSE and S2 is TRUE.",
+    "Both S1 and S2 are FALSE."
+   ],
+   "correct": 0
+  }
+ ]
+}

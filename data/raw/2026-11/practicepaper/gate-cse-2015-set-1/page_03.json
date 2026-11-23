@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11151,
+  "quizName": "GATE CS 2015 SET 1",
+  "pageTitle": "GATE CSE 2015 SET-1",
+  "timeLimit": 0,
+  "pageNo": 3,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115111,
+   "number": 11,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider a 4-bit Johnson counter with an initial value of 0000. The counting sequence of this counter is",
+   "solution": "A Johnson counter shifts right and feeds the complement of the last bit back to the first:<br><br>\n0000 [latex]\\rightarrow[/latex] 1000 [latex]\\rightarrow[/latex] 1100 [latex]\\rightarrow[/latex] 1110 [latex]\\rightarrow[/latex] 1111 [latex]\\rightarrow[/latex] 0111 [latex]\\rightarrow[/latex] 0011 [latex]\\rightarrow[/latex] 0001 [latex]\\rightarrow[/latex] 0000<br><br>\nIn decimal: 0, 8, 12, 14, 15, 7, 3, 1, 0<br><br>\n<b>Answer: 0, 8, 12, 14, 15, 7, 3, 1, 0</b><br><br><a href=\"https://gateoverflow.in/8219/gate2015-1-11#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Sequential Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/sequential-circuit",
+   "options": [
+    "0, 1, 3, 7, 15, 14, 12, 8, 0",
+    "0, 1, 3, 5, 7, 9, 11, 13, 15, 0",
+    "0, 2, 4, 6, 8, 10, 12, 14, 0",
+    "0, 8, 12, 14, 15, 7, 3, 1, 0"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1115112,
+   "number": 12,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "For computers based on three-address instruction formats, each address field can be used to specify which of the following: <br>(S1) A memory operand <br>(S2) A processor register <br>(S3) An implied accumulator register",
+   "solution": "In a three-address instruction, each address field explicitly names a memory location or a register. An implied accumulator is used only in one-address formats.<br><br>\n<b>Answer: Either S1 or S2</b><br><br><a href=\"https://gateoverflow.in/8096/gate2015-1-12#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Addressing Modes",
+   "tag2_url": "https://practicepaper.in/gate-cse/addressing-modes",
+   "options": [
+    "Either S1 or S2",
+    "Either S2 or S3",
+    "Only S2 and S3",
+    "All of S1, S2 and S3"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1115113,
+   "number": 13,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Suppose two hosts use a TCP connection to transfer a large file. Which of the following statements is/are FALSE with respect to the TCP connection?<br>\nI. If the sequence number of a segment is m, then the sequence number of the subsequent segment is always m+1.<br>\nII. If the estimated round trip time at any given point of time is t sec, the value of the retransmission timeout is always set to greater than or equal to t sec. <br>\nIII. The size of the advertised window never changes during the course of the TCP connection.<br>\nIV. The number of unacknowledged bytes at the sender is always less than or equal to the advertised window.",
+   "solution": "Checking each statement:<br>- I: TCP numbers bytes, so the next sequence number is m + (segment length) [latex]\\rightarrow[/latex] False<br>\n- II: RTO is set to at least the estimated RTT [latex]\\rightarrow[/latex] True<br>\n- III: the advertised window changes as the receive buffer fills and empties [latex]\\rightarrow[/latex] False<br>\n- IV: the sender keeps unacknowledged bytes within the window [latex]\\rightarrow[/latex] True<br><br>\n<b>Answer: I and III only</b><br><br><a href=\"https://gateoverflow.in/8217/gate2015-1-13#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Transport Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/transport-layer-protocol",
+   "options": [
+    "III only",
+    "I and III only",
+    "I and IV only",
+    "II and IV only"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1115114,
+   "number": 14,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Suppose that everyone in a group of N people wants to communicate secretly with the N-1 others using symmetric key cryptographic system. The communication between any two persons should not be decodable by the others in the group. The number of keys required in the system as a whole to satisfy the confidentiality requirement is",
+   "solution": "Each pair of people needs its own shared secret key.<br><br>\nNumber of pairs = [latex]\\binom N2=\\frac{N(N-1)}{2}[/latex]<br><br>\n<b>Answer: N(N-1)/2</b><br><br><a href=\"https://gateoverflow.in/8244/gate2015-1-14#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Security",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-security",
+   "options": [
+    "2N",
+    "N(N-1)",
+    "N(N-1)/2",
+    "[latex](N-1)^{2}[/latex]"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115115,
+   "number": 15,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which of the following statements is/are FALSE?<br> I. XML overcomes the limitations in HTML to support a structured way of organizing content. <br>\nII. XML specification is not case sensitive while HTML specification is case sensitive.<br>\nIII. XML supports user defined tags while HTML uses pre-defined tags. <br>\nIV. XML tags need not be closed while HTML tags must be closed.",
+   "solution": "Checking each statement:<br>- I: True<br>\n- II: reversed: XML is case sensitive, HTML is not [latex]\\rightarrow[/latex] False<br>\n- III: True<br>\n- IV: reversed: XML tags must be closed, HTML is lenient [latex]\\rightarrow[/latex] False<br><br>\n<b>Answer: II and IV only</b><br><br><a href=\"https://gateoverflow.in/8211/gate2015-1-15#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Web Technology",
+   "tag1_url": "https://practicepaper.in/gate-cse/web-technology",
+   "tag2": "",
+   "tag2_url": "https://practicepaper.in/gate-cse/",
+   "options": [
+    "II only",
+    "I only",
+    "II and IV only",
+    "III and IV only"
+   ],
+   "correct": 2
+  }
+ ]
+}

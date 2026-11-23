@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11172,
+  "quizName": "GATE CS 2017 SET 2",
+  "pageTitle": "GATE CSE 2017 SET-2",
+  "timeLimit": 0,
+  "pageNo": 3,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2017-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1117211,
+   "number": 11,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let p, q, r denote the statements \"It is raining ,\" It is cold\", and \" It is pleasant,\"\nrespectively. Then the statement \"It is not raining and it is pleasant, and it is not pleasant\nonly if it is raining and it is cold\" is represented by",
+   "solution": "Checking each statement:<br>- \"It is not raining and it is pleasant\": [latex]\\neg p\\wedge r[/latex]<br>\n- \"It is not pleasant only if it is raining and cold\": \"A only if B\" means [latex]A\\rightarrow B[/latex], so [latex]\\neg r\\rightarrow(p\\wedge q)[/latex]<br><br>\nJoined by \"and\": [latex](\\neg p\\wedge r)\\wedge(\\neg r\\rightarrow(p\\wedge q))[/latex]<br><br>\n<b>Answer: Option 1</b><br><br><a href=\"https://gateoverflow.in/118151/gate2017-2-11#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Propositional Logic",
+   "tag2_url": "https://practicepaper.in/gate-cse/propositional-logic",
+   "options": [
+    "[latex](\\neg p\\wedge r)\\wedge (\\neg r\\rightarrow (p\\wedge q))[/latex]",
+    "[latex](\\neg p\\wedge r)\\wedge ((p\\wedge q)\\rightarrow \\neg r)[/latex]",
+    "[latex](\\neg p\\wedge r)\\vee ((p\\wedge q)\\rightarrow \\neg r)[/latex]",
+    "[latex](\\neg p\\wedge r)\\vee (r \\rightarrow (p\\wedge q))[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1117212,
+   "number": 12,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Given the following binary number in 32-bit (single precision) IEEE-754 format:<br>\n00111110011011010000000000000000<br>\nThe decimal value closest to this floating- point number is",
+   "solution": "Sign 0; exponent 01111100 = 124 [latex]\\rightarrow[/latex] [latex]2^{124-127}=2^{-3}[/latex]; mantissa 1.1101101[latex]{}_2[/latex] [latex]\\approx[/latex] 1.85.<br><br>\nValue [latex]\\approx1.85\\times\\frac18\\approx0.23[/latex], closest to [latex]2.27\\times10^{-1}[/latex].<br><br>\n<b>Answer: [latex]2.27\\times10^{-1}[/latex]</b><br><br><a href=\"https://gateoverflow.in/118434/gate2017-2-12#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "options": [
+    "1.45 * [latex]10^{1}[/latex]",
+    "1.45 * [latex]10^{-1}[/latex]",
+    "2.27 * [latex]10^{-1}[/latex]",
+    "2.27 * [latex]10^{1}[/latex]"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1117213,
+   "number": 13,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "A circular queue has been implemented using a single linked list where each node consists of\na value and a single pointer pointing to the next node. We maintain exactly two external\npointers FRONT and REAR pointing to the front node and the rear node of the queue,\nrespectively. Which of the following statements is/are CORRECT for such a circular queue,\nso that insertion and deletion operation can be performed in O (1) time ?<br><br>\nI. Next pointer of front node points to the rear node.<br>\nII. Next pointer of rear node points to the front node.",
+   "solution": "Insert at REAR (new node after rear) and delete at FRONT. For both in [latex]O(1)[/latex], the rear node's next must point to the front node, which makes the list circular. Front's next points to the second node, not to rear.<br><br>\n<b>Answer: II only</b><br><br><a href=\"https://gateoverflow.in/118253/gate2017-2-13#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Queue",
+   "tag2_url": "https://practicepaper.in/gate-cse/queue",
+   "options": [
+    "I only",
+    "II only",
+    "Both I and II",
+    "Neither I nor II"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1117214,
+   "number": 14,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following function implemented in C:\n<pre><code>void printxy (int x, int y) {\nint *ptr ;\nx = 0;\nptr = &x;\ny = * ptr;\n*ptr = 1;\nprintf (\"%d, %d,\", x, y);\n}</code></pre>\nThe output of invoking printxy (1,1) is",
+   "solution": "x = 0; ptr = [latex]\\&[/latex]x; y = *ptr = 0; then *ptr = 1 changes x to 1.<br><br>\nPrints x, y = 1, 0.<br><br>\n<b>Answer: 1,0</b><br><br><a href=\"https://gateoverflow.in/118245/gate2017-2-14#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Array and Pointer",
+   "tag2_url": "https://practicepaper.in/gate-cse/array-and-pointer",
+   "options": [
+    "0,0",
+    "0,1",
+    "1,0",
+    "1,1"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1117215,
+   "number": 15,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The Breadth First Search (BFS) algorithm has been implemented using the queue data\nstructure. Which one of the following is a possible order of visiting the nodes in the graph\nbelow? <br><img src=\"/wp-content/uploads/GATE/CS/20172/q7.jpg\"/> ",
+   "solution": "BFS from P: neighbours O, Q; then O's new neighbour N, Q's new neighbour M; then M's new neighbour R [latex]\\rightarrow[/latex] P O Q N M R True<br><br>\nThe others break BFS order, e.g. MNOPQR visits O before Q and R, which are M's own neighbours.<br><br>\n<b>Answer: POQNMR</b><br><br><a href=\"https://gateoverflow.in/118196/gate2017-2-15#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Graph Traversal",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-traversal",
+   "options": [
+    "MNOPQR",
+    "NQMPOR",
+    "QMNROP",
+    "POQNMR"
+   ],
+   "correct": 3
+  }
+ ]
+}

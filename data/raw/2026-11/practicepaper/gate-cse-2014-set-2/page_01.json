@@ -1,0 +1,100 @@
+{
+ "meta": {
+  "quizId": 11142,
+  "quizName": "GATE CS 2014 SET 2",
+  "pageTitle": "GATE CSE 2014 SET-2",
+  "timeLimit": 0,
+  "pageNo": 1,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114201,
+   "number": 1,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The security system at an IT office is composed of 10 computers of which exactly four are\nworking. To check whether the system is functional, the officials inspect four of the\ncomputers picked at random (without replacement). The system is deemed functional if at\nleast three of the four computers inspected are working. Let the probability that the system is deemed functional be denoted by p.  Then 100p= _____________.",
+   "solution": "4 working, 6 not working. Choose 4 computers: [latex]\\binom{10}{4}=210[/latex] ways.<br><br>\n- Exactly 3 working: [latex]\\binom43\\binom61=24[/latex]<br>\n- All 4 working: [latex]\\binom44=1[/latex]<br><br>\n[latex]p=\\frac{25}{210}=0.119\\Rightarrow 100p\\approx 11.9[/latex]<br><br>\n<b>Answer: 11.9</b><br><br><a href=\"https://gateoverflow.in/1953/gate2014-2-1#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "ansMin": 11.85,
+   "ansMax": 11.95
+  },
+  {
+   "id": 1114202,
+   "number": 2,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Each of the nine words in the sentence \"The quick brown fox jumps over the lazy dog\" is\nwritten on a separate piece of paper. These nine pieces of paper are kept in a box. One of the pieces is drawn at random from the box. The expected length of the word drawn is\n_____________. (The answer should be rounded to one decimal place)",
+   "solution": "Word lengths: The(3), quick(5), brown(5), fox(3), jumps(5), over(4), the(3), lazy(4), dog(3).<br><br>\n[latex]E=\\frac{3+5+5+3+5+4+3+4+3}{9}=\\frac{35}{9}=3.89\\approx 3.9[/latex]<br><br>\n<b>Answer: 3.9</b><br><br><a href=\"https://gateoverflow.in/1954/gate2014-2-2#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "ansMin": 3.8,
+   "ansMax": 3.9
+  },
+  {
+   "id": 1114203,
+   "number": 3,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The maximum number of edges in a bipartite graph on 12 vertices is _____.",
+   "solution": "A bipartite graph with parts of size a and b has at most ab edges. With a + b = 12 the product is largest when a = b = 6.<br><br>\n[latex]6\\times6=36[/latex]<br><br>\n<b>Answer: 36</b><br><br><a href=\"https://gateoverflow.in/1955/gate2014-2-3#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "ansMin": 36,
+   "ansMax": 36
+  },
+  {
+   "id": 1114204,
+   "number": 4,
+   "type": "NAT",
+   "marks": 1,
+   "text": "If the matrix A is such that  <br>[latex]\\begin{bmatrix} 2\\\\ -4\\\\ 7 \\end{bmatrix}\\begin{bmatrix} 1 &9 &5 \\end{bmatrix}[/latex] <br> Then the determinant of A is equal to ________.",
+   "solution": "A is a column vector times a row vector, so every row of A is a multiple of [1 9 5]. Hence rank(A) = 1.<br><br>\nA 3 [latex]\\times[/latex] 3 matrix with rank 1 is singular, so det(A) = 0.<br><br>\n<b>Answer: 0</b><br><br><a href=\"https://gateoverflow.in/1956/gate2014-2-4#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "ansMin": 0,
+   "ansMax": 0
+  },
+  {
+   "id": 1114205,
+   "number": 5,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "A non-zero polynomial f(x) of degree 3 has roots at x = 1,x = 2 and x = 3. Which one of the following must be TRUE?",
+   "solution": "[latex]f(x)=c(x-1)(x-2)(x-3)[/latex] with [latex]c\\ne0[/latex].<br><br>\n[latex]f(0)=-6c,\\quad f(4)=6c[/latex]<br>\n[latex]f(0)f(4)=-36c^2\\lt 0[/latex] always (whatever the sign of c), while the sum f(0) + f(4) = 0.<br><br>\n<b>Answer: [latex]f(0)f(4)\\lt 0[/latex]</b><br><br><a href=\"https://gateoverflow.in/1957/gate2014-2-5#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "[latex]f(0)f(4) \\lt 0[/latex]",
+    "[latex]f(0)f(4) \\gt 0[/latex]",
+    "[latex]f(0)+f(4) \\gt 0[/latex]",
+    "[latex]f(0)+f(4) \\lt 0[/latex]"
+   ],
+   "correct": 0
+  }
+ ]
+}

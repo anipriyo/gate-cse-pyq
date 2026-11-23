@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "quizId": 11152,
+  "quizName": "GATE CS 2015 SET 2",
+  "pageTitle": "GATE CSE 2015 SET-2",
+  "timeLimit": 0,
+  "pageNo": 2,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115206,
+   "number": 6,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "An unordered list contains n distinct elements. The number of comparisons to find an element in this list that is neither maximum nor minimum is",
+   "solution": "Take any 3 elements and compare them (3 comparisons). The middle one of the three is neither the overall maximum nor the overall minimum.<br><br>\nThis is a constant number of comparisons.<br><br>\n<b>Answer: [latex]\\Theta(1)[/latex]</b><br><br><a href=\"https://gateoverflow.in/8113/gate2015-2-6#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Link List",
+   "tag2_url": "https://practicepaper.in/gate-cse/link-list",
+   "options": [
+    "[latex]\\Theta (n log n)[/latex]",
+    "[latex]\\Theta (n)[/latex]",
+    "[latex]\\Theta (log n)[/latex]",
+    "[latex]\\Theta (1)[/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1115207,
+   "number": 7,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The minimum number of JK flip-flops required to construct a synchronous counter with the count sequence (0,0,1,1,2,2,3,3,0,0,...) is __________ .",
+   "solution": "The sequence 0, 0, 1, 1, 2, 2, 3, 3 has 8 steps before repeating. Equal outputs at different steps must still be different internal states, so 8 states are needed.<br><br>\n[latex]2^3=8[/latex] [latex]\\rightarrow[/latex] 3 flip-flops<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/8054/gate2015-2-7#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Sequential Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/sequential-circuit",
+   "ansMin": 3,
+   "ansMax": 3
+  },
+  {
+   "id": 1115208,
+   "number": 8,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Assume that for a certain processor, a read request takes 50 nanoseconds on a cache miss and 5 nanoseconds on a cache hit. Suppose while running a program, it was observed that 80% of the processor's read requests result in a cache hit. The average read access time in nanoseconds is __________.",
+   "solution": "Average = 0.8 [latex]\\times[/latex] 5 + 0.2 [latex]\\times[/latex] 50 = 4 + 10 = 14 ns<br><br>\n<b>Answer: 14</b><br><br><a href=\"https://gateoverflow.in/8119/gate2015-2-8#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "ansMin": 14,
+   "ansMax": 14
+  },
+  {
+   "id": 1115209,
+   "number": 9,
+   "type": "NAT",
+   "marks": 1,
+   "text": "A computer system implements a 40-bit virtual address, page size of 8 kilobytes, and a 128-entry translation look-aside buffer (TLB) organized into 32 sets each having four ways. Assume that the TLB tag does not store any process id. The minimum length of the TLB tag in bits is _________.",
+   "solution": "Checking each statement:<br>- Page offset: 8 KB = [latex]2^{13}[/latex] [latex]\\rightarrow[/latex] 13 bits, so page number = 40 [latex]-[/latex] 13 = 27 bits<br>\n- 32 sets [latex]\\rightarrow[/latex] 5 index bits<br><br>\nTag = 27 [latex]-[/latex] 5 = 22 bits<br><br>\n<b>Answer: 22</b><br><br><a href=\"https://gateoverflow.in/8120/gate2015-2-9#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "ansMin": 22,
+   "ansMax": 22
+  },
+  {
+   "id": 1115210,
+   "number": 10,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following statements.<br>\nI. The complement of every Turing decidable language is Turing decidable <br>\nII. There exists some language which is in NP but is not Turing decidable <br>\nIII. If L is a language in NP, L is Turing decidable <br><br>\nWhich of the above statements is/are true?",
+   "solution": "Checking each statement:<br>- I: decidable languages are closed under complement [latex]\\rightarrow[/latex] True<br>\n- II: every NP language is decided by a (time-bounded) Turing machine [latex]\\rightarrow[/latex] False<br>\n- III: same reason [latex]\\rightarrow[/latex] True<br><br>\n<b>Answer: Only I and III</b><br><br><a href=\"https://gateoverflow.in/8111/gate2015-2-10#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Turing Machine",
+   "tag2_url": "https://practicepaper.in/gate-cse/turing-machine",
+   "options": [
+    "Only II",
+    "Only III",
+    "Only I and II",
+    "Only I and III"
+   ],
+   "correct": 3
+  }
+ ]
+}

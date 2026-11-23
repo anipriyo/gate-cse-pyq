@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "quizId": 11151,
+  "quizName": "GATE CS 2015 SET 1",
+  "pageTitle": "GATE CSE 2015 SET-1",
+  "timeLimit": 0,
+  "pageNo": 10,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115146,
+   "number": 46,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Suppose the following disk request sequence (track numbers) for a disk with 100 tracks is given: 45, 20, 90, 10, 50, 60, 80, 25, 70. Assume that the initial position of the R/W head is on track 50. The additional distance that will be traversed by the R/W head when the Shortest Seek Time First (SSTF) algorithm is used compared to the SCAN (Elevator) algorithm (assuming that SCAN algorithm moves towards 100 when it starts execution) is____________ tracks.",
+   "solution": "<b>SSTF</b> from 50: 50 [latex]\\rightarrow[/latex] 45 [latex]\\rightarrow[/latex] 60 [latex]\\rightarrow[/latex] 70 [latex]\\rightarrow[/latex] 80 [latex]\\rightarrow[/latex] 90 [latex]\\rightarrow[/latex] 25 [latex]\\rightarrow[/latex] 20 [latex]\\rightarrow[/latex] 10<br>\n= 5 + 15 + 10 + 10 + 10 + 65 + 5 + 10 = 130<br><br>\n<b>SCAN (elevator)</b>, going up and reversing after the last request: 50 [latex]\\rightarrow[/latex] 90 = 40, then 90 [latex]\\rightarrow[/latex] 10 = 80 [latex]\\rightarrow[/latex] 120<br><br>\nExtra distance = 130 [latex]-[/latex] 120 = 10<br><br>\n<b>Answer: 10</b><br><br><a href=\"https://gateoverflow.in/8227/gate2015-1-46#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Disk Scheduling",
+   "tag2_url": "https://practicepaper.in/gate-cse/disk-scheduling",
+   "ansMin": 10,
+   "ansMax": 10
+  },
+  {
+   "id": 1115147,
+   "number": 47,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a main memory with five page frames and the following sequence of page references: 3, 8, 2, 3, 9, 1, 6, 3, 8, 9, 3, 6, 2, 1, 3. Which one of the following is true with respect to page replacement policies First In First Out (FIFO) and Least Recently Used (LRU)?",
+   "solution": "<b>FIFO:</b> 3, 8, 2, 9, 1 (5); 6 replaces 3; 3 replaces 8; 8 replaces 2; 2 replaces 9 [latex]\\rightarrow[/latex] 9 faults<br><br>\n<b>LRU:</b> 3, 8, 2, 9, 1 (5); 6 replaces 8; 8 replaces 2; 2 replaces 1; 1 replaces 8 [latex]\\rightarrow[/latex] 9 faults<br><br>\n<b>Answer: Both incur the same number of page faults</b><br><br><a href=\"https://gateoverflow.in/8353/gate2015-1-47#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "options": [
+    "Both incur the same number of page faults",
+    "FIFO incurs 2 more page faults than LRU",
+    "LRU incurs 2 more page faults than FIFO",
+    "FIFO incurs 1 more page faults than LRU"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1115148,
+   "number": 48,
+   "type": "NAT",
+   "marks": 2,
+   "text": "[latex]\\int_{1/ \\pi }^{2/ \\pi}\\frac{cos(1/x)}{x^{2}}dx=[/latex]_________.",
+   "solution": "Let u = 1/x, so [latex]du=-\\frac{dx}{x^2}[/latex]. Limits: x = 1/[latex]\\pi[/latex] [latex]\\rightarrow[/latex] u = [latex]\\pi[/latex], x = 2/[latex]\\pi[/latex] [latex]\\rightarrow[/latex] u = [latex]\\pi/2[/latex].<br><br>\n[latex]\\int_{\\pi}^{\\pi/2}-\\cos u\\,du=\\int_{\\pi/2}^{\\pi}\\cos u\\,du=\\sin\\pi-\\sin\\frac{\\pi}{2}=-1[/latex]<br><br>\n<b>Answer: -1</b><br><br><a href=\"https://gateoverflow.in/8314/gate2015-1-48#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "ansMin": -1,
+   "ansMax": -1
+  },
+  {
+   "id": 1115149,
+   "number": 49,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following 2x2 matrix A where two elements are unknown and are marked by a and b. The eigenvalues of this matrix are -1 and 7. What are the values of a and b? <br>[latex]A=\\begin{pmatrix} 1 & 4\\\\ b&a \\end{pmatrix}[/latex].",
+   "solution": "Checking each statement:<br>- Trace: 1 + a = [latex]-[/latex]1 + 7 = 6 [latex]\\rightarrow[/latex] a = 5<br>\n- Determinant: a [latex]-[/latex] 4b = ([latex]-[/latex]1)(7) = [latex]-[/latex]7 [latex]\\rightarrow[/latex] 5 [latex]-[/latex] 4b = [latex]-[/latex]7 [latex]\\rightarrow[/latex] b = 3<br><br>\n<b>Answer: a = 5, b = 3</b><br><br><a href=\"https://gateoverflow.in/8285/gate2015-1-49#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "a = 6, b = 4",
+    "a = 4, b = 6",
+    "a = 3, b = 5",
+    "a = 5, b =3"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1115150,
+   "number": 50,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "An algorithm performs [latex](log N)^{1/2}[/latex] find operations, [latex]N[/latex]  insert operations, [latex](log N)^{1/2}[/latex] delete operations, and [latex](log N)^{1/2}[/latex] decrease-key operations on a set of data items with keys drawn from a linearly ordered set. For a delete operation, a pointer is provided to the record that must be deleted. For the decrease-key operation, a pointer is provided to the record that has its key decreased. Which one of the following data structures is the most suited for the algorithm to use, if the goal is to achieve the best total asymptotic complexity considering all the operations?",
+   "solution": "N inserts dominate. Compare total cost:<br><br>\n- Unsorted array: insert O(1), find O(N), delete/decrease-key with pointer O(1) [latex]\\rightarrow[/latex] [latex]O(N\\sqrt{\\log N})[/latex]<br>\n- Min-heap: N inserts cost [latex]O(N\\log N)[/latex]<br>\n- Sorted array / sorted list: each insert O(N) [latex]\\rightarrow[/latex] [latex]O(N^2)[/latex]<br><br>\n<b>Answer: Unsorted array</b><br><br><a href=\"https://gateoverflow.in/8299/gate2015-1-50#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Link List",
+   "tag2_url": "https://practicepaper.in/gate-cse/link-list",
+   "options": [
+    "Unsorted array",
+    "Min-heap",
+    "Sorted array",
+    "Sorted doubly linked list"
+   ],
+   "correct": 0
+  }
+ ]
+}

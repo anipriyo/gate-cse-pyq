@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "quizId": 11151,
+  "quizName": "GATE CS 2015 SET 1",
+  "pageTitle": "GATE CSE 2015 SET-1",
+  "timeLimit": 0,
+  "pageNo": 7,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115131,
+   "number": 31,
+   "type": "NAT",
+   "marks": 2,
+   "text": "[latex]\\sum_{x=1}^{99}\\frac{1}{x(x+1)}[/latex]=__________ .",
+   "solution": "[latex]\\frac{1}{x(x+1)}=\\frac1x-\\frac1{x+1}[/latex], so the sum telescopes:<br><br>\n[latex]1-\\frac1{100}=0.99[/latex]<br><br>\n<b>Answer: 0.99</b><br><br><a href=\"https://gateoverflow.in/8248/gate2015-1-31#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "ansMin": 0.99,
+   "ansMax": 0.99
+  },
+  {
+   "id": 1115132,
+   "number": 32,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Suppose L={p,q,r,s,t} is a lattice represented by the following Hasse diagram:<br><img src=\"/wp-content/uploads/GATE/CS/20151/q32.jpg\"/><br> For any [latex]x,y\\in L[/latex] not necessarily distinct, [latex]x\\vee y[/latex] and [latex]x\\wedge y[/latex] are join and meet of x,y respectively. Let [latex]L^{3}=\\{(x,y,z):x,y,z\\in L\\}[/latex] be the set of all ordered triplets of the elements of L. Let [latex]P_{r} [/latex] be the probability that an element [latex](x,y,z)\\in L^{3}[/latex] chosen equiprobably satisfies [latex]x\\vee (y \\wedge z)=(x\\vee y)\\wedge (x\\vee z)[/latex] . Then",
+   "solution": "The lattice has bottom p, top t, and q, r, s incomparable in the middle (the diamond [latex]M_3[/latex]). It is not distributive.<br><br>\n- Fails for x, y, z = three different middle elements, e.g. [latex]q\\vee(r\\wedge s)=q\\vee p=q[/latex] but [latex](q\\vee r)\\wedge(q\\vee s)=t\\wedge t=t[/latex]. There are 3! = 6 such triples.<br>\n- It holds for all other triples.<br><br>\n[latex]P_r=\\frac{125-6}{125}=\\frac{119}{125}[/latex], which lies between 1/5 and 1.<br><br>\n<b>Answer: [latex]\\frac15\\lt P_r\\lt1[/latex]</b><br><br><a href=\"https://gateoverflow.in/8281/gate2015-1-32#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Lattice",
+   "tag2_url": "https://practicepaper.in/gate-cse/lattice",
+   "options": [
+    "[latex]P_{r} [/latex]=0",
+    "[latex]P_{r} [/latex]=1",
+    "[latex]0 \\lt P_{r} \\leq \\frac{1}{5}[/latex]",
+    "[latex]\\frac{1}{5} \\lt P_{r} \\lt 1[/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1115133,
+   "number": 33,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the operations <br> [latex]f(X,Y,Z)=X'YZ+XY'+Y'Z'[/latex] and [latex] g(X,Y,Z)=X'YZ+X'YZ'+XY[/latex]. <br> Which one of the following is correct?",
+   "solution": "Post's theorem: a function alone is complete if it is not 0-preserving, not 1-preserving, not self-dual, not monotone and not linear.<br><br>\n<b>f:</b> f(0,0,0) = 1, f(1,1,1) = 0 (so also not monotone). f(0,0,1) = f(1,1,0) = 0 [latex]\\rightarrow[/latex] not self-dual. Not linear (fitting [latex]1\\oplus Y\\oplus Z[/latex] from the first rows gives f(1,1,1) = 1, but it is 0). So {f} is complete.<br><br>\n<b>g:</b> g(0,0,0) = 0 [latex]\\rightarrow[/latex] 0-preserving, so {g} cannot produce 1 from 0s [latex]\\rightarrow[/latex] not complete.<br><br>\n<b>Answer: Only {f} is functionally complete</b><br><br><a href=\"https://gateoverflow.in/8294/gate2015-1-33#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "options": [
+    "Both {f} and {g} are functionally complete",
+    "Only {f} is functionally complete",
+    "Only {g} is functionally complete",
+    "Neither {f} nor {g} is functionally complete"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1115134,
+   "number": 34,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Let G be a connected planar graph with 10 vertices. If the number of edges on each face is three, then the number of edges in G is ___________.",
+   "solution": "Each face has 3 edges and each edge lies on 2 faces: 3f = 2e.<br><br>\nEuler: [latex]v-e+f=2\\Rightarrow10-e+\\frac{2e}{3}=2\\Rightarrow e=24[/latex]<br><br>\n<b>Answer: 24</b><br><br><a href=\"https://gateoverflow.in/8364/gate2015-1-34#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "ansMin": 24,
+   "ansMax": 24
+  },
+  {
+   "id": 1115135,
+   "number": 35,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let [latex]a_{n}[/latex] represent the number of bit strings of length n containing two consecutive 1s. What is the recurrence relation for [latex]a_{n}[/latex]?",
+   "solution": "Split by how the string starts:<br><br>\n- Starts with 0: the remaining n[latex]-[/latex]1 bits need 11 [latex]\\rightarrow[/latex] [latex]a_{n-1}[/latex]<br>\n- Starts with 10: the remaining n[latex]-[/latex]2 bits need 11 [latex]\\rightarrow[/latex] [latex]a_{n-2}[/latex]<br>\n- Starts with 11: already done, rest free [latex]\\rightarrow[/latex] [latex]2^{n-2}[/latex]<br><br>\n[latex]a_n=a_{n-1}+a_{n-2}+2^{n-2}[/latex]<br><br>\n<b>Answer: [latex]a_{n-2}+a_{n-1}+2^{n-2}[/latex]</b><br><br><a href=\"https://gateoverflow.in/8355/gate-cse-2015-set-1-question-49#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Recurrence",
+   "tag2_url": "https://practicepaper.in/gate-cse/recurrence",
+   "options": [
+    "[latex]a_{n-2}+a_{n-1}+2^{n-2}[/latex]",
+    "[latex]a_{n-2}+2a_{n-1}+2^{n-2}[/latex]",
+    "[latex]2a_{n-2}+a_{n-1}+2^{n-2}[/latex]",
+    "[latex]2a_{n-2}+2a_{n-1}+2^{n-2}[/latex]"
+   ],
+   "correct": 0
+  }
+ ]
+}

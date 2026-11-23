@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "quizId": 11153,
+  "quizName": "GATE CS 2015 SET 3",
+  "pageTitle": "GATE CSE 2015 SET-3",
+  "timeLimit": 0,
+  "pageNo": 11,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-3",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115351,
+   "number": 51,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Suppose [latex]X_{i}[/latex] for i =1,2,3 are independent and identically distributed random variables whose probability mass functions are [latex]Pr[X_{i}=0]=Pr[X_{i}=1]=1/2[/latex] for i=1,2,3. Define another random variable [latex]Y=X_{1}X_{2}\\oplus X_{3}, \\; where \\; \\oplus[/latex] denotes XOR. Then<br>\n[latex]Pr[Y=0|X_{3}=0]=[/latex]_______________.",
+   "solution": "If [latex]X_3=0[/latex], then [latex]Y=X_1X_2[/latex]. Y = 0 unless both are 1.<br><br>\nP = 1 [latex]-[/latex] 1/4 = 0.75<br><br>\n<b>Answer: 0.75</b><br><br><a href=\"https://gateoverflow.in/8496/gate2015-3-51#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "ansMin": 0.75,
+   "ansMax": 0.75
+  },
+  {
+   "id": 1115352,
+   "number": 52,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The total number of prime implicants of the function f(w,x,y,z)=[latex]\\Sigma[/latex](0,2,4,5,6,10) is _______.",
+   "solution": "Minterms 0, 2, 4, 5, 6, 10. From the K-map, the prime implicants are:<br><br>\n- [latex]\\bar w\\bar z[/latex] (0, 2, 4, 6)<br>\n- [latex]\\bar wx\\bar y[/latex] (4, 5)<br>\n- [latex]\\bar xy\\bar z[/latex] (2, 10)<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/8503/gate2015-3-52#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "ansMin": 3,
+   "ansMax": 3
+  },
+  {
+   "id": 1115353,
+   "number": 53,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Suppose c=(c[0],...,c[k-1]) is an array of length k, where all the entries are from the set {0,1}. For any positive integers a and n, consider the following pseudocode.  <br><img src=\"/wp-content/uploads/GATE/CS/20153/q53.jpg\"/> <br>  If k=4, c=(1,0,1,1), a=2 and n=8, then the output of DOSOMETHING(c,a,n) is _____.",
+   "solution": "z = 1, a = 2, n = 8, c = (1, 0, 1, 1):<br><br>\n- i = 0: z = 1, c = 1 [latex]\\rightarrow[/latex] z = 2<br>\n- i = 1: z = 4, c = 0<br>\n- i = 2: z = 16 mod 8 = 0, c = 1 [latex]\\rightarrow[/latex] z = 0<br>\n- i = 3: z = 0<br><br>\n(It computes [latex]2^{11}\\bmod8=0[/latex].)<br><br>\n<b>Answer: 0</b><br><br><a href=\"https://gateoverflow.in/8558/gate2015-3-53#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "ansMin": 0,
+   "ansMax": 0
+  },
+  {
+   "id": 1115354,
+   "number": 54,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let [latex]f(n)=n[/latex] and [latex]g(n)=n^{1+sin \\; n}[/latex] where n is a positive integer. Which of the following statements is/are correct? <br>I.   [latex]f(n)=O(g(n)) [/latex]<br> II.   [latex]f(n)= \\Omega (g(n))[/latex]",
+   "solution": "[latex]g(n)=n^{1+\\sin n}[/latex], and 1 + sin n keeps swinging between about 0 and 2. So g(n) is sometimes near 1 (much smaller than n) and sometimes near [latex]n^2[/latex] (much larger).<br><br>\nNeither bound holds for all large n.<br><br>\n<b>Answer: Neither I nor II</b><br><br><a href=\"https://gateoverflow.in/8501/gate2015-3-54#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Asymptotic Notation",
+   "tag2_url": "https://practicepaper.in/gate-cse/asymptotic-notation",
+   "options": [
+    "Only I",
+    "Only II",
+    "Both I and II",
+    "Neither I nor II"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1115355,
+   "number": 55,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following grammar<br> \nS [latex] \\rightarrow[/latex] F|H <br>\nF [latex] \\rightarrow[/latex]  p|c <br>\nH [latex] \\rightarrow[/latex]  d|c <br>\nwhere S,F, and H are non-terminal symbols, p,d, and c are terminal symbols. Which of the following statement(s) is/are correct? <br>\nS1. LL(1) can parse all strings that are generated using grammar G <br>\nS2. LR(1) can parse all strings that are generated using grammar G",
+   "solution": "The string \"c\" has two derivations: [latex]S\\Rightarrow F\\Rightarrow c[/latex] and [latex]S\\Rightarrow H\\Rightarrow c[/latex]. So the grammar is ambiguous.<br><br>\nNo ambiguous grammar is LL(1) or LR(1).<br><br>\n<b>Answer: Neither S1 nor S2</b><br><br><a href=\"https://gateoverflow.in/8488/gate2015-3-55#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Parsing",
+   "tag2_url": "https://practicepaper.in/gate-cse/parsing",
+   "options": [
+    "Only S1",
+    "Only S2",
+    "Both S1 and S2",
+    "Neither S1 nor S2"
+   ],
+   "correct": 3
+  }
+ ]
+}

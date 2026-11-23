@@ -1,0 +1,100 @@
+{
+ "meta": {
+  "quizId": 11162,
+  "quizName": "GATE CS 2016 SET 2",
+  "pageTitle": "GATE CSE 2016 SET-2",
+  "timeLimit": 0,
+  "pageNo": 1,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2016-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1116201,
+   "number": 1,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the following expressions:<br>\n(i) false <br>\n(ii) Q <br>\n(iii) true <br>\n(iv) [latex]P\\vee Q[/latex] <br>\n(v) [latex]\\neg Q \\vee P[/latex] <br>\nThe number of expressions given above that are logically implied by [latex]P \\wedge (P \\Rightarrow Q)[/latex] is ________.",
+   "solution": "[latex]P\\wedge(P\\Rightarrow Q)[/latex] means P is true and Q is true. Check each expression with P = Q = true:<br>\n- false False<br>\n- Q True, true True, [latex]P\\vee Q[/latex] True, [latex]\\neg Q\\vee P[/latex] True<br><br>\n4 expressions are implied.<br><br>\n<b>Answer: 4</b><br><br><a href=\"https://gateoverflow.in/39568/gate2016-2-1#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Propositional Logic",
+   "tag2_url": "https://practicepaper.in/gate-cse/propositional-logic",
+   "ansMin": 4,
+   "ansMax": 4
+  },
+  {
+   "id": 1116202,
+   "number": 2,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Let f(x) be a polynomial and g(x) = f'(x) be its derivative. If the degree of (f(x)+ f(-x)) is 10, then the degree of (g(x)-g(-x)) is ________.",
+   "solution": "[latex]f(x)+f(-x)[/latex] keeps only the <b>even</b> powers of f (times 2). Its degree is 10, so f has an [latex]x^{10}[/latex] term (and no higher even power).<br><br>\n[latex]g(x)-g(-x)[/latex] keeps only the <b>odd</b> powers of g = f'. Even powers of f become odd powers of g: [latex]x^{10}\\rightarrow10x^9[/latex] is the highest.<br><br>\nDegree = 9<br><br>\n<b>Answer: 9</b><br><br><a href=\"https://gateoverflow.in/39571/gate2016-2-2#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "ansMin": 9,
+   "ansMax": 9
+  },
+  {
+   "id": 1116203,
+   "number": 3,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The minimum number of colours that is sufficient to vertex-colour any planar graph is _________.",
+   "solution": "By the <b>four colour theorem</b>, every planar graph can be properly coloured with 4 colours, and some (e.g. [latex]K_4[/latex]) need all 4.<br><br>\n<b>Answer: 4</b><br><br><a href=\"https://gateoverflow.in/39553/gate2016-2-3#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "ansMin": 4,
+   "ansMax": 4
+  },
+  {
+   "id": 1116204,
+   "number": 4,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the systems,each consisting of m linear equations in n variables.<br>\nI. If m [latex]\\lt[/latex] n, then all such systems have a solution <br>\nII. If m [latex]\\gt[/latex] n, then none of these systems has a solution <br>\nIII. If m = n, then there exists a system which has a solution <br>\n Which one of the following is CORRECT?",
+   "solution": "Checking each statement:<br>- I: m [latex]\\lt[/latex] n does not guarantee a solution: x + y = 1 and x + y = 2 are inconsistent [latex]\\text{---}[/latex] FALSE.<br>\n- II: m [latex]\\gt[/latex] n systems can have solutions (e.g. the same equation repeated) [latex]\\text{---}[/latex] FALSE.<br>\n- III: with m = n, the homogeneous system Ax = 0 always has x = 0 as a solution [latex]\\text{---}[/latex] TRUE.<br><br>\n<b>Answer: Only III is true</b><br><br><a href=\"https://gateoverflow.in/39554/gate2016-2-4#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "I, II and III are true",
+    "Only II and III are true",
+    "Only III is true",
+    "None of them is true"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1116205,
+   "number": 5,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Suppose that a shop has an equal number of LED bulbs of two different types. The probability of an LED bulb lasting more than 100 hours given that it is of Type 1 is 0.7, and given that it is of Type 2 is 0.4. The probability that an LED bulb chosen uniformly at random lasts more than 100 hours is _________.",
+   "solution": "Both types are equally likely (0.5 each). Total probability:<br>\n[latex]P=0.5\\times0.7+0.5\\times0.4=0.35+0.2=0.55[/latex]<br><br>\n<b>Answer: 0.55</b><br><br><a href=\"https://gateoverflow.in/39541/gate2016-2-5#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "ansMin": 0.55,
+   "ansMax": 0.55
+  }
+ ]
+}

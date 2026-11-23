@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "quizId": 11142,
+  "quizName": "GATE CS 2014 SET 2",
+  "pageTitle": "GATE CSE 2014 SET-2",
+  "timeLimit": 0,
+  "pageNo": 2,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114206,
+   "number": 6,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The dual of a Boolean function [latex]F(x_{1},x_{2},...,x_{n}, +, \\cdot , ' ) [/latex] , written as [latex]F^{D}[/latex], is the same expression as that of F with + and  [latex]\\cdot[/latex]  swapped. F is said to be self-dual if [latex]F=F^{D}[/latex].  The number of self-dual functions with n Boolean variables is",
+   "solution": "A self-dual function satisfies [latex]F(\\bar x_1,\\dots,\\bar x_n)=\\overline{F(x_1,\\dots,x_n)}[/latex].<br><br>\nThe [latex]2^n[/latex] input rows form [latex]2^{n-1}[/latex] complementary pairs. Choosing F on one row of a pair fixes F on the other, so we freely choose [latex]2^{n-1}[/latex] bits.<br><br>\nNumber of self-dual functions = [latex]2^{2^{n-1}}[/latex]<br><br>\n<b>Answer: [latex]2^{2^{n-1}}[/latex]</b><br><br><a href=\"https://gateoverflow.in/1958/gate2014-2-6#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "options": [
+    "[latex]2^{n}[/latex]",
+    "[latex]2^{n-1}[/latex]",
+    "[latex]2^{2^{n}}[/latex]",
+    "[latex]2^{2^{n-1}}[/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1114207,
+   "number": 7,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let  [latex]k = 2^{n}[/latex] . A circuit is built by giving the output of an n-bit binary counter as input to an n-to-[latex]2^{n}[/latex] bit decoder. This circuit is equivalent to a",
+   "solution": "The n-bit counter goes 0, 1, 2, ..., [latex]2^n-1[/latex]. The decoder makes exactly one of its [latex]k=2^n[/latex] outputs 1 for each count.<br><br>\nSo the single 1 moves 000..1 [latex]\\rightarrow[/latex] 00..10 [latex]\\rightarrow[/latex] ... [latex]\\rightarrow[/latex] 10..0 [latex]\\rightarrow[/latex] back to start. This is exactly a k-bit ring counter.<br><br>\n<b>Answer: k-bit ring counter</b><br><br><a href=\"https://gateoverflow.in/1959/gate2014-2-7#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Sequential Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/sequential-circuit",
+   "options": [
+    "k-bit binary up counter",
+    "k-bit binary down counter.",
+    "k-bit ring counter.",
+    "k-bit Johnson counter"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1114208,
+   "number": 8,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the equation [latex](123)_{5}=(x8)_{y}[/latex]  with x and y as unknown. The number of possible\nsolutions is _____ .",
+   "solution": "[latex](123)_5=25+10+3=38[/latex]<br>\n[latex](x8)_y=xy+8=38\\Rightarrow xy=30[/latex], with digit 8 needing [latex]y\\gt 8[/latex] and [latex]1\\le x\\lt y[/latex].<br><br>\nFactor pairs of 30: (x, y) = (3, 10), (2, 15), (1, 30).<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/1961/gate2014-2-8#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "ansMin": 3,
+   "ansMax": 3
+  },
+  {
+   "id": 1114209,
+   "number": 9,
+   "type": "NAT",
+   "marks": 1,
+   "text": "A 4-way set-associative cache memory unit with a capacity of 16 KB is built using a block\nsize of 8 words. The word length is 32 bits. The size of the physical address space is 4 GB.\nThe number of bits for the TAG field is _____",
+   "solution": "Checking each statement:<br>- Block = 8 words [latex]\\times[/latex] 4 B = 32 B [latex]\\rightarrow[/latex] offset = 5 bits<br>\n- Blocks = 16 KB / 32 B = 512, sets = 512 / 4 = 128 [latex]\\rightarrow[/latex] index = 7 bits<br>\n- Address = 4 GB [latex]\\rightarrow[/latex] 32 bits<br><br>\nTAG = 32 [latex]-[/latex] 7 [latex]-[/latex] 5 = 20 bits<br><br>\n<b>Answer: 20</b><br><br><a href=\"https://gateoverflow.in/1963/gate2014-2-9#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "ansMin": 20,
+   "ansMax": 20
+  },
+  {
+   "id": 1114210,
+   "number": 10,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider the function func shown below:\n<pre><code> int func(int num) {\nint count = 0;\nwhile (num) {\n    count++;\n    num &gt;&gt;= 1;\n}\nreturn (count);\n} </code></pre>\nThe value returned by func(435)is __________.",
+   "solution": "The loop shifts num right until it becomes 0, so it counts the number of bits in num.<br><br>\n[latex]435=(110110011)_2[/latex] (256 + 128 + 32 + 16 + 2 + 1) [latex]\\rightarrow[/latex] 9 bits.<br><br>\n<b>Answer: 9</b><br><br><a href=\"https://gateoverflow.in/1964/gate2014-2-10#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "ansMin": 9,
+   "ansMax": 9
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11172,
+  "quizName": "GATE CS 2017 SET 2",
+  "pageTitle": "GATE CSE 2017 SET-2",
+  "timeLimit": 0,
+  "pageNo": 1,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2017-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1117201,
+   "number": 1,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The representation of the value of a 16-bit unsigned integer X in hexadecimal number system\nis BCA9. The representation of the value of X in octal number system is",
+   "solution": "BCA9 in binary: 1011 1100 1010 1001. Regroup in 3s from the right: 1 011 110 010 101 001 = 1 3 6 2 5 1.<br><br>\n<b>Answer: 136251</b><br><br><a href=\"https://gateoverflow.in/118337/gate2017-2-1#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "options": [
+    "571244",
+    "736251",
+    "571247",
+    "136251"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1117202,
+   "number": 2,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Match the following:  <br><img src=\"/wp-content/uploads/GATE/CS/20172/q3.jpg\"/> ",
+   "solution": "Checking each statement:<br>- P. static char var [latex]\\rightarrow[/latex] (ii) stored in the data section<br>\n- Q. m = malloc(10); m = NULL [latex]\\rightarrow[/latex] (iv) the block can no longer be freed (lost memory)<br>\n- R. char *ptr[10] [latex]\\rightarrow[/latex] (i) an array of locations holding addresses<br>\n- S. register int var1 [latex]\\rightarrow[/latex] (iii) request to keep it in a CPU register<br><br>\n<b>Answer: P-(ii), Q-(iv), R-(i), S-(iii)</b><br><br><a href=\"https://gateoverflow.in/118171/gate2017-2-2#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "",
+   "tag2_url": "https://practicepaper.in/gate-cse/",
+   "options": [
+    "P-(ii), Q-(iv), R-(i), S-(iii)",
+    "P-(ii), Q-(i), R-(iv), S-(iii)",
+    "P-(ii), Q-(iv), R-(iii), S-(i)",
+    "P-(iii), Q-(iv), R-(i), S-(ii)"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1117203,
+   "number": 3,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Match the algorithms with their time complexities: <br><img src=\"/wp-content/uploads/GATE/CS/20172/q16.jpg\"/>",
+   "solution": "Checking each statement:<br>- Towers of Hanoi: [latex]T(n)=2T(n-1)+1\\Rightarrow\\Theta(2^n)[/latex] (iii)<br>\n- Binary search: [latex]\\Theta(\\log n)[/latex] (iv)<br>\n- Heap sort worst case: [latex]\\Theta(n\\log n)[/latex] (ii)<br>\n- Adding two n [latex]\\times[/latex] n matrices: [latex]n^2[/latex] additions, [latex]\\Theta(n^2)[/latex] (i)<br><br>\n<b>Answer: P-(iii), Q-(iv), R-(ii), S-(i)</b><br><br><a href=\"https://gateoverflow.in/118156/gate-cse-2017-set-2-question-03#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Asymptotic Notation",
+   "tag2_url": "https://practicepaper.in/gate-cse/asymptotic-notation",
+   "options": [
+    "P-(iii),Q-(iv), R-(i), S-(ii)",
+    "P-(iv),Q-(iii), R-(i), S-(ii)",
+    "P-(iii),Q-(iv), R-(ii), S-(i)",
+    "P-(iv),Q-(iii), R-(ii), S-(i)"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1117204,
+   "number": 4,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let [latex]L_{1},L_{2}[/latex] be any two context free languages and R be any regular language. Then which of\nthe following is/are CORRECT ?<br> I. [latex]L_{1}\\cup L_{2}[/latex] is context - free <br>II. [latex]\\bar{L_{1}}[/latex]  is context - free <br>III. [latex]L_{1} - R[/latex] is context - free <br> IV. [latex]L_{1}\\cap L_{2} [/latex] is context - free",
+   "solution": "Checking each statement:<br>- I: CFLs are closed under union True<br>\n- II: not closed under complement False<br>\n- III: [latex]L_1-R=L_1\\cap\\bar R[/latex], and CFL [latex]\\cap[/latex] regular is CFL True<br>\n- IV: not closed under intersection False<br><br>\n<b>Answer: I and III only</b><br><br><a href=\"https://gateoverflow.in/118143/gate2017-2-4#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-language",
+   "options": [
+    "I, II and IV only",
+    "I and III only",
+    "II and IV only",
+    "I only"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1117205,
+   "number": 5,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Match the following according to input (from the left column) to the complier phase (in the\nright column) that processes it. <br><img src=\"/wp-content/uploads/GATE/CS/20172/q17.jpg\"/>",
+   "solution": "Which phase takes each item as input:<br>\n- Syntax tree [latex]\\rightarrow[/latex] semantic analyzer (iii)<br>\n- Character stream [latex]\\rightarrow[/latex] lexical analyzer (iv)<br>\n- Intermediate representation [latex]\\rightarrow[/latex] code generator (i)<br>\n- Token stream [latex]\\rightarrow[/latex] syntax analyzer (ii)<br><br>\n<b>Answer: P-(iii), Q-(iv), R-(i), S-(ii)</b><br><br><a href=\"https://gateoverflow.in/118592/gate2017-2-5#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Matching",
+   "tag2_url": "https://practicepaper.in/gate-cse/matching",
+   "options": [
+    "P-(ii),Q-(iii), R-(iv), S-(i)",
+    "P-(ii),Q-(i), R-(iii), S-(iv)",
+    "P-(iii),Q-(iv), R-(i), S-(ii)",
+    "P-(i),Q-(iv), R-(ii), S-(iii)"
+   ],
+   "correct": 2
+  }
+ ]
+}

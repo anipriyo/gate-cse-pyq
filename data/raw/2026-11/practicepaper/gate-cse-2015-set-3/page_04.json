@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11153,
+  "quizName": "GATE CS 2015 SET 3",
+  "pageTitle": "GATE CSE 2015 SET-3",
+  "timeLimit": 0,
+  "pageNo": 4,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-3",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115316,
+   "number": 16,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "In a room there are only two types of people, namely Type 1 and Type 2. Type 1 people always tell the truth and Type 2 people always lie. You give a fair coin to a person in that room, without knowing which type he is from and tell him to toss it and hide the result from you till you ask for it. Upon asking, the person replies the following <br><br> \"The result of the toss is head if and only if I am telling the truth.\" <br><br> Which of the following options is correct?",
+   "solution": "Let H = \"result is head\".<br><br>\n- Type 1 (truthful): the statement is true and he is telling the truth, so H [latex]\\leftrightarrow[/latex] True gives H.<br>\n- Type 2 (liar): the statement is false and he is not telling the truth. \"H [latex]\\leftrightarrow[/latex] False\" is false only when H is true.<br><br>\nEither way the result is head.<br><br>\n<b>Answer: The result is head</b><br><br><a href=\"https://gateoverflow.in/8427/gate2015-3-16#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Propositional Logic",
+   "tag2_url": "https://practicepaper.in/gate-cse/propositional-logic",
+   "options": [
+    "The result is head",
+    "The result is tail",
+    "If the person is of Type 2, then the result is tail",
+    "If the person is of Type 1, then the result is tail"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1115317,
+   "number": 17,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "While inserting the elements 71, 65, 84, 69, 67, 83 in an empty binary search tree (BST) in the sequence shown, the element in the lowest level is",
+   "solution": "Checking each statement:<br>- 71 root; 65 left, 84 right<br>\n- 69: right of 65; 67: left of 69 (level 3)<br>\n- 83: left of 84 (level 2)<br><br>\nThe deepest element is 67.<br><br>\n<b>Answer: 67</b><br><br><a href=\"https://gateoverflow.in/8409/gate2015-3-17#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Search Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-search-tree",
+   "options": [
+    "65",
+    "67",
+    "69",
+    "83"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1115318,
+   "number": 18,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The result evaluating the postfix expression 10    5  +  60     6   /  *  8 -   is",
+   "solution": "Checking each statement:<br>- 10 5 + [latex]\\rightarrow[/latex] 15<br>\n- 60 6 / [latex]\\rightarrow[/latex] 10<br>\n- * [latex]\\rightarrow[/latex] 150<br>\n- 8 [latex]-[/latex] [latex]\\rightarrow[/latex] 142<br><br>\n<b>Answer: 142</b><br><br><a href=\"https://gateoverflow.in/8408/gate2015-3-18#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Stack",
+   "tag2_url": "https://practicepaper.in/gate-cse/stack",
+   "options": [
+    "284",
+    "213",
+    "142",
+    "71"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115319,
+   "number": 19,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following relation <br><br>   Cinema(theater, address, capacity) <br><br>Which of the following options will be needed at the end of the SQL query <br><br> SELECT P1.address FROM Cinema P1 <br><br> such that it always finds the addresses of theaters with maximum capacity?",
+   "solution": "A theater has maximum capacity when its capacity is [latex]\\ge[/latex] every capacity in the table, i.e. [latex]\\ge[/latex] ALL.<br><br>\n[latex]\\ge[/latex] ANY returns every theater. [latex]\\gt[/latex] ALL (max) / [latex]\\gt[/latex] ANY (max) returns nothing.<br><br>\n<b>Answer: WHERE P1.capacity [latex]\\ge[/latex] All (select P2.capacity from Cinema P2)</b><br><br><a href=\"https://gateoverflow.in/8396/gate2015-3-19#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "SQL",
+   "tag2_url": "https://practicepaper.in/gate-cse/sql",
+   "options": [
+    "WHERE P1.capacity [latex]\\geq[/latex] All (select P2.capacity from Cinema P2)",
+    "WHERE P1.capacity [latex]\\geq[/latex] Any (select P2.capacity from Cinema P2)",
+    "WHERE P1.capacity [latex]\\gt[/latex] All (select max(P2.capacity) from Cinema P2)",
+    "WHERE P1.capacity [latex]\\gt[/latex] Any (select max(P2.capacity) from Cinema P2)"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1115320,
+   "number": 20,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following array of elements. <br>\n(89,19,50,17,12,15,2,5,7,11,6,9,100) <br>The minimum number of interchanges needed to convert it into a max-heap is",
+   "solution": "Only 100 (at the last position) breaks the heap property. It sifts up:<br><br>\n- swap with parent 15<br>\n- swap with parent 50<br>\n- swap with root 89<br><br>\nEverything else already satisfies the max-heap rule, so 3 interchanges.<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/8418/gate2015-3-20#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Heap Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/heap-tree",
+   "options": [
+    "4",
+    "5",
+    "2",
+    "3"
+   ],
+   "correct": 3
+  }
+ ]
+}

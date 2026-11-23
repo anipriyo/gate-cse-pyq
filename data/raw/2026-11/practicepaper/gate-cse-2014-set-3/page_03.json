@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "quizId": 11143,
+  "quizName": "GATE CS 2014 SET 3",
+  "pageTitle": "GATE CSE 2014 SET-3",
+  "timeLimit": 0,
+  "pageNo": 3,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-3",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114311,
+   "number": 11,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The minimum number of arithmetic operations required to evaluate the polynomial\n[latex]P(x)=x^{5}+4x^{3}+6x+5[/latex] for a given value of x, using only one temporary variable is _____.",
+   "solution": "Write [latex]P(x)=((x^2+4)\\cdot x\\cdot x+6)\\cdot x+5[/latex]:<br><br>\n- t = x * x<br>\n- t = t + 4<br>\n- t = t * x<br>\n- t = t * x ([latex]x^4+4x^2[/latex])<br>\n- t = t + 6<br>\n- t = t * x ([latex]x^5+4x^3+6x[/latex])<br>\n- t = t + 5<br><br>\n7 operations with one temporary.<br><br>\n<b>Answer: 7</b><br><br><a href=\"https://gateoverflow.in/2045/gate2014-3-11#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Intermediate Code Generation",
+   "tag2_url": "https://practicepaper.in/gate-cse/intermediate-code-generation",
+   "ansMin": 7,
+   "ansMax": 7
+  },
+  {
+   "id": 1114312,
+   "number": 12,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following rooted tree with the vertex labelled P as the root <br><img src=\"/wp-content/uploads/GATE/CS/20143/q12.jpg\"/><br> The order in which the nodes are visited during an in-order traversal of the tree is",
+   "solution": "In-order for a general tree: in-order of the first child, then the node, then in-order of the remaining children.<br><br>\n- P: (Q-subtree) P (R-subtree)<br>\n- Q-subtree: S Q<br>\n- R-subtree: T R (U-subtree) V, with U-subtree = W U<br><br>\nOrder: S Q P T R W U V<br><br>\n<b>Answer: SQPTRWUV</b><br><br><a href=\"https://gateoverflow.in/2046/gate2014-3-12#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "n-ary Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/n-ary-tree",
+   "options": [
+    "SQPTRWUV",
+    "SQPTUWRV",
+    "SQPTWUVR",
+    "SQPTRUWV"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1114313,
+   "number": 13,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Suppose depth first search is executed on the graph below starting at some unknown vertex. Assume that a recursive call to visit a vertex is made only after first checking that the vertex has not been visited earlier. Then the maximum possible recursion depth (including the initial call) is _________.  <br><img src=\"/wp-content/uploads/GATE/CS/20143/q13.jpg\"/> ",
+   "solution": "Max recursion depth = number of vertices on the longest simple path DFS can follow.<br><br>\n- Left 3 [latex]\\times[/latex] 3 grid: a snake path covers all 9 vertices, ending at its bottom-right corner.<br>\n- Bottom middle vertex: 1 (its pendant above is a dead end, so skip it).<br>\n- Right 3 [latex]\\times[/latex] 3 grid: enter at the bottom-left corner; we must end at the middle-right vertex to reach the pendant. A grid is bipartite (5 corner-coloured, 4 other), so a corner-to-middle path can cover only 8 vertices.<br>\n- Right pendant: 1<br><br>\nDepth = 9 + 1 + 8 + 1 = 19<br><br>\n<b>Answer: 19</b><br><br><a href=\"https://gateoverflow.in/2047/gate2014-3-13#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Graph Traversal",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-traversal",
+   "ansMin": 19,
+   "ansMax": 19
+  },
+  {
+   "id": 1114314,
+   "number": 14,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "You have an array of n elements. Suppose you implement quick sort by always choosing the central element of the array as the pivot. Then the tightest upper bound for the worst case performance is",
+   "solution": "Choosing the middle element is still a fixed rule. An adversary can arrange the input so the middle element is always the smallest or largest, giving partitions of size n[latex]-[/latex]1 and 0 every time.<br><br>\n[latex]T(n)=T(n-1)+O(n)=O(n^2)[/latex]<br><br>\n<b>Answer: [latex]O(n^2)[/latex]</b><br><br><a href=\"https://gateoverflow.in/2048/gate2014-3-14#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Sorting",
+   "tag2_url": "https://practicepaper.in/gate-cse/sorting",
+   "options": [
+    "[latex]O(n^{2})[/latex]",
+    "[latex]O(n logn)[/latex]",
+    "[latex]\\theta (n logn)[/latex]",
+    "[latex]O(n^{3})[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1114315,
+   "number": 15,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The length of the shortest string NOT in the language (over  [latex]\\Sigma[/latex]={a,b}) of the following regular expression is _________.  <br>a*b* (ba)* a*",
+   "solution": "All strings of length 0, 1, 2 are generated: [latex]\\epsilon[/latex], a, b, aa, ab, bb (from a*b*), ba (from (ba)*).<br><br>\n\"bab\": after the leading b's we need \"ab\", but \"ab\" cannot come from (ba)*a*. So bab is not in the language.<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/2049/gate2014-3-15#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Regular Expression",
+   "tag2_url": "https://practicepaper.in/gate-cse/regular-expression",
+   "ansMin": 3,
+   "ansMax": 3
+  }
+ ]
+}

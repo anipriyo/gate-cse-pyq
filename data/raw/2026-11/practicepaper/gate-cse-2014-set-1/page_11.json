@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "quizId": 11141,
+  "quizName": "GATE CS 2014 SET 1",
+  "pageTitle": "GATE CSE 2014 SET-1",
+  "timeLimit": 0,
+  "pageNo": 11,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114151,
+   "number": 51,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider an undirected graph G where self-loops are not allowed. The vertex set of G is {(i,f):1[latex]\\leq[/latex]i[latex]\\leq[/latex]12, 1[latex]\\leq[/latex]j[latex]\\leq[/latex]12}. There is an edge between (a,b) and (c,d) if |a-c|[latex]\\leq[/latex]1 and |b-d| [latex]\\leq[/latex]1. The number of edges in the graph is ____.",
+   "solution": "This is a 12 [latex]\\times[/latex] 12 grid where each cell is joined to all 8 neighbours (like king moves):<br>\n- horizontal: 12 [latex]\\times[/latex] 11 = 132<br>\n- vertical: 12 [latex]\\times[/latex] 11 = 132<br>\n- diagonal (both directions): 2 [latex]\\times[/latex] 11 [latex]\\times[/latex] 11 = 242<br><br>\nTotal = 506<br><br>\n<b>Answer: 506</b><br><br><a href=\"https://gateoverflow.in/1931/gate2014-1-51#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "ansMin": 506,
+   "ansMax": 506
+  },
+  {
+   "id": 1114152,
+   "number": 52,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "An ordered n-tuple ([latex]d_{1}, d_{2} ,... , d_{n}[/latex]) with [latex]d_{1}\\geq d_{2} \\geq ... \\geq d_{n}[/latex] is called graphic if there exists a simple undirected graph with n vertices having degrees [latex]d_{1}, d_{2} ,... , d_{n}[/latex] respectively. Which of the following 6-tuples is NOT graphic?",
+   "solution": "(3, 3, 3, 1, 0, 0): ignore the two isolated vertices, leaving 4 vertices with degrees 3, 3, 3, 1. Each degree-3 vertex must connect to all three others, so the fourth vertex would have degree 3, not 1. Not graphic.<br><br>\nThe others are graphic (e.g. three disjoint edges, a 6-cycle, a small tree).<br><br>\n<b>Answer: (3, 3, 3, 1, 0, 0)</b><br><br><a href=\"https://gateoverflow.in/1932/gate2014-1-52#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "options": [
+    "(1, 1, 1, 1, 1, 1)",
+    "(2, 2, 2, 2, 2, 2)",
+    "(3, 3, 3, 1, 0, 0)",
+    "(3, 2, 1, 1, 1, 0)"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1114153,
+   "number": 53,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Which one of the following propositional logic formulas is TRUE when exactly two of p, q,\nand r are TRUE?",
+   "solution": "Exactly two true means either r is true with exactly one of p, q (that is [latex]\\neg(p\\leftrightarrow q)\\wedge r[/latex]), or p and q true with r false ([latex]p\\wedge q\\wedge\\sim r[/latex]). Option 2 is exactly the OR of these two cases.<br><br>\n<b>Answer: Option 2</b><br><br><a href=\"https://gateoverflow.in/1933/gate2014-1-53#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Propositional Logic",
+   "tag2_url": "https://practicepaper.in/gate-cse/propositional-logic",
+   "options": [
+    "[latex]((p\\leftrightarrow q)\\wedge r) \\vee (p\\wedge q\\wedge \\sim r)[/latex]",
+    "[latex](\\sim (p\\leftrightarrow q)\\wedge r)\\vee (p\\wedge q\\wedge \\sim r)[/latex]",
+    "[latex]((p\\rightarrow q)\\wedge r) \\vee (p\\wedge q\\wedge \\sim r)[/latex]",
+    "[latex](\\sim (p\\leftrightarrow q)\\wedge r)\\wedge (p\\wedge q\\wedge \\sim r)[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1114154,
+   "number": 54,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Given the following schema:<br>\nemployees(emp-id, first-name, last-name, hire-date, dept-id, salary)  <br>\ndepartments(dept-id, dept-name, manager-id, location-id)<br>\nYou want to display the last names and hire dates of all latest hires in their respective\ndepartments in the location ID 1700. You issue the following query: <br>\n<pre><code> SQL>SELECT last-name, hire-date\nFROM employees\nWHERE (dept-id, hire-date) IN\n(SELECT dept-id, MAx(hire-date)\nFROM employees JOIN departments USING(dept-id)\nWHERE location-id = 1700\nGROUP BY dept-id); </pre></code>\nWhat is the outcome?",
+   "solution": "The subquery returns, for each department at location 1700, its dept-id and latest hire date. The outer query keeps employees whose (dept-id, hire-date) pair is in that list. Multi-column IN is valid and GROUP BY works in a subquery with a join.<br><br>\n<b>Answer: It executes and gives the correct result</b><br><br><a href=\"https://gateoverflow.in/1934/gate2014-1-54#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "SQL",
+   "tag2_url": "https://practicepaper.in/gate-cse/sql",
+   "options": [
+    "It executes but does not give the correct result",
+    "It executes and gives the correct result.",
+    "It generates an error because of pairwise comparison.",
+    "It generates an error because the GROUP BY clause cannot be used with table joins in a sub-query"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1114155,
+   "number": 55,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider two processors P1 and P2 executing the same instruction set. Assume that under\nidentical conditions, for the same input, a program running on P2 takes 25% less time but\nincurs 20% more CPI (clock cycles per instruction) as compared to the program running on\nP1. If the clock frequency of P1 is 1GHz, then the clock frequency of P2 (in GHz) is _________.",
+   "solution": "Time = IC [latex]\\times[/latex] CPI / f. With [latex]T_2=0.75T_1[/latex] and [latex]CPI_2=1.2\\,CPI_1[/latex]:<br>\n[latex]0.75=\\frac{1.2}{f_2/f_1}\\Rightarrow f_2=\\frac{1.2}{0.75}\\times1=1.6[/latex] GHz<br><br>\n<b>Answer: 1.6</b><br><br><a href=\"https://gateoverflow.in/1935/gate2014-1-55#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Machine Instruction",
+   "tag2_url": "https://practicepaper.in/gate-cse/machine-instruction",
+   "ansMin": 1.6,
+   "ansMax": 1.6
+  }
+ ]
+}

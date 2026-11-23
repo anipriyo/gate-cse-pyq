@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "quizId": 11143,
+  "quizName": "GATE CS 2014 SET 3",
+  "pageTitle": "GATE CSE 2014 SET-3",
+  "timeLimit": 0,
+  "pageNo": 10,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-3",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114346,
+   "number": 46,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "With respect to the numerical evaluation of the definite integral,[latex]K=\\int_{a}^{b}x^{2}dx[/latex] , where a and b are given, which of the following statements is/are TRUE? <br>\n(I) The value of K obtained using the trapezoidal rule is always greater than or equal to the\nexact value of the definite integral. <br>\n (II) The value of K obtained using the Simpson's rule is always equal to the exact value of\nthe definite integral.",
+   "solution": "Checking each statement:<br>- I: [latex]x^2[/latex] is convex, so the chord (trapezoid) lies above the curve [latex]\\rightarrow[/latex] trapezoidal value [latex]\\ge[/latex] exact [latex]\\rightarrow[/latex] True.<br>\n- II: Simpson's rule is exact for polynomials up to degree 3 [latex]\\rightarrow[/latex] True.<br><br>\n<b>Answer: Both I and II</b><br><br><a href=\"https://gateoverflow.in/2080/gate2014-3-46#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Numerical Method",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-method",
+   "options": [
+    "I only",
+    "II only",
+    "Both I and II",
+    "Neither I nor II"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1114347,
+   "number": 47,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The value of the integral given below is <br> [latex]\\int_{0}^{\\pi }x^{2}cosxdx[/latex]",
+   "solution": "Integrate by parts: [latex]\\int x^2\\cos x\\,dx=x^2\\sin x+2x\\cos x-2\\sin x[/latex]<br><br>\nFrom 0 to [latex]\\pi[/latex]: [latex](0+2\\pi(-1)-0)-0=-2\\pi[/latex]<br><br>\n<b>Answer: [latex]-2\\pi[/latex]</b><br><br><a href=\"https://gateoverflow.in/2081/gate2014-3-47#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "options": [
+    "[latex]-2\\pi[/latex]",
+    "[latex]\\pi[/latex]",
+    "[latex]-\\pi[/latex]",
+    "[latex]2\\pi[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1114348,
+   "number": 48,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Let S be a sample space and two mutually exclusive events A and B be such that A[latex]\\cup[/latex]B = S. If P(.) denotes the probability of the event, the maximum value of P(A)P(B) is ______",
+   "solution": "Mutually exclusive and union = S, so P(A) + P(B) = 1.<br><br>\nP(A)(1 [latex]-[/latex] P(A)) is maximum at P(A) = 0.5, giving 0.5 [latex]\\times[/latex] 0.5 = 0.25.<br><br>\n<b>Answer: 0.25</b><br><br><a href=\"https://gateoverflow.in/2082/gate2014-3-48#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "ansMin": 0.25,
+   "ansMax": 0.25
+  },
+  {
+   "id": 1114349,
+   "number": 49,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the set of all functions f:{0,1,...,2014}[latex]\\rightarrow[/latex]{0,1...,2014} such that f(f(i))=i, for 0[latex]\\leq[/latex]i[latex]\\leq[/latex]2014 . Consider the following statements. <br>\nP. For each such function it must be the case that for every i, f(i) = i, <br>\nQ. For each such function it must be the case that for some i,f(i) = i, <br>\nR. Each such function must be onto. <br>\nWhich one of the following is CORRECT?",
+   "solution": "f(f(i)) = i means f is its own inverse, so f is a bijection [latex]\\rightarrow[/latex] R true.<br><br>\n- P false: f can swap pairs, e.g. f(0) = 1, f(1) = 0.<br>\n- Q true: f splits the 2015 elements into fixed points and swapped pairs. 2015 is odd, so at least one fixed point exists.<br><br>\n<b>Answer: Only Q and R are true</b><br><br><a href=\"https://gateoverflow.in/2083/gate2014-3-49#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Functions",
+   "tag2_url": "https://practicepaper.in/gate-cse/functions",
+   "options": [
+    "P, Q and R are true",
+    "Only Q and R are true",
+    "Only P and Q are true",
+    "Only R is true"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1114350,
+   "number": 50,
+   "type": "NAT",
+   "marks": 2,
+   "text": "There are two elements x,y in a group (G,*) such that every element in the group can be\nwritten as a product of some number of x's and y's in some order. It is known that <br>\nx * x = y * y = x * y *x * y = y* x * y *x = e <br>\nwhere e is the identity element. The maximum number of elements in such a group is\n_______.",
+   "solution": "[latex]x^2=y^2=e[/latex] and [latex](xy)^2=e[/latex] give [latex]xy=(xy)^{-1}=y^{-1}x^{-1}=yx[/latex], so x and y commute.<br><br>\nEvery product then reduces to one of e, x, y, xy (the Klein four-group).<br><br>\n<b>Answer: 4</b><br><br><a href=\"https://gateoverflow.in/2084/gate2014-3-50#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Group Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/group-theory",
+   "ansMin": 4,
+   "ansMax": 4
+  }
+ ]
+}

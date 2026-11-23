@@ -1,0 +1,115 @@
+{
+ "meta": {
+  "quizId": 11162,
+  "quizName": "GATE CS 2016 SET 2",
+  "pageTitle": "GATE CSE 2016 SET-2",
+  "timeLimit": 0,
+  "pageNo": 4,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2016-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1116216,
+   "number": 16,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The number of states in the minimum sized DFA that accepts the language defined by the regular expression <br>(0+1)* (0+1)(0+1)* <br> is _______.",
+   "solution": "[latex](0+1)^*(0+1)(0+1)^*=(0+1)^+[/latex]: every non-empty string. The DFA needs a non-final start state (for [latex]\\epsilon[/latex]) and one final state that loops on 0 and 1.<br><br>\n<b>Answer: 2</b><br><br><a href=\"https://gateoverflow.in/39562/gate2016-2-16#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Finite Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/finite-automata",
+   "ansMin": 2,
+   "ansMax": 2
+  },
+  {
+   "id": 1116217,
+   "number": 17,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Language L1 is defined by the grammar: [latex]S_{1}\\rightarrow aS_{1}b|\\varepsilon [/latex]<br>\nLanguage L2 is defined by the grammar: [latex]S_{2}\\rightarrow abS_{2}|\\varepsilon[/latex]<br>\nConsider the following statements:<br>\nP: L1 is regular <br>\nQ: L2 is regular<br>\nWhich one of the following is TRUE?",
+   "solution": "Checking each statement:<br>- [latex]L_1=\\{a^nb^n\\}[/latex]: needs counting [latex]\\rightarrow[/latex] not regular (P false).<br>\n- [latex]L_2=(ab)^*[/latex] [latex]\\rightarrow[/latex] regular (Q true).<br><br>\n<b>Answer: P is false and Q is true</b><br><br><a href=\"https://gateoverflow.in/39542/gate2016-2-17#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Regular Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/regular-language",
+   "options": [
+    "Both P and Q are true",
+    "P is true and Q is false",
+    "P is false and Q is true",
+    "Both P and Q are false"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1116218,
+   "number": 18,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following types of languages: [latex]L_{1}[/latex]:Regular, [latex]L_{2}[/latex]:Context-free, [latex]L_{3}[/latex]:Recursive, [latex]L_{4}[/latex]:Recursively enumerable. <br>Which of the following is/are TRUE? <br>\nI. [latex]\\bar{L}_{3}\\cup L_{4}[/latex] is recursivelyenumerable<br>\nII. [latex]\\bar{L}_{2}\\cup L_{3}[/latex] is recursive <br>\nIII. [latex]L_{1}^{*}\\cup L_{2}[/latex] is context-free <br>\nIV. [latex]L_{1}\\cup \\bar{L}_{2}[/latex] is context-free",
+   "solution": "Checking each statement:<br>- I: [latex]\\bar L_3[/latex] is recursive (so RE), and RE is closed under union [latex]\\rightarrow[/latex] RE True<br>\n- II: a CFL is recursive, so [latex]\\bar L_2[/latex] is recursive; union of recursive languages is recursive True<br>\n- III: [latex]L_1^*[/latex] is regular (so CFL); CFL [latex]\\cup[/latex] CFL is CFL True<br>\n- IV: [latex]\\bar L_2[/latex] need not be CFL, so the union need not be False<br><br>\n<b>Answer: I, II and III only</b><br><br><a href=\"https://gateoverflow.in/39574/gate2016-2-18#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-language",
+   "options": [
+    "I only",
+    "I and III only",
+    "I and IV only",
+    "I, II and III only"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1116219,
+   "number": 19,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Match thefollowing:\n<br><img src=\"/wp-content/uploads/GATE/CS/20162/q19.jpg\"/>",
+   "solution": "Checking each statement:<br>- P. Lexical analysis [latex]\\rightarrow[/latex] (iii) regular expressions (token patterns)<br>\n- Q. Top-down parsing [latex]\\rightarrow[/latex] (i) leftmost derivation<br>\n- R. Semantic analysis [latex]\\rightarrow[/latex] (ii) type checking<br>\n- S. Runtime environments [latex]\\rightarrow[/latex] (iv) activation records<br><br>\n<b>Answer: P-iii, Q-i, R-ii, S-iv</b><br><br><a href=\"https://gateoverflow.in/39548/gate2016-2-19#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Runtime Environment",
+   "tag2_url": "https://practicepaper.in/gate-cse/runtime-environment",
+   "options": [
+    "P[latex]\\leftrightarrow[/latex]i, Q [latex]\\leftrightarrow[/latex] ii, R[latex]\\leftrightarrow[/latex] iv,S[latex]\\leftrightarrow[/latex] iii",
+    "P[latex]\\leftrightarrow[/latex] iii, Q[latex]\\leftrightarrow[/latex]i, R[latex]\\leftrightarrow[/latex] ii, S[latex]\\leftrightarrow[/latex] iv",
+    "P[latex]\\leftrightarrow[/latex] ii, Q[latex]\\leftrightarrow[/latex] iii, R[latex]\\leftrightarrow[/latex] i, S[latex]\\leftrightarrow[/latex] iv",
+    "P[latex]\\leftrightarrow[/latex] iv,Q[latex]\\leftrightarrow[/latex] i, R[latex]\\leftrightarrow[/latex] ii, S[latex]\\leftrightarrow[/latex] iii"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1116220,
+   "number": 20,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "In which one of the following page replacement algorithms it is possible for the page fault rate to increase even when the number of allocated frames increases?",
+   "solution": "This is <b>Belady's anomaly</b>, which happens with FIFO. LRU, OPT and MRU are stack algorithms: with more frames the set of pages in memory only grows, so faults never increase.<br><br>\n<b>Answer: FIFO</b><br><br><a href=\"https://gateoverflow.in/39559/gate2016-2-20#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "options": [
+    "LRU(Least Recently Used)",
+    "OPT (Optimal Page Replacement)",
+    "MRU(Most Recently Used)",
+    "FIFO(First In First Out)"
+   ],
+   "correct": 3
+  }
+ ]
+}

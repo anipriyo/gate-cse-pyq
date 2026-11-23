@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "quizId": 11143,
+  "quizName": "GATE CS 2014 SET 3",
+  "pageTitle": "GATE CSE 2014 SET-3",
+  "timeLimit": 0,
+  "pageNo": 1,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-3",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114301,
+   "number": 1,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following statements:<br>\nP: Good mobile phones are not cheap <br>\nQ: Cheap mobile phones are not good <br> <br>\nL: P implies Q <br>\nM: Q implies P <br>\nN: P is equivalent to Q <br>\nWhich one of the following about L, M, and N is CORRECT?",
+   "solution": "Let G = good, C = cheap.<br>\n- P: [latex]G\\rightarrow\\neg C[/latex]<br>\n- Q: [latex]C\\rightarrow\\neg G[/latex]<br><br>\nQ is the contrapositive of P, so P [latex]\\equiv[/latex] Q. Hence P implies Q, Q implies P, and P is equivalent to Q.<br><br>\n<b>Answer: L, M and N are TRUE</b><br><br><a href=\"https://gateoverflow.in/2035/gate2014-3-1#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Propositional Logic",
+   "tag2_url": "https://practicepaper.in/gate-cse/propositional-logic",
+   "options": [
+    "Only L is TRUE.",
+    "Only M is TRUE.",
+    "Only N is TRUE.",
+    "L, M and N are TRUE."
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1114302,
+   "number": 2,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let x and Y be finite sets and f:x[latex]\\rightarrow[/latex]Y be a function. Which one of the following statements is TRUE?",
+   "solution": "Checking each statement:<br>- Option 1 fails when f(A) and f(B) overlap.<br>\n- Option 2 fails for non-injective f: A = {1}, B = {2}, f(1) = f(2) = y gives [latex]f(A\\cap B)=\\emptyset[/latex] but [latex]f(A)\\cap f(B)=\\{y\\}[/latex].<br>\n- Option 3 fails for the same example.<br>\n- Option 4: [latex]x\\in f^{-1}(S\\cap T)\\iff f(x)\\in S[/latex] and [latex]f(x)\\in T\\iff x\\in f^{-1}(S)\\cap f^{-1}(T)[/latex] [latex]\\rightarrow[/latex] always true.<br><br>\n<b>Answer: [latex]f^{-1}(S\\cap T)=f^{-1}(S)\\cap f^{-1}(T)[/latex]</b><br><br><a href=\"https://gateoverflow.in/2036/gate2014-3-2#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Set Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/set-theory",
+   "options": [
+    "For any subsets A and B of x, |f(A[latex]\\cup[/latex]B)|=|f(A)|+|f(B)|",
+    "For any subsets A and B of x, f(A[latex]\\cap[/latex]B) =f(A)[latex]\\cap[/latex]f(B)",
+    "For any subsets A and B of x, |f(A[latex]\\cap[/latex]B)| = min{|f (A)| ,|f(B)|}",
+    "For any subsets S and T of Y, [latex]f^{-1}(S\\cap T)=f^{-1}(S)\\cap f^{-1}(T)[/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1114303,
+   "number": 3,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Let G be a group with 15 elements. Let L be a subgroup of G. It is known that L[latex]\\neq[/latex]G and that the size of L is at least 4. The size of L is _______.",
+   "solution": "By Lagrange's theorem, |L| divides 15, so |L| is 1, 3, 5 or 15.<br><br>\nL [latex]\\ne[/latex] G rules out 15, and [latex]|L|\\ge4[/latex] rules out 1 and 3.<br><br>\n<b>Answer: 5</b><br><br><a href=\"https://gateoverflow.in/2037/gate2014-3-3#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Group Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/group-theory",
+   "ansMin": 5,
+   "ansMax": 5
+  },
+  {
+   "id": 1114304,
+   "number": 4,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following statements is TRUE about every n x n matrix with only real\neigenvalues?",
+   "solution": "Trace = sum of eigenvalues, determinant = product of eigenvalues.<br><br>\n- If det [latex]\\lt[/latex] 0, the product is negative, so at least one eigenvalue is negative [latex]\\rightarrow[/latex] option 1 true.<br>\n- Counter-examples for others: eigenvalues 3, [latex]-[/latex]1 (trace [latex]\\gt[/latex] 0); [latex]-[/latex]1, [latex]-[/latex]2 (det [latex]\\gt[/latex] 0); [latex]-[/latex]1, [latex]-[/latex]1, 5 (trace and det both positive).<br><br>\n<b>Answer: If trace is positive and determinant is negative, at least one eigenvalue is negative</b><br><br><a href=\"https://gateoverflow.in/2038/gate2014-3-4#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "If the trace of the matrix is positive and the determinant of the matrix is negative, at least one of its eigenvalues is negative.",
+    "If the trace of the matrix is positive, all its eigenvalues are positive.",
+    "If the determinant of the matrix is positive, all its eigenvalues are positive.",
+    "If the product of the trace and determinant of the matrix is positive, all its eigenvalues are positive."
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1114305,
+   "number": 5,
+   "type": "NAT",
+   "marks": 1,
+   "text": "If V1 and V2 are 4-dimensional subspaces of a 6-dimensional vector space V, then the smallest possible dimension of  V1[latex]\\cap[/latex]V2 is _______.",
+   "solution": "[latex]\\dim(V_1\\cap V_2)=\\dim V_1+\\dim V_2-\\dim(V_1+V_2)\\ge4+4-6=2[/latex]<br><br>\n<b>Answer: 2</b><br><br><a href=\"https://gateoverflow.in/2039/gate2014-3-5#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "ansMin": 2,
+   "ansMax": 2
+  }
+ ]
+}

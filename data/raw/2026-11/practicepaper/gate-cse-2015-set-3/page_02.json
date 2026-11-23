@@ -1,0 +1,115 @@
+{
+ "meta": {
+  "quizId": 11153,
+  "quizName": "GATE CS 2015 SET 3",
+  "pageTitle": "GATE CSE 2015 SET-3",
+  "timeLimit": 0,
+  "pageNo": 2,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-3",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115306,
+   "number": 6,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let # be a binary operator defined as <br>\nX#Y=X'+Y' where X and Y are Boolean variables.<br> Consider the following two statements.<br><br>\n(S1) (P # Q) # R  =  P # (Q # R) <br>\n(S2) Q # R  =  R # Q<br><br>\nWhich of the following is/are true for the Boolean variables P,  Q and R?",
+   "solution": "X # Y = X' + Y' = (XY)', i.e. NAND.<br><br>\n- S2: NAND is commutative [latex]\\rightarrow[/latex] True<br>\n- S1: (P # Q) # R = PQ + R', while P # (Q # R) = P' + QR. Different (e.g. P = 0, R = 1) [latex]\\rightarrow[/latex] False<br><br>\n<b>Answer: Only S2 is true</b><br><br><a href=\"https://gateoverflow.in/8393/gate2015-3-6#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "options": [
+    "Only S1 is true",
+    "Only S2 is true",
+    "Both S1 and S2 are true",
+    "Neither S1 nor S2 are true"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1115307,
+   "number": 7,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider a software project with the following information domain characteristics for calculation of function point metric. <br> Number of external inputs (I) = 30 <br> Number of external outputs (O) = 60 <br> Number of external inquiries (E) = 23 <br> Number of files (F) = 08 <br> Number of external interfaces (N) = 02 <br><br> It is given that the complexity weighting factors for I, O, E, F and N are 4, 5, 4, 10 and 7, respectively. It is also given that, out of fourteen value adjustment factors that influence the development effort, four factors are not applicable, each of the other four factors have value 3, and each of the remaining factors have value 4. The computed value of function point metric is _____________.",
+   "solution": "UFP = 30 [latex]\\times[/latex] 4 + 60 [latex]\\times[/latex] 5 + 23 [latex]\\times[/latex] 4 + 8 [latex]\\times[/latex] 10 + 2 [latex]\\times[/latex] 7 = 120 + 300 + 92 + 80 + 14 = 606<br><br>\nSum of factors = 4 [latex]\\times[/latex] 0 + 4 [latex]\\times[/latex] 3 + 6 [latex]\\times[/latex] 4 = 36<br><br>\nFP = 606 [latex]\\times[/latex] (0.65 + 0.01 [latex]\\times[/latex] 36) = 606 [latex]\\times[/latex] 1.01 = 612.06<br><br>\n<b>Answer: 612.06</b><br><br><a href=\"https://gateoverflow.in/8423/gate2015-3-7#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Software Engg",
+   "tag1_url": "https://practicepaper.in/gate-cse/software-engg",
+   "tag2": "",
+   "tag2_url": "https://practicepaper.in/gate-cse/",
+   "ansMin": 612,
+   "ansMax": 613
+  },
+  {
+   "id": 1115308,
+   "number": 8,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "In a web server, ten WebPages are stored with the URLs of the form http://www.yourname.com/var.html; where, var is a different number from 1 to 10 for each Webpage. Suppose, the client stores the Webpage with var =1 (say W1) in local machine, edits and then tests. Rest of the WebPages remains on the web server. W1 contains several relative URLs of the form \"var.html\" referring to the other WebPages. Which one of the following statements needs to be added in W1, so that all the relative URLs in W1 refer to the appropriate WebPages on the web server?",
+   "solution": "The HTML base tag sets the base URL for all relative links in the page. With base href = \"http://www.yourname.com/\", the link \"var.html\" points to the page on the server.<br><br>\n<b>Answer: base href: \"http://www.yourname.com/\"</b><br><br><a href=\"https://gateoverflow.in/8402/gate2015-3-8#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Web Technology",
+   "tag1_url": "https://practicepaper.in/gate-cse/web-technology",
+   "tag2": "",
+   "tag2_url": "https://practicepaper.in/gate-cse/",
+   "options": [
+    "[latex] \\lt[/latex] a href: \"http://www.yourname.com/\", href: \"...var.html\" [latex]\\gt [/latex]",
+    "[latex] \\lt [/latex] base href: \"http://www.yourname.com/\" [latex] \\gt [/latex]\r\n",
+    "[latex] \\lt [/latex] a href: \"http://www.yourname.com/\"  [latex] \\gt [/latex]",
+    "[latex] \\lt [/latex] base href: \"http://www.yourname.com/\", range:\"…var.html\" [latex] \\gt [/latex]\r\n"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1115309,
+   "number": 9,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following statements.<br>\nI. TCP connections are full duplex <br>\nII. TCP has no option for selective acknowledgement <br>\nIII. TCP connections are message streams ",
+   "solution": "Checking each statement:<br>- I: TCP connections are full duplex [latex]\\rightarrow[/latex] True<br>\n- II: TCP has a SACK (selective acknowledgement) option [latex]\\rightarrow[/latex] False<br>\n- III: TCP is a byte stream, not a message stream [latex]\\rightarrow[/latex] False<br><br>\n<b>Answer: Only I is correct</b><br><br><a href=\"https://gateoverflow.in/8425/gate2015-3-9#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Transport Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/transport-layer-protocol",
+   "options": [
+    "Only I is correct",
+    "Only I and III are correct",
+    "Only II and III are correct",
+    "All of I, II and III are correct"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1115310,
+   "number": 10,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the equality [latex]\\sum_{i=0}^{n}i^{3}=X[/latex] and the following choices for X  <br>  I.[latex] \\Theta (n^{4}) [/latex]<br>II. [latex] \\Theta (n^{5})  [/latex]<br> III. [latex]O (n^{5})  [/latex]<br> IV. [latex] \\Omega (n^{3})[/latex]  <br>The equality above remains correct if X is replaced by",
+   "solution": "[latex]\\sum_{i=0}^n i^3=\\left(\\frac{n(n+1)}{2}\\right)^2=\\Theta(n^4)[/latex]<br><br>\nA [latex]\\Theta(n^4)[/latex] function is also [latex]O(n^5)[/latex] and [latex]\\Omega(n^3)[/latex], but it is not [latex]\\Theta(n^5)[/latex].<br><br>\n<b>Answer: I or III or IV but not II</b><br><br><a href=\"https://gateoverflow.in/8398/gate2015-3-10#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Asymptotic Notation",
+   "tag2_url": "https://practicepaper.in/gate-cse/asymptotic-notation",
+   "options": [
+    "Only I",
+    "Only II",
+    "I or III or IV but not II",
+    "II or III or IV but not I"
+   ],
+   "correct": 2
+  }
+ ]
+}

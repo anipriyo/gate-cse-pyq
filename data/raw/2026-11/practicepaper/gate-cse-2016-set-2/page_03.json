@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "quizId": 11162,
+  "quizName": "GATE CS 2016 SET 2",
+  "pageTitle": "GATE CSE 2016 SET-2",
+  "timeLimit": 0,
+  "pageNo": 3,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2016-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1116211,
+   "number": 11,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Breadth First Search(BFS) is started on a binary tree beginning from the root vertex. There is a vertex t at a distance four from the root. If t is the n-th vertex in this BFS traversal, then the maximum possible value of n is______ .",
+   "solution": "BFS visits level by level. To make t as late as possible, levels 0-3 are full (1 + 2 + 4 + 8 = 15 nodes) and t is the <b>last</b> of the 16 nodes at level 4.<br><br>\nn = 15 + 16 = 31<br><br>\n<b>Answer: 31</b><br><br><a href=\"https://gateoverflow.in/39563/gate2016-2-11#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Graph Traversal",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-traversal",
+   "ansMin": 31,
+   "ansMax": 31
+  },
+  {
+   "id": 1116212,
+   "number": 12,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The value printed by the following program is .<pre><code>\nvoid f(int*p, int m){\n     m =m+5;\n     *p =*p+m;\n      return;\n}\nvoid main(){\n     int i=5, j=10;\n     f(&i, j);\n     printf(\"%d\", i+j);\n}</code></pre>",
+   "solution": "m is a copy of j: m = 10 + 5 = 15. *p is i: i = 5 + 15 = 20. j stays 10.<br><br>\ni + j = 20 + 10 = 30<br><br>\n<b>Answer: 30</b><br><br><a href=\"https://gateoverflow.in/39565/gate2016-2-12#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "ansMin": 30,
+   "ansMax": 30
+  },
+  {
+   "id": 1116213,
+   "number": 13,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Assume that the algorithms considered here sort the input sequences in ascending order. If the input is already in ascending order, which of the following are TRUE? <br>\nI. Quicksort runs in [latex]\\Theta (n^{2})[/latex] time  <br>\nII. Bubblesort runs in [latex]\\Theta (n^{2})[/latex] time <br>\nIII. Merge sort runs in [latex]\\Theta (n)[/latex] time <br>\nIV. Insertion sort runs in [latex]\\Theta (n)[/latex] time",
+   "solution": "On already sorted input:<br>\n- Quicksort (first/last element as pivot) makes the most unbalanced splits [latex]\\rightarrow[/latex] [latex]\\Theta(n^2)[/latex] True<br>\n- Bubble sort with the \"no swap\" check stops after one pass [latex]\\rightarrow[/latex] [latex]\\Theta(n)[/latex] False<br>\n- Merge sort is always [latex]\\Theta(n\\log n)[/latex] False<br>\n- Insertion sort compares each element once [latex]\\rightarrow[/latex] [latex]\\Theta(n)[/latex] True<br><br>\n<b>Answer: I and IV only</b><br><br><a href=\"https://gateoverflow.in/39561/gate2016-2-13#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Sorting",
+   "tag2_url": "https://practicepaper.in/gate-cse/sorting",
+   "options": [
+    "I and II only",
+    "I and III only",
+    "II and IV only",
+    "I and IV only"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1116214,
+   "number": 14,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The Floyd-Warshall algorithm for all-pair shortest paths computation is based on",
+   "solution": "Floyd-Warshall builds [latex]d_k[i][j]=\\min(d_{k-1}[i][j],\\ d_{k-1}[i][k]+d_{k-1}[k][j])[/latex], reusing answers of smaller subproblems. That is <b>dynamic programming</b>.<br><br>\n<b>Answer: Dynamic Programming paradigm</b><br><br><a href=\"https://gateoverflow.in/39570/gate2016-2-14#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Dynamic Programming",
+   "tag2_url": "https://practicepaper.in/gate-cse/dynamic-programming",
+   "options": [
+    "Greedy paradigm",
+    "Divide-and-Conquerparadigm.",
+    "Dynamic Programing paradigm.",
+    "neither Greedy nor Divide-and-Conquer nor Dynamic Programming paradigm."
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1116215,
+   "number": 15,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "N items are stored in a sorted doubly linked list. For a delete operation, a pointer is provided to the record to be deleted. For a decrease-key operation, a pointer is provided to the record on which the operation is to be performed. <br> An algorithm performs the following operations on the list in this order: [latex]\\Theta(N) \\; delete [/latex] , [latex]  O(logN) \\;  insert [/latex], [latex] O(logN) \\; find [/latex],  and [latex] \\Theta(N) \\; decrease-key[/latex]. What is the time complexity of all these operations put together?",
+   "solution": "In a sorted doubly linked list (pointers given for delete and decrease-key):<br>\n- delete: [latex]O(1)[/latex] each [latex]\\rightarrow[/latex] [latex]\\Theta(N)[/latex] in total<br>\n- insert: find the position, [latex]O(N)[/latex] each [latex]\\rightarrow[/latex] [latex]O(N\\log N)[/latex]<br>\n- find: [latex]O(N)[/latex] each [latex]\\rightarrow[/latex] [latex]O(N\\log N)[/latex]<br>\n- decrease-key: the node may have to move back towards the front, [latex]O(N)[/latex] each [latex]\\rightarrow[/latex] [latex]O(N^2)[/latex]<br><br>\nTotal = [latex]O(N^2)[/latex]<br><br>\n<b>Answer: [latex]O(N^2)[/latex]</b><br><br><a href=\"https://gateoverflow.in/39557/gate2016-2-15#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Link List",
+   "tag2_url": "https://practicepaper.in/gate-cse/link-list",
+   "options": [
+    "[latex]O(log^{2}N)[/latex]",
+    "O(N)",
+    "[latex]O(N^{2})[/latex]",
+    "[latex]\\Theta (N^{2} logN)[/latex]"
+   ],
+   "correct": 2
+  }
+ ]
+}

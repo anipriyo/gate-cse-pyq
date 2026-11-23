@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11151,
+  "quizName": "GATE CS 2015 SET 1",
+  "pageTitle": "GATE CSE 2015 SET-1",
+  "timeLimit": 0,
+  "pageNo": 2,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115106,
+   "number": 6,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Match the following:\n<br><img src=\"/wp-content/uploads/GATE/CS/20151/q6.jpg\"/> ",
+   "solution": "Checking each statement:<br>- Condition coverage looks at the code: white-box (iii)<br>\n- Equivalence class partitioning uses only the specification: black-box (i)<br>\n- Volume testing checks behaviour under large data: performance (iv)<br>\n- Alpha testing is done on the whole system: system testing (ii)<br><br>\n<b>Answer: P-iii, Q-i, R-iv, S-ii</b><br><br><a href=\"https://gateoverflow.in/8015/gate2015-1-6#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Software Engg",
+   "tag1_url": "https://practicepaper.in/gate-cse/software-engg",
+   "tag2": "",
+   "tag2_url": "https://practicepaper.in/gate-cse/",
+   "options": [
+    "P-ii, Q-iii, R-i, S-iv",
+    "P-iii, Q-iv, R-ii, S- i",
+    "P-iii, Q-i, R-iv, S-ii",
+    "P-iii, Q-i, R-ii, S-iv"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115107,
+   "number": 7,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which of the following is/are correct inorder traversal sequence(s) of binary search tree(s)?<br>\nI. 3, 5, 7, 8, 15, 19, 25 <br>\nII. 5, 8, 9, 12, 10, 15, 25 <br>\nIII. 2, 7, 10, 8, 14, 16, 20 <br>\nIV. 4, 6, 7, 9 18, 20, 25",
+   "solution": "In-order traversal of a BST is always sorted.<br><br>\n- I: sorted [latex]\\rightarrow[/latex] valid<br>\n- II: 12 before 10 [latex]\\rightarrow[/latex] invalid<br>\n- III: 10 before 8 [latex]\\rightarrow[/latex] invalid<br>\n- IV: sorted [latex]\\rightarrow[/latex] valid<br><br>\n<b>Answer: I and IV only</b><br><br><a href=\"https://gateoverflow.in/8129/gate2015-1-7#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Search Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-search-tree",
+   "options": [
+    "I and IV only",
+    "II and III only",
+    "II and IV only",
+    "II only"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1115108,
+   "number": 8,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following is TRUE at any valid state in shift-reduce parsing?",
+   "solution": "In a valid shift-reduce parse, the stack content is always a viable prefix, i.e. a prefix of some right sentential form that does not go past the handle.<br><br>\n<b>Answer: The stack contains only a set of viable prefixes</b><br><br><a href=\"https://gateoverflow.in/8187/gate2015-1-8#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Parsing",
+   "tag2_url": "https://practicepaper.in/gate-cse/parsing",
+   "options": [
+    "Viable prefixes appear only at the bottom of the stack and not inside",
+    "Viable prefixes appear only at the top of the stack and not inside",
+    "The stack contains only a set of viable prefixes",
+    "The stack never contains viable prefixes"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115109,
+   "number": 9,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following is NOT equivalent to [latex]p\\leftrightarrow q[/latex]?",
+   "solution": "[latex]p\\leftrightarrow q[/latex] is true when p and q are equal.<br><br>\n- Options 1, 2: [latex](p\\rightarrow q)\\wedge(q\\rightarrow p)[/latex] [latex]\\rightarrow[/latex] equivalent<br>\n- Option 4: both false or both true [latex]\\rightarrow[/latex] equivalent<br>\n- Option 3: exactly one is true, which is XOR, the negation of [latex]p\\leftrightarrow q[/latex]<br><br>\n<b>Answer: [latex](\\neg p\\wedge q)\\vee(p\\wedge\\neg q)[/latex]</b><br><br><a href=\"https://gateoverflow.in/8209/gate2015-1-9#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Propositional Logic",
+   "tag2_url": "https://practicepaper.in/gate-cse/propositional-logic",
+   "options": [
+    "[latex](\\neg p\\vee q)\\wedge (p\\vee \\neg q)[/latex]",
+    "[latex](\\neg p\\vee q)\\wedge (q \\rightarrow p)[/latex]",
+    "[latex](\\neg p \\wedge  q)\\vee (p \\wedge \\neg q)[/latex]",
+    "[latex](\\neg p \\wedge \\neg q)\\vee (p \\wedge  q)[/latex]"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115110,
+   "number": 10,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "For a set A, the power set of A is denoted by [latex]2^{A}[/latex]. If A={5,{6},{7}}, which of the following options are TRUE? <br>\nI. [latex]\\phi \\in 2^{A}[/latex] <br>\nII. [latex]\\phi \\subseteq 2^{A}[/latex] <br>\nIII. {5,{6}} [latex]\\in 2^{A}[/latex] <br>\nIV. {5,{6}}[latex]\\subseteq 2^{A}[/latex]",
+   "solution": "Checking each statement:<br>- I: [latex]\\phi\\subseteq A[/latex], so [latex]\\phi\\in2^A[/latex] [latex]\\rightarrow[/latex] True<br>\n- II: the empty set is a subset of every set [latex]\\rightarrow[/latex] True<br>\n- III: {5, {6}} [latex]\\subseteq[/latex] A, so it is an element of [latex]2^A[/latex] [latex]\\rightarrow[/latex] True<br>\n- IV: would need 5 [latex]\\in2^A[/latex], but 5 is not a subset of A [latex]\\rightarrow[/latex] False<br><br>\n<b>Answer: I, II and III only</b><br><br><a href=\"https://gateoverflow.in/8238/gate2015-1-10#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Set Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/set-theory",
+   "options": [
+    "I and III only",
+    "II and III only",
+    "I, II and III only",
+    "I, II and IV only"
+   ],
+   "correct": 2
+  }
+ ]
+}

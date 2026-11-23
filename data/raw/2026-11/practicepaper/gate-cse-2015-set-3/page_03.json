@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "quizId": 11153,
+  "quizName": "GATE CS 2015 SET 3",
+  "pageTitle": "GATE CSE 2015 SET-3",
+  "timeLimit": 0,
+  "pageNo": 3,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-3",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115311,
+   "number": 11,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Consider a binary tree T that has 200 leaf nodes. Then, the number of nodes in T that have exactly two children are ________.",
+   "solution": "In any binary tree, the number of nodes with two children = leaves [latex]-[/latex] 1.<br><br>\n200 [latex]-[/latex] 1 = 199<br><br>\n<b>Answer: 199</b><br><br><a href=\"https://gateoverflow.in/8428/gate2015-3-11#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Binary Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/binary-tree",
+   "ansMin": 199,
+   "ansMax": 199
+  },
+  {
+   "id": 1115312,
+   "number": 12,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Given a hash table T with 25 slots that stores 2000 elements, the load factor [latex]\\alpha[/latex] for T is ____________.",
+   "solution": "Load factor [latex]\\alpha=\\frac{n}{m}=\\frac{2000}{25}=80[/latex]<br><br>\n<b>Answer: 80</b><br><br><a href=\"https://gateoverflow.in/8414/gate2015-3-12#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Hashing",
+   "tag2_url": "https://practicepaper.in/gate-cse/hashing",
+   "ansMin": 80,
+   "ansMax": 80
+  },
+  {
+   "id": 1115313,
+   "number": 13,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "In the given matrix [latex]\\begin{bmatrix} 1 & -1&2 \\\\ 0& 1 & 0\\\\ 1&2 & 1 \\end{bmatrix}[/latex], one of the eigenvalues is 1. The eigenvectors corresponding to the eigenvalue 1 are ",
+   "solution": "[latex]A-I=\\begin{bmatrix}0&-1&2\\\\0&0&0\\\\1&2&0\\end{bmatrix}[/latex]<br><br>\n- Row 1: [latex]-[/latex]y + 2z = 0 [latex]\\rightarrow[/latex] y = 2z<br>\n- Row 3: x + 2y = 0 [latex]\\rightarrow[/latex] x = [latex]-[/latex]4z<br><br>\nz = 1 gives ([latex]-[/latex]4, 2, 1).<br><br>\n<b>Answer: [latex]\\alpha(-4,2,1)[/latex]</b><br><br><a href=\"https://gateoverflow.in/8411/gate2015-3-13#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "{[latex]\\alpha (4,2,1)|\\alpha \\neq 0,\\alpha \\in \\mathbb{R}[/latex]}",
+    "{[latex]\\alpha (-4,2,1)|\\alpha \\neq 0,\\alpha \\in \\mathbb{R}[/latex]}",
+    "{[latex]\\alpha (\\sqrt{2},0,1)|\\alpha \\neq 0,\\alpha \\in \\mathbb{R}[/latex]}",
+    "{[latex]\\alpha (-\\sqrt{2},0,1)|\\alpha \\neq 0,\\alpha \\in \\mathbb{R}[/latex]}"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1115314,
+   "number": 14,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The value of [latex]\\lim_{x\\rightarrow \\infty }(1+x^{2})^{e^{-x}}[/latex] is",
+   "solution": "Take logs: [latex]\\ln L=\\lim e^{-x}\\ln(1+x^2)=\\lim\\frac{\\ln(1+x^2)}{e^x}=0[/latex] (the exponential grows much faster).<br><br>\nSo [latex]L=e^0=1[/latex].<br><br>\n<b>Answer: 1</b><br><br><a href=\"https://gateoverflow.in/8403/gate2015-3-14#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "options": [
+    "0",
+    "[latex]\\frac{1}{2}[/latex]",
+    "1",
+    "[latex]\\infty[/latex]"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115315,
+   "number": 15,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The number of 4 digit numbers having their digits in non-decreasing order (from left to right) constructed by using the digits belonging to the set {1, 2, 3} is____________.",
+   "solution": "A non-decreasing number is fixed once we know how many 1s, 2s and 3s it has. So count solutions of a + b + c = 4 with [latex]a,b,c\\ge0[/latex]:<br><br>\n[latex]\\binom{4+2}{2}=15[/latex]<br><br>\n<b>Answer: 15</b><br><br><a href=\"https://gateoverflow.in/8399/gate2015-3-15#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Combination",
+   "tag2_url": "https://practicepaper.in/gate-cse/combination",
+   "ansMin": 15,
+   "ansMax": 15
+  }
+ ]
+}

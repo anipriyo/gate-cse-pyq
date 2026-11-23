@@ -1,0 +1,115 @@
+{
+ "meta": {
+  "quizId": 11143,
+  "quizName": "GATE CS 2014 SET 3",
+  "pageTitle": "GATE CSE 2014 SET-3",
+  "timeLimit": 0,
+  "pageNo": 2,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-3",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114306,
+   "number": 6,
+   "type": "NAT",
+   "marks": 1,
+   "text": "If [latex]\\int_{0}^{2\\pi}|x sinx| dx=k \\pi[/latex], then the value of k is equal to _______.",
+   "solution": "On [latex][0,\\pi][/latex], [latex]x\\sin x\\ge0[/latex]; on [latex][\\pi,2\\pi][/latex], [latex]x\\sin x\\le0[/latex]. Antiderivative of [latex]x\\sin x[/latex] is [latex]\\sin x-x\\cos x[/latex].<br><br>\n- [latex]\\int_0^{\\pi}x\\sin x\\,dx=\\pi[/latex]<br>\n- [latex]-\\int_{\\pi}^{2\\pi}x\\sin x\\,dx=-[(0-2\\pi)-(0+\\pi)]=3\\pi[/latex]<br><br>\nTotal = [latex]4\\pi[/latex] [latex]\\rightarrow[/latex] k = 4<br><br>\n<b>Answer: 4</b><br><br><a href=\"https://gateoverflow.in/2040/gate2014-3-6#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "ansMin": 4,
+   "ansMax": 4
+  },
+  {
+   "id": 1114307,
+   "number": 7,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following minterm expression for F. <br>\nF(P,Q,R,S) = [latex]\\Sigma[/latex] 0, 2, 5, 7, 8, 10, 13, 15 <br>\nThe minterms 2, 7, 8 and 13 are 'do not care terms. The minimal sum of-products form for F is",
+   "solution": "Minterms 0, 5, 10, 15 with don't cares 2, 7, 8, 13.<br><br>\n- [latex]\\bar Q\\bar S[/latex] = {0, 2, 8, 10} covers 0, 10<br>\n- [latex]QS[/latex] = {5, 7, 13, 15} covers 5, 15<br><br>\n[latex]F=\\bar Q\\bar S+QS[/latex]<br><br>\n<b>Answer: [latex]\\bar Q\\bar S+QS[/latex]</b><br><br><a href=\"https://gateoverflow.in/2041/gate2014-3-7#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "options": [
+    "[latex]Q\\bar{S}+\\bar{Q}S[/latex]",
+    "[latex]\\bar{Q}\\bar{S}+QS[/latex]",
+    "[latex]\\bar{Q}\\bar{R}\\bar{S}+\\bar{Q}R\\bar{S}+Q\\bar{R}S+QRS[/latex]",
+    "[latex]\\bar{P}\\bar{Q}\\bar{S}+\\bar{P}QS+PQS+P\\bar{Q}\\bar{S}[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1114308,
+   "number": 8,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following combinational function block involving four Boolean variables x, y, a, b where x, a, b are inputs and y is the output.\n<pre><code> f (x, y, a, b)\n{\n    if (x is 1) y = a; \n    else y = b;\n} </pre></code>\nWhich one of the following digital logic blocks is the most suitable for implementing this function?",
+   "solution": "y = a when x = 1, else y = b. This selects one of two inputs using x as the select line, i.e. a 2-to-1 multiplexer.<br><br>\n<b>Answer: Multiplexor</b><br><br><a href=\"https://gateoverflow.in/2042/gate2014-3-8#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Combinational Circuit",
+   "tag2_url": "https://practicepaper.in/gate-cse/combinational-circuit",
+   "options": [
+    "Full adder",
+    "Priority encoder",
+    "Multiplexor",
+    "Flip-flop"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1114309,
+   "number": 9,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following processors (ns stands for nanoseconds).\nAssume that the pipeline registers have zero latency. <br>\nP1:  Four-stage pipeline with stage latencies 1 ns, 2 ns, 2 ns, 1 ns. <br>\nP2:  Four-stage pipeline with stage latencies 1 ns, 1.5 ns, 1.5 ns, 1.5 ns. <br>\nP3:  Five-stage pipeline with stage latencies 0.5 ns, 1 ns, 1 ns, 0.6 ns, 1 ns. <br>\nP4:  Five-stage pipeline with stage latencies 0.5 ns, 0.5 ns, 1 ns, 1 ns, 1.1 ns. <br>\nWhich processor has the highest peak clock frequency?",
+   "solution": "Clock period = largest stage latency.<br><br>\n- P1: 2 ns [latex]\\rightarrow[/latex] 0.5 GHz<br>\n- P2: 1.5 ns [latex]\\rightarrow[/latex] 0.67 GHz<br>\n- P3: 1 ns [latex]\\rightarrow[/latex] 1 GHz<br>\n- P4: 1.1 ns [latex]\\rightarrow[/latex] 0.91 GHz<br><br>\n<b>Answer: P3</b><br><br><a href=\"https://gateoverflow.in/2043/gate2014-3-9#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Pipeline Processor",
+   "tag2_url": "https://practicepaper.in/gate-cse/pipeline-processor",
+   "options": [
+    "P1",
+    "P2",
+    "P3",
+    "P4"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1114310,
+   "number": 10,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let A be a square matrix size n x n. Consider the following pseudocode. What is the\nexpected output?\n<pre><code> C = 100;\nfor i = 1 to n do\n   for j = 1 to n do\n   {\n      Temp = A[ i ] [ j ] + C ;\n      A [ i ] [ j ] = A [ j ] [ i ] ;\n      A [ j ] [ i ] = Temp - C ;\n   }\nfor i = 1 to n do\n    for j = 1 to n do\n         output (A[ i ] [ j ]); </pre></code>",
+   "solution": "Each iteration simply swaps A[i][j] and A[j][i] (Temp [latex]-[/latex] C gives back the old A[i][j]).<br><br>\nBoth loops run over all (i, j), so every off-diagonal pair is swapped twice: once at (i, j) and once at (j, i). Two swaps cancel, so A is unchanged.<br><br>\n<b>Answer: The matrix A itself</b><br><br><a href=\"https://gateoverflow.in/2044/gate2014-3-10#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "The matrix A itself",
+    "Transpose of the matrix A",
+    "Adding 100 to the upper diagonal elements and subtracting 100 from lower diagonal elements of A",
+    "None of these"
+   ],
+   "correct": 0
+  }
+ ]
+}

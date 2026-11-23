@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "quizId": 11153,
+  "quizName": "GATE CS 2015 SET 3",
+  "pageTitle": "GATE CSE 2015 SET-3",
+  "timeLimit": 0,
+  "pageNo": 8,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-3",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115336,
+   "number": 36,
+   "type": "NAT",
+   "marks": 2,
+   "text": "In the network 200.10.11.144/27, the fourth octet (in decimal) of the last IP address of the network which can be assigned to a host is ____________.",
+   "solution": "/27 [latex]\\rightarrow[/latex] blocks of 32 addresses. 144 lies in the block 128 to 159.<br><br>\n159 is the broadcast address, so the last usable host is 158.<br><br>\n<b>Answer: 158</b><br><br><a href=\"https://gateoverflow.in/8497/gate2015-3-36#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-layer-protocol",
+   "ansMin": 158,
+   "ansMax": 158
+  },
+  {
+   "id": 1115337,
+   "number": 37,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a network connecting two systems located 8000 kilometers apart. The bandwidth of the network is 500x[latex]10^{6}[/latex] bits per second. The propagation speed of the media is 4x[latex]10^{6}[/latex] meters per second. It is needed to design a Go-Back-N sliding window protocol for this network. The average packet size is [latex]10^{7}[/latex] bits. The network is to be used to its full capacity. Assume that processing delays at nodes are negligible. Then, the minimum size in bits of the sequence number field has to be ___________.",
+   "solution": "Checking each statement:<br>- [latex]T_p=\\frac{8\\times10^6}{4\\times10^6}=2[/latex] s<br>\n- [latex]T_t=\\frac{10^7}{5\\times10^8}=0.02[/latex] s<br><br>\nWindow for full use = [latex]1+\\frac{2T_p}{T_t}=1+200=201[/latex]. Go-Back-N needs at least W + 1 = 202 sequence numbers.<br><br>\n[latex]2^8=256\\ge202[/latex] [latex]\\rightarrow[/latex] 8 bits<br><br>\n<b>Answer: 8</b><br><br><a href=\"https://gateoverflow.in/8481/gate2015-3-37#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "ansMin": 8,
+   "ansMax": 8
+  },
+  {
+   "id": 1115338,
+   "number": 38,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following reservation table for a pipeline having three stages S1,S2 and S3.<br><img src=\"/wp-content/uploads/GATE/CS/20153/q38.jpg\"/><br> The minimum average latency (MAL) is ________.",
+   "solution": "Forbidden latencies: S1 is used at 1 and 5 (gap 4); S2 at 2 and 4 (gap 2). Forbidden = {2, 4}, collision vector = 1010.<br><br>\n- Latency 3 again and again: CV stays 1011 [latex]\\rightarrow[/latex] cycle (3), average 3<br>\n- Cycle (1, 5): average 3<br><br>\nMAL = 3<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/8560/gate2015-3-38#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Pipeline Processor",
+   "tag2_url": "https://practicepaper.in/gate-cse/pipeline-processor",
+   "ansMin": 3,
+   "ansMax": 3
+  },
+  {
+   "id": 1115339,
+   "number": 39,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following code sequence having five instructions I1 to I5. Each of these instructions has the following format. <br><br>OP Ri, Rj, Rk <br><br>where operation OP is performed on contents of registers Rj and Rk and the result is stored in register Ri. <br><br>\nI1: ADD R1, R2, R3  <br>\nI2: MUL R7, R1, R3 <br>\nI3: SUB R4, R1, R5 <br>\nI4: ADD R3, R2, R4 <br>\nI5: MUL R7, R8, R9 <br><br> Consider the following three statements. <br>\nS1: There is an anti-dependence between instructions l2 and l5 <br>\nS2: There is an anti-dependence between instructions l2 and l4  <br>                              S3: Within an instruction pipeline an anti-dependence always creates one or more stalls <br><br> Which one of above statements is/are correct?",
+   "solution": "Anti-dependence (WAR): a later instruction writes a register an earlier one reads.<br><br>\n- S1: I2 and I5 both <b>write</b> R7, which is output dependence, not anti [latex]\\rightarrow[/latex] False<br>\n- S2: I2 reads R3 and I4 writes R3 [latex]\\rightarrow[/latex] anti-dependence [latex]\\rightarrow[/latex] True<br>\n- S3: in an in-order pipeline WAR causes no stall [latex]\\rightarrow[/latex] False<br><br>\n<b>Answer: Only S2 is true</b><br><br><a href=\"https://gateoverflow.in/8556/gate2015-3-39#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Pipeline Processor",
+   "tag2_url": "https://practicepaper.in/gate-cse/pipeline-processor",
+   "options": [
+    "Only S1 is true",
+    "Only S2 is true",
+    "Only S1 and S3 are true",
+    "Only S2 and S3 are true"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1115340,
+   "number": 40,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following two C code segments. Y and X are one and two dimensional arrays of size n and nxn respectively, where [latex]2\\leq n\\leq 10[/latex]. Assume that in both code segments, elements of Y are initialized to 0 and each element X[i][j] of array X is initialized to i+j. Further assume that when stored in main memory all elements of X are in same main memory page frame.   <br> Code segment 1:<pre><code>//initialize elements of Y to 0\n//initialize elements X[i][j] of X to i+j\nfor(i = 0; i < n; i++)\nY[i] += X[0][i]; </code></pre>  Code Segment 2: <pre><code>//initialize elements of Y to 0\n//initialize elements X[i][j] of X to i+j\nfor(i = 0; i < n; i++)\nY[i] += X[i][0];</code></pre> Which of the following statements is/are correct?  <br>S1: Final contents of array Y will be same in both code segments <br> S2: Elements of array X accessed inside the for loop shown in code segment 1 are contiguous in main memory <br> S3: Elements of array X accessed inside the for loop shown in code segment 2 are contiguous in main memory",
+   "solution": "Checking each statement:<br>- S1: segment 1 adds X[0][i] = i, and segment 2 adds X[i][0] = i. Same Y [latex]\\rightarrow[/latex] True<br>\n- S2: X[0][0], X[0][1], ... are one row, contiguous in row-major order [latex]\\rightarrow[/latex] True<br>\n- S3: X[0][0], X[1][0], ... are n elements apart [latex]\\rightarrow[/latex] False<br><br>\n<b>Answer: Only S1 and S2 are correct</b><br><br><a href=\"https://gateoverflow.in/8486/gate2015-3-40#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Array",
+   "tag2_url": "https://practicepaper.in/gate-cse/array",
+   "options": [
+    "Only S2 is correct",
+    "Only S3 is correct",
+    "Only S1 and S2 are correct",
+    "Only S1 and S3 are correct"
+   ],
+   "correct": 2
+  }
+ ]
+}

@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "quizId": 11141,
+  "quizName": "GATE CS 2014 SET 1",
+  "pageTitle": "GATE CSE 2014 SET-1",
+  "timeLimit": 0,
+  "pageNo": 8,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114136,
+   "number": 36,
+   "type": "MCQ",
+   "marks": 2,
+   "text": " Which of the regular expressions given below represent the following DFA? <br><img src=\"/wp-content/uploads/GATE/CS/20141/q36.jpg\"/>   <br>                                                 I) 0*1(1+00*1)* <br>\nII) 0*1*1+11*0*1 <br>\nIII) (0+1)*1",
+   "solution": "The DFA accepts exactly the strings that <b>end with 1</b>: III [latex](0+1)^*1[/latex] True. I [latex]0^*1(1+00^*1)^*[/latex] also describes \"ends with 1\" True.<br><br>\nII misses strings like 0101 (it allows no 0 after a 1 unless the string starts with 1).<br><br>\n<b>Answer: I and III only</b><br><br><a href=\"https://gateoverflow.in/1914/gate2014-1-36#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Finite Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/finite-automata",
+   "options": [
+    "I and II only",
+    "I and III only",
+    "II and III only",
+    "I, II, and III"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1114137,
+   "number": 37,
+   "type": "NAT",
+   "marks": 2,
+   "text": "There are 5 bags labelled 1 to 5. All the coins in a given bag have the same weight. Some\nbags have coins of weight 10 gm, others have coins of weight 11 gm. I pick 1, 2, 4, 8, 16\ncoins respectively from bags 1 to 5. Their total weight comes out to 323 gm. Then the product\nof the labels of the bags having 11 gm coins is ___.",
+   "solution": "If all coins were 10 g: (1 + 2 + 4 + 8 + 16) [latex]\\times[/latex] 10 = 310 g. The extra 13 g comes from bags with 11 g coins, each adding 1 g per coin picked: 13 = 1 + 4 + 8 [latex]\\rightarrow[/latex] bags 1, 3, 4.<br><br>\nProduct = 1 [latex]\\times[/latex] 3 [latex]\\times[/latex] 4 = 12<br><br>\n<b>Answer: 12</b><br><br><a href=\"https://gateoverflow.in/1915/gate2014-1-37#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Combination",
+   "tag2_url": "https://practicepaper.in/gate-cse/combination",
+   "ansMin": 12,
+   "ansMax": 12
+  },
+  {
+   "id": 1114138,
+   "number": 38,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Suppose a polynomial time algorithm is discovered that correctly computes the largest clique\nin a given graph. In this scenario, which one of the following represents the correct Venn\ndiagram of the complexity classes P, NP and NP Complete (NPC)?<br><img src=\"/wp-content/uploads/GATE/CS/20141/q38a.jpg\"/>",
+   "solution": "Max-clique is NP-hard, so a polynomial algorithm for it would give P = NP. Then every non-trivial problem in NP is NP-complete, so the classes coincide: P = NP = NPC.<br><br>\n<b>Answer: D</b><br><br><a href=\"https://gateoverflow.in/1916/gate2014-1-38#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "P-NP Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/p-np-theory",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1114139,
+   "number": 39,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The minimum number of comparisons required to find the minimum and the maximum of\n100 numbers is _________________.",
+   "solution": "Compare elements in pairs (50 comparisons), then find the max among the 50 larger ones (49) and the min among the 50 smaller ones (49).<br><br>\nTotal = [latex]\\frac{3n}{2}-2=150-2=148[/latex]<br><br>\n<b>Answer: 148</b><br><br><a href=\"https://gateoverflow.in/1917/gate2014-1-39#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Divide and Conquer",
+   "tag2_url": "https://practicepaper.in/gate-cse/divide-and-conquer",
+   "ansMin": 147.1,
+   "ansMax": 148.1
+  },
+  {
+   "id": 1114140,
+   "number": 40,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a hash table with 9 slots. The hash function is h(k)=k mod 9.  The collisions are\nresolved by chaining. The following 9 keys are inserted in the order: 5, 28, 19, 15, 20, 33, 12,\n17, 10. The maximum, minimum, and average chain lengths in the hash table, respectively, are",
+   "solution": "k mod 9: 5[latex]\\rightarrow[/latex]5, 28[latex]\\rightarrow[/latex]1, 19[latex]\\rightarrow[/latex]1, 15[latex]\\rightarrow[/latex]6, 20[latex]\\rightarrow[/latex]2, 33[latex]\\rightarrow[/latex]6, 12[latex]\\rightarrow[/latex]3, 17[latex]\\rightarrow[/latex]8, 10[latex]\\rightarrow[/latex]1.<br>\nChain lengths: slot 1 = 3, slot 6 = 2, slots 2, 3, 5, 8 = 1, slots 0, 4, 7 = 0.<br><br>\nMax 3, min 0, average 9/9 = 1<br><br>\n<b>Answer: 3, 0, and 1</b><br><br><a href=\"https://gateoverflow.in/1918/gate2014-1-40#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Hashing",
+   "tag2_url": "https://practicepaper.in/gate-cse/hashing",
+   "options": [
+    "3, 0, and 1",
+    "3, 3, and 3",
+    "4, 0, and 1",
+    "3, 0, and 2"
+   ],
+   "correct": 0
+  }
+ ]
+}

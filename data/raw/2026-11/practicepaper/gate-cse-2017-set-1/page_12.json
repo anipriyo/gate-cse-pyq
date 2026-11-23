@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11171,
+  "quizName": "GATE CS 2017 SET 1",
+  "pageTitle": "GATE CSE 2017 SET-1",
+  "timeLimit": 0,
+  "pageNo": 12,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2017-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1117156,
+   "number": 56,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "After Rajendra Chola returned from his voyage to Indonesia, he ________ to visit the temple in Thanjavur.",
+   "solution": "The sentence describes completed actions in the past (\"returned\"), so the matching simple past is \"<b>wished</b>\".<br><br>\n<b>Answer: wished</b><br><br><a href=\"https://gateoverflow.in/118403/gate-cse-2017-set-1-question-ga-1#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "was wishing",
+    "is wishing",
+    "wished",
+    "had wished"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1117157,
+   "number": 57,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Research in the workplace reveals that people work for many reasons _______________ .",
+   "solution": "\"<b>Besides</b>\" means \"in addition to\": people work for many reasons besides money. \"Beside\" means \"next to\".<br><br>\n<b>Answer: besides money</b><br><br><a href=\"https://gateoverflow.in/118405/gate-cse-2017-set-1-question-ga-2#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "money beside",
+    "beside money",
+    "money besides",
+    "besides money"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1117158,
+   "number": 58,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Rahul, Murali, Srinivas and Arul are seated around a square table. Rahul is sitting to the left of Murali. Srinivas is sitting to the right of Arul. Which of the following pairs are seated opposite each other?",
+   "solution": "Seat everyone facing the centre. Put Murali at one side; Rahul on Murali's left takes the next seat. Of the two remaining seats, Srinivas must be on Arul's right, which works only with Srinivas directly opposite Murali (and Arul opposite Rahul).<br><br>\n<b>Answer: Srinivas and Murali</b><br><br><a href=\"https://gateoverflow.in/118406/gate-cse-2017-set-1-question-ga-3#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "Rahul and Murali",
+    "Srinivas and Arul",
+    "Srinvas and Murali",
+    "Srinivas and Rahul"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1117159,
+   "number": 59,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Find the smallest number [latex]y[/latex] such that [latex]y  \\times 162[/latex] is a perfect cube.",
+   "solution": "[latex]162=2\\times3^4[/latex]. For a cube every exponent must be a multiple of 3: we need [latex]2^2\\times3^2=36[/latex].<br>\n[latex]36\\times162=5832=18^3[/latex]<br><br>\n<b>Answer: 36</b><br><br><a href=\"https://gateoverflow.in/118407/gate-cse-2017-set-1-question-ga-4#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "24",
+    "27",
+    "32",
+    "36"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1117160,
+   "number": 60,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The probability that a k-digit number does NOT contain the digits 0, 5, or 9 is",
+   "solution": "Each digit avoids 3 of the 10 digits, so it has a 7/10 chance. For k independent digits: [latex]0.7^k[/latex].<br><br>\n<b>Answer: [latex]0.7^k[/latex]</b><br><br><a href=\"https://gateoverflow.in/118408/gate-cse-2017-set-1-question-ga-5#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "[latex]0.3^k[/latex]",
+    "[latex]0.6^k[/latex]",
+    "[latex]0.7^k[/latex]",
+    "[latex]0.9^k[/latex]"
+   ],
+   "correct": 2
+  }
+ ]
+}

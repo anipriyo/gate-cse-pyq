@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "quizId": 11142,
+  "quizName": "GATE CS 2014 SET 2",
+  "pageTitle": "GATE CSE 2014 SET-2",
+  "timeLimit": 0,
+  "pageNo": 10,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114246,
+   "number": 46,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "In the Newton-Raphson method, an initial guess of [latex]x_{0}=2[/latex] is made and the sequence\n[latex]x_{0},x_{1},x_{2}...[/latex] is obtained for the function <br> [latex]0.75x^{3}-2x^{2}-2x+4=0[/latex]<br> Consider the statements <br>\n(I) [latex]x_{3}[/latex]=0. <br>\n(II) The method converges to a solution in a finite number of iterations. <br>\nWhich of the following is TRUE?",
+   "solution": "[latex]f(x)=0.75x^3-2x^2-2x+4,\\quad f'(x)=2.25x^2-4x-2[/latex]<br><br>\n- [latex]x_0=2[/latex]: f = [latex]-[/latex]2, f' = [latex]-[/latex]1 [latex]\\rightarrow[/latex] [latex]x_1=2-\\frac{-2}{-1}=0[/latex]<br>\n- [latex]x_1=0[/latex]: f = 4, f' = [latex]-[/latex]2 [latex]\\rightarrow[/latex] [latex]x_2=0-\\frac{4}{-2}=2[/latex]<br><br>\nThe values repeat 2, 0, 2, 0, ... so [latex]x_3=0[/latex] (I true), and the method never converges (II false).<br><br>\n<b>Answer: Only I</b><br><br><a href=\"https://gateoverflow.in/2012/gate2014-2-46#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Numerical Method",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-method",
+   "options": [
+    "Only I",
+    "Only II",
+    "Both I and II",
+    "Neither I nor II"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1114247,
+   "number": 47,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The product of the non-zero eigenvalues of the matrix <br>[latex]\\begin{bmatrix} 1 & 0&0 & 0&1 \\\\ 0& 1& 1 & 1 & 0\\\\ 0& 1& 1& 1&0 \\\\ 0 & 1 & 1 & 1 & 0\\\\ 1&0 & 0&0 & 1 \\end{bmatrix}[/latex] <br> is_______.",
+   "solution": "Rows/columns 1, 5 form the block [latex]\\begin{bmatrix}1&1\\\\1&1\\end{bmatrix}[/latex] with eigenvalues 2, 0.<br>\nRows/columns 2, 3, 4 form the 3 [latex]\\times[/latex] 3 all-ones block with eigenvalues 3, 0, 0.<br><br>\nNon-zero eigenvalues are 2 and 3, product = 6.<br><br>\n<b>Answer: 6</b><br><br><a href=\"https://gateoverflow.in/2013/gate2014-2-47#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "ansMin": 6,
+   "ansMax": 6
+  },
+  {
+   "id": 1114248,
+   "number": 48,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The probability that a given positive integer lying between 1 and 100 (both inclusive) is NOT\ndivisible by 2, 3 or 5 is ______ .",
+   "solution": "Inclusion-exclusion for numbers in 1..100 divisible by 2, 3 or 5:<br>\n[latex]50+33+20-16-10-6+3=74[/latex]<br><br>\nNot divisible = 100 [latex]-[/latex] 74 = 26 [latex]\\rightarrow[/latex] probability = 0.26<br><br>\n<b>Answer: 0.26</b><br><br><a href=\"https://gateoverflow.in/2014/gate2014-2-48#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Probability Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/probability-theory",
+   "ansMin": 0.259,
+   "ansMax": 0.261
+  },
+  {
+   "id": 1114249,
+   "number": 49,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The number of distinct positive integral factors of 2014 is ____",
+   "solution": "[latex]2014=2\\times19\\times53[/latex]<br><br>\nNumber of factors = (1 + 1)(1 + 1)(1 + 1) = 8<br><br>\n<b>Answer: 8</b><br><br><a href=\"https://gateoverflow.in/2015/gate2014-2-49#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Combination",
+   "tag2_url": "https://practicepaper.in/gate-cse/combination",
+   "ansMin": 8,
+   "ansMax": 8
+  },
+  {
+   "id": 1114250,
+   "number": 50,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following relation on subsets of the set S of integers between 1 and 2014. For\ntwo distinct subsets U and V of S we say U[latex]\\lt[/latex]V if the minimum element in the symmetric\ndifference of the two sets is in U. <br>\nConsider the following two statements: <br>\nS1: There is a subset of S that is larger than every other subset. <br>\nS2: There is a subset of S that is smaller than every other subset. <br>\nWhich one of the following is CORRECT?",
+   "solution": "U [latex]\\lt[/latex] V when the smallest element of [latex]U\\triangle V[/latex] lies in U.<br><br>\n- Take U = S (the full set). For any V [latex]\\ne[/latex] S, [latex]S\\triangle V=S-V[/latex], whose minimum is in S. So S is smaller than every other subset [latex]\\rightarrow[/latex] S2 true.<br>\n- Take V = [latex]\\emptyset[/latex]. For any U, [latex]U\\triangle\\emptyset=U[/latex], minimum in U, so U [latex]\\lt\\emptyset[/latex]. So [latex]\\emptyset[/latex] is larger than every other subset [latex]\\rightarrow[/latex] S1 true.<br><br>\n<b>Answer: Both S1 and S2 are true</b><br><br><a href=\"https://gateoverflow.in/2016/gate2014-2-50#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Set Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/set-theory",
+   "options": [
+    "Both S1 and S2 are true",
+    "S1 is true and S2 is false",
+    "S2 is true and S1 is false",
+    "Neither S1 nor S2 is true"
+   ],
+   "correct": 0
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "quizId": 11152,
+  "quizName": "GATE CS 2015 SET 2",
+  "pageTitle": "GATE CSE 2015 SET-2",
+  "timeLimit": 0,
+  "pageNo": 7,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115231,
+   "number": 31,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider six memory partitions of sizes 200 KB, 400 KB, 600 KB, 500 KB, 300 KB and 250 KB, where KB refers to kilobyte. These partitions need to be allotted to four processes of sizes 357 KB, 210 KB, 468 KB and 491 KB in that order. If the best fit algorithm is used, which partitions are NOT allotted to any process?",
+   "solution": "Best fit picks the smallest partition that fits:<br><br>\n- 357 [latex]\\rightarrow[/latex] 400<br>\n- 210 [latex]\\rightarrow[/latex] 250<br>\n- 468 [latex]\\rightarrow[/latex] 500<br>\n- 491 [latex]\\rightarrow[/latex] 600<br><br>\nUnused: 200 KB and 300 KB<br><br>\n<b>Answer: 200 KB and 300 KB</b><br><br><a href=\"https://gateoverflow.in/8145/gate2015-2-31#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "options": [
+    "200 KB and 300 KB",
+    "200 KB and 250 KB",
+    "250 KB and 300 KB",
+    "300 KB and 400 KB"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1115232,
+   "number": 32,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a typical disk that rotates at 15000 rotations per minute (RPM) and has a transfer rate of 50x[latex]10^{6}[/latex]  bytes/sec. If the average seek time of the disk is twice the average rotational delay and the controller's transfer time is 10 times the disk transfer time, the average time (in milliseconds) to read or write a 512-byte sector of the disk is ______.",
+   "solution": "Checking each statement:<br>- One rotation = 60 / 15000 s = 4 ms [latex]\\rightarrow[/latex] average rotational delay = 2 ms<br>\n- Seek = 2 [latex]\\times[/latex] 2 = 4 ms<br>\n- Disk transfer = 512 / (50 [latex]\\times[/latex] [latex]10^6[/latex]) = 0.01024 ms<br>\n- Controller = 10 [latex]\\times[/latex] 0.01024 = 0.1024 ms<br><br>\nTotal = 4 + 2 + 0.01024 + 0.1024 [latex]\\approx[/latex] 6.11 ms<br><br>\n<b>Answer: 6.11 (6.1 to 6.2)</b><br><br><a href=\"https://gateoverflow.in/8251/gate2015-2-32#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Secondary Storage",
+   "tag2_url": "https://practicepaper.in/gate-cse/secondary-storage",
+   "ansMin": 6.1,
+   "ansMax": 6.2
+  },
+  {
+   "id": 1115233,
+   "number": 33,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A computer system implements 8 kilobyte pages and a 32-bit physical address space. Each page table entry contains a valid bit, a dirty bit, three permission bits, and the translation. If the maximum size of the page table of a process is 24 megabytes, the length of the virtual address supported by the system is _____ bits.",
+   "solution": "Checking each statement:<br>- Frames = [latex]2^{32}/2^{13}=2^{19}[/latex] [latex]\\rightarrow[/latex] 19 bits for translation<br>\n- PTE = 19 + 1 + 1 + 3 = 24 bits = 3 bytes<br>\n- Entries = 24 MB / 3 B = 8M = [latex]2^{23}[/latex] pages<br><br>\nVirtual address = 23 + 13 = 36 bits<br><br>\n<b>Answer: 36</b><br><br><a href=\"https://gateoverflow.in/8247/gate2015-2-33#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "ansMin": 36,
+   "ansMax": 36
+  },
+  {
+   "id": 1115234,
+   "number": 34,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the intermediate code given below.<br>\n(1) i = 1 <br>\n(2) j = 1 <br>\n(3) t1 = 5 * i  <br>\n(4) t2 = t1 + j  <br>\n(5) t3 = 4 * t2 <br>\n(6) t4 = t3 <br>\n(7) a[t4] = -1 <br>\n(8) j = j + 1 <br>\n(9) if j[latex]\\leq [/latex]5 goto (3) <br>\n(10) i=i+1 <br>\n(11) if i[latex]\\lt [/latex]5 goto (2) <br>\nThe number of nodes and edges in the control-flow-graph constructed for the above code, respectively, are",
+   "solution": "Leaders: (1), (2) (target of 11), (3) (target of 9), (10) (after a jump).<br>\nBlocks: B1 = {1}, B2 = {2}, B3 = {3-9}, B4 = {10, 11}, plus Entry and Exit [latex]\\rightarrow[/latex] 6 nodes.<br><br>\nEdges: Entry[latex]\\rightarrow[/latex]B1, B1[latex]\\rightarrow[/latex]B2, B2[latex]\\rightarrow[/latex]B3, B3[latex]\\rightarrow[/latex]B3, B3[latex]\\rightarrow[/latex]B4, B4[latex]\\rightarrow[/latex]B2, B4[latex]\\rightarrow[/latex]Exit [latex]\\rightarrow[/latex] 7 edges.<br><br>\n<b>Answer: 6 and 7</b><br><br><a href=\"https://gateoverflow.in/8139/gate2015-2-34#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Intermediate Code Generation",
+   "tag2_url": "https://practicepaper.in/gate-cse/intermediate-code-generation",
+   "options": [
+    "5 and 7",
+    "6 and 7",
+    "5 and 5",
+    "7 and 8"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1115235,
+   "number": 35,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The number of states in the minimal deterministic finite automaton corresponding to the regular expression (0+1)*(10) is __________.",
+   "solution": "Language: strings ending in \"10\". States needed: no progress, last symbol 1, last two symbols 10 (accepting).<br><br>\nThese are all distinguishable, so the minimal DFA has 3 states.<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/8256/gate2015-2-35#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Finite Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/finite-automata",
+   "ansMin": 3,
+   "ansMax": 3
+  }
+ ]
+}

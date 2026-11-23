@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11171,
+  "quizName": "GATE CS 2017 SET 1",
+  "pageTitle": "GATE CSE 2017 SET-1",
+  "timeLimit": 0,
+  "pageNo": 1,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2017-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1117101,
+   "number": 1,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The statement [latex](\\neg p)\\Rightarrow (\\neg q)[/latex] is logically equivalent to which of the statements below? <br>I. [latex] p\\Rightarrow q [/latex] <br>II. [latex]q \\Rightarrow p [/latex]<br>III. [latex](\\neg q)\\vee p[/latex] <br>IV. [latex](\\neg p)\\vee q[/latex]",
+   "solution": "[latex]\\neg p\\Rightarrow\\neg q[/latex] is the contrapositive of [latex]q\\Rightarrow p[/latex], so they are equivalent (II). Also [latex]a\\Rightarrow b\\equiv\\neg a\\vee b[/latex], so [latex]\\neg p\\Rightarrow\\neg q\\equiv p\\vee\\neg q[/latex] (III).<br><br>\nI ([latex]p\\Rightarrow q[/latex]) and IV ([latex]\\neg p\\vee q[/latex]) are the converse, which is different.<br><br>\n<b>Answer: II and III only</b><br><br><a href=\"https://gateoverflow.in/118698/gate2017-1-1#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Propositional Logic",
+   "tag2_url": "https://practicepaper.in/gate-cse/propositional-logic",
+   "options": [
+    "I only",
+    "I and IV only",
+    "II only",
+    "II and III only"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1117102,
+   "number": 2,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the first-order logic sentence [latex]F:\\forall x(\\exists yR(x,y))[/latex]. Assuming non-empty logical\ndomains, which of the sentences below are implied by F? <br>I. [latex]\\exists y(\\exists xR(x,y))[/latex]<br> II. [latex]\\exists y(\\forall xR(x,y)) [/latex]<br>III. [latex]\\forall y(\\exists xR(x,y))[/latex]<br> IV. [latex]\\neg \\exists x(\\forall y\\neg R(x,y))[/latex]",
+   "solution": "F: every x has some y with R(x, y).<br>\n- I: [latex]\\exists y\\exists x R(x,y)[/latex] follows (the domain is non-empty) True<br>\n- IV: [latex]\\neg\\exists x\\forall y\\neg R(x,y)\\equiv\\forall x\\exists y R(x,y)[/latex], which is F itself True<br>\n- II (one y for all x) and III (every y is hit) do not follow.<br><br>\n<b>Answer: I and IV only</b><br><br><a href=\"https://gateoverflow.in/118701/gate2017-1-2#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Propositional Logic",
+   "tag2_url": "https://practicepaper.in/gate-cse/propositional-logic",
+   "options": [
+    "IV only",
+    "I and IV only",
+    "II only",
+    "II and III only"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1117103,
+   "number": 3,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let [latex]c_{1}....c_{n}[/latex]  be scalars, not all zero, such that [latex]\\sum_{i=1}^{n}c_{i}a_{i}=0[/latex]<br> where [latex]a_{i}[/latex] are column vectors in [latex]R^{n}[/latex]. Consider the set of linear equations Ax = b <br>\nwhere A=[latex]a_{1}....a_{n}[/latex] and b=[latex]\\sum_{i=1}^{n}a_{i}[/latex]. The set of equations has",
+   "solution": "[latex]\\sum c_ia_i=0[/latex] with not all [latex]c_i[/latex] zero means the columns are dependent, so Ax = 0 has a non-zero solution c.<br><br>\n[latex]x=(1,\\ldots,1)[/latex] solves Ax = b, and so does [latex](1,\\ldots,1)+tc[/latex] for every t [latex]\\rightarrow[/latex] <b>infinitely many</b> solutions.<br><br>\n<b>Answer: infinitely many solutions</b><br><br><a href=\"https://gateoverflow.in/118282/gate2017-1-3#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Linear Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/linear-algebra",
+   "options": [
+    "a unique solution at  [latex]x=J_{n}[/latex] where [latex]J_{n}[/latex] denotes a n-dimensional vector of all 1",
+    " no solution",
+    " infinitely many solutions",
+    "finitely many solutions"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1117104,
+   "number": 4,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following functions from positive integers to real numbers:<br> <br>[latex]10,\\sqrt{n},n, log_{2}n,\\frac{100}{n}[/latex].<br><br> The CORRECT arrangement of the above functions in increasing order of asymptotic complexity is:",
+   "solution": "100/n decreases to 0; 10 is constant; then [latex]\\log_2 n \\lt \\sqrt n \\lt n[/latex].<br><br>\n<b>Answer: 100/n, 10, log2 n, √n, n</b><br><br><a href=\"https://gateoverflow.in/118703/gate2017-1-4#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Asymptotic Notation",
+   "tag2_url": "https://practicepaper.in/gate-cse/asymptotic-notation",
+   "options": [
+    "[latex]log_{2}n,\\frac{100}{n}, 10,\\sqrt{n},n [/latex]",
+    "[latex]\\frac{100}{n}, 10,log_{2}n, \\sqrt{n}, n [/latex]",
+    "[latex]10, \\frac{100}{n},  \\sqrt{n}, log_{2}n, n [/latex]",
+    "[latex]\\frac{100}{n}, log_{2}n, 10,  \\sqrt{n}, n [/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1117105,
+   "number": 5,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following table: <br><img src=\"/wp-content/uploads/GATE/CS/20171/q4.jpg\"/> <br>Match the algorithms to the design paradigms they are based on.",
+   "solution": "Checking each statement:<br>- Kruskal: always picks the cheapest safe edge [latex]\\rightarrow[/latex] <b>Greedy</b> (ii)<br>\n- Quicksort: partition and recurse [latex]\\rightarrow[/latex] <b>Divide and Conquer</b> (i)<br>\n- Floyd-Warshall: builds on smaller subproblems [latex]\\rightarrow[/latex] <b>Dynamic Programming</b> (iii)<br><br>\n<b>Answer: P-(ii), Q-(i), R-(iii)</b><br><br><a href=\"https://gateoverflow.in/118707/gate2017-1-5#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Greedy Technique",
+   "tag2_url": "https://practicepaper.in/gate-cse/greedy-technique",
+   "options": [
+    "P-(ii), Q-(iii),R-(i)",
+    "P-(iii), Q-(i), R-(ii)",
+    "P-(ii), Q-(i), R-(iii)",
+    "P-(i), Q-(ii), R-(iii)"
+   ],
+   "correct": 2
+  }
+ ]
+}

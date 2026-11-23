@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "quizId": 11141,
+  "quizName": "GATE CS 2014 SET 1",
+  "pageTitle": "GATE CSE 2014 SET-1",
+  "timeLimit": 0,
+  "pageNo": 13,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114161,
+   "number": 61,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The Palghat Gap (or Palakkad Gap) , a region about 30 km wide in the southern part of the Western Ghats in India, is lower than the hilly terrain to its north and south. The exact reasons for the formation of this gap are not clear. It results in the neighbouring regions of Tamil Nadu getting more rainfall from the South West monsoon and the neighbouring regions of Kerala having higher summer temperatures.  \n<br><br>\nWhat can be inferred from this passage?\n<br>\nSelect one:",
+   "solution": "The passage says the gap causes more rainfall in nearby Tamil Nadu and higher temperatures in nearby Kerala. So the low terrain significantly affects the weather there. The causes of the gap itself are unknown.<br><br>\n<b>Answer: The low terrain of the Palghat Gap has a significant impact on weather patterns in neighbouring parts of Tamil Nadu and Kerala</b><br><br><a href=\"https://gateoverflow.in/774/gate-cse-2014-set-1-question-ga-6#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "The Palghat gap is caused by high rainfall and high temperatures in southern Tamil Nadu and Kerala",
+    "The regions in Tamil Nadu and Kerala that are near the Palghat Gap are low-lying",
+    "The low terrain of the Palghat Gap has a significant impact on weather patterns in neighbouring parts of Tamil Nadu and Kerala",
+    "Higher summer temperatures result in higher rainfall near the Palghat Gap area"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1114162,
+   "number": 62,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Geneticists say that they are very close to confirming the genetic roots of psychiatric illnesses such as depression and schizophrenia, and consequently, that doctors will be able to eradicate these diseases through early identification and gene therapy.\n<br><br>\nOn which of the following assumptions does the statement above rely?\n<br>\nSelect one:",
+   "solution": "Gene therapy can cure these illnesses only if they actually have a genetic basis, so the statement assumes that certain psychiatric illnesses are genetic.<br><br>\n<b>Answer: Certain psychiatric illnesses have a genetic basis</b><br><br><a href=\"https://gateoverflow.in/775/gate-cse-2014-set-1-question-ga-7#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "Strategies are now available for eliminating psychiatric illnesses",
+    "Certain psychiatric illnesses have a genetic basis",
+    "All human diseases can be traced back to genes and how they are expressed",
+    "In the future, genetics will become the only relevant field for identifying psychiatric illnesses"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1114163,
+   "number": 63,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Round-trip tickets to a tourist destination are eligible for a discount of 10% on the total fare. In addition, groups of 4 or more get a discount of 5% on the total fare. If the one way single person fare is Rs 100, a group of 5 tourists purchasing round-trip tickets will be charged Rs __________",
+   "solution": "Round trip for 5 people = 5 [latex]\\times[/latex] 2 [latex]\\times[/latex] 100 = Rs 1000. Discounts of 10% and 5% on the total fare: 15% off [latex]\\rightarrow[/latex] Rs 850.<br><br>\n<b>Answer: 850</b><br><br><a href=\"https://gateoverflow.in/776/gate-cse-2014-set-1-question-ga-8#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "ansMin": 850,
+   "ansMax": 850
+  },
+  {
+   "id": 1114164,
+   "number": 64,
+   "type": "NAT",
+   "marks": 2,
+   "text": "In a survey, 300 respondents were asked whether they own a vehicle or not. If yes, they were further asked to mention whether they own a car or scooter or both. Their responses are tabulated below. What percent of respondents do not own a scooter?<br><br>[latex]\\begin{array}{|l|l|l|l|} \\hline & & \\text{Men} & \\text{Women} \\\\\\hline \\text{Own vehicle} & \\text{Car} & 40 & 34 \\\\\\hline \\text{Own vehicle} & \\text{Scooter} & 30 & 20 \\\\\\hline \\text{Own vehicle} & \\text{Both} & 60 & 46 \\\\\\hline \\text{Do not own vehicle} & & 20 & 50 \\\\\\hline \\end{array}[/latex]\n",
+   "solution": "Not owning a scooter = car only (40 + 34 = 74) + no vehicle (20 + 50 = 70) = 144.<br><br>\n144 / 300 = 48%<br><br>\n<b>Answer: 48</b><br><br><a href=\"https://gateoverflow.in/777/gate-cse-2014-set-1-question-ga-9#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "ansMin": 48,
+   "ansMax": 48
+  },
+  {
+   "id": 1114165,
+   "number": 65,
+   "type": "NAT",
+   "marks": 2,
+   "text": "When a point inside of a tetrahedron (a solid with four triangular surfaces) is connected by straight lines to its corners, how many (new) internal planes are created with these lines?",
+   "solution": "Each new internal plane passes through the inner point and one <b>edge</b> of the tetrahedron (the two lines to that edge's ends). A tetrahedron has 6 edges, so 6 planes.<br><br>\n<b>Answer: 6</b><br><br><a href=\"https://gateoverflow.in/778/gate-cse-2014-set-1-question-ga-10#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "ansMin": 6,
+   "ansMax": 6
+  }
+ ]
+}

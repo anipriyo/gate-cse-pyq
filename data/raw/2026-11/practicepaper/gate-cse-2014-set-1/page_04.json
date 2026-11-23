@@ -1,0 +1,115 @@
+{
+ "meta": {
+  "quizId": 11141,
+  "quizName": "GATE CS 2014 SET 1",
+  "pageTitle": "GATE CSE 2014 SET-1",
+  "timeLimit": 0,
+  "pageNo": 4,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114116,
+   "number": 16,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the finite automaton in the following figure. <br><img src=\"/wp-content/uploads/GATE/CS/20141/q16.jpg\"/> <br> What is the set of reachable states for the input string 0011?",
+   "solution": "Track the set of states:<br>\n- start {q0}<br>\n- 0 [latex]\\rightarrow[/latex] {q0}; 0 [latex]\\rightarrow[/latex] {q0}<br>\n- 1 [latex]\\rightarrow[/latex] {q0, q1}<br>\n- 1 [latex]\\rightarrow[/latex] {q0, q1, q2} (q0 stays or goes to q1; q1 goes to q2)<br><br>\n<b>Answer: {q0, q1, q2}</b><br><br><a href=\"https://gateoverflow.in/1782/gate2014-1-16#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Finite Automata",
+   "tag2_url": "https://practicepaper.in/gate-cse/finite-automata",
+   "options": [
+    "[latex]\\{q_{0},q_{1},q_{2}\\}[/latex]",
+    "[latex]\\{q_{0},q_{1}\\}[/latex]",
+    "[latex]\\{q_{0},q_{1},q_{2},q_{3}\\}[/latex]",
+    "[latex]\\{q_{3}\\}[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1114117,
+   "number": 17,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following is FALSE?",
+   "solution": "Replacing x = 4 * 5 by x = 20 computes the constant at compile time: that is <b>constant folding</b>, not common subexpression elimination. The other statements are true.<br><br>\n<b>Answer: x = 4*5 [latex]\\Rightarrow[/latex] x = 20 is an example of common subexpression elimination (FALSE)</b><br><br><a href=\"https://gateoverflow.in/1784/gate2014-1-17#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Intermediate Code Generation",
+   "tag2_url": "https://practicepaper.in/gate-cse/intermediate-code-generation",
+   "options": [
+    "A basic block is a sequence of instructions where control enters the sequence at the\nbeginning and exits at the end.",
+    "Available expression analysis can be used for common subexpression elimination.",
+    "Live variable analysis can be used for dead code elimination",
+    "x=4*5 [latex]\\Rightarrow[/latex]x=20 is an example of common subexpression elimination"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1114118,
+   "number": 18,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Match the following <br><img src=\"/wp-content/uploads/GATE/CS/20141/q18.jpg\"/>",
+   "solution": "Checking each statement:<br>- Waterfall [latex]\\rightarrow[/latex] (d) inflexible partitioning into stages<br>\n- Evolutionary [latex]\\rightarrow[/latex] (a) specifications develop along with the system<br>\n- Component based [latex]\\rightarrow[/latex] (b) requirement compromises are inevitable (to reuse components)<br>\n- Spiral [latex]\\rightarrow[/latex] (c) explicit recognition of risk<br><br>\n<b>Answer: 1-d, 2-a, 3-b, 4-c</b><br><br><a href=\"https://gateoverflow.in/1785/gate2014-1-18#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Software Engg",
+   "tag1_url": "https://practicepaper.in/gate-cse/software-engg",
+   "tag2": "",
+   "tag2_url": "https://practicepaper.in/gate-cse/",
+   "options": [
+    "1-a, 2-b, 3-c, 4-d",
+    "1-d, 2-a, 3-b, 4-c",
+    "1-d, 2-b, 3-a, 4-c",
+    "1-c, 2-a, 3-b, 4-d"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1114119,
+   "number": 19,
+   "type": "NAT",
+   "marks": 1,
+   "text": "Suppose a disk has 201 cylinders, numbered from 0 to 200. At some time the disk arm is at\ncylinder 100, and there is a queue of disk access requests for cylinders 30, 85, 90, 100, 105,\n110, 135 and 145. If Shortest-Seek Time First (SSTF) is being used for scheduling the disk\naccess, the request for cylinder 90 is serviced after servicing ____________ number of\nrequests.",
+   "solution": "SSTF from 100: 100 (distance 0), then 105 (5), then 110 (5), then 90 (20, closer than 135 at 25).<br><br>\nSo 90 is served after 3 requests.<br><br>\n<b>Answer: 3</b><br><br><a href=\"https://gateoverflow.in/1786/gate2014-1-19#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Disk Scheduling",
+   "tag2_url": "https://practicepaper.in/gate-cse/disk-scheduling",
+   "ansMin": 3,
+   "ansMax": 3
+  },
+  {
+   "id": 1114120,
+   "number": 20,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following is FALSE?",
+   "solution": "Kernel threads of the same process share the code segment (and data, files); only their stacks and registers are separate. So \"kernel level threads cannot share the code segment\" is false.<br><br>\n<b>Answer: Kernel level threads cannot share the code segment</b><br><br><a href=\"https://gateoverflow.in/1787/gate2014-1-20#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Thread",
+   "tag2_url": "https://practicepaper.in/gate-cse/thread",
+   "options": [
+    "User level threads are not scheduled by the kernel",
+    "When a user level thread is blocked, all other threads of its process are blocked.",
+    "Context switching between user level threads is faster than context switching between\nkernel level threads.",
+    "Kernel level threads cannot share the code segment"
+   ],
+   "correct": 3
+  }
+ ]
+}

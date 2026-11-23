@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "quizId": 11162,
+  "quizName": "GATE CS 2016 SET 2",
+  "pageTitle": "GATE CSE 2016 SET-2",
+  "timeLimit": 0,
+  "pageNo": 10,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2016-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1116246,
+   "number": 46,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A student wrote two context-free grammars G1 and G2 for generating a single C-like array declaration. The dimension of the array is at least one. For example, <br>\nint a[10][3]; <br>\nThe grammars use D as the start symbol,and use six terminal symbols <b>int ;id[]num.</b> <br><img src=\"/wp-content/uploads/GATE/CS/20162/q46.jpg\"/> <br>\nWhich of the grammars correctly generate the declaration mentioned above?",
+   "solution": "Derive int a[10][3]; with each grammar:<br>\n- <b>G1</b>: D [latex]\\rightarrow[/latex] int L; [latex]\\rightarrow[/latex] int id [ E ; [latex]\\rightarrow[/latex] int id [ num ] [ E ; [latex]\\rightarrow[/latex] int id [num] [num] ; True<br>\n- <b>G2</b>: D [latex]\\rightarrow[/latex] int L; [latex]\\rightarrow[/latex] int id E ; [latex]\\rightarrow[/latex] int id E [num] ; [latex]\\rightarrow[/latex] int id [num] [num] ; True<br><br>\nBoth also give one or more dimensions in general.<br><br>\n<b>Answer: Both G1 and G2</b><br><br><a href=\"https://gateoverflow.in/39598/gate2016-2-46#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Parsing",
+   "tag2_url": "https://practicepaper.in/gate-cse/parsing",
+   "options": [
+    "Both G1 and G2",
+    "Only G1",
+    "Only G2",
+    "Neither G1 nor G2"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1116247,
+   "number": 47,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following processes, with the arrival time and the length of the CPU burst given in milli seconds.The scheduling algorithm used is preemptive shortest remaining-time first.<br><img src=\"/wp-content/uploads/GATE/CS/20162/q47.jpg\"/><br> The average turn around time of these processes is milliseconds.",
+   "solution": "SRTF: P1 0-3 (7 left); P2 arrives (6 [latex]\\lt[/latex] 7) and runs 3-7 (2 left); P3 (1) runs 7-8; P2 runs 8-10; P4 runs 10-13; P1 runs 13-20.<br><br>\nTurnaround: P1 20, P2 10 [latex]-[/latex] 3 = 7, P3 8 [latex]-[/latex] 7 = 1, P4 13 [latex]-[/latex] 8 = 5.<br><br>\nAverage = 33 / 4 = 8.25<br><br>\n<b>Answer: 8.25</b><br><br><a href=\"https://gateoverflow.in/39625/gate2016-2-47#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "CPU Scheduling",
+   "tag2_url": "https://practicepaper.in/gate-cse/cpu-scheduling",
+   "ansMin": 8.2,
+   "ansMax": 8.3
+  },
+  {
+   "id": 1116248,
+   "number": 48,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following two-process synchronization solution. <br>\n<br><img src=\"/wp-content/uploads/GATE/CS/20162/q48.jpg\"/><br>\nThe shared variable turn is initialized to zero.Which one of the following is TRUE?",
+   "solution": "This is strict alternation: the processes must take turns. Mutual exclusion holds, but if process 0 wants to enter twice while process 1 does not want to enter at all, process 0 is blocked (turn = 1) by a process that is not even trying. That violates <b>progress</b>.<br><br>\n<b>Answer: This solution violates progress requirement</b><br><br><a href=\"https://gateoverflow.in/39600/gate2016-2-48#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Process Synchronization",
+   "tag2_url": "https://practicepaper.in/gate-cse/process-synchronization",
+   "options": [
+    "This is a correct two-process synchronization solution.",
+    "This solution violates mutual exclusion requirement",
+    "This solution violates progress requirement",
+    "This solution violates bounded wait requirement"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1116249,
+   "number": 49,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a non-negative counting semaphore S. The operation P(S) decrements S, and V(S) increments S. During an execution, 20 P(S) operations and 12V(S) operations are issued in some order. The largest initial value of S for which at least one P(S) operation will remain blocked is ________.",
+   "solution": "With initial value x, the 12 V operations can supply at most 12 more units, so at most x + 12 P operations can succeed. For at least one of the 20 P operations to stay blocked: [latex]x+12 \\lt 20\\Rightarrow x\\le7[/latex].<br><br>\n<b>Answer: 7</b><br><br><a href=\"https://gateoverflow.in/39576/gate2016-2-49#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Process Synchronization",
+   "tag2_url": "https://practicepaper.in/gate-cse/process-synchronization",
+   "ansMin": 7,
+   "ansMax": 7
+  },
+  {
+   "id": 1116250,
+   "number": 50,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A file system uses an in-memory cache to cache disk blocks.The miss rate of the cache is shown in the figure. The latency to read a block from the cache is 1 ms and to read a block from the disk is 10ms. Assume that the cost of checking whether a block exists in the cache is negligible. Available cache sizes are in multiples of 10MB. <br><img src=\"/wp-content/uploads/GATE/CS/20162/q50.jpg\"/> <br>The smallest cache size required to ensure an average read latency of less than 6ms is_________\nMB. ",
+   "solution": "Average latency = (1 [latex]-[/latex] m) [latex]\\times[/latex] 1 + m [latex]\\times[/latex] 10 = 1 + 9m (m = miss rate). We need [latex]1+9m \\lt 6\\Rightarrow m \\lt 0.556[/latex].<br><br>\nFrom the graph: 20 MB gives 60% (too high), 30 MB gives <b>40%</b> [latex]\\rightarrow[/latex] latency 1 + 3.6 = 4.6 ms True<br><br>\n<b>Answer: 30</b><br><br><a href=\"https://gateoverflow.in/39592/gate2016-2-50#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Cache Memory",
+   "tag2_url": "https://practicepaper.in/gate-cse/cache-memory",
+   "ansMin": 30,
+   "ansMax": 30
+  }
+ ]
+}

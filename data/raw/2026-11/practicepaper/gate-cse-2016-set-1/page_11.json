@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "quizId": 11161,
+  "quizName": "GATE CS 2016 SET 1",
+  "pageTitle": "GATE CSE 2016 SET-1",
+  "timeLimit": 0,
+  "pageNo": 11,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2016-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1116151,
+   "number": 51,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following two phase locking protocol. Suppose a transaction T accesses (for read or write operations), a certain set of objects {O1,... ,Ok}. This is done in the following manner: <br>\nStep 1. T acquires exclusive locks to O1,...,Ok in increasing order of their addresses. <br>\nStep 2. The required operations are performed.<br>\nStep 3. All locks are released. <br>\nThis protocol will",
+   "solution": "All locks are taken before any operation and released only at the end [latex]\\rightarrow[/latex] a two-phase locking schedule [latex]\\rightarrow[/latex] <b>serializable</b>.<br><br>\nLocks are always requested in increasing address order, so no circular wait can form [latex]\\rightarrow[/latex] <b>deadlock-free</b>.<br><br>\n<b>Answer: guarantee serializability and deadlock-freedom</b><br><br><a href=\"https://gateoverflow.in/39703/gate2016-1-51#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "Transaction",
+   "tag2_url": "https://practicepaper.in/gate-cse/transaction",
+   "options": [
+    "guarantee serializability and deadlock-freedom",
+    "guarantee neither serializability nor deadlock-freedom",
+    "guarantee serializability but not deadlock-freedom",
+    "guarantee deadlock-freedom but not serializability"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1116152,
+   "number": 52,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider that B wants to send a message m that is digitally signed to A. Let the pair of private and public keys for A and B be denoted by [latex]K_{x}^{-}[/latex]\n and [latex]K_{x}^{+}[/latex] for x = A,B, respectively. Let  [latex]K_{x}(m)[/latex] \nrepresent the operation of encrypting m with a key [latex]K_{x}[/latex] and H(m) represent the message digest. Which one of the following indicates the CORRECT way of sending the message m along with the digital signature to A?",
+   "solution": "B signs by encrypting the digest with <b>B's private key</b>: [latex]K_B^-(H(m))[/latex]. A checks it with B's public key [latex]K_B^+[/latex] and compares with H(m).<br><br>\n<b>Answer: {m, [latex]K_B^-(H(m))[/latex]}</b><br><br><a href=\"https://gateoverflow.in/39694/gate2016-1-52#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Security",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-security",
+   "options": [
+    "{[latex]m,K^{+}_{B}(H(m))[/latex]}",
+    "{[latex]{m,K^{-}_{B}(H(m))}[/latex]}",
+    "{[latex]{m,K^{-}_{A}(H(m))}[/latex]}",
+    "{[latex]{m,K^{+}_{A}(H(m))}[/latex]}"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1116153,
+   "number": 53,
+   "type": "NAT",
+   "marks": 2,
+   "text": "An IP datagram of size 1000 bytes arrives at a router. The router has to forward this packet on a link whose MTU (maximum transmission unit)is 100bytes. Assume that the size of the IP header is 20bytes. <br> The number of fragments that the IP datagram will be divided into for transmission is _________.",
+   "solution": "Data = 1000 [latex]-[/latex] 20 = 980 bytes. Per fragment: 100 [latex]-[/latex] 20 = 80 bytes of data (already a multiple of 8).<br><br>\nFragments = [latex]\\lceil980/80\\rceil=\\lceil12.25\\rceil=13[/latex]<br><br>\n<b>Answer: 13</b><br><br><a href=\"https://gateoverflow.in/39712/gate2016-1-53#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Network Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/network-layer-protocol",
+   "ansMin": 13,
+   "ansMax": 13
+  },
+  {
+   "id": 1116154,
+   "number": 54,
+   "type": "NAT",
+   "marks": 2,
+   "text": "For a host machine that uses the token bucket algorithm for congestion control, the token bucket has a capacity of 1 megabyte and the maximum output rate is 20 megabytes per second. Tokens arrive at a rate to sustain output at a rate of 10megabytes per second. The  token bucket is currently full and the machine needs to send 12megabytes of data. The minimum time required to transmit the data is _____seconds.",
+   "solution": "Bucket starts full (1 MB). While it drains, the host sends at 20 MB/s while tokens arrive at 10 MB/s:<br>\n[latex]20t=1+10t\\Rightarrow t=0.1[/latex] s, sending 2 MB.<br><br>\nThe remaining 10 MB go at 10 MB/s = 1 s.<br><br>\nTotal = 0.1 + 1 = 1.1 s<br><br>\n<b>Answer: 1.1</b><br><br><a href=\"https://gateoverflow.in/39720/gate2016-1-54#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Transport Layer Protocol",
+   "tag2_url": "https://practicepaper.in/gate-cse/transport-layer-protocol",
+   "ansMin": 1.1,
+   "ansMax": 1.1
+  },
+  {
+   "id": 1116155,
+   "number": 55,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A sender uses the Stop-and Wait ARQ protocol for reliable transmission of frames. Frames are of size 1000bytes and the transmission rate at the sender is 80Kbps(1Kbps=1000 bits/second). Size of anacknowledgement is 100bytes and the transmission rate at the receiver is 8Kbps. The one-way propagation delay is 100milliseconds. <br>Assuming no frame is lost, the sender throughput is _____bytes/second.",
+   "solution": "Checking each statement:<br>- Frame transmission: 8000 bits / 80 Kbps = 0.1 s<br>\n- ACK transmission: 800 bits / 8 Kbps = 0.1 s<br>\n- Propagation: 0.1 s each way<br><br>\nOne frame every 0.1 + 0.1 + 0.1 + 0.1 = 0.4 s [latex]\\rightarrow[/latex] throughput = 1000 / 0.4 = 2500 bytes/s<br><br>\n<b>Answer: 2500</b><br><br><a href=\"https://gateoverflow.in/39696/gate2016-1-55#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "ansMin": 2500,
+   "ansMax": 2500
+  }
+ ]
+}

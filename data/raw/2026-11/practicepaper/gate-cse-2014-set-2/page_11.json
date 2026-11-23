@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "quizId": 11142,
+  "quizName": "GATE CS 2014 SET 2",
+  "pageTitle": "GATE CSE 2014 SET-2",
+  "timeLimit": 0,
+  "pageNo": 11,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114251,
+   "number": 51,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A cycle on n vertices is isomorphic to its complement. The value of n is _____.",
+   "solution": "A cycle [latex]C_n[/latex] has n edges, its complement has [latex]\\frac{n(n-1)}{2}-n[/latex] edges. Isomorphic graphs have equal edge counts:<br>\n[latex]n=\\frac{n(n-1)}{2}-n\\Rightarrow n=5[/latex]<br><br>\nIndeed the complement of [latex]C_5[/latex] (the pentagram) is again a 5-cycle.<br><br>\n<b>Answer: 5</b><br><br><a href=\"https://gateoverflow.in/2018/gate2014-2-51#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Graph Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/graph-theory",
+   "ansMin": 5,
+   "ansMax": 5
+  },
+  {
+   "id": 1114252,
+   "number": 52,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The number of distinct minimum spanning trees for the weighted graph below is  <br><img src=\"/wp-content/uploads/GATE/CS/20142/q52.jpg\"/>",
+   "solution": "Use Kruskal. All weight-1 edges are taken (they form no cycle), leaving components: {top-left, centre, left, bottom}, {top-right, right}, {triangle edge pair of weight 1}, {triangle's bottom-left vertex}.<br><br>\nNow weight-2 edges:<br>\n- Join the two left components: 3 choices (top edge, centre-top-right, centre-right).<br>\n- The long bottom edge is the only link to the triangle [latex]\\rightarrow[/latex] forced.<br>\n- Join the triangle's last vertex: 2 choices (either weight-2 edge of the triangle).<br><br>\nNumber of MSTs = 3 [latex]\\times[/latex] 2 = 6<br><br>\n<b>Answer: 6</b><br><br><a href=\"https://gateoverflow.in/2019/gate2014-2-52#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Minimum Spanning Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/minimum-spanning-tree",
+   "ansMin": 6,
+   "ansMax": 6
+  },
+  {
+   "id": 1114253,
+   "number": 53,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Which one of the following Boolean expressions is NOT a tautology?",
+   "solution": "Check option 2 with a = 0, b = 0, c = 0:<br>\n[latex]a\\rightarrow c=1[/latex], but [latex]\\sim b\\rightarrow(a\\wedge c)=1\\rightarrow0=0[/latex]. The whole is [latex]1\\rightarrow0=0[/latex], so it is not a tautology.<br><br>\nOptions 1 (transitivity), 3 and 4 are always true.<br><br>\n<b>Answer: [latex](a\\rightarrow c)\\rightarrow(\\sim b\\rightarrow(a\\wedge c))[/latex]</b><br><br><a href=\"https://gateoverflow.in/2020/gate2014-2-53#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Propositional Logic",
+   "tag2_url": "https://practicepaper.in/gate-cse/propositional-logic",
+   "options": [
+    "[latex]((a\\rightarrow b)\\wedge (b\\rightarrow c))\\rightarrow (a\\rightarrow c)[/latex]",
+    "[latex](a\\rightarrow c)\\rightarrow (\\sim b\\rightarrow (a\\wedge c))[/latex]",
+    "[latex](a\\wedge b\\wedge c)\\rightarrow (c\\wedge a)[/latex]",
+    "[latex]a\\rightarrow (b\\rightarrow a)[/latex]"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1114254,
+   "number": 54,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "SQL allows duplicate tuples in relations, and correspondingly defines the multiplicity of\ntuples in the result of joins. Which one of the following queries always gives the same answer\nas the nested query shown below: <br>\nSelect * from R where a in (select S. a from S)",
+   "solution": "The IN query returns each R tuple once per its own copy in R, no matter how many matching tuples S has.<br><br>\n- Option 1: a plain join repeats an R tuple once for every matching S tuple [latex]\\rightarrow[/latex] extra duplicates.<br>\n- Option 2: DISTINCT also removes duplicates that were genuinely in R.<br>\n- Option 3: S1 has each value of a only once, so every R tuple matches at most once [latex]\\rightarrow[/latex] same result.<br><br>\n<b>Answer: Select R.* from R, (select distinct a from S) as S1 where R.a = S1.a</b><br><br><a href=\"https://gateoverflow.in/2021/gate2014-2-54#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "SQL",
+   "tag2_url": "https://practicepaper.in/gate-cse/sql",
+   "options": [
+    "Select R. * from R, S where R. a=S. a",
+    "Select distinct R. * from R,S where R. a=S. a",
+    "Select R. * from R, (select distinct a from S) as S1 where R. a=S1.a",
+    "Select R. * from R, S where R.a = S. a and is unique R"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1114255,
+   "number": 55,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a main memory system that consists of 8 memory modules attached to the system\nbus, which is one word wide. When a write request is made, the bus is occupied for 100\nnanoseconds (ns) by the data, address, and control signals. During the same 100 ns, and for\n500 ns thereafter, the addressed memory module executes one cycle accepting and storing the data. The (internal) operation of different memory modules may overlap in time, but only one request can be on the bus at any time. The maximum number of stores (of one word each) that can be initiated in 1 millisecond is ____________",
+   "solution": "Each store holds the bus for 100 ns, and a module is busy for 600 ns. With 8 modules used in turn, a module is reused only after 8 [latex]\\times[/latex] 100 = 800 ns [latex]\\gt[/latex] 600 ns, so modules never cause waiting.<br><br>\nThe bus is the bottleneck: one store per 100 ns.<br><br>\n[latex]\\frac{1\\,ms}{100\\,ns}=\\frac{10^{-3}}{10^{-7}}=10^4[/latex]<br><br>\n<b>Answer: 10000</b><br><br><a href=\"https://gateoverflow.in/2022/gate2014-2-55#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "ALU Data Path and Control Unit",
+   "tag2_url": "https://practicepaper.in/gate-cse/alu-data-path-and-control-unit",
+   "ansMin": 10000,
+   "ansMax": 10000
+  }
+ ]
+}

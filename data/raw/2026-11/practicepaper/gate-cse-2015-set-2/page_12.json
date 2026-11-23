@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11152,
+  "quizName": "GATE CS 2015 SET 2",
+  "pageTitle": "GATE CSE 2015 SET-2",
+  "timeLimit": 0,
+  "pageNo": 12,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115256,
+   "number": 56,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "We __________ our friends's birthday and we _________ how to make it up to him.",
+   "solution": "The adverb \"completely\" goes before the verb: \"completely forgot\". \"Just\" goes before \"don't know\": \"just don't know\".<br><br>\n<b>Answer: completely forgot --- just don't know</b><br><br><a href=\"https://gateoverflow.in/8028/gate-cse-2015-set-2-question-ga-1#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "completely forgot --- don't just know",
+    "forgot completely ---don't just know",
+    "completely forgot --- just don't know",
+    "forgot completely --- just don't know"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115257,
+   "number": 57,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Choose the statement where underlined word is used correctly.",
+   "solution": "Personnel = the staff of an organisation. Personal = belonging to one person.<br><br>\nOnly \"All personnel are being given the day off\" uses it correctly.<br><br>\n<b>Answer: All personnel are being given the day off</b><br><br><a href=\"https://gateoverflow.in/8029/gate-cse-2015-set-2-question-ga-2#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "The industrialist had a [latex]\\underline{ \\text{personnel }}[/latex] jet.",
+    "I write my experience in my [latex]\\underline{ \\text{personnel }}[/latex] diary.",
+    "All [latex]\\underline{ \\text{personnel} }[/latex] are being given the day off.",
+    "Being religious is a  [latex]\\underline{ \\text{personnel} }[/latex] aspect."
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115258,
+   "number": 58,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider a function [latex]f(x) = 1- |x| \\text{ on } -1 \\leq x \\leq 1[/latex]. The value of [latex]x[/latex] at which the function attains a maximum, and the maximum value of the function are:",
+   "solution": "|x| is smallest (0) at x = 0, so f(x) = 1 [latex]-[/latex] |x| is largest there: f(0) = 1.<br><br>\n<b>Answer: 0, 1</b><br><br><a href=\"https://gateoverflow.in/8030/gate-cse-2015-set-2-question-ga-3#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "0, -1",
+    "-1, 0",
+    "0, 1",
+    "-1, 2"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115259,
+   "number": 59,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "A generic term that includes various items of clothing such as a skirt, a pair of trousers and a shirt is",
+   "solution": "Apparel is the general word for clothing (skirts, trousers, shirts). Fabric, textile and fiber are materials.<br><br>\n<b>Answer: apparel</b><br><br><a href=\"https://gateoverflow.in/8032/gate-cse-2015-set-2-question-ga-4#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "fabric",
+    "textile",
+    "fiber",
+    "apparel"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1115260,
+   "number": 60,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Based on the given statements, select the most appropriate option to solve the given question.\n<br>\nWhat will be the total weight of 10 poles each of same weight?\n<br><br>\nStatements:<br>\nI.  One fourth of the weight of the pole is 5 Kg.\n<br>II. The total weight of these poles is 160 Kg more than the total weight of two poles.",
+   "solution": "Checking each statement:<br>- I: weight = 4 [latex]\\times[/latex] 5 = 20 kg [latex]\\rightarrow[/latex] total = 200 kg. Sufficient.<br>\n- II: 10w = 2w + 160 [latex]\\rightarrow[/latex] w = 20 [latex]\\rightarrow[/latex] total = 200 kg. Sufficient.<br><br>\n<b>Answer: Either I or II alone is sufficient</b><br><br><a href=\"https://gateoverflow.in/8039/gate-cse-2015-set-2-ga-question-8#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "Statement I alone is not sufficient.",
+    "Statement II alone is not sufficient.",
+    "Either I or II alone is sufficient.",
+    "Both statements I and II together are not sufficient."
+   ],
+   "correct": 2
+  }
+ ]
+}

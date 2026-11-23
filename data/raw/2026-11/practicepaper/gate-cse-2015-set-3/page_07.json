@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "quizId": 11153,
+  "quizName": "GATE CS 2015 SET 3",
+  "pageTitle": "GATE CSE 2015 SET-3",
+  "timeLimit": 0,
+  "pageNo": 7,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-3",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115331,
+   "number": 31,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Language [latex]L_{1}[/latex] is polynomial time reducible to language [latex]L_{2}[/latex]. Language [latex]L_{3}[/latex] is polynomial time reducible to [latex]L_{2}[/latex], which in turn is polynomial time reducible to language [latex]L_{4}[/latex]. Which of the following is/are true?<br> I. if [latex]L_{4} \\in P[/latex], then [latex]L_{2} \\in P[/latex]<br>\nII. if [latex]L_{1} \\in P[/latex] or [latex]L_{3} \\in P[/latex], then [latex]L_{2} \\in P[/latex] <br>     III. [latex]L_{1} \\in P[/latex], if and only if [latex]L_{3} \\in P[/latex]<br>   IV. if [latex]L_{4} \\in P[/latex], then [latex]L_{1} \\in P[/latex] and [latex]L_{3} \\in P[/latex]",
+   "solution": "Reductions: [latex]L_1\\le L_2[/latex], [latex]L_3\\le L_2\\le L_4[/latex]. If the target is in P, the source is in P.<br><br>\n- I: [latex]L_4\\in P\\Rightarrow L_2\\in P[/latex] [latex]\\rightarrow[/latex] True<br>\n- IV: then [latex]L_1, L_3\\in P[/latex] too [latex]\\rightarrow[/latex] True<br>\n- II and III would need reductions in the other direction [latex]\\rightarrow[/latex] not implied<br><br>\n<b>Answer: I and IV only</b><br><br><a href=\"https://gateoverflow.in/8562/gate2015-3-31#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "P-NP Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/p-np-theory",
+   "options": [
+    "II only",
+    "III only",
+    "I and IV only",
+    "I only"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115332,
+   "number": 32,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following C program. <pre><code> #include &lt;stdio.h&gt;\nint f1(void);\nint f2(void);\nint f3(void);\nint x = 10;\nint main( )\n{\n   int x = 1;\n   x += f1( ) + f2( ) + f3( ) + f2( );\n   printf(\"%d\", x);\n   return 0;\n}\nint f1() { int x = 25; x++; return x;}\nint f2() { static int x = 50; x++; return x;}\nint f3() { x *= 10; return x;}</code></pre> The output of the program is ________.",
+   "solution": "main's local x = 1.<br>\n- f1() = 26 (its own local x)<br>\n- f2() = 51 (static x becomes 51)<br>\n- f3() changes the global x: 10 [latex]\\times[/latex] 10 = 100<br>\n- f2() = 52<br><br>\nx = 1 + 26 + 51 + 100 + 52 = 230<br><br>\n<b>Answer: 230</b><br><br><a href=\"https://gateoverflow.in/8563/gate2015-3-32#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "ansMin": 230,
+   "ansMax": 230
+  },
+  {
+   "id": 1115333,
+   "number": 33,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following C program. <pre><code> #include &lt;stdio.h&gt;\nint main( )\n{\nstatic int a[ ] = {10, 20, 30, 40, 50};\nstatic int *p[ ] = {a, a+3, a+4, a+1, a+2};\nint **ptr = p;\nptr++;\nprintf(\"%d%d\", ptr-p,**ptr);\n}</code></pre>The output of the program is ______________.",
+   "solution": "After ptr++, ptr points to p[1].<br><br>\n- ptr [latex]-[/latex] p = 1<br>\n- **ptr = *p[1] = *(a + 3) = 40<br><br>\n\"%d%d\" prints 1 and 40 together: 140<br><br>\n<b>Answer: 140</b><br><br><a href=\"https://gateoverflow.in/8478/gate2015-3-33#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Array and Pointer",
+   "tag2_url": "https://practicepaper.in/gate-cse/array-and-pointer",
+   "ansMin": 140,
+   "ansMax": 140
+  },
+  {
+   "id": 1115334,
+   "number": 34,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Which of the following languages are context-free? <br>[latex]L_{1}=\\{a^{m}b^{n}a^{n}b^{m}|m,n\\geq 1\\}[/latex] <br>   [latex]L_{2}=\\{a^{m}b^{n}a^{m}b^{n}|m,n\\geq 1\\}[/latex] <br>  [latex]L_{3}=\\{a^{m}b^{n}|m=2n+1\\}[/latex]",
+   "solution": "Checking each statement:<br>- [latex]L_1=a^mb^na^nb^m[/latex]: nested matching (outer m, inner n) [latex]\\rightarrow[/latex] push a's, push b's, pop on a's, pop on b's [latex]\\rightarrow[/latex] CFL.<br>\n- [latex]L_2=a^mb^na^mb^n[/latex]: crossed matching, which one stack cannot do [latex]\\rightarrow[/latex] not CFL.<br>\n- [latex]L_3=a^{2n+1}b^n[/latex]: push for a's, pop for b's [latex]\\rightarrow[/latex] CFL.<br><br>\n<b>Answer: L1 and L3 only</b><br><br><a href=\"https://gateoverflow.in/8489/gate2015-3-34#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Context Free Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/context-free-language",
+   "options": [
+    "L1 and L2 only",
+    "L1 and L3 only",
+    "L2 and L3 only",
+    "L3 only"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1115335,
+   "number": 35,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following policies for preventing deadlock in a system with mutually exclusive resources. <br>\nI. Processes should acquire all their resources at the beginning of execution. If any resource is not available, all resources acquired so far are released <br>\nII. The resources are numbered uniquely, and processes are allowed to request for resources only in increasing resource numbers <br>\nIII. The resources are numbered uniquely, and processes are allowed to request for resources only in decreasing resource numbers <br>\nIV. The resources are numbered uniquely. A process is allowed to request only for a resource with resource number larger than its currently held resources <br>\nWhich of the above policies can be used for preventing deadlock?",
+   "solution": "Checking each statement:<br>- I removes hold-and-wait (all or nothing).<br>\n- II, III and IV each impose a single global order on requests (increasing or decreasing), which removes circular wait.<br><br>\nAll four prevent deadlock.<br><br>\n<b>Answer: Any one of I, II, III, and IV</b><br><br><a href=\"https://gateoverflow.in/8561/gate2015-3-35#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Deadlock",
+   "tag2_url": "https://practicepaper.in/gate-cse/deadlock",
+   "options": [
+    "Any one of I and III but not II or IV",
+    "Any one of I, III, and IV but not II",
+    "Any one of II and III but not I or IV",
+    "Any one of I, II, III, and IV"
+   ],
+   "correct": 3
+  }
+ ]
+}

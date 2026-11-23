@@ -1,0 +1,115 @@
+{
+ "meta": {
+  "quizId": 11142,
+  "quizName": "GATE CS 2014 SET 2",
+  "pageTitle": "GATE CSE 2014 SET-2",
+  "timeLimit": 0,
+  "pageNo": 4,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114216,
+   "number": 16,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let [latex]A \\leq _{m}B[/latex] denotes that language A is mapping reducible (also known as many-to-one reducible) to language B. Which one of the following is FALSE?",
+   "solution": "If [latex]A\\le_m B[/latex], A is \"no harder\" than B. So decidability/RE-ness of B passes down to A, and undecidability of A passes up to B. Options 1, 2, 3 are true.<br><br>\nOption 4 is false: B being non-RE says nothing about A. Example: a decidable language A (non-trivial) reduces to the complement of the halting problem, which is not RE, yet A is RE.<br><br>\n<b>Answer: If [latex]A\\le_m B[/latex] and B is not RE then A is not RE</b><br><br><a href=\"https://gateoverflow.in/1972/gate2014-2-16#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Undecidability",
+   "tag2_url": "https://practicepaper.in/gate-cse/undecidability",
+   "options": [
+    "If [latex]A\\leq _{m}B[/latex] and B is recursive then A is recursive",
+    "If [latex]A\\leq _{m}B[/latex] and A is undecidable then B is undecidable",
+    "If [latex]A\\leq _{m}B[/latex] and B is recursively enumerable then A is recursively enumerable.",
+    "If [latex]A\\leq _{m}B[/latex] and B is not recursively enumerable then A is not recursively enumerable"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1114217,
+   "number": 17,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the grammar defined by the following production rules, with two operators * and + <br>\nS [latex]\\rightarrow[/latex]T *P <br>\nT [latex]\\rightarrow[/latex]U| T*U <br>\nP [latex]\\rightarrow[/latex] Q +P |Q <br>\nQ [latex]\\rightarrow[/latex] Id <br>\nU [latex]\\rightarrow[/latex] Id <br>\nWhich one of the following is TRUE?",
+   "solution": "Checking each statement:<br>- [latex]T\\rightarrow T*U[/latex] is left recursive [latex]\\rightarrow[/latex] * is left associative.<br>\n- [latex]P\\rightarrow Q+P[/latex] is right recursive [latex]\\rightarrow[/latex] + is right associative.<br><br>\n<b>Answer: + is right associative, while * is left associative</b><br><br><a href=\"https://gateoverflow.in/1973/gate2014-2-17#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Parsing",
+   "tag2_url": "https://practicepaper.in/gate-cse/parsing",
+   "options": [
+    "[latex]+[/latex] is left associative, while * is right associative",
+    "[latex]+[/latex] is right associative, while * is left associative",
+    "Both + and * are right associative",
+    "Both + and * are left associative"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1114218,
+   "number": 18,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following is NOT performed during compilation?",
+   "solution": "Type checking, symbol table management and inline expansion are all done by the compiler.<br><br>\nDynamic memory allocation (malloc/new) happens only when the program runs.<br><br>\n<b>Answer: Dynamic memory allocation</b><br><br><a href=\"https://gateoverflow.in/1975/gate2014-2-18#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Runtime Environment",
+   "tag2_url": "https://practicepaper.in/gate-cse/runtime-environment",
+   "options": [
+    "Dynamic memory allocation",
+    "Type checking",
+    "Symbol table management",
+    "Inline expansion"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1114219,
+   "number": 19,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following is TRUE?",
+   "solution": "Checking each statement:<br>- The requirements document says <i>what</i> the system should do, not how it is implemented.<br>\n- Complete and consistent requirements are rarely achieved in practice.<br>\n- Prototyping lets users check the requirements early, so it is a requirements validation technique [latex]\\rightarrow[/latex] True.<br>\n- Requirements review finds errors in the requirements, not in the design.<br><br>\n<b>Answer: Prototyping is a method of requirements validation</b><br><br><a href=\"https://gateoverflow.in/1976/gate2014-2-19#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Software Engg",
+   "tag1_url": "https://practicepaper.in/gate-cse/software-engg",
+   "tag2": "",
+   "tag2_url": "https://practicepaper.in/gate-cse/",
+   "options": [
+    "The requirements document also describes how the requirements that are listed in the document are implemented efficiently.",
+    "Consistency and completeness of functional requirements are always achieved in\npractice.",
+    "Prototyping is a method of requirements validation",
+    "Requirements review is carried out to find the errors in system design"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1114220,
+   "number": 20,
+   "type": "NAT",
+   "marks": 1,
+   "text": "A FAT (file allocation table) based file system is being used and the total overhead of each\nentry in the FAT is 4 bytes in size. Given a 100x[latex]10^{6}[/latex] bytes disk on which the file system is\nstored and data block size is [latex]10^{3}[/latex] bytes, the maximum size of a file that can be stored on this\ndisk in units of [latex]10^{6}[/latex] bytes is _______.",
+   "solution": "Number of blocks = [latex]\\frac{100\\times10^6}{10^3}=10^5[/latex], one FAT entry per block.<br><br>\nFAT size = [latex]10^5\\times4=0.4\\times10^6[/latex] bytes.<br><br>\nMax file size = [latex](100-0.4)\\times10^6=99.6\\times10^6[/latex] bytes.<br><br>\n<b>Answer: 99.6</b><br><br><a href=\"https://gateoverflow.in/1977/gate2014-2-20#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "File Systems",
+   "tag2_url": "https://practicepaper.in/gate-cse/file-systems",
+   "ansMin": 99.55,
+   "ansMax": 99.65
+  }
+ ]
+}

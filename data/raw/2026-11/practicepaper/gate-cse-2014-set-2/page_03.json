@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11142,
+  "quizName": "GATE CS 2014 SET 2",
+  "pageTitle": "GATE CSE 2014 SET-2",
+  "timeLimit": 0,
+  "pageNo": 3,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114211,
+   "number": 11,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Suppose n and p are unsigned int variables in a C program. We wish to set p to [latex]^nC_3[/latex]. If n is large, which one of the following statements is most likely to set p correctly?",
+   "solution": "Checking each statement:<br>- Option 1: n(n[latex]-[/latex]1)(n[latex]-[/latex]2) is computed first, which overflows for large n.<br>\n- Option 2: n(n[latex]-[/latex]1)/2 is always an exact integer; multiplying by (n[latex]-[/latex]2) gives a multiple of 3, so /3 is also exact. Intermediate values stay small.<br>\n- Option 3: n(n[latex]-[/latex]1)/3 need not be exact (e.g. n = 5: 20/3), so truncation gives wrong result.<br>\n- Option 4: divides by 2 and then by 6, i.e. by 12 [latex]\\rightarrow[/latex] wrong.<br><br>\n<b>Answer: p = n * (n - 1) / 2 * (n-2) / 3;</b><br><br><a href=\"https://gateoverflow.in/1965/gate2014-2-11#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Arithmetic Operation",
+   "tag2_url": "https://practicepaper.in/gate-cse/arithmetic-operation",
+   "options": [
+    "p = n * (n - 1) * (n-2) / 6;",
+    "p = n * (n - 1) / 2 * (n-2) / 3;",
+    "p = n * (n - 1) / 3 * (n-2) / 2;",
+    "p = n * (n - 1)  * (n-2) / 6.0;"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1114212,
+   "number": 12,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "A priority queue is implemented as a Max-Heap. Initially, it has 5 elements. The level-order\ntraversal of the heap is: 10, 8, 5, 3, 2. Two new elements 1 and 7 are inserted into the heap in\nthat order. The level-order traversal of the heap after the insertion of the elements is:",
+   "solution": "Heap: 10, 8, 5, 3, 2.<br><br>\n- Insert 1: goes as left child of 5; 1 [latex]\\lt[/latex] 5, no swap [latex]\\rightarrow[/latex] 10, 8, 5, 3, 2, 1<br>\n- Insert 7: goes as right child of 5; 7 [latex]\\gt[/latex] 5, swap; 7 [latex]\\lt[/latex] 10, stop [latex]\\rightarrow[/latex] 10, 8, 7, 3, 2, 1, 5<br><br>\n<b>Answer: 10, 8, 7, 3, 2, 1, 5</b><br><br><a href=\"https://gateoverflow.in/1967/gate2014-2-12#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Heap Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/heap-tree",
+   "options": [
+    "10, 8, 7, 3, 2, 1, 5",
+    "10, 8, 7, 2, 3, 1, 5",
+    "10, 8, 7, 2, 3, 1, 5",
+    "10, 8, 7, 5, 3, 2, 1"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1114213,
+   "number": 13,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Which one of the following correctly determines the solution of the recurrence relation with\nT(1) = 1? <br> [latex]T(n)=2T(\\frac{n}{2})+logn[/latex]",
+   "solution": "Master theorem: a = 2, b = 2, [latex]n^{\\log_2 2}=n[/latex].<br><br>\n[latex]f(n)=\\log n=O(n^{1-\\epsilon})[/latex], so case 1 applies: [latex]T(n)=\\Theta(n)[/latex].<br><br>\n<b>Answer: [latex]\\Theta(n)[/latex]</b><br><br><a href=\"https://gateoverflow.in/1968/gate2014-2-13#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Recurrence Relation",
+   "tag2_url": "https://practicepaper.in/gate-cse/recurrence-relation",
+   "options": [
+    "[latex]\\theta (n)[/latex]",
+    "[latex]\\theta (n logn)[/latex]",
+    "[latex]\\theta (n^{2})[/latex]",
+    "[latex]\\theta (log n)[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1114214,
+   "number": 14,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the tree arcs of a BFS traversal from a source node W in an unweighted, connected,\nundirected graph. The tree T formed by the tree arcs is a data structure for computing",
+   "solution": "In an unweighted graph BFS visits vertices level by level from W, so the tree path from W to any vertex v has the minimum number of edges.<br><br>\nIt does not give shortest paths between other pairs of vertices.<br><br>\n<b>Answer: the shortest path from W to every vertex in the graph</b><br><br><a href=\"https://gateoverflow.in/1969/gate2014-2-14#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Shortest Path",
+   "tag2_url": "https://practicepaper.in/gate-cse/shortest-path",
+   "options": [
+    "the shortest path between every pair of vertices",
+    "the shortest path from W to every vertex in the graph.",
+    "the shortest paths from W to only those nodes that are leaves of T.",
+    "the longest path in the graph."
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1114215,
+   "number": 15,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "If [latex]L_{1}=\\{a^{n}|n\\geq 0\\}[/latex] and [latex]L_{2}=\\{b^{n}|n\\geq 0 \\}[/latex], Consider <br>(I) [latex]  L_{1}\\cdot L_{2}[/latex]  is a regular language <br> (II) [latex] L_{1} \\cdot L_{2}= \\{a^{n}b^{n}|n \\geq 0\\}[/latex]<br> Which one of the following is CORRECT?",
+   "solution": "[latex]L_1\\cdot L_2=\\{a^mb^n\\mid m,n\\ge0\\}=a^*b^*[/latex], which is regular [latex]\\rightarrow[/latex] (I) true.<br><br>\nThe counts of a and b are independent, so it is not [latex]\\{a^nb^n\\}[/latex] (e.g. aab is in it) [latex]\\rightarrow[/latex] (II) false.<br><br>\n<b>Answer: Only (I)</b><br><br><a href=\"https://gateoverflow.in/1971/gate2014-2-15#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Regular Language",
+   "tag2_url": "https://practicepaper.in/gate-cse/regular-language",
+   "options": [
+    "Only (I)",
+    "Only (II)",
+    "Both (I) and (II)",
+    "Neither (I) nor (II)"
+   ],
+   "correct": 0
+  }
+ ]
+}

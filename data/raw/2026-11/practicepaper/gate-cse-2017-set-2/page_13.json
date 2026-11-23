@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11172,
+  "quizName": "GATE CS 2017 SET 2",
+  "pageTitle": "GATE CSE 2017 SET-2",
+  "timeLimit": 0,
+  "pageNo": 13,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2017-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1117261,
+   "number": 61,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "\"We lived in a culture that denied any merit to literary works, considering them important only when they were handmaidens to something seemingly more urgent - namely ideology. This was a country where all gestures, even the most private, were interpreted in political terms.\"<br><br>\n\nThe author's belief that ideology is not as important as literature is revealed by the word:",
+   "solution": "Calling ideology only \"<b>seemingly</b> more urgent\" shows the author does not think it really is more important than literature.<br><br>\n<b>Answer: seemingly</b><br><br><a href=\"https://gateoverflow.in/118420/gate-cse-2017-set-2-question-ga-6#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "culture'",
+    "seemingly'",
+    "urgent'",
+    "political'"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1117262,
+   "number": 62,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "There are three boxes. One contains apples, another contains oranges and the last one contains both apples and oranges. All three are known to be incorrectly labeled. If you are permitted to open just one box and then pull out and inspect only one fruit, which box would you open to determine the contents of all three boxes?",
+   "solution": "All labels are wrong, so the box labelled \"Apples and Oranges\" contains only one kind of fruit. One fruit from it tells you which (say apples). Then the box labelled \"Oranges\" cannot be oranges (wrong label) or apples (already found), so it is the mixed box, and the last box is oranges.<br><br>\n<b>Answer: The box labeled 'Apples and Oranges'</b><br><br><a href=\"https://gateoverflow.in/118421/gate-cse-2017-set-2-question-ga-7#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "The box labeled 'Apples'",
+    "The box labeled 'Apples and Oranges'",
+    "The box labeled 'Oranges'",
+    "Cannot be determined"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1117263,
+   "number": 63,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "[latex]X[/latex] is a 30 digit number starting with the digit 4 followed by the digit 7. Then the number [latex]X^3[/latex] will have",
+   "solution": "X is between [latex]4.7\\times10^{29}[/latex] and [latex]4.8\\times10^{29}[/latex].<br>\n[latex]4.7^3\\approx103.8[/latex] and [latex]4.8^3\\approx110.6[/latex], so [latex]X^3[/latex] is between [latex]1.038\\times10^{89}[/latex] and [latex]1.106\\times10^{89}[/latex] [latex]\\rightarrow[/latex] 90 digits.<br><br>\n<b>Answer: 90 digits</b><br><br><a href=\"https://gateoverflow.in/118422/gate-cse-2017-set-2-question-ga-8#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "90 digits",
+    "91 digits",
+    "92 digits",
+    "93 digits"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1117264,
+   "number": 64,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The number of roots of [latex]e^x+0.5x^2-2=0[/latex] in the range [-5,5] is",
+   "solution": "Let [latex]f(x)=e^x+0.5x^2-2[/latex]. [latex]f(-5)\\approx10.5 \\gt 0[/latex], [latex]f(0)=-1 \\lt 0[/latex], [latex]f(5) \\gt 0[/latex] [latex]\\rightarrow[/latex] at least two sign changes.<br><br>\n[latex]f''(x)=e^x+1 \\gt 0[/latex], so f is convex and has at most 2 roots. Exactly 2.<br><br>\n<b>Answer: 2</b><br><br><a href=\"https://gateoverflow.in/118423/gate-cse-2017-set-2-question-ga-9#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "0",
+    "1",
+    "2",
+    "3"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1117265,
+   "number": 65,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "An air pressure contour line joins locations in a region having the same atmospheric pressure. The following is an air pressure contour plot of a geographical region. Contour lines are shown at 0.05 bar intervals in this plot.<br><br>\nIf the possibility of a thunderstorm is given by how fast air pressure rises or drops over a region, which of the following regions is most likely to have a thunderstorm?<br><img src=\"/wp-content/uploads/GATE/CS/20172/q65.jpg\" /><br>",
+   "solution": "Fastest change of pressure means contour lines packed most closely together. Around R several contour lines are crowded close to each other, so the pressure changes fastest there.<br><br>\n<b>Answer: R</b><br><br><a href=\"https://gateoverflow.in/118424/gate-cse-2017-set-2-question-ga-10#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "P",
+    "Q",
+    "R",
+    "S"
+   ],
+   "correct": 2
+  }
+ ]
+}

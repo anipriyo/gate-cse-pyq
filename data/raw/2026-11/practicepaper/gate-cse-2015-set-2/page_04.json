@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11152,
+  "quizName": "GATE CS 2015 SET 2",
+  "pageTitle": "GATE CSE 2015 SET-2",
+  "timeLimit": 0,
+  "pageNo": 4,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115216,
+   "number": 16,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider two decision problems Q1,Q2 such that Q1 reduces in polynomial time to 3-SAT and 3-SAT reduces in polynomial time to Q2. Then which one of the following is consistent with the above statement?",
+   "solution": "Checking each statement:<br>- Q1 [latex]\\le_p[/latex] 3-SAT, and 3-SAT is in NP [latex]\\rightarrow[/latex] Q1 is in NP.<br>\n- 3-SAT [latex]\\le_p[/latex] Q2, and 3-SAT is NP-hard [latex]\\rightarrow[/latex] Q2 is NP-hard.<br><br>\n<b>Answer: Q1 is in NP, Q2 is NP hard</b><br><br><a href=\"https://gateoverflow.in/8048/gate2015-2-16#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "P-NP Theory",
+   "tag2_url": "https://practicepaper.in/gate-cse/p-np-theory",
+   "options": [
+    "Q1 is in NP, Q2 is NP hard.",
+    "Q2 is in NP, Q1 is NP hard",
+    "Both Q1 and Q2 are in NP .",
+    "Both Q1 and Q2 are NP hard"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1115217,
+   "number": 17,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Match the following:\n<br><img src=\"/wp-content/uploads/GATE/CS/20152/q17.jpg\"/>",
+   "solution": "Checking each statement:<br>- Lexical analysis: DFA minimization (2)<br>\n- Parsing: production (parse) tree (4)<br>\n- Register allocation: graph coloring (1)<br>\n- Expression evaluation: post-order traversal (3)<br><br>\n<b>Answer: P-2, Q-4, R-1, S-3</b><br><br><a href=\"https://gateoverflow.in/8098/gate2015-2-17#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Matching",
+   "tag2_url": "https://practicepaper.in/gate-cse/matching",
+   "options": [
+    "P-2, Q-3, R-1, S-4",
+    "P-2, Q-1, R-4, S-3",
+    "P-2, Q-4, R-1, S-3",
+    "P-2, Q-3, R-4, S-1"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115218,
+   "number": 18,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "In the context of abstract-syntax-tree (AST) and control-flow-graph (CFG), which one of the following is TRUE?",
+   "solution": "Checking each statement:<br>- Option 1: in a CFG a loop edge goes back to earlier code [latex]\\rightarrow[/latex] false.<br>\n- Option 2: CFGs have cycles for loops [latex]\\rightarrow[/latex] false.<br>\n- Option 3: an AST node can have as many children as the construct needs, and a CFG node (e.g. switch) as many successors as the code has [latex]\\rightarrow[/latex] True.<br>\n- Option 4: a CFG basic block can contain many statements [latex]\\rightarrow[/latex] false.<br><br>\n<b>Answer: The maximum number of successors depends on the input program</b><br><br><a href=\"https://gateoverflow.in/8084/gate2015-2-18#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Intermediate Code Generation",
+   "tag2_url": "https://practicepaper.in/gate-cse/intermediate-code-generation",
+   "options": [
+    "In both AST and CFG, let node N2 be the successor of node N1. In the input program, the code corresponding to N2 is present after the code corresponding to N1",
+    "For any input program, neither AST nor CFG will contain a cycle",
+    "The maximum number of successors of a node in an AST and a CFG depends on the input program",
+    "Each node in AST and CFG corresponds to at most one statement in the input program"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1115219,
+   "number": 19,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the basic COCOMO model where E is the effort applied in person-months, D is the development time in chronological months, KLOC is the estimated number of delivered lines of code (in thousands) and [latex]a_{b},b_{b},c_{b},d_{b}[/latex] have their usual meanings. The basic COCOMO equations are of the form",
+   "solution": "Basic COCOMO: effort from size, then time from effort.<br><br>\n[latex]E=a_b(KLOC)^{b_b},\\quad D=c_b(E)^{d_b}[/latex]<br><br>\n<b>Answer: E = [latex]a_b[/latex](KLOC)exp([latex]b_b[/latex]), D = [latex]c_b[/latex](E)exp([latex]d_b[/latex])</b><br><br><a href=\"https://gateoverflow.in/8062/gate2015-2-19#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Software Engg",
+   "tag1_url": "https://practicepaper.in/gate-cse/software-engg",
+   "tag2": "",
+   "tag2_url": "https://practicepaper.in/gate-cse/",
+   "options": [
+    "E=[latex]a_{b}[/latex](KLOC)exp([latex]b_{b}[/latex]), D=[latex]c_{b}(E)[/latex]exp([latex]d_{b}[/latex])",
+    "D=[latex]a_{b}[/latex](KLOC)exp([latex]b_{b}[/latex]), E=[latex]c_{b}[/latex](D)exp([latex]d_{b}[/latex])",
+    "E=[latex]a_{b}[/latex]exp([latex]b_{b}[/latex]), D=[latex]c_{b}[/latex](KLOC)exp([latex]d_{b}[/latex])",
+    "E=[latex]a_{b}[/latex]exp([latex]d_{b}[/latex]), D=[latex]c_{b}[/latex](KLOC)exp([latex]b_{b}[/latex])"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1115220,
+   "number": 20,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "A system has 6 identical resources and N processes competing for them. Each process can request atmost 2 resources. Which one of the following values of N could lead to a deadlock?",
+   "solution": "Deadlock is possible when every process holds one less than its maximum and nothing is left: N [latex]\\times[/latex] (2 [latex]-[/latex] 1) [latex]\\ge[/latex] 6, i.e. [latex]N\\ge6[/latex].<br><br>\nStrictly, none of 1, 2, 3, 4 can deadlock (with N = 4, after each holds 1 there are still 2 free). The question is flawed; the official key marks N = 4, the largest choice.<br><br>\n<b>Answer: 4 (as per key)</b><br><br><a href=\"https://gateoverflow.in/8114/gate2015-2-20#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Deadlock",
+   "tag2_url": "https://practicepaper.in/gate-cse/deadlock",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "correct": 3
+  }
+ ]
+}

@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "quizId": 11141,
+  "quizName": "GATE CS 2014 SET 1",
+  "pageTitle": "GATE CSE 2014 SET-1",
+  "timeLimit": 0,
+  "pageNo": 2,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114106,
+   "number": 6,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Let the function <br> [latex]f(\\theta)=\\begin{vmatrix} sin\\theta & cos\\theta & tan\\theta \\\\ sin(\\frac{\\pi}{6}) & cos(\\frac{\\pi}{6}) & tan(\\frac{\\pi}{6})\\\\ sin(\\frac{\\pi}{3})& cos(\\frac{\\pi}{3}) & tan(\\frac{\\pi}{3}) \\end{vmatrix}[/latex] <br>  where [latex]\\theta \\in [\\frac{\\pi}{6},\\frac{\\pi}{3}][/latex] and [latex]f'(\\theta )[/latex] denote the derivative of  f with respect to [latex]\\theta[/latex] . Which of the following\nstatements is/are TRUE? <br>(I) There existrs [latex]\\theta \\in (\\frac{\\pi}{6},\\frac{\\pi}{3})[/latex] such that [latex]f'(\\theta )=0[/latex] <br> (I) There existrs [latex]\\theta \\in (\\frac{\\pi}{6},\\frac{\\pi}{3})[/latex] such that [latex]f'(\\theta )\\neq 0[/latex] ",
+   "solution": "At [latex]\\theta=\\pi/6[/latex] the first row equals the second, and at [latex]\\theta=\\pi/3[/latex] it equals the third, so [latex]f(\\pi/6)=f(\\pi/3)=0[/latex].<br><br>\n- By Rolle's theorem, [latex]f'(\\theta)=0[/latex] somewhere in between [latex]\\rightarrow[/latex] I true.<br>\n- f is not constant, so [latex]f'(\\theta)\\ne0[/latex] somewhere [latex]\\rightarrow[/latex] II true.<br><br>\n<b>Answer: Both I and II</b><br><br><a href=\"https://gateoverflow.in/1763/gate2014-1-6#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "options": [
+    "I only ",
+    "II only",
+    "Both I and II",
+    "Neither I nor II"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1114107,
+   "number": 7,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following Boolean Algebra for F: <br>[latex]F(P,Q,R,S)=PQ+\\bar{P}QR+\\bar{P}Q\\bar{R}S[/latex] <br> The minimal sum-of products form of F is",
+   "solution": "[latex]F=Q(P+\\bar PR+\\bar P\\bar RS)=Q(P+R+S)=PQ+QR+QS[/latex] (using [latex]P+\\bar PR=P+R[/latex] and [latex]R+\\bar RS=R+S[/latex]).<br><br>\n<b>Answer: PQ+QR+QS</b><br><br><a href=\"https://gateoverflow.in/1764/gate2014-1-7#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Boolean Algebra",
+   "tag2_url": "https://practicepaper.in/gate-cse/boolean-algebra",
+   "options": [
+    "PQ+QR+QS",
+    "P+Q+R+S",
+    "[latex]\\bar{P}+\\bar{Q}+\\bar{R}+\\bar{S}[/latex]",
+    "[latex]\\bar{P}R+\\bar{PRS}+P[/latex]"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1114108,
+   "number": 8,
+   "type": "NAT",
+   "marks": 1,
+   "text": "The base (or radix) of the number system such that the following equation holds is_______. <br> [latex]\\frac{312}{20}=13.1[/latex]",
+   "solution": "In base b: [latex]312=3b^2+b+2[/latex], [latex]20=2b[/latex], [latex]13.1=b+3+\\frac1b[/latex].<br>\n[latex]3b^2+b+2=2b\\left(b+3+\\frac1b\\right)=2b^2+6b+2\\Rightarrow b^2=5b\\Rightarrow b=5[/latex]<br><br>\n<b>Answer: 5</b><br><br><a href=\"https://gateoverflow.in/1766/gate2014-1-8#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Digital Logic",
+   "tag1_url": "https://practicepaper.in/gate-cse/digital-logic",
+   "tag2": "Number System",
+   "tag2_url": "https://practicepaper.in/gate-cse/number-system",
+   "ansMin": 5,
+   "ansMax": 5
+  },
+  {
+   "id": 1114109,
+   "number": 9,
+   "type": "NAT",
+   "marks": 1,
+   "text": "A machine has a 32-bit architecture, with 1-word long instructions. It has 64 registers, each of  which is 32 bits long. It needs to support 45 instructions, which have an immediate operand in addition to two register operands. Assuming that the immediate operand is an unsigned integer, the maximum value of the immediate operand is ____________.",
+   "solution": "Checking each statement:<br>- 45 instructions [latex]\\rightarrow[/latex] 6-bit opcode<br>\n- 2 registers of 64 [latex]\\rightarrow[/latex] 6 + 6 = 12 bits<br>\n- Immediate = 32 [latex]-[/latex] 6 [latex]-[/latex] 12 = 14 bits [latex]\\rightarrow[/latex] max unsigned value [latex]2^{14}-1=16383[/latex]<br><br>\n<b>Answer: 16383</b><br><br><a href=\"https://gateoverflow.in/1767/gate2014-1-9#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Organization",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-organization",
+   "tag2": "Machine Instruction",
+   "tag2_url": "https://practicepaper.in/gate-cse/machine-instruction",
+   "ansMin": 16383,
+   "ansMax": 16383
+  },
+  {
+   "id": 1114110,
+   "number": 10,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Consider the following program in C language:\n<pre><code>#include &lt;stdio.h&gt;\nmain()\n{\n  int i;\n  int * pi = &i;\n  scanf( \"%d\", pi) ;\n  printf (\"%d \\n\", i+5) ;\n}</code></pre>\nWhich one of the following statements is TRUE?",
+   "solution": "pi points to i, so scanf(\"%d\", pi) stores the entered number in i. printf prints i + 5.<br><br>\n<b>Answer: On execution, the value printed is 5 more than the integer value entered</b><br><br><a href=\"https://gateoverflow.in/1770/gate2014-1-10#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Array and Pointer",
+   "tag2_url": "https://practicepaper.in/gate-cse/array-and-pointer",
+   "options": [
+    "Compilation fails.",
+    "Execution results in a run-time error.",
+    "On execution, the value printed is 5 more than the address of variable i.",
+    "On execution, the value printed is 5 more than the integer value entered"
+   ],
+   "correct": 3
+  }
+ ]
+}

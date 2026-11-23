@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11142,
+  "quizName": "GATE CS 2014 SET 2",
+  "pageTitle": "GATE CSE 2014 SET-2",
+  "timeLimit": 0,
+  "pageNo": 12,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-2",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114256,
+   "number": 56,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Choose the most appropriate phrase from the options given below to complete the following sentence.\n<br><br>\nIndia is a post-colonial country because",
+   "solution": "\"Post-colonial\" describes a country after colonial rule has ended. India is post-colonial because it was earlier a British colony.<br><br>\n<b>Answer: it was a former British colony</b><br><br><a href=\"https://gateoverflow.in/1938/gate-cse-2014-set-2-question-ga-1#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "it was a former British colony",
+    "Indian Information Technology professionals have colonized the world",
+    "India does not follow any colonial practices",
+    "India has helped other countries gain freedom"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1114257,
+   "number": 57,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Who ___________ was coming to see us this evening?",
+   "solution": "Direct question: \"Who did you say was coming to see us this evening?\" \"Did you say\" is the question form, and \"that\" cannot follow when \"who\" is the subject of the clause.<br><br>\n<b>Answer: did you say</b><br><br><a href=\"https://gateoverflow.in/1939/gate-cse-2014-set-2-question-ga-2#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "you said",
+    "did you say",
+    "did you say that",
+    "had you said"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1114258,
+   "number": 58,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "Match the columns.\n<br><br>[latex]\\begin{array}{ll|ll}\\hline &\\textbf{Column 1} & & \\textbf{Column 2 } \\\\\\hline 1.& \\text{eradicate} &P. &\\text{misrepresent}\\\\\\hline 2.&\\text{distort} &Q.& \\text{soak completely}\\\\\\hline 3.&\\text{saturate} &R.& \\text{use}\\\\\\hline 4.&\\text{utilize} &S.& \\text{destroy utterly}\\\\\\hline \\end{array}[/latex]\n",
+   "solution": "Checking each statement:<br>- eradicate = destroy utterly (S)<br>\n- distort = misrepresent (P)<br>\n- saturate = soak completely (Q)<br>\n- utilize = use (R)<br><br>\n<b>Answer: 1:S, 2:P, 3:Q, 4:R</b><br><br><a href=\"https://gateoverflow.in/1940/gate-cse-2014-set-2-question-ga-3#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Verbal Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/verbal-ability",
+   "options": [
+    "1:S, 2:P, 3:Q, 4:R",
+    "1:P, 2:Q, 3:R, 4:S",
+    "1:Q, 2:R, 3:S, 4:P",
+    "1:S, 2:P, 3:R, 4:Q"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1114259,
+   "number": 59,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "What is the average of all multiples of 10 from 2 to 198?",
+   "solution": "Multiples of 10 between 2 and 198: 10, 20, ..., 190 (an AP).<br><br>\nAverage = [latex]\\frac{10+190}{2}=100[/latex]<br><br>\n<b>Answer: 100</b><br><br><a href=\"https://gateoverflow.in/1941/gate-cse-2014-set-2-question-ga-4#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "90",
+    "100",
+    "110",
+    "120"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1114260,
+   "number": 60,
+   "type": "MCQ",
+   "marks": 1,
+   "text": "The value of [latex]\\sqrt{12+\\sqrt{12+\\sqrt{12+\\dots}}}[/latex] is",
+   "solution": "Let [latex]x=\\sqrt{12+x}[/latex] [latex]\\rightarrow[/latex] [latex]x^2-x-12=0[/latex] [latex]\\rightarrow[/latex] (x [latex]-[/latex] 4)(x + 3) = 0.<br><br>\nx must be positive, so x = 4.<br><br>\n<b>Answer: 4</b><br><br><a href=\"https://gateoverflow.in/1942/gate-cse-2014-set-2-question-ga-5#a_list\" target=_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "General Aptitude",
+   "tag1_url": "https://practicepaper.in/gate-cse/general-aptitude",
+   "tag2": "Numerical Ability",
+   "tag2_url": "https://practicepaper.in/gate-cse/numerical-ability",
+   "options": [
+    "3.464",
+    "3.932",
+    "4",
+    "4.444"
+   ],
+   "correct": 2
+  }
+ ]
+}

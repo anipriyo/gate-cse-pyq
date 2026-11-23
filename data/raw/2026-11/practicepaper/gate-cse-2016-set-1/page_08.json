@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "quizId": 11161,
+  "quizName": "GATE CS 2016 SET 1",
+  "pageTitle": "GATE CSE 2016 SET-1",
+  "timeLimit": 0,
+  "pageNo": 8,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2016-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1116136,
+   "number": 36,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "What will be the output of the following pseudo-code when parameters are passed by reference and dynamic scoping is assumed?<pre><code>\na=3;\nvoid n(x){x=x*a;  print(x);}\nvoid m(y){a=1;a=y-a;n(a);print(a);}\nvoid main(){m(a);}</code></pre>",
+   "solution": "Read \"a = 1\" in m as declaring a <b>local a</b> of m. y refers to the global a (= 3).<br>\n- m: local a = 1, then a = y [latex]-[/latex] a = 3 [latex]-[/latex] 1 = <b>2</b>.<br>\n- n(a): x refers to m's local a. With dynamic scoping, the a inside n is also m's a (the most recent active a). x = x [latex]\\times[/latex] a = 2 [latex]\\times[/latex] 2 = 4, and since x is that same a, a becomes 4. Prints <b>4</b>.<br>\n- Back in m: print(a) prints <b>4</b>.<br><br>\n<b>Answer: 4,4</b><br><br><a href=\"https://gateoverflow.in/39701/gate2016-1-36#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Function",
+   "tag2_url": "https://practicepaper.in/gate-cse/function",
+   "options": [
+    "6,2",
+    "6,6",
+    "4,2",
+    "4,4"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1116137,
+   "number": 37,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "An operator delete(i) for a binary heap data structure is to be designed to delete the item in the i-th node.Assume that the heap is implemented in an array and i refers to the i-th index of thearray.If the heap tree has depth d (number of edges on the path from the root to the farthest leaf),the n what is the time complexity to re-fix the heap efficiently after the removal of the element?",
+   "solution": "To delete node i: move the last element into position i, then either sift it up or down. Either way it moves along one root-to-leaf path, at most d levels [latex]\\rightarrow[/latex] [latex]O(d)[/latex]. It can take that long, so it is not [latex]O(1)[/latex].<br><br>\n<b>Answer: O(d) but not O(1)</b><br><br><a href=\"https://gateoverflow.in/39706/gate2016-1-37#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Heap Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/heap-tree",
+   "options": [
+    "O(1)",
+    "O(d) but not O(1)",
+    "O([latex]2^{d}[/latex]) but not O(d)",
+    "O(d [latex]2^{d}[/latex]) but not O([latex]2^{d}[/latex])"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1116138,
+   "number": 38,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the weighted undirected graph with 4 vertices,where the weigh to edge {i, j} is given by the entry Wij in the matrix W. <br> [latex]W=\\begin{bmatrix} 0 & 2&8 & 5\\\\ 2& 0& 5 &8 \\\\ 8 & 5 & 0& x\\\\ 5&8 & x&0 \\end{bmatrix}[/latex] <br>The largest possible integer value of x, for which at least one shortest path between some pair\nof vertices will contain the edge with weight x is ____.",
+   "solution": "Without edge {3, 4}, the shortest path from 3 to 4 is 3-2-1-4 = 5 + 2 + 5 = 12.<br><br>\nThe edge of weight x lies on a shortest path (at least one, possibly tied) only if [latex]x\\le12[/latex]. The largest integer is 12.<br><br>\n<b>Answer: 12</b><br><br><a href=\"https://gateoverflow.in/39731/gate2016-1-38#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Shortest Path",
+   "tag2_url": "https://practicepaper.in/gate-cse/shortest-path",
+   "ansMin": 12,
+   "ansMax": 12
+  },
+  {
+   "id": 1116139,
+   "number": 39,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Let G be a complete undirected graph on 4 vertices, having 6 edges  with weights being 1,2,3,4,5, and 6. The maximum possible weight that a minimum weight spanning tree of G can haveis .",
+   "solution": "An MST of 4 vertices has 3 edges; edges 1 and 2 are always taken (two edges cannot form a cycle).<br><br>\nTo make the third edge as heavy as possible, put edges 1, 2, 3 in a triangle, so 3 is rejected. The 4th vertex must then be joined by the next lightest edge, 4.<br><br>\nMaximum MST weight = 1 + 2 + 4 = 7<br><br>\n<b>Answer: 7</b><br><br><a href=\"https://gateoverflow.in/39725/gate2016-1-39#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Minimum Spanning Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/minimum-spanning-tree",
+   "ansMin": 7,
+   "ansMax": 7
+  },
+  {
+   "id": 1116140,
+   "number": 40,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "G = (V,E) is an undirected simple graph in which each edge has a distinct weight,and e is a particular edgeof G. Which of the following statements about the minimum spanning trees (MSTs) of G is/are TRUE? <br>\nI. If e is the lightest edge of some cycle in G, then every MST of G includes e <br>\nII. If e is the heaviest edge of some cycle in G, then every MST of G excludes e",
+   "solution": "Checking each statement:<br>- I: the lightest edge of one cycle can still be the heaviest edge of another cycle and be excluded [latex]\\text{---}[/latex] FALSE.<br>\n- II: <b>cycle property</b>: with distinct weights, the heaviest edge of any cycle is in no MST [latex]\\text{---}[/latex] TRUE.<br><br>\n<b>Answer: II only</b><br><br><a href=\"https://gateoverflow.in/39727/gate2016-1-40#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Minimum Spanning Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/minimum-spanning-tree",
+   "options": [
+    "I only",
+    "II only",
+    "both I and II",
+    "neither I nor II"
+   ],
+   "correct": 1
+  }
+ ]
+}

@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "quizId": 11151,
+  "quizName": "GATE CS 2015 SET 1",
+  "pageTitle": "GATE CSE 2015 SET-1",
+  "timeLimit": 0,
+  "pageNo": 11,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115151,
+   "number": 51,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following relations: <br><img src=\"/wp-content/uploads/GATE/CS/20151/q51.jpg\"/><br>  Consider the following SQL query. <br> <img src=\"/wp-content/uploads/GATE/CS/20151/q51a.jpg\"/><br>The number of rows that will be returned by the SQL query is _____________.",
+   "solution": "The query groups by Student_Name. The names are Raj (roll 1 and roll 3) and Rohit, so there are 2 groups.<br><br>\nRows: Raj, 310 and Rohit, 140<br><br>\n<b>Answer: 2</b><br><br><a href=\"https://gateoverflow.in/8225/gate2015-1-51#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Database Management System",
+   "tag1_url": "https://practicepaper.in/gate-cse/database-management-system",
+   "tag2": "SQL",
+   "tag2_url": "https://practicepaper.in/gate-cse/sql",
+   "ansMin": 2,
+   "ansMax": 2
+  },
+  {
+   "id": 1115152,
+   "number": 52,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "What is the output of the following C code? Assume that the address of x is 2000 (in decimal) and an integer requires four bytes of memory. <pre><code>int main () {\nunsigned int x[4][3] ={{1,2,3},{4,5,6},{7,8,9},{10,11,12}};\nprintf(\"%u, %u, %u\", x+3, *(x+3), *(x+2)+3);\n}</code></pre>",
+   "solution": "One row = 3 ints = 12 bytes.<br><br>\n- x + 3 = address of row 3 = 2000 + 3 [latex]\\times[/latex] 12 = 2036<br>\n- *(x + 3) = address of x[3][0] = 2036<br>\n- *(x + 2) + 3 = address of x[2][0] + 3 ints = 2024 + 12 = 2036<br><br>\n<b>Answer: 2036, 2036, 2036</b><br><br><a href=\"https://gateoverflow.in/8283/gate2015-1-52#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Array and Pointer",
+   "tag2_url": "https://practicepaper.in/gate-cse/array-and-pointer",
+   "options": [
+    "2036, 2036, 2036",
+    "2012, 4, 2204",
+    "2036, 10, 10",
+    "2012, 4, 6"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1115153,
+   "number": 53,
+   "type": "NAT",
+   "marks": 2,
+   "text": "The graph shown below has 8 edges with distinct integer edge weights. The minimum spanning tree (MST) is of weight 36 and contains the edges: {(A, C), (B, C), (B, E), (E, F), (D, F)}. The edge weights of only those edges which are in the MST are given in the figure shown below. The minimum possible sum of weights of all 8 edges of this graph is ___________. <br><img src=\"/wp-content/uploads/GATE/CS/20151/q53.jpg\"/> ",
+   "solution": "MST weights: AC = 9, BC = 2, BE = 15, EF = 4, DF = 6 (total 36). A non-MST edge must be heavier than every MST edge on its cycle (weights are distinct).<br><br>\n- AB: cycle A-C-B, max 9 [latex]\\rightarrow[/latex] AB [latex]\\ge[/latex] 10<br>\n- CD: path C-B-E-F-D, max 15 [latex]\\rightarrow[/latex] CD [latex]\\ge[/latex] 16<br>\n- DE: path D-F-E, max 6 [latex]\\rightarrow[/latex] DE [latex]\\ge[/latex] 7<br><br>\nMinimum total = 36 + 10 + 16 + 7 = 69<br><br>\n<b>Answer: 69</b><br><br><a href=\"https://gateoverflow.in/8313/gate2015-1-53#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Minimum Spanning Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/minimum-spanning-tree",
+   "ansMin": 69,
+   "ansMax": 69
+  },
+  {
+   "id": 1115154,
+   "number": 54,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following C function. <pre><code>int fun1(int n){\n    int i,j,k,p,q=0;\n    for (i=1; i < n; ++i) {\n        p=0;\n        for (j=n; j > 1; j=j/2)\n              ++p;\n        for (k=1; k < p; k=k*2) \n             ++q;\n        }\n    return q;\n} </pre></code> Which one of the following most closely approximates the return value of the function fun1?",
+   "solution": "For each of the n iterations:<br>\n- the j loop makes [latex]p\\approx\\log n[/latex]<br>\n- the k loop doubles k up to p, adding [latex]\\log p\\approx\\log\\log n[/latex] to q<br><br>\nq [latex]\\approx n\\log\\log n[/latex]<br><br>\n<b>Answer: [latex]n\\log(\\log n)[/latex]</b><br><br><a href=\"https://gateoverflow.in/8263/gate2015-1-54#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Asymptotic Notation",
+   "tag2_url": "https://practicepaper.in/gate-cse/asymptotic-notation",
+   "options": [
+    "[latex]n^{3}[/latex]",
+    "[latex]n(log n)^{2}[/latex]",
+    "[latex]n log n[/latex]",
+    "[latex]n log(log n)[/latex]"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1115155,
+   "number": 55,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the following pseudo code, where x and y are positive integers. <pre><code> begin\n   q := 0\n    r := x \n    while r >= y  do\n         begin\n               r := r - y\n              q := q + 1\n        end\nend </code></pre> The post condition that needs to be satisfied after the program terminates is",
+   "solution": "The loop subtracts y from r and counts it in q, which is division of x by y. Invariant: x = qy + r. The loop stops when r [latex]\\lt[/latex] y.<br><br>\n<b>Answer: {x = qy + r [latex]\\wedge[/latex] r [latex]\\lt[/latex] y}</b><br><br><a href=\"https://gateoverflow.in/8276/gate2015-1-55#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "C Programming",
+   "tag1_url": "https://practicepaper.in/gate-cse/c-programming",
+   "tag2": "Loop",
+   "tag2_url": "https://practicepaper.in/gate-cse/loop",
+   "options": [
+    "{[latex]r=qx+y \\; \\wedge \\; r \\lt y[/latex]}",
+    "{[latex]x=qy+r \\; \\wedge \\; r \\lt y[/latex]}",
+    "{[latex]y=qx+r  \\; \\wedge \\; 0 \\lt r \\lt y[/latex]}",
+    "{[latex] q+1 \\lt r-y \\; \\wedge  \\; y \\gt 0[/latex]}"
+   ],
+   "correct": 1
+  }
+ ]
+}

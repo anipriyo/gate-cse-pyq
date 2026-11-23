@@ -22,6 +22,10 @@ import time
 import urllib.parse
 import urllib.request
 
+import syllabus as SY
+
+MOCK_ONLY_BEFORE = 2018  # papers older than this are used only as full mock tests
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 BASE = "https://practicepaper.in"
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
@@ -45,7 +49,11 @@ def canon(name, aliases, seen):
     """Trim, apply aliases, and fold case-only variants onto the first spelling seen."""
     name = re.sub(r"\s+", " ", name).strip()
     name = aliases.get(name, name)
-    return seen.setdefault(name.lower(), name)
+    best = seen.get(name.lower())
+    # prefer the properly capitalised spelling ("Dynamic Programming" over "Dynamic programming")
+    if best is None or sum(c.isupper() for c in name) > sum(c.isupper() for c in best):
+        seen[name.lower()] = name
+    return seen[name.lower()]
 
 
 def plain(s, words=12):
@@ -107,6 +115,11 @@ def main():
     records, missing, problems = [], [], []
     subj_seen, topic_seen = {}, {}
     papers = []
+    # pre-pass so every spelling variant is known before names are fixed
+    for f in raw.glob("*/page_*.json"):
+        for q in json.loads(f.read_text())["questions"]:
+            sj = canon((q.get("tag1") or "Uncategorised"), SUBJECT_ALIASES, subj_seen)
+            canon((q.get("tag2") or sj), TOPIC_ALIASES, topic_seen)
     for pdir in sorted(raw.iterdir()):
         slug = pdir.name
         year, st, label = paper_meta(slug)
@@ -123,13 +136,13 @@ def main():
         if marks != meta["totalMarks"]:
             problems.append(f"{slug}: marks sum {marks}, site says {meta['totalMarks']}")
         papers.append({"slug": slug, "year": year, "set": st, "label": label,
-                       "questions": len(qs), "marks": marks})
+                       "questions": len(qs), "marks": marks, "mock_only": year < MOCK_ONLY_BEFORE})
 
         for q in qs:
-            subject = canon((q.get("tag1") or "Uncategorised"), SUBJECT_ALIASES, subj_seen)
-            topic = canon((q.get("tag2") or subject), TOPIC_ALIASES, topic_seen)
-            if topic == subject:
-                topic = "Mixed / other"
+            pp_subject = canon((q.get("tag1") or "Uncategorised"), SUBJECT_ALIASES, subj_seen)
+            pp_topic = canon((q.get("tag2") or pp_subject), TOPIC_ALIASES, topic_seen)
+            qid = f"{year}{'-' + str(st) if st else ''}-{q['number']:02d}"
+            subject, topic = SY.remap(qid, pp_subject, pp_topic)
             sol = q.get("solution") or ""
             go = GO_RE.search(sol)
             go_url = go.group(1) if go else None
@@ -153,17 +166,21 @@ def main():
 
             yt_query = f"{label} {plain(q.get('text'))}"
             records.append({
-                "id": f"{year}{'-' + str(st) if st else ''}-{q['number']:02d}",
+                "id": qid,
                 "paper": slug,
                 "paper_label": label,
                 "year": year,
                 "set": st,
                 "number": q["number"],
-                "section": "GA" if subject == "General Aptitude" else "CS",
+                "section": "GA" if pp_subject == "General Aptitude" else "CS",
                 "type": t,
                 "marks": q["marks"],
                 "subject": subject,
                 "topic": topic,
+                "in_syllabus": SY.in_syllabus(subject, topic),
+                "mock_only": year < MOCK_ONLY_BEFORE,
+                "pp_subject": pp_subject,
+                "pp_topic": pp_topic,
                 "text": localise_images(q.get("text"), missing),
                 "options": [localise_images(o, missing) for o in (q.get("options") or [])],
                 "answer": answer,
@@ -173,15 +190,39 @@ def main():
                 "source_url": f"{BASE}/gate-cse/{slug}" + ("" if q["_page"] == 1 else f"?page_no={q['_page']}"),
             })
 
+    # ---- syllabus mapping + validation ----------------------------------
+    pool = [r for r in records if not r["mock_only"]]
+    pool_keys = {}
+    for r in pool:
+        pool_keys.setdefault((r["subject"], r["topic"]), 0)
+        pool_keys[(r["subject"], r["topic"])] += 1
+    sections, mapped = [], set()
+    for sec in SY.SECTIONS:
+        groups = []
+        for g in sec["groups"]:
+            items = []
+            for text, tops in g["items"]:
+                keys = [f"{a}||{b}" for a, b in tops if (a, b) in pool_keys]
+                mapped.update((a, b) for a, b in tops)
+                items.append({"text": text, "topics": keys})
+            groups.append({"name": g["name"], "items": items})
+        sections.append({"id": sec["id"], "name": sec["name"], "groups": groups})
+    out_syl = sorted(f"{a}||{b}" for (a, b) in pool_keys if not SY.in_syllabus(a, b))
+    unmapped = sorted(k for k in pool_keys if k not in mapped and SY.in_syllabus(*k))
+    for k in unmapped:
+        problems.append(f"practice topic not on any syllabus line: {k[0]} / {k[1]} ({pool_keys[k]} q)")
+    empty_lines = [(sec["id"], it["text"][:50]) for sec in sections for g in sec["groups"] for it in g["items"] if not it["topics"]]
+    syllabus_out = {"exam": SY.EXAM, "pdfs": SY.PDFS, "sections": sections, "out_of_syllabus": out_syl}
+
     # ---- outputs -------------------------------------------------------
-    out = {"source": "practicepaper.in", "snapshot": month, "papers": papers, "questions": records}
+    out = {"source": "practicepaper.in", "snapshot": month, "papers": papers, "syllabus": syllabus_out, "questions": records}
     (ROOT / "data" / "pyqs.json").write_text(json.dumps(out, ensure_ascii=False, indent=1))
 
     db = ROOT / "data" / "pyqs.sqlite"
     db.unlink(missing_ok=True)
     con = sqlite3.connect(db)
     cols = ["id", "paper", "paper_label", "year", "set", "number", "section", "type", "marks",
-            "subject", "topic", "text", "options", "answer", "solution", "go_url", "youtube_url", "source_url"]
+            "subject", "topic", "in_syllabus", "mock_only", "pp_subject", "pp_topic", "text", "options", "answer", "solution", "go_url", "youtube_url", "source_url"]
     con.execute(f"CREATE TABLE questions ({', '.join('"' + c + '"' + (' PRIMARY KEY' if c == 'id' else '') for c in cols)})")
     con.executemany(f"INSERT INTO questions VALUES ({','.join('?' * len(cols))})",
                     [[json.dumps(r[c], ensure_ascii=False) if isinstance(r[c], (list, dict)) else r[c] for c in cols]
@@ -194,10 +235,16 @@ def main():
     (site / "questions.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")))
     if (ROOT / "data" / "img").exists():
         shutil.copytree(ROOT / "data" / "img", site / "img", dirs_exist_ok=True)
+    syl_pdfs = sorted((ROOT / "data" / "raw").glob("*/syllabus"))
+    if syl_pdfs:
+        shutil.copytree(syl_pdfs[-1], site / "syllabus", dirs_exist_ok=True)
 
     print(f"{len(records)} questions from {len(papers)} papers (snapshot {month})")
     for p in papers:
         print(f"  {p['label']:<22} {p['questions']:>3} q  {p['marks']:>3} marks")
+    print(f"Practice pool: {len(pool)} questions (papers {MOCK_ONLY_BEFORE}+); mock-only: {len(records) - len(pool)}")
+    print(f"Syllabus: {sum(len(g['items']) for s_ in sections for g in s_['groups'])} lines; out-of-syllabus topics in pool: {out_syl}")
+    print(f"Syllabus lines with no 2018+ PYQ topic: {empty_lines}")
     print(f"GO links: {sum(1 for r in records if r['go_url'])}/{len(records)}")
     print(f"Images missing: {len(missing)}")
     for m in missing[:20]:

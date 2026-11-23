@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "quizId": 11143,
+  "quizName": "GATE CS 2014 SET 3",
+  "pageTitle": "GATE CSE 2014 SET-3",
+  "timeLimit": 0,
+  "pageNo": 7,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2014-set-3",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1114331,
+   "number": 31,
+   "type": "NAT",
+   "marks": 2,
+   "text": "A system contains three programs and each requires three tape units for its operation. The minimum number of tape units which the system must have such that deadlocks never arise is _________.",
+   "solution": "Worst case: each program holds 2 tapes and waits for a third. That uses 3 [latex]\\times[/latex] 2 = 6 tapes with deadlock.<br><br>\nOne more tape lets one program finish and release its tapes: 6 + 1 = 7.<br><br>\n<b>Answer: 7</b><br><br><a href=\"https://gateoverflow.in/2065/gate2014-3-31#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Deadlock",
+   "tag2_url": "https://practicepaper.in/gate-cse/deadlock",
+   "ansMin": 7,
+   "ansMax": 7
+  },
+  {
+   "id": 1114332,
+   "number": 32,
+   "type": "NAT",
+   "marks": 2,
+   "text": "An operating system uses shortest remaining time first scheduling algorithm for pre-emptive\nscheduling of processes. Consider the following set of processes with their arrival times and\nCPU burst times (in milliseconds): <br><img src=\"/wp-content/uploads/GATE/CS/20143/q32.jpg\"/><br>  The average waiting time (in milliseconds) of the processes is _________.",
+   "solution": "SRTF schedule:<br>\n- 0-2 P1 (rem 10)<br>\n- 2-6 P2 (P3 arriving at 3 needs 6, more than P2's remaining)<br>\n- 6-12 P3 (P4 arriving at 8 needs 5, more than P3's remaining 4)<br>\n- 12-17 P4, 17-27 P1<br><br>\nWaiting = completion [latex]-[/latex] arrival [latex]-[/latex] burst:<br>\nP1 = 27 [latex]-[/latex] 0 [latex]-[/latex] 12 = 15, P2 = 0, P3 = 12 [latex]-[/latex] 3 [latex]-[/latex] 6 = 3, P4 = 17 [latex]-[/latex] 8 [latex]-[/latex] 5 = 4<br><br>\nAverage = 22 / 4 = 5.5<br><br>\n<b>Answer: 5.5</b><br><br><a href=\"https://gateoverflow.in/2066/gate2014-3-32#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "CPU Scheduling",
+   "tag2_url": "https://practicepaper.in/gate-cse/cpu-scheduling",
+   "ansMin": 5.5,
+   "ansMax": 5.5
+  },
+  {
+   "id": 1114333,
+   "number": 33,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a paging hardware with a TLB. Assume that the entire page table and all the pages are in the physical memory. It takes 10 milliseconds to search the TLB and 80 milliseconds to access the physical memory. If the TLB hit ratio is 0.6, the effective memory access time (in milliseconds) is _________.",
+   "solution": "Checking each statement:<br>- TLB hit: 10 + 80 = 90<br>\n- TLB miss: 10 + 80 (page table) + 80 (data) = 170<br><br>\nEMAT = 0.6 [latex]\\times[/latex] 90 + 0.4 [latex]\\times[/latex] 170 = 54 + 68 = 122<br><br>\n<b>Answer: 122</b><br><br><a href=\"https://gateoverflow.in/2067/gate2014-3-33#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Memory Management",
+   "tag2_url": "https://practicepaper.in/gate-cse/memory-management",
+   "ansMin": 122,
+   "ansMax": 122
+  },
+  {
+   "id": 1114334,
+   "number": 34,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider the basic block given below.<br>\na= b + c <br>\nc =a + d <br>\nd =b + c <br>\ne =d - b <br>\na =e + b <br>\nThe minimum number of nodes and edges present in the DAG representation of the above basic block respectively are",
+   "solution": "Simplify using values:<br>\n- d = b + c, e = d [latex]-[/latex] b = c (the new c), a = e + b = c + b = d<br><br>\nSo e shares the node of c, and the last a shares the node of d.<br><br>\n- Leaves: b, c0, d0 (3 nodes)<br>\n- n1 = b + c0 (a), n2 = n1 + d0 (c, e), n3 = b + n2 (d, a) (3 nodes, 2 edges each)<br><br>\nNodes = 6, edges = 6<br><br>\n<b>Answer: 6 and 6</b><br><br><a href=\"https://gateoverflow.in/2068/gate2014-3-34#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Compiler Design",
+   "tag1_url": "https://practicepaper.in/gate-cse/compiler-design",
+   "tag2": "Intermediate Code Generation",
+   "tag2_url": "https://practicepaper.in/gate-cse/intermediate-code-generation",
+   "options": [
+    "6 and 6",
+    "8 and 10",
+    "9 and 12",
+    "4 and 4"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1114335,
+   "number": 35,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Which one of the following problems is undecidable?",
+   "solution": "Membership (CYK), emptiness and finiteness of CFLs are all decidable.<br><br>\nAmbiguity of a CFG is undecidable (reduction from Post Correspondence Problem).<br><br>\n<b>Answer: Deciding if a given context-free grammar is ambiguous</b><br><br><a href=\"https://gateoverflow.in/2069/gate2014-3-35#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Theory of Computation",
+   "tag1_url": "https://practicepaper.in/gate-cse/theory-of-computation",
+   "tag2": "Undecidability",
+   "tag2_url": "https://practicepaper.in/gate-cse/undecidability",
+   "options": [
+    "Deciding if a given context-free grammar is ambiguous",
+    "Deciding if a given string is generated by a given context-free grammar",
+    "Deciding if the language generated by a given context-free grammar is empty",
+    "Deciding if the language generated by a given context-free grammar is finite."
+   ],
+   "correct": 0
+  }
+ ]
+}

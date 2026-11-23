@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "quizId": 11171,
+  "quizName": "GATE CS 2017 SET 1",
+  "pageTitle": "GATE CSE 2017 SET-1",
+  "timeLimit": 0,
+  "pageNo": 6,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2017-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1117126,
+   "number": 26,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let G = (V, E) be any connected undirected edge-weighted graph. The weights of the edges in\nE are positive and distinct. Consider the following statements:<br><br>\n(I) Minimum spanning tree of G is always unique. <br>\n(II) Shortest path between any two vertices of G is always unique. <br><br>\nWhich of the above statements is/are necessarily true?",
+   "solution": "Checking each statement:<br>- (I): distinct weights [latex]\\Rightarrow[/latex] unique MST True<br>\n- (II): two different paths can have equal total weight even with distinct edges (e.g. 1 + 4 = 2 + 3) False<br><br>\n<b>Answer: (I) only</b><br><br><a href=\"https://gateoverflow.in/118306/gate2017-1-26#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Algorithm",
+   "tag1_url": "https://practicepaper.in/gate-cse/algorithm",
+   "tag2": "Minimum Spanning Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/minimum-spanning-tree",
+   "options": [
+    "(I) only",
+    "(II) only",
+    "Both (I) and (II)",
+    "Neither (I) nor (II)"
+   ],
+   "correct": 0
+  },
+  {
+   "id": 1117127,
+   "number": 27,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "A multithreaded program P executes with x number of threads and uses y number of locks for\nensuring mutual exclusion while operating on shared memory locations. All locks in the\nprogram are non-reentrant, i.e., if a thread holds a lock l, then it cannot re-acquire lock l\nwithout releasing it. If a thread is unable to acquire a lock, it blocks until the lock becomes\navailable. The minimum value of x and the minimum value of y together for which execution\nof P can result in a deadlock are:",
+   "solution": "The locks are non-reentrant: if a single thread holding lock l tries to acquire l again, it blocks forever waiting for itself. So one thread and one lock are enough.<br><br>\n<b>Answer: x = 1, y = 1</b><br><br><a href=\"https://gateoverflow.in/118307/gate2017-1-27#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Operating System",
+   "tag1_url": "https://practicepaper.in/gate-cse/operating-system",
+   "tag2": "Deadlock",
+   "tag2_url": "https://practicepaper.in/gate-cse/deadlock",
+   "options": [
+    "x = 1, y = 2 ",
+    "x =2, y=1",
+    "x = 2,y=2",
+    "x = 1, y = 1"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1117128,
+   "number": 28,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The value of [latex]\\lim_{x\\rightarrow 1}\\frac{x^{7}-2x^{5}+1}{x^{3}-3x^{2}+2}[/latex]",
+   "solution": "At x = 1: numerator 1 [latex]-[/latex] 2 + 1 = 0, denominator 1 [latex]-[/latex] 3 + 2 = 0. L'Hospital:<br>\n[latex]\\frac{7x^6-10x^4}{3x^2-6x}\\Big|_{x=1}=\\frac{-3}{-3}=1[/latex]<br><br>\n<b>Answer: is 1</b><br><br><a href=\"https://gateoverflow.in/118309/gate2017-1-28#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "options": [
+    "is 0",
+    "is -1",
+    "is 1",
+    "does not exist"
+   ],
+   "correct": 2
+  },
+  {
+   "id": 1117129,
+   "number": 29,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let p, q, and r be propositions and the expression (p[latex]\\rightarrow[/latex]q)[latex]\\rightarrow[/latex]r be a contradiction. Then, the\nexpression (r[latex]\\rightarrow[/latex]p)[latex]\\rightarrow[/latex]q is",
+   "solution": "[latex](p\\rightarrow q)\\rightarrow r[/latex] is always false, so [latex]p\\rightarrow q[/latex] is always true and r is always false.<br><br>\nThen [latex]r\\rightarrow p[/latex] is true (r is false), so [latex](r\\rightarrow p)\\rightarrow q\\equiv q[/latex]. It is true exactly when q is true.<br><br>\n<b>Answer: always TRUE when q is TRUE</b><br><br><a href=\"https://gateoverflow.in/118310/gate2017-1-29#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Propositional Logic",
+   "tag2_url": "https://practicepaper.in/gate-cse/propositional-logic",
+   "options": [
+    "a tautology",
+    "a tautology",
+    "always TRUE when p is FALSE",
+    "always TRUE when q is TRUE"
+   ],
+   "correct": 3
+  },
+  {
+   "id": 1117130,
+   "number": 30,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Let u and v be two vectors in [latex]R^{2}[/latex] whose Euclidean norms satisfy ||u||=2|| v|| . What is the value of [latex]\\alpha[/latex] such that w=u+[latex]\\alpha[/latex]v bisects the angle between u and v ?",
+   "solution": "The bisector points along the sum of the <b>unit</b> vectors: [latex]\\frac{u}{\\|u\\|}+\\frac{v}{\\|v\\|}=\\frac{u}{2\\|v\\|}+\\frac{v}{\\|v\\|}=\\frac{1}{2\\|v\\|}(u+2v)[/latex].<br><br>\nSo w = u + 2v bisects the angle: [latex]\\alpha=2[/latex].<br><br>\n<b>Answer: 2</b><br><br><a href=\"https://gateoverflow.in/118311/gate2017-1-30#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Engineering Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/engineering-mathematics",
+   "tag2": "Calculus",
+   "tag2_url": "https://practicepaper.in/gate-cse/calculus",
+   "options": [
+    "2",
+    "[latex]1/2[/latex]",
+    "1",
+    "[latex]-1/2[/latex]"
+   ],
+   "correct": 0
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "quizId": 11151,
+  "quizName": "GATE CS 2015 SET 1",
+  "pageTitle": "GATE CSE 2015 SET-1",
+  "timeLimit": 0,
+  "pageNo": 6,
+  "totalPages": 13,
+  "totalQuestions": 65,
+  "totalMarks": 100,
+  "questionsPerPage": 5,
+  "pageUrl": "/gate-cse/gate-cse-2015-set-1",
+  "ajaxUrl": "https://practicepaper.in/wp-admin/admin-ajax.php",
+  "bookmarksUrl": "https://practicepaper.in/my-bookmarked-questions",
+  "resultsJs": "https://practicepaper.in/wp-content/plugins/custom-quiz-plugin-final/js/results.js?ver=1790690078",
+  "adClient": "ca-pub-9048169315686568",
+  "ads": {
+   "title": "3942157232",
+   "q2": "3992028625",
+   "q4": "6644050610"
+  }
+ },
+ "questions": [
+  {
+   "id": 1115126,
+   "number": 26,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Suppose that the stop-and-wait protocol is used on a link with a bit rate of 64 kilobits per second and 20 milliseconds propagation delay. Assume that the transmission time for the acknowledgement and the processing time at nodes are negligible. Then the minimum frame size in bytes to achieve a link utilization of at least 50% is______________.",
+   "solution": "Stop-and-wait utilization = [latex]\\frac{T_t}{T_t+2T_p}\\ge\\frac12\\Rightarrow T_t\\ge2T_p=40[/latex] ms.<br><br>\nFrame size = [latex]64\\times10^3\\times40\\times10^{-3}=2560[/latex] bits = 320 bytes.<br><br>\n<b>Answer: 320</b><br><br><a href=\"https://gateoverflow.in/8363/gate2015-1-26#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "ansMin": 320,
+   "ansMax": 320
+  },
+  {
+   "id": 1115127,
+   "number": 27,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "Consider a max heap, represented by the array: 40, 30, 20, 10, 15, 16, 17, 8, 4. <br><img src=\"/wp-content/uploads/GATE/CS/20151/q27.jpg\"/><br>  Now consider that a value 35 is inserted into this heap. After insertion, the new heap is",
+   "solution": "35 goes to the next free position (index 10), as child of 15.<br><br>\n- 35 [latex]\\gt[/latex] 15: swap [latex]\\rightarrow[/latex] 35 under 30<br>\n- 35 [latex]\\gt[/latex] 30: swap [latex]\\rightarrow[/latex] 35 under 40<br>\n- 35 [latex]\\lt[/latex] 40: stop<br><br>\nHeap: 40, 35, 20, 10, 30, 16, 17, 8, 4, 15<br><br>\n<b>Answer: 40, 35, 20, 10, 30, 16, 17, 8, 4, 15</b><br><br><a href=\"https://gateoverflow.in/8273/gate2015-1-27#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Data Structure",
+   "tag1_url": "https://practicepaper.in/gate-cse/data-structure",
+   "tag2": "Heap Tree",
+   "tag2_url": "https://practicepaper.in/gate-cse/heap-tree",
+   "options": [
+    "40, 30, 20, 10, 15, 16, 17, 8, 4, 35",
+    "40, 35, 20, 10, 30, 16, 17, 8, 4, 15",
+    "40, 30, 20, 10, 35, 16, 17, 8, 4, 15",
+    "40, 35, 20, 10, 15, 16, 17, 8, 4, 30"
+   ],
+   "correct": 1
+  },
+  {
+   "id": 1115128,
+   "number": 28,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider the following C program segment. <pre><code> while(first <= last)\n{\n   if (array[middle] < search)\n      first = middle + 1;\n   else if (array[middle] == search)\n        found = TRUE;\n    else last = middle - 1;\n        middle = (first + last)/2;\n}\nif (first > last) notPresent = TRUE; </pre></code> The cyclomatic complexity of the program segment is ________.",
+   "solution": "Decision points: while, if, else if, and the final if = 4.<br><br>\nCyclomatic complexity = 4 + 1 = 5<br><br>\n<b>Answer: 5</b><br><br><a href=\"https://gateoverflow.in/8312/gate2015-1-28#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Software Engg",
+   "tag1_url": "https://practicepaper.in/gate-cse/software-engg",
+   "tag2": "",
+   "tag2_url": "https://practicepaper.in/gate-cse/",
+   "ansMin": 5,
+   "ansMax": 5
+  },
+  {
+   "id": 1115129,
+   "number": 29,
+   "type": "NAT",
+   "marks": 2,
+   "text": "Consider a LAN with four nodes [latex]S_{1},S_{2},S_{3} \\; and \\; S_{4}[/latex] . Time is divided into fixed-size slots, and a node can begin its transmission only at the beginning of a slot. A collision is said to have occurred if more than one node transmit in the same slot. The probabilities of generation of a frame in a time slot by [latex]S_{1},S_{2},S_{3} \\; and \\;  S_{4}[/latex] are 0.1, 0.2, 0.3 and 0.4, respectively. The probability of sending a frame in the first slot without any collision by any of these four stations is _____________.",
+   "solution": "Success = exactly one station transmits.<br><br>\n- Only S1: 0.1 [latex]\\times[/latex] 0.8 [latex]\\times[/latex] 0.7 [latex]\\times[/latex] 0.6 = 0.0336<br>\n- Only S2: 0.9 [latex]\\times[/latex] 0.2 [latex]\\times[/latex] 0.7 [latex]\\times[/latex] 0.6 = 0.0756<br>\n- Only S3: 0.9 [latex]\\times[/latex] 0.8 [latex]\\times[/latex] 0.3 [latex]\\times[/latex] 0.6 = 0.1296<br>\n- Only S4: 0.9 [latex]\\times[/latex] 0.8 [latex]\\times[/latex] 0.7 [latex]\\times[/latex] 0.4 = 0.2016<br><br>\nTotal = 0.4404<br><br>\n<b>Answer: 0.44</b><br><br><a href=\"https://gateoverflow.in/8253/gate2015-1-29#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Computer Network",
+   "tag1_url": "https://practicepaper.in/gate-cse/computer-network",
+   "tag2": "Data Link Layer",
+   "tag2_url": "https://practicepaper.in/gate-cse/data-link-layer",
+   "ansMin": 0.4,
+   "ansMax": 0.46
+  },
+  {
+   "id": 1115130,
+   "number": 30,
+   "type": "MCQ",
+   "marks": 2,
+   "text": "The binary operator [latex]\\neq[/latex] is defined by the following truth table. <br><img src=\"/wp-content/uploads/GATE/CS/20151/q30.jpg\"/><br> Which one of the following is true about the binary operator [latex]\\neq[/latex]?",
+   "solution": "The table is exactly XOR ([latex]p\\oplus q[/latex]).<br><br>\nXOR is commutative ([latex]p\\oplus q=q\\oplus p[/latex]) and associative ([latex](p\\oplus q)\\oplus r=p\\oplus(q\\oplus r)[/latex]).<br><br>\n<b>Answer: Both commutative and associative</b><br><br><a href=\"https://gateoverflow.in/8226/gate2015-1-30#a_list\" target=\"_blank\">Click here for detail solution by gateoverflow</a> ",
+   "tag1": "Discrete Mathematics",
+   "tag1_url": "https://practicepaper.in/gate-cse/discrete-mathematics",
+   "tag2": "Propositional Logic",
+   "tag2_url": "https://practicepaper.in/gate-cse/propositional-logic",
+   "options": [
+    "Both commutative and associative",
+    "Commutative but not associative",
+    "Not commutative but associative",
+    "Neither commutative nor associative"
+   ],
+   "correct": 0
+  }
+ ]
+}
